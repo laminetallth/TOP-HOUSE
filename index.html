@@ -1,95 +1,374 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MyDrive</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body {
-      background: #0f172a;
-      color: white;
-      font-family: Arial;
-      padding: 30px;
-    }
+<title>TOP HOUSE DRIVE</title>
 
-    h1 {
-      margin-bottom: 20px;
-    }
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    input {
-      width: 100%;
-      padding: 12px;
-      margin-bottom: 20px;
-      border-radius: 10px;
-      border: none;
-      font-size: 16px;
-    }
+<style>
 
-    .file {
-      background: #1e293b;
-      padding: 15px;
-      border-radius: 12px;
-      margin-bottom: 10px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
 
-    a {
-      background: #3b82f6;
-      color: white;
-      text-decoration: none;
-      padding: 10px 15px;
-      border-radius: 8px;
-    }
+body{
+background:#f3f4f6;
+}
 
-    a:hover {
-      opacity: 0.8;
-    }
-  </style>
+.navbar{
+background:white;
+padding:20px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#16a34a;
+}
+
+.menu{
+display:flex;
+gap:30px;
+}
+
+.menu a{
+text-decoration:none;
+color:#111827;
+font-weight:bold;
+font-size:18px;
+}
+
+.container{
+display:flex;
+gap:30px;
+padding:40px;
+}
+
+.left{
+flex:3;
+}
+
+.right{
+flex:1;
+}
+
+.page-title{
+font-size:60px;
+margin-bottom:30px;
+color:#111827;
+}
+
+.search{
+width:100%;
+padding:16px;
+border-radius:12px;
+border:1px solid #d1d5db;
+font-size:16px;
+margin-bottom:25px;
+}
+
+.card{
+background:white;
+border-radius:18px;
+padding:25px;
+margin-bottom:25px;
+box-shadow:0 2px 10px rgba(0,0,0,0.06);
+}
+
+.category{
+display:flex;
+align-items:center;
+gap:20px;
+padding:20px;
+border-bottom:1px solid #eee;
+font-size:24px;
+font-weight:bold;
+transition:0.3s;
+cursor:pointer;
+}
+
+.category:hover{
+background:#f9fafb;
+}
+
+.icon{
+width:60px;
+height:60px;
+border-radius:14px;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:24px;
+color:white;
+}
+
+.yellow{
+background:#f59e0b;
+}
+
+.red{
+background:#ef4444;
+}
+
+.blue{
+background:#06b6d4;
+}
+
+.green{
+background:#16a34a;
+}
+
+.file{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 10px;
+border-bottom:1px solid #eee;
+}
+
+.file-name{
+font-size:18px;
+}
+
+.btn{
+background:#16a34a;
+color:white;
+padding:12px 18px;
+border-radius:10px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.btn:hover{
+opacity:0.8;
+}
+
+.sidebar-title{
+font-size:30px;
+margin-bottom:20px;
+color:#111827;
+}
+
+.sidebar-text{
+font-size:18px;
+line-height:1.6;
+color:#4b5563;
+}
+
+.user{
+font-size:18px;
+font-weight:bold;
+}
+
+@media(max-width:900px){
+
+.container{
+flex-direction:column;
+}
+
+.page-title{
+font-size:40px;
+}
+
+.navbar{
+flex-direction:column;
+gap:20px;
+}
+
+.menu{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+}
+
+</style>
+
 </head>
+
 <body>
 
-<h1>MyDrive</h1>
+<div class="navbar">
 
-<input type="text" id="search" placeholder="Cerca file...">
+<div class="logo">
+TOP HOUSE
+</div>
 
-<div id="files">
+<div class="menu">
+<a href="#">
+<i class="fa-solid fa-chart-line"></i>
+Dashboard
+</a>
 
-  <div class="file">
-    <span>Film 1</span>
-    <a href="https://drive.google.com" target="_blank">Apri</a>
-  </div>
+<a href="#">
+<i class="fa-solid fa-folder"></i>
+I miei file
+</a>
 
-  <div class="file">
-    <span>Serie TV</span>
-    <a href="https://drive.google.com" target="_blank">Apri</a>
-  </div>
+<a href="#">
+<i class="fa-solid fa-lock"></i>
+File privati
+</a>
+</div>
 
-  <div class="file">
-    <span>Documenti</span>
-    <a href="https://drive.google.com" target="_blank">Apri</a>
-  </div>
+<div class="user">
+<i class="fa-solid fa-user"></i>
+Admin
+</div>
 
 </div>
 
-<script>
-const search = document.getElementById('search');
-const files = document.querySelectorAll('.file');
+<div class="container">
 
-search.addEventListener('keyup', () => {
-  const value = search.value.toLowerCase();
+<div class="left">
 
-  files.forEach(file => {
-    const text = file.innerText.toLowerCase();
+<h1 class="page-title">
+I Miei File
+</h1>
 
-    file.style.display = text.includes(value)
-      ? 'flex'
-      : 'none';
-  });
-});
-</script>
+<input type="text"
+class="search"
+placeholder="Cerca file...">
+
+<div class="card">
+
+<div class="category">
+<div class="icon yellow">
+<i class="fa-solid fa-folder"></i>
+</div>
+
+1 - FOTOVOLTAICO
+</div>
+
+<div class="file">
+<div class="file-name">
+Contratto Cliente.pdf
+</div>
+
+<a class="btn"
+href="https://drive.google.com"
+target="_blank">
+Apri
+</a>
+</div>
+
+<div class="file">
+<div class="file-name">
+Preventivo.pdf
+</div>
+
+<a class="btn"
+href="https://drive.google.com"
+target="_blank">
+Apri
+</a>
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="category">
+<div class="icon red">
+<i class="fa-solid fa-folder"></i>
+</div>
+
+2 - GAS E LUCE
+</div>
+
+<div class="file">
+<div class="file-name">
+Documento ENEL.pdf
+</div>
+
+<a class="btn"
+href="https://drive.google.com"
+target="_blank">
+Apri
+</a>
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="category">
+<div class="icon blue">
+<i class="fa-solid fa-folder"></i>
+</div>
+
+3 - TELEFONIA
+</div>
+
+<div class="file">
+<div class="file-name">
+Contratto SIM.pdf
+</div>
+
+<a class="btn"
+href="https://drive.google.com"
+target="_blank">
+Apri
+</a>
+</div>
+
+</div>
+
+</div>
+
+<div class="right">
+
+<div class="card">
+
+<h2 class="sidebar-title">
+Ricerca
+</h2>
+
+<p class="sidebar-text">
+Cerca file e cartelle disponibili nel portale.
+</p>
+
+<br>
+
+<input type="text"
+class="search"
+placeholder="Nome file o cartella">
+
+</div>
+
+<div class="card">
+
+<h2 class="sidebar-title">
+Aiuto
+</h2>
+
+<p class="sidebar-text">
+I file vengono condivisi dagli amministratori.
+</p>
+
+<br>
+
+<p class="sidebar-text">
+Puoi aprire e scaricare qualsiasi documento disponibile.
+</p>
+
+</div>
+
+</div>
+
+</div>
 
 </body>
 </html>
