@@ -199,6 +199,29 @@ nav a:hover{
     color:#111;
 }
 
+/* OPEN FOLDER */
+
+.folder-content{
+    display:none;
+    background:#fafafa;
+    padding:10px 30px 20px 100px;
+    border-top:1px solid #eee;
+}
+
+.document{
+    display:block;
+    padding:14px 0;
+    text-decoration:none;
+    color:#444;
+    font-weight:700;
+    transition:0.3s;
+}
+
+.document:hover{
+    color:#ff5500;
+    transform:translateX(5px);
+}
+
 /* SIDEBAR */
 
 .sidebar-box{
@@ -330,164 +353,394 @@ footer span{
 
         <div class="file-list">
 
-            <div class="file-item">
-                <div class="file-left">
-                    <div class="file-icon">
-                        <i class="fa-solid fa-fire"></i>
+            <!-- LUCE E GAS -->
+
+            <div class="folder">
+
+                <div class="file-item" onclick="toggleFolder('luce')">
+
+                    <div class="file-left">
+
+                        <div class="file-icon">
+                            <i class="fa-solid fa-fire"></i>
+                        </div>
+
+                        <div class="file-name">
+                            LUCE E GAS
+                        </div>
+
                     </div>
 
-                    <div class="file-name">
-                        LUCE E GAS
+                    <div class="arrow">
+                        <i class="fa-solid fa-angle-down"></i>
                     </div>
+
                 </div>
 
-                <div class="arrow">
-                    <i class="fa-solid fa-angle-right"></i>
+                <div class="folder-content" id="luce">
+
+                    <a href="#" class="document">
+                        Contratto Cliente.pdf
+                    </a>
+
+                    <a href="#" class="document">
+                        Preventivo.pdf
+                    </a>
+
                 </div>
+
             </div>
 
-            <div class="file-item">
-                <div class="file-left">
-                    <div class="file-icon">
-                        <i class="fa-solid fa-solar-panel"></i>
+            <!-- FOTOVOLTAICO -->
+
+            <div class="folder">
+
+                <div class="file-item" onclick="toggleFolder('foto')">
+
+                    <div class="file-left">
+
+                        <div class="file-icon">
+                            <i class="fa-solid fa-solar-panel"></i>
+                        </div>
+
+                        <div class="file-name">
+                            FOTOVOLTAICO
+                        </div>
+
                     </div>
 
-                    <div class="file-name">
-                        FOTOVOLTAICO
+                    <div class="arrow">
+                        <i class="fa-solid fa-angle-down"></i>
                     </div>
+
                 </div>
 
-                <div class="arrow">
-                    <i class="fa-solid fa-angle-right"></i>
+                <div class="folder-content" id="foto">
+
+                    <a href="#" class="document">
+                        Impianto.pdf
+                    </a>
+
+                    <a href="#" class="document">
+                        Garanzia.pdf
+                    </a>
+
                 </div>
+
             </div>
 
-            <div class="file-item">
-                <div class="file-left">
-                    <div class="file-icon">
-                        <i class="fa-solid fa-snowflake"></i>
+            <!-- CLIMATIZZATORE -->
+
+            <div class="folder">
+
+                <div class="file-item" onclick="toggleFolder('clima')">
+
+                    <div class="file-left">
+
+                        <div class="file-icon">
+                            <i class="fa-solid fa-snowflake"></i>
+                        </div>
+
+                        <div class="file-name">
+                            CLIMATIZZATORE
+                        </div>
+
                     </div>
 
-                    <div class="file-name">
-                        CLIMATIZZATORE
+                    <div class="arrow">
+                        <i class="fa-solid fa-angle-down"></i>
                     </div>
+
                 </div>
 
-                <div class="arrow">
-                    <i class="fa-solid fa-angle-right"></i>
+                <div class="folder-content" id="clima">
+
+                    <a href="#" class="document">
+                        Catalogo.pdf
+                    </a>
+
+                    <a href="#" class="document">
+                        Installazione.pdf
+                    </a>
+
                 </div>
+
             </div>
 
-            <div class="file-item">
-                <div class="file-left">
-                    <div class="file-icon">
-                        <i class="fa-solid fa-temperature-high"></i>
+            <!-- CALDAIA -->
+
+            <div class="folder">
+
+                <div class="file-item" onclick="toggleFolder('caldaia')">
+
+                    <div class="file-left">
+
+                        <div class="file-icon">
+                            <i class="fa-solid fa-temperature-high"></i>
+                        </div>
+
+                        <div class="file-name">
+                            CALDAIA
+                        </div>
+
                     </div>
 
-                    <div class="file-name">
-                        CALDAIA
+                    <div class="arrow">
+                        <i class="fa-solid fa-angle-down"></i>
                     </div>
+
                 </div>
 
-                <div class="arrow">
-                    <i class="fa-solid fa-angle-right"></i>
+                <div class="folder-content" id="caldaia">
+
+                    <a href="#" class="document">
+                        Installazione.pdf
+                    </a>
+
                 </div>
+
             </div>
 
-            <div class="file-item">
-                <div class="file-left">
-                    <div class="file-icon">
-                        <i class="fa-solid fa-droplet"></i>
+            <!-- DEPURATORE -->
+
+            <div class="folder">
+
+                <div class="file-item" onclick="toggleFolder('depuratore')">
+
+                    <div class="file-left">
+
+                        <div class="file-icon">
+                            <i class="fa-solid fa-droplet"></i>
+                        </div>
+
+                        <div class="file-name">
+                            DEPURATORE
+                        </div>
+
                     </div>
 
-                    <div class="file-name">
-                        DEPURATORE
+                    <div class="arrow">
+                        <i class="fa-solid fa-angle-down"></i>
                     </div>
+
                 </div>
 
-                <div class="arrow">
-                    <i class="fa-solid fa-angle-right"></i>
+                <div class="folder-content" id="depuratore">
+
+                    <a href="#" class="document">
+                        Manuale.pdf
+                    </a>
+
                 </div>
+
             </div>
 
-            <div class="file-item">
-                <div class="file-left">
-                    <div class="file-icon">
-                        <i class="fa-solid fa-window-maximize"></i>
+            <!-- INFISSI -->
+
+            <div class="folder">
+
+                <div class="file-item" onclick="toggleFolder('infissi')">
+
+                    <div class="file-left">
+
+                        <div class="file-icon">
+                            <i class="fa-solid fa-window-maximize"></i>
+                        </div>
+
+                        <div class="file-name">
+                            INFISSI
+                        </div>
+
                     </div>
 
-                    <div class="file-name">
-                        INFISSI
+                    <div class="arrow">
+                        <i class="fa-solid fa-angle-down"></i>
                     </div>
+
                 </div>
 
-                <div class="arrow">
-                    <i class="fa-solid fa-angle-right"></i>
+                <div class="folder-content" id="infissi">
+
+                    <a href="#" class="document">
+                        Catalogo.pdf
+                    </a>
+
                 </div>
+
             </div>
 
-            <div class="file-item">
-                <div class="file-left">
-                    <div class="file-icon">
-                        <i class="fa-solid fa-fan"></i>
+            <!-- POMPE DI CALORE -->
+
+            <div class="folder">
+
+                <div class="file-item" onclick="toggleFolder('pompe')">
+
+                    <div class="file-left">
+
+                        <div class="file-icon">
+                            <i class="fa-solid fa-fan"></i>
+                        </div>
+
+                        <div class="file-name">
+                            POMPE DI CALORE
+                        </div>
+
                     </div>
 
-                    <div class="file-name">
-                        POMPE DI CALORE
+                    <div class="arrow">
+                        <i class="fa-solid fa-angle-down"></i>
                     </div>
+
                 </div>
 
-                <div class="arrow">
-                    <i class="fa-solid fa-angle-right"></i>
+                <div class="folder-content" id="pompe">
+
+                    <a href="#" class="document">
+                        Scheda Tecnica.pdf
+                    </a>
+
                 </div>
+
             </div>
 
-            <div class="file-item">
-                <div class="file-left">
-                    <div class="file-icon">
-                        <i class="fa-solid fa-shield-halved"></i>
+            <!-- ALLARMI -->
+
+            <div class="folder">
+
+                <div class="file-item" onclick="toggleFolder('allarmi')">
+
+                    <div class="file-left">
+
+                        <div class="file-icon">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+
+                        <div class="file-name">
+                            ALLARMI
+                        </div>
+
                     </div>
 
-                    <div class="file-name">
-                        ALLARMI
+                    <div class="arrow">
+                        <i class="fa-solid fa-angle-down"></i>
                     </div>
+
                 </div>
 
-                <div class="arrow">
-                    <i class="fa-solid fa-angle-right"></i>
+                <div class="folder-content" id="allarmi">
+
+                    <a href="#" class="document">
+                        Sicurezza.pdf
+                    </a>
+
                 </div>
+
             </div>
 
-            <div class="file-item">
-                <div class="file-left">
-                    <div class="file-icon">
-                        <i class="fa-solid fa-phone"></i>
+            <!-- TELEFONIA -->
+
+            <div class="folder">
+
+                <div class="file-item" onclick="toggleFolder('telefonia')">
+
+                    <div class="file-left">
+
+                        <div class="file-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+
+                        <div class="file-name">
+                            TELEFONIA
+                        </div>
+
                     </div>
 
-                    <div class="file-name">
-                        TELEFONIA
+                    <div class="arrow">
+                        <i class="fa-solid fa-angle-down"></i>
                     </div>
+
                 </div>
 
-                <div class="arrow">
-                    <i class="fa-solid fa-angle-right"></i>
+                <div class="folder-content" id="telefonia">
+
+                    <a href="#" class="document">
+                        Offerta.pdf
+                    </a>
+
                 </div>
+
             </div>
 
-            <div class="file-item">
-                <div class="file-left">
-                    <div class="file-icon">
-                        <i class="fa-solid fa-charging-station"></i>
+            <!-- WALL BOX -->
+
+            <div class="folder">
+
+                <div class="file-item" onclick="toggleFolder('wallbox')">
+
+                    <div class="file-left">
+
+                        <div class="file-icon">
+                            <i class="fa-solid fa-charging-station"></i>
+                        </div>
+
+                        <div class="file-name">
+                            WALL BOX
+                        </div>
+
                     </div>
 
-                    <div class="file-name">
-                        WALL BOX
+                    <div class="arrow">
+                        <i class="fa-solid fa-angle-down"></i>
                     </div>
+
                 </div>
 
-                <div class="arrow">
-                    <i class="fa-solid fa-angle-right"></i>
+                <div class="folder-content" id="wallbox">
+
+                    <a href="#" class="document">
+                        Installazione.pdf
+                    </a>
+
                 </div>
+
+            </div>
+
+            <!-- MODULI -->
+
+            <div class="folder">
+
+                <div class="file-item" onclick="toggleFolder('moduli')">
+
+                    <div class="file-left">
+
+                        <div class="file-icon">
+                            <i class="fa-solid fa-file-lines"></i>
+                        </div>
+
+                        <div class="file-name">
+                            MODULI
+                        </div>
+
+                    </div>
+
+                    <div class="arrow">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+
+                </div>
+
+                <div class="folder-content" id="moduli">
+
+                    <a href="#" class="document">
+                        Modulo Contratto.pdf
+                    </a>
+
+                    <a href="#" class="document">
+                        Privacy.pdf
+                    </a>
+
+                </div>
+
             </div>
 
         </div>
@@ -548,6 +801,22 @@ footer span{
     © 2025 <span>TOP HOUSE</span> - Tutti i diritti riservati
 
 </footer>
+
+<script>
+
+function toggleFolder(id){
+
+    const folder = document.getElementById(id);
+
+    if(folder.style.display === "block"){
+        folder.style.display = "none";
+    } else {
+        folder.style.display = "block";
+    }
+
+}
+
+</script>
 
 </body>
 </html>
