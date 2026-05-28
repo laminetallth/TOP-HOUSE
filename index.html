@@ -1,183 +1,270 @@
+```html
 <!DOCTYPE html>
 <html lang="it">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>TOP HOUSE</title>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 
 <style>
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, sans-serif;
+    font-family:Arial,sans-serif;
 }
 
 body{
-    background:#f6f2f2;
+    background:#f5f5f5;
     color:#111;
 }
 
 /* HEADER */
 
 header{
+    width:100%;
     background:white;
-    padding:25px 50px;
+    padding:22px 40px;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    box-shadow:0 2px 10px rgba(0,0,0,0.05);
+    border-radius:0 0 25px 25px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.05);
 }
 
-.logo-area{
+.logo{
     display:flex;
     align-items:center;
     gap:18px;
 }
 
-.logo-area img{
+.logo img{
     width:70px;
-    height:70px;
-    object-fit:contain;
 }
 
 .logo-text h1{
-    font-size:38px;
-    color:#111;
+    font-size:42px;
+    background:linear-gradient(90deg,#ff0055,#ff9900);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
     font-weight:900;
 }
 
 .logo-text p{
-    color:#000;
-    font-size:16px;
+    font-size:18px;
     font-weight:700;
-    margin-top:4px;
+}
+
+/* NAV */
+
+nav{
+    display:flex;
+    gap:45px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#111;
+    font-weight:700;
+    font-size:18px;
+    padding-bottom:8px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#ff5500;
+}
+
+.active{
+    color:#ff5500;
+    border-bottom:3px solid #ff5500;
+}
+
+/* ADMIN */
+
+.admin{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    font-weight:700;
+}
+
+.admin-icon{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#ff0055,#ff9900);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    font-size:22px;
 }
 
 /* LAYOUT */
 
 .container{
     display:grid;
-    grid-template-columns: 1fr 320px;
-    gap:30px;
-    padding:35px;
+    grid-template-columns:1fr 320px;
+    gap:35px;
+    padding:45px;
 }
 
 @media(max-width:1000px){
+
     .container{
         grid-template-columns:1fr;
     }
+
+    nav{
+        display:none;
+    }
+
+}
+
+/* TITLE */
+
+.page-title{
+    font-size:60px;
+    font-weight:900;
+    margin-bottom:25px;
 }
 
 /* SEARCH */
 
 .search{
     width:100%;
-    padding:18px 22px;
+    background:white;
     border:none;
     border-radius:18px;
-    margin-bottom:30px;
-    font-size:17px;
-    background:white;
-    box-shadow:0 3px 10px rgba(0,0,0,0.05);
-}
-
-/* CARD */
-
-.section{
-    background:white;
-    border-radius:28px;
-    padding:30px;
+    padding:22px;
     margin-bottom:28px;
-    box-shadow:0 6px 20px rgba(0,0,0,0.05);
+    font-size:18px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.05);
 }
 
-.section-title{
+/* FILE LIST */
+
+.file-list{
+    background:white;
+    border-radius:25px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,0.05);
+}
+
+.file-item{
     display:flex;
     align-items:center;
-    gap:22px;
-    margin-bottom:25px;
+    justify-content:space-between;
+    padding:24px 28px;
+    border-bottom:1px solid #eee;
+    transition:0.3s;
+    cursor:pointer;
 }
 
-.icon-box{
-    width:58px;
-    height:58px;
-    border-radius:18px;
+.file-item:hover{
+    background:#fafafa;
+}
+
+.file-left{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.file-icon{
+    width:55px;
+    height:55px;
+    border-radius:15px;
+    background:linear-gradient(135deg,#ff0055,#ff9900);
     display:flex;
     justify-content:center;
     align-items:center;
     color:white;
     font-size:24px;
-    background:linear-gradient(135deg,#ff0055,#ffb300);
 }
 
-.section-title h2{
+.file-name{
+    font-size:20px;
+    font-weight:800;
+}
+
+.arrow{
     font-size:24px;
-    font-weight:900;
-}
-
-/* FILE */
-
-.file{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:26px 0;
-    border-top:1px solid #ececec;
-}
-
-.file:first-of-type{
-    border-top:none;
-}
-
-.file span{
-    font-size:18px;
-}
-
-.btn{
-    background:linear-gradient(135deg,#ff0055,#ff9900);
-    color:white;
-    padding:14px 26px;
-    border-radius:18px;
-    text-decoration:none;
-    font-weight:700;
-    box-shadow:0 5px 15px rgba(255,100,0,0.25);
-    transition:0.3s;
-}
-
-.btn:hover{
-    transform:scale(1.05);
+    color:#111;
 }
 
 /* SIDEBAR */
 
 .sidebar-box{
     background:white;
-    border-radius:28px;
-    padding:35px;
+    border-radius:25px;
+    padding:30px;
     margin-bottom:25px;
-    box-shadow:0 6px 20px rgba(0,0,0,0.05);
+    box-shadow:0 5px 20px rgba(0,0,0,0.05);
 }
 
 .sidebar-box h3{
-    font-size:26px;
+    font-size:32px;
     margin-bottom:18px;
 }
 
 .sidebar-box p{
-    color:#444;
-    line-height:1.7;
-    font-size:17px;
+    line-height:1.8;
+    color:#555;
+    margin-bottom:20px;
 }
 
-.gradient-box{
-    height:180px;
-    border-radius:28px;
-    background:linear-gradient(135deg,#ff0055,#ff9900);
-    margin-bottom:25px;
+/* INPUT */
+
+.sidebar-input{
+    width:100%;
+    padding:16px;
+    border:1px solid #ddd;
+    border-radius:14px;
+    margin-top:15px;
+    margin-bottom:18px;
+    font-size:16px;
 }
+
+.btn{
+    width:100%;
+    border:none;
+    padding:16px;
+    border-radius:14px;
+    background:linear-gradient(135deg,#ff0055,#ff9900);
+    color:white;
+    font-size:17px;
+    font-weight:700;
+    cursor:pointer;
+}
+
+/* HELP IMAGE */
+
+.help-image{
+    margin-top:25px;
+    width:100%;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:40px;
+    color:#444;
+    font-size:18px;
+}
+
+footer span{
+    color:#ff5500;
+    font-weight:800;
+}
+
 </style>
 </head>
 
@@ -185,199 +272,283 @@ header{
 
 <header>
 
-    <div class="logo-area">
-        <img src="logo.png" alt="TOP HOUSE Logo">
+    <div class="logo">
+
+        <img src="logo.png">
 
         <div class="logo-text">
             <h1>TOP HOUSE</h1>
             <p>casa, energia, fiducia.</p>
         </div>
+
+    </div>
+
+    <nav>
+
+        <a href="#">
+            <i class="fa-solid fa-house"></i>
+            Dashboard
+        </a>
+
+        <a href="#" class="active">
+            <i class="fa-solid fa-folder"></i>
+            I miei file
+        </a>
+
+        <a href="#">
+            <i class="fa-solid fa-lock"></i>
+            File privati
+        </a>
+
+    </nav>
+
+    <div class="admin">
+
+        <div class="admin-icon">
+            <i class="fa-solid fa-user"></i>
+        </div>
+
+        Admin
+
     </div>
 
 </header>
 
 <div class="container">
 
-    <!-- MAIN -->
+    <!-- LEFT -->
+
     <div>
 
-        <input class="search" type="text" placeholder="Cerca file o servizio...">
+        <h1 class="page-title">
+            I Miei File
+        </h1>
 
-        <!-- LUCE E GAS -->
-        <div class="section">
+        <input class="search"
+        type="text"
+        placeholder="Cerca file o cartelle...">
 
-            <div class="section-title">
-                <div class="icon-box">
-                    <i class="fa-solid fa-bolt"></i>
+        <div class="file-list">
+
+            <div class="file-item">
+                <div class="file-left">
+                    <div class="file-icon">
+                        <i class="fa-solid fa-fire"></i>
+                    </div>
+
+                    <div class="file-name">
+                        LUCE E GAS
+                    </div>
                 </div>
 
-                <h2>LUCE E GAS</h2>
+                <div class="arrow">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
             </div>
 
-            <div class="file">
-                <span>Contratto Cliente.pdf</span>
-                <a href="#" class="btn">Apri</a>
-            </div>
+            <div class="file-item">
+                <div class="file-left">
+                    <div class="file-icon">
+                        <i class="fa-solid fa-solar-panel"></i>
+                    </div>
 
-            <div class="file">
-                <span>Preventivo.pdf</span>
-                <a href="#" class="btn">Apri</a>
-            </div>
-
-        </div>
-
-        <!-- FOTOVOLTAICO -->
-        <div class="section">
-
-            <div class="section-title">
-                <div class="icon-box">
-                    <i class="fa-solid fa-solar-panel"></i>
+                    <div class="file-name">
+                        FOTOVOLTAICO
+                    </div>
                 </div>
 
-                <h2>FOTOVOLTAICO</h2>
+                <div class="arrow">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
             </div>
 
-            <div class="file">
-                <span>Impianto.pdf</span>
-                <a href="#" class="btn">Apri</a>
-            </div>
+            <div class="file-item">
+                <div class="file-left">
+                    <div class="file-icon">
+                        <i class="fa-solid fa-snowflake"></i>
+                    </div>
 
-        </div>
-
-        <!-- CLIMATIZZATORE -->
-        <div class="section">
-
-            <div class="section-title">
-                <div class="icon-box">
-                    <i class="fa-solid fa-snowflake"></i>
+                    <div class="file-name">
+                        CLIMATIZZATORE
+                    </div>
                 </div>
 
-                <h2>CLIMATIZZATORE</h2>
+                <div class="arrow">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
             </div>
 
-            <div class="file">
-                <span>Catalogo.pdf</span>
-                <a href="#" class="btn">Apri</a>
-            </div>
+            <div class="file-item">
+                <div class="file-left">
+                    <div class="file-icon">
+                        <i class="fa-solid fa-temperature-high"></i>
+                    </div>
 
-        </div>
-
-        <!-- CALDAIA -->
-        <div class="section">
-
-            <div class="section-title">
-                <div class="icon-box">
-                    <i class="fa-solid fa-fire"></i>
+                    <div class="file-name">
+                        CALDAIA
+                    </div>
                 </div>
 
-                <h2>CALDAIA</h2>
+                <div class="arrow">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
             </div>
 
-            <div class="file">
-                <span>Installazione.pdf</span>
-                <a href="#" class="btn">Apri</a>
-            </div>
+            <div class="file-item">
+                <div class="file-left">
+                    <div class="file-icon">
+                        <i class="fa-solid fa-droplet"></i>
+                    </div>
 
-        </div>
-
-        <!-- DEPURATORE -->
-        <div class="section">
-
-            <div class="section-title">
-                <div class="icon-box">
-                    <i class="fa-solid fa-droplet"></i>
+                    <div class="file-name">
+                        DEPURATORE
+                    </div>
                 </div>
 
-                <h2>DEPURATORE</h2>
+                <div class="arrow">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
             </div>
 
-        </div>
+            <div class="file-item">
+                <div class="file-left">
+                    <div class="file-icon">
+                        <i class="fa-solid fa-window-maximize"></i>
+                    </div>
 
-        <!-- INFISSI -->
-        <div class="section">
-
-            <div class="section-title">
-                <div class="icon-box">
-                    <i class="fa-solid fa-window-maximize"></i>
+                    <div class="file-name">
+                        INFISSI
+                    </div>
                 </div>
 
-                <h2>INFISSI</h2>
+                <div class="arrow">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
             </div>
 
-        </div>
+            <div class="file-item">
+                <div class="file-left">
+                    <div class="file-icon">
+                        <i class="fa-solid fa-fan"></i>
+                    </div>
 
-        <!-- POMPE DI CALORE -->
-        <div class="section">
-
-            <div class="section-title">
-                <div class="icon-box">
-                    <i class="fa-solid fa-temperature-arrow-up"></i>
+                    <div class="file-name">
+                        POMPE DI CALORE
+                    </div>
                 </div>
 
-                <h2>POMPE DI CALORE</h2>
+                <div class="arrow">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
             </div>
 
-        </div>
+            <div class="file-item">
+                <div class="file-left">
+                    <div class="file-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
 
-        <!-- ALLARMI -->
-        <div class="section">
-
-            <div class="section-title">
-                <div class="icon-box">
-                    <i class="fa-solid fa-shield-halved"></i>
+                    <div class="file-name">
+                        ALLARMI
+                    </div>
                 </div>
 
-                <h2>ALLARMI</h2>
+                <div class="arrow">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
             </div>
 
-        </div>
+            <div class="file-item">
+                <div class="file-left">
+                    <div class="file-icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
 
-        <!-- TELEFONIA -->
-        <div class="section">
-
-            <div class="section-title">
-                <div class="icon-box">
-                    <i class="fa-solid fa-mobile-screen"></i>
+                    <div class="file-name">
+                        TELEFONIA
+                    </div>
                 </div>
 
-                <h2>TELEFONIA</h2>
+                <div class="arrow">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
             </div>
 
-        </div>
+            <div class="file-item">
+                <div class="file-left">
+                    <div class="file-icon">
+                        <i class="fa-solid fa-charging-station"></i>
+                    </div>
 
-        <!-- WALL BOX -->
-        <div class="section">
-
-            <div class="section-title">
-                <div class="icon-box">
-                    <i class="fa-solid fa-charging-station"></i>
+                    <div class="file-name">
+                        WALL BOX
+                    </div>
                 </div>
 
-                <h2>WALL BOX</h2>
+                <div class="arrow">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
             </div>
 
         </div>
 
     </div>
 
-    <!-- SIDEBAR -->
+    <!-- RIGHT -->
+
     <div>
 
-        <div class="gradient-box"></div>
-
         <div class="sidebar-box">
-            <h3>Aiuto</h3>
+
+            <h3>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                Ricerca
+            </h3>
 
             <p>
-                I file vengono condivisi dagli amministratori.<br><br>
+                Cerca file e cartelle disponibili
+            </p>
 
+            <input
+            class="sidebar-input"
+            type="text"
+            placeholder="Nome file o cartella...">
+
+            <button class="btn">
+                Cerca
+            </button>
+
+        </div>
+
+        <div class="sidebar-box">
+
+            <h3>
+                <i class="fa-regular fa-circle-question"></i>
+                Aiuto
+            </h3>
+
+            <p>
+                I file vengono condivisi dagli amministratori.
+                <br><br>
                 Puoi aprire e scaricare qualsiasi documento disponibile.
             </p>
+
+            <img
+            class="help-image"
+            src="https://cdn-icons-png.flaticon.com/512/3144/3144456.png">
+
         </div>
 
     </div>
 
 </div>
 
+<footer>
+
+    © 2025 <span>TOP HOUSE</span> - Tutti i diritti riservati
+
+</footer>
+
 </body>
 </html>
+```
