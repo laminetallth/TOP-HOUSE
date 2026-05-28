@@ -2,29 +2,33 @@
 <html lang="it">
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
 <title>TOP HOUSE</title>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <style>
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, sans-serif;
 }
 
 body{
-    background:#f6f2f2;
+    font-family:Arial, sans-serif;
+    background:#f5f1ef;
     color:#111;
 }
 
 /* HEADER */
 
 header{
+    width:100%;
     background:white;
-    padding:25px 50px;
+    padding:25px 40px;
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -34,88 +38,79 @@ header{
 .logo-area{
     display:flex;
     align-items:center;
-    gap:18px;
+    gap:15px;
 }
 
 .logo-area img{
-    width:70px;
-    height:70px;
+    width:60px;
+    height:60px;
     object-fit:contain;
 }
 
+.logo-text{
+    display:flex;
+    flex-direction:column;
+}
+
 .logo-text h1{
-    font-size:38px;
-    color:#111;
+    font-size:34px;
+    color:#ff7b00;
     font-weight:900;
 }
 
 .logo-text p{
     color:#000;
-    font-size:16px;
-    font-weight:700;
-    margin-top:4px;
+    font-size:14px;
+    margin-top:3px;
 }
 
 /* LAYOUT */
 
 .container{
+    width:95%;
+    margin:30px auto;
     display:grid;
     grid-template-columns: 1fr 320px;
     gap:30px;
-    padding:35px;
 }
 
-@media(max-width:1000px){
-    .container{
-        grid-template-columns:1fr;
-    }
+.left{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
 }
 
-/* SEARCH */
+/* CARD SERVIZI */
 
-.search{
-    width:100%;
-    padding:18px 22px;
-    border:none;
-    border-radius:18px;
-    margin-bottom:30px;
-    font-size:17px;
-    background:white;
-    box-shadow:0 3px 10px rgba(0,0,0,0.05);
-}
-
-/* CARD */
-
-.section{
+.service-card{
     background:white;
     border-radius:28px;
     padding:30px;
-    margin-bottom:28px;
-    box-shadow:0 6px 20px rgba(0,0,0,0.05);
+    box-shadow:0 8px 25px rgba(0,0,0,0.05);
 }
 
-.section-title{
+.service-header{
     display:flex;
     align-items:center;
-    gap:22px;
+    gap:20px;
     margin-bottom:25px;
 }
 
 .icon-box{
-    width:58px;
-    height:58px;
-    border-radius:18px;
+    width:70px;
+    height:70px;
+    border-radius:22px;
+    background:linear-gradient(135deg,#ff1f5a,#ff9a00);
     display:flex;
     justify-content:center;
     align-items:center;
+    font-size:34px;
     color:white;
-    font-size:24px;
-    background:linear-gradient(135deg,#ff0055,#ffb300);
 }
 
-.section-title h2{
-    font-size:24px;
-    font-weight:900;
+.service-title{
+    font-size:28px;
+    font-weight:800;
 }
 
 /* FILE */
@@ -124,60 +119,70 @@ header{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:26px 0;
-    border-top:1px solid #ececec;
-}
-
-.file:first-of-type{
-    border-top:none;
-}
-
-.file span{
+    padding:28px 10px;
+    border-top:1px solid #e6e6e6;
     font-size:18px;
 }
 
-.btn{
-    background:linear-gradient(135deg,#ff0055,#ff9900);
-    color:white;
-    padding:14px 26px;
+.open-btn{
+    border:none;
+    padding:14px 28px;
     border-radius:18px;
-    text-decoration:none;
+    background:linear-gradient(135deg,#ff1f5a,#ff9a00);
+    color:white;
+    font-size:16px;
     font-weight:700;
-    box-shadow:0 5px 15px rgba(255,100,0,0.25);
-    transition:0.3s;
+    cursor:pointer;
+    box-shadow:0 5px 15px rgba(255,102,0,0.3);
+    transition:0.2s;
 }
 
-.btn:hover{
+.open-btn:hover{
     transform:scale(1.05);
 }
 
 /* SIDEBAR */
 
-.sidebar-box{
+.sidebar{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.side-card{
     background:white;
     border-radius:28px;
     padding:35px;
-    margin-bottom:25px;
-    box-shadow:0 6px 20px rgba(0,0,0,0.05);
+    box-shadow:0 8px 25px rgba(0,0,0,0.05);
 }
 
-.sidebar-box h3{
-    font-size:26px;
-    margin-bottom:18px;
+.side-card h2{
+    font-size:28px;
+    margin-bottom:20px;
 }
 
-.sidebar-box p{
-    color:#444;
-    line-height:1.7;
+.side-card p{
     font-size:17px;
+    line-height:1.7;
+    color:#444;
 }
 
-.gradient-box{
-    height:180px;
-    border-radius:28px;
-    background:linear-gradient(135deg,#ff0055,#ff9900);
-    margin-bottom:25px;
+/* MOBILE */
+
+@media(max-width:1000px){
+
+    .container{
+        grid-template-columns:1fr;
+    }
+
+    header{
+        flex-direction:column;
+        gap:15px;
+        align-items:flex-start;
+    }
+
 }
+
 </style>
 </head>
 
@@ -186,174 +191,144 @@ header{
 <header>
 
     <div class="logo-area">
+
         <img src="logo.png" alt="TOP HOUSE Logo">
 
         <div class="logo-text">
             <h1>TOP HOUSE</h1>
             <p>casa, energia, fiducia.</p>
         </div>
+
     </div>
 
 </header>
 
 <div class="container">
 
-    <!-- MAIN -->
-    <div>
-
-        <input class="search" type="text" placeholder="Cerca file o servizio...">
+    <div class="left">
 
         <!-- LUCE E GAS -->
-        <div class="section">
 
-            <div class="section-title">
-                <div class="icon-box">
-                    <i class="fa-solid fa-bolt"></i>
-                </div>
+        <div class="service-card">
 
-                <h2>LUCE E GAS</h2>
-            </div>
-
-            <div class="file">
-                <span>Contratto Cliente.pdf</span>
-                <a href="#" class="btn">Apri</a>
-            </div>
-
-            <div class="file">
-                <span>Preventivo.pdf</span>
-                <a href="#" class="btn">Apri</a>
+            <div class="service-header">
+                <div class="icon-box">⚡</div>
+                <div class="service-title">LUCE E GAS</div>
             </div>
 
         </div>
 
         <!-- FOTOVOLTAICO -->
-        <div class="section">
 
-            <div class="section-title">
-                <div class="icon-box">
-                    <i class="fa-solid fa-solar-panel"></i>
-                </div>
+        <div class="service-card">
 
-                <h2>FOTOVOLTAICO</h2>
+            <div class="service-header">
+                <div class="icon-box">☀️</div>
+                <div class="service-title">FOTOVOLTAICO</div>
             </div>
 
             <div class="file">
-                <span>Impianto.pdf</span>
-                <a href="#" class="btn">Apri</a>
+                <span>Preventivo.pdf</span>
+                <button class="open-btn">Apri</button>
             </div>
 
         </div>
 
         <!-- CLIMATIZZATORE -->
-        <div class="section">
 
-            <div class="section-title">
-                <div class="icon-box">
-                    <i class="fa-solid fa-snowflake"></i>
-                </div>
+        <div class="service-card">
 
-                <h2>CLIMATIZZATORE</h2>
-            </div>
-
-            <div class="file">
-                <span>Catalogo.pdf</span>
-                <a href="#" class="btn">Apri</a>
+            <div class="service-header">
+                <div class="icon-box">❄️</div>
+                <div class="service-title">CLIMATIZZATORE</div>
             </div>
 
         </div>
 
         <!-- CALDAIA -->
-        <div class="section">
 
-            <div class="section-title">
-                <div class="icon-box">
-                    <i class="fa-solid fa-fire"></i>
-                </div>
+        <div class="service-card">
 
-                <h2>CALDAIA</h2>
-            </div>
-
-            <div class="file">
-                <span>Installazione.pdf</span>
-                <a href="#" class="btn">Apri</a>
+            <div class="service-header">
+                <div class="icon-box">🔥</div>
+                <div class="service-title">CALDAIA</div>
             </div>
 
         </div>
 
         <!-- DEPURATORE -->
-        <div class="section">
 
-            <div class="section-title">
-                <div class="icon-box">
-                    <i class="fa-solid fa-droplet"></i>
-                </div>
+        <div class="service-card">
 
-                <h2>DEPURATORE</h2>
+            <div class="service-header">
+                <div class="icon-box">💧</div>
+                <div class="service-title">DEPURATORE</div>
             </div>
 
         </div>
 
         <!-- INFISSI -->
-        <div class="section">
 
-            <div class="section-title">
-                <div class="icon-box">
-                    <i class="fa-solid fa-window-maximize"></i>
-                </div>
+        <div class="service-card">
 
-                <h2>INFISSI</h2>
+            <div class="service-header">
+                <div class="icon-box">🪟</div>
+                <div class="service-title">INFISSI</div>
             </div>
 
         </div>
 
         <!-- POMPE DI CALORE -->
-        <div class="section">
 
-            <div class="section-title">
-                <div class="icon-box">
-                    <i class="fa-solid fa-temperature-arrow-up"></i>
-                </div>
+        <div class="service-card">
 
-                <h2>POMPE DI CALORE</h2>
+            <div class="service-header">
+                <div class="icon-box">♨️</div>
+                <div class="service-title">POMPE DI CALORE</div>
             </div>
 
         </div>
 
         <!-- ALLARMI -->
-        <div class="section">
 
-            <div class="section-title">
-                <div class="icon-box">
-                    <i class="fa-solid fa-shield-halved"></i>
-                </div>
+        <div class="service-card">
 
-                <h2>ALLARMI</h2>
+            <div class="service-header">
+                <div class="icon-box">🔒</div>
+                <div class="service-title">ALLARMI</div>
             </div>
 
         </div>
 
         <!-- TELEFONIA -->
-        <div class="section">
 
-            <div class="section-title">
-                <div class="icon-box">
-                    <i class="fa-solid fa-mobile-screen"></i>
-                </div>
+        <div class="service-card">
 
-                <h2>TELEFONIA</h2>
+            <div class="service-header">
+                <div class="icon-box">📱</div>
+                <div class="service-title">TELEFONIA</div>
             </div>
 
         </div>
 
         <!-- WALL BOX -->
-        <div class="section">
 
-            <div class="section-title">
-                <div class="icon-box">
-                    <i class="fa-solid fa-charging-station"></i>
-                </div>
+        <div class="service-card">
 
-                <h2>WALL BOX</h2>
+            <div class="service-header">
+                <div class="icon-box">🔋</div>
+                <div class="service-title">WALL BOX</div>
+            </div>
+
+        </div>
+
+        <!-- MODULI -->
+
+        <div class="service-card">
+
+            <div class="service-header">
+                <div class="icon-box">📄</div>
+                <div class="service-title">MODULI</div>
             </div>
 
         </div>
@@ -361,18 +336,30 @@ header{
     </div>
 
     <!-- SIDEBAR -->
-    <div>
 
-        <div class="gradient-box"></div>
+    <div class="sidebar">
 
-        <div class="sidebar-box">
-            <h3>Aiuto</h3>
+        <div class="side-card">
+
+            <h2>Aiuto</h2>
 
             <p>
-                I file vengono condivisi dagli amministratori.<br><br>
-
+                I file vengono condivisi dagli amministratori.
+                <br><br>
                 Puoi aprire e scaricare qualsiasi documento disponibile.
             </p>
+
+        </div>
+
+        <div class="side-card">
+
+            <h2>TOP HOUSE</h2>
+
+            <p>
+                Area privata clienti dedicata alla gestione dei documenti,
+                preventivi, contratti e materiali informativi.
+            </p>
+
         </div>
 
     </div>
