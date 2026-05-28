@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyDrive</title>
+
+  <style>
+    body {
+      background: #0f172a;
+      color: white;
+      font-family: Arial;
+      padding: 30px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      border: none;
+      font-size: 16px;
+    }
+
+    .file {
+      background: #1e293b;
+      padding: 15px;
+      border-radius: 12px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    a {
+      background: #3b82f6;
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      border-radius: 8px;
+    }
+
+    a:hover {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+
+<h1>MyDrive</h1>
+
+<input type="text" id="search" placeholder="Cerca file...">
+
+<div id="files">
+
+  <div class="file">
+    <span>Film 1</span>
+    <a href="https://drive.google.com" target="_blank">Apri</a>
+  </div>
+
+  <div class="file">
+    <span>Serie TV</span>
+    <a href="https://drive.google.com" target="_blank">Apri</a>
+  </div>
+
+  <div class="file">
+    <span>Documenti</span>
+    <a href="https://drive.google.com" target="_blank">Apri</a>
+  </div>
+
+</div>
+
+<script>
+const search = document.getElementById('search');
+const files = document.querySelectorAll('.file');
+
+search.addEventListener('keyup', () => {
+  const value = search.value.toLowerCase();
+
+  files.forEach(file => {
+    const text = file.innerText.toLowerCase();
+
+    file.style.display = text.includes(value)
+      ? 'flex'
+      : 'none';
+  });
+});
+</script>
+
+</body>
+</html>
