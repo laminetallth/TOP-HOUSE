@@ -20,7 +20,12 @@ font-family:Arial;
 }
 
 body{
-background:#f3f4f6;
+background:linear-gradient(
+135deg,
+#fff7ed,
+#ffffff,
+#fff1f2
+);
 }
 
 .navbar{
@@ -32,10 +37,31 @@ align-items:center;
 box-shadow:0 2px 10px rgba(0,0,0,0.08);
 }
 
-.logo{
-font-size:28px;
+.logo-area{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo-img{
+width:60px;
+height:60px;
+object-fit:contain;
+}
+
+.logo-text{
+font-size:30px;
 font-weight:bold;
-color:#16a34a;
+
+background:linear-gradient(
+90deg,
+#ff004c,
+#ff5e00,
+#ff9a00
+);
+
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
 }
 
 .menu{
@@ -202,8 +228,14 @@ justify-content:center;
 
 <div class="navbar">
 
-<div class="logo">
+<div class="logo-area">
+
+<img src="logo.png" class="logo-img">
+
+<div class="logo-text">
 TOP HOUSE
+</div>
+
 </div>
 
 <div class="menu">
