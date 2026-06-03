@@ -36,6 +36,7 @@ text-decoration:none;
 font-size:20px;
 font-weight:700;
 color:#111;
+transition:.3s;
 }
 
 .back-btn:hover{
@@ -49,7 +50,8 @@ gap:15px;
 }
 
 .logo-area img{
-width:80px;
+width:90px;
+height:auto;
 }
 
 .logo-text h2{
@@ -64,24 +66,26 @@ font-weight:700;
 color:#222;
 }
 
-/* TITOLI */
+/* TITOLO */
 
 .page-title{
-font-size:80px;
+font-size:60px;
 font-weight:900;
-margin-bottom:10px;
+line-height:1;
+margin-bottom:12px;
 }
 
 .title-line{
-width:140px;
+width:500px;
+max-width:100%;
 height:6px;
 background:linear-gradient(90deg,#ff0055,#ff9900);
 border-radius:50px;
 box-shadow:0 4px 10px rgba(255,120,0,.25);
-margin-bottom:40px;
+margin-bottom:35px;
 }
 
-/* BOX PDF */
+/* BOX DOCUMENTI */
 
 .pdf-container{
 background:white;
@@ -129,7 +133,7 @@ font-size:24px;
 }
 
 .name{
-font-size:24px;
+font-size:22px;
 font-weight:700;
 }
 
@@ -137,13 +141,34 @@ font-weight:700;
 font-size:26px;
 }
 
-/* NESSUN PDF */
-
 .empty{
-padding:80px;
+padding:90px;
 text-align:center;
 font-size:22px;
 color:#999;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.top-bar{
+flex-direction:column;
+gap:25px;
+}
+
+.logo-area{
+align-self:flex-start;
+}
+
+.page-title{
+font-size:42px;
+}
+
+.title-line{
+width:250px;
+}
+
 }
 
 </style>
@@ -159,7 +184,8 @@ color:#999;
 </a>
 
 <div class="logo-area">
-<img src="../logo.png">
+
+<img src="../logo.png" alt="TOP HOUSE">
 
 <div class="logo-text">
 <h2>TOP HOUSE</h2>
@@ -176,11 +202,9 @@ color:#999;
 
 <div class="pdf-container">
 
-<!-- ESEMPIO PDF -->
+<!-- ESEMPIO PDF
 
-<!--
-
-<a href="../pdf/nomefile.pdf" class="pdf-item">
+<a href="../pdf/documento.pdf" class="pdf-item">
 
 <div class="left">
 
@@ -189,7 +213,7 @@ color:#999;
 </div>
 
 <div class="name">
-Nome Documento.pdf
+Documento.pdf
 </div>
 
 </div>
