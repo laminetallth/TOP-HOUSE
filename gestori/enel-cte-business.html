@@ -4,16 +4,55 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>ENEL - BUSINESS</title>
+<title>ENEL - CTE BUSINESS</title>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
 
 body{
 background:#f5f5f5;
 padding:40px;
+}
+
+.top-bar{
+display:flex;
+justify-content:space-between;
+align-items:flex-start;
+margin-bottom:30px;
+}
+
+.logo-area{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo-area img{
+width:70px;
+height:auto;
+}
+
+.logo-text h2{
+font-size:28px;
+font-weight:900;
+color:#ff5a00;
+margin:0;
+}
+
+.logo-text p{
+margin:0;
+font-size:15px;
+font-weight:700;
+color:#333;
 }
 
 .back{
@@ -23,31 +62,119 @@ gap:10px;
 text-decoration:none;
 color:#111;
 font-weight:700;
-margin-bottom:30px;
+margin-bottom:20px;
+font-size:18px;
+}
+
+.back:hover{
+color:#ff5500;
 }
 
 h1{
 font-size:55px;
+font-weight:900;
 margin-bottom:30px;
 }
 
-.box{
+.list{
 background:white;
-padding:30px;
 border-radius:30px;
+overflow:hidden;
 box-shadow:0 5px 20px rgba(0,0,0,.05);
 }
 
+.file{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:25px 30px;
+border-bottom:1px solid #eee;
+transition:.3s;
+}
+
+.file:last-child{
+border-bottom:none;
+}
+
+.file:hover{
+background:#fafafa;
+}
+
+.file-left{
+display:flex;
+align-items:center;
+gap:20px;
+}
+
+.file-icon{
+width:55px;
+height:55px;
+border-radius:15px;
+background:linear-gradient(135deg,#ff0055,#ff9900);
+display:flex;
+justify-content:center;
+align-items:center;
+color:white;
+font-size:22px;
+}
+
+.file-name{
+font-size:22px;
+font-weight:800;
+}
+
+.btn{
+background:linear-gradient(135deg,#ff0055,#ff9900);
+color:white;
+text-decoration:none;
+padding:12px 24px;
+border-radius:15px;
+font-weight:700;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
 .empty{
-text-align:center;
 padding:60px;
-color:#777;
+text-align:center;
+color:#888;
 font-size:20px;
 }
+
+@media(max-width:768px){
+
+.top-bar{
+flex-direction:column;
+gap:20px;
+}
+
+.logo-area{
+align-self:flex-start;
+}
+
+h1{
+font-size:40px;
+}
+
+.file{
+flex-direction:column;
+align-items:flex-start;
+gap:20px;
+}
+
+}
+
 </style>
 </head>
 
 <body>
+
+<div class="top-bar">
+
+<div>
 
 <a href="enel-cte.html" class="back">
 <i class="fa-solid fa-arrow-left"></i>
@@ -56,10 +183,53 @@ Torna a CTE
 
 <h1>BUSINESS</h1>
 
-<div class="box">
-<div class="empty">
-Qui inserirai i PDF Business
 </div>
+
+<div class="logo-area">
+
+<img src="../logo.png" alt="TOP HOUSE">
+
+<div class="logo-text">
+<h2>TOP HOUSE</h2>
+<p>casa, energia, fiducia.</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="list">
+
+<div class="empty">
+Nessun PDF caricato
+</div>
+
+<!-- ESEMPIO FUTURO
+
+<div class="file">
+
+<div class="file-left">
+
+<div class="file-icon">
+<i class="fa-solid fa-file-pdf"></i>
+</div>
+
+<div class="file-name">
+Contratto Business.pdf
+</div>
+
+</div>
+
+<a href="pdf/contratto-business.pdf"
+target="_blank"
+class="btn">
+Apri
+</a>
+
+</div>
+
+-->
+
 </div>
 
 </body>
