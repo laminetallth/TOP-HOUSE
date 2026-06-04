@@ -1,263 +1,90 @@
-```html
 <!DOCTYPE html>
 <html lang="it">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>TOP HOUSE - Luce e Gas</title>
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
-
+<title>LUCE E GAS - TOP HOUSE</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
-
-body{
-background:#f5f5f5;
-color:#111;
-padding:40px;
-}
-
-.back-btn{
-display:inline-flex;
-align-items:center;
-gap:10px;
-text-decoration:none;
-color:#111;
-font-weight:700;
-margin-bottom:30px;
-font-size:18px;
-}
-
-.back-btn:hover{
-color:#ff5500;
-}
-
-.title{
-font-size:55px;
-font-weight:900;
-margin-bottom:30px;
-}
-
-.list{
-background:white;
-border-radius:25px;
-overflow:hidden;
-box-shadow:0 5px 20px rgba(0,0,0,.05);
-}
-
-.item{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:24px 30px;
-border-bottom:1px solid #eee;
-cursor:pointer;
-transition:.3s;
-}
-
-.item:hover{
-background:#fafafa;
-}
-
-.left{
-display:flex;
-align-items:center;
-gap:20px;
-}
-
-.icon{
-width:55px;
-height:55px;
-border-radius:15px;
-background:linear-gradient(135deg,#ff0055,#ff9900);
-display:flex;
-justify-content:center;
-align-items:center;
-color:white;
-font-size:24px;
-}
-
-.name{
-font-size:20px;
-font-weight:800;
-}
-
-.arrow{
-font-size:22px;
-}
-
-@media(max-width:800px){
-
-body{
-padding:20px;
-}
-
-.title{
-font-size:38px;
-}
-
-}
-
+    *{ margin:0; padding:0; box-sizing:border-box; font-family:Arial,sans-serif; }
+    body{ background:#f5f5f5; padding:0; }
+    
+    /* Header Stile TOP HOUSE */
+    .header-container{ background:white; padding:20px 40px; display:flex; justify-content:space-between; align-items:center; border-bottom:4px solid #ff5a00; }
+    .logo-area{ display:flex; align-items:center; gap:15px; }
+    .logo-area img{ width:60px; height:auto; }
+    .logo-text h2{ font-size:24px; font-weight:900; color:#ff5a00; margin:0; }
+    .logo-text p{ margin:0; font-size:13px; font-weight:700; color:#333; }
+    
+    .main-content{ padding:40px; }
+    .back{ display:inline-flex; align-items:center; gap:10px; text-decoration:none; color:#111; font-weight:700; margin-bottom:20px; font-size:18px; }
+    .back:hover{ color:#ff5500; }
+    h1{ font-size:55px; font-weight:900; margin-bottom:30px; }
+    
+    .list{ background:white; border-radius:30px; overflow:hidden; box-shadow:0 5px 20px rgba(0,0,0,.05); }
+    .item{ display:flex; justify-content:space-between; align-items:center; padding:30px; border-bottom:1px solid #eee; cursor:pointer; transition:.3s; }
+    .item:last-child{ border-bottom:none; }
+    .item:hover{ background:#fafafa; }
+    .left{ display:flex; align-items:center; gap:20px; }
+    .icon{ width:55px; height:55px; border-radius:15px; background:linear-gradient(135deg,#ff0055,#ff9900); display:flex; justify-content:center; align-items:center; color:white; font-size:24px; }
+    .name{ font-size:24px; font-weight:800; }
+    
+    @media(max-width:768px){ h1{ font-size:42px; } }
 </style>
 </head>
-
 <body>
 
-<a href="index.html" class="back-btn">
-<i class="fa-solid fa-arrow-left"></i>
-Torna ai file
-</a>
-
-<h1 class="title">LUCE E GAS</h1>
-
-<div class="list">
-
-<div class="item" onclick="location.href='gestori/a2a.html'">
-<div class="left">
-<div class="icon"><i class="fa-solid fa-folder"></i></div>
-<div class="name">A2A</div>
-</div>
-<div class="arrow"><i class="fa-solid fa-angle-right"></i></div>
+<div class="header-container">
+    <div class="logo-area">
+        <img src="1000000089.png" alt="TOP HOUSE">
+        <div class="logo-text">
+            <h2>TOP HOUSE</h2>
+            <p>casa, energia, fiducia.</p>
+        </div>
+    </div>
 </div>
 
-<div class="item" onclick="location.href='gestori/acea.html'">
-<div class="left">
-<div class="icon"><i class="fa-solid fa-folder"></i></div>
-<div class="name">ACEA</div>
-</div>
-<div class="arrow"><i class="fa-solid fa-angle-right"></i></div>
-</div>
+<div class="main-content">
+    <a href="../index.html" class="back">
+        <i class="fa-solid fa-arrow-left"></i> Torna alla Home
+    </a>
+    <h1>LUCE E GAS</h1>
 
-<div class="item" onclick="location.href='gestori/alperia.html'">
-<div class="left">
-<div class="icon"><i class="fa-solid fa-folder"></i></div>
-<div class="name">ALPERIA</div>
-</div>
-<div class="arrow"><i class="fa-solid fa-angle-right"></i></div>
-</div>
-
-<div class="item" onclick="location.href='gestori/cogeme.html'">
-<div class="left">
-<div class="icon"><i class="fa-solid fa-folder"></i></div>
-<div class="name">COGEME</div>
-</div>
-<div class="arrow"><i class="fa-solid fa-angle-right"></i></div>
-</div>
-
-<div class="item" onclick="location.href='gestori/duferco.html'">
-<div class="left">
-<div class="icon"><i class="fa-solid fa-folder"></i></div>
-<div class="name">DUFERCO</div>
-</div>
-<div class="arrow"><i class="fa-solid fa-angle-right"></i></div>
-</div>
-
-<div class="item" onclick="location.href='gestori/enel.html'">
-<div class="left">
-<div class="icon"><i class="fa-solid fa-folder"></i></div>
-<div class="name">ENEL</div>
-</div>
-<div class="arrow"><i class="fa-solid fa-angle-right"></i></div>
-</div>
-
-<div class="item" onclick="location.href='gestori/engie.html'">
-<div class="left">
-<div class="icon"><i class="fa-solid fa-folder"></i></div>
-<div class="name">ENGIE</div>
-</div>
-<div class="arrow"><i class="fa-solid fa-angle-right"></i></div>
-</div>
-
-<div class="item" onclick="location.href='gestori/gde.html'">
-<div class="left">
-<div class="icon"><i class="fa-solid fa-folder"></i></div>
-<div class="name">GDE</div>
-</div>
-<div class="arrow"><i class="fa-solid fa-angle-right"></i></div>
-</div>
-
-<div class="item" onclick="location.href='gestori/hera.html'">
-<div class="left">
-<div class="icon"><i class="fa-solid fa-folder"></i></div>
-<div class="name">HERA</div>
-</div>
-<div class="arrow"><i class="fa-solid fa-angle-right"></i></div>
-</div>
-
-<div class="item" onclick="location.href='gestori/iren.html'">
-<div class="left">
-<div class="icon"><i class="fa-solid fa-folder"></i></div>
-<div class="name">IREN</div>
-</div>
-<div class="arrow"><i class="fa-solid fa-angle-right"></i></div>
-</div>
-
-<div class="item" onclick="location.href='gestori/onova.html'">
-<div class="left">
-<div class="icon"><i class="fa-solid fa-folder"></i></div>
-<div class="name">ONOVA</div>
-</div>
-<div class="arrow"><i class="fa-solid fa-angle-right"></i></div>
-</div>
-
-<div class="item" onclick="location.href='gestori/s4.html'">
-<div class="left">
-<div class="icon"><i class="fa-solid fa-folder"></i></div>
-<div class="name">S4</div>
-</div>
-<div class="arrow"><i class="fa-solid fa-angle-right"></i></div>
-</div>
-
-<div class="item" onclick="location.href='gestori/simecom.html'">
-<div class="left">
-<div class="icon"><i class="fa-solid fa-folder"></i></div>
-<div class="name">SIMECOM</div>
-</div>
-<div class="arrow"><i class="fa-solid fa-angle-right"></i></div>
-</div>
-
-<div class="item" onclick="location.href='gestori/sorgenia.html'">
-<div class="left">
-<div class="icon"><i class="fa-solid fa-folder"></i></div>
-<div class="name">SORGENIA</div>
-</div>
-<div class="arrow"><i class="fa-solid fa-angle-right"></i></div>
-</div>
-
-<div class="item" onclick="location.href='gestori/stream.html'">
-<div class="left">
-<div class="icon"><i class="fa-solid fa-folder"></i></div>
-<div class="name">STREAM</div>
-</div>
-<div class="arrow"><i class="fa-solid fa-angle-right"></i></div>
-</div>
-
-<div class="item" onclick="location.href='gestori/unoenergy.html'">
-<div class="left">
-<div class="icon"><i class="fa-solid fa-folder"></i></div>
-<div class="name">UNOENERGY</div>
-</div>
-<div class="arrow"><i class="fa-solid fa-angle-right"></i></div>
-</div>
-
-<div class="item" onclick="location.href='gestori/vivienergia.html'">
-<div class="left">
-<div class="icon"><i class="fa-solid fa-folder"></i></div>
-<div class="name">VIVIENERGIA</div>
-</div>
-<div class="arrow"><i class="fa-solid fa-angle-right"></i></div>
-</div>
-
+    <div class="list">
+        <!-- Esempio di elementi gestori -->
+        <div class="item" onclick="location.href='gestori/sorgenia.html'">
+            <div class="left">
+                <div class="icon"><i class="fa-solid fa-bolt"></i></div>
+                <div class="name">SORGENIA</div>
+            </div>
+            <div class="arrow"><i class="fa-solid fa-angle-right"></i></div>
+        </div>
+        
+        <div class="item" onclick="location.href='gestori/stream.html'">
+            <div class="left">
+                <div class="icon"><i class="fa-solid fa-bolt"></i></div>
+                <div class="name">STREAM</div>
+            </div>
+            <div class="arrow"><i class="fa-solid fa-angle-right"></i></div>
+        </div>
+        
+        <div class="item" onclick="location.href='gestori/unoenergy.html'">
+            <div class="left">
+                <div class="icon"><i class="fa-solid fa-bolt"></i></div>
+                <div class="name">UNOENERGY</div>
+            </div>
+            <div class="arrow"><i class="fa-solid fa-angle-right"></i></div>
+        </div>
+        
+        <div class="item" onclick="location.href='gestori/vivienergia.html'">
+            <div class="left">
+                <div class="icon"><i class="fa-solid fa-bolt"></i></div>
+                <div class="name">VIVI ENERGIA</div>
+            </div>
+            <div class="arrow"><i class="fa-solid fa-angle-right"></i></div>
+        </div>
+    </div>
 </div>
 
 </body>
 </html>
-```
