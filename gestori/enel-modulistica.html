@@ -18,19 +18,22 @@ body{background:#f5f5f5;padding:40px;}
 .page-title{font-size:60px;font-weight:900;line-height:1;margin-bottom:12px;}
 .title-line{width:500px;max-width:100%;height:6px;background:linear-gradient(90deg,#ff0055,#ff9900);border-radius:50px;box-shadow:0 4px 10px rgba(255,120,0,.25);margin-bottom:35px;}
 
-/* Struttura a due colonne per il pannello admin */
 .main-container{display:grid;grid-template-columns:1fr 320px;gap:35px;}
 .pdf-container{background:white;border-radius:35px;box-shadow:0 10px 30px rgba(0,0,0,.05);padding:20px;min-height:200px;}
 .empty{padding:60px;text-align:center;font-size:22px;color:#999;}
 
-/* Stile elementi lista file */
-.file-item{display:flex;align-items:center;justify-content:space-between;padding:20px 25px;border-bottom:1px solid #eee;transition:.3s;text-decoration:none;color:#111;border-radius:15px;}
-.file-item:hover{background:#fafafa;}
-.file-left{display:flex;align-items:center;gap:20px;}
+/* Struttura riga file con pulsanti dedicati */
+.file-item-wrapper{display:flex;align-items:center;justify-content:space-between;padding:15px 25px;border-bottom:1px solid #eee;transition:.3s;border-radius:15px;margin-bottom:5px;}
+.file-item-wrapper:hover{background:#fafafa;}
+.file-link{display:flex;align-items:center;gap:20px;text-decoration:none;color:#111;flex-grow:1;}
 .file-icon{font-size:28px;color:#ff3300;}
 .file-name{font-size:20px;font-weight:700;}
+.action-btns{display:flex;align-items:center;gap:20px;}
+.download-btn{color:#555;font-size:18px;transition:.3s;}
+.download-btn:hover{color:#ff6a00;}
+.delete-btn{color:#cc0000;font-size:18px;cursor:pointer;transition:.3s;border:none;background:none;}
+.delete-btn:hover{color:#ff0000;transform:scale(1.15);}
 
-/* Pannello laterale di caricamento */
 .sidebar-box{background:white;border-radius:25px;padding:30px;box-shadow:0 10px 30px rgba(0,0,0,.05);}
 .sidebar-box h3{margin-bottom:15px;font-size:24px;font-weight:900;}
 .sidebar-input{width:100%;padding:15px;border:1px solid #ddd;border-radius:12px;margin:15px 0;}
@@ -63,7 +66,6 @@ body{background:#f5f5f5;padding:40px;}
     <div class="pdf-container" id="pdfContainer">
         <div class="empty">Caricamento file in corso...</div>
     </div>
-
     <div>
         <div class="sidebar-box">
             <h3>Carica PDF qui</h3>
@@ -89,12 +91,22 @@ async function loadFiles() {
         const files = await response.json(); pdfContainer.innerHTML = '';
         const pdfFiles = files.filter(file => file.name.toLowerCase().endsWith('.pdf'));
         if (pdfFiles.length === 0) { pdfContainer.innerHTML = '<div class="empty">Nessun PDF caricato</div>'; return; }
+        
         pdfFiles.forEach(file => {
-            const fileItem = document.createElement('a');
-            fileItem.href = file.html_url.replace("github.com", "raw.githubusercontent.com").replace("/blob/", "/");
-            fileItem.target = '_blank'; fileItem.className = 'file-item';
-            fileItem.innerHTML = `<div class="file-left"><div class="file-icon"><i class="fa-solid fa-file-pdf"></i></div><div class="file-name">${file.name}</div></div><i class="fa-solid fa-download"></i>`;
-            pdfContainer.appendChild(fileItem);
+            const rawUrl = file.html_url.replace("github.com", "raw.githubusercontent.com").replace("/blob/", "/");
+            const wrapper = document.createElement('div');
+            wrapper.className = 'file-item-wrapper';
+            wrapper.innerHTML = `
+                <a href="${rawUrl}" target="_blank" class="file-link">
+                    <div class="file-icon"><i class="fa-solid fa-file-pdf"></i></div>
+                    <div class="file-name">${file.name}</div>
+                </a>
+                <div class="action-btns">
+                    <a href="${rawUrl}" target="_blank" class="download-btn" title="Visualizza/Scarica"><i class="fa-solid fa-download"></i></a>
+                    <button class="delete-btn" onclick="deleteFile('${file.name}', '${file.sha}')" title="Elimina file"><i class="fa-solid fa-trash-can"></i></button>
+                </div>
+            `;
+            pdfContainer.appendChild(wrapper);
         });
     } catch (error) { pdfContainer.innerHTML = '<div class="empty" style="color: red;">Errore nel recupero dei file.</div>'; }
 }
@@ -118,6 +130,21 @@ async function uploadFile() {
         } catch (error) { alert("Errore di connessione."); }
     };
     reader.readAsDataURL(file);
+}
+
+async function deleteFile(fileName, fileSha) {
+    if (!confirm(`Sei sicuro di voler eliminare definitivamente il file "${fileName}"?`)) return;
+    alert("Eliminazione da GitHub in corso...");
+    const deleteUrl = `https://api.github.com/repos/${OWNER}/${REPO}/contents/${FOLDER_PATH}/${fileName}`;
+    try {
+        const response = await fetch(deleteUrl, {
+            method: "DELETE",
+            headers: { "Authorization": `token ${GITHUB_TOKEN}`, "Content-Type": "application/json" },
+            body: JSON.stringify({ message: `Eliminato PDF: ${fileName}`, sha: fileSha })
+        });
+        if (response.ok) { alert("File eliminato con successo!"); setTimeout(loadFiles, 1500); } 
+        else { const errData = await response.json(); alert("Errore durante l'eliminazione: " + errData.message); }
+    } catch (error) { alert("Errore di connessione durante l'eliminazione."); }
 }
 loadFiles();
 </script>
