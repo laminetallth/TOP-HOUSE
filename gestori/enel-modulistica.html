@@ -22,7 +22,6 @@ body{background:#f5f5f5;padding:40px;}
 .pdf-container{background:white;border-radius:35px;box-shadow:0 10px 30px rgba(0,0,0,.05);padding:20px;min-height:200px;}
 .empty{padding:60px;text-align:center;font-size:22px;color:#999;}
 
-/* Struttura riga file con pulsanti dedicati */
 .file-item-wrapper{display:flex;align-items:center;justify-content:space-between;padding:15px 25px;border-bottom:1px solid #eee;transition:.3s;border-radius:15px;margin-bottom:5px;}
 .file-item-wrapper:hover{background:#fafafa;}
 .file-link{display:flex;align-items:center;gap:20px;text-decoration:none;color:#111;flex-grow:1;}
@@ -108,7 +107,7 @@ async function loadFiles() {
             `;
             pdfContainer.appendChild(wrapper);
         });
-    } catch (error) { pdfContainer.innerHTML = '<div class="empty" style="color: red;">Errore nel recupero dei file.</div>'; }
+    } catch (error) { pdfContainer.innerHTML = '<div class="empty" style="color: red;">Errore nel recupero dei file da GitHub.</div>'; }
 }
 
 async function uploadFile() {
