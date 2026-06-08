@@ -3,90 +3,229 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>A2A - BUSINESS</title>
-
+<title>A2A - CTE BUSINESS</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 <style>
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
 }
-
 body{
-background:#f5f5f5;
-padding:40px;
+    background:#f5f5f5;
+    color:#111;
+    padding:45px;
 }
-
-.logo{
-position:absolute;
-top:30px;
-right:40px;
+.back-btn{
+    text-decoration:none;
+    color:#111;
+    font-weight:700;
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    margin-bottom:25px;
 }
-
-.logo img{
-height:70px;
+.page-title{
+    font-size:60px;
+    font-weight:900;
+    margin-bottom:5px;
+    text-transform:uppercase;
 }
-
-.back{
-display:inline-block;
-margin-bottom:30px;
-text-decoration:none;
-color:black;
-font-weight:bold;
-}
-
-h1{
-font-size:72px;
-font-weight:900;
-margin-bottom:20px;
-}
-
 .line{
-width:500px;
-height:6px;
-background:linear-gradient(90deg, #ff0055, #ff9900);
-border-radius:50px;
-box-shadow:0 4px 10px rgba(255,120,0,.25);
-margin-bottom:40px;
+    width:350px;
+    height:6px;
+    background:linear-gradient(90deg,#ff0055,#ff9900);
+    border-radius:10px;
+    margin-bottom:45px;
 }
-
-.pdf-box{
-background:white;
-border-radius:35px;
-box-shadow:0 10px 30px rgba(0,0,0,.05);
-padding:80px 20px;
-text-align:center;
-font-size:24px;
-color:#999;
+.container{
+    display:grid;
+    grid-template-columns:1fr 320px;
+    gap:35px;
 }
-
-@media(max-width:768px){
-body{ padding:20px; }
-.logo{ position:static; display:flex; justify-content:flex-end; margin-bottom:30px; }
-h1{ font-size:48px; }
-.line{ width:100%; }
-.pdf-box{ font-size:20px; padding:60px 20px; }
+.file-list{
+    background:white;
+    border-radius:25px;
+    padding:40px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.05);
+    min-height:200px;
+}
+.empty-text {
+    text-align:center;
+    color:#999;
+    font-size:20px;
+    padding:40px 0;
+}
+.file-item{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:20px 25px;
+    border-bottom:1px solid #eee;
+    transition:.3s;
+    text-decoration:none;
+    color:#111;
+    border-radius:15px;
+}
+.file-item:hover{
+    background:#fafafa;
+}
+.file-left{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+.file-icon{
+    font-size:28px;
+    color:#ff3300;
+}
+.file-name{
+    font-size:20px;
+    font-weight:700;
+}
+.sidebar-box{
+    background:white;
+    border-radius:25px;
+    padding:30px;
+    margin-bottom:25px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.05);
+}
+.sidebar-box h3{
+    margin-bottom:15px;
+    font-size:24px;
+}
+.sidebar-input{
+    width:100%;
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:12px;
+    margin:15px 0;
+}
+.btn{
+    width:100%;
+    border:none;
+    padding:15px;
+    border-radius:12px;
+    background:linear-gradient(135deg,#ff0055,#ff9900);
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+}
+@media(max-width:1000px){
+    .container{ grid-template-columns:1fr; }
+    .page-title{ font-size:40px; }
 }
 </style>
 </head>
 <body>
 
-<a href="a2a-cte.html" class="back">
-← Torna a CTE
+<a href="a2a-cte.html" class="back-btn">
+    <i class="fa-solid fa-arrow-left"></i> Torna a CTE
 </a>
 
-<div class="logo">
-<img src="../logo.png" alt="TOP HOUSE">
-</div>
-
-<h1>BUSINESS</h1>
-
+<h1 class="page-title">BUSINESS</h1>
 <div class="line"></div>
 
-<div class="pdf-box">
-Nessun PDF caricato
+<div class="container">
+    <div class="file-list" id="pdfContainer">
+        <div class="empty-text">Caricamento file in corso...</div>
+    </div>
+
+    <div>
+        <div class="sidebar-box">
+            <h3>Carica PDF qui</h3>
+            <input type="file" id="fileInput" class="sidebar-input" accept=".pdf">
+            <button class="btn" onclick="uploadFile()">Carica in Business</button>
+        </div>
+    </div>
 </div>
+
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+import { getStorage, ref, uploadBytes, getDownloadURL, listAll } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-storage.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyAestZqgTWKIFjurPdHARcz1Ir4IFcuBug",
+  authDomain: "top-house-4bb50.firebaseapp.com",
+  projectId: "top-house-4bb50",
+  storageBucket: "top-house-4bb50.firebasestorage.app",
+  messagingSenderId: "247177312096",
+  appId: "1:247177312096:web:57a1940fe87133873d9005",
+  measurementId: "G-LDNC97B4GN"
+};
+
+const app = initializeApp(firebaseConfig);
+const storage = getStorage(app);
+
+// Cartella specifica su Firebase Storage per questa pagina
+const folderPath = 'luce_gas/a2a/cte/business/';
+
+// 1. Funzione per mostrare i PDF già caricati
+async function loadFiles() {
+    const pdfContainer = document.getElementById('pdfContainer');
+    const storageRef = ref(storage, folderPath);
+
+    try {
+        const res = await listAll(storageRef);
+        pdfContainer.innerHTML = ''; // Svuota il contenitore
+
+        if (res.items.length === 0) {
+            pdfContainer.innerHTML = '<div class="empty-text">Nessun PDF caricato</div>';
+            return;
+        }
+
+        // Crea graficamente la riga per ogni file trovato
+        for (const itemRef of res.items) {
+            const url = await getDownloadURL(itemRef);
+            
+            const fileItem = document.createElement('a');
+            fileItem.href = url;
+            fileItem.target = '_blank';
+            fileItem.className = 'file-item';
+            
+            fileItem.innerHTML = `
+                <div class="file-left">
+                    <div class="file-icon"><i class="fa-solid fa-file-pdf"></i></div>
+                    <div class="file-name">${itemRef.name}</div>
+                </div>
+                <i class="fa-solid fa-download"></i>
+            `;
+            pdfContainer.appendChild(fileItem);
+        }
+    } catch (error) {
+        console.error(error);
+        pdfContainer.innerHTML = '<div class="empty-text" style="color: red;">Errore nel caricamento dei file.</div>';
+    }
+}
+
+// 2. Funzione per caricare un nuovo PDF
+window.uploadFile = async function() {
+    const fileInput = document.getElementById('fileInput');
+    const file = fileInput.files[0];
+
+    if (!file) {
+        alert("Seleziona un file PDF dal dispositivo!");
+        return;
+    }
+
+    const storageRef = ref(storage, folderPath + file.name);
+
+    try {
+        alert("Caricamento del file in corso... Attendi l'avviso di successo.");
+        await uploadBytes(storageRef, file);
+        alert("Ottimo! File caricato con successo.");
+        fileInput.value = ''; // Resetta il campo
+        loadFiles(); // Ricarica subito la lista aggiornata!
+    } catch (error) {
+        console.error(error);
+        alert("Errore durante il caricamento. Controlla le regole di Firebase.");
+    }
+}
+
+// Avvia la lettura dei file all'apertura della pagina
+loadFiles();
+</script>
 
 </body>
 </html>
