@@ -6,36 +6,42 @@
 <title>TOP HOUSE</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 <style>
-    :root { --primary: #ff5500; --bg: #f8fafc; }
-    * { margin:0; padding:0; box-sizing:border-box; font-family: 'Segoe UI', sans-serif; }
+    * { margin:0; padding:0; box-sizing:border-box; font-family:Arial,sans-serif; }
+    body { background:#f5f5f5; color:#111; }
+
+    header { width:100%; background:white; padding:22px 40px; display:flex; justify-content:space-between; align-items:center; border-radius:0 0 25px 25px; box-shadow:0 5px 20px rgba(0,0,0,0.05); }
+    .logo { display:flex; align-items:center; gap:18px; }
+    .logo img { width:70px; }
+    .logo-text h1 { font-size:42px; background:linear-gradient(90deg,#ff0055,#ff9900); -webkit-background-clip:text; -webkit-text-fill-color:transparent; font-weight:900; }
+    .logo-text p { font-size:18px; font-weight:700; }
     
-    body { 
-        background-color: var(--bg);
-        background-image: radial-gradient(at 0% 0%, rgba(255, 85, 0, 0.03) 0px, transparent 50%),
-                          radial-gradient(at 100% 0%, rgba(255, 0, 85, 0.03) 0px, transparent 50%);
-        color: #333; 
-    }
+    nav { display:flex; gap:45px; }
+    nav a { text-decoration:none; color:#111; font-weight:700; font-size:18px; }
+    .active { color:#ff5500; }
 
-    header { background: white; padding: 20px 50px; display: flex; justify-content: space-between; align-items: center; border-radius: 0 0 25px 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.03); }
-    .logo { display: flex; align-items: center; gap: 15px; }
-    .logo img { width: 50px; }
-    .logo-text h1 { font-size: 28px; background: linear-gradient(90deg,#ff0055,#ff9900); -webkit-background-clip:text; -webkit-text-fill-color:transparent; font-weight:900; }
-    
-    nav { display:flex; gap:30px; }
-    nav a { text-decoration:none; color:#666; font-weight:600; font-size:16px; transition: 0.3s; }
-    nav a.active { color: var(--primary); }
+    .admin { display:flex; align-items:center; gap:12px; font-weight:700; }
+    .admin-icon { width:50px; height:50px; border-radius:50%; background:linear-gradient(135deg,#ff0055,#ff9900); display:flex; justify-content:center; align-items:center; color:white; }
 
-    .container { max-width: 800px; margin: 40px auto; padding: 0 20px; }
-    .page-title { font-size: 24px; font-weight: 700; margin-bottom: 20px; color: #444; }
+    /* Layout centrato e pulito */
+    .container { max-width: 900px; margin: 45px auto; padding: 0 20px; }
+    .page-title { font-size: 60px; font-weight: 900; margin-bottom: 25px; }
 
-    .info-banner { background: white; border-radius: 20px; padding: 20px; margin-bottom: 30px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
-    .info-text p { font-size: 14px; color: #888; }
-    .mini-search { padding: 12px 15px; border-radius: 10px; border: 1px solid #eee; width: 200px; }
+    /* Nuovo Banner Info */
+    .info-banner { background: white; border-radius: 25px; padding: 30px; margin-bottom: 30px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 5px 20px rgba(0,0,0,0.05); }
+    .info-text h3 { margin-bottom: 8px; color: #ff5500; }
+    .mini-search { padding: 15px 20px; border-radius: 12px; border: 1px solid #ddd; width: 300px; font-size: 16px; }
 
-    .file-list { background:white; border-radius:20px; overflow:hidden; box-shadow:0 5px 15px rgba(0,0,0,0.05); }
-    .file-item { display:flex; align-items:center; justify-content:space-between; padding:20px; border-bottom:1px solid #f9f9f9; cursor:pointer; transition: 0.2s; }
-    .file-item:hover { background:#fffaf8; }
-    .file-icon { width:40px; height:40px; border-radius:10px; background:#fff1eb; color:var(--primary); display:flex; align-items:center; justify-content:center; }
+    .file-list { background:white; border-radius:25px; overflow:hidden; box-shadow:0 5px 20px rgba(0,0,0,0.05); }
+    .file-item { display:flex; align-items:center; justify-content:space-between; padding:24px 28px; border-bottom:1px solid #eee; transition:.3s; cursor:pointer; }
+    .file-item:hover { background:#fafafa; }
+    .file-left { display:flex; align-items:center; gap:20px; }
+    .file-icon { width:55px; height:55px; border-radius:15px; background:linear-gradient(135deg,#ff0055,#ff9900); display:flex; justify-content:center; align-items:center; color:white; font-size:24px; }
+    .file-name { font-size:20px; font-weight:800; }
+
+    footer { text-align:center; padding:35px; }
+    footer span { color:#ff5500; font-weight:800; }
+
+    @media(max-width:1000px) { nav { display:none; } .page-title { font-size:40px; } .info-banner { flex-direction: column; gap: 20px; align-items: flex-start; } .mini-search { width: 100%; } }
 </style>
 </head>
 <body>
@@ -43,39 +49,81 @@
 <header>
     <div class="logo">
         <img src="logo.png">
-        <div class="logo-text"><h1>TOP HOUSE</h1></div>
+        <div class="logo-text"><h1>TOP HOUSE</h1><p>casa, energia, fiducia.</p></div>
     </div>
     <nav>
+        <a href="#"><i class="fa-solid fa-house"></i> Dashboard</a>
         <a href="#" class="active"><i class="fa-solid fa-folder"></i> I miei file</a>
         <a href="#"><i class="fa-solid fa-lock"></i> File privati</a>
     </nav>
-    <div style="font-weight:700;"><i class="fa-solid fa-user-circle"></i> Admin</div>
+    <div class="admin">
+        <div class="admin-icon"><i class="fa-solid fa-user"></i></div> Admin
+    </div>
 </header>
 
 <div class="container">
-    <h1 class="page-title">Documenti</h1>
+    <h1 class="page-title">I Miei File</h1>
 
     <div class="info-banner">
         <div class="info-text">
-            <p>I file sono gestiti dagli amministratori. Puoi scaricare tutto in autonomia.</p>
+            <h3><i class="fa-solid fa-circle-info"></i> Info Utili</h3>
+            <p>I file vengono condivisi dagli amministratori. Puoi scaricare tutto in autonomia.</p>
         </div>
-        <input type="text" class="mini-search" placeholder="Cerca...">
+        <input type="text" class="mini-search" placeholder="Cerca file o cartelle...">
     </div>
 
     <div class="file-list">
-        <div class="file-item" onclick="location.href='luce-gas.html'"><div style="display:flex; align-items:center; gap:15px;"><div class="file-icon"><i class="fa-solid fa-fire"></i></div><span style="font-weight:700;">LUCE E GAS</span></div><i class="fa-solid fa-chevron-right" style="color:#ccc;"></i></div>
-        <div class="file-item" onclick="location.href='fotovoltaico.html'"><div style="display:flex; align-items:center; gap:15px;"><div class="file-icon"><i class="fa-solid fa-solar-panel"></i></div><span style="font-weight:700;">FOTOVOLTAICO</span></div><i class="fa-solid fa-chevron-right" style="color:#ccc;"></i></div>
-        <div class="file-item" onclick="location.href='climatizzatore.html'"><div style="display:flex; align-items:center; gap:15px;"><div class="file-icon"><i class="fa-solid fa-snowflake"></i></div><span style="font-weight:700;">CLIMATIZZATORE</span></div><i class="fa-solid fa-chevron-right" style="color:#ccc;"></i></div>
-        <div class="file-item" onclick="location.href='caldaia.html'"><div style="display:flex; align-items:center; gap:15px;"><div class="file-icon"><i class="fa-solid fa-fire-flame-curved"></i></div><span style="font-weight:700;">CALDAIA</span></div><i class="fa-solid fa-chevron-right" style="color:#ccc;"></i></div>
-        <div class="file-item" onclick="location.href='depuratore.html'"><div style="display:flex; align-items:center; gap:15px;"><div class="file-icon"><i class="fa-solid fa-droplet"></i></div><span style="font-weight:700;">DEPURATORE</span></div><i class="fa-solid fa-chevron-right" style="color:#ccc;"></i></div>
-        <div class="file-item" onclick="location.href='infissi.html'"><div style="display:flex; align-items:center; gap:15px;"><div class="file-icon"><i class="fa-solid fa-window-maximize"></i></div><span style="font-weight:700;">INFISSI</span></div><i class="fa-solid fa-chevron-right" style="color:#ccc;"></i></div>
-        <div class="file-item" onclick="location.href='pompe-calore.html'"><div style="display:flex; align-items:center; gap:15px;"><div class="file-icon"><i class="fa-solid fa-fan"></i></div><span style="font-weight:700;">POMPE DI CALORE</span></div><i class="fa-solid fa-chevron-right" style="color:#ccc;"></i></div>
-        <div class="file-item" onclick="location.href='allarmi.html'"><div style="display:flex; align-items:center; gap:15px;"><div class="file-icon"><i class="fa-solid fa-shield-halved"></i></div><span style="font-weight:700;">ALLARMI</span></div><i class="fa-solid fa-chevron-right" style="color:#ccc;"></i></div>
-        <div class="file-item" onclick="location.href='telefonia.html'"><div style="display:flex; align-items:center; gap:15px;"><div class="file-icon"><i class="fa-solid fa-phone"></i></div><span style="font-weight:700;">TELEFONIA</span></div><i class="fa-solid fa-chevron-right" style="color:#ccc;"></i></div>
-        <div class="file-item" onclick="location.href='wall-box.html'"><div style="display:flex; align-items:center; gap:15px;"><div class="file-icon"><i class="fa-solid fa-charging-station"></i></div><span style="font-weight:700;">WALL BOX</span></div><i class="fa-solid fa-chevron-right" style="color:#ccc;"></i></div>
-        <div class="file-item" onclick="location.href='moduli.html'"><div style="display:flex; align-items:center; gap:15px;"><div class="file-icon"><i class="fa-solid fa-file-lines"></i></div><span style="font-weight:700;">MODULI</span></div><i class="fa-solid fa-chevron-right" style="color:#ccc;"></i></div>
+        <!-- Lista File -->
+        <div class="file-item" onclick="window.location.href='luce-gas.html'">
+            <div class="file-left"><div class="file-icon"><i class="fa-solid fa-fire"></i></div><div class="file-name">LUCE E GAS</div></div>
+            <i class="fa-solid fa-angle-right"></i>
+        </div>
+        <div class="file-item" onclick="window.location.href='fotovoltaico.html'">
+            <div class="file-left"><div class="file-icon"><i class="fa-solid fa-solar-panel"></i></div><div class="file-name">FOTOVOLTAICO</div></div>
+            <i class="fa-solid fa-angle-right"></i>
+        </div>
+        <div class="file-item" onclick="window.location.href='climatizzatore.html'">
+            <div class="file-left"><div class="file-icon"><i class="fa-solid fa-snowflake"></i></div><div class="file-name">CLIMATIZZATORE</div></div>
+            <i class="fa-solid fa-angle-right"></i>
+        </div>
+        <div class="file-item" onclick="window.location.href='caldaia.html'">
+            <div class="file-left"><div class="file-icon"><i class="fa-solid fa-fire-flame-curved"></i></div><div class="file-name">CALDAIA</div></div>
+            <i class="fa-solid fa-angle-right"></i>
+        </div>
+        <div class="file-item" onclick="window.location.href='depuratore.html'">
+            <div class="file-left"><div class="file-icon"><i class="fa-solid fa-droplet"></i></div><div class="file-name">DEPURATORE</div></div>
+            <i class="fa-solid fa-angle-right"></i>
+        </div>
+        <div class="file-item" onclick="window.location.href='infissi.html'">
+            <div class="file-left"><div class="file-icon"><i class="fa-solid fa-window-maximize"></i></div><div class="file-name">INFISSI</div></div>
+            <i class="fa-solid fa-angle-right"></i>
+        </div>
+        <div class="file-item" onclick="window.location.href='pompe-calore.html'">
+            <div class="file-left"><div class="file-icon"><i class="fa-solid fa-fan"></i></div><div class="file-name">POMPE DI CALORE</div></div>
+            <i class="fa-solid fa-angle-right"></i>
+        </div>
+        <div class="file-item" onclick="window.location.href='allarmi.html'">
+            <div class="file-left"><div class="file-icon"><i class="fa-solid fa-shield-halved"></i></div><div class="file-name">ALLARMI</div></div>
+            <i class="fa-solid fa-angle-right"></i>
+        </div>
+        <div class="file-item" onclick="window.location.href='telefonia.html'">
+            <div class="file-left"><div class="file-icon"><i class="fa-solid fa-phone"></i></div><div class="file-name">TELEFONIA</div></div>
+            <i class="fa-solid fa-angle-right"></i>
+        </div>
+        <div class="file-item" onclick="window.location.href='wall-box.html'">
+            <div class="file-left"><div class="file-icon"><i class="fa-solid fa-charging-station"></i></div><div class="file-name">WALL BOX</div></div>
+            <i class="fa-solid fa-angle-right"></i>
+        </div>
+        <div class="file-item" onclick="window.location.href='moduli.html'">
+            <div class="file-left"><div class="file-icon"><i class="fa-solid fa-file-lines"></i></div><div class="file-name">MODULI</div></div>
+            <i class="fa-solid fa-angle-right"></i>
+        </div>
     </div>
 </div>
+
+<footer>
+    © 2026 <span>TOP HOUSE</span> - https://www.tophouseitalia.com/
+</footer>
 
 </body>
 </html>
