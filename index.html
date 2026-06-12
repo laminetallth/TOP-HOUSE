@@ -5,49 +5,24 @@
 <title>TOP HOUSE - Dashboard</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 <style>
-    :root {
-        --primary: #ff5500;
-        --glass: rgba(255, 255, 255, 0.8);
-        --bg: #f0f2f5;
-    }
+    :root { --primary: #ff5500; --bg: #f0f2f5; }
     * { margin:0; padding:0; box-sizing:border-box; font-family: 'Segoe UI', sans-serif; }
     body { background: var(--bg); color: #333; }
 
-    /* Header Moderno */
-    header {
-        background: var(--glass);
-        backdrop-filter: blur(10px);
-        padding: 15px 50px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: sticky; top: 0; z-index: 100;
-        border-bottom: 1px solid rgba(0,0,0,0.05);
-    }
+    header { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(10px); padding: 15px 50px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; border-bottom: 1px solid rgba(0,0,0,0.05); }
     .logo { display: flex; align-items: center; gap: 15px; }
     .logo img { width: 50px; }
     .logo h1 { font-size: 24px; background: linear-gradient(to right, #ff0055, #ff9900); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 
-    /* Layout Principale */
     .container { max-width: 1100px; margin: 40px auto; display: grid; grid-template-columns: 1fr 300px; gap: 30px; padding: 0 20px; }
-
-    /* Sezione File */
     .section-title { font-size: 32px; margin-bottom: 20px; }
-    .file-card {
-        background: white;
-        border-radius: 20px;
-        padding: 10px;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-    }
-    .file-item {
-        display: flex; align-items: center; justify-content: space-between;
-        padding: 20px; transition: 0.3s; border-radius: 15px; cursor: pointer;
-    }
+    
+    .file-card { background: white; border-radius: 20px; padding: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+    .file-item { display: flex; align-items: center; justify-content: space-between; padding: 18px 20px; transition: 0.3s; border-radius: 15px; cursor: pointer; border-bottom: 1px solid #f9f9f9; }
     .file-item:hover { background: #fff5f0; }
     .file-left { display: flex; align-items: center; gap: 20px; }
     .icon-box { width: 45px; height: 45px; border-radius: 12px; background: #fff1eb; color: var(--primary); display: flex; align-items: center; justify-content: center; font-size: 20px; }
 
-    /* Sidebar moderna */
     .sidebar-card { background: white; padding: 25px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
     .search-box { width: 100%; padding: 15px; border: 2px solid #eee; border-radius: 15px; margin-bottom: 20px; outline: none; }
     .btn { width: 100%; padding: 15px; border: none; border-radius: 15px; background: linear-gradient(135deg, #ff0055, #ff9900); color: white; font-weight: bold; cursor: pointer; }
@@ -62,25 +37,57 @@
         <img src="logo.png" alt="Logo">
         <div><h1>TOP HOUSE</h1><p style="font-size:12px; font-weight:bold;">casa, energia, fiducia.</p></div>
     </div>
-    <div style="display: flex; align-items: center; gap: 20px; font-weight: bold;">
-        <i class="fa-solid fa-bell"></i>
-        <div style="width:40px; height:40px; background: #333; color:white; border-radius:50%; display:flex; align-items:center; justify-content:center;">A</div>
-    </div>
+    <div style="width:40px; height:40px; background: #333; color:white; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:bold;">A</div>
 </header>
 
 <div class="container">
     <main>
         <h2 class="section-title">I Miei File</h2>
         <div class="file-card">
-            <!-- Esempio di file item -->
             <div class="file-item" onclick="location.href='luce-gas.html'">
-                <div class="file-left">
-                    <div class="icon-box"><i class="fa-solid fa-fire"></i></div>
-                    <span style="font-weight:700;">LUCE E GAS</span>
-                </div>
+                <div class="file-left"><div class="icon-box"><i class="fa-solid fa-fire"></i></div><span style="font-weight:700;">LUCE E GAS</span></div>
                 <i class="fa-solid fa-chevron-right" style="color:#ccc;"></i>
             </div>
-            <!-- ... aggiungere qui gli altri file ... -->
+            <div class="file-item" onclick="location.href='fotovoltaico.html'">
+                <div class="file-left"><div class="icon-box"><i class="fa-solid fa-solar-panel"></i></div><span style="font-weight:700;">FOTOVOLTAICO</span></div>
+                <i class="fa-solid fa-chevron-right" style="color:#ccc;"></i>
+            </div>
+            <div class="file-item" onclick="location.href='climatizzatore.html'">
+                <div class="file-left"><div class="icon-box"><i class="fa-solid fa-snowflake"></i></div><span style="font-weight:700;">CLIMATIZZATORE</span></div>
+                <i class="fa-solid fa-chevron-right" style="color:#ccc;"></i>
+            </div>
+            <div class="file-item" onclick="location.href='caldaia.html'">
+                <div class="file-left"><div class="icon-box"><i class="fa-solid fa-fire-flame-curved"></i></div><span style="font-weight:700;">CALDAIA</span></div>
+                <i class="fa-solid fa-chevron-right" style="color:#ccc;"></i>
+            </div>
+            <div class="file-item" onclick="location.href='depuratore.html'">
+                <div class="file-left"><div class="icon-box"><i class="fa-solid fa-droplet"></i></div><span style="font-weight:700;">DEPURATORE</span></div>
+                <i class="fa-solid fa-chevron-right" style="color:#ccc;"></i>
+            </div>
+            <div class="file-item" onclick="location.href='infissi.html'">
+                <div class="file-left"><div class="icon-box"><i class="fa-solid fa-window-maximize"></i></div><span style="font-weight:700;">INFISSI</span></div>
+                <i class="fa-solid fa-chevron-right" style="color:#ccc;"></i>
+            </div>
+            <div class="file-item" onclick="location.href='pompe-calore.html'">
+                <div class="file-left"><div class="icon-box"><i class="fa-solid fa-fan"></i></div><span style="font-weight:700;">POMPE DI CALORE</span></div>
+                <i class="fa-solid fa-chevron-right" style="color:#ccc;"></i>
+            </div>
+            <div class="file-item" onclick="location.href='allarmi.html'">
+                <div class="file-left"><div class="icon-box"><i class="fa-solid fa-shield-halved"></i></div><span style="font-weight:700;">ALLARMI</span></div>
+                <i class="fa-solid fa-chevron-right" style="color:#ccc;"></i>
+            </div>
+            <div class="file-item" onclick="location.href='telefonia.html'">
+                <div class="file-left"><div class="icon-box"><i class="fa-solid fa-phone"></i></div><span style="font-weight:700;">TELEFONIA</span></div>
+                <i class="fa-solid fa-chevron-right" style="color:#ccc;"></i>
+            </div>
+            <div class="file-item" onclick="location.href='wall-box.html'">
+                <div class="file-left"><div class="icon-box"><i class="fa-solid fa-charging-station"></i></div><span style="font-weight:700;">WALL BOX</span></div>
+                <i class="fa-solid fa-chevron-right" style="color:#ccc;"></i>
+            </div>
+            <div class="file-item" onclick="location.href='moduli.html'">
+                <div class="file-left"><div class="icon-box"><i class="fa-solid fa-file-lines"></i></div><span style="font-weight:700;">MODULI</span></div>
+                <i class="fa-solid fa-chevron-right" style="color:#ccc;"></i>
+            </div>
         </div>
     </main>
 
@@ -91,8 +98,8 @@
             <button class="btn">Cerca</button>
         </div>
         <div class="sidebar-card" style="margin-top:20px; background: #fff5f0;">
-            <h3 style="margin-bottom:10px;">Hai bisogno di aiuto?</h3>
-            <p style="font-size:14px; color:#666;">Il nostro team è a disposizione per chiarimenti.</p>
+            <h3 style="margin-bottom:10px;">Aiuto</h3>
+            <p style="font-size:14px; color:#666;">I file vengono condivisi dagli amministratori. Puoi scaricare qualsiasi documento disponibile.</p>
         </div>
     </aside>
 </div>
