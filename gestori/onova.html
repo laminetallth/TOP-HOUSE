@@ -2,16 +2,161 @@
 <html lang="it">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ONOVA - TOP HOUSE</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<link rel="stylesheet" href="../style.css">
-<script src="../script.js" defer></script>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f5f5f5;
+padding:40px;
+}
+
+.logo{
+position:absolute;
+top:30px;
+right:40px;
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo img{
+height:70px;
+}
+
+.logo-text{
+font-size:18px;
+font-weight:bold;
+line-height:1.3;
+}
+
+.back{
+text-decoration:none;
+color:black;
+font-weight:bold;
+display:inline-block;
+margin-bottom:30px;
+}
+
+h1{
+font-size:72px;
+font-weight:900;
+margin-bottom:20px;
+}
+
+.line{
+width:500px;
+height:6px;
+background:linear-gradient(
+90deg,
+#ff0055,
+#ff9900
+);
+border-radius:50px;
+box-shadow:0 4px 10px rgba(255,120,0,.25);
+margin-bottom:40px;
+}
+
+.box{
+background:white;
+border-radius:35px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,.05);
+}
+
+.item{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:30px;
+font-size:32px;
+font-weight:bold;
+text-decoration:none;
+color:black;
+border-bottom:1px solid #eee;
+}
+
+.item:last-child{
+border-bottom:none;
+}
+
+.arrow{
+font-size:40px;
+}
+
+@media(max-width:768px){
+
+body{
+padding:20px;
+}
+
+h1{
+font-size:48px;
+}
+
+.line{
+width:100%;
+}
+
+.item{
+font-size:24px;
+padding:25px;
+}
+
+.logo{
+position:static;
+margin-bottom:30px;
+justify-content:flex-end;
+}
+
+}
+
+</style>
 </head>
 <body>
-<header class="site-header"><div class="header-inner"><a class="brand" href="../index.html"><img src="../logo.png" alt="TOP HOUSE"><div><h1 class="brand-title">TOP HOUSE</h1><p class="brand-tagline">casa, energia, fiducia.</p></div></a><div class="archive-pill"><span class="pill-icon"><i class="fa-solid fa-folder-tree"></i></span><span>Archivio</span></div></div></header>
-<main class="page"><a class="back" href="../luce-gas.html"><i class="fa-solid fa-arrow-left"></i> Torna ai gestori</a><section class="hero"><h1>ONOVA</h1><p>Documenti disponibili per il gestore.</p><i class="fa-solid fa-folder hero-mark"></i></section><section class="grid"><a class="tile" href="onova-cte.html"><span class="tile-left"><span class="tile-icon"><i class="fa-solid fa-folder"></i></span><span class="tile-name">CTE</span></span><span class="tile-arrow"><i class="fa-solid fa-chevron-right"></i></span></a>
-<a class="tile" href="onova-modulistica.html"><span class="tile-left"><span class="tile-icon"><i class="fa-solid fa-file-lines"></i></span><span class="tile-name">MODULISTICA</span></span><span class="tile-arrow"><i class="fa-solid fa-chevron-right"></i></span></a>
-<a class="tile" href="onova-procedimenti.html"><span class="tile-left"><span class="tile-icon"><i class="fa-solid fa-gears"></i></span><span class="tile-name">PROCEDIMENTI</span></span><span class="tile-arrow"><i class="fa-solid fa-chevron-right"></i></span></a></section></main><footer>© 2026 <span>TOP HOUSE</span></footer>
+
+<a href="../luce-gas.html" class="back">
+← Torna ai gestori
+</a>
+
+<div class="logo">
+<img src="../logo.png">
+<div class="logo-text">
+TOP HOUSE<br>
+casa, energia, fiducia.
+</div>
+</div>
+
+<h1>ONOVA</h1>
+
+<div class="line"></div>
+
+<div class="box">
+
+<a class="item" href="onova-cte.html">
+CTE
+<span class="arrow">›</span>
+</a>
+
+<a class="item" href="onova-modulistica.html">
+MODULISTICA
+<span class="arrow">›</span>
+</a>
+
+<a class="item" href="onova-procedimenti.html">
+PROCEDIMENTI
+<span class="arrow">›</span>
+</a>
+
+</div>
+
 </body>
 </html>
