@@ -1,31 +1,253 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>LUCE E GAS - TOP HOUSE</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<link rel="stylesheet" href="style.css">
-<script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luce e Gas - Versione A</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        body {
+            background: #f5f5f5;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            padding: 40px;
+            margin: 0;
+        }
+
+        .back {
+            display: inline-block;
+            margin-bottom: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        /* Hero Header */
+        .hero {
+            background: linear-gradient(135deg, #ff0055, #ff9900);
+            color: white;
+            padding: 40px;
+            border-radius: 25px;
+            margin-bottom: 30px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            margin: 0 0 10px 0;
+        }
+
+        .hero p {
+            margin: 0;
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+        .hero-icon {
+            position: absolute;
+            right: 40px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 80px;
+            opacity: 0.2;
+        }
+
+        /* Grid Layout */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .item {
+            background: white;
+            padding: 20px;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .left-side {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .icon {
+            width: 45px;
+            height: 45px;
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            background: linear-gradient(135deg, #ff0055, #ff9900);
+        }
+
+        .name {
+            font-size: 18px;
+            font-weight: 700;
+            color: #333;
+        }
+
+        .arrow {
+            color: #ccc;
+        }
+    </style>
 </head>
+
 <body>
-<header class="site-header"><div class="header-inner"><a class="brand" href="index.html"><img src="logo.png" alt="TOP HOUSE"><div><h1 class="brand-title">TOP HOUSE</h1><p class="brand-tagline">casa, energia, fiducia.</p></div></a><div class="archive-pill"><span class="pill-icon"><i class="fa-solid fa-folder-tree"></i></span><span>Archivio</span></div></div></header>
-<main class="page"><a class="back" href="index.html"><i class="fa-solid fa-arrow-left"></i> Torna ai file</a><section class="hero"><h1>LUCE E GAS</h1><p>I gestori disponibili in ordine alfabetico.</p><i class="fa-solid fa-fire hero-mark"></i><form class="search-box" onsubmit="return false"><input data-search-input="gestori" type="search" placeholder="Cerca gestore..."><button aria-label="Cerca"><i class="fa-solid fa-magnifying-glass"></i></button></form></section><section class="grid" data-search-group="gestori"><a class="tile" href="gestori/a2a.html" data-search-item="A2A"><span class="tile-left"><span class="tile-icon"><i class="fa-solid fa-folder"></i></span><span class="tile-name">A2A</span></span><span class="tile-arrow"><i class="fa-solid fa-chevron-right"></i></span></a>
-<a class="tile" href="gestori/acea.html" data-search-item="ACEA"><span class="tile-left"><span class="tile-icon"><i class="fa-solid fa-folder"></i></span><span class="tile-name">ACEA</span></span><span class="tile-arrow"><i class="fa-solid fa-chevron-right"></i></span></a>
-<a class="tile" href="gestori/alperia.html" data-search-item="ALPERIA"><span class="tile-left"><span class="tile-icon"><i class="fa-solid fa-folder"></i></span><span class="tile-name">ALPERIA</span></span><span class="tile-arrow"><i class="fa-solid fa-chevron-right"></i></span></a>
-<a class="tile" href="gestori/cogeme.html" data-search-item="COGEME"><span class="tile-left"><span class="tile-icon"><i class="fa-solid fa-folder"></i></span><span class="tile-name">COGEME</span></span><span class="tile-arrow"><i class="fa-solid fa-chevron-right"></i></span></a>
-<a class="tile" href="gestori/duferco.html" data-search-item="DUFERCO"><span class="tile-left"><span class="tile-icon"><i class="fa-solid fa-folder"></i></span><span class="tile-name">DUFERCO</span></span><span class="tile-arrow"><i class="fa-solid fa-chevron-right"></i></span></a>
-<a class="tile" href="gestori/enel.html" data-search-item="ENEL"><span class="tile-left"><span class="tile-icon"><i class="fa-solid fa-folder"></i></span><span class="tile-name">ENEL</span></span><span class="tile-arrow"><i class="fa-solid fa-chevron-right"></i></span></a>
-<a class="tile" href="gestori/engie.html" data-search-item="ENGIE"><span class="tile-left"><span class="tile-icon"><i class="fa-solid fa-folder"></i></span><span class="tile-name">ENGIE</span></span><span class="tile-arrow"><i class="fa-solid fa-chevron-right"></i></span></a>
-<a class="tile" href="gestori/gde.html" data-search-item="GDE"><span class="tile-left"><span class="tile-icon"><i class="fa-solid fa-folder"></i></span><span class="tile-name">GDE</span></span><span class="tile-arrow"><i class="fa-solid fa-chevron-right"></i></span></a>
-<a class="tile" href="gestori/hera.html" data-search-item="HERA"><span class="tile-left"><span class="tile-icon"><i class="fa-solid fa-folder"></i></span><span class="tile-name">HERA</span></span><span class="tile-arrow"><i class="fa-solid fa-chevron-right"></i></span></a>
-<a class="tile" href="gestori/iren.html" data-search-item="IREN"><span class="tile-left"><span class="tile-icon"><i class="fa-solid fa-folder"></i></span><span class="tile-name">IREN</span></span><span class="tile-arrow"><i class="fa-solid fa-chevron-right"></i></span></a>
-<a class="tile" href="gestori/onova.html" data-search-item="ONOVA"><span class="tile-left"><span class="tile-icon"><i class="fa-solid fa-folder"></i></span><span class="tile-name">ONOVA</span></span><span class="tile-arrow"><i class="fa-solid fa-chevron-right"></i></span></a>
-<a class="tile" href="gestori/s4.html" data-search-item="S4"><span class="tile-left"><span class="tile-icon"><i class="fa-solid fa-folder"></i></span><span class="tile-name">S4</span></span><span class="tile-arrow"><i class="fa-solid fa-chevron-right"></i></span></a>
-<a class="tile" href="gestori/simecom.html" data-search-item="SIMECOM"><span class="tile-left"><span class="tile-icon"><i class="fa-solid fa-folder"></i></span><span class="tile-name">SIMECOM</span></span><span class="tile-arrow"><i class="fa-solid fa-chevron-right"></i></span></a>
-<a class="tile" href="gestori/sorgenia.html" data-search-item="SORGENIA"><span class="tile-left"><span class="tile-icon"><i class="fa-solid fa-folder"></i></span><span class="tile-name">SORGENIA</span></span><span class="tile-arrow"><i class="fa-solid fa-chevron-right"></i></span></a>
-<a class="tile" href="gestori/stream.html" data-search-item="STREAM"><span class="tile-left"><span class="tile-icon"><i class="fa-solid fa-folder"></i></span><span class="tile-name">STREAM</span></span><span class="tile-arrow"><i class="fa-solid fa-chevron-right"></i></span></a>
-<a class="tile" href="gestori/unoenergy.html" data-search-item="UNOENERGY"><span class="tile-left"><span class="tile-icon"><i class="fa-solid fa-folder"></i></span><span class="tile-name">UNOENERGY</span></span><span class="tile-arrow"><i class="fa-solid fa-chevron-right"></i></span></a>
-<a class="tile" href="gestori/vivienergia.html" data-search-item="VIVIENERGIA"><span class="tile-left"><span class="tile-icon"><i class="fa-solid fa-folder"></i></span><span class="tile-name">VIVIENERGIA</span></span><span class="tile-arrow"><i class="fa-solid fa-chevron-right"></i></span></a></section><div class="empty-message" data-empty-for="gestori">Nessun gestore trovato.</div></main><footer>© 2026 <span>TOP HOUSE</span></footer>
+
+    <a class="back" href="index.html">← Torna ai file</a>
+
+    <div class="hero">
+        <h1>LUCE E GAS</h1>
+        <p>I gestori disponibili</p>
+        <div class="hero-icon"><i class="fa-solid fa-fire"></i></div>
+    </div>
+
+    <div class="grid">
+
+        <div class="item" onclick="location.href='gestori/acea.html'">
+            <div class="left-side">
+                <div class="icon"><i class="fa-solid fa-folder"></i></div>
+                <div class="name">ACEA</div>
+            </div>
+            <div class="arrow"><i class="fa-solid fa-chevron-right"></i></div>
+        </div>
+
+        <div class="item" onclick="location.href='gestori/alperia.html'">
+            <div class="left-side">
+                <div class="icon"><i class="fa-solid fa-folder"></i></div>
+                <div class="name">ALPERIA</div>
+            </div>
+            <div class="arrow"><i class="fa-solid fa-chevron-right"></i></div>
+        </div>
+
+        <div class="item" onclick="location.href='gestori/cogeme.html'">
+            <div class="left-side">
+                <div class="icon"><i class="fa-solid fa-folder"></i></div>
+                <div class="name">COGEME</div>
+            </div>
+            <div class="arrow"><i class="fa-solid fa-chevron-right"></i></div>
+        </div>
+
+        <div class="item" onclick="location.href='gestori/duferco.html'">
+            <div class="left-side">
+                <div class="icon"><i class="fa-solid fa-folder"></i></div>
+                <div class="name">DUFERCO</div>
+            </div>
+            <div class="arrow"><i class="fa-solid fa-chevron-right"></i></div>
+        </div>
+
+        <div class="item" onclick="location.href='gestori/enel.html'">
+            <div class="left-side">
+                <div class="icon"><i class="fa-solid fa-folder"></i></div>
+                <div class="name">ENEL</div>
+            </div>
+            <div class="arrow"><i class="fa-solid fa-chevron-right"></i></div>
+        </div>
+
+        <div class="item" onclick="location.href='gestori/engie.html'">
+            <div class="left-side">
+                <div class="icon"><i class="fa-solid fa-folder"></i></div>
+                <div class="name">ENGIE</div>
+            </div>
+            <div class="arrow"><i class="fa-solid fa-chevron-right"></i></div>
+        </div>
+
+        <div class="item" onclick="location.href='gestori/gde.html'">
+            <div class="left-side">
+                <div class="icon"><i class="fa-solid fa-folder"></i></div>
+                <div class="name">GDE</div>
+            </div>
+            <div class="arrow"><i class="fa-solid fa-chevron-right"></i></div>
+        </div>
+
+        <div class="item" onclick="location.href='gestori/hera.html'">
+            <div class="left-side">
+                <div class="icon"><i class="fa-solid fa-folder"></i></div>
+                <div class="name">HERA</div>
+            </div>
+            <div class="arrow"><i class="fa-solid fa-chevron-right"></i></div>
+        </div>
+
+        <div class="item" onclick="location.href='gestori/iren.html'">
+            <div class="left-side">
+                <div class="icon"><i class="fa-solid fa-folder"></i></div>
+                <div class="name">IREN</div>
+            </div>
+            <div class="arrow"><i class="fa-solid fa-chevron-right"></i></div>
+        </div>
+
+        <div class="item" onclick="location.href='gestori/onova.html'">
+            <div class="left-side">
+                <div class="icon"><i class="fa-solid fa-folder"></i></div>
+                <div class="name">ONOVA</div>
+            </div>
+            <div class="arrow"><i class="fa-solid fa-chevron-right"></i></div>
+        </div>
+
+        <div class="item" onclick="location.href='gestori/s4.html'">
+            <div class="left-side">
+                <div class="icon"><i class="fa-solid fa-folder"></i></div>
+                <div class="name">S4</div>
+            </div>
+            <div class="arrow"><i class="fa-solid fa-chevron-right"></i></div>
+        </div>
+
+        <div class="item" onclick="location.href='gestori/simecom.html'">
+            <div class="left-side">
+                <div class="icon"><i class="fa-solid fa-folder"></i></div>
+                <div class="name">SIMECOM</div>
+            </div>
+            <div class="arrow"><i class="fa-solid fa-chevron-right"></i></div>
+        </div>
+
+        <div class="item" onclick="location.href='gestori/sorgenia.html'">
+            <div class="left-side">
+                <div class="icon"><i class="fa-solid fa-folder"></i></div>
+                <div class="name">SORGENIA</div>
+            </div>
+            <div class="arrow"><i class="fa-solid fa-chevron-right"></i></div>
+        </div>
+
+        <div class="item" onclick="location.href='gestori/stream.html'">
+            <div class="left-side">
+                <div class="icon"><i class="fa-solid fa-folder"></i></div>
+                <div class="name">STREAM</div>
+            </div>
+            <div class="arrow"><i class="fa-solid fa-chevron-right"></i></div>
+        </div>
+
+        <div class="item" onclick="location.href='gestori/unoenergy.html'">
+            <div class="left-side">
+                <div class="icon"><i class="fa-solid fa-folder"></i></div>
+                <div class="name">UNOENERGY</div>
+            </div>
+            <div class="arrow"><i class="fa-solid fa-chevron-right"></i></div>
+        </div>
+
+        <div class="item" onclick="location.href='gestori/vivienergia.html'">
+            <div class="left-side">
+                <div class="icon"><i class="fa-solid fa-folder"></i></div>
+                <div class="name">VIVIENERGIA</div>
+            </div>
+            <div class="arrow"><i class="fa-solid fa-chevron-right"></i></div>
+        </div>
+
+    </div>
+
 </body>
 </html>
