@@ -1,0 +1,152 @@
+:root{
+  --th-primary:#ff0055;
+  --th-secondary:#ff9900;
+  --th-dark:#171321;
+  --th-muted:#6f6a7c;
+  --th-surface:rgba(255,255,255,.86);
+  --th-border:rgba(255,255,255,.7);
+  --th-shadow:0 24px 70px rgba(39,24,75,.14);
+  --th-radius:28px;
+}
+
+*{box-sizing:border-box;}
+
+html{scroll-behavior:smooth;}
+
+body{
+  min-height:100vh;
+  color:var(--th-dark)!important;
+  background:
+    radial-gradient(circle at top left, rgba(255,0,85,.13), transparent 34rem),
+    radial-gradient(circle at 85% 8%, rgba(255,153,0,.16), transparent 30rem),
+    linear-gradient(135deg,#fff7fb 0%,#f7f4ff 45%,#fffaf1 100%)!important;
+  font-family:"Segoe UI", Inter, Arial, sans-serif!important;
+}
+
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  background-image:linear-gradient(rgba(255,255,255,.45) 1px, transparent 1px),linear-gradient(90deg, rgba(255,255,255,.45) 1px, transparent 1px);
+  background-size:42px 42px;
+  mask-image:linear-gradient(to bottom, rgba(0,0,0,.45), transparent 72%);
+  z-index:-1;
+}
+
+header,.hero,.box,.pdf-container,.item,.card,.search-box{
+  border:1px solid rgba(255,255,255,.7);
+}
+
+header{
+  position:sticky;
+  top:0;
+  z-index:10;
+  backdrop-filter:blur(18px);
+  background:rgba(255,255,255,.78)!important;
+  box-shadow:0 12px 40px rgba(39,24,75,.10)!important;
+}
+
+.logo img{filter:drop-shadow(0 10px 18px rgba(0,0,0,.12));}
+
+.logo-text h1,h1{
+  letter-spacing:-.045em;
+}
+
+.back{
+  padding:12px 18px;
+  border-radius:999px;
+  background:rgba(255,255,255,.76);
+  color:var(--th-dark)!important;
+  box-shadow:0 10px 30px rgba(39,24,75,.08);
+  transition:transform .2s ease, box-shadow .2s ease, background .2s ease;
+}
+
+.back:hover{transform:translateY(-2px);background:#fff;box-shadow:0 16px 38px rgba(39,24,75,.14);}
+
+.container{width:min(100%,1340px);}
+
+.hero{
+  isolation:isolate;
+  border-radius:36px!important;
+  background:
+    linear-gradient(135deg, rgba(255,0,85,.96), rgba(255,153,0,.94)),
+    radial-gradient(circle at 20% 20%, rgba(255,255,255,.45), transparent 28%)!important;
+  box-shadow:0 28px 80px rgba(255,87,34,.26)!important;
+}
+
+.hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(120deg, rgba(255,255,255,.22), transparent 38%, rgba(255,255,255,.16));
+  z-index:-1;
+}
+
+.hero h1{line-height:.95;text-shadow:0 12px 28px rgba(80,20,20,.18);}
+.hero p{max-width:650px;line-height:1.6;}
+
+.search-box{
+  box-shadow:0 20px 45px rgba(39,24,75,.16);
+}
+
+.search-btn,.archive-icon,.card-icon,.icon{
+  box-shadow:0 12px 28px rgba(255,72,0,.28);
+}
+
+.categories,.grid{align-items:stretch;}
+
+.card,.item,.box,.pdf-container{
+  background:var(--th-surface)!important;
+  box-shadow:var(--th-shadow)!important;
+  backdrop-filter:blur(14px);
+}
+
+.card,.item{
+  position:relative;
+  overflow:hidden;
+}
+
+.card::after,.item::after{
+  content:"";
+  position:absolute;
+  inset:auto -20% -60% -20%;
+  height:80%;
+  background:radial-gradient(circle, rgba(255,153,0,.16), transparent 62%);
+  opacity:0;
+  transition:opacity .25s ease;
+}
+
+.card:hover::after,.item:hover::after{opacity:1;}
+
+.card:hover,.item:hover{
+  transform:translateY(-6px) scale(1.01)!important;
+  box-shadow:0 30px 80px rgba(39,24,75,.18)!important;
+}
+
+.item{border-bottom:1px solid rgba(39,24,75,.08)!important;}
+.item .arrow,.arrow{color:var(--th-primary)!important;transition:transform .2s ease;}
+.item:hover .arrow,.item:hover > .arrow{transform:translateX(6px);}
+
+.line{height:8px!important;max-width:100%;}
+
+.file-card{
+  border:1px solid rgba(39,24,75,.08)!important;
+  box-shadow:0 16px 42px rgba(39,24,75,.10)!important;
+}
+
+button,.btn{
+  transition:transform .2s ease, box-shadow .2s ease, filter .2s ease;
+}
+button:hover,.btn:hover{transform:translateY(-2px);filter:saturate(1.08);}
+
+@media(max-width:768px){
+  body{padding:20px!important;}
+  header{position:relative;border-radius:24px;margin:0 0 22px;padding:18px!important;}
+  .container{padding:10px 0!important;}
+  .hero{padding:34px 24px!important;border-radius:28px!important;}
+  .hero h1,h1{font-size:clamp(38px,12vw,54px)!important;}
+  .grid,.categories{grid-template-columns:1fr!important;gap:16px!important;}
+  .item{font-size:22px!important;padding:22px!important;}
+  .logo{right:20px!important;top:20px!important;}
+}
