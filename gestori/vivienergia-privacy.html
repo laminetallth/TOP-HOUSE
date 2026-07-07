@@ -71,6 +71,7 @@ body{background:#f5f5f5;padding:40px;}
     </div>
 </div>
 
+<script src="../pdf-tools.js"></script>
 <script>
 const OWNER = "laminetallth"; const REPO = "TOP-HOUSE"; 
 const FOLDER_PATH = "documenti/gestori/vivienergia/privacy"; 
@@ -90,19 +91,7 @@ async function loadFiles() {
         
         pdfFiles.forEach(file => {
             const rawUrl = file.html_url.replace("github.com", "raw.githubusercontent.com").replace("/blob/", "/");
-            const wrapper = document.createElement('div');
-            wrapper.className = 'file-item-wrapper';
-            wrapper.innerHTML = `
-                <a href="${rawUrl}" target="_blank" class="file-link">
-                    <div class="file-icon"><i class="fa-solid fa-file-pdf"></i></div>
-                    <div class="file-name">${file.name}</div>
-                </a>
-                <div class="action-btns">
-                    <a href="${rawUrl}" target="_blank" class="download-btn" title="Visualizza/Scarica"><i class="fa-solid fa-download"></i></a>
-                    <button class="delete-btn" onclick="deleteFile('${file.name.replace(/'/g, "\\'")}', '${file.sha}')" title="Elimina file"><i class="fa-solid fa-trash-can"></i></button>
-                </div>
-            `;
-            pdfContainer.appendChild(wrapper);
+            pdfContainer.appendChild(TOPHOUSE_PDF.createPdfListItem(file, { rawUrl, folderPath: FOLDER_PATH, onDelete: 'deleteFile' }));
         });
     } catch (error) { pdfContainer.innerHTML = '<div class="empty" style="color: red;">Errore nel recupero dei file da GitHub.</div>'; }
 }
