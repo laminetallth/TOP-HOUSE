@@ -456,3 +456,108 @@ h1,
   .loader-card img{max-width:132px;height:72px;}
   header .logo img{max-width:82px;height:58px;}
 }
+
+/* Homepage compact header */
+body:not(.archive-page) > header{
+  position:relative;
+  top:auto;
+  z-index:5;
+  min-height:0;
+  max-height:120px;
+  padding:clamp(12px,1.8vw,18px) clamp(18px,4vw,34px)!important;
+  margin:0 auto clamp(16px,2.5vw,24px);
+  border-radius:26px;
+  background:rgba(255,250,244,.9)!important;
+  align-items:center;
+  gap:18px;
+}
+
+body:not(.archive-page) > header .logo{
+  flex:1 1 auto;
+  min-width:0;
+  padding:0;
+  border:0;
+  border-radius:0;
+  background:transparent;
+  box-shadow:none;
+  backdrop-filter:none;
+  gap:clamp(10px,1.6vw,14px);
+}
+
+body:not(.archive-page) > header .logo img{
+  width:auto;
+  max-width:78px;
+  height:clamp(48px,5vw,64px);
+}
+
+body:not(.archive-page) > header .logo-text h1{
+  font-size:clamp(25px,3.4vw,36px)!important;
+  line-height:1;
+  margin:0 0 2px!important;
+  width:auto;
+}
+
+body:not(.archive-page) > header .logo-text p{
+  font-size:clamp(12px,1.3vw,14px);
+  line-height:1.2;
+  margin:0;
+  color:#5f5969;
+}
+
+body:not(.archive-page) > header .archive{
+  flex:0 0 auto;
+  justify-content:center;
+  padding:10px 14px;
+  border-radius:999px;
+  background:rgba(255,255,255,.72);
+  border:1px solid rgba(39,24,75,.08);
+  box-shadow:0 10px 26px rgba(39,24,75,.08);
+  gap:9px;
+  font-size:14px;
+  white-space:nowrap;
+}
+
+body:not(.archive-page) > header .archive-icon{
+  width:34px;
+  height:34px;
+  min-width:34px;
+  border-radius:50%!important;
+  font-size:14px;
+}
+
+@media(max-width:768px){
+  body:not(.archive-page) > header{
+    max-height:none;
+    padding:12px 14px!important;
+    margin-bottom:14px;
+    border-radius:22px;
+    gap:10px;
+  }
+
+  body:not(.archive-page) > header .logo{gap:9px;}
+
+  body:not(.archive-page) > header .logo img{
+    max-width:58px;
+    height:44px;
+  }
+
+  body:not(.archive-page) > header .logo-text h1{font-size:clamp(22px,7vw,28px)!important;}
+
+  body:not(.archive-page) > header .archive{
+    padding:8px 10px;
+    gap:0;
+  }
+
+  body:not(.archive-page) > header .archive span{display:none;}
+
+  body:not(.archive-page) > header .archive-icon{
+    width:32px;
+    height:32px;
+    min-width:32px;
+  }
+}
+
+@media(max-width:420px){
+  body:not(.archive-page) > header .logo-text p{display:none;}
+  body:not(.archive-page) > header .logo img{height:40px;max-width:52px;}
+}
