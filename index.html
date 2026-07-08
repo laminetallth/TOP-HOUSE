@@ -232,6 +232,13 @@ header{
 
 <body>
 
+<div class="top-house-loader" id="topHouseLoader" aria-label="Caricamento TOP HOUSE">
+    <div class="loader-card">
+        <img src="logo.png" alt="TOP HOUSE">
+        <span>Caricamento portale...</span>
+    </div>
+</div>
+
 <header>
 
     <div class="logo">
@@ -258,8 +265,8 @@ header{
         <p>Tutti i documenti condivisi dagli amministratori.</p>
 
         <div class="search-box">
-            <input type="text" placeholder="Cerca cartelle...">
-            <button class="search-btn">
+            <input id="homeSearch" type="search" placeholder="Cerca categorie, modulistica, CTE..." autocomplete="off">
+            <button class="search-btn" id="homeSearchButton" type="button" aria-label="Cerca">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </button>
         </div>
@@ -267,72 +274,73 @@ header{
 
     <div class="categories">
 
-        <div class="card" onclick="location.href='luce-gas.html'">
+        <div class="card" data-search="categorie luce gas energia" data-url="luce-gas.html" onclick="location.href='luce-gas.html'">
             <div class="card-icon"><i class="fa-solid fa-fire"></i></div>
             <h3>LUCE E GAS</h3>
         </div>
 
-        <div class="card" onclick="location.href='fotovoltaico.html'">
+        <div class="card" data-search="categorie fotovoltaico" data-url="fotovoltaico.html" onclick="location.href='fotovoltaico.html'">
             <div class="card-icon"><i class="fa-solid fa-solar-panel"></i></div>
             <h3>FOTOVOLTAICO</h3>
         </div>
 
-        <div class="card" onclick="location.href='climatizzatore.html'">
+        <div class="card" data-search="categorie climatizzatore" data-url="climatizzatore.html" onclick="location.href='climatizzatore.html'">
             <div class="card-icon"><i class="fa-solid fa-snowflake"></i></div>
             <h3>CLIMATIZZATORE</h3>
         </div>
 
-        <div class="card" onclick="location.href='caldaia.html'">
+        <div class="card" data-search="categorie caldaia" data-url="caldaia.html" onclick="location.href='caldaia.html'">
             <div class="card-icon"><i class="fa-solid fa-fire-flame-curved"></i></div>
             <h3>CALDAIA</h3>
         </div>
 
-        <div class="card" onclick="location.href='depuratore.html'">
+        <div class="card" data-search="categorie depuratore" data-url="depuratore.html" onclick="location.href='depuratore.html'">
             <div class="card-icon"><i class="fa-solid fa-droplet"></i></div>
             <h3>DEPURATORE</h3>
         </div>
 
-        <div class="card" onclick="location.href='infissi.html'">
+        <div class="card" data-search="categorie infissi" data-url="infissi.html" onclick="location.href='infissi.html'">
             <div class="card-icon"><i class="fa-solid fa-window-maximize"></i></div>
             <h3>INFISSI</h3>
         </div>
 
-        <div class="card" onclick="location.href='pompe-calore.html'">
+        <div class="card" data-search="categorie pompe di calore" data-url="pompe-calore.html" onclick="location.href='pompe-calore.html'">
             <div class="card-icon"><i class="fa-solid fa-fan"></i></div>
             <h3>POMPE DI CALORE</h3>
         </div>
 
-        <div class="card" onclick="location.href='allarmi.html'">
+        <div class="card" data-search="categorie allarmi" data-url="allarmi.html" onclick="location.href='allarmi.html'">
             <div class="card-icon"><i class="fa-solid fa-shield-halved"></i></div>
             <h3>ALLARMI</h3>
         </div>
 
-        <div class="card" onclick="location.href='telefonia.html'">
+        <div class="card" data-search="categorie telefonia" data-url="telefonia.html" onclick="location.href='telefonia.html'">
             <div class="card-icon"><i class="fa-solid fa-phone"></i></div>
             <h3>TELEFONIA</h3>
         </div>
 
-        <div class="card" onclick="location.href='wall-box.html'">
+        <div class="card" data-search="categorie wall box wallbox" data-url="wall-box.html" onclick="location.href='wall-box.html'">
             <div class="card-icon"><i class="fa-solid fa-charging-station"></i></div>
             <h3>WALL BOX</h3>
         </div>
 
-        <div class="card" onclick="location.href='moduli.html'">
+        <div class="card" data-search="categorie moduli modulistica cte procedimenti privacy" data-url="moduli.html" onclick="location.href='moduli.html'">
             <div class="card-icon"><i class="fa-solid fa-file-lines"></i></div>
             <h3>MODULI</h3>
         </div>
 
-        <div class="card" onclick="location.href='archivio.html'">
+        <div class="card" data-search="archivio preferiti" data-url="archivio.html" onclick="location.href='archivio.html'">
             <div class="card-icon"><i class="fa-solid fa-star"></i></div>
             <h3>ARCHIVIO</h3>
         </div>
 
-        <div class="card" onclick="location.href='login-venditori.html'">
+        <div class="card" data-search="caricamento pdf area caricamento admin upload" data-url="login-venditori.html" onclick="location.href='login-venditori.html'">
             <div class="card-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
             <h3>CARICAMENTO PDF</h3>
         </div>
 
     </div>
+        <p class="search-empty" id="searchEmpty" hidden>Nessun risultato trovato</p>
 
 </div>
 
@@ -340,5 +348,39 @@ header{
     © 2026 <span>TOP HOUSE</span>
 </footer>
 
+<script>
+(function(){
+  const loader = document.getElementById('topHouseLoader');
+  const hideLoader = () => { if (loader) loader.classList.add('is-hidden'); };
+  window.addEventListener('load', () => setTimeout(hideLoader, 450));
+  setTimeout(hideLoader, 1800);
+
+  const input = document.getElementById('homeSearch');
+  const button = document.getElementById('homeSearchButton');
+  const cards = Array.from(document.querySelectorAll('.categories .card'));
+  const empty = document.getElementById('searchEmpty');
+  const normalize = value => value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').trim();
+  function applySearch(){
+    const query = normalize(input.value);
+    let visible = 0;
+    cards.forEach(card => {
+      const text = normalize(`${card.textContent} ${card.dataset.search || ''}`);
+      const match = !query || text.includes(query);
+      card.hidden = !match;
+      if (match) visible += 1;
+    });
+    if (empty) empty.hidden = visible !== 0;
+    return cards.filter(card => !card.hidden);
+  }
+  function openFirstResult(){
+    const results = applySearch();
+    if (results[0]?.dataset.url) window.location.href = results[0].dataset.url;
+  }
+  input?.addEventListener('input', applySearch);
+  input?.addEventListener('keydown', event => { if (event.key === 'Enter') { event.preventDefault(); openFirstResult(); } });
+  button?.addEventListener('click', openFirstResult);
+  applySearch();
+})();
+</script>
 </body>
 </html>
