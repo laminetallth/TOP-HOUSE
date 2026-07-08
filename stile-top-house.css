@@ -396,22 +396,3 @@ h1,
   .file-item-wrapper{grid-template-columns:1fr!important;}
   .action-btns{justify-content:flex-start!important;}
 }
-
-/* Homepage professionale TOP HOUSE */
-a{color:inherit;text-decoration:none;}
-button,input{font:inherit;}
-.home-page{padding:clamp(16px,3vw,34px)!important;background:linear-gradient(135deg,#181818 0%,#2a211d 38%,#fff7ed 38%,#fffaf4 100%)!important;}
-.site-header{position:sticky;top:16px;z-index:20;display:flex;align-items:center;justify-content:space-between;gap:18px;width:min(100%,1320px);margin:0 auto 28px;padding:14px 16px!important;border-radius:28px;background:rgba(255,250,244,.92)!important;border:1px solid rgba(255,255,255,.75);box-shadow:0 18px 55px rgba(0,0,0,.14)!important;backdrop-filter:blur(18px);}
-.brand-link{display:flex;align-items:center;gap:14px;min-width:0;}
-.brand-logo{width:auto!important;height:clamp(54px,7vw,76px)!important;max-width:160px;object-fit:contain;filter:drop-shadow(0 10px 18px rgba(0,0,0,.18));}
-.brand-copy{display:grid;line-height:1.05;}.brand-copy strong{font-size:clamp(22px,3vw,34px);font-weight:950;letter-spacing:-.04em;background:linear-gradient(90deg,#111,#ff4b00 55%,#ff8a00);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;}.brand-copy small{font-weight:800;color:#5b504a;letter-spacing:.01em;}
-.header-actions{display:flex;align-items:center;justify-content:flex-end;gap:10px;flex-wrap:wrap;}
-.pill-link{display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border-radius:999px;background:#171717;color:#fff!important;font-weight:900;box-shadow:0 12px 28px rgba(0,0,0,.18);transition:transform .2s ease,box-shadow .2s ease,background .2s ease;}.pill-link:hover{transform:translateY(-2px);box-shadow:0 18px 38px rgba(0,0,0,.22);background:linear-gradient(135deg,#ff3d00,#ff8a00);}.pill-link.admin-only{background:linear-gradient(135deg,#ff3d00,#ff8a00);}
-.home-hero{min-height:0;padding:clamp(30px,5vw,56px)!important;margin-bottom:26px;background:linear-gradient(135deg,rgba(20,20,20,.96),rgba(54,39,29,.96) 48%,rgba(255,85,0,.9))!important;border:1px solid rgba(255,255,255,.18)!important;box-shadow:0 30px 90px rgba(0,0,0,.22)!important;}
-.home-hero h1{font-size:clamp(44px,7vw,78px)!important;margin:8px 0 10px;line-height:.95;}.home-hero p{font-size:clamp(16px,2vw,20px);color:#fff2e8;max-width:760px;}.eyebrow{display:inline-flex;padding:8px 12px;border-radius:999px;background:rgba(255,255,255,.12);color:#ffe2c8;font-weight:900;text-transform:uppercase;letter-spacing:.08em;font-size:12px;}
-.home-page .search-box{width:min(100%,620px);max-width:none;margin-top:24px;border:1px solid rgba(255,255,255,.4);background:#fff;}.home-page .search-box input{color:#171717;}.search-empty{display:inline-flex;margin-top:14px;padding:10px 14px;border-radius:16px;background:rgba(255,255,255,.16);color:#fff;font-weight:900;}
-.home-page .categories{grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:18px;}.home-page .card{display:flex;min-height:168px;flex-direction:column;align-items:center;justify-content:center;color:#171717!important;border:1px solid rgba(255,255,255,.82);background:rgba(255,255,255,.9)!important;text-decoration:none!important;}.home-page .card h3{font-size:16px;letter-spacing:.02em;}.home-page .card-icon{background:linear-gradient(135deg,#171717,#ff4b00 62%,#ff8a00);}.home-page .card.is-filtered-out{display:none;}
-[hidden]{display:none!important;}.delete-btn{display:none!important;}body.is-admin .delete-btn{display:inline-flex!important;}.sidebar-box,.sidebar-input,#fileInput,#uploadBtn,.upload-btn{ }body.is-venditore .sidebar-box:has(input[type="file"]){display:none!important;}
-footer{color:#6d625c!important;}footer span{color:#ff4b00!important;}
-@media(max-width:760px){.site-header{position:relative;top:auto;align-items:stretch;flex-direction:column;border-radius:24px;}.header-actions{justify-content:stretch;}.pill-link{flex:1;justify-content:center;}.brand-logo{height:58px!important;}.brand-copy strong{font-size:28px;}.home-hero h1{font-size:46px!important;}.home-page .categories{grid-template-columns:1fr 1fr!important;gap:12px!important;}.home-page .card{min-height:145px;padding:18px 10px!important;}.home-page .card-icon{width:62px;height:62px;font-size:24px;}.pill-link span{display:inline!important;}}
-@media(max-width:460px){.home-page .categories{grid-template-columns:1fr!important;}.brand-copy small{display:none;}.pill-link{width:100%;}.header-actions{flex-direction:column;}}

@@ -24,13 +24,6 @@
   <a class="home-link" href="index.html"><i class="fa-solid fa-arrow-left"></i> Torna alla home</a>
 </main>
 <script type="module" src="firebase-login.js"></script>
-<script type="module">
-const message = document.getElementById("loginMessage");
-if (new URLSearchParams(window.location.search).get("denied") === "1") {
-  message.textContent = "Accesso negato: questa area è riservata agli admin.";
-  message.classList.add("error");
-}
-window.TOPHOUSE_AUTH.initLoginForm();
-</script>
+<script type="module">window.TOPHOUSE_AUTH.initLoginForm();</script>
 </body>
 </html>
