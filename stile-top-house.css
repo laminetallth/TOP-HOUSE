@@ -396,3 +396,6 @@ h1,
   .file-item-wrapper{grid-template-columns:1fr!important;}
   .action-btns{justify-content:flex-start!important;}
 }
+
+.top-house-logout{position:fixed;right:18px;top:18px;z-index:9999;border:0;border-radius:999px;padding:10px 14px;background:#111;color:#fff;box-shadow:0 12px 30px rgba(0,0,0,.2);font-weight:800;cursor:pointer;display:flex;gap:10px;align-items:center}.top-house-logout strong{color:#ff9900}.top-house-logout:hover{background:#ff6a00}.top-house-logout:hover strong{color:#fff}
+html[data-user-role="venditore"] .delete-btn,html[data-user-role="venditore"] .sidebar-box,html[data-user-role="venditore"] [data-admin-only]{display:none!important}
