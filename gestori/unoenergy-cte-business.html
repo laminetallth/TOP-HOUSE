@@ -92,8 +92,8 @@ async function loadFiles() {
         if (pdfFiles.length === 0) { pdfContainer.innerHTML = '<div class="empty">Nessun PDF caricato</div>'; return; }
         
         pdfFiles.forEach(file => {
-            const rawUrl = file.html_url.replace("github.com", "raw.githubusercontent.com").replace("/blob/", "/");
-            pdfContainer.appendChild(TOPHOUSE_PDF.createPdfListItem(file, { rawUrl, folderPath: FOLDER_PATH, onDelete: 'deleteFile' }));
+            const downloadUrl = file.html_url.replace("github.com", "raw.githubusercontent.com").replace("/blob/", "/");
+            pdfContainer.appendChild(TOPHOUSE_PDF.createPdfListItem(file, { downloadUrl, folderPath: FOLDER_PATH, onDelete: 'deleteFile' }));
         });
     } catch (error) { pdfContainer.innerHTML = '<div class="empty" style="color: red;">Errore nel recupero dei file da GitHub.</div>'; }
 }
