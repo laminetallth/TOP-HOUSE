@@ -50,7 +50,7 @@ const GITHUB_TOKEN = p1 + p2 + p3 + p4 + p5 + p6;
 const UPLOAD_MAP = {
   a2a:['cte/business','cte/residenziale','modulistica','privacy','procedimenti'], acea:['cte/business','cte/residenziale','modulistica','privacy','procedimenti'], alperia:['cte/business','cte/residenziale','modulistica','privacy','procedimenti'], cogeme:['cte/business','cte/residenziale','modulistica','privacy','procedimenti'], duferco:['cte/business','cte/residenziale','modulistica','privacy','procedimenti'], enel:['cte/business','cte/residenziale','modulistica','privacy','procedimenti'], engie:['cte/business','cte/residenziale','modulistica','privacy','procedimenti'], gde:['cte/business','cte/residenziale','modulistica','privacy','procedimenti'], hera:['cte/business','cte/residenziale','modulistica','privacy','procedimenti'], iren:['cte/business','cte/residenziale','modulistica','privacy','procedimenti'],
   onova:['cte-business','cte-residenziale','modulistica','procedimenti'], s4:['cte-business','cte-residenziale','modulistica','procedimenti'], simecom:['cte-business','cte-residenziale','modulistica','privacy','procedimenti'], sorgenia:['cte-business','cte-residenziale','modulistica','privacy','procedimenti'], stream:['cte-business','cte-residenziale','modulistica','privacy','procedimenti'], union:['cte-business-luce','cte-business-gas','cte-residenziale-luce','cte-residenziale-gas','modulistica','procedimenti'],
-  unoenergy:['cte/business','cte/residenziale','modulistica','privacy','procedimenti'], vivienergia:['cte/business','cte/residenziale','modulistica','privacy','procedimenti']
+  'gestori/unoenergy':['cte/business','cte/residenziale','modulistica','privacy','procedimenti'], 'gestori/vivienergia':['cte/business','cte/residenziale','modulistica','privacy','procedimenti']
 };
 const managerSelect=document.getElementById('managerSelect'), folderSelect=document.getElementById('folderSelect'), fileInput=document.getElementById('fileInput'), dropZone=document.getElementById('dropZone'), fileList=document.getElementById('fileList'), pathPreview=document.getElementById('pathPreview');
 Object.keys(UPLOAD_MAP).sort().forEach(manager => managerSelect.add(new Option(manager.toUpperCase(), manager)));
@@ -60,13 +60,7 @@ function renderFiles(){const files=Array.from(fileInput.files||[]);fileList.inne
 managerSelect.addEventListener('change', refreshFolders); folderSelect.addEventListener('change', refreshPath); refreshFolders();
 dropZone.addEventListener('click',()=>fileInput.click()); dropZone.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();fileInput.click();}}); fileInput.addEventListener('change',renderFiles);
 ['dragenter','dragover'].forEach(type=>dropZone.addEventListener(type,event=>{event.preventDefault();dropZone.classList.add('is-over');})); ['dragleave','drop'].forEach(type=>dropZone.addEventListener(type,event=>{event.preventDefault();dropZone.classList.remove('is-over');}));
-dropZone.addEventListener('drop',event=>{
-  const pdfFiles=[...event.dataTransfer.files].filter(file=>file.name.toLowerCase().endsWith('.pdf'));
-  const transfer=new DataTransfer();
-  pdfFiles.forEach(file=>transfer.items.add(file));
-  fileInput.files=transfer.files;
-  renderFiles();
-});
+dropZone.addEventListener('drop',event=>{fileInput.files=event.dataTransfer.files;renderFiles();});
 document.getElementById('uploadButton').addEventListener('click',async()=>{await TOPHOUSE_UPLOAD.uploadFiles({folderPath:`documenti/${managerSelect.value}/${folderSelect.value}`,overwrite:document.getElementById('overwriteCheckbox').checked,progressElement:document.getElementById('uploadProgress'),statusElement:document.getElementById('uploadStatus')});renderFiles();});
 </script>
 </body>
