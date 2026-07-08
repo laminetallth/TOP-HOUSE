@@ -64,7 +64,7 @@ function renderArchive() {
       </div>
       <div class="archive-actions">
         <button type="button" class="primary preview"><i class="fa-solid fa-eye"></i> Anteprima</button>
-        <a href="${pdf.url}" target="_blank" rel="noopener"><i class="fa-solid fa-download"></i> Apri / Scarica</a>
+        <a href="${TOPHOUSE_PDF.normalizePdf(pdf).downloadUrl}" target="_blank" rel="noopener"><i class="fa-solid fa-download"></i> Apri / Scarica</a>
         <button type="button" class="remove"><i class="fa-solid fa-star"></i> Rimuovi</button>
       </div>`;
     card.querySelector('.preview').addEventListener('click', () => TOPHOUSE_PDF.openPreview(pdf));
