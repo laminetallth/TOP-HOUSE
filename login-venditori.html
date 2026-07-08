@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login venditori | TOP HOUSE</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="stile-top-house.css">
+<style>
+*{box-sizing:border-box;margin:0;padding:0;font-family:Arial,sans-serif}body{min-height:100vh;background:linear-gradient(135deg,#ff0055,#ff9900);display:flex;align-items:center;justify-content:center;padding:24px;color:#111}.login-card{width:min(100%,440px);background:#fff;border-radius:34px;padding:32px;box-shadow:0 24px 70px rgba(0,0,0,.22)}.brand{display:flex;align-items:center;gap:14px;margin-bottom:26px}.brand img{width:74px}.brand h1{font-size:32px;font-weight:900;color:#ff6600}.brand p{font-weight:800;color:#333}.login-card h2{font-size:30px;margin-bottom:8px}.subtitle{color:#666;line-height:1.45;margin-bottom:24px}.field{margin-bottom:16px}.field label{display:block;font-weight:900;margin-bottom:8px}.field input{width:100%;border:1px solid #ddd;border-radius:16px;padding:15px 16px;font-size:16px}.login-btn,.home-link{width:100%;display:inline-flex;align-items:center;justify-content:center;gap:10px;border:0;border-radius:999px;padding:15px 18px;font-weight:900;text-decoration:none;cursor:pointer}.login-btn{background:linear-gradient(135deg,#ff0055,#ff9900);color:#fff;margin-top:8px}.login-btn:disabled{opacity:.65;cursor:wait}.home-link{background:#f7f7f7;color:#111;margin-top:12px}.message{min-height:22px;margin-top:14px;font-weight:800;color:#ff6a00}.message.error{color:#c1121f}
+</style>
+</head>
+<body>
+<main class="login-card">
+  <div class="brand"><img src="logo.png" alt="TOP HOUSE"><div><h1>TOP HOUSE</h1><p>Area venditori</p></div></div>
+  <h2>Accedi</h2>
+  <p class="subtitle">Inserisci le credenziali Firebase abilitate per entrare nel caricamento PDF.</p>
+  <form id="loginForm">
+    <div class="field"><label for="email">Email</label><input id="email" type="email" autocomplete="email" required></div>
+    <div class="field"><label for="password">Password</label><input id="password" type="password" autocomplete="current-password" required></div>
+    <button class="login-btn" type="submit"><i class="fa-solid fa-right-to-bracket"></i> Entra</button>
+    <div id="loginMessage" class="message" aria-live="polite"></div>
+  </form>
+  <a class="home-link" href="index.html"><i class="fa-solid fa-arrow-left"></i> Torna alla home</a>
+</main>
+<script type="module" src="firebase-login.js"></script>
+<script type="module">window.TOPHOUSE_AUTH.initLoginForm();</script>
+</body>
+</html>
