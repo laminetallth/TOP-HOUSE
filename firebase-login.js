@@ -14,7 +14,6 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const loginPath = "login-venditori.html";
-const ADMIN_EMAILS = ["admin@tophouse.it", "admin@top-house.it"];
 
 function setMessage(element, text, isError = false) {
   if (!element) return;
@@ -22,51 +21,16 @@ function setMessage(element, text, isError = false) {
   element.classList.toggle("error", isError);
 }
 
-function roleFromUser(user) {
-  if (!user) return "guest";
-  const email = (user.email || "").toLowerCase();
-  const localRole = localStorage.getItem("tophouseRole");
-  if (localRole === "admin" && (ADMIN_EMAILS.includes(email) || email.startsWith("admin@"))) return "admin";
-  if (ADMIN_EMAILS.includes(email) || email.startsWith("admin@")) return "admin";
-  return "venditore";
-}
-
-function saveRole(user) {
-  const role = roleFromUser(user);
-  localStorage.setItem("tophouseRole", role);
-  document.body?.classList.toggle("is-admin", role === "admin");
-  document.body?.classList.toggle("is-venditore", role === "venditore");
-  return role;
-}
-
-function applyRoleVisibility(role = localStorage.getItem("tophouseRole")) {
-  const isAdmin = role === "admin";
-  document.querySelectorAll(".admin-only").forEach(element => { element.hidden = !isAdmin; });
-  document.body?.classList.toggle("is-admin", isAdmin);
-  document.body?.classList.toggle("is-venditore", role === "venditore");
-}
-
 window.TOPHOUSE_AUTH = {
   auth,
-  requireLogin({ redirectTo = loginPath, adminOnly = false } = {}) {
+  requireLogin({ redirectTo = loginPath } = {}) {
     onAuthStateChanged(auth, user => {
       if (!user) {
         const next = encodeURIComponent(window.location.pathname.split("/").pop() || "admin-caricamento.html");
         window.location.href = `${redirectTo}?next=${next}`;
-        return;
-      }
-      const role = saveRole(user);
-      applyRoleVisibility(role);
-      if (adminOnly && role !== "admin") {
-        window.location.href = `${redirectTo}?denied=1&next=index.html`;
       }
     });
   },
-  requireAdmin(options = {}) {
-    this.requireLogin({ ...options, adminOnly: true });
-  },
-  applyRoleVisibility,
-  isAdminSync() { return localStorage.getItem("tophouseRole") === "admin"; },
   initLoginForm() {
     const form = document.getElementById("loginForm");
     const emailInput = document.getElementById("email");
@@ -76,7 +40,7 @@ window.TOPHOUSE_AUTH = {
     const next = params.get("next") || "admin-caricamento.html";
 
     onAuthStateChanged(auth, user => {
-      if (user) { saveRole(user); window.location.href = next; }
+      if (user) window.location.href = next;
     });
 
     if (!form) return;
@@ -105,7 +69,6 @@ window.TOPHOUSE_AUTH = {
     });
     button.addEventListener("click", async () => {
       await signOut(auth);
-      localStorage.removeItem("tophouseRole");
       window.location.href = loginPath;
     });
   }

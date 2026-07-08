@@ -131,7 +131,7 @@
         <button type="button" class="preview-btn pdf-action-btn" title="Anteprima PDF"><i class="fa-solid fa-eye"></i></button>
         <a href="${pdf.downloadUrl}" target="_blank" class="download-btn pdf-action-btn" title="Visualizza/Scarica" rel="noopener"><i class="fa-solid fa-download"></i></a>
         <button type="button" class="favorite-btn pdf-action-btn" title="Aggiungi ai preferiti"><i class="fa-regular fa-star"></i></button>
-        ${localStorage.getItem('tophouseRole') === 'admin' ? '<button class="delete-btn" title="Elimina file"><i class="fa-solid fa-trash-can"></i></button>' : ''}
+        <button class="delete-btn" title="Elimina file"><i class="fa-solid fa-trash-can"></i></button>
       </div>`;
     wrapper.querySelector('.file-name').textContent = pdf.name;
     wrapper.querySelector('.preview-btn').addEventListener('click', () => openPreview(pdf));
@@ -144,8 +144,7 @@
     };
     favoriteButton.addEventListener('click', () => { toggleFavorite(pdf); refreshFavorite(); });
     refreshFavorite();
-    const deleteButton = wrapper.querySelector('.delete-btn');
-    if (deleteButton) deleteButton.addEventListener('click', () => window[options.onDelete || 'deleteFile'](file.name, file.sha));
+    wrapper.querySelector('.delete-btn').addEventListener('click', () => window[options.onDelete || 'deleteFile'](file.name, file.sha));
     return wrapper;
   }
 
