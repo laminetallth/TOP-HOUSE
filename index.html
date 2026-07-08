@@ -3,90 +3,342 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TOP HOUSE | Hub Documenti</title>
-<link rel="preconnect" href="https://cdnjs.cloudflare.com">
+<title>TOP HOUSE</title>
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+    color:#111;
+}
+
+/* HEADER */
+
+header{
+    background:#fff;
+    padding:20px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 5px 20px rgba(0,0,0,.05);
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo img{
+    width:70px;
+}
+
+.logo-text h1{
+    font-size:42px;
+    font-weight:900;
+    background:linear-gradient(90deg,#ff0055,#ff9900);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.logo-text p{
+    font-size:16px;
+    font-weight:700;
+}
+
+.archive{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    font-weight:700;
+}
+
+.archive-icon{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#ff0055,#ff9900);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#fff;
+    font-size:20px;
+}
+
+/* HERO */
+
+.container{
+    max-width:1300px;
+    margin:auto;
+    padding:35px 20px;
+}
+
+.hero{
+    background:linear-gradient(135deg,#ff0055,#ff9900);
+    border-radius:35px;
+    padding:55px;
+    color:white;
+    margin-bottom:35px;
+    position:relative;
+    overflow:hidden;
+}
+
+.hero::after{
+    content:'';
+    position:absolute;
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    background:rgba(255,255,255,.08);
+    right:-80px;
+    bottom:-80px;
+}
+
+.hero h1{
+    font-size:60px;
+    font-weight:900;
+    margin-bottom:10px;
+}
+
+.hero p{
+    font-size:18px;
+    margin-bottom:25px;
+}
+
+.search-box{
+    max-width:500px;
+    display:flex;
+    background:#fff;
+    padding:6px;
+    border-radius:50px;
+}
+
+.search-box input{
+    flex:1;
+    border:none;
+    outline:none;
+    padding:15px 20px;
+    border-radius:50px;
+    font-size:16px;
+}
+
+.search-btn{
+    width:50px;
+    height:50px;
+    border:none;
+    border-radius:50%;
+    cursor:pointer;
+    color:white;
+    background:linear-gradient(135deg,#ff0055,#ff9900);
+}
+
+/* CATEGORIE */
+
+.categories{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:28px;
+    padding:30px;
+    text-align:center;
+    cursor:pointer;
+    transition:.3s;
+    box-shadow:0 8px 25px rgba(0,0,0,.05);
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+}
+
+.card-icon{
+    width:80px;
+    height:80px;
+    margin:auto;
+    margin-bottom:18px;
+    border-radius:20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:32px;
+    color:white;
+    background:linear-gradient(135deg,#ff0055,#ff9900);
+}
+
+.card h3{
+    font-size:18px;
+    font-weight:800;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:35px;
+    color:#777;
+}
+
+footer span{
+    color:#ff5500;
+    font-weight:800;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+header{
+    padding:20px;
+}
+
+.logo-text h1{
+    font-size:30px;
+}
+
+.logo-text p{
+    display:none;
+}
+
+.hero{
+    padding:35px 25px;
+}
+
+.hero h1{
+    font-size:40px;
+}
+
+.archive span{
+    display:none;
+}
+
+}
+
+</style>
 <link rel="stylesheet" href="stile-top-house.css">
 </head>
-<body class="home-page">
-<div class="top-house-loader" id="pageLoader" aria-hidden="true"><img src="logo.png" alt=""></div>
-<header class="site-header">
-  <a class="brand" href="index.html" aria-label="Homepage TOP HOUSE">
-    <img src="logo.png" alt="TOP HOUSE">
-    <span class="brand-copy"><strong>TOP HOUSE</strong><small>casa. energia. fiducia.</small></span>
-  </a>
-  <nav class="header-actions" aria-label="Azioni rapide">
-    <a class="pill-link" href="archivio.html"><i class="fa-solid fa-star"></i><span>Archivio Preferiti</span></a>
-    <a class="pill-link pill-link--primary" href="login-venditori.html"><i class="fa-solid fa-cloud-arrow-up"></i><span>Carica PDF</span></a>
-  </nav>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <img src="logo.png" alt="TOP HOUSE">
+        <div class="logo-text">
+            <h1>TOP HOUSE</h1>
+            <p>casa, energia, fiducia.</p>
+        </div>
+    </div>
+
+    <a class="archive archive-link" href="archivio.html">
+        <div class="archive-icon">
+            <i class="fa-solid fa-star"></i>
+        </div>
+        <span>Archivio Preferiti</span>
+    </a>
+
 </header>
-<main class="container">
-  <section class="hero home-hero">
-    <div class="hero-content">
-      <span class="eyebrow"><i class="fa-solid fa-bolt"></i> Document control center</span>
-      <h1>I Miei File</h1>
-      <p>Un hub elegante e veloce per trovare documenti, gestori, preferiti e area caricamento PDF senza spostare o cancellare i file già caricati.</p>
-      <form class="search-box" id="homeSearchForm" role="search">
-        <i class="fa-solid fa-magnifying-glass search-leading" aria-hidden="true"></i>
-        <input id="homeSearch" type="search" placeholder="Cerca categoria, gestore o azione..." autocomplete="off">
-        <button class="search-btn" type="submit" aria-label="Cerca"><i class="fa-solid fa-arrow-right"></i></button>
-      </form>
-      <div class="search-suggestions" id="searchSuggestions" aria-live="polite"></div>
+
+<div class="container">
+
+    <div class="hero">
+        <h1>I Miei File</h1>
+        <p>Tutti i documenti condivisi dagli amministratori.</p>
+
+        <div class="search-box">
+            <input type="text" placeholder="Cerca cartelle...">
+            <button class="search-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
     </div>
-    <div class="hero-orb" aria-hidden="true">
-      <img src="logo.png" alt="">
-      <span></span><span></span><span></span>
+
+    <div class="categories">
+
+        <div class="card" onclick="location.href='luce-gas.html'">
+            <div class="card-icon"><i class="fa-solid fa-fire"></i></div>
+            <h3>LUCE E GAS</h3>
+        </div>
+
+        <div class="card" onclick="location.href='fotovoltaico.html'">
+            <div class="card-icon"><i class="fa-solid fa-solar-panel"></i></div>
+            <h3>FOTOVOLTAICO</h3>
+        </div>
+
+        <div class="card" onclick="location.href='climatizzatore.html'">
+            <div class="card-icon"><i class="fa-solid fa-snowflake"></i></div>
+            <h3>CLIMATIZZATORE</h3>
+        </div>
+
+        <div class="card" onclick="location.href='caldaia.html'">
+            <div class="card-icon"><i class="fa-solid fa-fire-flame-curved"></i></div>
+            <h3>CALDAIA</h3>
+        </div>
+
+        <div class="card" onclick="location.href='depuratore.html'">
+            <div class="card-icon"><i class="fa-solid fa-droplet"></i></div>
+            <h3>DEPURATORE</h3>
+        </div>
+
+        <div class="card" onclick="location.href='infissi.html'">
+            <div class="card-icon"><i class="fa-solid fa-window-maximize"></i></div>
+            <h3>INFISSI</h3>
+        </div>
+
+        <div class="card" onclick="location.href='pompe-calore.html'">
+            <div class="card-icon"><i class="fa-solid fa-fan"></i></div>
+            <h3>POMPE DI CALORE</h3>
+        </div>
+
+        <div class="card" onclick="location.href='allarmi.html'">
+            <div class="card-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <h3>ALLARMI</h3>
+        </div>
+
+        <div class="card" onclick="location.href='telefonia.html'">
+            <div class="card-icon"><i class="fa-solid fa-phone"></i></div>
+            <h3>TELEFONIA</h3>
+        </div>
+
+        <div class="card" onclick="location.href='wall-box.html'">
+            <div class="card-icon"><i class="fa-solid fa-charging-station"></i></div>
+            <h3>WALL BOX</h3>
+        </div>
+
+        <div class="card" onclick="location.href='moduli.html'">
+            <div class="card-icon"><i class="fa-solid fa-file-lines"></i></div>
+            <h3>MODULI</h3>
+        </div>
+
+        <div class="card" onclick="location.href='archivio.html'">
+            <div class="card-icon"><i class="fa-solid fa-star"></i></div>
+            <h3>ARCHIVIO</h3>
+        </div>
+
+        <div class="card" onclick="location.href='login-venditori.html'">
+            <div class="card-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+            <h3>CARICAMENTO PDF</h3>
+        </div>
+
     </div>
-  </section>
-  <section class="quick-stats" aria-label="Funzioni principali">
-    <div><strong>Multi PDF</strong><span>Caricamento multiplo</span></div>
-    <div><strong>Preview</strong><span>Anteprima integrata</span></div>
-    <div><strong>Smart Search</strong><span>Ricerca funzionante</span></div>
-  </section>
-  <section class="categories" id="categoryGrid" aria-label="Categorie TOP HOUSE">
-    <a class="card" href="luce-gas.html" data-keywords="luce gas energia gestori bollette"><div class="card-icon"><i class="fa-solid fa-fire"></i></div><h3>LUCE E GAS</h3><p>Gestori, CTE, privacy, modulistica e procedimenti.</p></a>
-    <a class="card" href="fotovoltaico.html" data-keywords="fotovoltaico pannelli solare"><div class="card-icon"><i class="fa-solid fa-solar-panel"></i></div><h3>FOTOVOLTAICO</h3><p>Documenti e schede per soluzioni solari.</p></a>
-    <a class="card" href="climatizzatore.html" data-keywords="climatizzatore clima condizionatore"><div class="card-icon"><i class="fa-solid fa-snowflake"></i></div><h3>CLIMATIZZATORE</h3><p>Area documentale per climatizzazione.</p></a>
-    <a class="card" href="caldaia.html" data-keywords="caldaia riscaldamento"><div class="card-icon"><i class="fa-solid fa-fire-flame-curved"></i></div><h3>CALDAIA</h3><p>Materiali tecnici e commerciali.</p></a>
-    <a class="card" href="depuratore.html" data-keywords="depuratore acqua filtrazione"><div class="card-icon"><i class="fa-solid fa-droplet"></i></div><h3>DEPURATORE</h3><p>Documenti per sistemi acqua.</p></a>
-    <a class="card" href="infissi.html" data-keywords="infissi finestre serramenti"><div class="card-icon"><i class="fa-solid fa-window-maximize"></i></div><h3>INFISSI</h3><p>Archivio per serramenti e infissi.</p></a>
-    <a class="card" href="pompe-calore.html" data-keywords="pompe calore pompa"><div class="card-icon"><i class="fa-solid fa-fan"></i></div><h3>POMPE DI CALORE</h3><p>Soluzioni efficienti e documenti correlati.</p></a>
-    <a class="card" href="allarmi.html" data-keywords="allarmi sicurezza antifurto"><div class="card-icon"><i class="fa-solid fa-shield-halved"></i></div><h3>ALLARMI</h3><p>Area sicurezza e protezione casa.</p></a>
-    <a class="card" href="telefonia.html" data-keywords="telefonia fibra internet telefono"><div class="card-icon"><i class="fa-solid fa-phone"></i></div><h3>TELEFONIA</h3><p>Offerte, moduli e materiali telefonia.</p></a>
-    <a class="card" href="wall-box.html" data-keywords="wall box ricarica auto elettrica"><div class="card-icon"><i class="fa-solid fa-charging-station"></i></div><h3>WALL BOX</h3><p>Documenti per ricarica elettrica.</p></a>
-    <a class="card" href="moduli.html" data-keywords="moduli documenti contratti"><div class="card-icon"><i class="fa-solid fa-file-lines"></i></div><h3>MODULI</h3><p>Modulistica rapida e sempre a portata.</p></a>
-    <a class="card" href="archivio.html" data-keywords="archivio preferiti stellina salvati"><div class="card-icon"><i class="fa-solid fa-star"></i></div><h3>ARCHIVIO</h3><p>Tutti i PDF salvati nei preferiti.</p></a>
-    <a class="card card--featured" href="login-venditori.html" data-keywords="caricamento pdf upload admin venditori"><div class="card-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div><h3>CARICAMENTO PDF</h3><p>Carica più PDF insieme senza toccare quelli già presenti.</p></a>
-  </section>
-</main>
-<footer>© 2026 <span>TOP HOUSE</span> · casa. energia. fiducia.</footer>
-<script>
-const loader=document.getElementById('pageLoader');
-window.addEventListener('load',()=>setTimeout(()=>loader?.classList.add('is-hidden'),450));
-const searchInput=document.getElementById('homeSearch');
-const searchForm=document.getElementById('homeSearchForm');
-const cards=[...document.querySelectorAll('#categoryGrid .card')];
-const suggestions=document.getElementById('searchSuggestions');
-function normalize(value){return value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');}
-function filterCards(){
-  const query=normalize(searchInput.value.trim());
-  let visible=0;
-  cards.forEach(card=>{
-    const haystack=normalize(`${card.textContent} ${card.dataset.keywords||''}`);
-    const match=!query||haystack.includes(query);
-    card.hidden=!match;
-    if(match) visible+=1;
-  });
-  suggestions.innerHTML=query?`${visible} risultato${visible===1?'':'i'} trovato${visible===1?'':'i'}. ${visible?'Premi invio per aprire il primo.':'Prova con “luce”, “pdf”, “archivio” o “caricamento”.'}`:'';
-  return visible;
-}
-searchInput.addEventListener('input',filterCards);
-searchForm.addEventListener('submit',event=>{
-  event.preventDefault();
-  filterCards();
-  const first=cards.find(card=>!card.hidden);
-  if(first) window.location.href=first.href;
-});
-</script>
+
+</div>
+
+<footer>
+    © 2026 <span>TOP HOUSE</span>
+</footer>
+
 </body>
 </html>
