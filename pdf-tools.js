@@ -1,5 +1,15 @@
 (function () {
   const STORAGE_KEY = 'topHousePdfFavorites';
+  const PAGES_BASE_URL = 'https://laminetallth.github.io/TOP-HOUSE/';
+
+  function encodePath(path) {
+    return (path || '').split('/').filter(Boolean).map(encodeURIComponent).join('/');
+  }
+
+  function buildPreviewUrl(folderPath, fileName) {
+    const encodedPath = encodePath([folderPath, fileName].filter(Boolean).join('/'));
+    return encodedPath ? `${PAGES_BASE_URL}${encodedPath}` : '#';
+  }
 
   function safeParse(value, fallback) {
     try { return JSON.parse(value) || fallback; } catch (error) { return fallback; }
@@ -18,7 +28,8 @@
     const parts = folderPath.split('/').filter(Boolean);
     return {
       name: input.name || input.fileName || 'PDF senza nome',
-      url: input.url || input.rawUrl || '#',
+      downloadUrl: input.downloadUrl || input.url || input.rawUrl || '#',
+      previewUrl: input.previewUrl || buildPreviewUrl(folderPath, input.name || input.fileName),
       manager: input.manager || parts[1] || 'TOP HOUSE',
       section: input.section || parts.slice(2).join(' / ') || folderPath || 'Documenti',
       folderPath,
@@ -27,7 +38,7 @@
   }
 
   function favoriteId(pdf) {
-    return `${pdf.url}|${pdf.name}`;
+    return `${pdf.downloadUrl}|${pdf.name}`;
   }
 
   function isFavorite(pdf) {
@@ -68,7 +79,12 @@
             <h2 id="pdfPreviewTitle"></h2>
             <button type="button" class="pdf-modal-close" aria-label="Chiudi anteprima"><i class="fa-solid fa-xmark"></i></button>
           </div>
-          <iframe class="pdf-modal-frame" title="Anteprima PDF"></iframe>
+          <object class="pdf-modal-frame" type="application/pdf">
+            <div class="pdf-modal-fallback">
+              <p>Anteprima non disponibile su questo dispositivo. Apri il PDF in una nuova scheda.</p>
+              <a class="pdf-modal-open-link" target="_blank" rel="noopener">Apri PDF</a>
+            </div>
+          </object>
           <div class="pdf-modal-actions">
             <a class="pdf-modal-download" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Apri / Scarica</a>
           </div>
@@ -79,8 +95,10 @@
       document.addEventListener('keydown', event => { if (event.key === 'Escape') closePreview(); });
     }
     modal.querySelector('#pdfPreviewTitle').textContent = normalized.name;
-    modal.querySelector('.pdf-modal-frame').src = normalized.url;
-    modal.querySelector('.pdf-modal-download').href = normalized.url;
+    const frame = modal.querySelector('.pdf-modal-frame');
+    frame.data = normalized.previewUrl;
+    modal.querySelector('.pdf-modal-open-link').href = normalized.downloadUrl;
+    modal.querySelector('.pdf-modal-download').href = normalized.downloadUrl;
     modal.classList.add('is-open');
     document.body.classList.add('pdf-modal-open');
   }
@@ -89,22 +107,29 @@
     const modal = document.getElementById('pdfPreviewModal');
     if (!modal) return;
     modal.classList.remove('is-open');
-    modal.querySelector('.pdf-modal-frame').src = 'about:blank';
+    modal.querySelector('.pdf-modal-frame').data = 'about:blank';
     document.body.classList.remove('pdf-modal-open');
   }
 
   function createPdfListItem(file, options) {
-    const pdf = normalizePdf({ name: file.name, url: options.rawUrl, folderPath: options.folderPath });
+    const pdf = normalizePdf({
+      name: file.name,
+      downloadUrl: options.downloadUrl || options.rawUrl,
+      previewUrl: options.previewUrl || buildPreviewUrl(options.folderPath, file.name),
+      folderPath: options.folderPath,
+      manager: options.manager,
+      section: options.section
+    });
     const wrapper = document.createElement('div');
     wrapper.className = 'file-item-wrapper';
     wrapper.innerHTML = `
-      <a href="${pdf.url}" target="_blank" class="file-link" rel="noopener">
+      <a href="${pdf.downloadUrl}" target="_blank" class="file-link" rel="noopener">
         <div class="file-icon"><i class="fa-solid fa-file-pdf"></i></div>
         <div class="file-name"></div>
       </a>
       <div class="action-btns">
         <button type="button" class="preview-btn pdf-action-btn" title="Anteprima PDF"><i class="fa-solid fa-eye"></i></button>
-        <a href="${pdf.url}" target="_blank" class="download-btn pdf-action-btn" title="Visualizza/Scarica" rel="noopener"><i class="fa-solid fa-download"></i></a>
+        <a href="${pdf.downloadUrl}" target="_blank" class="download-btn pdf-action-btn" title="Visualizza/Scarica" rel="noopener"><i class="fa-solid fa-download"></i></a>
         <button type="button" class="favorite-btn pdf-action-btn" title="Aggiungi ai preferiti"><i class="fa-regular fa-star"></i></button>
         <button class="delete-btn" title="Elimina file"><i class="fa-solid fa-trash-can"></i></button>
       </div>`;
@@ -123,5 +148,5 @@
     return wrapper;
   }
 
-  window.TOPHOUSE_PDF = { getFavorites, toggleFavorite, removeFavorite, isFavorite, openPreview, closePreview, createPdfListItem, normalizePdf };
+  window.TOPHOUSE_PDF = { getFavorites, toggleFavorite, removeFavorite, isFavorite, openPreview, closePreview, createPdfListItem, normalizePdf, encodePath, buildPreviewUrl };
 })();
