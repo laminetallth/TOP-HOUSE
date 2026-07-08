@@ -69,13 +69,14 @@ body{background:#f5f5f5;padding:40px;}
     <div>
         <div class="sidebar-box">
             <h3>Carica PDF qui</h3>
-            <input type="file" id="fileInput" class="sidebar-input" accept=".pdf">
+            <input type="file" id="fileInput" class="sidebar-input" accept=".pdf" multiple>
             <button class="btn" onclick="uploadFile()">Carica in Procedimenti</button>
         </div>
     </div>
 </div>
 
 <script src="../pdf-tools.js"></script>
+<script src="../upload-pdf.js"></script>
 <script>
 const OWNER = "laminetallth"; const REPO = "TOP-HOUSE"; 
 const FOLDER_PATH = "documenti/iren/procedimenti"; 
@@ -101,25 +102,9 @@ async function loadFiles() {
 }
 
 async function uploadFile() {
-    const fileInput = document.getElementById('fileInput'); const file = fileInput.files[0];
-    if (!file) { alert("Seleziona prima un file PDF!"); return; }
-    alert("Caricamento su GitHub in corso... Attendi l'avviso.");
-    const reader = new FileReader();
-    reader.onload = async function() {
-        const base64Content = reader.result.split(',')[1];
-        const uploadUrl = `https://api.github.com/repos/${OWNER}/${REPO}/contents/${FOLDER_PATH}/${file.name}`;
-        try {
-            const response = await fetch(uploadUrl, {
-                method: "PUT",
-                headers: { "Authorization": `token ${GITHUB_TOKEN}`, "Content-Type": "application/json" },
-                body: JSON.stringify({ message: `Caricato PDF: ${file.name}`, content: base64Content })
-            });
-            if (response.ok) { alert("Ottimo! PDF caricato con successo!"); fileInput.value = ''; setTimeout(loadFiles, 2000); }
-            else { const errData = await response.json(); alert("Errore nel caricamento: " + errData.message); }
-        } catch (error) { alert("Errore di connessione."); }
-    };
-    reader.readAsDataURL(file);
+    await TOPHOUSE_UPLOAD.uploadFiles({ overwrite: true });
 }
+
 
 async function deleteFile(fileName, fileSha) {
     if (!confirm(`Sei sicuro di voler eliminare definitivamente il file "${fileName}"?`)) return;
