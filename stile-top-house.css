@@ -406,7 +406,7 @@ h1,
   align-items:center;
   justify-content:center;
   padding:24px;
-  background:radial-gradient(circle at 50% 35%, rgba(255,122,0,.16), transparent 30rem), linear-gradient(135deg,#111018,#27212d);
+  background:radial-gradient(circle at 82% 22%, rgba(255,238,214,.42), transparent 28rem), linear-gradient(135deg,#e91558 0%,#ff4b2b 48%,#ff8a00 100%);
   opacity:1;
   visibility:visible;
   transition:opacity .35s ease, visibility .35s ease;
