@@ -1,8 +1,10 @@
 (function () {
   const STORAGE_KEY = 'topHousePdfFavorites';
   const PAGES_BASE_URL = 'https://laminetallth.github.io/TOP-HOUSE/';
-  const ALLOWED_EXTENSIONS = ['pdf', 'doc', 'docx', 'xls', 'xlsx', 'ppt', 'pptx', 'jpg', 'jpeg', 'png', 'zip'];
+  const ALLOWED_EXTENSIONS = ['pdf', 'doc', 'docx', 'xls', 'xlsx', 'ppt', 'pptx', 'jpg', 'jpeg', 'png', 'zip', 'mp4', 'mov', 'webm', 'm4v'];
   const IMAGE_EXTENSIONS = ['jpg', 'jpeg', 'png'];
+  const VIDEO_EXTENSIONS = ['mp4', 'mov', 'webm', 'm4v'];
+  const HTML5_VIDEO_EXTENSIONS = ['mp4', 'webm'];
 
   function getExtension(fileName) {
     return String(fileName || '').split('.').pop().toLowerCase();
@@ -14,6 +16,8 @@
 
   function isPdf(fileName) { return getExtension(fileName) === 'pdf'; }
   function isImage(fileName) { return IMAGE_EXTENSIONS.includes(getExtension(fileName)); }
+  function isVideo(fileName) { return VIDEO_EXTENSIONS.includes(getExtension(fileName)); }
+  function canPreviewVideo(fileName) { return HTML5_VIDEO_EXTENSIONS.includes(getExtension(fileName)); }
 
   function getFileIcon(fileName) {
     const ext = getExtension(fileName);
@@ -22,6 +26,7 @@
     if (['xls', 'xlsx'].includes(ext)) return 'fa-file-excel file-icon-excel';
     if (['ppt', 'pptx'].includes(ext)) return 'fa-file-powerpoint file-icon-powerpoint';
     if (IMAGE_EXTENSIONS.includes(ext)) return 'fa-file-image file-icon-image';
+    if (VIDEO_EXTENSIONS.includes(ext)) return 'fa-file-video file-icon-video';
     if (ext === 'zip') return 'fa-file-zipper file-icon-zip';
     return 'fa-file file-icon-generic';
   }
@@ -71,7 +76,7 @@
 
   function openPreview(pdf) {
     const normalized = normalizePdf(pdf);
-    const canPreview = isPdf(normalized.name) || isImage(normalized.name);
+    const canPreview = isPdf(normalized.name) || isImage(normalized.name) || canPreviewVideo(normalized.name);
     if (!canPreview) { window.open(normalized.downloadUrl, '_blank', 'noopener'); return; }
     let modal = document.getElementById('pdfPreviewModal');
     if (!modal) {
@@ -99,6 +104,9 @@
     if (isImage(normalized.name)) {
       content.innerHTML = '<img class="pdf-modal-frame" alt="Anteprima immagine">';
       content.querySelector('img').src = normalized.previewUrl;
+    } else if (canPreviewVideo(normalized.name)) {
+      content.innerHTML = '<video class="pdf-modal-frame" controls preload="metadata"></video>';
+      content.querySelector('video').src = normalized.previewUrl;
     } else {
       content.innerHTML = `<object class="pdf-modal-frame" type="application/pdf"><div class="pdf-modal-fallback"><p>Anteprima non disponibile su questo dispositivo. Apri il documento in una nuova scheda.</p><a class="pdf-modal-open-link" target="_blank" rel="noopener">Apri documento</a></div></object>`;
       const frame = content.querySelector('.pdf-modal-frame');
@@ -121,7 +129,7 @@
 
   function createPdfListItem(file, options) {
     const pdf = normalizePdf({ name: file.name, downloadUrl: options.downloadUrl || options.rawUrl, previewUrl: options.previewUrl || buildPreviewUrl(options.folderPath, file.name), folderPath: options.folderPath, manager: options.manager, section: options.section });
-    const canPreview = isPdf(pdf.name) || isImage(pdf.name);
+    const canPreview = isPdf(pdf.name) || isImage(pdf.name) || canPreviewVideo(pdf.name);
     const wrapper = document.createElement('div');
     wrapper.className = 'file-item-wrapper';
     wrapper.innerHTML = `
@@ -145,5 +153,5 @@
     return wrapper;
   }
 
-  window.TOPHOUSE_PDF = { getFavorites, toggleFavorite, removeFavorite, isFavorite, openPreview, closePreview, createPdfListItem, normalizePdf, encodePath, buildPreviewUrl, getExtension, isAllowedFile, getFileIcon, isPdf, isImage, ALLOWED_EXTENSIONS };
+  window.TOPHOUSE_PDF = { getFavorites, toggleFavorite, removeFavorite, isFavorite, openPreview, closePreview, createPdfListItem, normalizePdf, encodePath, buildPreviewUrl, getExtension, isAllowedFile, getFileIcon, isPdf, isImage, isVideo, canPreviewVideo, ALLOWED_EXTENSIONS };
 })();

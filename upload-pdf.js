@@ -1,5 +1,8 @@
 (function () {
-  const ALLOWED_EXTENSIONS = ['pdf', 'doc', 'docx', 'xls', 'xlsx', 'ppt', 'pptx', 'jpg', 'jpeg', 'png', 'zip'];
+  const ALLOWED_EXTENSIONS = ['pdf', 'doc', 'docx', 'xls', 'xlsx', 'ppt', 'pptx', 'jpg', 'jpeg', 'png', 'zip', 'mp4', 'mov', 'webm', 'm4v'];
+  const VIDEO_EXTENSIONS = ['mp4', 'mov', 'webm', 'm4v'];
+  const VIDEO_MAX_BYTES = 95 * 1024 * 1024;
+  const LARGE_FILE_WARNING_BYTES = 50 * 1024 * 1024;
   const ALLOWED_ACCEPT = ALLOWED_EXTENSIONS.map(ext => `.${ext}`).join(',');
 
   function getExtension(fileName) {
@@ -8,6 +11,25 @@
 
   function isAllowedFile(file) {
     return ALLOWED_EXTENSIONS.includes(getExtension(file.name || file));
+  }
+
+  function isVideoFile(file) {
+    return VIDEO_EXTENSIONS.includes(getExtension(file.name || file));
+  }
+
+  function getSafetyMessage(file) {
+    if (!isAllowedFile(file)) return 'tipo file non consentito';
+    if (isVideoFile(file) && file.size > VIDEO_MAX_BYTES) {
+      return 'Video troppo grande per GitHub. Comprimi il video o caricalo su Drive e inserisci il link.';
+    }
+    return '';
+  }
+
+  function getLargeFileWarning(file) {
+    if (file.size > LARGE_FILE_WARNING_BYTES) {
+      return 'File grande: GitHub potrebbe avere problemi con file oltre 50 MB.';
+    }
+    return '';
   }
 
   function ensureStatusBox() {
@@ -49,13 +71,15 @@
     const counts = results.reduce((acc, item) => { acc[item.status] = (acc[item.status] || 0) + 1; return acc; }, {});
     target.innerHTML = `
       <strong>Riepilogo:</strong>
-      <div>Caricati: ${counts.caricato || 0} · Aggiornati: ${counts.aggiornato || 0} · Duplicati: ${counts.duplicato || 0} · Bloccati: ${counts.bloccato || 0} · Errori: ${counts.errore || 0}</div>
+      <div>Caricati: ${counts.caricato || 0} · Aggiornati: ${counts.aggiornato || 0} · Duplicati: ${counts.duplicato || 0} · Avvisi: ${counts.avviso || 0} · Bloccati: ${counts.bloccato || 0} · Errori: ${counts.errore || 0}</div>
       <ul style="margin:8px 0 0 18px;padding:0;">${results.map(item => `<li><strong>${item.name}</strong>: ${item.status}${item.message ? ` (${item.message})` : ''}</li>`).join('')}</ul>`;
   }
 
   function splitFilesBySafety(fileList) {
     return Array.from(fileList || []).reduce((acc, file) => {
-      (isAllowedFile(file) ? acc.allowed : acc.blocked).push(file);
+      const safetyMessage = getSafetyMessage(file);
+      if (safetyMessage) acc.blocked.push({ file, message: safetyMessage });
+      else acc.allowed.push(file);
       return acc;
     }, { allowed: [], blocked: [] });
   }
@@ -65,7 +89,11 @@
     if (fileInput) fileInput.setAttribute('accept', ALLOWED_ACCEPT);
     const statusBox = options.statusElement || ensureStatusBox();
     const { allowed: files, blocked } = splitFilesBySafety(fileInput?.files || []);
-    const results = blocked.map(file => ({ name: file.name, status: 'bloccato', message: 'tipo file non consentito' }));
+    const results = blocked.map(item => ({ name: item.file.name, status: 'bloccato', message: item.message }));
+    files.forEach(file => {
+      const warning = getLargeFileWarning(file);
+      if (warning) results.push({ name: file.name, status: 'avviso', message: warning });
+    });
     if (!files.length) {
       if (statusBox && results.length) renderSummary(results, statusBox);
       else alert(`Seleziona almeno un file consentito (${ALLOWED_ACCEPT}).`);
@@ -115,5 +143,5 @@
     document.querySelectorAll('input[type="file"]').forEach(input => input.setAttribute('accept', ALLOWED_ACCEPT));
   });
 
-  window.TOPHOUSE_UPLOAD = { uploadFiles, renderSummary, isAllowedFile, splitFilesBySafety, ALLOWED_EXTENSIONS, ALLOWED_ACCEPT };
+  window.TOPHOUSE_UPLOAD = { uploadFiles, renderSummary, isAllowedFile, isVideoFile, splitFilesBySafety, ALLOWED_EXTENSIONS, ALLOWED_ACCEPT, VIDEO_MAX_BYTES, LARGE_FILE_WARNING_BYTES };
 })();
