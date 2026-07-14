@@ -25,7 +25,7 @@ body{padding:0;}
 <main class="container">
   <section class="archive-hero">
     <h1>Archivio Preferiti</h1>
-    <p>Ritrova rapidamente tutti i PDF salvati con la stellina.</p>
+    <p>Ritrova rapidamente tutti i documenti salvati con la stellina.</p>
   </section>
   <section class="archive-toolbar" aria-label="Ricerca preferiti">
     <input id="archiveSearch" class="archive-search" type="search" placeholder="Cerca per nome file, gestore o sezione...">
@@ -48,7 +48,7 @@ function renderArchive() {
   list.innerHTML = '';
   if (favorites.length === 0) {
     list.className = '';
-    list.innerHTML = '<div class="archive-empty"><i class="fa-regular fa-star"></i><br>Nessun PDF salvato nei preferiti.</div>';
+    list.innerHTML = '<div class="archive-empty"><i class="fa-regular fa-star"></i><br>Nessun documento salvato nei preferiti.</div>';
     return;
   }
   list.className = 'archive-grid';
@@ -56,7 +56,7 @@ function renderArchive() {
     const card = document.createElement('article');
     card.className = 'archive-card';
     card.innerHTML = `
-      <h3><i class="fa-solid fa-file-pdf" style="color:#ff3300"></i> ${pdf.name}</h3>
+      <h3><i class="fa-solid ${TOPHOUSE_PDF.getFileIcon(pdf.name)}"></i> ${pdf.name}</h3>
       <div class="archive-meta">
         <span><strong>Gestore:</strong> ${pdf.manager}</span>
         <span><strong>Sezione:</strong> ${pdf.section}</span>

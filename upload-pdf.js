@@ -1,4 +1,15 @@
 (function () {
+  const ALLOWED_EXTENSIONS = ['pdf', 'doc', 'docx', 'xls', 'xlsx', 'ppt', 'pptx', 'jpg', 'jpeg', 'png', 'zip'];
+  const ALLOWED_ACCEPT = ALLOWED_EXTENSIONS.map(ext => `.${ext}`).join(',');
+
+  function getExtension(fileName) {
+    return String(fileName || '').split('.').pop().toLowerCase();
+  }
+
+  function isAllowedFile(file) {
+    return ALLOWED_EXTENSIONS.includes(getExtension(file.name || file));
+  }
+
   function ensureStatusBox() {
     let box = document.getElementById('uploadStatus');
     if (!box) {
@@ -38,24 +49,36 @@
     const counts = results.reduce((acc, item) => { acc[item.status] = (acc[item.status] || 0) + 1; return acc; }, {});
     target.innerHTML = `
       <strong>Riepilogo:</strong>
-      <div>Caricati: ${counts.caricato || 0} · Aggiornati: ${counts.aggiornato || 0} · Duplicati: ${counts.duplicato || 0} · Errori: ${counts.errore || 0}</div>
+      <div>Caricati: ${counts.caricato || 0} · Aggiornati: ${counts.aggiornato || 0} · Duplicati: ${counts.duplicato || 0} · Bloccati: ${counts.bloccato || 0} · Errori: ${counts.errore || 0}</div>
       <ul style="margin:8px 0 0 18px;padding:0;">${results.map(item => `<li><strong>${item.name}</strong>: ${item.status}${item.message ? ` (${item.message})` : ''}</li>`).join('')}</ul>`;
+  }
+
+  function splitFilesBySafety(fileList) {
+    return Array.from(fileList || []).reduce((acc, file) => {
+      (isAllowedFile(file) ? acc.allowed : acc.blocked).push(file);
+      return acc;
+    }, { allowed: [], blocked: [] });
   }
 
   async function uploadFiles(options) {
     const fileInput = document.getElementById(options.inputId || 'fileInput');
+    if (fileInput) fileInput.setAttribute('accept', ALLOWED_ACCEPT);
     const statusBox = options.statusElement || ensureStatusBox();
-    const files = Array.from(fileInput?.files || []).filter(file => file.name.toLowerCase().endsWith('.pdf'));
-    if (!files.length) { alert('Seleziona almeno un file PDF.'); return []; }
+    const { allowed: files, blocked } = splitFilesBySafety(fileInput?.files || []);
+    const results = blocked.map(file => ({ name: file.name, status: 'bloccato', message: 'tipo file non consentito' }));
+    if (!files.length) {
+      if (statusBox && results.length) renderSummary(results, statusBox);
+      else alert(`Seleziona almeno un file consentito (${ALLOWED_ACCEPT}).`);
+      return results;
+    }
 
     const owner = options.owner || window.OWNER || OWNER;
     const repo = options.repo || window.REPO || REPO;
     const folderPath = options.folderPath || window.FOLDER_PATH || FOLDER_PATH;
     const overwrite = Boolean(options.overwrite);
     const progress = options.progressElement;
-    const results = [];
 
-    if (statusBox) statusBox.innerHTML = `Caricamento di ${files.length} PDF in corso...`;
+    if (statusBox) statusBox.innerHTML = `Caricamento di ${files.length} file in corso...`;
     for (let index = 0; index < files.length; index += 1) {
       const file = files[index];
       if (progress) progress.value = Math.round((index / files.length) * 100);
@@ -67,7 +90,7 @@
           continue;
         }
         const content = await readAsBase64(file);
-        const body = { message: `${existingSha ? 'Aggiornato' : 'Caricato'} PDF: ${file.name}`, content };
+        const body = { message: `${existingSha ? 'Aggiornato' : 'Caricato'} file: ${file.name}`, content };
         if (existingSha) body.sha = existingSha;
         const response = await fetch(uploadUrl, { method: 'PUT', headers: headers(), body: JSON.stringify(body) });
         if (!response.ok) {
@@ -78,7 +101,7 @@
       } catch (error) {
         results.push({ name: file.name, status: 'errore', message: error.message || 'errore sconosciuto' });
       }
-      if (statusBox) statusBox.textContent = `Elaborati ${index + 1} di ${files.length} PDF...`;
+      if (statusBox) statusBox.textContent = `Elaborati ${index + 1} di ${files.length} file...`;
     }
     if (progress) progress.value = 100;
     if (statusBox) renderSummary(results, statusBox);
@@ -88,5 +111,9 @@
     return results;
   }
 
-  window.TOPHOUSE_UPLOAD = { uploadFiles, renderSummary };
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('input[type="file"]').forEach(input => input.setAttribute('accept', ALLOWED_ACCEPT));
+  });
+
+  window.TOPHOUSE_UPLOAD = { uploadFiles, renderSummary, isAllowedFile, splitFilesBySafety, ALLOWED_EXTENSIONS, ALLOWED_ACCEPT };
 })();

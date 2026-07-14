@@ -16,13 +16,13 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const storage = getStorage(app);
 
-// Questa è la funzione magica che fa funzionare il pulsante "Carica PDF" del tuo index.html
+// Questa è la funzione magica che fa funzionare il pulsante "Carica file" del tuo index.html
 window.uploadFile = async function() {
     const fileInput = document.getElementById('fileInput');
     const file = fileInput.files[0];
 
     if (!file) {
-        alert("Per favore, seleziona prima un file PDF dal tablet!");
+        alert("Per favore, seleziona prima un file dal tablet!");
         return;
     }
 

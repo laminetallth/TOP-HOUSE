@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Caricamento PDF | TOP HOUSE</title>
+<title>Caricamento file | TOP HOUSE</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <link rel="stylesheet" href="stile-top-house.css">
 <style>
@@ -18,17 +18,17 @@
   <button class="home-btn" id="logoutButton" type="button" hidden><i class="fa-solid fa-right-from-bracket"></i> Esci</button>
   <div class="brand"><img src="logo.png" alt="TOP HOUSE"><div><h2>TOP HOUSE</h2><p>casa, energia, fiducia.</p></div></div>
 </div>
-<section class="hero"><h1>Caricamento PDF</h1><p>Carica o aggiorna tanti PDF insieme scegliendo gestore e cartella. I documenti esistenti non vengono spostati, rinominati o cancellati.</p></section>
+<section class="hero"><h1>Caricamento file</h1><p>Carica o aggiorna tanti file insieme scegliendo gestore e cartella. I documenti esistenti non vengono spostati, rinominati o cancellati.</p></section>
 <main class="panel">
   <section class="card">
     <div class="select-grid">
       <div><label for="managerSelect">Gestore</label><select id="managerSelect"></select></div>
       <div><label for="folderSelect">Sezione / cartella</label><select id="folderSelect"></select></div>
     </div>
-    <div id="dropZone" class="drop-zone" tabindex="0" role="button" aria-label="Seleziona o trascina PDF">
-      <div><i class="fa-solid fa-cloud-arrow-up"></i><h3>Trascina qui i PDF</h3><p>Oppure clicca per selezionare più file insieme.</p></div>
+    <div id="dropZone" class="drop-zone" tabindex="0" role="button" aria-label="Seleziona o trascina file">
+      <div><i class="fa-solid fa-cloud-arrow-up"></i><h3>Trascina qui i file</h3><p>Oppure clicca per selezionare più file insieme.</p></div>
     </div>
-    <input type="file" id="fileInput" class="hidden-input" accept=".pdf" multiple>
+    <input type="file" id="fileInput" class="hidden-input" accept=".pdf,.doc,.docx,.xls,.xlsx,.ppt,.pptx,.jpg,.jpeg,.png,.zip" multiple>
     <div class="actions">
       <button class="btn" id="uploadButton" type="button"><i class="fa-solid fa-upload"></i> Carica tutti</button>
       <label class="checkbox"><input type="checkbox" id="overwriteCheckbox"> Sovrascrivi file già esistenti</label>
@@ -38,10 +38,11 @@
   <aside class="card">
     <h2>Avanzamento</h2>
     <progress id="uploadProgress" class="progress" value="0" max="100"></progress>
-    <div id="uploadStatus">Seleziona i PDF da caricare.</div>
+    <div id="uploadStatus">Seleziona i file da caricare.</div>
     <p class="hint"><strong>Percorso:</strong> <span id="pathPreview"></span></p>
   </aside>
 </main>
+<script src="pdf-tools.js"></script>
 <script src="upload-pdf.js"></script>
 <script>
 const OWNER = "laminetallth"; const REPO = "TOP-HOUSE";
@@ -57,7 +58,7 @@ const managerSelect=document.getElementById('managerSelect'), folderSelect=docum
 Object.keys(UPLOAD_MAP).sort().forEach(manager => managerSelect.add(new Option(manager.toUpperCase(), manager)));
 function refreshFolders(){folderSelect.innerHTML='';UPLOAD_MAP[managerSelect.value].forEach(folder=>folderSelect.add(new Option(folder, folder)));refreshPath();}
 function refreshPath(){pathPreview.textContent=`documenti/${managerSelect.value}/${folderSelect.value}`;}
-function renderFiles(){const files=Array.from(fileInput.files||[]);fileList.innerHTML=files.length?files.map(file=>`<li><span><i class="fa-solid fa-file-pdf"></i> ${file.name}</span><span class="status-badge">pronto</span></li>`).join(''):'';}
+function renderFiles(){const files=Array.from(fileInput.files||[]);fileList.innerHTML=files.length?files.map(file=>{const ok=TOPHOUSE_UPLOAD.isAllowedFile(file);const icon=window.TOPHOUSE_PDF?TOPHOUSE_PDF.getFileIcon(file.name):(ok?'fa-file':'fa-ban');return `<li><span><i class="fa-solid ${icon}"></i> ${file.name}</span><span class="status-badge">${ok?'pronto':'bloccato'}</span></li>`;}).join(''):'';}
 managerSelect.addEventListener('change', refreshFolders); folderSelect.addEventListener('change', refreshPath); refreshFolders();
 dropZone.addEventListener('click',()=>fileInput.click()); dropZone.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();fileInput.click();}}); fileInput.addEventListener('change',renderFiles);
 ['dragenter','dragover'].forEach(type=>dropZone.addEventListener(type,event=>{event.preventDefault();dropZone.classList.add('is-over');})); ['dragleave','drop'].forEach(type=>dropZone.addEventListener(type,event=>{event.preventDefault();dropZone.classList.remove('is-over');}));
