@@ -44,10 +44,6 @@
     return (path || '').split('/').filter(Boolean).map(encodeURIComponent).join('/');
   }
 
-  function escapeAttribute(value) {
-    return String(value || '').replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
-  }
-
   function buildPreviewUrl(folderPath, fileName) {
     const encodedPath = encodePath([folderPath, fileName].filter(Boolean).join('/'));
     return encodedPath ? `${PAGES_BASE_URL}${encodedPath}` : '#';
@@ -144,104 +140,13 @@
     document.body.classList.remove('pdf-modal-open');
   }
 
-  function isAdmin() {
-    return (window.TOPHOUSE_AUTH?.getCurrentRole?.() || sessionStorage.getItem('topHouseUserRole') || '') === 'admin';
-  }
-
-  function refreshBulkDeleteBar(container) {
-    const bar = container?.previousElementSibling?.classList?.contains('bulk-delete-bar') ? container.previousElementSibling : null;
-    if (!bar) return;
-    const checkboxes = Array.from(container.querySelectorAll('.bulk-file-checkbox'));
-    const selected = checkboxes.filter(input => input.checked);
-    const selectAll = bar.querySelector('.bulk-select-all');
-    const counter = bar.querySelector('.bulk-selected-count');
-    const deleteButton = bar.querySelector('.bulk-delete-selected');
-    counter.textContent = `${selected.length} file selezionati`;
-    deleteButton.disabled = selected.length === 0;
-    selectAll.checked = checkboxes.length > 0 && selected.length === checkboxes.length;
-    selectAll.indeterminate = selected.length > 0 && selected.length < checkboxes.length;
-  }
-
-  function ensureBulkDeleteBar(container, options = {}) {
-    if (!container || !isAdmin()) return null;
-    let bar = container.previousElementSibling?.classList?.contains('bulk-delete-bar') ? container.previousElementSibling : null;
-    if (bar) { refreshBulkDeleteBar(container); return bar; }
-    bar = document.createElement('div');
-    bar.className = 'bulk-delete-bar admin-only';
-    bar.innerHTML = `
-      <label class="bulk-select-all-label"><input type="checkbox" class="bulk-select-all"> Seleziona tutto</label>
-      <span class="bulk-selected-count">0 file selezionati</span>
-      <button type="button" class="bulk-delete-selected" disabled><i class="fa-solid fa-trash-can"></i> Elimina selezionati</button>
-      <span class="bulk-delete-summary" role="status" aria-live="polite"></span>`;
-    container.parentNode.insertBefore(bar, container);
-    bar.querySelector('.bulk-select-all').addEventListener('change', event => {
-      container.querySelectorAll('.bulk-file-checkbox').forEach(input => { input.checked = event.target.checked; });
-      refreshBulkDeleteBar(container);
-    });
-    bar.querySelector('.bulk-delete-selected').addEventListener('click', () => bulkDeleteSelected(container, options));
-    refreshBulkDeleteBar(container);
-    return bar;
-  }
-
-  async function bulkDeleteSelected(container) {
-    if (!isAdmin()) return;
-    const checked = Array.from(container.querySelectorAll('.bulk-file-checkbox:checked'))
-      .map(input => ({ name: input.dataset.fileName, sha: input.dataset.fileSha, path: input.dataset.filePath }));
-    const selected = checked.filter(file => file.name && file.sha && file.path);
-    const skipped = checked.length - selected.length;
-    if (selected.length === 0) {
-      if (skipped > 0) alert('I file selezionati non hanno SHA GitHub e non possono essere eliminati.');
-      return;
-    }
-    if (skipped > 0) alert(`${skipped} file selezionati non hanno SHA GitHub e non verranno eliminati.`);
-    if (!confirm(`Stai per eliminare ${selected.length} file. Questa azione non può essere annullata. Vuoi continuare?`)) return;
-    if (checked.length > 5) {
-      const typed = prompt("Per confermare l'eliminazione di più di 5 file, scrivi ELIMINA.");
-      if (typed !== 'ELIMINA') return;
-    }
-    const config = window.TOPHOUSE_GITHUB_CONFIG || {};
-    if (!config.owner || !config.repo || !config.token) {
-      alert('Configurazione GitHub mancante: eliminazione multipla non disponibile.');
-      return;
-    }
-    const bar = container.previousElementSibling?.classList?.contains('bulk-delete-bar') ? container.previousElementSibling : null;
-    const button = bar?.querySelector('.bulk-delete-selected');
-    const summary = bar?.querySelector('.bulk-delete-summary');
-    if (button) button.disabled = true;
-    const results = { deleted: 0, errors: skipped };
-    for (const file of selected) {
-      const deleteUrl = `https://api.github.com/repos/${config.owner}/${config.repo}/contents/${encodePath(file.path)}`;
-      try {
-        const response = await fetch(deleteUrl, {
-          method: 'DELETE',
-          headers: { Authorization: `token ${config.token}`, 'Content-Type': 'application/json' },
-          body: JSON.stringify({ message: `Eliminati file selezionati: ${file.name}`, sha: file.sha })
-        });
-        if (response.ok) results.deleted += 1;
-        else results.errors += 1;
-      } catch (error) {
-        results.errors += 1;
-      }
-    }
-    const text = `Eliminati ${results.deleted} file su ${checked.length}. ${results.errors} errori.`;
-    if (summary) summary.textContent = text;
-    alert(text);
-    if (typeof window.loadFiles === 'function') window.loadFiles();
-    else refreshBulkDeleteBar(container);
-  }
-
   function createPdfListItem(file, options) {
     const isVideoLink = isVideoLinkFile(file.name);
     const pdf = normalizePdf({ name: file.name, fileName: file.name, type: isVideoLink ? 'video-link' : 'file', downloadUrl: options.downloadUrl || options.rawUrl, previewUrl: options.previewUrl || buildPreviewUrl(options.folderPath, file.name), folderPath: options.folderPath, manager: options.manager, section: options.section });
     const canPreview = isPdf(pdf.name) || isImage(pdf.name) || canPreviewVideo(pdf.name);
     const wrapper = document.createElement('div');
     wrapper.className = 'file-item-wrapper';
-    const filePath = [options.folderPath, file.name].filter(Boolean).join('/');
     wrapper.innerHTML = `
-      <label class="bulk-file-check admin-only" data-admin-only title="Seleziona file">
-        <input type="checkbox" class="bulk-file-checkbox" data-file-name="${escapeAttribute(pdf.name)}" data-file-sha="${escapeAttribute(file.sha || '')}" data-file-path="${escapeAttribute(filePath)}">
-        <span class="sr-only">Seleziona ${pdf.name}</span>
-      </label>
       <a href="${pdf.downloadUrl}" target="_blank" class="file-link" rel="noopener">
         <div class="file-icon"><i class="fa-solid ${isVideoLink ? 'fa-circle-play file-icon-video' : getFileIcon(pdf.name)}"></i></div>
         <div class="file-name"></div>
@@ -269,16 +174,14 @@
     favoriteButton.addEventListener('click', () => { toggleFavorite(pdf); refreshFavorite(); });
     refreshFavorite();
     const deleteButton = wrapper.querySelector('.delete-btn');
-    const checkboxLabel = wrapper.querySelector('.bulk-file-check');
-    if (!isAdmin()) { deleteButton.hidden = true; checkboxLabel.hidden = true; }
-    wrapper.querySelector('.bulk-file-checkbox').addEventListener('change', () => refreshBulkDeleteBar(wrapper.parentElement));
-    ensureBulkDeleteBar(document.getElementById(options.containerId || 'pdfContainer'), options);
+    const currentRole = window.TOPHOUSE_AUTH?.getCurrentRole?.() || sessionStorage.getItem('topHouseUserRole') || '';
+    if (currentRole !== 'admin') deleteButton.hidden = true;
     deleteButton.addEventListener('click', () => {
-      if (!isAdmin()) return;
+      if ((window.TOPHOUSE_AUTH?.getCurrentRole?.() || sessionStorage.getItem('topHouseUserRole')) !== 'admin') return;
       window[options.onDelete || 'deleteFile'](file.name, file.sha);
     });
     return wrapper;
   }
 
-  window.TOPHOUSE_PDF = { getFavorites, toggleFavorite, removeFavorite, isFavorite, openPreview, closePreview, createPdfListItem, normalizePdf, encodePath, buildPreviewUrl, getExtension, isAllowedFile, isVideoLinkFile, isDisplayableFile, getFileIcon, isPdf, isImage, isVideo, canPreviewVideo, ensureBulkDeleteBar, refreshBulkDeleteBar, bulkDeleteSelected, ALLOWED_EXTENSIONS };
+  window.TOPHOUSE_PDF = { getFavorites, toggleFavorite, removeFavorite, isFavorite, openPreview, closePreview, createPdfListItem, normalizePdf, encodePath, buildPreviewUrl, getExtension, isAllowedFile, isVideoLinkFile, isDisplayableFile, getFileIcon, isPdf, isImage, isVideo, canPreviewVideo, ALLOWED_EXTENSIONS };
 })();
