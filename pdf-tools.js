@@ -155,7 +155,7 @@
         <button type="button" class="preview-btn pdf-action-btn" title="${isVideoLink ? 'Apri video' : (canPreview ? 'Anteprima documento' : 'Apri / Scarica')}"><i class="fa-solid ${isVideoLink ? 'fa-arrow-up-right-from-square' : (canPreview ? 'fa-eye' : 'fa-arrow-up-right-from-square')}"></i></button>
         <a href="${pdf.downloadUrl}" target="_blank" class="download-btn pdf-action-btn" title="${isVideoLink ? 'Apri video' : 'Visualizza/Scarica'}" rel="noopener"><i class="fa-solid ${isVideoLink ? 'fa-circle-play' : 'fa-download'}"></i></a>
         <button type="button" class="favorite-btn pdf-action-btn" title="Aggiungi ai preferiti"><i class="fa-regular fa-star"></i></button>
-        <button class="delete-btn" title="Elimina file"><i class="fa-solid fa-trash-can"></i></button>
+        <button class="delete-btn admin-only" data-admin-only title="Elimina file"><i class="fa-solid fa-trash-can"></i></button>
       </div>`;
     const openTarget = () => { if (pdf.type === 'video-link') window.open(pdf.url, '_blank', 'noopener'); else openPreview(pdf); };
     const applyVideoLinkData = data => {
@@ -173,7 +173,13 @@
     const refreshFavorite = () => { const active = isFavorite(pdf); favoriteButton.classList.toggle('is-favorite', active); favoriteButton.title = active ? 'Rimuovi dai preferiti' : 'Aggiungi ai preferiti'; favoriteButton.innerHTML = active ? '<i class="fa-solid fa-star"></i>' : '<i class="fa-regular fa-star"></i>'; };
     favoriteButton.addEventListener('click', () => { toggleFavorite(pdf); refreshFavorite(); });
     refreshFavorite();
-    wrapper.querySelector('.delete-btn').addEventListener('click', () => window[options.onDelete || 'deleteFile'](file.name, file.sha));
+    const deleteButton = wrapper.querySelector('.delete-btn');
+    const currentRole = window.TOPHOUSE_AUTH?.getCurrentRole?.() || sessionStorage.getItem('topHouseUserRole') || '';
+    if (currentRole !== 'admin') deleteButton.hidden = true;
+    deleteButton.addEventListener('click', () => {
+      if ((window.TOPHOUSE_AUTH?.getCurrentRole?.() || sessionStorage.getItem('topHouseUserRole')) !== 'admin') return;
+      window[options.onDelete || 'deleteFile'](file.name, file.sha);
+    });
     return wrapper;
   }
 

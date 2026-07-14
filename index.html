@@ -228,6 +228,8 @@ header{
 
 </style>
 <link rel="stylesheet" href="stile-top-house.css">
+<script src="utenti-ruoli.js"></script>
+<script type="module" src="auth-guard.js"></script>
 </head>
 
 <body>
@@ -334,7 +336,7 @@ header{
             <h3>ARCHIVIO</h3>
         </div>
 
-        <div class="card" data-search="caricamento pdf area caricamento admin upload" data-url="login-venditori.html" onclick="location.href='login-venditori.html'">
+        <div class="card admin-only" data-admin-only data-search="caricamento pdf area caricamento admin upload" data-url="admin-caricamento.html" onclick="location.href='admin-caricamento.html'">
             <div class="card-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
             <h3>CARICAMENTO FILE</h3>
         </div>
