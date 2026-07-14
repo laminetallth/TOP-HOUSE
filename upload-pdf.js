@@ -85,6 +85,11 @@
   }
 
   async function uploadFiles(options) {
+    const currentRole = window.TOPHOUSE_AUTH?.getCurrentRole?.() || sessionStorage.getItem('topHouseUserRole') || '';
+    if (currentRole !== 'admin') {
+      alert('Accesso riservato agli admin.');
+      return [];
+    }
     const fileInput = document.getElementById(options.inputId || 'fileInput');
     if (fileInput) fileInput.setAttribute('accept', ALLOWED_ACCEPT);
     const statusBox = options.statusElement || ensureStatusBox();
