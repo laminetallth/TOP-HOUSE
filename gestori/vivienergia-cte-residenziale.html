@@ -64,8 +64,8 @@ body{background:#f5f5f5;padding:40px;}
     </div>
     <div>
         <div class="sidebar-box">
-            <h3>Carica PDF qui</h3>
-            <input type="file" id="fileInput" class="sidebar-input" accept=".pdf" multiple>
+            <h3>Carica file qui</h3>
+            <input type="file" id="fileInput" class="sidebar-input" accept=".pdf,.doc,.docx,.xls,.xlsx,.ppt,.pptx,.jpg,.jpeg,.png,.zip" multiple>
             <button class="btn" onclick="uploadFile()">Carica File</button>
         </div>
     </div>
@@ -85,10 +85,10 @@ async function loadFiles() {
     const url = `https://api.github.com/repos/${OWNER}/${REPO}/contents/${FOLDER_PATH}`;
     try {
         const response = await fetch(url, { headers: { "Authorization": `token ${GITHUB_TOKEN}` } });
-        if (response.status === 404) { pdfContainer.innerHTML = '<div class="empty">Nessun PDF caricato</div>'; return; }
+        if (response.status === 404) { pdfContainer.innerHTML = '<div class="empty">Nessun file caricato</div>'; return; }
         const files = await response.json(); pdfContainer.innerHTML = '';
-        const pdfFiles = files.filter(file => file.name.toLowerCase().endsWith('.pdf'));
-        if (pdfFiles.length === 0) { pdfContainer.innerHTML = '<div class="empty">Nessun PDF caricato</div>'; return; }
+        const pdfFiles = files.filter(file => TOPHOUSE_PDF.isAllowedFile(file.name));
+        if (pdfFiles.length === 0) { pdfContainer.innerHTML = '<div class="empty">Nessun file caricato</div>'; return; }
         
         pdfFiles.forEach(file => {
             const downloadUrl = file.html_url.replace("github.com", "raw.githubusercontent.com").replace("/blob/", "/");
@@ -111,7 +111,7 @@ async function deleteFile(fileName, fileSha) {
         const response = await fetch(deleteUrl, {
             method: "DELETE",
             headers: { "Authorization": `token ${GITHUB_TOKEN}`, "Content-Type": "application/json" },
-            body: JSON.stringify({ message: `Eliminato PDF CTE Residenziale VIVI: ${fileName}`, sha: fileSha })
+            body: JSON.stringify({ message: `Eliminato file CTE Residenziale VIVI: ${fileName}`, sha: fileSha })
         });
         if (response.ok) { alert("File eliminato con successo!"); setTimeout(loadFiles, 1500); } 
         else { const errData = await response.json(); alert("Errore durante l'eliminazione: " + errData.message); }
