@@ -91,7 +91,7 @@ async function loadFiles() {
         const response = await fetch(url, { headers: { "Authorization": `token ${GITHUB_TOKEN}` } });
         if (response.status === 404) { pdfContainer.innerHTML = '<div class="empty">Nessun file caricato</div>'; return; }
         const files = await response.json(); pdfContainer.innerHTML = '';
-        const pdfFiles = files.filter(file => TOPHOUSE_PDF.isAllowedFile(file.name));
+        const pdfFiles = files.filter(file => TOPHOUSE_PDF.isDisplayableFile(file));
         if (pdfFiles.length === 0) { pdfContainer.innerHTML = '<div class="empty">Nessun file caricato</div>'; return; }
         
         pdfFiles.forEach(file => {

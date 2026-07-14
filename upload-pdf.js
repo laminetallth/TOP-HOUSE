@@ -20,7 +20,7 @@
   function getSafetyMessage(file) {
     if (!isAllowedFile(file)) return 'tipo file non consentito';
     if (isVideoFile(file) && file.size > VIDEO_MAX_BYTES) {
-      return 'Video troppo grande per GitHub. Comprimi il video o caricalo su Drive e inserisci il link.';
+      return 'Video troppo grande per GitHub. Caricalo su Drive e inserisci qui il link.';
     }
     return '';
   }
@@ -84,6 +84,74 @@
     }, { allowed: [], blocked: [] });
   }
 
+
+
+  function slugify(value) {
+    return String(value || 'video').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 80) || 'video';
+  }
+
+  function isAllowedVideoUrl(value) {
+    try {
+      const url = new URL(value);
+      const host = url.hostname.toLowerCase().replace(/^www\./, '');
+      const ext = getExtension(url.pathname);
+      return ['drive.google.com', 'youtube.com', 'youtu.be', 'vimeo.com'].some(domain => host === domain || host.endsWith(`.${domain}`)) || VIDEO_EXTENSIONS.includes(ext);
+    } catch (error) {
+      return false;
+    }
+  }
+
+  function ensureVideoLinkBox() {
+    if (document.getElementById('videoLinkBox') || !document.querySelector('.sidebar-box')) return;
+    const sidebar = document.querySelector('.sidebar-box');
+    const box = document.createElement('div');
+    box.id = 'videoLinkBox';
+    box.className = 'sidebar-box video-link-box';
+    box.style.marginTop = '18px';
+    box.innerHTML = `
+      <h3>Aggiungi link video</h3>
+      <input type="text" id="videoTitleInput" class="sidebar-input" placeholder="Titolo video" aria-label="Titolo video">
+      <input type="url" id="videoUrlInput" class="sidebar-input" placeholder="URL video" aria-label="URL video">
+      <button type="button" class="btn" id="saveVideoLinkButton">Salva link video</button>
+      <div id="videoLinkStatus" class="upload-status" style="margin-top:12px;font-size:14px;line-height:1.5;color:#333;"></div>`;
+    sidebar.insertAdjacentElement('afterend', box);
+    box.querySelector('#saveVideoLinkButton').addEventListener('click', () => saveVideoLink({
+      titleInput: box.querySelector('#videoTitleInput'),
+      urlInput: box.querySelector('#videoUrlInput'),
+      statusElement: box.querySelector('#videoLinkStatus')
+    }));
+  }
+
+  async function saveVideoLink(options = {}) {
+    const titleInput = options.titleInput || document.getElementById('videoTitleInput');
+    const urlInput = options.urlInput || document.getElementById('videoUrlInput');
+    const statusBox = options.statusElement || document.getElementById('videoLinkStatus') || ensureStatusBox();
+    const title = titleInput?.value.trim();
+    const url = urlInput?.value.trim();
+    if (!title || !url) { if (statusBox) statusBox.textContent = 'Inserisci titolo video e URL video.'; return null; }
+    if (!isAllowedVideoUrl(url)) { if (statusBox) statusBox.textContent = 'Link non consentito. Usa Google Drive, YouTube, Vimeo o un link diretto video.'; return null; }
+    const owner = options.owner || window.OWNER || OWNER;
+    const repo = options.repo || window.REPO || REPO;
+    const folderPath = options.folderPath || window.FOLDER_PATH || FOLDER_PATH;
+    const fileName = `video-${slugify(title)}-${Date.now()}.json`;
+    const uploadUrl = `https://api.github.com/repos/${owner}/${repo}/contents/${folderPath}/${encodeURIComponent(fileName)}`;
+    const payload = { type: 'video-link', title, url, createdAt: new Date().toISOString() };
+    const content = btoa(unescape(encodeURIComponent(JSON.stringify(payload, null, 2))));
+    if (statusBox) statusBox.textContent = 'Salvataggio link video in corso...';
+    const response = await fetch(uploadUrl, { method: 'PUT', headers: headers(), body: JSON.stringify({ message: `Aggiunto link video: ${title}`, content }) });
+    if (!response.ok) {
+      const errorData = await response.json().catch(() => ({}));
+      if (statusBox) statusBox.textContent = `Errore salvataggio link video: ${errorData.message || response.status}`;
+      return null;
+    }
+    if (titleInput) titleInput.value = '';
+    if (urlInput) urlInput.value = '';
+    if (statusBox) statusBox.textContent = 'Link video salvato.';
+    if (typeof options.onComplete === 'function') options.onComplete(payload);
+    else if (typeof window.loadFiles === 'function') setTimeout(window.loadFiles, 800);
+    return payload;
+  }
+
   async function uploadFiles(options) {
     const fileInput = document.getElementById(options.inputId || 'fileInput');
     if (fileInput) fileInput.setAttribute('accept', ALLOWED_ACCEPT);
@@ -141,7 +209,8 @@
 
   document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('input[type="file"]').forEach(input => input.setAttribute('accept', ALLOWED_ACCEPT));
+    if (document.querySelector('.sidebar-box') && (window.FOLDER_PATH || typeof FOLDER_PATH !== 'undefined')) ensureVideoLinkBox();
   });
 
-  window.TOPHOUSE_UPLOAD = { uploadFiles, renderSummary, isAllowedFile, isVideoFile, splitFilesBySafety, ALLOWED_EXTENSIONS, ALLOWED_ACCEPT, VIDEO_MAX_BYTES, LARGE_FILE_WARNING_BYTES };
+  window.TOPHOUSE_UPLOAD = { uploadFiles, saveVideoLink, ensureVideoLinkBox, isAllowedVideoUrl, renderSummary, isAllowedFile, isVideoFile, splitFilesBySafety, ALLOWED_EXTENSIONS, ALLOWED_ACCEPT, VIDEO_MAX_BYTES, LARGE_FILE_WARNING_BYTES };
 })();
