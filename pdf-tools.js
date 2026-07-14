@@ -14,6 +14,15 @@
     return ALLOWED_EXTENSIONS.includes(getExtension(fileName));
   }
 
+  function isVideoLinkFile(fileName) {
+    return getExtension(fileName) === 'json' && String(fileName || '').toLowerCase().startsWith('video-');
+  }
+
+  function isDisplayableFile(file) {
+    const name = typeof file === 'string' ? file : file?.name;
+    return isAllowedFile(name) || isVideoLinkFile(name);
+  }
+
   function isPdf(fileName) { return getExtension(fileName) === 'pdf'; }
   function isImage(fileName) { return IMAGE_EXTENSIONS.includes(getExtension(fileName)); }
   function isVideo(fileName) { return VIDEO_EXTENSIONS.includes(getExtension(fileName)); }
@@ -50,15 +59,19 @@
   function normalizePdf(input) {
     const folderPath = input.folderPath || '';
     const parts = folderPath.split('/').filter(Boolean);
-    const name = input.name || input.fileName || 'Documento senza nome';
+    const name = input.name || input.fileName || input.title || 'Documento senza nome';
+    const isVideoLink = input.type === 'video-link' || isVideoLinkFile(input.fileName || input.name);
     return {
       name,
+      title: input.title || name,
+      type: isVideoLink ? 'video-link' : (input.type || 'file'),
+      url: input.url || input.downloadUrl || input.rawUrl || '#',
       downloadUrl: input.downloadUrl || input.url || input.rawUrl || '#',
-      previewUrl: input.previewUrl || buildPreviewUrl(folderPath, name),
+      previewUrl: input.previewUrl || buildPreviewUrl(folderPath, input.fileName || name),
       manager: input.manager || parts[1] || 'TOP HOUSE',
       section: input.section || parts.slice(2).join(' / ') || folderPath || 'Documenti',
       folderPath,
-      savedAt: input.savedAt || new Date().toISOString()
+      savedAt: input.savedAt || input.createdAt || new Date().toISOString()
     };
   }
 
@@ -128,23 +141,34 @@
   }
 
   function createPdfListItem(file, options) {
-    const pdf = normalizePdf({ name: file.name, downloadUrl: options.downloadUrl || options.rawUrl, previewUrl: options.previewUrl || buildPreviewUrl(options.folderPath, file.name), folderPath: options.folderPath, manager: options.manager, section: options.section });
+    const isVideoLink = isVideoLinkFile(file.name);
+    const pdf = normalizePdf({ name: file.name, fileName: file.name, type: isVideoLink ? 'video-link' : 'file', downloadUrl: options.downloadUrl || options.rawUrl, previewUrl: options.previewUrl || buildPreviewUrl(options.folderPath, file.name), folderPath: options.folderPath, manager: options.manager, section: options.section });
     const canPreview = isPdf(pdf.name) || isImage(pdf.name) || canPreviewVideo(pdf.name);
     const wrapper = document.createElement('div');
     wrapper.className = 'file-item-wrapper';
     wrapper.innerHTML = `
       <a href="${pdf.downloadUrl}" target="_blank" class="file-link" rel="noopener">
-        <div class="file-icon"><i class="fa-solid ${getFileIcon(pdf.name)}"></i></div>
+        <div class="file-icon"><i class="fa-solid ${isVideoLink ? 'fa-circle-play file-icon-video' : getFileIcon(pdf.name)}"></i></div>
         <div class="file-name"></div>
       </a>
       <div class="action-btns">
-        <button type="button" class="preview-btn pdf-action-btn" title="${canPreview ? 'Anteprima documento' : 'Apri / Scarica'}"><i class="fa-solid ${canPreview ? 'fa-eye' : 'fa-arrow-up-right-from-square'}"></i></button>
-        <a href="${pdf.downloadUrl}" target="_blank" class="download-btn pdf-action-btn" title="Visualizza/Scarica" rel="noopener"><i class="fa-solid fa-download"></i></a>
+        <button type="button" class="preview-btn pdf-action-btn" title="${isVideoLink ? 'Apri video' : (canPreview ? 'Anteprima documento' : 'Apri / Scarica')}"><i class="fa-solid ${isVideoLink ? 'fa-arrow-up-right-from-square' : (canPreview ? 'fa-eye' : 'fa-arrow-up-right-from-square')}"></i></button>
+        <a href="${pdf.downloadUrl}" target="_blank" class="download-btn pdf-action-btn" title="${isVideoLink ? 'Apri video' : 'Visualizza/Scarica'}" rel="noopener"><i class="fa-solid ${isVideoLink ? 'fa-circle-play' : 'fa-download'}"></i></a>
         <button type="button" class="favorite-btn pdf-action-btn" title="Aggiungi ai preferiti"><i class="fa-regular fa-star"></i></button>
         <button class="delete-btn" title="Elimina file"><i class="fa-solid fa-trash-can"></i></button>
       </div>`;
-    wrapper.querySelector('.file-name').textContent = pdf.name;
-    wrapper.querySelector('.preview-btn').addEventListener('click', () => openPreview(pdf));
+    const openTarget = () => { if (pdf.type === 'video-link') window.open(pdf.url, '_blank', 'noopener'); else openPreview(pdf); };
+    const applyVideoLinkData = data => {
+      pdf.name = data.title || pdf.name; pdf.title = pdf.name; pdf.url = data.url || pdf.url; pdf.downloadUrl = pdf.url; pdf.savedAt = data.createdAt || pdf.savedAt;
+      wrapper.querySelector('.file-name').textContent = pdf.name;
+      wrapper.querySelector('.file-link').href = pdf.url;
+      wrapper.querySelector('.download-btn').href = pdf.url;
+    };
+    wrapper.querySelector('.file-name').textContent = isVideoLink ? 'Caricamento link video...' : pdf.name;
+    wrapper.querySelector('.preview-btn').addEventListener('click', openTarget);
+    if (isVideoLink && pdf.downloadUrl && pdf.downloadUrl !== '#') {
+      fetch(pdf.downloadUrl).then(response => response.ok ? response.json() : null).then(data => { if (data && data.type === 'video-link') applyVideoLinkData(data); else wrapper.querySelector('.file-name').textContent = pdf.name; }).catch(() => { wrapper.querySelector('.file-name').textContent = pdf.name; });
+    }
     const favoriteButton = wrapper.querySelector('.favorite-btn');
     const refreshFavorite = () => { const active = isFavorite(pdf); favoriteButton.classList.toggle('is-favorite', active); favoriteButton.title = active ? 'Rimuovi dai preferiti' : 'Aggiungi ai preferiti'; favoriteButton.innerHTML = active ? '<i class="fa-solid fa-star"></i>' : '<i class="fa-regular fa-star"></i>'; };
     favoriteButton.addEventListener('click', () => { toggleFavorite(pdf); refreshFavorite(); });
@@ -153,5 +177,5 @@
     return wrapper;
   }
 
-  window.TOPHOUSE_PDF = { getFavorites, toggleFavorite, removeFavorite, isFavorite, openPreview, closePreview, createPdfListItem, normalizePdf, encodePath, buildPreviewUrl, getExtension, isAllowedFile, getFileIcon, isPdf, isImage, isVideo, canPreviewVideo, ALLOWED_EXTENSIONS };
+  window.TOPHOUSE_PDF = { getFavorites, toggleFavorite, removeFavorite, isFavorite, openPreview, closePreview, createPdfListItem, normalizePdf, encodePath, buildPreviewUrl, getExtension, isAllowedFile, isVideoLinkFile, isDisplayableFile, getFileIcon, isPdf, isImage, isVideo, canPreviewVideo, ALLOWED_EXTENSIONS };
 })();
