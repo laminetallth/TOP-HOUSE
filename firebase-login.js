@@ -2,7 +2,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebas
 import { getAuth, onAuthStateChanged, signInWithEmailAndPassword, signOut } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAestZqgTWKIFjurPdHARcz1Ir4IFcuBug",
+  apiKey: "AIzaSyAestZqgTWKIFjurPdHARCz1Ir4IFcuBug",
   authDomain: "top-house-4bb50.firebaseapp.com",
   projectId: "top-house-4bb50",
   storageBucket: "top-house-4bb50.firebasestorage.app",
