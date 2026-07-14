@@ -3,7 +3,7 @@ import { getStorage, ref, uploadBytes, getDownloadURL } from "https://www.gstati
 
 // La tua configurazione Firebase ufficiale
 const firebaseConfig = {
-  apiKey: "AIzaSyAestZqgTWKIFjurPdHARcz1Ir4IFcuBug",
+  apiKey: "AIzaSyAestZqgTWKIFjurPdHARCz1Ir4IFcuBug",
   authDomain: "top-house-4bb50.firebaseapp.com",
   projectId: "top-house-4bb50",
   storageBucket: "top-house-4bb50.firebasestorage.app",
