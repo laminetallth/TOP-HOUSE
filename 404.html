@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pagina in creazione | TOP HOUSE</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+:root{
+    --th-primary:#ff0055;
+    --th-secondary:#ff9900;
+    --th-dark:#171321;
+    --th-muted:#6f6a7c;
+    --th-gradient:linear-gradient(135deg,#ff0055 0%,#ff4b2b 48%,#ff9900 100%);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:clamp(22px,5vw,52px);
+    color:var(--th-dark);
+    font-family:"Segoe UI", Inter, Arial, sans-serif;
+    background:
+        radial-gradient(circle at 18% 18%, rgba(255,255,255,.35), transparent 28rem),
+        radial-gradient(circle at 84% 12%, rgba(255,205,148,.45), transparent 26rem),
+        linear-gradient(135deg,#e91558 0%,#ff4b2b 48%,#ff8a00 100%);
+    overflow-x:hidden;
+}
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    background-image:
+        linear-gradient(rgba(255,255,255,.18) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.18) 1px, transparent 1px);
+    background-size:44px 44px;
+    mask-image:linear-gradient(to bottom, rgba(0,0,0,.58), transparent 78%);
+}
+.page-shell{
+    width:min(100%,760px);
+    position:relative;
+    z-index:1;
+}
+.notice-card{
+    position:relative;
+    overflow:hidden;
+    text-align:center;
+    padding:clamp(34px,6vw,62px);
+    border-radius:36px;
+    background:rgba(255,255,255,.94);
+    border:1px solid rgba(255,255,255,.78);
+    box-shadow:0 34px 95px rgba(64,20,45,.28);
+    backdrop-filter:blur(18px);
+}
+.notice-card::before,
+.notice-card::after{
+    content:"";
+    position:absolute;
+    border-radius:50%;
+    pointer-events:none;
+}
+.notice-card::before{
+    width:260px;
+    height:260px;
+    right:-120px;
+    top:-130px;
+    background:radial-gradient(circle, rgba(255,153,0,.18), transparent 68%);
+}
+.notice-card::after{
+    width:230px;
+    height:230px;
+    left:-120px;
+    bottom:-130px;
+    background:radial-gradient(circle, rgba(255,0,85,.13), transparent 68%);
+}
+.logo-wrap{
+    width:min(230px,62vw);
+    margin:0 auto 22px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:16px 22px;
+    border-radius:28px;
+    background:#fff;
+    box-shadow:0 18px 42px rgba(39,24,75,.12);
+}
+.logo-wrap img{
+    width:100%;
+    max-height:96px;
+    object-fit:contain;
+}
+.status-pill{
+    display:inline-flex;
+    align-items:center;
+    gap:9px;
+    margin-bottom:18px;
+    padding:10px 16px;
+    border-radius:999px;
+    color:#fff;
+    font-weight:900;
+    letter-spacing:.02em;
+    background:var(--th-gradient);
+    box-shadow:0 14px 28px rgba(255,87,34,.24);
+}
+h1{
+    margin-bottom:14px;
+    font-size:clamp(40px,8vw,72px);
+    line-height:.95;
+    font-weight:950;
+    letter-spacing:-.055em;
+    background:var(--th-gradient);
+    -webkit-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+.section-name{
+    margin:0 auto 18px;
+    width:min(100%,560px);
+    color:var(--th-dark);
+    font-size:clamp(21px,3vw,30px);
+    line-height:1.18;
+    font-weight:900;
+}
+.message{
+    margin:0 auto;
+    width:min(100%,520px);
+    color:var(--th-muted);
+    font-size:clamp(17px,2.4vw,21px);
+    line-height:1.55;
+    font-weight:700;
+}
+.actions{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:14px;
+    margin-top:32px;
+}
+.btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    min-height:52px;
+    padding:14px 20px;
+    border:0;
+    border-radius:999px;
+    cursor:pointer;
+    text-decoration:none;
+    font-size:16px;
+    font-weight:900;
+    transition:transform .2s ease, box-shadow .2s ease, filter .2s ease;
+}
+.btn:hover{transform:translateY(-2px);filter:saturate(1.08);}
+.btn-primary{
+    color:#fff;
+    background:var(--th-gradient);
+    box-shadow:0 16px 34px rgba(255,87,34,.26);
+}
+.btn-secondary{
+    color:var(--th-dark);
+    background:#fff;
+    border:1px solid rgba(39,24,75,.10);
+    box-shadow:0 12px 28px rgba(39,24,75,.10);
+}
+@media(max-width:560px){
+    .notice-card{border-radius:28px;}
+    .actions{display:grid;}
+    .btn{width:100%;}
+}
+</style>
+</head>
+<body>
+<main class="page-shell" aria-labelledby="pageTitle">
+    <section class="notice-card">
+        <div class="logo-wrap">
+            <img src="logo.png" alt="TOP HOUSE">
+        </div>
+        <div class="status-pill"><i class="fa-solid fa-hammer"></i> Work in progress</div>
+        <h1 id="pageTitle">Pagina in creazione</h1>
+        <p class="section-name" id="sectionName" hidden></p>
+        <p class="message">Stiamo lavorando a questa sezione. Torna presto.</p>
+        <div class="actions">
+            <a class="btn btn-primary" href="./"><i class="fa-solid fa-house"></i> Torna alla home</a>
+            <button class="btn btn-secondary" type="button" id="backButton"><i class="fa-solid fa-arrow-left"></i> Indietro</button>
+        </div>
+    </section>
+</main>
+<script>
+(function(){
+    const sectionName = document.getElementById('sectionName');
+    const backButton = document.getElementById('backButton');
+    const cleanName = decodeURIComponent(window.location.pathname.split('/').pop() || '')
+        .replace(/\.html?$/i, '')
+        .replace(/[-_]+/g, ' ')
+        .trim();
+
+    if (cleanName && cleanName !== '404') {
+        sectionName.textContent = `Sezione ${cleanName.toUpperCase()} in creazione`;
+        sectionName.hidden = false;
+    }
+
+    backButton.addEventListener('click', function(){
+        if (window.history.length > 1) {
+            window.history.back();
+        } else {
+            window.location.href = './';
+        }
+    });
+})();
+</script>
+</body>
+</html>
