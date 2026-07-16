@@ -28,32 +28,6 @@ window.TOP_HOUSE_GESTORI = [
   { nome: "VIVIENERGIA", pagina: "gestori/vivienergia.html", procedura: "gestori/vivienergia-procedimenti.html" }
 ];
 
-/*
- * STRUTTURA DI UNA REGOLA VERIFICATA
- *
- * {
- *   gestore: "DUFERCO",
- *   segmenti: ["business"],
- *   commodity: ["luce", "gas", "dual"],
- *   operazioni: ["switch", "voltura", "subentro", "nuova-attivazione", "prima-attivazione"],
- *   pagamenti: ["rid", "bollettino"],
- *   firme: ["otp", "cartacea"],
- *   partner: "Greenworld",
- *   rid: "Facoltativo",
- *   impattoGettone: "Nessuna riduzione",
- *   storno: "100% entro 3 mesi; 50% dal 4° al 5° mese",
- *   bollette: "Mensile",
- *   condizioni: ["Eventuale condizione reale e verificata"],
- *   note: "Nota operativa breve",
- *   semplicita: 1,
- *   rapidita: 1,
- *   valoreGettone: 1,
- *   prioritaBase: 0,
- *   aggiornato: "16/07/2026",
- *   verificato: true
- * }
- */
-
 window.TOP_HOUSE_REGOLE = [
   {
     gestore: "DUFERCO",
@@ -69,6 +43,30 @@ window.TOP_HOUSE_REGOLE = [
     bollette: "Mensili",
     condizioni: [],
     note: "",
+    semplicita: 0,
+    rapidita: 0,
+    valoreGettone: 0,
+    prioritaBase: 0,
+    aggiornato: "16/07/2026",
+    verificato: true
+  },
+  {
+    gestore: "ENEL",
+    segmenti: ["residenziale", "business", "condominio"],
+    commodity: ["luce", "gas", "dual"],
+    operazioni: ["switch"],
+    pagamenti: ["rid", "bollettino"],
+    firme: ["cartacea"],
+    partner: "Greenworld",
+    rid: "Facoltativo",
+    impattoGettone: "-5,60 € senza RID",
+    storno: "Nessuno storno",
+    bollette: "Bimestrali",
+    condizioni: [
+      "Firma effettuata su tablet",
+      "Penale di 50 € se il cliente esce prima del 3° mese"
+    ],
+    note: "Disponibile esclusivamente per switch.",
     semplicita: 0,
     rapidita: 0,
     valoreGettone: 0,
