@@ -38,10 +38,10 @@ window.TOP_HOUSE_GESTORI = [
  *   operazioni: ["switch", "voltura", "subentro", "nuova-attivazione", "prima-attivazione"],
  *   pagamenti: ["rid", "bollettino"],
  *   firme: ["otp", "cartacea"],
- *   partner: "Greenword",
+ *   partner: "Greenworld",
  *   rid: "Facoltativo",
  *   impattoGettone: "Nessuna riduzione",
- *   storno: "6 mesi",
+ *   storno: "100% entro 3 mesi; 50% dal 4° al 5° mese",
  *   bollette: "Mensile",
  *   condizioni: ["Eventuale condizione reale e verificata"],
  *   note: "Nota operativa breve",
@@ -55,5 +55,25 @@ window.TOP_HOUSE_GESTORI = [
  */
 
 window.TOP_HOUSE_REGOLE = [
-  // Inserire qui esclusivamente condizioni commerciali reali e verificate.
+  {
+    gestore: "DUFERCO",
+    segmenti: ["residenziale", "business", "condominio"],
+    commodity: ["luce", "gas", "dual"],
+    operazioni: ["switch", "voltura", "subentro", "nuova-attivazione", "prima-attivazione"],
+    pagamenti: ["rid", "bollettino"],
+    firme: ["otp", "cartacea"],
+    partner: "Greenworld",
+    rid: "Facoltativo: RID e bollettino hanno le stesse condizioni",
+    impattoGettone: "Nessuna riduzione senza RID",
+    storno: "100% entro 3 mesi; 50% dal 4° al 5° mese",
+    bollette: "Mensili",
+    condizioni: [],
+    note: "",
+    semplicita: 0,
+    rapidita: 0,
+    valoreGettone: 0,
+    prioritaBase: 0,
+    aggiornato: "16/07/2026",
+    verificato: true
+  }
 ];
