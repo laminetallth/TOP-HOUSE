@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Questionario guidato TOP HOUSE per individuare i gestori compatibili con una pratica luce e gas.">
+  <title>Trova il gestore | TOP HOUSE</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="stile-top-house.css">
+  <link rel="stylesheet" href="trova-gestore.css">
+
+  <script src="utenti-ruoli.js"></script>
+  <script type="module" src="auth-guard.js"></script>
+</head>
+<body class="finder-page">
+  <header class="finder-header">
+    <a class="finder-brand" href="index.html" aria-label="Torna alla home TOP HOUSE">
+      <img src="logo.png" alt="Logo TOP HOUSE">
+      <div>
+        <strong>TOP HOUSE</strong>
+        <span>casa, energia, fiducia.</span>
+      </div>
+    </a>
+
+    <a class="finder-back" href="luce-gas.html">
+      <i class="fa-solid fa-arrow-left"></i>
+      <span>Luce e gas</span>
+    </a>
+  </header>
+
+  <main class="finder-shell">
+    <section class="finder-intro" id="introScreen">
+      <div class="finder-intro-copy">
+        <span class="finder-kicker">Strumento venditori</span>
+        <h1>Trova il gestore giusto</h1>
+        <p>
+          Rispondi a poche domande sulla pratica. Il sistema confronterà le condizioni
+          disponibili e ti mostrerà i gestori compatibili, spiegandoti il motivo della scelta.
+        </p>
+
+        <div class="intro-points">
+          <span><i class="fa-solid fa-bolt"></i> Percorso rapido</span>
+          <span><i class="fa-solid fa-filter-circle-dollar"></i> Controllo RID e firma</span>
+          <span><i class="fa-solid fa-circle-check"></i> Risultato motivato</span>
+        </div>
+
+        <button class="primary-action" id="startButton" type="button">
+          Inizia la ricerca
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+
+      <div class="finder-intro-visual" aria-hidden="true">
+        <div class="visual-orbit orbit-one"></div>
+        <div class="visual-orbit orbit-two"></div>
+        <div class="visual-house">
+          <img src="logo.png" alt="">
+        </div>
+        <div class="visual-chip chip-one"><i class="fa-solid fa-house"></i> Residenziale</div>
+        <div class="visual-chip chip-two"><i class="fa-solid fa-building"></i> Business</div>
+        <div class="visual-chip chip-three"><i class="fa-solid fa-file-signature"></i> Firma</div>
+      </div>
+    </section>
+
+    <section class="wizard" id="wizardScreen" hidden>
+      <div class="wizard-top">
+        <button class="icon-button" id="previousButton" type="button" aria-label="Torna alla domanda precedente">
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+
+        <div class="progress-area">
+          <div class="progress-copy">
+            <span id="stepCounter">Domanda 1 di 6</span>
+            <strong id="progressPercent">17%</strong>
+          </div>
+          <div class="progress-track" aria-hidden="true">
+            <span id="progressBar"></span>
+          </div>
+        </div>
+
+        <button class="reset-button" id="restartButton" type="button">
+          Ricomincia
+        </button>
+      </div>
+
+      <div class="question-card">
+        <div class="question-icon" id="questionIcon">
+          <i class="fa-solid fa-user"></i>
+        </div>
+        <p class="question-label" id="questionLabel">Tipologia cliente</p>
+        <h2 id="questionTitle">Per quale tipologia di cliente stai inserendo la pratica?</h2>
+        <p class="question-help" id="questionHelp">Seleziona una sola risposta.</p>
+
+        <div class="answers-grid" id="answersGrid"></div>
+        <div class="diagnostic-area" id="diagnosticArea" hidden></div>
+
+        <div class="wizard-actions">
+          <button class="secondary-action" id="backBottomButton" type="button">
+            <i class="fa-solid fa-arrow-left"></i>
+            Indietro
+          </button>
+          <button class="primary-action" id="nextButton" type="button" disabled>
+            Continua
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="results-screen" id="resultsScreen" hidden>
+      <div class="results-hero">
+        <div>
+          <span class="finder-kicker">Ricerca completata</span>
+          <h1>Gestori compatibili</h1>
+          <p id="resultsSubtitle">Ecco le soluzioni disponibili per la pratica selezionata.</p>
+        </div>
+        <div class="results-hero-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+      </div>
+
+      <div class="selection-summary" id="selectionSummary"></div>
+
+      <div class="configuration-notice" id="configurationNotice" hidden>
+        <div class="notice-icon"><i class="fa-solid fa-sliders"></i></div>
+        <div>
+          <h2>Motore pronto, dati da completare</h2>
+          <p>
+            Il questionario funziona, ma non sono ancora state inserite condizioni commerciali
+            verificate. Per evitare consigli sbagliati, nessun gestore viene suggerito finché le
+            regole reali non vengono aggiunte nel file <strong>trova-gestore-dati.js</strong>.
+          </p>
+        </div>
+      </div>
+
+      <div class="results-list" id="resultsList"></div>
+
+      <details class="excluded-panel" id="excludedPanel" hidden>
+        <summary>
+          <span><i class="fa-solid fa-circle-info"></i> Perché gli altri gestori sono stati esclusi?</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </summary>
+        <div id="excludedList"></div>
+      </details>
+
+      <div class="results-actions">
+        <button class="secondary-action" id="editAnswersButton" type="button">
+          <i class="fa-solid fa-pen"></i>
+          Modifica risposte
+        </button>
+        <button class="primary-action" id="newSearchButton" type="button">
+          Nuova ricerca
+          <i class="fa-solid fa-rotate-right"></i>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="finder-footer">
+    <span>TOP HOUSE</span>
+    <p>Le condizioni commerciali devono essere verificate e aggiornate periodicamente.</p>
+  </footer>
+
+  <script src="trova-gestore-dati.js"></script>
+  <script src="trova-gestore.js"></script>
+</body>
+</html>
