@@ -4,384 +4,143 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>TOP HOUSE</title>
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
 <style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
+body{background:#f5f5f5;color:#111;}
+header{background:#fff;padding:20px 40px;display:flex;justify-content:space-between;align-items:center;box-shadow:0 5px 20px rgba(0,0,0,.05);}
+.logo{display:flex;align-items:center;gap:15px;}
+.logo img{width:70px;}
+.logo-text h1{font-size:42px;font-weight:900;background:linear-gradient(90deg,#ff0055,#ff9900);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.logo-text p{font-size:16px;font-weight:700;}
+.archive{display:flex;align-items:center;gap:12px;font-weight:700;}
+.archive-icon{width:50px;height:50px;border-radius:50%;background:linear-gradient(135deg,#ff0055,#ff9900);display:flex;align-items:center;justify-content:center;color:#fff;font-size:20px;}
+.container{max-width:1300px;margin:auto;padding:35px 20px;}
+.hero{background:linear-gradient(135deg,#ff0055,#ff9900);border-radius:35px;padding:55px;color:white;margin-bottom:35px;position:relative;overflow:hidden;}
+.hero::after{content:'';position:absolute;width:300px;height:300px;border-radius:50%;background:rgba(255,255,255,.08);right:-80px;bottom:-80px;}
+.hero h1{font-size:60px;font-weight:900;margin-bottom:10px;}
+.hero p{font-size:18px;margin-bottom:25px;}
+.search-box{max-width:500px;display:flex;background:#fff;padding:6px;border-radius:50px;}
+.search-box input{flex:1;border:none;outline:none;padding:15px 20px;border-radius:50px;font-size:16px;}
+.search-btn{width:50px;height:50px;border:none;border-radius:50%;cursor:pointer;color:white;background:linear-gradient(135deg,#ff0055,#ff9900);}
+.categories{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:25px;}
+.card{background:white;border-radius:28px;padding:30px;text-align:center;cursor:pointer;transition:.3s;box-shadow:0 8px 25px rgba(0,0,0,.05);}
+.card:hover{transform:translateY(-8px);box-shadow:0 15px 35px rgba(0,0,0,.08);}
+.card-icon{width:80px;height:80px;margin:auto;margin-bottom:18px;border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:32px;color:white;background:linear-gradient(135deg,#ff0055,#ff9900);}
+.card h3{font-size:18px;font-weight:800;}
+footer{text-align:center;padding:35px;color:#777;}
+footer span{color:#ff5500;font-weight:800;}
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,sans-serif;
-}
-
-body{
-    background:#f5f5f5;
-    color:#111;
-}
-
-/* HEADER */
-
-header{
-    background:#fff;
-    padding:20px 40px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    box-shadow:0 5px 20px rgba(0,0,0,.05);
-}
-
-.logo{
-    display:flex;
-    align-items:center;
-    gap:15px;
-}
-
-.logo img{
-    width:70px;
-}
-
-.logo-text h1{
-    font-size:42px;
-    font-weight:900;
-    background:linear-gradient(90deg,#ff0055,#ff9900);
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
-}
-
-.logo-text p{
-    font-size:16px;
-    font-weight:700;
-}
-
-.archive{
-    display:flex;
-    align-items:center;
-    gap:12px;
-    font-weight:700;
-}
-
-.archive-icon{
-    width:50px;
-    height:50px;
-    border-radius:50%;
-    background:linear-gradient(135deg,#ff0055,#ff9900);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    color:#fff;
-    font-size:20px;
-}
-
-/* HERO */
-
-.container{
-    max-width:1300px;
-    margin:auto;
-    padding:35px 20px;
-}
-
-.hero{
-    background:linear-gradient(135deg,#ff0055,#ff9900);
-    border-radius:35px;
-    padding:55px;
-    color:white;
-    margin-bottom:35px;
-    position:relative;
-    overflow:hidden;
-}
-
-.hero::after{
-    content:'';
-    position:absolute;
-    width:300px;
-    height:300px;
-    border-radius:50%;
-    background:rgba(255,255,255,.08);
-    right:-80px;
-    bottom:-80px;
-}
-
-.hero h1{
-    font-size:60px;
-    font-weight:900;
-    margin-bottom:10px;
-}
-
-.hero p{
-    font-size:18px;
-    margin-bottom:25px;
-}
-
-.search-box{
-    max-width:500px;
-    display:flex;
-    background:#fff;
-    padding:6px;
-    border-radius:50px;
-}
-
-.search-box input{
-    flex:1;
-    border:none;
-    outline:none;
-    padding:15px 20px;
-    border-radius:50px;
-    font-size:16px;
-}
-
-.search-btn{
-    width:50px;
-    height:50px;
-    border:none;
-    border-radius:50%;
-    cursor:pointer;
-    color:white;
-    background:linear-gradient(135deg,#ff0055,#ff9900);
-}
-
-/* CATEGORIE */
-
-.categories{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:25px;
-}
-
-.card{
-    background:white;
-    border-radius:28px;
-    padding:30px;
-    text-align:center;
-    cursor:pointer;
-    transition:.3s;
-    box-shadow:0 8px 25px rgba(0,0,0,.05);
-}
-
-.card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 15px 35px rgba(0,0,0,.08);
-}
-
-.card-icon{
-    width:80px;
-    height:80px;
-    margin:auto;
-    margin-bottom:18px;
-    border-radius:20px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:32px;
-    color:white;
-    background:linear-gradient(135deg,#ff0055,#ff9900);
-}
-
-.card h3{
-    font-size:18px;
-    font-weight:800;
-}
-
-/* FOOTER */
-
-footer{
-    text-align:center;
-    padding:35px;
-    color:#777;
-}
-
-footer span{
-    color:#ff5500;
-    font-weight:800;
-}
-
-/* MOBILE */
+/* INDICI ENERGETICI */
+.energy-section{margin:0 0 38px;}
+.energy-heading{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;margin-bottom:20px;}
+.energy-heading h2{font-size:clamp(28px,4vw,40px);font-weight:950;letter-spacing:-.04em;color:#171321;}
+.energy-heading p{color:#6f6a7c;font-size:14px;margin:0;}
+.energy-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;}
+.energy-card{position:relative;overflow:hidden;background:rgba(255,255,255,.88);border:1px solid rgba(255,255,255,.8);border-radius:30px;padding:25px;box-shadow:0 24px 70px rgba(39,24,75,.12);backdrop-filter:blur(14px);}
+.energy-card::before{content:"";position:absolute;inset:0 0 auto;height:5px;background:linear-gradient(90deg,#ff0055,#ff9900);}
+.energy-card.psv::before{background:linear-gradient(90deg,#ff9900,#ff0055);}
+.energy-top{display:flex;justify-content:space-between;align-items:center;gap:15px;margin-bottom:18px;}
+.energy-title{display:flex;align-items:center;gap:13px;}
+.energy-icon{width:48px;height:48px;border-radius:16px;background:linear-gradient(135deg,#ff0055,#ff9900);display:flex;align-items:center;justify-content:center;color:#fff;font-size:20px;box-shadow:0 10px 25px rgba(255,72,0,.24);}
+.energy-card.psv .energy-icon{background:linear-gradient(135deg,#ff9900,#ff0055);}
+.energy-title h3{font-size:22px;font-weight:900;color:#171321;}
+.energy-title span{display:block;font-size:12px;color:#6f6a7c;margin-top:2px;}
+.energy-badge{font-size:11px;font-weight:900;padding:8px 11px;border-radius:999px;background:#fff4e8;color:#ff6500;white-space:nowrap;}
+.energy-value{display:flex;align-items:baseline;gap:8px;margin:5px 0 18px;}
+.energy-value strong{font-size:clamp(34px,5vw,48px);line-height:1;font-weight:950;background:linear-gradient(90deg,#ff0055,#ff9900);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;}
+.energy-value small{font-size:14px;font-weight:800;color:#6f6a7c;}
+.energy-table-wrap{overflow-x:auto;border-radius:18px;border:1px solid rgba(39,24,75,.07);}
+.energy-table{width:100%;border-collapse:collapse;font-size:13px;min-width:360px;}
+.energy-table th{background:#faf8fc;color:#6f6a7c;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.06em;padding:11px 13px;font-weight:900;}
+.energy-table td{padding:11px 13px;border-top:1px solid rgba(39,24,75,.06);font-weight:700;color:#292431;}
+.energy-table td:last-child{text-align:right;font-weight:900;}
+.energy-table tbody tr:first-child td{background:rgba(255,122,0,.045);}
+.energy-note{display:flex;justify-content:space-between;gap:12px;margin-top:13px;font-size:11px;color:#8a8492;}
+.energy-source{font-weight:800;color:#6f6a7c;}
 
 @media(max-width:768px){
-
-header{
-    padding:20px;
+header{padding:20px;}
+.logo-text h1{font-size:30px;}
+.logo-text p{display:none;}
+.hero{padding:35px 25px;}
+.hero h1{font-size:40px;}
+.archive span{display:none;}
+.energy-grid{grid-template-columns:1fr;}
+.energy-heading{display:block;}
+.energy-heading p{margin-top:6px;}
+.energy-card{padding:20px;}
 }
-
-.logo-text h1{
-    font-size:30px;
-}
-
-.logo-text p{
-    display:none;
-}
-
-.hero{
-    padding:35px 25px;
-}
-
-.hero h1{
-    font-size:40px;
-}
-
-.archive span{
-    display:none;
-}
-
-}
-
 </style>
 <link rel="stylesheet" href="stile-top-house.css">
 <script src="utenti-ruoli.js"></script>
 <script type="module" src="auth-guard.js"></script>
 </head>
-
 <body>
-
-<div class="top-house-loader" id="topHouseLoader" aria-label="Caricamento TOP HOUSE">
-    <div class="loader-card">
-        <img src="logo.png" alt="TOP HOUSE">
-        <span>Caricamento portale...</span>
-    </div>
-</div>
-
+<div class="top-house-loader" id="topHouseLoader" aria-label="Caricamento TOP HOUSE"><div class="loader-card"><img src="logo.png" alt="TOP HOUSE"><span>Caricamento portale...</span></div></div>
 <header>
-
-    <div class="logo">
-        <img src="logo.png" alt="TOP HOUSE">
-        <div class="logo-text">
-            <h1>TOP HOUSE</h1>
-            <p>casa, energia, fiducia.</p>
-        </div>
-    </div>
-
-    <a class="archive archive-link" href="archivio.html">
-        <div class="archive-icon">
-            <i class="fa-solid fa-star"></i>
-        </div>
-        <span>Archivio Preferiti</span>
-    </a>
-
+<div class="logo"><img src="logo.png" alt="TOP HOUSE"><div class="logo-text"><h1>TOP HOUSE</h1><p>casa, energia, fiducia.</p></div></div>
+<a class="archive archive-link" href="archivio.html"><div class="archive-icon"><i class="fa-solid fa-star"></i></div><span>Archivio Preferiti</span></a>
 </header>
-
 <div class="container">
+<div class="hero"><h1>I Miei File</h1><p>Tutti i documenti condivisi dagli amministratori.</p><div class="search-box"><input id="homeSearch" type="search" placeholder="Cerca categorie, modulistica, CTE..." autocomplete="off"><button class="search-btn" id="homeSearchButton" type="button" aria-label="Cerca"><i class="fa-solid fa-magnifying-glass"></i></button></div></div>
 
-    <div class="hero">
-        <h1>I Miei File</h1>
-        <p>Tutti i documenti condivisi dagli amministratori.</p>
+<section class="energy-section" aria-label="Indici energetici">
+<div class="energy-heading"><div><h2>Indici energetici</h2><p>Monitoraggio rapido dei principali riferimenti del mercato.</p></div><p>Ultimo aggiornamento: 02/09/2026</p></div>
+<div class="energy-grid">
+<article class="energy-card" aria-label="PUN Index GME">
+<div class="energy-top"><div class="energy-title"><div class="energy-icon"><i class="fa-solid fa-bolt"></i></div><div><h3>PUN</h3><span>PUN Index GME · energia elettrica</span></div></div><div class="energy-badge">LUCE</div></div>
+<div class="energy-value"><strong>0,21271</strong><small>€/kWh</small></div>
+<div class="energy-table-wrap"><table class="energy-table"><thead><tr><th>Data</th><th>Valore</th><th>Var.</th></tr></thead><tbody>
+<tr><td>02/09/2026</td><td>0,21271 €/kWh</td><td>+6,56%</td></tr>
+<tr><td>01/09/2026</td><td>0,19882 €/kWh</td><td>+0,76%</td></tr>
+<tr><td>31/08/2026</td><td>0,19731 €/kWh</td><td>+14,23%</td></tr>
+<tr><td>30/08/2026</td><td>0,17273 €/kWh</td><td>−10,87%</td></tr>
+<tr><td>29/08/2026</td><td>0,19379 €/kWh</td><td>−5,71%</td></tr>
+</tbody></table></div>
+<div class="energy-note"><span>Prezzo medio giornaliero</span><span class="energy-source">Fonte: GME</span></div>
+</article>
 
-        <div class="search-box">
-            <input id="homeSearch" type="search" placeholder="Cerca categorie, modulistica, CTE..." autocomplete="off">
-            <button class="search-btn" id="homeSearchButton" type="button" aria-label="Cerca">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-        </div>
-    </div>
-
-    <div class="categories">
-
-        <div class="card" data-search="categorie luce gas energia" data-url="luce-gas.html" onclick="location.href='luce-gas.html'">
-            <div class="card-icon"><i class="fa-solid fa-fire"></i></div>
-            <h3>LUCE E GAS</h3>
-        </div>
-
-        <div class="card" data-search="categorie fotovoltaico" data-url="fotovoltaico.html" onclick="location.href='fotovoltaico.html'">
-            <div class="card-icon"><i class="fa-solid fa-solar-panel"></i></div>
-            <h3>FOTOVOLTAICO</h3>
-        </div>
-
-        <div class="card" data-search="categorie climatizzatore" data-url="climatizzatore.html" onclick="location.href='climatizzatore.html'">
-            <div class="card-icon"><i class="fa-solid fa-snowflake"></i></div>
-            <h3>CLIMATIZZATORE</h3>
-        </div>
-
-        <div class="card" data-search="categorie caldaia" data-url="caldaia.html" onclick="location.href='caldaia.html'">
-            <div class="card-icon"><i class="fa-solid fa-fire-flame-curved"></i></div>
-            <h3>CALDAIA</h3>
-        </div>
-
-        <div class="card" data-search="categorie depuratore" data-url="depuratore.html" onclick="location.href='depuratore.html'">
-            <div class="card-icon"><i class="fa-solid fa-droplet"></i></div>
-            <h3>DEPURATORE</h3>
-        </div>
-
-        <div class="card" data-search="categorie infissi" data-url="infissi.html" onclick="location.href='infissi.html'">
-            <div class="card-icon"><i class="fa-solid fa-window-maximize"></i></div>
-            <h3>INFISSI</h3>
-        </div>
-
-        <div class="card" data-search="categorie pompe di calore" data-url="pompe-di-calore.html" onclick="location.href='pompe-di-calore.html'">
-            <div class="card-icon"><i class="fa-solid fa-fan"></i></div>
-            <h3>POMPE DI CALORE</h3>
-        </div>
-
-        <div class="card" data-search="categorie allarmi" data-url="allarmi.html" onclick="location.href='allarmi.html'">
-            <div class="card-icon"><i class="fa-solid fa-shield-halved"></i></div>
-            <h3>ALLARMI</h3>
-        </div>
-
-        <div class="card" data-search="categorie telefonia" data-url="telefonia.html" onclick="location.href='telefonia.html'">
-            <div class="card-icon"><i class="fa-solid fa-phone"></i></div>
-            <h3>TELEFONIA</h3>
-        </div>
-
-        <div class="card" data-search="categorie wall box wallbox" data-url="wall-box.html" onclick="location.href='wall-box.html'">
-            <div class="card-icon"><i class="fa-solid fa-charging-station"></i></div>
-            <h3>WALL BOX</h3>
-        </div>
-
-        <div class="card" data-search="categorie moduli modulistica cte procedimenti privacy" data-url="moduli.html" onclick="location.href='moduli.html'">
-            <div class="card-icon"><i class="fa-solid fa-file-lines"></i></div>
-            <h3>MODULI</h3>
-        </div>
-
-        <div class="card" data-search="archivio preferiti" data-url="archivio.html" onclick="location.href='archivio.html'">
-            <div class="card-icon"><i class="fa-solid fa-star"></i></div>
-            <h3>ARCHIVIO</h3>
-        </div>
-
-        <div class="card admin-only" data-admin-only data-search="caricamento pdf area caricamento admin upload" data-url="admin-caricamento.html" onclick="location.href='admin-caricamento.html'">
-            <div class="card-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
-            <h3>CARICAMENTO FILE</h3>
-        </div>
-
-    </div>
-        <p class="search-empty" id="searchEmpty" hidden>Nessun risultato trovato</p>
-
+<article class="energy-card psv" aria-label="PSV gas">
+<div class="energy-top"><div class="energy-title"><div class="energy-icon"><i class="fa-solid fa-fire-flame-curved"></i></div><div><h3>PSV</h3><span>Punto di Scambio Virtuale · gas naturale</span></div></div><div class="energy-badge">GAS</div></div>
+<div class="energy-value"><strong>0,81933</strong><small>€/Smc</small></div>
+<div class="energy-table-wrap"><table class="energy-table"><thead><tr><th>Data</th><th>Valore</th><th>Var.</th></tr></thead><tbody>
+<tr><td>02/09/2026</td><td>0,81933 €/Smc</td><td>+6,30%</td></tr>
+<tr><td>01/09/2026</td><td>0,77079 €/Smc</td><td>+0,90%</td></tr>
+<tr><td>31/08/2026</td><td>0,76395 €/Smc</td><td>+1,98%</td></tr>
+<tr><td>30/08/2026</td><td>0,74909 €/Smc</td><td>−0,76%</td></tr>
+<tr><td>29/08/2026</td><td>0,75486 €/Smc</td><td>−0,86%</td></tr>
+</tbody></table></div>
+<div class="energy-note"><span>Prezzo medio giornaliero</span><span class="energy-source">Fonte: SNAM / GME</span></div>
+</article>
 </div>
+</section>
 
-<footer>
-    © 2026 <span>TOP HOUSE</span>
-</footer>
-
+<div class="categories">
+<div class="card" data-search="categorie luce gas energia" data-url="luce-gas.html" onclick="location.href='luce-gas.html'"><div class="card-icon"><i class="fa-solid fa-fire"></i></div><h3>LUCE E GAS</h3></div>
+<div class="card" data-search="categorie fotovoltaico" data-url="fotovoltaico.html" onclick="location.href='fotovoltaico.html'"><div class="card-icon"><i class="fa-solid fa-solar-panel"></i></div><h3>FOTOVOLTAICO</h3></div>
+<div class="card" data-search="categorie climatizzatore" data-url="climatizzatore.html" onclick="location.href='climatizzatore.html'"><div class="card-icon"><i class="fa-solid fa-snowflake"></i></div><h3>CLIMATIZZATORE</h3></div>
+<div class="card" data-search="categorie caldaia" data-url="caldaia.html" onclick="location.href='caldaia.html'"><div class="card-icon"><i class="fa-solid fa-fire-flame-curved"></i></div><h3>CALDAIA</h3></div>
+<div class="card" data-search="categorie depuratore" data-url="depuratore.html" onclick="location.href='depuratore.html'"><div class="card-icon"><i class="fa-solid fa-droplet"></i></div><h3>DEPURATORE</h3></div>
+<div class="card" data-search="categorie infissi" data-url="infissi.html" onclick="location.href='infissi.html'"><div class="card-icon"><i class="fa-solid fa-window-maximize"></i></div><h3>INFISSI</h3></div>
+<div class="card" data-search="categorie pompe di calore" data-url="pompe-di-calore.html" onclick="location.href='pompe-di-calore.html'"><div class="card-icon"><i class="fa-solid fa-fan"></i></div><h3>POMPE DI CALORE</h3></div>
+<div class="card" data-search="categorie allarmi" data-url="allarmi.html" onclick="location.href='allarmi.html'"><div class="card-icon"><i class="fa-solid fa-shield-halved"></i></div><h3>ALLARMI</h3></div>
+<div class="card" data-search="categorie telefonia" data-url="telefonia.html" onclick="location.href='telefonia.html'"><div class="card-icon"><i class="fa-solid fa-phone"></i></div><h3>TELEFONIA</h3></div>
+<div class="card" data-search="categorie wall box wallbox" data-url="wall-box.html" onclick="location.href='wall-box.html'"><div class="card-icon"><i class="fa-solid fa-charging-station"></i></div><h3>WALL BOX</h3></div>
+<div class="card" data-search="categorie moduli modulistica cte procedimenti privacy" data-url="moduli.html" onclick="location.href='moduli.html'"><div class="card-icon"><i class="fa-solid fa-file-lines"></i></div><h3>MODULI</h3></div>
+<div class="card" data-search="archivio preferiti" data-url="archivio.html" onclick="location.href='archivio.html'"><div class="card-icon"><i class="fa-solid fa-star"></i></div><h3>ARCHIVIO</h3></div>
+<div class="card admin-only" data-admin-only data-search="caricamento pdf area caricamento admin upload" data-url="admin-caricamento.html" onclick="location.href='admin-caricamento.html'"><div class="card-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div><h3>CARICAMENTO FILE</h3></div>
+</div>
+<p class="search-empty" id="searchEmpty" hidden>Nessun risultato trovato</p>
+</div>
+<footer>© 2026 <span>TOP HOUSE</span></footer>
 <script>
 (function(){
-  const loader = document.getElementById('topHouseLoader');
-  const hideLoader = () => { if (loader) loader.classList.add('is-hidden'); };
-  window.addEventListener('load', () => setTimeout(hideLoader, 450));
-  setTimeout(hideLoader, 1800);
-
-  const input = document.getElementById('homeSearch');
-  const button = document.getElementById('homeSearchButton');
-  const cards = Array.from(document.querySelectorAll('.categories .card'));
-  const empty = document.getElementById('searchEmpty');
-  const normalize = value => value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').trim();
-  function applySearch(){
-    const query = normalize(input.value);
-    let visible = 0;
-    cards.forEach(card => {
-      const text = normalize(`${card.textContent} ${card.dataset.search || ''}`);
-      const match = !query || text.includes(query);
-      card.hidden = !match;
-      if (match) visible += 1;
-    });
-    if (empty) empty.hidden = visible !== 0;
-    return cards.filter(card => !card.hidden);
-  }
-  function openFirstResult(){
-    const results = applySearch();
-    if (results[0]?.dataset.url) window.location.href = results[0].dataset.url;
-  }
-  input?.addEventListener('input', applySearch);
-  input?.addEventListener('keydown', event => { if (event.key === 'Enter') { event.preventDefault(); openFirstResult(); } });
-  button?.addEventListener('click', openFirstResult);
-  applySearch();
+const loader=document.getElementById('topHouseLoader');const hideLoader=()=>{if(loader)loader.classList.add('is-hidden');};window.addEventListener('load',()=>setTimeout(hideLoader,450));setTimeout(hideLoader,1800);
+const input=document.getElementById('homeSearch');const button=document.getElementById('homeSearchButton');const cards=Array.from(document.querySelectorAll('.categories .card'));const empty=document.getElementById('searchEmpty');const normalize=value=>value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').trim();
+function applySearch(){const query=normalize(input.value);let visible=0;cards.forEach(card=>{const text=normalize(`${card.textContent} ${card.dataset.search||''}`);const match=!query||text.includes(query);card.hidden=!match;if(match)visible+=1;});if(empty)empty.hidden=visible!==0;return cards.filter(card=>!card.hidden);}
+function openFirstResult(){const results=applySearch();if(results[0]?.dataset.url)window.location.href=results[0].dataset.url;}
+input?.addEventListener('input',applySearch);input?.addEventListener('keydown',event=>{if(event.key==='Enter'){event.preventDefault();openFirstResult();}});button?.addEventListener('click',openFirstResult);applySearch();
 })();
 </script>
 </body>
