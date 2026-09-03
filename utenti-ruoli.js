@@ -17,3 +17,11 @@ if (document.querySelector('.energy-section')) {
   script.defer = true;
   document.head.appendChild(script);
 }
+
+// Gestione rapida dei documenti per gli admin.
+if (window.location.pathname.split('/').pop() === 'admin-caricamento.html') {
+  const script = document.createElement('script');
+  script.src = 'elimina-pdf.js?v=' + Date.now();
+  script.defer = true;
+  document.head.appendChild(script);
+}
