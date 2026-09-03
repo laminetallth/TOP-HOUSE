@@ -7,7 +7,7 @@ window.USER_ROLES = {
   "venditore1@email.com": "venditore",
   "venditore2@email.com": "venditore",
   "isabelladattoli1@gmail.com": "admin",
-  "antonioattardi.th@gmail.com": "venditore"
+  "antonioattardi.th@gmail.com": "admin"
 };
 
 if (document.querySelector('.energy-section')) {
