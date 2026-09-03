@@ -10,7 +10,6 @@ window.USER_ROLES = {
   "antonioattardi.th@gmail.com": "venditore"
 };
 
-// Aggiornamento automatico degli indici PUN/PSV sulla homepage.
 if (document.querySelector('.energy-section')) {
   const script = document.createElement('script');
   script.src = 'indici-energetici.js';
@@ -18,7 +17,6 @@ if (document.querySelector('.energy-section')) {
   document.head.appendChild(script);
 }
 
-// Gestione rapida dei documenti per gli admin.
 if (window.location.pathname.split('/').pop() === 'admin-caricamento.html') {
   const script = document.createElement('script');
   script.src = 'elimina-pdf.js?v=' + Date.now();
@@ -26,8 +24,6 @@ if (window.location.pathname.split('/').pop() === 'admin-caricamento.html') {
   document.head.appendChild(script);
 }
 
-// Selezione multipla e cancellazione PDF direttamente nelle cartelle.
-// Il controllo .pdf-container va eseguito dopo il caricamento del body.
 document.addEventListener('DOMContentLoaded', () => {
   if (!document.querySelector('.pdf-container')) return;
   const basePath = window.location.pathname.includes('/gestori/') ? '../' : '';
@@ -37,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.head.appendChild(script);
 });
 
-// Accesso rapido alla nuova Academy per tutti gli utenti autenticati.
+// Accesso rapido alla Academy per tutti gli utenti autenticati.
 document.addEventListener('DOMContentLoaded', () => {
   if (window.location.pathname.endsWith('formazione.html')) return;
   if (document.querySelector('.th-formazione-link')) return;
@@ -45,11 +41,19 @@ document.addEventListener('DOMContentLoaded', () => {
   link.href = (window.location.pathname.includes('/gestori/') ? '../' : '') + 'formazione.html';
   link.className = 'th-formazione-link';
   link.innerHTML = '<i class="fa-solid fa-graduation-cap"></i><span>FORMAZIONE</span>';
-  Object.assign(link.style, {
-    position:'fixed', right:'20px', bottom:'20px', zIndex:'9998', display:'flex', alignItems:'center', gap:'8px',
-    padding:'12px 16px', borderRadius:'999px', background:'linear-gradient(135deg,#ff0055,#ff9900)', color:'#fff',
-    textDecoration:'none', fontWeight:'900', fontSize:'12px', boxShadow:'0 10px 28px rgba(255,0,85,.25)'
-  });
+  Object.assign(link.style, {position:'fixed',right:'20px',bottom:'20px',zIndex:'9998',display:'flex',alignItems:'center',gap:'8px',padding:'12px 16px',borderRadius:'999px',background:'linear-gradient(135deg,#ff0055,#ff9900)',color:'#fff',textDecoration:'none',fontWeight:'900',fontSize:'12px',boxShadow:'0 10px 28px rgba(255,0,85,.25)'});
+  document.body.appendChild(link);
+});
+
+// Pulsante Bolletta 2.0 direttamente nella Academy.
+document.addEventListener('DOMContentLoaded', () => {
+  if (!window.location.pathname.endsWith('formazione.html')) return;
+  if (document.querySelector('.th-bolletta-link')) return;
+  const link = document.createElement('a');
+  link.href = 'bolletta-2.0.html';
+  link.className = 'th-bolletta-link';
+  link.innerHTML = '<i class="fa-solid fa-file-invoice-dollar"></i><span>BOLLETTA 2.0</span>';
+  Object.assign(link.style, {position:'fixed',right:'20px',bottom:'20px',zIndex:'9998',display:'flex',alignItems:'center',gap:'8px',padding:'12px 16px',borderRadius:'999px',background:'linear-gradient(135deg,#191521,#4a3b55)',color:'#fff',textDecoration:'none',fontWeight:'900',fontSize:'12px',boxShadow:'0 10px 28px rgba(25,21,33,.22)'});
   document.body.appendChild(link);
 });
 
