@@ -27,9 +27,28 @@ if (window.location.pathname.split('/').pop() === 'admin-caricamento.html') {
 }
 
 // Selezione multipla e cancellazione PDF direttamente nelle cartelle.
-if (document.querySelector('.pdf-container')) {
+// Il controllo .pdf-container va eseguito dopo il caricamento del body.
+document.addEventListener('DOMContentLoaded', () => {
+  if (!document.querySelector('.pdf-container')) return;
+  const basePath = window.location.pathname.includes('/gestori/') ? '../' : '';
   const script = document.createElement('script');
-  script.src = 'gestione-documenti.js?v=' + Date.now();
+  script.src = basePath + 'gestione-documenti.js?v=' + Date.now();
   script.defer = true;
   document.head.appendChild(script);
-}
+});
+
+// Accesso rapido alla nuova Academy per tutti gli utenti autenticati.
+document.addEventListener('DOMContentLoaded', () => {
+  if (window.location.pathname.endsWith('formazione.html')) return;
+  if (document.querySelector('.th-formazione-link')) return;
+  const link = document.createElement('a');
+  link.href = (window.location.pathname.includes('/gestori/') ? '../' : '') + 'formazione.html';
+  link.className = 'th-formazione-link';
+  link.innerHTML = '<i class="fa-solid fa-graduation-cap"></i><span>FORMAZIONE</span>';
+  Object.assign(link.style, {
+    position:'fixed', right:'20px', bottom:'20px', zIndex:'9998', display:'flex', alignItems:'center', gap:'8px',
+    padding:'12px 16px', borderRadius:'999px', background:'linear-gradient(135deg,#ff0055,#ff9900)', color:'#fff',
+    textDecoration:'none', fontWeight:'900', fontSize:'12px', boxShadow:'0 10px 28px rgba(255,0,85,.25)'
+  });
+  document.body.appendChild(link);
+});
