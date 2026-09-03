@@ -1,0 +1,32 @@
+name: Aggiorna PUN e PSV
+
+on:
+  schedule:
+    # Ogni giorno alle 07:15 ora italiana circa (05:15 UTC in estate).
+    - cron: '15 5 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-energy-indexes:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Aggiorna dati PUN e PSV
+        run: python3 scripts/aggiorna-indici-energia.py
+
+      - name: Salva aggiornamento
+        run: |
+          git config user.name "TOP HOUSE Bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/indici-energia.json
+          if git diff --cached --quiet; then
+            echo "Nessun nuovo dato da pubblicare."
+          else
+            git commit -m "Aggiorna PUN e PSV"
+            git push
+          fi
