@@ -25,3 +25,11 @@ if (window.location.pathname.split('/').pop() === 'admin-caricamento.html') {
   script.defer = true;
   document.head.appendChild(script);
 }
+
+// Selezione multipla e cancellazione PDF direttamente nelle cartelle.
+if (document.querySelector('.pdf-container')) {
+  const script = document.createElement('script');
+  script.src = 'gestione-documenti.js?v=' + Date.now();
+  script.defer = true;
+  document.head.appendChild(script);
+}
