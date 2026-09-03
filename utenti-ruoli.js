@@ -9,3 +9,11 @@ window.USER_ROLES = {
   "isabelladattoli1@gmail.com": "venditore",
   "antonioattardi.th@gmail.com": "venditore"
 };
+
+// Aggiornamento automatico degli indici PUN/PSV sulla homepage.
+if (document.querySelector('.energy-section')) {
+  const script = document.createElement('script');
+  script.src = 'indici-energetici.js';
+  script.defer = true;
+  document.head.appendChild(script);
+}
