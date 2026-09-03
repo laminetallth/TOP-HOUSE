@@ -52,3 +52,12 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   document.body.appendChild(link);
 });
+
+// Assistente AI della Academy.
+if (window.location.pathname.split('/').pop() === 'formazione.html') {
+  const script = document.createElement('script');
+  script.type = 'module';
+  script.src = 'formazione-ai.js?v=' + Date.now();
+  script.defer = true;
+  document.head.appendChild(script);
+}
