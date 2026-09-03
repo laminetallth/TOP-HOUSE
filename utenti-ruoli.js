@@ -5,5 +5,6 @@ window.USER_ROLES = {
   "laminetall.th+admin@gmail.com": "admin",
   "gabrielestraniero.th+admin@gmail.com": "admin",
   "venditore1@email.com": "venditore",
-  "venditore2@email.com": "venditore"
+  "venditore2@email.com": "venditore",
+  "isabelladattoli1@gmail.com": "venditore"
 };
