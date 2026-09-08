@@ -1,33 +1,38 @@
 {
-  "updatedAt": "2026-09-07",
+  "updatedAt": "2026-09-08",
   "source": "GME tramite Swapy",
   "pun": {
-    "value": 0.219,
+    "value": 0.224,
     "unit": "€/kWh",
-    "date": "2026-09-07",
-    "change": 3.79
+    "date": "2026-09-08",
+    "change": 2.28
   },
   "psv": {
-    "value": 0.78,
+    "value": 0.835,
     "unit": "€/Smc",
-    "date": "2026-09-04",
-    "change": -3.11
+    "date": "2026-09-07",
+    "change": 7.05
   },
   "history": [
     {
+      "date": "2026-09-08",
+      "pun": 0.224,
+      "psv": null
+    },
+    {
       "date": "2026-09-07",
       "pun": 0.219,
-      "psv": null
+      "psv": 0.835
     },
     {
       "date": "2026-09-06",
       "pun": 0.211,
-      "psv": null
+      "psv": 0.78
     },
     {
       "date": "2026-09-05",
       "pun": 0.211,
-      "psv": null
+      "psv": 0.78
     },
     {
       "date": "2026-09-04",
@@ -56,11 +61,6 @@
     },
     {
       "date": "2026-08-30",
-      "pun": 0.206,
-      "psv": 0.748
-    },
-    {
-      "date": "2026-08-29",
       "pun": 0.206,
       "psv": 0.748
     }
