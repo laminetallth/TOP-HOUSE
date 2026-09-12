@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-11",
+  "updatedAt": "2026-09-12",
   "source": "GME tramite Swapy",
   "pun": {
     "value": 0.216,
@@ -8,16 +8,16 @@
     "change": -5.26
   },
   "psv": {
-    "value": 0.914,
+    "value": 0.867,
     "unit": "€/Smc",
-    "date": "2026-09-10",
-    "change": 2.7
+    "date": "2026-09-11",
+    "change": -5.14
   },
   "history": [
     {
       "date": "2026-09-11",
       "pun": 0.216,
-      "psv": null
+      "psv": 0.867
     },
     {
       "date": "2026-09-10",
