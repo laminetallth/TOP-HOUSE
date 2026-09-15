@@ -2,8 +2,8 @@ name: Aggiorna PUN e PSV
 
 on:
   schedule:
-    # Ogni giorno alle 07:15 ora italiana circa (05:15 UTC in estate).
-    - cron: '15 5 * * *'
+    # Controlla ogni ora: Swapy aggiorna i dati lato server ogni ora.
+    - cron: '15 * * * *'
   workflow_dispatch:
 
 permissions:
