@@ -4,6 +4,7 @@ window.USER_ROLES = {
   "laminetall.th@gmail.com": "admin",
   "laminetall.th+admin@gmail.com": "admin",
   "gabrielestraniero.th+admin@gmail.com": "admin",
+  "info@solarity-energysolutions.com": "admin",
   "venditore1@email.com": "venditore",
   "venditore2@email.com": "venditore",
   "isabelladattoli1@gmail.com": "admin",
