@@ -12,23 +12,48 @@ MONTHS = {
     "settembre": 9, "ottobre": 10, "novembre": 11, "dicembre": 12,
 }
 
+
 def to_float(value):
-    if value is None or value.strip() in {"", "—", "-"}:
+    """Converte sia 0.216 sia 0,216 senza trasformare i decimali in 216."""
+    if value is None:
         return None
-    return float(value.strip().replace(".", "").replace(",", "."))
+    cleaned = value.strip()
+    if cleaned in {"", "—", "-"}:
+        return None
+
+    # Rimuove eventuali simboli/unità lasciando cifre, punto, virgola e segno.
+    cleaned = re.sub(r"[^0-9,.+-]", "", cleaned)
+    if not cleaned:
+        return None
+
+    # Se sono presenti entrambi, l'ultimo separatore è quello decimale.
+    if "." in cleaned and "," in cleaned:
+        if cleaned.rfind(",") > cleaned.rfind("."):
+            cleaned = cleaned.replace(".", "").replace(",", ".")
+        else:
+            cleaned = cleaned.replace(",", "")
+    elif "," in cleaned:
+        cleaned = cleaned.replace(",", ".")
+
+    return float(cleaned)
+
 
 def parse_date(value):
     m = re.search(r"(\d{1,2})\s+([A-Za-zà]+)\s+(\d{4})", value.strip(), re.I)
     if not m:
         return None
-    return f"{m.group(3)}-{MONTHS[m.group(2).lower()]:02d}-{int(m.group(1)):02d}"
+    month = MONTHS.get(m.group(2).lower())
+    if not month:
+        return None
+    return f"{m.group(3)}-{month:02d}-{int(m.group(1)):02d}"
 
-req = Request(URL, headers={"User-Agent": "TOP-HOUSE energy updater/1.0"})
+
+req = Request(URL, headers={"User-Agent": "TOP-HOUSE energy updater/1.1"})
 html = urlopen(req, timeout=30).read().decode("utf-8", "replace")
 text = re.sub(r"<[^>]+>", " ", html)
 text = re.sub(r"\s+", " ", text)
 
-# The page publishes a recent-history table with: Date | PUN €/kWh | PSV €/Smc.
+# La pagina pubblica una tabella recente: Data | PUN €/kWh | PSV €/Smc.
 pattern = re.compile(
     r"(\d{1,2}\s+[A-Za-zà]+\s+\d{4})\s*\|?\s*"
     r"([0-9]+(?:[.,][0-9]+)?)\s*\|?\s*"
@@ -40,18 +65,25 @@ for m in pattern.finditer(text):
     if d:
         rows.append({"date": d, "pun": to_float(m.group(2)), "psv": to_float(m.group(3))})
 
-# Fallback: parse the table rows from HTML when pipes are not present in source.
+# Fallback: parse direttamente le righe HTML della tabella.
 if len(rows) < 2:
-    row_re = re.compile(r"<tr[^>]*>\s*<td[^>]*>(.*?)</td>\s*<td[^>]*>(.*?)</td>\s*<td[^>]*>(.*?)</td>", re.I | re.S)
+    row_re = re.compile(
+        r"<tr[^>]*>\s*<td[^>]*>(.*?)</td>\s*<td[^>]*>(.*?)</td>\s*<td[^>]*>(.*?)</td>",
+        re.I | re.S,
+    )
     rows = []
     for m in row_re.finditer(html):
         cells = [re.sub(r"<[^>]+>", " ", x) for x in m.groups()]
         cells = [re.sub(r"\s+", " ", x).strip() for x in cells]
         d = parse_date(cells[0])
         if d:
-            rows.append({"date": d, "pun": to_float(re.sub(r"[^0-9,. -]", "", cells[1])), "psv": to_float(re.sub(r"[^0-9,. -]", "", cells[2]))})
+            rows.append({
+                "date": d,
+                "pun": to_float(cells[1]),
+                "psv": to_float(cells[2]),
+            })
 
-# Keep one row per day, newest first.
+# Mantieni una sola riga per giorno, dalla più recente alla più vecchia.
 unique = {}
 for row in rows:
     unique[row["date"]] = row
@@ -68,21 +100,28 @@ if not pun_rows or not psv_rows:
 pun = pun_rows[0]
 psv = psv_rows[0]
 
-def change(rows):
-    if len(rows) < 2 or rows[1]["pun"] is None:
-        return None
-    return round((rows[0]["pun"] / rows[1]["pun"] - 1) * 100, 2)
 
-def change_psv(rows):
-    if len(rows) < 2 or rows[1]["psv"] is None:
+def change(rows, key):
+    if len(rows) < 2 or rows[1][key] is None:
         return None
-    return round((rows[0]["psv"] / rows[1]["psv"] - 1) * 100, 2)
+    return round((rows[0][key] / rows[1][key] - 1) * 100, 2)
+
 
 out = {
     "updatedAt": date.today().isoformat(),
     "source": "GME tramite Swapy",
-    "pun": {"value": pun["pun"], "unit": "€/kWh", "date": pun["date"], "change": change(pun_rows)},
-    "psv": {"value": psv["psv"], "unit": "€/Smc", "date": psv["date"], "change": change_psv(psv_rows)},
+    "pun": {
+        "value": pun["pun"],
+        "unit": "€/kWh",
+        "date": pun["date"],
+        "change": change(pun_rows, "pun"),
+    },
+    "psv": {
+        "value": psv["psv"],
+        "unit": "€/Smc",
+        "date": psv["date"],
+        "change": change(psv_rows, "psv"),
+    },
     "history": history,
 }
 
