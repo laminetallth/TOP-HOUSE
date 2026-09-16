@@ -109,3 +109,7 @@ function bindLogout(buttonId = 'logoutButton') { document.getElementById(buttonI
 
 window.TOPHOUSE_AUTH = { auth, requireLogin, initLoginForm, bindLogout, signOut: () => signOut(auth), getCurrentRole: () => sessionStorage.getItem('topHouseUserRole') || '' };
 if (!publicPages.includes(currentPage)) requireLogin();
+
+const bulkDeleteScript = document.createElement('script');
+bulkDeleteScript.src = `${basePath}bulk-delete.js`;
+document.head.appendChild(bulkDeleteScript);
