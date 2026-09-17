@@ -12,12 +12,15 @@ window.USER_ROLES = {
   "francesco_cecchini@hotmail.com": "admin"
 };
 
-if (document.querySelector('.energy-section')) {
-  const script = document.createElement('script');
-  script.src = 'indici-energetici.js';
-  script.defer = true;
-  document.head.appendChild(script);
-}
+// Carica gli indici energetici dopo la disponibilità del DOM.
+document.addEventListener('DOMContentLoaded', () => {
+  if (document.querySelector('.energy-section')) {
+    const script = document.createElement('script');
+    script.src = 'indici-energetici.js?v=' + Date.now();
+    script.defer = true;
+    document.head.appendChild(script);
+  }
+});
 
 if (window.location.pathname.split('/').pop() === 'admin-caricamento.html') {
   const script = document.createElement('script');
