@@ -10,7 +10,7 @@ window.USER_ROLES = {
   "isabelladattoli1@gmail.com": "admin",
   "antonioattardi.th@gmail.com": "admin",
   "francesco_cecchini@hotmail.com": "admin",
-  "sarahcavadoarmy@gmail.com": "admin"
+  "saracavedoarmy@gmail.com": "admin"
 };
 
 // Carica gli indici energetici dopo la disponibilità del DOM.
