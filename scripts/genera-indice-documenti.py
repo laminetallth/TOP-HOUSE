@@ -27,6 +27,19 @@ for entry in filter(None, listing.split("\0")):
         continue
     folders.setdefault(folder, []).append({"name": name, "size": int(size) if size.isdigit() else None})
 
+# I link video sono piccoli file JSON: titolo e indirizzo vanno nell'indice,
+# così il portale li mostra subito senza scaricarli uno per uno.
+for folder, files in folders.items():
+    for item in files:
+        if item["name"].lower().startswith("video-") and item["name"].lower().endswith(".json"):
+            try:
+                raw = subprocess.run(["git", "show", f"HEAD:{folder}/{item['name']}"], check=True, capture_output=True).stdout
+                data = json.loads(raw.decode("utf-8"))
+                item["title"] = str(data.get("title") or "")[:200]
+                item["url"] = str(data.get("url") or "")[:500]
+            except (subprocess.CalledProcessError, ValueError):
+                pass
+
 for files in folders.values():
     files.sort(key=lambda item: item["name"].lower())
 

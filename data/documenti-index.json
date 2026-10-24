@@ -9,7 +9,9 @@
   "documenti/acea/procedimenti": [
    {
     "name": "video-formazione-caricamento-contratti-acea-1784198136766.json",
-    "size": 219
+    "size": 219,
+    "title": "FORMAZIONE CARICAMENTO CONTRATTI ACEA",
+    "url": "https://drive.google.com/file/d/1nmTJqmyaDz7b8J8yRHeB-aARlwIwL7Bq/view?usp=drive_link"
    }
   ],
   "documenti/alperia/cte/business": [
@@ -527,7 +529,9 @@
    },
    {
     "name": "video-formazione-base-eko-1784109253018.json",
-    "size": 201
+    "size": 201,
+    "title": "Formazione base EKO",
+    "url": "https://drive.google.com/file/d/1gzdUz0YhOJcrq9dKPnyjEKzAOUK8u3fZ/view?usp=drive_link"
    }
   ],
   "documenti/fotovoltaico/presentazione-base": [
@@ -539,15 +543,21 @@
   "documenti/fotovoltaico/reonic-preventivi-tutorial": [
    {
     "name": "video-tutorial-industriale-1784109801428.json",
-    "size": 202
+    "size": 202,
+    "title": "Tutorial industriale",
+    "url": "https://drive.google.com/file/d/1TImiEMUuBGwHISbjzvrPUiYNckObqljn/view?usp=drive_link"
    },
    {
     "name": "video-tutorial-preventivo-prezzo-perzonalizzato-1784109643663.json",
-    "size": 223
+    "size": 223,
+    "title": "Tutorial preventivo prezzo perzonalizzato",
+    "url": "https://drive.google.com/file/d/1s-ko4Do1iMQnb8YI8ReCsuZZyIvE8xdl/view?usp=drive_link"
    },
    {
     "name": "video-tutorial-residenziale-1784109711909.json",
-    "size": 203
+    "size": 203,
+    "title": "Tutorial residenziale",
+    "url": "https://drive.google.com/file/d/1-BmK9LBleJ4wbaCh9ImOdE_fQfH62Gt1/view?usp=drive_link"
    }
   ],
   "documenti/fotovoltaico/riunioni": [

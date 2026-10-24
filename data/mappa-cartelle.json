@@ -1,0 +1,2659 @@
+{
+ "folders": {
+  "documenti/a2a/cte/business": {
+   "url": "gestori/a2a-cte-business.html",
+   "path": [
+    "Luce e gas",
+    "A2A",
+    "CTE",
+    "Business"
+   ]
+  },
+  "documenti/a2a/cte/residenziale": {
+   "url": "gestori/a2a-cte-residenziale.html",
+   "path": [
+    "Luce e gas",
+    "A2A",
+    "CTE",
+    "Residenziale"
+   ]
+  },
+  "documenti/a2a/modulistica": {
+   "url": "gestori/a2a-modulistica.html",
+   "path": [
+    "Luce e gas",
+    "A2A",
+    "Modulistica"
+   ]
+  },
+  "documenti/a2a/procedimenti": {
+   "url": "gestori/a2a-procedimenti.html",
+   "path": [
+    "Luce e gas",
+    "A2A",
+    "Procedimenti"
+   ]
+  },
+  "documenti/a2a/privacy": {
+   "url": "gestori/a2a-privacy.html",
+   "path": [
+    "Luce e gas",
+    "A2A",
+    "Privacy"
+   ]
+  },
+  "documenti/acea/cte/business": {
+   "url": "gestori/acea-cte-business.html",
+   "path": [
+    "Luce e gas",
+    "Acea",
+    "CTE",
+    "Business"
+   ]
+  },
+  "documenti/acea/cte/residenziale": {
+   "url": "gestori/acea-cte-residenziale.html",
+   "path": [
+    "Luce e gas",
+    "Acea",
+    "CTE",
+    "Residenziale"
+   ]
+  },
+  "documenti/acea/modulistica": {
+   "url": "gestori/acea-modulistica.html",
+   "path": [
+    "Luce e gas",
+    "Acea",
+    "Modulistica"
+   ]
+  },
+  "documenti/acea/procedimenti": {
+   "url": "gestori/acea-procedimenti.html",
+   "path": [
+    "Luce e gas",
+    "Acea",
+    "Procedimenti"
+   ]
+  },
+  "documenti/acea/privacy": {
+   "url": "gestori/acea-privacy.html",
+   "path": [
+    "Luce e gas",
+    "Acea",
+    "Privacy"
+   ]
+  },
+  "documenti/alperia/cte/business": {
+   "url": "gestori/alperia-cte-business.html",
+   "path": [
+    "Luce e gas",
+    "Alperia",
+    "CTE",
+    "Business"
+   ]
+  },
+  "documenti/alperia/cte/residenziale": {
+   "url": "gestori/alperia-cte-residenziale.html",
+   "path": [
+    "Luce e gas",
+    "Alperia",
+    "CTE",
+    "Residenziale"
+   ]
+  },
+  "documenti/alperia/modulistica": {
+   "url": "gestori/alperia-modulistica.html",
+   "path": [
+    "Luce e gas",
+    "Alperia",
+    "Modulistica"
+   ]
+  },
+  "documenti/alperia/procedimenti": {
+   "url": "gestori/alperia-procedimenti.html",
+   "path": [
+    "Luce e gas",
+    "Alperia",
+    "Procedimenti"
+   ]
+  },
+  "documenti/alperia/privacy": {
+   "url": "gestori/alperia-privacy.html",
+   "path": [
+    "Luce e gas",
+    "Alperia",
+    "Privacy"
+   ]
+  },
+  "documenti/audax/cte/business": {
+   "url": "gestori/audax-cte-business.html",
+   "path": [
+    "Luce e gas",
+    "Audax",
+    "CTE",
+    "Business"
+   ]
+  },
+  "documenti/audax/cte/residenziale": {
+   "url": "gestori/audax-cte-residenziale.html",
+   "path": [
+    "Luce e gas",
+    "Audax",
+    "CTE",
+    "Residenziale"
+   ]
+  },
+  "documenti/audax/modulistica": {
+   "url": "gestori/audax-modulistica.html",
+   "path": [
+    "Luce e gas",
+    "Audax",
+    "Modulistica"
+   ]
+  },
+  "documenti/audax/procedimenti": {
+   "url": "gestori/audax-procedimenti.html",
+   "path": [
+    "Luce e gas",
+    "Audax",
+    "Procedimenti"
+   ]
+  },
+  "documenti/audax/privacy": {
+   "url": "gestori/audax-privacy.html",
+   "path": [
+    "Luce e gas",
+    "Audax",
+    "Privacy"
+   ]
+  },
+  "documenti/cogeme/cte/business": {
+   "url": "gestori/cogeme-cte-business.html",
+   "path": [
+    "Luce e gas",
+    "Cogeme",
+    "CTE",
+    "Business"
+   ]
+  },
+  "documenti/cogeme/cte/residenziale": {
+   "url": "gestori/cogeme-cte-residenziale.html",
+   "path": [
+    "Luce e gas",
+    "Cogeme",
+    "CTE",
+    "Residenziale"
+   ]
+  },
+  "documenti/cogeme/modulistica": {
+   "url": "gestori/cogeme-modulistica.html",
+   "path": [
+    "Luce e gas",
+    "Cogeme",
+    "Modulistica"
+   ]
+  },
+  "documenti/cogeme/procedimenti": {
+   "url": "gestori/cogeme-procedimenti.html",
+   "path": [
+    "Luce e gas",
+    "Cogeme",
+    "Procedimenti"
+   ]
+  },
+  "documenti/cogeme/privacy": {
+   "url": "gestori/cogeme-privacy.html",
+   "path": [
+    "Luce e gas",
+    "Cogeme",
+    "Privacy"
+   ]
+  },
+  "documenti/duferco/cte/business": {
+   "url": "gestori/duferco-cte-business.html",
+   "path": [
+    "Luce e gas",
+    "Duferco",
+    "CTE",
+    "Business"
+   ]
+  },
+  "documenti/duferco/cte/residenziale": {
+   "url": "gestori/duferco-cte-residenziale.html",
+   "path": [
+    "Luce e gas",
+    "Duferco",
+    "CTE",
+    "Residenziale"
+   ]
+  },
+  "documenti/duferco/modulistica": {
+   "url": "gestori/duferco-modulistica.html",
+   "path": [
+    "Luce e gas",
+    "Duferco",
+    "Modulistica"
+   ]
+  },
+  "documenti/duferco/procedimenti": {
+   "url": "gestori/duferco-procedimenti.html",
+   "path": [
+    "Luce e gas",
+    "Duferco",
+    "Procedimenti"
+   ]
+  },
+  "documenti/duferco/privacy": {
+   "url": "gestori/duferco-privacy.html",
+   "path": [
+    "Luce e gas",
+    "Duferco",
+    "Privacy"
+   ]
+  },
+  "documenti/enel/cte/business": {
+   "url": "gestori/enel-cte-business.html",
+   "path": [
+    "Luce e gas",
+    "Enel",
+    "CTE",
+    "Business"
+   ]
+  },
+  "documenti/enel/cte/residenziale": {
+   "url": "gestori/enel-cte-residenziale.html",
+   "path": [
+    "Luce e gas",
+    "Enel",
+    "CTE",
+    "Residenziale"
+   ]
+  },
+  "documenti/enel/modulistica": {
+   "url": "gestori/enel-modulistica.html",
+   "path": [
+    "Luce e gas",
+    "Enel",
+    "Modulistica"
+   ]
+  },
+  "documenti/enel/procedimenti": {
+   "url": "gestori/enel-procedimenti.html",
+   "path": [
+    "Luce e gas",
+    "Enel",
+    "Procedimenti"
+   ]
+  },
+  "documenti/enel/privacy": {
+   "url": "gestori/enel-privacy.html",
+   "path": [
+    "Luce e gas",
+    "Enel",
+    "Privacy"
+   ]
+  },
+  "documenti/engie/cte/business": {
+   "url": "gestori/engie-cte-business.html",
+   "path": [
+    "Luce e gas",
+    "Engie",
+    "CTE",
+    "Business"
+   ]
+  },
+  "documenti/engie/cte/residenziale": {
+   "url": "gestori/engie-cte-residenziale.html",
+   "path": [
+    "Luce e gas",
+    "Engie",
+    "CTE",
+    "Residenziale"
+   ]
+  },
+  "documenti/engie/modulistica": {
+   "url": "gestori/engie-modulistica.html",
+   "path": [
+    "Luce e gas",
+    "Engie",
+    "Modulistica"
+   ]
+  },
+  "documenti/engie/procedimenti": {
+   "url": "gestori/engie-procedimenti.html",
+   "path": [
+    "Luce e gas",
+    "Engie",
+    "Procedimenti"
+   ]
+  },
+  "documenti/engie/privacy": {
+   "url": "gestori/engie-privacy.html",
+   "path": [
+    "Luce e gas",
+    "Engie",
+    "Privacy"
+   ]
+  },
+  "documenti/gde/cte/business": {
+   "url": "gestori/gde-cte-business.html",
+   "path": [
+    "Luce e gas",
+    "GDE",
+    "CTE",
+    "Business"
+   ]
+  },
+  "documenti/gde/cte/residenziale": {
+   "url": "gestori/gde-cte-residenziale.html",
+   "path": [
+    "Luce e gas",
+    "GDE",
+    "CTE",
+    "Residenziale"
+   ]
+  },
+  "documenti/gde/modulistica": {
+   "url": "gestori/gde-modulistica.html",
+   "path": [
+    "Luce e gas",
+    "GDE",
+    "Modulistica"
+   ]
+  },
+  "documenti/gde/procedimenti": {
+   "url": "gestori/gde-procedimenti.html",
+   "path": [
+    "Luce e gas",
+    "GDE",
+    "Procedimenti"
+   ]
+  },
+  "documenti/gde/privacy": {
+   "url": "gestori/gde-privacy.html",
+   "path": [
+    "Luce e gas",
+    "GDE",
+    "Privacy"
+   ]
+  },
+  "documenti/hera/cte/business": {
+   "url": "gestori/hera-cte-business.html",
+   "path": [
+    "Luce e gas",
+    "Hera",
+    "CTE",
+    "Business"
+   ]
+  },
+  "documenti/hera/cte/residenziale": {
+   "url": "gestori/hera-cte-residenziale.html",
+   "path": [
+    "Luce e gas",
+    "Hera",
+    "CTE",
+    "Residenziale"
+   ]
+  },
+  "documenti/hera/modulistica": {
+   "url": "gestori/hera-modulistica.html",
+   "path": [
+    "Luce e gas",
+    "Hera",
+    "Modulistica"
+   ]
+  },
+  "documenti/hera/procedimenti": {
+   "url": "gestori/hera-procedimenti.html",
+   "path": [
+    "Luce e gas",
+    "Hera",
+    "Procedimenti"
+   ]
+  },
+  "documenti/hera/privacy": {
+   "url": "gestori/hera-privacy.html",
+   "path": [
+    "Luce e gas",
+    "Hera",
+    "Privacy"
+   ]
+  },
+  "documenti/iren/cte/business": {
+   "url": "gestori/iren-cte-business.html",
+   "path": [
+    "Luce e gas",
+    "Iren",
+    "CTE",
+    "Business"
+   ]
+  },
+  "documenti/iren/cte/residenziale": {
+   "url": "gestori/iren-cte-residenziale.html",
+   "path": [
+    "Luce e gas",
+    "Iren",
+    "CTE",
+    "Residenziale"
+   ]
+  },
+  "documenti/iren/modulistica": {
+   "url": "gestori/iren-modulistica.html",
+   "path": [
+    "Luce e gas",
+    "Iren",
+    "Modulistica"
+   ]
+  },
+  "documenti/iren/procedimenti": {
+   "url": "gestori/iren-procedimenti.html",
+   "path": [
+    "Luce e gas",
+    "Iren",
+    "Procedimenti"
+   ]
+  },
+  "documenti/iren/privacy": {
+   "url": "gestori/iren-privacy.html",
+   "path": [
+    "Luce e gas",
+    "Iren",
+    "Privacy"
+   ]
+  },
+  "documenti/magix/cte/business": {
+   "url": "gestori/magix-cte-business.html",
+   "path": [
+    "Luce e gas",
+    "Magix",
+    "CTE",
+    "Business"
+   ]
+  },
+  "documenti/magix/cte/residenziale": {
+   "url": "gestori/magix-cte-residenziale.html",
+   "path": [
+    "Luce e gas",
+    "Magix",
+    "CTE",
+    "Residenziale"
+   ]
+  },
+  "documenti/magix/modulistica": {
+   "url": "gestori/magix-modulistica.html",
+   "path": [
+    "Luce e gas",
+    "Magix",
+    "Modulistica"
+   ]
+  },
+  "documenti/magix/procedimenti": {
+   "url": "gestori/magix-procedimenti.html",
+   "path": [
+    "Luce e gas",
+    "Magix",
+    "Procedimenti"
+   ]
+  },
+  "documenti/magix/privacy": {
+   "url": "gestori/magix-privacy.html",
+   "path": [
+    "Luce e gas",
+    "Magix",
+    "Privacy"
+   ]
+  },
+  "documenti/onova/cte-business": {
+   "url": "gestori/onova-cte-business.html",
+   "path": [
+    "Luce e gas",
+    "Onova",
+    "CTE",
+    "Business"
+   ]
+  },
+  "documenti/onova/cte-residenziale": {
+   "url": "gestori/onova-cte-residenziale.html",
+   "path": [
+    "Luce e gas",
+    "Onova",
+    "CTE",
+    "Residenziale"
+   ]
+  },
+  "documenti/onova/modulistica": {
+   "url": "gestori/onova-modulistica.html",
+   "path": [
+    "Luce e gas",
+    "Onova",
+    "Modulistica"
+   ]
+  },
+  "documenti/onova/procedimenti": {
+   "url": "gestori/onova-procedimenti.html",
+   "path": [
+    "Luce e gas",
+    "Onova",
+    "Procedimenti"
+   ]
+  },
+  "documenti/plenitude/cte/business": {
+   "url": "gestori/plenitude-cte-business.html",
+   "path": [
+    "Luce e gas",
+    "Plenitude",
+    "CTE",
+    "Business"
+   ]
+  },
+  "documenti/plenitude/cte/residenziale": {
+   "url": "gestori/plenitude-cte-residenziale.html",
+   "path": [
+    "Luce e gas",
+    "Plenitude",
+    "CTE",
+    "Residenziale"
+   ]
+  },
+  "documenti/plenitude/modulistica": {
+   "url": "gestori/plenitude-modulistica.html",
+   "path": [
+    "Luce e gas",
+    "Plenitude",
+    "Modulistica"
+   ]
+  },
+  "documenti/plenitude/procedimenti": {
+   "url": "gestori/plenitude-procedimenti.html",
+   "path": [
+    "Luce e gas",
+    "Plenitude",
+    "Procedimenti"
+   ]
+  },
+  "documenti/s4/cte-business": {
+   "url": "gestori/s4-cte-business.html",
+   "path": [
+    "Luce e gas",
+    "S4",
+    "CTE",
+    "Business"
+   ]
+  },
+  "documenti/s4/cte-residenziale": {
+   "url": "gestori/s4-cte-residenziale.html",
+   "path": [
+    "Luce e gas",
+    "S4",
+    "CTE",
+    "Residenziale"
+   ]
+  },
+  "documenti/s4/modulistica": {
+   "url": "gestori/s4-modulistica.html",
+   "path": [
+    "Luce e gas",
+    "S4",
+    "Modulistica"
+   ]
+  },
+  "documenti/s4/procedimenti": {
+   "url": "gestori/s4-procedimenti.html",
+   "path": [
+    "Luce e gas",
+    "S4",
+    "Procedimenti"
+   ]
+  },
+  "documenti/simecom/cte-business": {
+   "url": "gestori/simecom-cte-business.html",
+   "path": [
+    "Luce e gas",
+    "Simecom",
+    "CTE",
+    "Business"
+   ]
+  },
+  "documenti/simecom/cte-residenziale": {
+   "url": "gestori/simecom-cte-residenziale.html",
+   "path": [
+    "Luce e gas",
+    "Simecom",
+    "CTE",
+    "Residenziale"
+   ]
+  },
+  "documenti/simecom/modulistica": {
+   "url": "gestori/simecom-modulistica.html",
+   "path": [
+    "Luce e gas",
+    "Simecom",
+    "Modulistica"
+   ]
+  },
+  "documenti/simecom/procedimenti": {
+   "url": "gestori/simecom-procedimenti.html",
+   "path": [
+    "Luce e gas",
+    "Simecom",
+    "Procedimenti"
+   ]
+  },
+  "documenti/simecom/privacy": {
+   "url": "gestori/simecom-privacy.html",
+   "path": [
+    "Luce e gas",
+    "Simecom",
+    "Privacy"
+   ]
+  },
+  "documenti/sorgenia/cte-business": {
+   "url": "gestori/sorgenia-cte-business.html",
+   "path": [
+    "Luce e gas",
+    "Sorgenia",
+    "CTE",
+    "Business"
+   ]
+  },
+  "documenti/sorgenia/cte-residenziale": {
+   "url": "gestori/sorgenia-cte-residenziale.html",
+   "path": [
+    "Luce e gas",
+    "Sorgenia",
+    "CTE",
+    "Residenziale"
+   ]
+  },
+  "documenti/sorgenia/modulistica": {
+   "url": "gestori/sorgenia-modulistica.html",
+   "path": [
+    "Luce e gas",
+    "Sorgenia",
+    "Modulistica"
+   ]
+  },
+  "documenti/sorgenia/procedimenti": {
+   "url": "gestori/sorgenia-procedimenti.html",
+   "path": [
+    "Luce e gas",
+    "Sorgenia",
+    "Procedimenti"
+   ]
+  },
+  "documenti/sorgenia/privacy": {
+   "url": "gestori/sorgenia-privacy.html",
+   "path": [
+    "Luce e gas",
+    "Sorgenia",
+    "Privacy"
+   ]
+  },
+  "documenti/stream/cte-business": {
+   "url": "gestori/stream-cte-business.html",
+   "path": [
+    "Luce e gas",
+    "Stream",
+    "CTE",
+    "Business"
+   ]
+  },
+  "documenti/stream/cte-residenziale": {
+   "url": "gestori/stream-cte-residenziale.html",
+   "path": [
+    "Luce e gas",
+    "Stream",
+    "CTE",
+    "Residenziale"
+   ]
+  },
+  "documenti/stream/modulistica": {
+   "url": "gestori/stream-modulistica.html",
+   "path": [
+    "Luce e gas",
+    "Stream",
+    "Modulistica"
+   ]
+  },
+  "documenti/stream/procedimenti": {
+   "url": "gestori/stream-procedimenti.html",
+   "path": [
+    "Luce e gas",
+    "Stream",
+    "Procedimenti"
+   ]
+  },
+  "documenti/stream/privacy": {
+   "url": "gestori/stream-privacy.html",
+   "path": [
+    "Luce e gas",
+    "Stream",
+    "Privacy"
+   ]
+  },
+  "documenti/union/cte-business-luce": {
+   "url": "gestori/union-cte-business-luce.html",
+   "path": [
+    "Luce e gas",
+    "Union",
+    "CTE",
+    "Business",
+    "Luce"
+   ]
+  },
+  "documenti/union/cte-business-gas": {
+   "url": "gestori/union-cte-business-gas.html",
+   "path": [
+    "Luce e gas",
+    "Union",
+    "CTE",
+    "Business",
+    "Gas"
+   ]
+  },
+  "documenti/union/cte-residenziale-luce": {
+   "url": "gestori/union-cte-residenziale-luce.html",
+   "path": [
+    "Luce e gas",
+    "Union",
+    "CTE",
+    "Residenziale",
+    "Luce"
+   ]
+  },
+  "documenti/union/cte-residenziale-gas": {
+   "url": "gestori/union-cte-residenziale-gas.html",
+   "path": [
+    "Luce e gas",
+    "Union",
+    "CTE",
+    "Residenziale",
+    "Gas"
+   ]
+  },
+  "documenti/union/modulistica": {
+   "url": "gestori/union-modulistica.html",
+   "path": [
+    "Luce e gas",
+    "Union",
+    "Modulistica"
+   ]
+  },
+  "documenti/union/procedimenti": {
+   "url": "gestori/union-procedimenti.html",
+   "path": [
+    "Luce e gas",
+    "Union",
+    "Procedimenti"
+   ]
+  },
+  "documenti/gestori/unoenergy/cte/business": {
+   "url": "gestori/unoenergy-cte-business.html",
+   "path": [
+    "Luce e gas",
+    "UnoEnergy",
+    "CTE",
+    "Business"
+   ]
+  },
+  "documenti/gestori/unoenergy/cte/residenziale": {
+   "url": "gestori/unoenergy-cte-residenziale.html",
+   "path": [
+    "Luce e gas",
+    "UnoEnergy",
+    "CTE",
+    "Residenziale"
+   ]
+  },
+  "documenti/gestori/unoenergy/modulistica": {
+   "url": "gestori/unoenergy-modulistica.html",
+   "path": [
+    "Luce e gas",
+    "UnoEnergy",
+    "Modulistica"
+   ]
+  },
+  "documenti/gestori/unoenergy/procedimenti": {
+   "url": "gestori/unoenergy-procedimenti.html",
+   "path": [
+    "Luce e gas",
+    "UnoEnergy",
+    "Procedimenti"
+   ]
+  },
+  "documenti/gestori/unoenergy/privacy": {
+   "url": "gestori/unoenergy-privacy.html",
+   "path": [
+    "Luce e gas",
+    "UnoEnergy",
+    "Privacy"
+   ]
+  },
+  "documenti/gestori/vivienergia/cte/business": {
+   "url": "gestori/vivienergia-cte-business.html",
+   "path": [
+    "Luce e gas",
+    "ViviEnergia",
+    "CTE",
+    "Business"
+   ]
+  },
+  "documenti/gestori/vivienergia/cte/residenziale": {
+   "url": "gestori/vivienergia-cte-residenziale.html",
+   "path": [
+    "Luce e gas",
+    "ViviEnergia",
+    "CTE",
+    "Residenziale"
+   ]
+  },
+  "documenti/gestori/vivienergia/modulistica": {
+   "url": "gestori/vivienergia-modulistica.html",
+   "path": [
+    "Luce e gas",
+    "ViviEnergia",
+    "Modulistica"
+   ]
+  },
+  "documenti/gestori/vivienergia/procedimenti": {
+   "url": "gestori/vivienergia-procedimenti.html",
+   "path": [
+    "Luce e gas",
+    "ViviEnergia",
+    "Procedimenti"
+   ]
+  },
+  "documenti/gestori/vivienergia/privacy": {
+   "url": "gestori/vivienergia-privacy.html",
+   "path": [
+    "Luce e gas",
+    "ViviEnergia",
+    "Privacy"
+   ]
+  },
+  "documenti/fotovoltaico/schede-tecniche": {
+   "url": "fotovoltaico-schede-tecniche.html",
+   "path": [
+    "Fotovoltaico",
+    "Schede tecniche"
+   ]
+  },
+  "documenti/fotovoltaico/riunioni": {
+   "url": "fotovoltaico-riunioni.html",
+   "path": [
+    "Fotovoltaico",
+    "Riunioni"
+   ]
+  },
+  "documenti/fotovoltaico/reonic-preventivi-tutorial": {
+   "url": "fotovoltaico-reonic-preventivi-tutorial.html",
+   "path": [
+    "Fotovoltaico",
+    "Reonic: tutorial preventivi"
+   ]
+  },
+  "documenti/fotovoltaico/formazione-base": {
+   "url": "fotovoltaico-formazione-base.html",
+   "path": [
+    "Fotovoltaico",
+    "Formazione base"
+   ]
+  },
+  "documenti/fotovoltaico/presentazione-base": {
+   "url": "fotovoltaico-presentazione-base.html",
+   "path": [
+    "Fotovoltaico",
+    "Presentazione base"
+   ]
+  },
+  "documenti/fotovoltaico/documenti-sopralluogo": {
+   "url": "fotovoltaico-documenti-sopralluogo.html",
+   "path": [
+    "Fotovoltaico",
+    "Documenti sopralluogo"
+   ]
+  },
+  "documenti/fotovoltaico/documenti-finanziamento": {
+   "url": "fotovoltaico-documenti-finanziamento.html",
+   "path": [
+    "Fotovoltaico",
+    "Documenti finanziamento"
+   ]
+  },
+  "documenti/fotovoltaico/documenti-contratto": {
+   "url": "fotovoltaico-documenti-contratto.html",
+   "path": [
+    "Fotovoltaico",
+    "Documenti contratto"
+   ]
+  },
+  "documenti/fotovoltaico/altro": {
+   "url": "fotovoltaico-altro.html",
+   "path": [
+    "Fotovoltaico",
+    "Altro"
+   ]
+  },
+  "documenti/pompe-di-calore/schede-tecniche": {
+   "url": "pompe-di-calore-schede-tecniche.html",
+   "path": [
+    "Pompe di calore",
+    "Schede tecniche"
+   ]
+  },
+  "documenti/wall-box/schede-tecniche": {
+   "url": "wall-box-schede-tecniche.html",
+   "path": [
+    "Wall box",
+    "Schede tecniche"
+   ]
+  },
+  "telefonia/FASTWEB/OFFERTE/BUSINESS": {
+   "url": "telefonia-fastweb-offerte-business.html",
+   "path": [
+    "Telefonia",
+    "Fastweb",
+    "Offerte business"
+   ]
+  },
+  "telefonia/FASTWEB/OFFERTE/RESIDENZIALE": {
+   "url": "telefonia-fastweb-offerte-residenziale.html",
+   "path": [
+    "Telefonia",
+    "Fastweb",
+    "Offerte residenziali"
+   ]
+  },
+  "telefonia/FASTWEB/PROCEDURE": {
+   "url": "telefonia-fastweb-procedure.html",
+   "path": [
+    "Telefonia",
+    "Fastweb",
+    "Procedure"
+   ]
+  },
+  "telefonia/FASTWEB/MODULISTICA": {
+   "url": "telefonia-fastweb-modulistica.html",
+   "path": [
+    "Telefonia",
+    "Fastweb",
+    "Modulistica"
+   ]
+  },
+  "telefonia/SKY/OFFERTE/BUSINESS": {
+   "url": "telefonia-sky-offerte-business.html",
+   "path": [
+    "Telefonia",
+    "Sky",
+    "Offerte business"
+   ]
+  },
+  "telefonia/SKY/OFFERTE/RESIDENZIALE": {
+   "url": "telefonia-sky-offerte-residenziale.html",
+   "path": [
+    "Telefonia",
+    "Sky",
+    "Offerte residenziali"
+   ]
+  },
+  "telefonia/SKY/PROCEDURE": {
+   "url": "telefonia-sky-procedure.html",
+   "path": [
+    "Telefonia",
+    "Sky",
+    "Procedure"
+   ]
+  },
+  "telefonia/SKY/MODULISTICA": {
+   "url": "telefonia-sky-modulistica.html",
+   "path": [
+    "Telefonia",
+    "Sky",
+    "Modulistica"
+   ]
+  },
+  "telefonia/WIND/OFFERTE/BUSINESS": {
+   "url": "telefonia-wind-offerte-business.html",
+   "path": [
+    "Telefonia",
+    "WindTre",
+    "Offerte business"
+   ]
+  },
+  "telefonia/WIND/OFFERTE/RESIDENZIALE": {
+   "url": "telefonia-wind-offerte-residenziale.html",
+   "path": [
+    "Telefonia",
+    "WindTre",
+    "Offerte residenziali"
+   ]
+  },
+  "telefonia/WIND/PROCEDURE": {
+   "url": "telefonia-wind-procedure.html",
+   "path": [
+    "Telefonia",
+    "WindTre",
+    "Procedure"
+   ]
+  },
+  "telefonia/WIND/MODULISTICA": {
+   "url": "telefonia-wind-modulistica.html",
+   "path": [
+    "Telefonia",
+    "WindTre",
+    "Modulistica"
+   ]
+  },
+  "telefonia/TIM/OFFERTE/BUSINESS": {
+   "url": "telefonia-tim-offerte-business.html",
+   "path": [
+    "Telefonia",
+    "TIM",
+    "Offerte business"
+   ]
+  },
+  "telefonia/TIM/OFFERTE/RESIDENZIALE": {
+   "url": "telefonia-tim-offerte-residenziale.html",
+   "path": [
+    "Telefonia",
+    "TIM",
+    "Offerte residenziali"
+   ]
+  },
+  "telefonia/TIM/PROCEDURE": {
+   "url": "telefonia-tim-procedure.html",
+   "path": [
+    "Telefonia",
+    "TIM",
+    "Procedure"
+   ]
+  },
+  "telefonia/TIM/MODULISTICA": {
+   "url": "telefonia-tim-modulistica.html",
+   "path": [
+    "Telefonia",
+    "TIM",
+    "Modulistica"
+   ]
+  },
+  "telefonia/VODAFONE/OFFERTE/BUSINESS": {
+   "url": "telefonia-vodafone-offerte-business.html",
+   "path": [
+    "Telefonia",
+    "Vodafone",
+    "Offerte business"
+   ]
+  },
+  "telefonia/VODAFONE/OFFERTE/RESIDENZIALE": {
+   "url": "telefonia-vodafone-offerte-residenziale.html",
+   "path": [
+    "Telefonia",
+    "Vodafone",
+    "Offerte residenziali"
+   ]
+  },
+  "telefonia/VODAFONE/PROCEDURE": {
+   "url": "telefonia-vodafone-procedure.html",
+   "path": [
+    "Telefonia",
+    "Vodafone",
+    "Procedure"
+   ]
+  },
+  "telefonia/VODAFONE/MODULISTICA": {
+   "url": "telefonia-vodafone-modulistica.html",
+   "path": [
+    "Telefonia",
+    "Vodafone",
+    "Modulistica"
+   ]
+  },
+  "documenti/climatizzatore": {
+   "url": "climatizzatore.html",
+   "path": [
+    "Climatizzatore"
+   ]
+  },
+  "documenti/caldaia": {
+   "url": "caldaia.html",
+   "path": [
+    "Caldaia"
+   ]
+  },
+  "documenti/depuratore": {
+   "url": "depuratore.html",
+   "path": [
+    "Depuratore"
+   ]
+  },
+  "documenti/infissi": {
+   "url": "infissi.html",
+   "path": [
+    "Infissi"
+   ]
+  },
+  "documenti/allarmi": {
+   "url": "allarmi.html",
+   "path": [
+    "Allarmi"
+   ]
+  },
+  "documenti/moduli": {
+   "url": "moduli.html",
+   "path": [
+    "Moduli"
+   ]
+  }
+ },
+ "pages": [
+  {
+   "url": "gestori/a2a-cte-business.html",
+   "path": [
+    "Luce e gas",
+    "A2A",
+    "CTE",
+    "Business"
+   ]
+  },
+  {
+   "url": "gestori/a2a-cte-residenziale.html",
+   "path": [
+    "Luce e gas",
+    "A2A",
+    "CTE",
+    "Residenziale"
+   ]
+  },
+  {
+   "url": "gestori/a2a-cte.html",
+   "path": [
+    "Luce e gas",
+    "A2A",
+    "CTE"
+   ]
+  },
+  {
+   "url": "gestori/a2a-modulistica.html",
+   "path": [
+    "Luce e gas",
+    "A2A",
+    "Modulistica"
+   ]
+  },
+  {
+   "url": "gestori/a2a-procedimenti.html",
+   "path": [
+    "Luce e gas",
+    "A2A",
+    "Procedimenti"
+   ]
+  },
+  {
+   "url": "gestori/a2a-privacy.html",
+   "path": [
+    "Luce e gas",
+    "A2A",
+    "Privacy"
+   ]
+  },
+  {
+   "url": "gestori/a2a.html",
+   "path": [
+    "Luce e gas",
+    "A2A"
+   ]
+  },
+  {
+   "url": "gestori/acea-cte-business.html",
+   "path": [
+    "Luce e gas",
+    "Acea",
+    "CTE",
+    "Business"
+   ]
+  },
+  {
+   "url": "gestori/acea-cte-residenziale.html",
+   "path": [
+    "Luce e gas",
+    "Acea",
+    "CTE",
+    "Residenziale"
+   ]
+  },
+  {
+   "url": "gestori/acea-cte.html",
+   "path": [
+    "Luce e gas",
+    "Acea",
+    "CTE"
+   ]
+  },
+  {
+   "url": "gestori/acea-modulistica.html",
+   "path": [
+    "Luce e gas",
+    "Acea",
+    "Modulistica"
+   ]
+  },
+  {
+   "url": "gestori/acea-procedimenti.html",
+   "path": [
+    "Luce e gas",
+    "Acea",
+    "Procedimenti"
+   ]
+  },
+  {
+   "url": "gestori/acea-privacy.html",
+   "path": [
+    "Luce e gas",
+    "Acea",
+    "Privacy"
+   ]
+  },
+  {
+   "url": "gestori/acea.html",
+   "path": [
+    "Luce e gas",
+    "Acea"
+   ]
+  },
+  {
+   "url": "gestori/alperia-cte-business.html",
+   "path": [
+    "Luce e gas",
+    "Alperia",
+    "CTE",
+    "Business"
+   ]
+  },
+  {
+   "url": "gestori/alperia-cte-residenziale.html",
+   "path": [
+    "Luce e gas",
+    "Alperia",
+    "CTE",
+    "Residenziale"
+   ]
+  },
+  {
+   "url": "gestori/alperia-cte.html",
+   "path": [
+    "Luce e gas",
+    "Alperia",
+    "CTE"
+   ]
+  },
+  {
+   "url": "gestori/alperia-modulistica.html",
+   "path": [
+    "Luce e gas",
+    "Alperia",
+    "Modulistica"
+   ]
+  },
+  {
+   "url": "gestori/alperia-procedimenti.html",
+   "path": [
+    "Luce e gas",
+    "Alperia",
+    "Procedimenti"
+   ]
+  },
+  {
+   "url": "gestori/alperia-privacy.html",
+   "path": [
+    "Luce e gas",
+    "Alperia",
+    "Privacy"
+   ]
+  },
+  {
+   "url": "gestori/alperia.html",
+   "path": [
+    "Luce e gas",
+    "Alperia"
+   ]
+  },
+  {
+   "url": "gestori/audax-cte-business.html",
+   "path": [
+    "Luce e gas",
+    "Audax",
+    "CTE",
+    "Business"
+   ]
+  },
+  {
+   "url": "gestori/audax-cte-residenziale.html",
+   "path": [
+    "Luce e gas",
+    "Audax",
+    "CTE",
+    "Residenziale"
+   ]
+  },
+  {
+   "url": "gestori/audax-cte.html",
+   "path": [
+    "Luce e gas",
+    "Audax",
+    "CTE"
+   ]
+  },
+  {
+   "url": "gestori/audax-modulistica.html",
+   "path": [
+    "Luce e gas",
+    "Audax",
+    "Modulistica"
+   ]
+  },
+  {
+   "url": "gestori/audax-procedimenti.html",
+   "path": [
+    "Luce e gas",
+    "Audax",
+    "Procedimenti"
+   ]
+  },
+  {
+   "url": "gestori/audax-privacy.html",
+   "path": [
+    "Luce e gas",
+    "Audax",
+    "Privacy"
+   ]
+  },
+  {
+   "url": "gestori/audax.html",
+   "path": [
+    "Luce e gas",
+    "Audax"
+   ]
+  },
+  {
+   "url": "gestori/cogeme-cte-business.html",
+   "path": [
+    "Luce e gas",
+    "Cogeme",
+    "CTE",
+    "Business"
+   ]
+  },
+  {
+   "url": "gestori/cogeme-cte-residenziale.html",
+   "path": [
+    "Luce e gas",
+    "Cogeme",
+    "CTE",
+    "Residenziale"
+   ]
+  },
+  {
+   "url": "gestori/cogeme-cte.html",
+   "path": [
+    "Luce e gas",
+    "Cogeme",
+    "CTE"
+   ]
+  },
+  {
+   "url": "gestori/cogeme-modulistica.html",
+   "path": [
+    "Luce e gas",
+    "Cogeme",
+    "Modulistica"
+   ]
+  },
+  {
+   "url": "gestori/cogeme-procedimenti.html",
+   "path": [
+    "Luce e gas",
+    "Cogeme",
+    "Procedimenti"
+   ]
+  },
+  {
+   "url": "gestori/cogeme-privacy.html",
+   "path": [
+    "Luce e gas",
+    "Cogeme",
+    "Privacy"
+   ]
+  },
+  {
+   "url": "gestori/cogeme.html",
+   "path": [
+    "Luce e gas",
+    "Cogeme"
+   ]
+  },
+  {
+   "url": "gestori/duferco-cte-business.html",
+   "path": [
+    "Luce e gas",
+    "Duferco",
+    "CTE",
+    "Business"
+   ]
+  },
+  {
+   "url": "gestori/duferco-cte-residenziale.html",
+   "path": [
+    "Luce e gas",
+    "Duferco",
+    "CTE",
+    "Residenziale"
+   ]
+  },
+  {
+   "url": "gestori/duferco-cte.html",
+   "path": [
+    "Luce e gas",
+    "Duferco",
+    "CTE"
+   ]
+  },
+  {
+   "url": "gestori/duferco-modulistica.html",
+   "path": [
+    "Luce e gas",
+    "Duferco",
+    "Modulistica"
+   ]
+  },
+  {
+   "url": "gestori/duferco-procedimenti.html",
+   "path": [
+    "Luce e gas",
+    "Duferco",
+    "Procedimenti"
+   ]
+  },
+  {
+   "url": "gestori/duferco-privacy.html",
+   "path": [
+    "Luce e gas",
+    "Duferco",
+    "Privacy"
+   ]
+  },
+  {
+   "url": "gestori/duferco.html",
+   "path": [
+    "Luce e gas",
+    "Duferco"
+   ]
+  },
+  {
+   "url": "gestori/enel-cte-business.html",
+   "path": [
+    "Luce e gas",
+    "Enel",
+    "CTE",
+    "Business"
+   ]
+  },
+  {
+   "url": "gestori/enel-cte-residenziale.html",
+   "path": [
+    "Luce e gas",
+    "Enel",
+    "CTE",
+    "Residenziale"
+   ]
+  },
+  {
+   "url": "gestori/enel-cte.html",
+   "path": [
+    "Luce e gas",
+    "Enel",
+    "CTE"
+   ]
+  },
+  {
+   "url": "gestori/enel-modulistica.html",
+   "path": [
+    "Luce e gas",
+    "Enel",
+    "Modulistica"
+   ]
+  },
+  {
+   "url": "gestori/enel-procedimenti.html",
+   "path": [
+    "Luce e gas",
+    "Enel",
+    "Procedimenti"
+   ]
+  },
+  {
+   "url": "gestori/enel-privacy.html",
+   "path": [
+    "Luce e gas",
+    "Enel",
+    "Privacy"
+   ]
+  },
+  {
+   "url": "gestori/enel.html",
+   "path": [
+    "Luce e gas",
+    "Enel"
+   ]
+  },
+  {
+   "url": "gestori/engie-cte-business.html",
+   "path": [
+    "Luce e gas",
+    "Engie",
+    "CTE",
+    "Business"
+   ]
+  },
+  {
+   "url": "gestori/engie-cte-residenziale.html",
+   "path": [
+    "Luce e gas",
+    "Engie",
+    "CTE",
+    "Residenziale"
+   ]
+  },
+  {
+   "url": "gestori/engie-cte.html",
+   "path": [
+    "Luce e gas",
+    "Engie",
+    "CTE"
+   ]
+  },
+  {
+   "url": "gestori/engie-modulistica.html",
+   "path": [
+    "Luce e gas",
+    "Engie",
+    "Modulistica"
+   ]
+  },
+  {
+   "url": "gestori/engie-procedimenti.html",
+   "path": [
+    "Luce e gas",
+    "Engie",
+    "Procedimenti"
+   ]
+  },
+  {
+   "url": "gestori/engie-privacy.html",
+   "path": [
+    "Luce e gas",
+    "Engie",
+    "Privacy"
+   ]
+  },
+  {
+   "url": "gestori/engie.html",
+   "path": [
+    "Luce e gas",
+    "Engie"
+   ]
+  },
+  {
+   "url": "gestori/gde-cte-business.html",
+   "path": [
+    "Luce e gas",
+    "GDE",
+    "CTE",
+    "Business"
+   ]
+  },
+  {
+   "url": "gestori/gde-cte-residenziale.html",
+   "path": [
+    "Luce e gas",
+    "GDE",
+    "CTE",
+    "Residenziale"
+   ]
+  },
+  {
+   "url": "gestori/gde-cte.html",
+   "path": [
+    "Luce e gas",
+    "GDE",
+    "CTE"
+   ]
+  },
+  {
+   "url": "gestori/gde-modulistica.html",
+   "path": [
+    "Luce e gas",
+    "GDE",
+    "Modulistica"
+   ]
+  },
+  {
+   "url": "gestori/gde-procedimenti.html",
+   "path": [
+    "Luce e gas",
+    "GDE",
+    "Procedimenti"
+   ]
+  },
+  {
+   "url": "gestori/gde-privacy.html",
+   "path": [
+    "Luce e gas",
+    "GDE",
+    "Privacy"
+   ]
+  },
+  {
+   "url": "gestori/gde.html",
+   "path": [
+    "Luce e gas",
+    "GDE"
+   ]
+  },
+  {
+   "url": "gestori/hera-cte-business.html",
+   "path": [
+    "Luce e gas",
+    "Hera",
+    "CTE",
+    "Business"
+   ]
+  },
+  {
+   "url": "gestori/hera-cte-residenziale.html",
+   "path": [
+    "Luce e gas",
+    "Hera",
+    "CTE",
+    "Residenziale"
+   ]
+  },
+  {
+   "url": "gestori/hera-cte.html",
+   "path": [
+    "Luce e gas",
+    "Hera",
+    "CTE"
+   ]
+  },
+  {
+   "url": "gestori/hera-modulistica.html",
+   "path": [
+    "Luce e gas",
+    "Hera",
+    "Modulistica"
+   ]
+  },
+  {
+   "url": "gestori/hera-procedimenti.html",
+   "path": [
+    "Luce e gas",
+    "Hera",
+    "Procedimenti"
+   ]
+  },
+  {
+   "url": "gestori/hera-privacy.html",
+   "path": [
+    "Luce e gas",
+    "Hera",
+    "Privacy"
+   ]
+  },
+  {
+   "url": "gestori/hera.html",
+   "path": [
+    "Luce e gas",
+    "Hera"
+   ]
+  },
+  {
+   "url": "gestori/iren-cte-business.html",
+   "path": [
+    "Luce e gas",
+    "Iren",
+    "CTE",
+    "Business"
+   ]
+  },
+  {
+   "url": "gestori/iren-cte-residenziale.html",
+   "path": [
+    "Luce e gas",
+    "Iren",
+    "CTE",
+    "Residenziale"
+   ]
+  },
+  {
+   "url": "gestori/iren-cte.html",
+   "path": [
+    "Luce e gas",
+    "Iren",
+    "CTE"
+   ]
+  },
+  {
+   "url": "gestori/iren-modulistica.html",
+   "path": [
+    "Luce e gas",
+    "Iren",
+    "Modulistica"
+   ]
+  },
+  {
+   "url": "gestori/iren-procedimenti.html",
+   "path": [
+    "Luce e gas",
+    "Iren",
+    "Procedimenti"
+   ]
+  },
+  {
+   "url": "gestori/iren-privacy.html",
+   "path": [
+    "Luce e gas",
+    "Iren",
+    "Privacy"
+   ]
+  },
+  {
+   "url": "gestori/iren.html",
+   "path": [
+    "Luce e gas",
+    "Iren"
+   ]
+  },
+  {
+   "url": "gestori/magix-cte-business.html",
+   "path": [
+    "Luce e gas",
+    "Magix",
+    "CTE",
+    "Business"
+   ]
+  },
+  {
+   "url": "gestori/magix-cte-residenziale.html",
+   "path": [
+    "Luce e gas",
+    "Magix",
+    "CTE",
+    "Residenziale"
+   ]
+  },
+  {
+   "url": "gestori/magix-cte.html",
+   "path": [
+    "Luce e gas",
+    "Magix",
+    "CTE"
+   ]
+  },
+  {
+   "url": "gestori/magix-modulistica.html",
+   "path": [
+    "Luce e gas",
+    "Magix",
+    "Modulistica"
+   ]
+  },
+  {
+   "url": "gestori/magix-procedimenti.html",
+   "path": [
+    "Luce e gas",
+    "Magix",
+    "Procedimenti"
+   ]
+  },
+  {
+   "url": "gestori/magix-privacy.html",
+   "path": [
+    "Luce e gas",
+    "Magix",
+    "Privacy"
+   ]
+  },
+  {
+   "url": "gestori/magix.html",
+   "path": [
+    "Luce e gas",
+    "Magix"
+   ]
+  },
+  {
+   "url": "gestori/onova-cte-business.html",
+   "path": [
+    "Luce e gas",
+    "Onova",
+    "CTE",
+    "Business"
+   ]
+  },
+  {
+   "url": "gestori/onova-cte-residenziale.html",
+   "path": [
+    "Luce e gas",
+    "Onova",
+    "CTE",
+    "Residenziale"
+   ]
+  },
+  {
+   "url": "gestori/onova-cte.html",
+   "path": [
+    "Luce e gas",
+    "Onova",
+    "CTE"
+   ]
+  },
+  {
+   "url": "gestori/onova-modulistica.html",
+   "path": [
+    "Luce e gas",
+    "Onova",
+    "Modulistica"
+   ]
+  },
+  {
+   "url": "gestori/onova-procedimenti.html",
+   "path": [
+    "Luce e gas",
+    "Onova",
+    "Procedimenti"
+   ]
+  },
+  {
+   "url": "gestori/onova.html",
+   "path": [
+    "Luce e gas",
+    "Onova"
+   ]
+  },
+  {
+   "url": "gestori/plenitude-cte-business.html",
+   "path": [
+    "Luce e gas",
+    "Plenitude",
+    "CTE",
+    "Business"
+   ]
+  },
+  {
+   "url": "gestori/plenitude-cte-residenziale.html",
+   "path": [
+    "Luce e gas",
+    "Plenitude",
+    "CTE",
+    "Residenziale"
+   ]
+  },
+  {
+   "url": "gestori/plenitude-cte.html",
+   "path": [
+    "Luce e gas",
+    "Plenitude",
+    "CTE"
+   ]
+  },
+  {
+   "url": "gestori/plenitude-modulistica.html",
+   "path": [
+    "Luce e gas",
+    "Plenitude",
+    "Modulistica"
+   ]
+  },
+  {
+   "url": "gestori/plenitude-procedimenti.html",
+   "path": [
+    "Luce e gas",
+    "Plenitude",
+    "Procedimenti"
+   ]
+  },
+  {
+   "url": "gestori/plenitude.html",
+   "path": [
+    "Luce e gas",
+    "Plenitude"
+   ]
+  },
+  {
+   "url": "gestori/s4-cte-business.html",
+   "path": [
+    "Luce e gas",
+    "S4",
+    "CTE",
+    "Business"
+   ]
+  },
+  {
+   "url": "gestori/s4-cte-residenziale.html",
+   "path": [
+    "Luce e gas",
+    "S4",
+    "CTE",
+    "Residenziale"
+   ]
+  },
+  {
+   "url": "gestori/s4-cte.html",
+   "path": [
+    "Luce e gas",
+    "S4",
+    "CTE"
+   ]
+  },
+  {
+   "url": "gestori/s4-modulistica.html",
+   "path": [
+    "Luce e gas",
+    "S4",
+    "Modulistica"
+   ]
+  },
+  {
+   "url": "gestori/s4-procedimenti.html",
+   "path": [
+    "Luce e gas",
+    "S4",
+    "Procedimenti"
+   ]
+  },
+  {
+   "url": "gestori/s4.html",
+   "path": [
+    "Luce e gas",
+    "S4"
+   ]
+  },
+  {
+   "url": "gestori/simecom-cte-business.html",
+   "path": [
+    "Luce e gas",
+    "Simecom",
+    "CTE",
+    "Business"
+   ]
+  },
+  {
+   "url": "gestori/simecom-cte-residenziale.html",
+   "path": [
+    "Luce e gas",
+    "Simecom",
+    "CTE",
+    "Residenziale"
+   ]
+  },
+  {
+   "url": "gestori/simecom-cte.html",
+   "path": [
+    "Luce e gas",
+    "Simecom",
+    "CTE"
+   ]
+  },
+  {
+   "url": "gestori/simecom-modulistica.html",
+   "path": [
+    "Luce e gas",
+    "Simecom",
+    "Modulistica"
+   ]
+  },
+  {
+   "url": "gestori/simecom-procedimenti.html",
+   "path": [
+    "Luce e gas",
+    "Simecom",
+    "Procedimenti"
+   ]
+  },
+  {
+   "url": "gestori/simecom-privacy.html",
+   "path": [
+    "Luce e gas",
+    "Simecom",
+    "Privacy"
+   ]
+  },
+  {
+   "url": "gestori/simecom.html",
+   "path": [
+    "Luce e gas",
+    "Simecom"
+   ]
+  },
+  {
+   "url": "gestori/sorgenia-cte-business.html",
+   "path": [
+    "Luce e gas",
+    "Sorgenia",
+    "CTE",
+    "Business"
+   ]
+  },
+  {
+   "url": "gestori/sorgenia-cte-residenziale.html",
+   "path": [
+    "Luce e gas",
+    "Sorgenia",
+    "CTE",
+    "Residenziale"
+   ]
+  },
+  {
+   "url": "gestori/sorgenia-cte.html",
+   "path": [
+    "Luce e gas",
+    "Sorgenia",
+    "CTE"
+   ]
+  },
+  {
+   "url": "gestori/sorgenia-modulistica.html",
+   "path": [
+    "Luce e gas",
+    "Sorgenia",
+    "Modulistica"
+   ]
+  },
+  {
+   "url": "gestori/sorgenia-procedimenti.html",
+   "path": [
+    "Luce e gas",
+    "Sorgenia",
+    "Procedimenti"
+   ]
+  },
+  {
+   "url": "gestori/sorgenia-privacy.html",
+   "path": [
+    "Luce e gas",
+    "Sorgenia",
+    "Privacy"
+   ]
+  },
+  {
+   "url": "gestori/sorgenia.html",
+   "path": [
+    "Luce e gas",
+    "Sorgenia"
+   ]
+  },
+  {
+   "url": "gestori/stream-cte-business.html",
+   "path": [
+    "Luce e gas",
+    "Stream",
+    "CTE",
+    "Business"
+   ]
+  },
+  {
+   "url": "gestori/stream-cte-residenziale.html",
+   "path": [
+    "Luce e gas",
+    "Stream",
+    "CTE",
+    "Residenziale"
+   ]
+  },
+  {
+   "url": "gestori/stream-cte.html",
+   "path": [
+    "Luce e gas",
+    "Stream",
+    "CTE"
+   ]
+  },
+  {
+   "url": "gestori/stream-modulistica.html",
+   "path": [
+    "Luce e gas",
+    "Stream",
+    "Modulistica"
+   ]
+  },
+  {
+   "url": "gestori/stream-procedimenti.html",
+   "path": [
+    "Luce e gas",
+    "Stream",
+    "Procedimenti"
+   ]
+  },
+  {
+   "url": "gestori/stream-privacy.html",
+   "path": [
+    "Luce e gas",
+    "Stream",
+    "Privacy"
+   ]
+  },
+  {
+   "url": "gestori/stream.html",
+   "path": [
+    "Luce e gas",
+    "Stream"
+   ]
+  },
+  {
+   "url": "gestori/union-cte-business-luce.html",
+   "path": [
+    "Luce e gas",
+    "Union",
+    "CTE",
+    "Business",
+    "Luce"
+   ]
+  },
+  {
+   "url": "gestori/union-cte-business-gas.html",
+   "path": [
+    "Luce e gas",
+    "Union",
+    "CTE",
+    "Business",
+    "Gas"
+   ]
+  },
+  {
+   "url": "gestori/union-cte-business.html",
+   "path": [
+    "Luce e gas",
+    "Union",
+    "CTE",
+    "Business"
+   ]
+  },
+  {
+   "url": "gestori/union-cte-residenziale-luce.html",
+   "path": [
+    "Luce e gas",
+    "Union",
+    "CTE",
+    "Residenziale",
+    "Luce"
+   ]
+  },
+  {
+   "url": "gestori/union-cte-residenziale-gas.html",
+   "path": [
+    "Luce e gas",
+    "Union",
+    "CTE",
+    "Residenziale",
+    "Gas"
+   ]
+  },
+  {
+   "url": "gestori/union-cte-residenziale.html",
+   "path": [
+    "Luce e gas",
+    "Union",
+    "CTE",
+    "Residenziale"
+   ]
+  },
+  {
+   "url": "gestori/union-cte.html",
+   "path": [
+    "Luce e gas",
+    "Union",
+    "CTE"
+   ]
+  },
+  {
+   "url": "gestori/union-modulistica.html",
+   "path": [
+    "Luce e gas",
+    "Union",
+    "Modulistica"
+   ]
+  },
+  {
+   "url": "gestori/union-procedimenti.html",
+   "path": [
+    "Luce e gas",
+    "Union",
+    "Procedimenti"
+   ]
+  },
+  {
+   "url": "gestori/union.html",
+   "path": [
+    "Luce e gas",
+    "Union"
+   ]
+  },
+  {
+   "url": "gestori/unoenergy-cte-business.html",
+   "path": [
+    "Luce e gas",
+    "UnoEnergy",
+    "CTE",
+    "Business"
+   ]
+  },
+  {
+   "url": "gestori/unoenergy-cte-residenziale.html",
+   "path": [
+    "Luce e gas",
+    "UnoEnergy",
+    "CTE",
+    "Residenziale"
+   ]
+  },
+  {
+   "url": "gestori/unoenergy-cte.html",
+   "path": [
+    "Luce e gas",
+    "UnoEnergy",
+    "CTE"
+   ]
+  },
+  {
+   "url": "gestori/unoenergy-modulistica.html",
+   "path": [
+    "Luce e gas",
+    "UnoEnergy",
+    "Modulistica"
+   ]
+  },
+  {
+   "url": "gestori/unoenergy-procedimenti.html",
+   "path": [
+    "Luce e gas",
+    "UnoEnergy",
+    "Procedimenti"
+   ]
+  },
+  {
+   "url": "gestori/unoenergy-privacy.html",
+   "path": [
+    "Luce e gas",
+    "UnoEnergy",
+    "Privacy"
+   ]
+  },
+  {
+   "url": "gestori/unoenergy.html",
+   "path": [
+    "Luce e gas",
+    "UnoEnergy"
+   ]
+  },
+  {
+   "url": "gestori/vivienergia-cte-business.html",
+   "path": [
+    "Luce e gas",
+    "ViviEnergia",
+    "CTE",
+    "Business"
+   ]
+  },
+  {
+   "url": "gestori/vivienergia-cte-residenziale.html",
+   "path": [
+    "Luce e gas",
+    "ViviEnergia",
+    "CTE",
+    "Residenziale"
+   ]
+  },
+  {
+   "url": "gestori/vivienergia-cte.html",
+   "path": [
+    "Luce e gas",
+    "ViviEnergia",
+    "CTE"
+   ]
+  },
+  {
+   "url": "gestori/vivienergia-modulistica.html",
+   "path": [
+    "Luce e gas",
+    "ViviEnergia",
+    "Modulistica"
+   ]
+  },
+  {
+   "url": "gestori/vivienergia-procedimenti.html",
+   "path": [
+    "Luce e gas",
+    "ViviEnergia",
+    "Procedimenti"
+   ]
+  },
+  {
+   "url": "gestori/vivienergia-privacy.html",
+   "path": [
+    "Luce e gas",
+    "ViviEnergia",
+    "Privacy"
+   ]
+  },
+  {
+   "url": "gestori/vivienergia.html",
+   "path": [
+    "Luce e gas",
+    "ViviEnergia"
+   ]
+  },
+  {
+   "url": "luce-gas.html",
+   "path": [
+    "Luce e gas"
+   ]
+  },
+  {
+   "url": "fotovoltaico-schede-tecniche.html",
+   "path": [
+    "Fotovoltaico",
+    "Schede tecniche"
+   ]
+  },
+  {
+   "url": "fotovoltaico-riunioni.html",
+   "path": [
+    "Fotovoltaico",
+    "Riunioni"
+   ]
+  },
+  {
+   "url": "fotovoltaico-reonic-preventivi-tutorial.html",
+   "path": [
+    "Fotovoltaico",
+    "Reonic: tutorial preventivi"
+   ]
+  },
+  {
+   "url": "fotovoltaico-formazione-base.html",
+   "path": [
+    "Fotovoltaico",
+    "Formazione base"
+   ]
+  },
+  {
+   "url": "fotovoltaico-presentazione-base.html",
+   "path": [
+    "Fotovoltaico",
+    "Presentazione base"
+   ]
+  },
+  {
+   "url": "fotovoltaico-documenti-sopralluogo.html",
+   "path": [
+    "Fotovoltaico",
+    "Documenti sopralluogo"
+   ]
+  },
+  {
+   "url": "fotovoltaico-documenti-finanziamento.html",
+   "path": [
+    "Fotovoltaico",
+    "Documenti finanziamento"
+   ]
+  },
+  {
+   "url": "fotovoltaico-documenti-contratto.html",
+   "path": [
+    "Fotovoltaico",
+    "Documenti contratto"
+   ]
+  },
+  {
+   "url": "fotovoltaico-altro.html",
+   "path": [
+    "Fotovoltaico",
+    "Altro"
+   ]
+  },
+  {
+   "url": "fotovoltaico.html",
+   "path": [
+    "Fotovoltaico"
+   ]
+  },
+  {
+   "url": "pompe-di-calore-schede-tecniche.html",
+   "path": [
+    "Pompe di calore",
+    "Schede tecniche"
+   ]
+  },
+  {
+   "url": "pompe-di-calore.html",
+   "path": [
+    "Pompe di calore"
+   ]
+  },
+  {
+   "url": "wall-box-schede-tecniche.html",
+   "path": [
+    "Wall box",
+    "Schede tecniche"
+   ]
+  },
+  {
+   "url": "wall-box.html",
+   "path": [
+    "Wall box"
+   ]
+  },
+  {
+   "url": "telefonia.html",
+   "path": [
+    "Telefonia"
+   ]
+  },
+  {
+   "url": "telefonia-fastweb-offerte-business.html",
+   "path": [
+    "Telefonia",
+    "Fastweb",
+    "Offerte business"
+   ]
+  },
+  {
+   "url": "telefonia-fastweb-offerte-residenziale.html",
+   "path": [
+    "Telefonia",
+    "Fastweb",
+    "Offerte residenziali"
+   ]
+  },
+  {
+   "url": "telefonia-fastweb-procedure.html",
+   "path": [
+    "Telefonia",
+    "Fastweb",
+    "Procedure"
+   ]
+  },
+  {
+   "url": "telefonia-fastweb-modulistica.html",
+   "path": [
+    "Telefonia",
+    "Fastweb",
+    "Modulistica"
+   ]
+  },
+  {
+   "url": "telefonia-sky-offerte-business.html",
+   "path": [
+    "Telefonia",
+    "Sky",
+    "Offerte business"
+   ]
+  },
+  {
+   "url": "telefonia-sky-offerte-residenziale.html",
+   "path": [
+    "Telefonia",
+    "Sky",
+    "Offerte residenziali"
+   ]
+  },
+  {
+   "url": "telefonia-sky-procedure.html",
+   "path": [
+    "Telefonia",
+    "Sky",
+    "Procedure"
+   ]
+  },
+  {
+   "url": "telefonia-sky-modulistica.html",
+   "path": [
+    "Telefonia",
+    "Sky",
+    "Modulistica"
+   ]
+  },
+  {
+   "url": "telefonia-wind-offerte-business.html",
+   "path": [
+    "Telefonia",
+    "WindTre",
+    "Offerte business"
+   ]
+  },
+  {
+   "url": "telefonia-wind-offerte-residenziale.html",
+   "path": [
+    "Telefonia",
+    "WindTre",
+    "Offerte residenziali"
+   ]
+  },
+  {
+   "url": "telefonia-wind-procedure.html",
+   "path": [
+    "Telefonia",
+    "WindTre",
+    "Procedure"
+   ]
+  },
+  {
+   "url": "telefonia-wind-modulistica.html",
+   "path": [
+    "Telefonia",
+    "WindTre",
+    "Modulistica"
+   ]
+  },
+  {
+   "url": "telefonia-tim-offerte-business.html",
+   "path": [
+    "Telefonia",
+    "TIM",
+    "Offerte business"
+   ]
+  },
+  {
+   "url": "telefonia-tim-offerte-residenziale.html",
+   "path": [
+    "Telefonia",
+    "TIM",
+    "Offerte residenziali"
+   ]
+  },
+  {
+   "url": "telefonia-tim-procedure.html",
+   "path": [
+    "Telefonia",
+    "TIM",
+    "Procedure"
+   ]
+  },
+  {
+   "url": "telefonia-tim-modulistica.html",
+   "path": [
+    "Telefonia",
+    "TIM",
+    "Modulistica"
+   ]
+  },
+  {
+   "url": "telefonia-vodafone-offerte-business.html",
+   "path": [
+    "Telefonia",
+    "Vodafone",
+    "Offerte business"
+   ]
+  },
+  {
+   "url": "telefonia-vodafone-offerte-residenziale.html",
+   "path": [
+    "Telefonia",
+    "Vodafone",
+    "Offerte residenziali"
+   ]
+  },
+  {
+   "url": "telefonia-vodafone-procedure.html",
+   "path": [
+    "Telefonia",
+    "Vodafone",
+    "Procedure"
+   ]
+  },
+  {
+   "url": "telefonia-vodafone-modulistica.html",
+   "path": [
+    "Telefonia",
+    "Vodafone",
+    "Modulistica"
+   ]
+  },
+  {
+   "url": "climatizzatore.html",
+   "path": [
+    "Climatizzatore"
+   ]
+  },
+  {
+   "url": "caldaia.html",
+   "path": [
+    "Caldaia"
+   ]
+  },
+  {
+   "url": "depuratore.html",
+   "path": [
+    "Depuratore"
+   ]
+  },
+  {
+   "url": "infissi.html",
+   "path": [
+    "Infissi"
+   ]
+  },
+  {
+   "url": "allarmi.html",
+   "path": [
+    "Allarmi"
+   ]
+  },
+  {
+   "url": "moduli.html",
+   "path": [
+    "Moduli"
+   ]
+  }
+ ]
+}

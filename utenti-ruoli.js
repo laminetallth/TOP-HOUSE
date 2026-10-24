@@ -40,35 +40,20 @@ window.USER_ROLES = {
     document.head.appendChild(script);
   }
 
-  // Pulsante flottante in basso a SINISTRA: in basso a destra c'è già "Esci".
-  function floatingLink(className, href, icon, label, background) {
-    if (document.querySelector('.' + className)) return;
+  // Sulla pagina Formazione: accesso rapido alla Bolletta 2.0.
+  function bollettaLink() {
+    if (document.querySelector('.th-bolletta-link')) return;
     const link = document.createElement('a');
-    link.href = href;
-    link.className = className;
-    link.innerHTML = `<i class="fa-solid ${icon}"></i><span>${label}</span>`;
-    Object.assign(link.style, { position: 'fixed', left: '18px', bottom: '18px', zIndex: '9998', display: 'flex', alignItems: 'center', gap: '8px', padding: '12px 16px', borderRadius: '999px', background, color: '#fff', textDecoration: 'none', fontWeight: '900', fontSize: '12px', boxShadow: '0 10px 28px rgba(0,0,0,.2)' });
+    link.href = ROOT + 'bolletta-2.0.html';
+    link.className = 'th-bolletta-link th-btn th-btn--dark';
+    link.innerHTML = '<i class="fa-solid fa-file-invoice-dollar" aria-hidden="true"></i><span>Bolletta 2.0</span>';
+    Object.assign(link.style, { position: 'fixed', right: '18px', bottom: '18px', zIndex: '40' });
     document.body.appendChild(link);
   }
 
-  // Indici energetici (homepage).
-  document.addEventListener('DOMContentLoaded', () => {
-    if (document.querySelector('.energy-section')) loadScript('indici-energetici.js');
-  });
-
-  // Gestione eliminazione multipla nella pagina di caricamento admin.
-  if (page === 'admin-caricamento.html') loadScript('elimina-pdf.js');
-
   // Assistente AI della Academy.
-  if (page === 'formazione.html') loadScript('formazione-ai.js', { module: true });
-
-  if (isPublic) return;
-
-  document.addEventListener('DOMContentLoaded', () => {
-    if (page === 'formazione.html') {
-      floatingLink('th-bolletta-link', ROOT + 'bolletta-2.0.html', 'fa-file-invoice-dollar', 'BOLLETTA 2.0', 'linear-gradient(135deg,#191521,#4a3b55)');
-    } else {
-      floatingLink('th-formazione-link', ROOT + 'formazione.html', 'fa-graduation-cap', 'FORMAZIONE', 'linear-gradient(135deg,#ff0055,#ff9900)');
-    }
-  });
+  if (page === 'formazione.html') {
+    loadScript('formazione-ai.js', { module: true });
+    if (!isPublic) document.addEventListener('DOMContentLoaded', bollettaLink);
+  }
 })();

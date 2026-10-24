@@ -2,76 +2,29 @@
 <html lang="it" data-admin-only="true">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Caricamento file | TOP HOUSE</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#1d1428">
+<title>Gestione file | TOP HOUSE</title>
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&family=Instrument+Sans:wght@400..700&display=swap">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<link rel="stylesheet" href="stile-top-house.css">
-<style>
-*{box-sizing:border-box;margin:0;padding:0;font-family:Arial,sans-serif}body{background:#f5f5f5;color:#111;padding:28px}.topbar{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-bottom:28px}.brand{display:flex;align-items:center;gap:14px}.brand img{width:82px}.brand h2{font-size:34px;font-weight:900;color:#ff6600}.brand p{font-weight:700;color:#333}.home-btn{display:inline-flex;align-items:center;gap:10px;padding:13px 18px;border-radius:999px;background:#fff;color:#111;text-decoration:none;font-weight:800;box-shadow:0 8px 25px rgba(0,0,0,.06);transition:.25s}.home-btn:hover{color:#ff6a00;transform:translateY(-2px)}.hero{background:linear-gradient(135deg,#111,#333);border-radius:34px;padding:36px;color:#fff;margin-bottom:24px;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;right:-60px;bottom:-80px;width:260px;height:260px;border-radius:50%;background:linear-gradient(135deg,#ff0055,#ff9900);opacity:.35}.hero h1{font-size:clamp(40px,6vw,70px);font-weight:900;line-height:.95;margin-bottom:12px}.hero p{font-size:18px;color:#f1f1f1;max-width:760px}.panel{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:24px}.card{background:#fff;border-radius:28px;padding:24px;box-shadow:0 10px 30px rgba(0,0,0,.06)}label{display:block;font-weight:900;margin-bottom:8px}.select-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:20px}select{width:100%;padding:14px;border:1px solid #ddd;border-radius:14px;background:#fff;font-size:16px}.drop-zone{border:3px dashed #ddd;border-radius:28px;min-height:260px;display:flex;align-items:center;justify-content:center;text-align:center;padding:28px;background:#fafafa;transition:.25s;cursor:pointer}.drop-zone.is-over{border-color:#ff6a00;background:#fff7f0}.drop-zone i{font-size:52px;color:#ff6a00;margin-bottom:15px}.drop-zone h3{font-size:26px;margin-bottom:8px}.drop-zone p{color:#666;line-height:1.45}.hidden-input{display:none}.actions{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-top:18px}.btn{border:0;border-radius:14px;padding:15px 20px;background:linear-gradient(135deg,#ff0055,#ff9900);color:#fff;font-weight:900;cursor:pointer;transition:.25s}.btn:hover{opacity:.92;transform:translateY(-1px)}.checkbox{display:flex;align-items:center;gap:10px;font-weight:800}.checkbox input{width:18px;height:18px}.file-list{list-style:none;margin-top:16px;display:grid;gap:10px}.file-list li{display:flex;justify-content:space-between;gap:10px;padding:12px 14px;border-radius:14px;background:#fafafa;font-weight:700}.status-badge{color:#ff6a00}.progress{width:100%;height:18px;border:0;border-radius:999px;overflow:hidden;margin:14px 0}.progress::-webkit-progress-bar{background:#eee}.progress::-webkit-progress-value{background:linear-gradient(90deg,#ff0055,#ff9900)}#uploadStatus{background:#fafafa;border-radius:18px;padding:16px;color:#333;line-height:1.6;min-height:90px}.hint{color:#666;line-height:1.5}.hint strong{color:#111}@media(max-width:900px){body{padding:18px}.topbar{align-items:flex-start;flex-direction:column}.panel,.select-grid{grid-template-columns:1fr}.brand h2{font-size:28px}.card{padding:18px}}
-</style>
-<script src="utenti-ruoli.js"></script>
-<script type="module" src="auth-guard.js"></script>
+<link rel="stylesheet" href="tema.css?v=20261024b">
+<script src="utenti-ruoli.js?v=20261024b"></script>
+<script type="module" src="auth-guard.js?v=20261024b"></script>
 </head>
 <body>
-<div class="topbar">
-  <a class="home-btn" href="index.html"><i class="fa-solid fa-arrow-left"></i> Torna alla home</a>
-  <button class="home-btn" id="logoutButton" type="button" hidden><i class="fa-solid fa-right-from-bracket"></i> Esci</button>
-  <div class="brand"><img src="logo.png" alt="TOP HOUSE"><div><h2>TOP HOUSE</h2><p>casa, energia, fiducia.</p></div></div>
-</div>
-<section class="hero"><h1>Caricamento file</h1><p>Carica o aggiorna tanti file insieme scegliendo gestore e cartella. I documenti esistenti non vengono spostati, rinominati o cancellati.</p></section>
-<main class="panel">
-  <section class="card">
-    <div class="select-grid">
-      <div><label for="managerSelect">Gestore</label><select id="managerSelect"></select></div>
-      <div><label for="folderSelect">Sezione / cartella</label><select id="folderSelect"></select></div>
-    </div>
-    <div id="dropZone" class="drop-zone" tabindex="0" role="button" aria-label="Seleziona o trascina file">
-      <div><i class="fa-solid fa-cloud-arrow-up"></i><h3>Trascina qui i file</h3><p>Oppure clicca per selezionare più file insieme.</p></div>
-    </div>
-    <input type="file" id="fileInput" class="hidden-input" accept=".pdf,.doc,.docx,.xls,.xlsx,.ppt,.pptx,.jpg,.jpeg,.png,.zip,.mp4,.mov,.webm,.m4v" multiple>
-    <div class="actions">
-      <button class="btn" id="uploadButton" type="button"><i class="fa-solid fa-upload"></i> Carica tutti</button>
-      <label class="checkbox"><input type="checkbox" id="overwriteCheckbox"> Sovrascrivi file già esistenti</label>
-    </div>
-    <ul id="fileList" class="file-list"></ul>
-  </section>
-  <aside class="card">
-    <h2>Avanzamento</h2>
-    <progress id="uploadProgress" class="progress" value="0" max="100"></progress>
-    <div id="uploadStatus">Seleziona i file da caricare.</div>
-    <p class="hint"><strong>Percorso:</strong> <span id="pathPreview"></span></p>
-  </aside>
+<main class="th-page" id="main">
+<nav class="th-crumbs" aria-label="Percorso"><a href="index.html">Home</a><span aria-current="page">Gestione file</span></nav>
+<h1 class="th-title">Gestione file</h1>
+<p class="th-lede">Scegli una cartella, poi trascina i PDF nuovi: il Drive riconosce le versioni vecchie e le sostituisce in un solo passaggio.</p>
+<div class="th-cable" aria-hidden="true"></div>
+<label class="th-field" style="max-width:560px"><span>Cartella</span><select id="thFolderPick"><option>Caricamento…</option></select></label>
+<p><a class="th-link" id="thFolderLink" style="text-align:left;display:inline" hidden>Apri la pagina della cartella</a></p>
+<section data-folder-view id="thAdminFolder" hidden></section>
 </main>
-<script src="pdf-tools.js"></script>
-<script src="upload-pdf.js"></script>
-<script src="documenti-github.js"></script>
-<script>
-// Nessun token nel codice: al primo caricamento l'admin incolla il proprio token (resta solo sul suo dispositivo).
-const STD = ['cte/business','cte/residenziale','modulistica','privacy','procedimenti'];
-const UPLOAD_MAP = {
-  a2a:STD, acea:STD, alperia:STD, audax:STD, cogeme:STD, duferco:STD, enel:STD, engie:STD, gde:STD, hera:STD, iren:STD, magix:STD,
-  onova:['cte-business','cte-residenziale','modulistica','procedimenti'], s4:['cte-business','cte-residenziale','modulistica','procedimenti'], simecom:['cte-business','cte-residenziale','modulistica','privacy','procedimenti'], sorgenia:['cte-business','cte-residenziale','modulistica','privacy','procedimenti'], stream:['cte-business','cte-residenziale','modulistica','privacy','procedimenti'], union:['cte-business-luce','cte-business-gas','cte-residenziale-luce','cte-residenziale-gas','modulistica','procedimenti'],
-  'gestori/unoenergy':STD, 'gestori/vivienergia':STD, plenitude:['cte/business','cte/residenziale','modulistica','procedimenti'],
-  fotovoltaico:['schede-tecniche','riunioni','reonic-preventivi-tutorial','formazione-base','presentazione-base','documenti-sopralluogo','documenti-finanziamento','documenti-contratto','altro'],
-  'wall-box':['schede-tecniche'], 'pompe-di-calore':['schede-tecniche'],
-  climatizzatore:[''], caldaia:[''], depuratore:[''], infissi:[''], allarmi:[''], moduli:[''],
-  'telefonia/FASTWEB':['OFFERTE/BUSINESS','OFFERTE/RESIDENZIALE','PROCEDURE','MODULISTICA'], 'telefonia/SKY':['OFFERTE/BUSINESS','OFFERTE/RESIDENZIALE','PROCEDURE','MODULISTICA'], 'telefonia/WIND':['OFFERTE/BUSINESS','OFFERTE/RESIDENZIALE','PROCEDURE','MODULISTICA'], 'telefonia/TIM':['OFFERTE/BUSINESS','OFFERTE/RESIDENZIALE','PROCEDURE','MODULISTICA'], 'telefonia/VODAFONE':['OFFERTE/BUSINESS','OFFERTE/RESIDENZIALE','PROCEDURE','MODULISTICA']
-};
-const managerSelect=document.getElementById('managerSelect'), folderSelect=document.getElementById('folderSelect'), fileInput=document.getElementById('fileInput'), dropZone=document.getElementById('dropZone'), fileList=document.getElementById('fileList'), pathPreview=document.getElementById('pathPreview');
-// Percorso nel Drive per gestore + cartella (la telefonia sta fuori da "documenti/").
-function folderPathFor(manager, folder){const base=manager.startsWith('telefonia/')?manager:`documenti/${manager}`;return folder?`${base}/${folder}`:base;}
-window.getAdminFolderPath=()=>folderPathFor(managerSelect.value, folderSelect.value);
-const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-Object.keys(UPLOAD_MAP).sort().forEach(manager => managerSelect.add(new Option(manager.replace('gestori/','').replace('telefonia/','TELEFONIA · ').toUpperCase(), manager)));
-function refreshFolders(){folderSelect.innerHTML='';UPLOAD_MAP[managerSelect.value].forEach(folder=>folderSelect.add(new Option(folder||'(cartella principale)', folder)));refreshPath();}
-function refreshPath(){pathPreview.textContent=window.getAdminFolderPath();}
-function renderFiles(){const files=Array.from(fileInput.files||[]);fileList.innerHTML=files.length?files.map(file=>{const ok=TOPHOUSE_UPLOAD.isAllowedFile(file);const icon=window.TOPHOUSE_PDF?TOPHOUSE_PDF.getFileIcon(file.name):(ok?'fa-file':'fa-ban');return `<li><span><i class="fa-solid ${icon}"></i> ${esc(file.name)}</span><span class="status-badge">${ok?'pronto':'bloccato'}</span></li>`;}).join(''):'';}
-managerSelect.addEventListener('change', refreshFolders); folderSelect.addEventListener('change', refreshPath); refreshFolders();
-dropZone.addEventListener('click',()=>fileInput.click()); dropZone.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();fileInput.click();}}); fileInput.addEventListener('change',renderFiles);
-['dragenter','dragover'].forEach(type=>dropZone.addEventListener(type,event=>{event.preventDefault();dropZone.classList.add('is-over');})); ['dragleave','drop'].forEach(type=>dropZone.addEventListener(type,event=>{event.preventDefault();dropZone.classList.remove('is-over');}));
-dropZone.addEventListener('drop',event=>{fileInput.files=event.dataTransfer.files;renderFiles();});
-document.getElementById('uploadButton').addEventListener('click',async()=>{await TOPHOUSE_UPLOAD.uploadFiles({folderPath:window.getAdminFolderPath(),overwrite:document.getElementById('overwriteCheckbox').checked,progressElement:document.getElementById('uploadProgress'),statusElement:document.getElementById('uploadStatus'),onComplete:()=>window.refreshDeleteList?.()});renderFiles();});
-TOPHOUSE_GH.addTokenBadge(document.querySelector('aside.card'));
-</script>
+<script src="pdf-tools.js?v=20261024b"></script>
+<script src="layout.js?v=20261024b"></script>
+<script src="drive.js?v=20261024b"></script>
 </body>
 </html>
