@@ -91,7 +91,7 @@ if psv_date != pun_date:
     row["psv"] = psv_value
     history_by_date[psv_date] = row
 
-history = sorted(history_by_date.values(), key=lambda x: x["date"], reverse=True)[:10]
+history = sorted(history_by_date.values(), key=lambda x: x["date"], reverse=True)[:730]  # due anni di storico per la pagina "PUN e PSV"
 
 pun_rows = [r for r in history if r.get("pun") is not None]
 psv_rows = [r for r in history if r.get("psv") is not None]

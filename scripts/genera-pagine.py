@@ -9,7 +9,7 @@ import json
 import os
 import re
 
-VERSION = "20261024h"  # cambia per forzare i browser a scaricare CSS/JS nuovi
+VERSION = "20261024i"  # cambia per forzare i browser a scaricare CSS/JS nuovi
 
 # ----------------------------------------------------------------------------- struttura
 GESTORI = [  # slug, nome visualizzato
@@ -286,12 +286,12 @@ sections = [
     sec("archivio.html", "Preferiti", "fa-star", small="I documenti che hai salvato"),
 ]
 
-gauge = lambda key, name, icon, i: f"""<article class="th-gauge" data-gauge="{key}" style="--i:{i}">
-  <span class="th-gauge-name"><i class="fa-solid {icon}" aria-hidden="true"></i>{name}</span>
+gauge = lambda key, name, icon, i: f"""<a class="th-gauge" href="indici.html#{key}" data-gauge="{key}" style="--i:{i}" aria-label="{name}: apri lo storico">
+  <span class="th-gauge-name"><i class="fa-solid {icon}" aria-hidden="true"></i>{name}<span class="th-gauge-more">Storico <i class="fa-solid fa-chevron-right" aria-hidden="true"></i></span></span>
   <span class="th-gauge-value">…</span><span class="th-gauge-change"></span>
   <svg class="th-spark" role="img" aria-label="Andamento"></svg>
   <span class="th-gauge-foot">Caricamento…</span>
-</article>"""
+</a>"""
 
 write("index.html", head("Home", "index.html") + f"""<body class="th-home">
 <section class="th-hero">
@@ -318,6 +318,39 @@ write("index.html", head("Home", "index.html") + f"""<body class="th-home">
 </nav>
 </main>
 {scripts("index.html")}""")
+
+
+# ----------------------------------------------------------------------------- storico PUN e PSV
+MAPPA["pages"].append({"url": "indici.html", "path": ["PUN e PSV"]})
+write("indici.html", head("PUN e PSV", "indici.html") + f"""<body>
+<main class="th-page" id="main">
+{title_block("indici.html", [("PUN e PSV", "")], "I prezzi all'ingrosso di luce e gas giorno per giorno: utili per spiegare al cliente come si muovono le offerte indicizzate.")}<div class="th-ix-bar">
+  <div class="th-seg" role="tablist" aria-label="Indice">
+    <button type="button" role="tab" data-ix="pun"><i class="fa-solid fa-bolt" aria-hidden="true"></i> PUN luce</button>
+    <button type="button" role="tab" data-ix="psv"><i class="fa-solid fa-fire-flame-simple" aria-hidden="true"></i> PSV gas</button>
+  </div>
+  <div class="th-seg th-seg--small" aria-label="Periodo">
+    <button type="button" data-days="7">7 giorni</button><button type="button" data-days="30">30 giorni</button><button type="button" data-days="90">3 mesi</button><button type="button" data-days="0">Tutto</button>
+  </div>
+</div>
+<section class="th-ix-card">
+  <div class="th-ix-now"><span class="th-ix-label"></span><span class="th-ix-value"></span><span class="th-ix-change"></span><span class="th-ix-date"></span></div>
+  <div class="th-ix-stats"></div>
+  <div class="th-ix-chart"><svg aria-label="Grafico dell'andamento"></svg><div class="th-ix-tip" hidden></div></div>
+</section>
+<div class="th-ix-cols">
+  <section><h2 class="th-section-title">Giorno per giorno</h2><div class="th-ix-table-wrap"><table class="th-ix-table"><thead><tr><th>Data</th><th>Prezzo</th><th>Rispetto al giorno prima</th></tr></thead><tbody></tbody></table></div></section>
+  <section><h2 class="th-section-title">Media del mese</h2><ul class="th-list th-ix-months"></ul>
+  <p class="th-ix-note">Prezzi all'ingrosso, senza spread del fornitore, trasporto, oneri e imposte. Fonte: GME / ARERA tramite A4Energie, aggiornamento automatico ogni ora.</p></section>
+</div>
+</main>
+<script src="pdf-tools.js?v={VERSION}"></script>
+<script src="layout.js?v={VERSION}"></script>
+<script src="drive.js?v={VERSION}"></script>
+<script src="indici.js?v={VERSION}"></script>
+</body>
+</html>
+""")
 
 # ----------------------------------------------------------------------------- preferiti
 write("archivio.html", head("Preferiti", "archivio.html") + f"""<body>
