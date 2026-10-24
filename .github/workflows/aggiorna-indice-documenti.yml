@@ -1,0 +1,56 @@
+name: Aggiorna indice documenti
+
+# Rigenera data/documenti-index.json ogni volta che si caricano o eliminano file nel Drive.
+# Il portale legge questo indice, così non serve nessun token nel codice pubblico.
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'documenti/**'
+      - 'telefonia/**'
+      - 'scripts/genera-indice-documenti.py'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# Un aggiornamento alla volta; se due bot scrivono insieme, il push riprova dopo un rebase.
+concurrency:
+  group: indice-documenti
+  cancel-in-progress: false
+
+jobs:
+  update-documents-index:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout (senza scaricare i documenti)
+        uses: actions/checkout@v4
+        with:
+          filter: blob:none
+          sparse-checkout: |
+            scripts
+            data
+
+      - name: Genera indice
+        run: python3 scripts/genera-indice-documenti.py
+
+      - name: Salva aggiornamento
+        run: |
+          git config user.name "TOP HOUSE Bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/documenti-index.json
+          if git diff --cached --quiet; then
+            echo "Indice già aggiornato."
+            exit 0
+          fi
+          git commit -m "Aggiorna indice documenti"
+          for attempt in 1 2 3 4 5; do
+            if git push; then exit 0; fi
+            echo "Push rifiutato (nuovi caricamenti in corso), riprovo..."
+            git pull --rebase --strategy-option=theirs
+            python3 scripts/genera-indice-documenti.py
+            git add data/documenti-index.json
+            git diff --cached --quiet || git commit --amend --no-edit
+            sleep $((attempt * 5))
+          done
+          exit 1

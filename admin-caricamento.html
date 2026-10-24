@@ -44,28 +44,34 @@
 </main>
 <script src="pdf-tools.js"></script>
 <script src="upload-pdf.js"></script>
+<script src="documenti-github.js"></script>
 <script>
-const OWNER = "laminetallth"; const REPO = "TOP-HOUSE";
-const p1 = "ghp_bWg"; const p2 = "naZGsoY"; const p3 = "OcDDFO9w1"; const p4 = "BfARE"; const p5 = "No1Ak"; const p6 = "J2uWbct";
-const GITHUB_TOKEN = p1 + p2 + p3 + p4 + p5 + p6;
+// Nessun token nel codice: al primo caricamento l'admin incolla il proprio token (resta solo sul suo dispositivo).
+const STD = ['cte/business','cte/residenziale','modulistica','privacy','procedimenti'];
 const UPLOAD_MAP = {
-  a2a:['cte/business','cte/residenziale','modulistica','privacy','procedimenti'], acea:['cte/business','cte/residenziale','modulistica','privacy','procedimenti'], alperia:['cte/business','cte/residenziale','modulistica','privacy','procedimenti'], cogeme:['cte/business','cte/residenziale','modulistica','privacy','procedimenti'], duferco:['cte/business','cte/residenziale','modulistica','privacy','procedimenti'], enel:['cte/business','cte/residenziale','modulistica','privacy','procedimenti'], engie:['cte/business','cte/residenziale','modulistica','privacy','procedimenti'], gde:['cte/business','cte/residenziale','modulistica','privacy','procedimenti'], hera:['cte/business','cte/residenziale','modulistica','privacy','procedimenti'], iren:['cte/business','cte/residenziale','modulistica','privacy','procedimenti'],
+  a2a:STD, acea:STD, alperia:STD, audax:STD, cogeme:STD, duferco:STD, enel:STD, engie:STD, gde:STD, hera:STD, iren:STD, magix:STD,
   onova:['cte-business','cte-residenziale','modulistica','procedimenti'], s4:['cte-business','cte-residenziale','modulistica','procedimenti'], simecom:['cte-business','cte-residenziale','modulistica','privacy','procedimenti'], sorgenia:['cte-business','cte-residenziale','modulistica','privacy','procedimenti'], stream:['cte-business','cte-residenziale','modulistica','privacy','procedimenti'], union:['cte-business-luce','cte-business-gas','cte-residenziale-luce','cte-residenziale-gas','modulistica','procedimenti'],
-  'gestori/unoenergy':['cte/business','cte/residenziale','modulistica','privacy','procedimenti'], 'gestori/vivienergia':['cte/business','cte/residenziale','modulistica','privacy','procedimenti'], plenitude:['cte/business','cte/residenziale','modulistica','procedimenti'],
+  'gestori/unoenergy':STD, 'gestori/vivienergia':STD, plenitude:['cte/business','cte/residenziale','modulistica','procedimenti'],
   fotovoltaico:['schede-tecniche','riunioni','reonic-preventivi-tutorial','formazione-base','presentazione-base','documenti-sopralluogo','documenti-finanziamento','documenti-contratto','altro'],
-  'wall-box':['schede-tecniche'],
-  'pompe-di-calore':['schede-tecniche']
+  'wall-box':['schede-tecniche'], 'pompe-di-calore':['schede-tecniche'],
+  climatizzatore:[''], caldaia:[''], depuratore:[''], infissi:[''], allarmi:[''], moduli:[''],
+  'telefonia/FASTWEB':['OFFERTE/BUSINESS','OFFERTE/RESIDENZIALE','PROCEDURE','MODULISTICA'], 'telefonia/SKY':['OFFERTE/BUSINESS','OFFERTE/RESIDENZIALE','PROCEDURE','MODULISTICA'], 'telefonia/WIND':['OFFERTE/BUSINESS','OFFERTE/RESIDENZIALE','PROCEDURE','MODULISTICA'], 'telefonia/TIM':['OFFERTE/BUSINESS','OFFERTE/RESIDENZIALE','PROCEDURE','MODULISTICA'], 'telefonia/VODAFONE':['OFFERTE/BUSINESS','OFFERTE/RESIDENZIALE','PROCEDURE','MODULISTICA']
 };
 const managerSelect=document.getElementById('managerSelect'), folderSelect=document.getElementById('folderSelect'), fileInput=document.getElementById('fileInput'), dropZone=document.getElementById('dropZone'), fileList=document.getElementById('fileList'), pathPreview=document.getElementById('pathPreview');
-Object.keys(UPLOAD_MAP).sort().forEach(manager => managerSelect.add(new Option(manager.toUpperCase(), manager)));
-function refreshFolders(){folderSelect.innerHTML='';UPLOAD_MAP[managerSelect.value].forEach(folder=>folderSelect.add(new Option(folder, folder)));refreshPath();}
-function refreshPath(){pathPreview.textContent=`documenti/${managerSelect.value}/${folderSelect.value}`;}
-function renderFiles(){const files=Array.from(fileInput.files||[]);fileList.innerHTML=files.length?files.map(file=>{const ok=TOPHOUSE_UPLOAD.isAllowedFile(file);const icon=window.TOPHOUSE_PDF?TOPHOUSE_PDF.getFileIcon(file.name):(ok?'fa-file':'fa-ban');return `<li><span><i class="fa-solid ${icon}"></i> ${file.name}</span><span class="status-badge">${ok?'pronto':'bloccato'}</span></li>`;}).join(''):'';}
+// Percorso nel Drive per gestore + cartella (la telefonia sta fuori da "documenti/").
+function folderPathFor(manager, folder){const base=manager.startsWith('telefonia/')?manager:`documenti/${manager}`;return folder?`${base}/${folder}`:base;}
+window.getAdminFolderPath=()=>folderPathFor(managerSelect.value, folderSelect.value);
+const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+Object.keys(UPLOAD_MAP).sort().forEach(manager => managerSelect.add(new Option(manager.replace('gestori/','').replace('telefonia/','TELEFONIA · ').toUpperCase(), manager)));
+function refreshFolders(){folderSelect.innerHTML='';UPLOAD_MAP[managerSelect.value].forEach(folder=>folderSelect.add(new Option(folder||'(cartella principale)', folder)));refreshPath();}
+function refreshPath(){pathPreview.textContent=window.getAdminFolderPath();}
+function renderFiles(){const files=Array.from(fileInput.files||[]);fileList.innerHTML=files.length?files.map(file=>{const ok=TOPHOUSE_UPLOAD.isAllowedFile(file);const icon=window.TOPHOUSE_PDF?TOPHOUSE_PDF.getFileIcon(file.name):(ok?'fa-file':'fa-ban');return `<li><span><i class="fa-solid ${icon}"></i> ${esc(file.name)}</span><span class="status-badge">${ok?'pronto':'bloccato'}</span></li>`;}).join(''):'';}
 managerSelect.addEventListener('change', refreshFolders); folderSelect.addEventListener('change', refreshPath); refreshFolders();
 dropZone.addEventListener('click',()=>fileInput.click()); dropZone.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();fileInput.click();}}); fileInput.addEventListener('change',renderFiles);
 ['dragenter','dragover'].forEach(type=>dropZone.addEventListener(type,event=>{event.preventDefault();dropZone.classList.add('is-over');})); ['dragleave','drop'].forEach(type=>dropZone.addEventListener(type,event=>{event.preventDefault();dropZone.classList.remove('is-over');}));
 dropZone.addEventListener('drop',event=>{fileInput.files=event.dataTransfer.files;renderFiles();});
-document.getElementById('uploadButton').addEventListener('click',async()=>{await TOPHOUSE_UPLOAD.uploadFiles({folderPath:`documenti/${managerSelect.value}/${folderSelect.value}`,overwrite:document.getElementById('overwriteCheckbox').checked,progressElement:document.getElementById('uploadProgress'),statusElement:document.getElementById('uploadStatus')});renderFiles();});
+document.getElementById('uploadButton').addEventListener('click',async()=>{await TOPHOUSE_UPLOAD.uploadFiles({folderPath:window.getAdminFolderPath(),overwrite:document.getElementById('overwriteCheckbox').checked,progressElement:document.getElementById('uploadProgress'),statusElement:document.getElementById('uploadStatus'),onComplete:()=>window.refreshDeleteList?.()});renderFiles();});
+TOPHOUSE_GH.addTokenBadge(document.querySelector('aside.card'));
 </script>
 </body>
 </html>

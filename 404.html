@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pagina in creazione | TOP HOUSE</title>
+<title>Pagina non trovata | TOP HOUSE</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <style>
 :root{
@@ -177,14 +177,14 @@ h1{
 <main class="page-shell" aria-labelledby="pageTitle">
     <section class="notice-card">
         <div class="logo-wrap">
-            <img src="logo.png" alt="TOP HOUSE">
+            <img id="logoImg" src="/TOP-HOUSE/logo.png" alt="TOP HOUSE">
         </div>
-        <div class="status-pill"><i class="fa-solid fa-hammer"></i> Work in progress</div>
-        <h1 id="pageTitle">Pagina in creazione</h1>
+        <div class="status-pill"><i class="fa-solid fa-compass"></i> Errore 404</div>
+        <h1 id="pageTitle">Pagina non trovata</h1>
         <p class="section-name" id="sectionName" hidden></p>
-        <p class="message">Stiamo lavorando a questa sezione. Torna presto.</p>
+        <p class="message">Questa pagina non esiste o è stata spostata. Torna alla home del portale.</p>
         <div class="actions">
-            <a class="btn btn-primary" href="./"><i class="fa-solid fa-house"></i> Torna alla home</a>
+            <a class="btn btn-primary" id="homeLink" href="/TOP-HOUSE/"><i class="fa-solid fa-house"></i> Torna alla home</a>
             <button class="btn btn-secondary" type="button" id="backButton"><i class="fa-solid fa-arrow-left"></i> Indietro</button>
         </div>
     </section>
@@ -198,8 +198,14 @@ h1{
         .replace(/[-_]+/g, ' ')
         .trim();
 
+    // GitHub Pages mostra questa pagina per qualsiasi indirizzo: i percorsi devono partire dalla radice del sito.
+    const match = window.location.pathname.match(/^\/top-house\//i);
+    const root = match ? match[0] : '/';
+    document.getElementById('logoImg').src = root + 'logo.png';
+    document.getElementById('homeLink').href = root;
+
     if (cleanName && cleanName !== '404') {
-        sectionName.textContent = `Sezione ${cleanName.toUpperCase()} in creazione`;
+        sectionName.textContent = `Indirizzo richiesto: ${cleanName}`;
         sectionName.hidden = false;
     }
 
@@ -207,7 +213,7 @@ h1{
         if (window.history.length > 1) {
             window.history.back();
         } else {
-            window.location.href = './';
+            window.location.href = root;
         }
     });
 })();

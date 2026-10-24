@@ -1,35 +1,19 @@
 (function () {
   if (window.location.pathname.split('/').pop() !== 'admin-caricamento.html') return;
 
-  const OWNER = 'laminetallth';
-  const REPO = 'TOP-HOUSE';
-  const API = `https://api.github.com/repos/${OWNER}/${REPO}/contents/`;
-
-  function authHeaders() {
-    return { Authorization: `token ${window.GITHUB_TOKEN || GITHUB_TOKEN}`, Accept: 'application/vnd.github+json' };
-  }
+  // Nessun token nel codice: usa il token dell'admin salvato sul dispositivo (TOPHOUSE_GH).
+  const GH = () => window.TOPHOUSE_GH;
 
   function esc(value) {
     return String(value).replace(/[&<>"']/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c]));
   }
 
   async function listFolder(path) {
-    const res = await fetch(API + path, { headers: authHeaders() });
-    if (!res.ok) throw new Error(`Impossibile leggere la cartella (${res.status})`);
-    const data = await res.json();
-    return Array.isArray(data) ? data.filter(item => item.type === 'file') : [];
+    return GH().listFolder(path);
   }
 
-  async function deleteFile(item) {
-    const res = await fetch(API + item.path, {
-      method: 'DELETE',
-      headers: { ...authHeaders(), 'Content-Type': 'application/json' },
-      body: JSON.stringify({ message: `Eliminato file: ${item.name}`, sha: item.sha })
-    });
-    if (!res.ok) {
-      const data = await res.json().catch(() => ({}));
-      throw new Error(data.message || `HTTP ${res.status}`);
-    }
+  async function deleteFile(item, token) {
+    await GH().deletePath(item.path, item.sha, token);
   }
 
   function injectStyles() {
@@ -89,20 +73,19 @@
   }
 
   async function refreshDeleteList() {
-    const manager = document.getElementById('managerSelect')?.value;
-    const folder = document.getElementById('folderSelect')?.value;
-    if (!manager || !folder) return;
+    const folderPath = window.getAdminFolderPath?.();
+    if (!folderPath || !GH()) return;
     const list = document.getElementById('deleteList');
     const status = document.getElementById('deleteStatus');
     list.innerHTML = '<div class="delete-empty"><i class="fa-solid fa-spinner fa-spin"></i> Caricamento...</div>';
     document.getElementById('deleteSelectAll').checked = false;
     updateDeleteButton();
     try {
-      const files = await listFolder(`documenti/${manager}/${folder}`);
-      const docs = files.filter(file => /\.(pdf|docx?|xlsx?|pptx?|jpe?g|png|zip|mp4|mov|webm|m4v)$/i.test(file.name));
+      const files = await listFolder(folderPath);
+      const docs = files.filter(file => /\.(pdf|docx?|xlsx?|pptx?|jpe?g|png|zip|mp4|mov|webm|m4v|json)$/i.test(file.name));
       list.innerHTML = docs.length ? docs.map((file, i) => `
         <label class="delete-item">
-          <input type="checkbox" data-file='${esc(JSON.stringify({path:file.path,sha:file.sha,name:file.name}))}'>
+          <input type="checkbox" data-file="${esc(JSON.stringify({path:file.path,sha:file.sha||'',name:file.name}))}">
           <i class="fa-solid fa-file-pdf"></i><span class="name" title="${esc(file.name)}">${esc(file.name)}</span>
         </label>`).join('') : '<div class="delete-empty">Nessun file presente in questa cartella.</div>';
       if (status) status.hidden = true;
@@ -119,6 +102,8 @@
     const extra = files.length > 5 ? `\n... e altri ${files.length - 5}` : '';
     if (!confirm(`Vuoi eliminare definitivamente ${files.length} file?\n\n${names}${extra}`)) return;
 
+    const token = await GH().ensureToken();
+    if (!token) return;
     const btn = document.getElementById('deleteSelectedBtn');
     const status = document.getElementById('deleteStatus');
     btn.disabled = true;
@@ -127,7 +112,7 @@
     let ok = 0;
     const errors = [];
     for (const file of files) {
-      try { await deleteFile(file); ok++; }
+      try { await deleteFile(file, token); ok++; }
       catch (error) { errors.push(`${file.name}: ${error.message}`); }
       status.textContent = `Eliminati ${ok} di ${files.length} file...`;
     }
@@ -135,7 +120,10 @@
     await refreshDeleteList();
   }
 
-  document.addEventListener('DOMContentLoaded', () => {
+  window.refreshDeleteList = () => refreshDeleteList();
+  window.addEventListener('tophouse:role', event => { if (event.detail?.role === 'admin') refreshDeleteList(); });
+
+  function start() {
     injectStyles();
     buildUI();
     const manager = document.getElementById('managerSelect');
@@ -143,5 +131,9 @@
     manager?.addEventListener('change', () => setTimeout(refreshDeleteList, 50));
     folder?.addEventListener('change', () => setTimeout(refreshDeleteList, 50));
     setTimeout(refreshDeleteList, 300);
-  });
+  }
+
+  // Lo script viene aggiunto dinamicamente: il DOM potrebbe essere già pronto.
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start);
+  else start();
 })();

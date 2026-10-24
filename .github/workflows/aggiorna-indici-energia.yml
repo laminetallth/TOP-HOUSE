@@ -2,19 +2,28 @@ name: Aggiorna PUN e PSV
 
 on:
   schedule:
-    # Controlla ogni ora: Swapy aggiorna i dati lato server ogni ora.
+    # Controlla ogni ora: la fonte (A4Energie) pubblica i valori del giorno.
     - cron: '15 * * * *'
   workflow_dispatch:
 
 permissions:
   contents: write
 
+concurrency:
+  group: indici-energia
+  cancel-in-progress: false
+
 jobs:
   update-energy-indexes:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout (senza scaricare i documenti)
         uses: actions/checkout@v4
+        with:
+          filter: blob:none
+          sparse-checkout: |
+            scripts
+            data
 
       - name: Aggiorna dati PUN e PSV
         run: python3 scripts/aggiorna-indici-energia.py
@@ -28,5 +37,11 @@ jobs:
             echo "Nessun nuovo dato da pubblicare."
           else
             git commit -m "Aggiorna PUN e PSV"
-            git push
+            # Se nel frattempo è stato caricato un file, riallinea e riprova invece di fallire.
+            for attempt in 1 2 3 4 5; do
+              if git push; then exit 0; fi
+              git pull --rebase --strategy-option=theirs
+              sleep $((attempt * 5))
+            done
+            exit 1
           fi

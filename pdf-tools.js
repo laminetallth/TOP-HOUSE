@@ -53,8 +53,9 @@
     try { return JSON.parse(value) || fallback; } catch (error) { return fallback; }
   }
 
-  function getFavorites() { return safeParse(localStorage.getItem(STORAGE_KEY), []); }
-  function saveFavorites(items) { localStorage.setItem(STORAGE_KEY, JSON.stringify(items)); }
+  function getFavorites() { try { return safeParse(localStorage.getItem(STORAGE_KEY), []); } catch (error) { return []; } }
+  function saveFavorites(items) { try { localStorage.setItem(STORAGE_KEY, JSON.stringify(items)); } catch (error) { alert('Impossibile salvare i preferiti su questo dispositivo.'); } }
+  function escapeAttr(value) { return String(value ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c])); }
 
   function normalizePdf(input) {
     const folderPath = input.folderPath || '';
@@ -147,13 +148,13 @@
     const wrapper = document.createElement('div');
     wrapper.className = 'file-item-wrapper';
     wrapper.innerHTML = `
-      <a href="${pdf.downloadUrl}" target="_blank" class="file-link" rel="noopener">
+      <a href="${escapeAttr(pdf.downloadUrl)}" target="_blank" class="file-link" rel="noopener">
         <div class="file-icon"><i class="fa-solid ${isVideoLink ? 'fa-circle-play file-icon-video' : getFileIcon(pdf.name)}"></i></div>
         <div class="file-name"></div>
       </a>
       <div class="action-btns">
         <button type="button" class="preview-btn pdf-action-btn" title="${isVideoLink ? 'Apri video' : (canPreview ? 'Anteprima documento' : 'Apri / Scarica')}"><i class="fa-solid ${isVideoLink ? 'fa-arrow-up-right-from-square' : (canPreview ? 'fa-eye' : 'fa-arrow-up-right-from-square')}"></i></button>
-        <a href="${pdf.downloadUrl}" target="_blank" class="download-btn pdf-action-btn" title="${isVideoLink ? 'Apri video' : 'Visualizza/Scarica'}" rel="noopener"><i class="fa-solid ${isVideoLink ? 'fa-circle-play' : 'fa-download'}"></i></a>
+        <a href="${escapeAttr(pdf.downloadUrl)}" target="_blank" class="download-btn pdf-action-btn" title="${isVideoLink ? 'Apri video' : 'Visualizza/Scarica'}" rel="noopener"><i class="fa-solid ${isVideoLink ? 'fa-circle-play' : 'fa-download'}"></i></a>
         <button type="button" class="favorite-btn pdf-action-btn" title="Aggiungi ai preferiti"><i class="fa-regular fa-star"></i></button>
         <button class="delete-btn admin-only" data-admin-only title="Elimina file"><i class="fa-solid fa-trash-can"></i></button>
       </div>`;

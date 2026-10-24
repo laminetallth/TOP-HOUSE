@@ -15,19 +15,21 @@
 
   const formatChange = (value) => {
     if (value === null || value === undefined) return '—';
-    return `${value >= 0 ? '+' : ''}${Number(value).toFixed(2).replace('.', ',')}%`;
+    return `${value >= 0 ? '+' : '−'}${Math.abs(Number(value)).toFixed(2).replace('.', ',')}%`;
   };
 
+  const hasValue = value => value !== null && value !== undefined;
+
+  // Lo storico è ordinato dal più recente: la variazione si calcola rispetto al giorno precedente (più vecchio).
   const renderRows = (tbody, history, key, unit) => {
-    tbody.innerHTML = history.slice(0, 5).map((row, index) => {
+    const rows = history.filter(row => hasValue(row[key]));
+    tbody.innerHTML = rows.slice(0, 5).map((row, index) => {
       const value = row[key];
-      const previous = history.slice(0, index).find(item => item[key] !== null && item[key] !== undefined);
-      const change = index === 0 || !previous || value === null || value === undefined
-        ? null
-        : ((value / previous[key]) - 1) * 100;
+      const previous = rows[index + 1];
+      const change = previous && previous[key] ? ((value / previous[key]) - 1) * 100 : null;
       return `<tr>
         <td>${formatDate(row.date)}</td>
-        <td>${formatValue(value)} ${value === null || value === undefined ? '' : unit}</td>
+        <td>${formatValue(value, 5)} ${unit}</td>
         <td>${formatChange(change)}</td>
       </tr>`;
     }).join('');
@@ -51,7 +53,7 @@
         const value = punCard.querySelector('.energy-value strong');
         const date = punCard.querySelector('.energy-badge');
         const tbody = punCard.querySelector('tbody');
-        if (value) value.textContent = formatValue(data.pun.value, 3);
+        if (value) value.textContent = formatValue(data.pun.value, 5);
         if (date) date.textContent = `LUCE · ${formatDate(data.pun.date)}`;
         if (tbody) renderRows(tbody, Array.isArray(data.history) ? data.history : [], 'pun', '€/kWh');
       }
@@ -60,10 +62,12 @@
         const value = psvCard.querySelector('.energy-value strong');
         const date = psvCard.querySelector('.energy-badge');
         const tbody = psvCard.querySelector('tbody');
-        if (value) value.textContent = formatValue(data.psv.value, 3);
+        if (value) value.textContent = formatValue(data.psv.value, 5);
         if (date) date.textContent = `GAS · ${formatDate(data.psv.date)}`;
         if (tbody) renderRows(tbody, Array.isArray(data.history) ? data.history : [], 'psv', '€/Smc');
       }
+
+      if (data.source) section.querySelectorAll('.energy-source').forEach(el => { el.textContent = `Fonte: ${data.source}`; });
 
       if (headingUpdate) {
         headingUpdate.textContent = `Ultimo aggiornamento: ${formatDate(data.updatedAt)}`;

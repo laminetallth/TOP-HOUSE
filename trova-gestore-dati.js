@@ -11,6 +11,7 @@
 window.TOP_HOUSE_GESTORI = [
   { nome: "ACEA", pagina: "gestori/acea.html", procedura: "gestori/acea-procedimenti.html" },
   { nome: "ALPERIA", pagina: "gestori/alperia.html", procedura: "gestori/alperia-procedimenti.html" },
+  { nome: "AUDAX", pagina: "gestori/audax.html", procedura: "gestori/audax-procedimenti.html" },
   { nome: "COGEME", pagina: "gestori/cogeme.html", procedura: "gestori/cogeme-procedimenti.html" },
   { nome: "DUFERCO", pagina: "gestori/duferco.html", procedura: "gestori/duferco-procedimenti.html" },
   { nome: "ENEL", pagina: "gestori/enel.html", procedura: "gestori/enel-procedimenti.html" },
@@ -18,7 +19,9 @@ window.TOP_HOUSE_GESTORI = [
   { nome: "GDE", pagina: "gestori/gde.html", procedura: "gestori/gde-procedimenti.html" },
   { nome: "HERA", pagina: "gestori/hera.html", procedura: "gestori/hera-procedimenti.html" },
   { nome: "IREN", pagina: "gestori/iren.html", procedura: "gestori/iren-procedimenti.html" },
+  { nome: "MAGIX", pagina: "gestori/magix.html", procedura: "gestori/magix-procedimenti.html" },
   { nome: "ONOVA", pagina: "gestori/onova.html", procedura: "gestori/onova-procedimenti.html" },
+  { nome: "PLENITUDE", pagina: "gestori/plenitude.html", procedura: "gestori/plenitude-procedimenti.html" },
   { nome: "S4", pagina: "gestori/s4.html", procedura: "gestori/s4-procedimenti.html" },
   { nome: "SIMECOM", pagina: "gestori/simecom.html", procedura: "gestori/simecom-procedimenti.html" },
   { nome: "SORGENIA", pagina: "gestori/sorgenia.html", procedura: "gestori/sorgenia-procedimenti.html" },

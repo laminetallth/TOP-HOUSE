@@ -46,8 +46,25 @@
     return box;
   }
 
+  // Il token non è più nel codice: lo fornisce l'admin tramite TOPHOUSE_GH (documenti-github.js).
+  let activeToken = '';
   function headers() {
-    return { "Authorization": `token ${window.GITHUB_TOKEN || GITHUB_TOKEN}`, "Content-Type": "application/json" };
+    return window.TOPHOUSE_GH.authHeaders(activeToken, true);
+  }
+
+  async function requireToken() {
+    if (!window.TOPHOUSE_GH) { alert('Modulo documenti non caricato. Ricarica la pagina.'); return false; }
+    activeToken = await window.TOPHOUSE_GH.ensureToken();
+    return Boolean(activeToken);
+  }
+
+  function escapeHtml(value) {
+    return String(value ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  }
+
+  function contentsUrl(owner, repo, folderPath, fileName) {
+    const path = [...String(folderPath || '').split('/'), fileName].filter(Boolean).map(encodeURIComponent).join('/');
+    return `https://api.github.com/repos/${owner}/${repo}/contents/${path}`;
   }
 
   function readAsBase64(file) {
@@ -60,7 +77,7 @@
   }
 
   async function getExistingSha(uploadUrl) {
-    const response = await fetch(uploadUrl, { headers: headers() });
+    const response = await window.TOPHOUSE_GH.githubFetch(uploadUrl, { headers: headers() });
     if (response.status === 404) return null;
     if (!response.ok) throw new Error(`Verifica duplicato fallita (${response.status})`);
     const data = await response.json();
@@ -72,7 +89,7 @@
     target.innerHTML = `
       <strong>Riepilogo:</strong>
       <div>Caricati: ${counts.caricato || 0} · Aggiornati: ${counts.aggiornato || 0} · Duplicati: ${counts.duplicato || 0} · Avvisi: ${counts.avviso || 0} · Bloccati: ${counts.bloccato || 0} · Errori: ${counts.errore || 0}</div>
-      <ul style="margin:8px 0 0 18px;padding:0;">${results.map(item => `<li><strong>${item.name}</strong>: ${item.status}${item.message ? ` (${item.message})` : ''}</li>`).join('')}</ul>`;
+      <ul style="margin:8px 0 0 18px;padding:0;">${results.map(item => `<li><strong>${escapeHtml(item.name)}</strong>: ${escapeHtml(item.status)}${item.message ? ` (${escapeHtml(item.message)})` : ''}</li>`).join('')}</ul>`;
   }
 
   function splitFilesBySafety(fileList) {
@@ -130,15 +147,25 @@
     const url = urlInput?.value.trim();
     if (!title || !url) { if (statusBox) statusBox.textContent = 'Inserisci titolo video e URL video.'; return null; }
     if (!isAllowedVideoUrl(url)) { if (statusBox) statusBox.textContent = 'Link non consentito. Usa Google Drive, YouTube, Vimeo o un link diretto video.'; return null; }
-    const owner = options.owner || window.OWNER || OWNER;
-    const repo = options.repo || window.REPO || REPO;
-    const folderPath = options.folderPath || window.FOLDER_PATH || FOLDER_PATH;
+    const currentRole = window.TOPHOUSE_AUTH?.getCurrentRole?.() || sessionStorage.getItem('topHouseUserRole') || '';
+    if (currentRole !== 'admin') { if (statusBox) statusBox.textContent = 'Accesso riservato agli admin.'; return null; }
+    if (!await requireToken()) return null;
+    const owner = options.owner || window.OWNER || 'laminetallth';
+    const repo = options.repo || window.REPO || 'TOP-HOUSE';
+    const folderPath = options.folderPath || window.FOLDER_PATH;
+    if (!folderPath) { if (statusBox) statusBox.textContent = 'Cartella di destinazione non definita.'; return null; }
     const fileName = `video-${slugify(title)}-${Date.now()}.json`;
-    const uploadUrl = `https://api.github.com/repos/${owner}/${repo}/contents/${folderPath}/${encodeURIComponent(fileName)}`;
+    const uploadUrl = contentsUrl(owner, repo, folderPath, fileName);
     const payload = { type: 'video-link', title, url, createdAt: new Date().toISOString() };
     const content = btoa(unescape(encodeURIComponent(JSON.stringify(payload, null, 2))));
     if (statusBox) statusBox.textContent = 'Salvataggio link video in corso...';
-    const response = await fetch(uploadUrl, { method: 'PUT', headers: headers(), body: JSON.stringify({ message: `Aggiunto link video: ${title}`, content }) });
+    let response;
+    try {
+      response = await window.TOPHOUSE_GH.githubFetch(uploadUrl, { method: 'PUT', headers: headers(), body: JSON.stringify({ message: `Aggiunto link video: ${title}`, content }) });
+    } catch (error) {
+      if (statusBox) statusBox.textContent = `Errore salvataggio link video: ${error.message}`;
+      return null;
+    }
     if (!response.ok) {
       const errorData = await response.json().catch(() => ({}));
       if (statusBox) statusBox.textContent = `Errore salvataggio link video: ${errorData.message || response.status}`;
@@ -173,9 +200,11 @@
       return results;
     }
 
-    const owner = options.owner || window.OWNER || OWNER;
-    const repo = options.repo || window.REPO || REPO;
-    const folderPath = options.folderPath || window.FOLDER_PATH || FOLDER_PATH;
+    const owner = options.owner || window.OWNER || 'laminetallth';
+    const repo = options.repo || window.REPO || 'TOP-HOUSE';
+    const folderPath = options.folderPath || window.FOLDER_PATH;
+    if (!folderPath) { alert('Cartella di destinazione non definita.'); return results; }
+    if (!await requireToken()) return results;
     const overwrite = Boolean(options.overwrite);
     const progress = options.progressElement;
 
@@ -183,7 +212,7 @@
     for (let index = 0; index < files.length; index += 1) {
       const file = files[index];
       if (progress) progress.value = Math.round((index / files.length) * 100);
-      const uploadUrl = `https://api.github.com/repos/${owner}/${repo}/contents/${folderPath}/${encodeURIComponent(file.name)}`;
+      const uploadUrl = contentsUrl(owner, repo, folderPath, file.name);
       try {
         const existingSha = await getExistingSha(uploadUrl);
         if (existingSha && !overwrite) {
@@ -193,7 +222,7 @@
         const content = await readAsBase64(file);
         const body = { message: `${existingSha ? 'Aggiornato' : 'Caricato'} file: ${file.name}`, content };
         if (existingSha) body.sha = existingSha;
-        const response = await fetch(uploadUrl, { method: 'PUT', headers: headers(), body: JSON.stringify(body) });
+        const response = await window.TOPHOUSE_GH.githubFetch(uploadUrl, { method: 'PUT', headers: headers(), body: JSON.stringify(body) });
         if (!response.ok) {
           const errorData = await response.json().catch(() => ({}));
           throw new Error(errorData.message || `HTTP ${response.status}`);
@@ -206,7 +235,7 @@
     }
     if (progress) progress.value = 100;
     if (statusBox) renderSummary(results, statusBox);
-    fileInput.value = '';
+    if (fileInput) fileInput.value = '';
     if (typeof options.onComplete === 'function') options.onComplete(results);
     else if (typeof window.loadFiles === 'function') setTimeout(window.loadFiles, 1500);
     return results;
@@ -214,7 +243,7 @@
 
   document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('input[type="file"]').forEach(input => input.setAttribute('accept', ALLOWED_ACCEPT));
-    if (document.querySelector('.sidebar-box') && (window.FOLDER_PATH || typeof FOLDER_PATH !== 'undefined')) ensureVideoLinkBox();
+    if (document.querySelector('.sidebar-box') && window.FOLDER_PATH) ensureVideoLinkBox();
   });
 
   window.TOPHOUSE_UPLOAD = { uploadFiles, saveVideoLink, ensureVideoLinkBox, isAllowedVideoUrl, renderSummary, isAllowedFile, isVideoFile, splitFilesBySafety, ALLOWED_EXTENSIONS, ALLOWED_ACCEPT, VIDEO_MAX_BYTES, LARGE_FILE_WARNING_BYTES };

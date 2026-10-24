@@ -14,27 +14,42 @@ const firebaseConfig = {
 const app = getApps().length ? getApps()[0] : initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const roles = window.USER_ROLES || {};
-const isNestedPage = window.location.pathname.includes('/gestori/');
-const basePath = isNestedPage ? '../' : '';
-const loginPage = `${basePath}login.html`;
-const deniedPage = `${basePath}accesso-negato.html`;
+// Radice del sito ricavata dalla posizione di questo file: funziona in qualsiasi sottocartella.
+const siteRoot = new URL('./', import.meta.url);
+const loginPage = new URL('login.html', siteRoot).href;
+const deniedPage = new URL('accesso-negato.html', siteRoot).href;
 const publicPages = ['login.html', 'login-venditori.html', 'accesso-negato.html'];
 const currentPage = window.location.pathname.split('/').pop() || 'index.html';
 
 function normalizeEmail(email) { return String(email || '').trim().toLowerCase(); }
 function roleFor(user) { return roles[normalizeEmail(user?.email)] || ''; }
 function setMessage(element, text, isError = false) { if (element) { element.textContent = text; element.classList.toggle('error', isError); } }
-function nextParam(defaultPage = 'index.html') { return new URLSearchParams(window.location.search).get('next') || defaultPage; }
+// Dopo il login si torna solo a pagine di questo sito (niente redirect verso siti esterni).
+function nextParam(defaultPage = 'index.html') {
+  const fallback = new URL(defaultPage, siteRoot).href;
+  const raw = new URLSearchParams(window.location.search).get('next');
+  if (!raw) return fallback;
+  try {
+    const target = new URL(raw, siteRoot);
+    if (target.origin !== siteRoot.origin || !target.pathname.startsWith(siteRoot.pathname)) return fallback;
+    if (publicPages.includes(target.pathname.split('/').pop())) return fallback;
+    return target.href;
+  } catch (error) { return fallback; }
+}
 function redirectToLogin() {
-  const next = encodeURIComponent(window.location.pathname.split('/').pop() || 'index.html');
-  window.location.href = `${loginPage}?next=${next}`;
+  // Percorso relativo alla radice (es. "gestori/enel.html"), così dopo il login si torna alla pagina giusta.
+  const here = window.location.pathname + window.location.search;
+  const next = here.startsWith(siteRoot.pathname) ? here.slice(siteRoot.pathname.length) : 'index.html';
+  window.location.href = `${loginPage}?next=${encodeURIComponent(next || 'index.html')}`;
 }
 function redirectDenied() { window.location.href = deniedPage; }
 function isAdminOnlyPage() { return document.documentElement.dataset.adminOnly === 'true' || document.body?.dataset.adminOnly === 'true' || currentPage === 'admin-caricamento.html'; }
 function markRole(userRole) {
+  const previous = document.documentElement.dataset.userRole || '';
   document.documentElement.dataset.userRole = userRole;
   document.body?.setAttribute('data-user-role', userRole);
   document.querySelectorAll('[data-admin-only], .admin-only').forEach(element => { element.hidden = userRole !== 'admin'; });
+  if (previous !== userRole) window.dispatchEvent(new CustomEvent('tophouse:role', { detail: { role: userRole, previous } }));
 }
 function ensureLogoutButton() {
   if (publicPages.includes(currentPage)) return;
@@ -48,7 +63,14 @@ function ensureLogoutButton() {
     document.body.appendChild(button);
   }
   button.hidden = false;
-  button.addEventListener('click', async () => { await signOut(auth); window.location.href = loginPage; });
+  if (button.dataset.logoutBound) return;
+  button.dataset.logoutBound = '1';
+  button.addEventListener('click', logout);
+}
+async function logout() {
+  try { sessionStorage.removeItem('topHouseUserRole'); sessionStorage.removeItem('topHouseUserEmail'); } catch (error) { /* niente */ }
+  await signOut(auth);
+  window.location.href = loginPage;
 }
 function injectStyles() {
   if (document.getElementById('topHouseAuthStyles')) return;
@@ -60,7 +82,11 @@ function injectStyles() {
 function requireLogin(options = {}) {
   injectStyles();
   onAuthStateChanged(auth, user => {
-    if (!user) { redirectToLogin(); return; }
+    if (!user) {
+      try { sessionStorage.removeItem('topHouseUserRole'); } catch (error) { /* niente */ }
+      redirectToLogin();
+      return;
+    }
     const userRole = roleFor(user);
     if (!userRole) { redirectDenied(); return; }
     sessionStorage.setItem('topHouseUserRole', userRole);
@@ -78,7 +104,9 @@ function initLoginForm() {
   onAuthStateChanged(auth, user => {
     if (!user) return;
     const userRole = roleFor(user);
-    if (!userRole) { window.location.href = 'accesso-negato.html'; return; }
+    if (!userRole) { window.location.href = deniedPage; return; }
+    sessionStorage.setItem('topHouseUserRole', userRole);
+    sessionStorage.setItem('topHouseUserEmail', normalizeEmail(user.email));
     window.location.href = nextParam('index.html');
   });
   form?.addEventListener('submit', async event => {
@@ -89,7 +117,9 @@ function initLoginForm() {
     try {
       const credential = await signInWithEmailAndPassword(auth, emailInput.value.trim(), passwordInput.value);
       const userRole = roleFor(credential.user);
-      if (!userRole) { await signOut(auth); window.location.href = 'accesso-negato.html'; return; }
+      if (!userRole) { await signOut(auth); window.location.href = deniedPage; return; }
+      sessionStorage.setItem('topHouseUserRole', userRole);
+      sessionStorage.setItem('topHouseUserEmail', normalizeEmail(credential.user.email));
       window.location.href = nextParam('index.html');
     } catch (error) {
       console.error(error);
@@ -105,11 +135,12 @@ function initLoginForm() {
     setMessage(message, 'Se l\'email è registrata, riceverai il link per reimpostare la password.');
   });
 }
-function bindLogout(buttonId = 'logoutButton') { document.getElementById(buttonId)?.addEventListener('click', async () => { await signOut(auth); window.location.href = loginPage; }); }
+function bindLogout(buttonId = 'logoutButton') {
+  const button = document.getElementById(buttonId);
+  if (!button || button.dataset.logoutBound) return;
+  button.dataset.logoutBound = '1';
+  button.addEventListener('click', logout);
+}
 
-window.TOPHOUSE_AUTH = { auth, requireLogin, initLoginForm, bindLogout, signOut: () => signOut(auth), getCurrentRole: () => sessionStorage.getItem('topHouseUserRole') || '' };
+window.TOPHOUSE_AUTH = { auth, requireLogin, initLoginForm, bindLogout, logout, signOut: () => signOut(auth), getCurrentRole: () => sessionStorage.getItem('topHouseUserRole') || '' };
 if (!publicPages.includes(currentPage)) requireLogin();
-
-const bulkDeleteScript = document.createElement('script');
-bulkDeleteScript.src = `${basePath}bulk-delete.js`;
-document.head.appendChild(bulkDeleteScript);
