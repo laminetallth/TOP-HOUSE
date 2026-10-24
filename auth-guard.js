@@ -76,7 +76,7 @@ function injectStyles() {
   if (document.getElementById('topHouseAuthStyles')) return;
   const style = document.createElement('style');
   style.id = 'topHouseAuthStyles';
-  style.textContent = `[data-user-role="venditore"] .admin-only,[data-user-role="venditore"] [data-admin-only],[data-user-role="venditore"] .sidebar-box,[data-user-role="venditore"] .delete-btn{display:none!important}.top-house-logout{position:fixed;right:18px;bottom:18px;z-index:9999;border:0;border-radius:999px;padding:12px 18px;background:linear-gradient(135deg,#d0102f,#ff9a12);color:#fff;font-weight:900;box-shadow:0 10px 28px rgba(0,0,0,.22);cursor:pointer}`;
+  style.textContent = `[data-user-role="venditore"] .admin-only,[data-user-role="venditore"] [data-admin-only],[data-user-role="venditore"] .sidebar-box,[data-user-role="venditore"] .delete-btn{display:none!important}.top-house-logout{position:fixed;right:18px;bottom:18px;z-index:9999;border:0;border-radius:999px;padding:12px 18px;background:linear-gradient(135deg,#c8102e,#f7941d);color:#fff;font-weight:900;box-shadow:0 10px 28px rgba(0,0,0,.22);cursor:pointer}`;
   document.head.appendChild(style);
 }
 function requireLogin(options = {}) {

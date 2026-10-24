@@ -9,7 +9,7 @@ import json
 import os
 import re
 
-VERSION = "20261024e"  # cambia per forzare i browser a scaricare CSS/JS nuovi
+VERSION = "20261024f"  # cambia per forzare i browser a scaricare CSS/JS nuovi
 
 # ----------------------------------------------------------------------------- struttura
 GESTORI = [  # slug, nome visualizzato
@@ -81,7 +81,7 @@ def head(title, path, extra=""):
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#f2451f">
+<meta name="theme-color" content="#e8302a">
 <title>{e(title)} | TOP HOUSE</title>
 <link rel="icon" href="{b}logo-marchio.svg" type="image/svg+xml"><link rel="icon" href="{b}logo.png" type="image/png"><link rel="apple-touch-icon" href="{b}apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

@@ -681,8 +681,8 @@
         const pts = series.map((v, i) => [(i / (series.length - 1)) * (w - 6) + 3, h - 4 - ((v - min) / span) * (h - 10)]);
         const line = pts.map((p, i) => `${i ? 'L' : 'M'}${p[0].toFixed(1)} ${p[1].toFixed(1)}`).join(' ');
         svg.setAttribute('viewBox', `0 0 ${w} ${h}`);
-        svg.innerHTML = `<defs><linearGradient id="thSparkGrad-${key}" x1="0" x2="1"><stop offset="0" stop-color="#d0102f"/><stop offset="1" stop-color="#ff9a12"/></linearGradient>
-          <linearGradient id="thSparkFill-${key}" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#f2451f" stop-opacity=".3"/><stop offset="1" stop-color="#f2451f" stop-opacity="0"/></linearGradient></defs>
+        svg.innerHTML = `<defs><linearGradient id="thSparkGrad-${key}" x1="0" x2="1"><stop offset="0" stop-color="#c8102e"/><stop offset="1" stop-color="#f7941d"/></linearGradient>
+          <linearGradient id="thSparkFill-${key}" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#e8302a" stop-opacity=".3"/><stop offset="1" stop-color="#e8302a" stop-opacity="0"/></linearGradient></defs>
           <path class="a" fill="url(#thSparkFill-${key})" d="${line} L${pts[pts.length - 1][0].toFixed(1)} ${h} L${pts[0][0].toFixed(1)} ${h} Z"/><path class="l" stroke="url(#thSparkGrad-${key})" d="${line}"/>
           <circle class="ring" cx="${pts[pts.length - 1][0].toFixed(1)}" cy="${pts[pts.length - 1][1].toFixed(1)}" r="3.5"/>
           <circle cx="${pts[pts.length - 1][0].toFixed(1)}" cy="${pts[pts.length - 1][1].toFixed(1)}" r="3.5" fill="var(--orange)"/>`;
