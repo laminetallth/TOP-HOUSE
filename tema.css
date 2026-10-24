@@ -171,6 +171,10 @@ button,input,select,textarea{font:inherit;color:inherit}
 .th-empty b{display:block;color:var(--ink);font:700 20px/1.3 var(--display);margin-bottom:4px}
 .th-skeleton{height:72px;border-top:1px solid var(--line);background:linear-gradient(90deg,#faf7f4 0%,#f1ebe5 50%,#faf7f4 100%);background-size:200% 100%;animation:th-shimmer 1.2s linear infinite}
 .th-skeleton:first-child{border-top:0}
+.th-loading{display:flex;flex-direction:column;align-items:center;gap:10px;padding:40px 20px;color:var(--muted);font-weight:600;font-size:14.5px;list-style:none}
+.th-loading img{width:86px;height:auto}
+.th-loading--small{flex-direction:row;padding:4px 0;gap:8px;font-size:14px}
+.th-loading--small img{width:30px}
 @keyframes th-shimmer{to{background-position:-200% 0}}
 
 /* zona di rilascio (admin) */
@@ -331,13 +335,6 @@ button,input,select,textarea{font:inherit;color:inherit}
 .th-gauge{animation:th-rise .6s var(--ease) both;animation-delay:calc(var(--i,0) * 90ms + 150ms)}
 .th-list,.th-tiles,.th-files{animation:th-rise .55s .1s var(--ease) both}
 .th-file.th-rise{animation-duration:.45s}
-/* passaggio morbido tra le pagine (browser recenti) */
-@view-transition{navigation:auto}
-.th-header{view-transition-name:th-header}
-::view-transition-old(root){animation:th-vt-out .16s ease both}
-::view-transition-new(root){animation:th-vt-in .32s var(--ease) both}
-@keyframes th-vt-out{to{opacity:0}}
-@keyframes th-vt-in{from{opacity:0;transform:translateY(10px)}}
 /* il pulsante principale "respira" la sfumatura al passaggio */
 .th-btn{background-size:160% 160%;background-position:0% 50%;transition:transform .15s var(--ease),box-shadow .15s,opacity .15s,background-position .5s ease}
 .th-btn:hover{background-position:100% 50%}

@@ -2,6 +2,8 @@
 // Se l'AI non è attiva in Firebase, resta la risposta locale già presente nella pagina.
 import { createAssistant, renderMarkdown, friendlyError } from './assistente-core.js';
 
+const CASETTA = `<span class="th-loading th-loading--small"><img src="${new URL('./casetta.svg', import.meta.url).href}" alt=""><span>Sto pensando…</span></span>`;
+
 const assistant = createAssistant();
 const messages = document.getElementById('messages');
 const input = document.getElementById('question');
@@ -23,7 +25,7 @@ async function ask(q) {
   busy = true;
   bubble('user', q.replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c])));
   if (input) input.value = '';
-  const answer = bubble('bot', '<span class="th-ai-dots"><i></i><i></i><i></i></span>');
+  const answer = bubble('bot', CASETTA);
   try {
     await assistant.send(q, [], partial => { answer.innerHTML = renderMarkdown(partial); messages.scrollTop = messages.scrollHeight; });
   } catch (error) {

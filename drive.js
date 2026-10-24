@@ -285,7 +285,7 @@
         <button type="button" class="th-btn th-btn--danger th-btn--small" data-act="bulk" hidden><i class="fa-solid fa-trash-can"></i> <span>Elimina</span></button>
         <span class="th-hint">Puoi anche trascinare i file qui sopra</span>
       </div>
-      <ul class="th-files" aria-label="File di ${esc(label)}"><li class="th-skeleton"></li><li class="th-skeleton"></li><li class="th-skeleton"></li></ul>
+      <ul class="th-files" aria-label="File di ${esc(label)}"><li class="th-loading"><img src="${ROOT}casetta.svg" alt=""><span>Carico i documenti…</span></li></ul>
       <input type="file" multiple hidden accept="${ALLOWED.map(e => '.' + e).join(',')}" data-picker>
       <input type="file" hidden data-replacer>`;
 
@@ -459,7 +459,7 @@
             onProgress: p => {
               if (p.step === 'upload') { $(`.th-up[data-i="${p.index}"] .th-up-state`, s.el).textContent = 'Caricamento…'; }
               if (p.step === 'uploaded') { const st = $(`.th-up[data-i="${p.index}"] .th-up-state`, s.el); st.textContent = 'Pronto'; st.classList.add('is-ok'); $('b', bar).style.width = `${Math.round(((p.index + 1) / p.total) * 90)}%`; }
-              if (p.step === 'commit') { okBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Pubblicazione…'; }
+              if (p.step === 'commit') { okBtn.innerHTML = `<img src="${ROOT}casetta.svg" alt="" style="width:26px;filter:brightness(0) invert(1)"> Pubblicazione…`; }
               if (p.step === 'done') { $('b', bar).style.width = '100%'; }
             }
           });

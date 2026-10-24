@@ -9,7 +9,7 @@ import json
 import os
 import re
 
-VERSION = "20261024g"  # cambia per forzare i browser a scaricare CSS/JS nuovi
+VERSION = "20261024h"  # cambia per forzare i browser a scaricare CSS/JS nuovi
 
 # ----------------------------------------------------------------------------- struttura
 GESTORI = [  # slug, nome visualizzato
@@ -88,6 +88,7 @@ def head(title, path, extra=""):
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&family=Instrument+Sans:wght@400..700&display=swap">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <link rel="stylesheet" href="{b}tema.css?v={VERSION}">
+<script src="{b}intro.js?v={VERSION}"></script>
 <script src="{b}utenti-ruoli.js?v={VERSION}"></script>
 <script type="module" src="{b}auth-guard.js?v={VERSION}"></script>{extra}
 </head>
@@ -413,7 +414,7 @@ write("accesso-negato.html", solo_head("Accesso riservato").replace("</head>", a
 </html>
 """)
 
-notfound = solo_head("Pagina non trovata").replace('href="logo', 'href="/TOP-HOUSE/logo').replace('href="apple-touch', 'href="/TOP-HOUSE/apple-touch').replace('href="tema.css', 'href="/TOP-HOUSE/tema.css')
+notfound = solo_head("Pagina non trovata").replace('src="intro.js', 'src="/TOP-HOUSE/intro.js').replace('href="logo', 'href="/TOP-HOUSE/logo').replace('href="apple-touch', 'href="/TOP-HOUSE/apple-touch').replace('href="tema.css', 'href="/TOP-HOUSE/tema.css')
 write("404.html", notfound + f"""<body class="th-solo">
 {glow}
 <main class="th-solo-card">

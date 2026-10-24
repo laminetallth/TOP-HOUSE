@@ -1,6 +1,8 @@
 // TOP HOUSE — assistente AI disponibile in tutto il Drive (pulsante in basso a destra).
 import { createAssistant, renderMarkdown, friendlyError } from './assistente-core.js';
 
+const CASETTA = `<span class="th-loading th-loading--small"><img src="${new URL('./casetta.svg', import.meta.url).href}" alt=""><span>Sto pensando…</span></span>`;
+
 const SUGGERIMENTI = [
   { label: 'Analizza una bolletta', q: '', attach: true },
   { label: 'Perché la bolletta è alta?', q: 'Un cliente dice che la bolletta è troppo alta. Come capisco il motivo voce per voce e cosa gli dico?' },
@@ -83,7 +85,7 @@ async function ask(question) {
   box.value = ''; autosize();
   const answer = bubble('bot', '');
   answer.classList.add('is-typing');
-  answer.innerHTML = '<span class="th-ai-dots"><i></i><i></i><i></i></span>';
+  answer.innerHTML = CASETTA;
   try {
     await assistant.send(text || 'Analizza questa bolletta: estrai i dati principali, calcola il costo medio e dimmi su cosa puntare con il cliente.', files, partial => {
       answer.classList.remove('is-typing');
