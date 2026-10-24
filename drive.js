@@ -602,6 +602,23 @@
       }
       window.TOPHOUSE_PDF?.openPreview({ name: d.file.name, fileName: d.file.name, downloadUrl: RAW + encodePath(path), folderPath: d.folder });
     }
+    // esempi che si scrivono da soli nel campo di ricerca (si fermano quando scrivi)
+    const examples = ['enel cte business', 'modulistica hera', 'schede tecniche fotovoltaico', 'procedura voltura', 'sorgenia residenziale', 'offerte tim business'];
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!reduce) {
+      let ex = 0, ch = 0, deleting = false;
+      const type = () => {
+        if (document.activeElement === input || input.value) { input.placeholder = 'Cerca un documento o un gestore'; setTimeout(type, 1200); return; }
+        const word = examples[ex];
+        ch += deleting ? -1 : 1;
+        input.placeholder = `Cerca… ${word.slice(0, ch)}${deleting ? '' : '▍'}`;
+        let wait = deleting ? 35 : 75;
+        if (!deleting && ch >= word.length) { deleting = true; wait = 1600; }
+        else if (deleting && ch <= 0) { deleting = false; ex = (ex + 1) % examples.length; wait = 350; }
+        setTimeout(type, wait);
+      };
+      setTimeout(type, 1800);
+    }
     input.addEventListener('focus', build, { once: true });
     input.addEventListener('input', async () => { await build(); render(input.value); });
     input.addEventListener('keydown', e => {
@@ -664,10 +681,11 @@
         const pts = series.map((v, i) => [(i / (series.length - 1)) * (w - 6) + 3, h - 4 - ((v - min) / span) * (h - 10)]);
         const line = pts.map((p, i) => `${i ? 'L' : 'M'}${p[0].toFixed(1)} ${p[1].toFixed(1)}`).join(' ');
         svg.setAttribute('viewBox', `0 0 ${w} ${h}`);
-        svg.innerHTML = `<defs><linearGradient id="thSparkGrad-${key}" x1="0" x2="1"><stop offset="0" stop-color="#931635"/><stop offset="1" stop-color="#f18d2a"/></linearGradient>
-          <linearGradient id="thSparkFill-${key}" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#c75a38" stop-opacity=".3"/><stop offset="1" stop-color="#c75a38" stop-opacity="0"/></linearGradient></defs>
+        svg.innerHTML = `<defs><linearGradient id="thSparkGrad-${key}" x1="0" x2="1"><stop offset="0" stop-color="#d0102f"/><stop offset="1" stop-color="#ff9a12"/></linearGradient>
+          <linearGradient id="thSparkFill-${key}" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#f2451f" stop-opacity=".3"/><stop offset="1" stop-color="#f2451f" stop-opacity="0"/></linearGradient></defs>
           <path class="a" fill="url(#thSparkFill-${key})" d="${line} L${pts[pts.length - 1][0].toFixed(1)} ${h} L${pts[0][0].toFixed(1)} ${h} Z"/><path class="l" stroke="url(#thSparkGrad-${key})" d="${line}"/>
-          <circle cx="${pts[pts.length - 1][0].toFixed(1)}" cy="${pts[pts.length - 1][1].toFixed(1)}" r="3.5" fill="#f18d2a"/>`;
+          <circle class="ring" cx="${pts[pts.length - 1][0].toFixed(1)}" cy="${pts[pts.length - 1][1].toFixed(1)}" r="3.5"/>
+          <circle cx="${pts[pts.length - 1][0].toFixed(1)}" cy="${pts[pts.length - 1][1].toFixed(1)}" r="3.5" fill="var(--orange)"/>`;
         const path = $('path.l', svg);
         path.style.setProperty('--len', Math.ceil(path.getTotalLength()) + 2);
         svg.setAttribute('aria-label', `Andamento ultimi ${series.length} giorni`);

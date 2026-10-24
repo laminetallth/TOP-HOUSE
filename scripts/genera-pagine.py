@@ -9,7 +9,7 @@ import json
 import os
 import re
 
-VERSION = "20261024c"  # cambia per forzare i browser a scaricare CSS/JS nuovi
+VERSION = "20261024e"  # cambia per forzare i browser a scaricare CSS/JS nuovi
 
 # ----------------------------------------------------------------------------- struttura
 GESTORI = [  # slug, nome visualizzato
@@ -56,7 +56,12 @@ CATEGORIE_SEMPLICI = [  # una sola cartella, direttamente dalla home
 
 # ----------------------------------------------------------------------------- mattoni
 _MARK_D = re.search(r' d="([^"]+)"', open("logo-marchio.svg", encoding="utf-8").read()).group(1)
-MARK_ART = f'<svg class="th-mark-art" viewBox="0 0 251 197" aria-hidden="true"><path pathLength="1000" fill-rule="evenodd" d="{_MARK_D}"/></svg>'
+MARK_ART = (f'<svg class="th-mark-art" viewBox="0 0 251 197" aria-hidden="true"><path pathLength="1000" fill-rule="evenodd" d="{_MARK_D}"/>'
+            f'<path class="th-mark-flow" pathLength="1000" d="{_MARK_D}"/><path class="th-mark-flow f2" pathLength="1000" d="{_MARK_D}"/></svg>')
+# scintille: posizioni fisse ma "casuali" (stesso risultato a ogni generazione)
+SPARKS = '<div class="th-sparks">' + "".join(
+    f'<i style="--x:{(i * 37) % 100}%;--s:{3 + (i * 7) % 6}px;--t:{6 + (i * 5) % 7}s;--dl:{-((i * 1.3) % 9):.1f}s;--dx:{((i * 23) % 60) - 30}px"></i>'
+    for i in range(18)) + '</div>'
 MAPPA = {"folders": {}, "pages": []}
 SCRITTE = []
 
@@ -76,7 +81,7 @@ def head(title, path, extra=""):
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#c75a38">
+<meta name="theme-color" content="#f2451f">
 <title>{e(title)} | TOP HOUSE</title>
 <link rel="icon" href="{b}logo-marchio.svg" type="image/svg+xml"><link rel="icon" href="{b}logo.png" type="image/png"><link rel="apple-touch-icon" href="{b}apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -289,7 +294,7 @@ gauge = lambda key, name, icon, i: f"""<article class="th-gauge" data-gauge="{ke
 
 write("index.html", head("Home", "index.html") + f"""<body class="th-home">
 <section class="th-hero">
-  <div class="th-hero-bg" aria-hidden="true"><div class="th-hero-grid"></div><div class="th-hero-glow"></div>{MARK_ART}</div>
+  <div class="th-hero-bg" aria-hidden="true"><div class="th-hero-grid"></div><div class="th-hero-glow"></div><div class="th-hero-glow th-hero-glow--2"></div>{SPARKS}{MARK_ART}</div>
   <div class="th-hero-in">
     <h1 class="th-rise">Cosa ti serve per il prossimo cliente?</h1>
     <div class="th-search th-rise" style="--d:120ms" role="search">
@@ -372,7 +377,7 @@ write("admin-caricamento.html", head("Gestione file", "admin-caricamento.html").
 solo_head = lambda title: head(title, "x.html").replace(f'<script src="utenti-ruoli.js?v={VERSION}"></script>\n<script type="module" src="auth-guard.js?v={VERSION}"></script>', "")
 auth_scripts = f'<script src="utenti-ruoli.js?v={VERSION}"></script>\n<script type="module" src="auth-guard.js?v={VERSION}"></script>'
 brand = '<img class="th-logo" src="logo.svg" alt="TOP HOUSE - casa. energia. fiducia." width="221" height="44">'
-glow = f'<div class="th-hero-bg" aria-hidden="true"><div class="th-hero-grid"></div><div class="th-hero-glow"></div>{MARK_ART}</div>'
+glow = f'<div class="th-hero-bg" aria-hidden="true"><div class="th-hero-grid"></div><div class="th-hero-glow"></div><div class="th-hero-glow th-hero-glow--2"></div>{SPARKS}{MARK_ART}</div>'
 
 write("login.html", solo_head("Accedi").replace("</head>", auth_scripts + "\n</head>") + f"""<body class="th-solo">
 {glow}

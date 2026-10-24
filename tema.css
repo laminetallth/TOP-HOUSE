@@ -10,14 +10,14 @@
   --line:#ece5df;
   --line-strong:#ddd3ca;
   --muted:#6f665f;
-  --bordeaux:#931635;
-  --mattone:#c75a38;
-  --orange:#f18d2a;
-  --pink:#c75a38;
-  --tint:#fbefe8;
-  --tint-2:#f7e2d6;
-  --current:linear-gradient(90deg,#931635 0%,#c75a38 50%,#f18d2a 100%);
-  --current-diag:linear-gradient(45deg,#931635 0%,#c75a38 50%,#f18d2a 100%);
+  --bordeaux:#d0102f;
+  --mattone:#f2451f;
+  --orange:#ff9a12;
+  --pink:#f2451f;
+  --tint:#fff0e8;
+  --tint-2:#ffdccb;
+  --current:linear-gradient(90deg,#d0102f 0%,#f2451f 50%,#ff9a12 100%);
+  --current-diag:linear-gradient(45deg,#d0102f 0%,#f2451f 50%,#ff9a12 100%);
   --ok:#0f9d68;
   --danger:#b8213a;
   --display:"Bricolage Grotesque","Instrument Sans",system-ui,sans-serif;
@@ -105,7 +105,7 @@ button,input,select,textarea{font:inherit;color:inherit}
 .th-filter{position:relative;max-width:420px;margin:0 0 20px}
 .th-filter i{position:absolute;left:16px;top:50%;transform:translateY(-50%);color:var(--muted)}
 .th-filter input{width:100%;height:48px;border:1px solid var(--line);border-radius:999px;background:var(--surface);padding:0 18px 0 44px;font-size:16px;outline:none;transition:border-color .15s,box-shadow .15s}
-.th-filter input:focus{border-color:var(--mattone);box-shadow:0 0 0 4px rgba(199,90,56,.15)}
+.th-filter input:focus{border-color:var(--mattone);box-shadow:0 0 0 4px rgba(242,69,31,.15)}
 .th-tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(168px,1fr));gap:12px}
 .th-tile{position:relative;display:flex;flex-direction:column;justify-content:space-between;min-height:118px;padding:16px 18px;background:var(--surface);border-radius:var(--r-md);text-decoration:none;box-shadow:var(--shadow);transition:transform .18s var(--ease),box-shadow .18s}
 .th-tile:hover{transform:translateY(-2px);box-shadow:var(--shadow-lift)}
@@ -113,14 +113,14 @@ button,input,select,textarea{font:inherit;color:inherit}
 .th-tile small{color:var(--muted);font-size:13.5px;font-variant-numeric:tabular-nums}
 .th-tile::after{content:"";position:absolute;left:18px;right:18px;bottom:0;height:3px;border-radius:3px 3px 0 0;background:var(--current);transform:scaleX(0);transform-origin:left;transition:transform .25s var(--ease)}
 .th-tile:hover::after{transform:scaleX(1)}
-.th-callout{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin:0 0 26px;padding:22px 24px;border-radius:var(--r-lg);background:var(--current-diag);background-size:180% 180%;animation:th-drift 14s ease-in-out infinite alternate;color:#fff;box-shadow:0 14px 34px rgba(147,22,53,.22)}
+.th-callout{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin:0 0 26px;padding:22px 24px;border-radius:var(--r-lg);background:var(--current-diag);background-size:180% 180%;animation:th-drift 14s ease-in-out infinite alternate;color:#fff;box-shadow:0 14px 34px rgba(208,16,47,.22)}
 .th-callout .th-btn{background:#fff;color:var(--bordeaux);box-shadow:none}
 .th-callout p{margin:0;flex:1;min-width:220px;color:#ffe9dc}
 .th-callout strong{display:block;color:#fff;font:700 20px/1.2 var(--display);margin-bottom:2px}
 
 /* ---------------------------------------------------------------- bottoni */
-.th-btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;height:46px;padding:0 20px;border:0;border-radius:999px;background:var(--current-diag);color:#fff;font-weight:700;font-size:15px;text-decoration:none;cursor:pointer;box-shadow:0 8px 20px rgba(147,22,53,.22);transition:transform .15s var(--ease),box-shadow .15s,opacity .15s}
-.th-btn:hover{transform:translateY(-1px);box-shadow:0 12px 26px rgba(147,22,53,.3)}
+.th-btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;height:46px;padding:0 20px;border:0;border-radius:999px;background:var(--current-diag);color:#fff;font-weight:700;font-size:15px;text-decoration:none;cursor:pointer;box-shadow:0 8px 20px rgba(208,16,47,.22);transition:transform .15s var(--ease),box-shadow .15s,opacity .15s}
+.th-btn:hover{transform:translateY(-1px);box-shadow:0 12px 26px rgba(208,16,47,.3)}
 .th-btn:active{transform:none}
 .th-btn:disabled{opacity:.5;cursor:not-allowed;transform:none}
 .th-btn--ghost{background:var(--surface);color:var(--ink);box-shadow:inset 0 0 0 1px var(--line-strong)}
@@ -204,7 +204,7 @@ button,input,select,textarea{font:inherit;color:inherit}
 .th-field{display:block;margin:0 0 14px}
 .th-field span{display:block;font-weight:600;font-size:14px;margin-bottom:6px}
 .th-field input,.th-field select{width:100%;height:46px;border:1px solid var(--line-strong);border-radius:var(--r-md);padding:0 14px;font-size:16px;background:#fff;outline:none}
-.th-field input:focus,.th-field select:focus{border-color:var(--mattone);box-shadow:0 0 0 4px rgba(199,90,56,.15)}
+.th-field input:focus,.th-field select:focus{border-color:var(--mattone);box-shadow:0 0 0 4px rgba(242,69,31,.15)}
 .th-progress{height:6px;border-radius:6px;background:var(--line);overflow:hidden;flex:1;min-width:120px}
 .th-progress b{display:block;height:100%;width:0;background:var(--current);transition:width .3s var(--ease)}
 
@@ -230,13 +230,13 @@ button,input,select,textarea{font:inherit;color:inherit}
 .pdf-modal-download,.pdf-modal-open-link{display:inline-flex;align-items:center;gap:9px;height:44px;padding:0 18px;border-radius:999px;background:var(--current-diag);color:#fff;font-weight:700;text-decoration:none}
 
 /* ---------------------------------------------------------------- home */
-.th-hero{position:relative;z-index:3;color:#fff;background:var(--current-diag);background-size:220% 220%;animation:th-drift 16s ease-in-out infinite alternate}
+.th-hero{position:relative;z-index:3;color:#fff;background:var(--current-diag);background-size:240% 240%;animation:th-drift 9s ease-in-out infinite alternate}
 @keyframes th-drift{0%{background-position:0% 70%}100%{background-position:100% 30%}}
 .th-hero-bg{position:absolute;inset:0;overflow:hidden;pointer-events:none}
 .th-hero-in{max-width:var(--page);margin:0 auto;padding:calc(65px + clamp(34px,6vw,64px)) var(--gutter) clamp(54px,7vw,84px);position:relative;z-index:1}
 .th-hero h1{font:800 clamp(40px,8vw,84px)/.95 var(--display);letter-spacing:-.04em;margin:0 0 26px;max-width:12ch;text-shadow:0 2px 30px rgba(80,10,20,.18)}
 .th-hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.07) 1px,transparent 1px);background-size:44px 44px;mask-image:radial-gradient(ellipse at 75% 30%,#000 0%,transparent 70%);-webkit-mask-image:radial-gradient(ellipse at 75% 30%,#000 0%,transparent 70%)}
-.th-hero-glow{position:absolute;right:-120px;top:-160px;width:560px;height:560px;border-radius:50%;background:radial-gradient(closest-side,rgba(255,226,190,.45),rgba(255,226,190,0));animation:th-float 9s ease-in-out infinite alternate}
+.th-hero-glow{position:absolute;right:-120px;top:-160px;width:560px;height:560px;border-radius:50%;background:radial-gradient(closest-side,rgba(255,196,60,.55),rgba(255,196,60,0));animation:th-float 9s ease-in-out infinite alternate}
 @keyframes th-float{from{transform:translate(0,0)}to{transform:translate(-40px,30px)}}
 /* il marchio disegnato in grande: prima il contorno, poi si riempie e respira */
 .th-mark-art{position:absolute;right:max(-60px,calc((100vw - var(--page))/2 - 40px));bottom:-40px;width:min(560px,58vw);height:auto;opacity:.95}
@@ -302,7 +302,7 @@ button,input,select,textarea{font:inherit;color:inherit}
 .th-footer b{color:var(--ink);font-family:var(--display)}
 
 /* ---------------------------------------------------------------- pagine semplici (login, accesso negato, 404) */
-.th-solo{min-height:100vh;display:grid;place-items:center;padding:24px;background:var(--current-diag);background-size:220% 220%;animation:th-drift 16s ease-in-out infinite alternate;position:relative;overflow:hidden}
+.th-solo{min-height:100vh;display:grid;place-items:center;padding:24px;background:var(--current-diag);background-size:160% 160%;animation:th-drift 16s ease-in-out infinite alternate;position:relative;overflow:hidden}
 .th-solo .th-mark-art{right:-80px;bottom:-60px;width:min(620px,80vw)}
 .th-solo-card{animation:th-rise .7s .15s var(--ease) both}
 .th-solo-card .th-logo{height:44px;margin-bottom:26px}
@@ -341,6 +341,36 @@ button,input,select,textarea{font:inherit;color:inherit}
 /* il pulsante principale "respira" la sfumatura al passaggio */
 .th-btn{background-size:160% 160%;background-position:0% 50%;transition:transform .15s var(--ease),box-shadow .15s,opacity .15s,background-position .5s ease}
 .th-btn:hover{background-position:100% 50%}
+
+
+/* ---------------------------------------------------------------- home: movimento continuo */
+/* seconda luce che vaga in basso a sinistra */
+.th-hero-glow--2{right:auto;top:auto;left:-180px;bottom:-220px;width:520px;height:520px;background:radial-gradient(closest-side,rgba(255,236,120,.38),rgba(255,236,120,0));animation:th-float-2 11s ease-in-out infinite alternate}
+@keyframes th-float-2{from{transform:translate(0,0) scale(1)}to{transform:translate(120px,-60px) scale(1.15)}}
+/* scintille di energia che salgono */
+.th-sparks{position:absolute;inset:0;overflow:hidden}
+.th-sparks i{position:absolute;bottom:-10px;left:var(--x);width:var(--s,6px);height:var(--s,6px);border-radius:50%;background:#fff6c8;box-shadow:0 0 12px 3px rgba(255,214,120,.8);opacity:0;animation:th-spark-up var(--t,7s) linear var(--dl,0s) infinite}
+@keyframes th-spark-up{0%{transform:translate(0,0);opacity:0}10%{opacity:.9}70%{opacity:.6}100%{transform:translate(var(--dx,20px),-110vh);opacity:0}}
+/* la corrente che corre lungo il contorno della casa */
+.th-mark-art .th-mark-flow{fill:none;stroke:#fff;stroke-width:2.6;stroke-linecap:round;stroke-dasharray:60 940;stroke-dashoffset:1000;opacity:0;filter:drop-shadow(0 0 6px #fff3b0);animation:th-flow 3.2s 2.6s linear infinite,th-appear .4s 2.6s forwards}
+@keyframes th-flow{to{stroke-dashoffset:0}}
+.th-mark-art .th-mark-flow.f2{animation-delay:4.2s,4.2s;stroke-dasharray:30 970}
+/* l'impulso sotto la ricerca si ripete */
+.th-hero-cable::after{animation:th-pulse 2.6s 1s var(--ease) infinite}
+/* punto "vivo" sugli indicatori */
+.th-spark circle.ring{fill:none;stroke:var(--orange);stroke-width:2;transform-box:fill-box;transform-origin:center;animation:th-ping 1.8s 1.6s ease-out infinite}
+@keyframes th-ping{0%{transform:scale(1);opacity:.9}100%{transform:scale(3.4);opacity:0}}
+.th-gauge-name i{animation:th-blink 2.4s ease-in-out infinite}
+@keyframes th-blink{50%{opacity:.35}}
+/* riquadri grandi: sfumatura sempre in movimento e un riflesso che passa */
+.th-sec--big{animation:th-rise .6s var(--ease) both,th-drift 8s ease-in-out infinite alternate;animation-delay:calc(var(--i,0) * 45ms + 250ms),0s}
+.th-sec--big::before{content:"";position:absolute;top:-50%;bottom:-50%;width:40%;left:-60%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.28),transparent);transform:skewX(-18deg);animation:th-shine 6s 1.5s ease-in-out infinite}
+.th-sec--big+.th-sec--big::before{animation-delay:4.5s}
+@keyframes th-shine{0%{left:-60%}35%,100%{left:130%}}
+.th-sec--big i{animation:th-bob 3.4s ease-in-out infinite}
+@keyframes th-bob{50%{transform:translateY(-5px)}}
+/* icone dei riquadri piccoli: un leggero ondeggiare sfalsato */
+.th-home .th-sec:not(.th-sec--big) i{animation:th-bob 4s ease-in-out infinite;animation-delay:calc(var(--i,0) * -380ms)}
 
 /* movimento ridotto */
 @media (prefers-reduced-motion:reduce){
