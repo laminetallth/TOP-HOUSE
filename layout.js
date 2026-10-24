@@ -42,6 +42,14 @@
   footer.innerHTML = `<div><span style="display:flex;align-items:center;gap:10px"><img src="${ROOT}logo-marchio.svg" alt="" width="28" height="22">© ${new Date().getFullYear()} <b>TOP HOUSE</b></span><span>casa. energia. fiducia.</span></div>`;
   document.body.appendChild(footer);
 
+  // Assistente AI su tutte le pagine riservate (l'Academy ha già la sua chat).
+  if (here !== 'formazione.html' && !document.querySelector('script[src*="assistente.js"]')) {
+    const ai = document.createElement('script');
+    ai.type = 'module';
+    ai.src = `${ROOT}assistente.js?v=${(document.currentScript?.src.match(/v=([^&]+)/) || [, ''])[1]}`;
+    document.body.appendChild(ai);
+  }
+
   const onScroll = () => header.classList.toggle('is-scrolled', window.scrollY > 4);
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
