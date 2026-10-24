@@ -271,6 +271,7 @@
     let selecting = false;
     let highlight = new Set();
     let query = '';
+    let firstPaint = true;
 
     view.innerHTML = `
       <div class="th-folder-head">
@@ -317,7 +318,12 @@
       }
       if (!shown.length) { list.innerHTML = '<li class="th-empty"><b>Nessun file trovato</b>Prova con un\'altra parola.</li>'; return; }
       list.innerHTML = '';
-      shown.forEach(file => list.appendChild(row(file, admin)));
+      shown.forEach((file, i) => {
+        const li = row(file, admin);
+        if (firstPaint && i < 14) { li.classList.add('th-rise'); li.style.setProperty('--d', `${120 + i * 35}ms`); }
+        list.appendChild(li);
+      });
+      firstPaint = false;
     }
 
     function row(file, admin) {
@@ -629,7 +635,18 @@
       const rows = (data.history || []).filter(r => r[key] !== null && r[key] !== undefined);
       const cur = data[key];
       if (!cur) return;
-      $('.th-gauge-value', g).innerHTML = `${fmt(cur.value)}<small>${esc(cur.unit)}</small>`;
+      // il valore "sale" fino al dato reale
+      const valueEl = $('.th-gauge-value', g);
+      valueEl.innerHTML = `<span>${fmt(0)}</span><small>${esc(cur.unit)}</small>`;
+      const num = $('span', valueEl);
+      const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const t0 = performance.now(), dur = reduce ? 0 : 1100;
+      const tick = now => {
+        const k = dur ? Math.min(1, (now - t0) / dur) : 1;
+        num.textContent = fmt(cur.value * (1 - Math.pow(1 - k, 3)));
+        if (k < 1) requestAnimationFrame(tick);
+      };
+      requestAnimationFrame(tick);
       const prev = rows[1]?.[key];
       const change = prev ? (cur.value / prev - 1) * 100 : null;
       const ch = $('.th-gauge-change', g);
@@ -647,10 +664,10 @@
         const pts = series.map((v, i) => [(i / (series.length - 1)) * (w - 6) + 3, h - 4 - ((v - min) / span) * (h - 10)]);
         const line = pts.map((p, i) => `${i ? 'L' : 'M'}${p[0].toFixed(1)} ${p[1].toFixed(1)}`).join(' ');
         svg.setAttribute('viewBox', `0 0 ${w} ${h}`);
-        svg.innerHTML = `<defs><linearGradient id="thSparkGrad-${key}" x1="0" x2="1"><stop offset="0" stop-color="#ff0055"/><stop offset="1" stop-color="#ff9900"/></linearGradient>
-          <linearGradient id="thSparkFill-${key}" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#ff5a1f" stop-opacity=".3"/><stop offset="1" stop-color="#ff5a1f" stop-opacity="0"/></linearGradient></defs>
+        svg.innerHTML = `<defs><linearGradient id="thSparkGrad-${key}" x1="0" x2="1"><stop offset="0" stop-color="#931635"/><stop offset="1" stop-color="#f18d2a"/></linearGradient>
+          <linearGradient id="thSparkFill-${key}" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#c75a38" stop-opacity=".3"/><stop offset="1" stop-color="#c75a38" stop-opacity="0"/></linearGradient></defs>
           <path class="a" fill="url(#thSparkFill-${key})" d="${line} L${pts[pts.length - 1][0].toFixed(1)} ${h} L${pts[0][0].toFixed(1)} ${h} Z"/><path class="l" stroke="url(#thSparkGrad-${key})" d="${line}"/>
-          <circle cx="${pts[pts.length - 1][0].toFixed(1)}" cy="${pts[pts.length - 1][1].toFixed(1)}" r="3.5" fill="#ff9900"/>`;
+          <circle cx="${pts[pts.length - 1][0].toFixed(1)}" cy="${pts[pts.length - 1][1].toFixed(1)}" r="3.5" fill="#f18d2a"/>`;
         const path = $('path.l', svg);
         path.style.setProperty('--len', Math.ceil(path.getTotalLength()) + 2);
         svg.setAttribute('aria-label', `Andamento ultimi ${series.length} giorni`);

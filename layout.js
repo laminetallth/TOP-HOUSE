@@ -17,9 +17,9 @@
   header.className = 'th-header';
   header.innerHTML = `
     <div class="th-header-in">
-      <a class="th-brand" href="${ROOT}index.html" aria-label="TOP HOUSE, home">
-        <img src="${ROOT}logo.png" alt="" width="38" height="38">
-        <span><b>TOP HOUSE</b><small>casa, energia, fiducia.</small></span>
+      <a class="th-brand" href="${ROOT}index.html" aria-label="TOP HOUSE, torna alla home">
+        <img class="th-logo th-logo--color" src="${ROOT}logo.svg" alt="TOP HOUSE" width="201" height="40">
+        <img class="th-logo th-logo--white" src="${ROOT}logo-bianco.svg" alt="" width="201" height="40" aria-hidden="true">
       </a>
       <nav class="th-nav" aria-label="Menu principale">
         ${links.map(l => `<a href="${ROOT}${l.href}"${l.admin ? ' class="th-nav-admin admin-only" data-admin-only' : ''}${l.page === here ? ' aria-current="page"' : ''}><i class="fa-solid ${l.icon}" aria-hidden="true"></i><span>${l.label}</span></a>`).join('')}
@@ -39,7 +39,7 @@
 
   const footer = document.createElement('footer');
   footer.className = 'th-footer';
-  footer.innerHTML = `<div><span>© ${new Date().getFullYear()} <b>TOP HOUSE</b></span><span>Documenti riservati ai collaboratori TOP HOUSE</span></div>`;
+  footer.innerHTML = `<div><span style="display:flex;align-items:center;gap:10px"><img src="${ROOT}logo-marchio.svg" alt="" width="28" height="22">© ${new Date().getFullYear()} <b>TOP HOUSE</b></span><span>casa. energia. fiducia.</span></div>`;
   document.body.appendChild(footer);
 
   const onScroll = () => header.classList.toggle('is-scrolled', window.scrollY > 4);

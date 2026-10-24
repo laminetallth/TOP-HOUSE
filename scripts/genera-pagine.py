@@ -7,8 +7,9 @@ le pagine, i percorsi e la mappa usata dalla ricerca (data/mappa-cartelle.json) 
 import html
 import json
 import os
+import re
 
-VERSION = "20261024b"  # cambia per forzare i browser a scaricare CSS/JS nuovi
+VERSION = "20261024c"  # cambia per forzare i browser a scaricare CSS/JS nuovi
 
 # ----------------------------------------------------------------------------- struttura
 GESTORI = [  # slug, nome visualizzato
@@ -54,6 +55,8 @@ CATEGORIE_SEMPLICI = [  # una sola cartella, direttamente dalla home
 ]
 
 # ----------------------------------------------------------------------------- mattoni
+_MARK_D = re.search(r' d="([^"]+)"', open("logo-marchio.svg", encoding="utf-8").read()).group(1)
+MARK_ART = f'<svg class="th-mark-art" viewBox="0 0 251 197" aria-hidden="true"><path pathLength="1000" fill-rule="evenodd" d="{_MARK_D}"/></svg>'
 MAPPA = {"folders": {}, "pages": []}
 SCRITTE = []
 
@@ -73,9 +76,9 @@ def head(title, path, extra=""):
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#1d1428">
+<meta name="theme-color" content="#c75a38">
 <title>{e(title)} | TOP HOUSE</title>
-<link rel="icon" href="{b}logo.png">
+<link rel="icon" href="{b}logo-marchio.svg" type="image/svg+xml"><link rel="icon" href="{b}logo.png" type="image/png"><link rel="apple-touch-icon" href="{b}apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&family=Instrument+Sans:wght@400..700&display=swap">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -277,7 +280,7 @@ sections = [
     sec("archivio.html", "Preferiti", "fa-star", small="I documenti che hai salvato"),
 ]
 
-gauge = lambda key, name, icon: f"""<article class="th-gauge" data-gauge="{key}">
+gauge = lambda key, name, icon, i: f"""<article class="th-gauge" data-gauge="{key}" style="--i:{i}">
   <span class="th-gauge-name"><i class="fa-solid {icon}" aria-hidden="true"></i>{name}</span>
   <span class="th-gauge-value">…</span><span class="th-gauge-change"></span>
   <svg class="th-spark" role="img" aria-label="Andamento"></svg>
@@ -286,10 +289,10 @@ gauge = lambda key, name, icon: f"""<article class="th-gauge" data-gauge="{key}"
 
 write("index.html", head("Home", "index.html") + f"""<body class="th-home">
 <section class="th-hero">
-  <div class="th-hero-bg" aria-hidden="true"><div class="th-hero-grid"></div><div class="th-hero-glow"></div></div>
+  <div class="th-hero-bg" aria-hidden="true"><div class="th-hero-grid"></div><div class="th-hero-glow"></div>{MARK_ART}</div>
   <div class="th-hero-in">
-    <h1>Cosa ti serve per il prossimo cliente?</h1>
-    <div class="th-search" role="search">
+    <h1 class="th-rise">Cosa ti serve per il prossimo cliente?</h1>
+    <div class="th-search th-rise" style="--d:120ms" role="search">
       <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
       <label class="th-sr" for="cerca">Cerca nel Drive</label>
       <input id="cerca" type="search" autocomplete="off" placeholder="Cerca un documento o un gestore, es. enel cte business">
@@ -300,12 +303,12 @@ write("index.html", head("Home", "index.html") + f"""<body class="th-home">
 </section>
 <main class="th-page" id="main">
 <section class="th-meter" aria-label="Indici energetici">
-{gauge("pun", "PUN · prezzo luce all'ingrosso", "fa-bolt")}
-{gauge("psv", "PSV · prezzo gas all'ingrosso", "fa-fire-flame-simple")}
+{gauge("pun", "PUN · prezzo luce all'ingrosso", "fa-bolt", 0)}
+{gauge("psv", "PSV · prezzo gas all'ingrosso", "fa-fire-flame-simple", 1)}
 </section>
 <h2 class="th-section-title">Sezioni</h2>
 <nav class="th-sections" aria-label="Sezioni del Drive">
-{chr(10).join(sections)}
+{chr(10).join(x.replace('class="th-sec', f'style="--i:{i}" class="th-sec', 1) for i, x in enumerate(sections))}
 </nav>
 </main>
 {scripts("index.html")}""")
@@ -368,8 +371,8 @@ write("admin-caricamento.html", head("Gestione file", "admin-caricamento.html").
 # ----------------------------------------------------------------------------- login, accesso negato, 404
 solo_head = lambda title: head(title, "x.html").replace(f'<script src="utenti-ruoli.js?v={VERSION}"></script>\n<script type="module" src="auth-guard.js?v={VERSION}"></script>', "")
 auth_scripts = f'<script src="utenti-ruoli.js?v={VERSION}"></script>\n<script type="module" src="auth-guard.js?v={VERSION}"></script>'
-brand = '<a class="th-brand" href="index.html"><img src="logo.png" alt="" width="38" height="38"><span><b>TOP HOUSE</b><small>casa, energia, fiducia.</small></span></a>'
-glow = '<div class="th-hero-bg" aria-hidden="true"><div class="th-hero-grid"></div><div class="th-hero-glow"></div></div>'
+brand = '<img class="th-logo" src="logo.svg" alt="TOP HOUSE - casa. energia. fiducia." width="221" height="44">'
+glow = f'<div class="th-hero-bg" aria-hidden="true"><div class="th-hero-grid"></div><div class="th-hero-glow"></div>{MARK_ART}</div>'
 
 write("login.html", solo_head("Accedi").replace("</head>", auth_scripts + "\n</head>") + f"""<body class="th-solo">
 {glow}
@@ -405,11 +408,11 @@ write("accesso-negato.html", solo_head("Accesso riservato").replace("</head>", a
 </html>
 """)
 
-notfound = solo_head("Pagina non trovata").replace('href="logo.png"', 'href="/TOP-HOUSE/logo.png"').replace('href="tema.css', 'href="/TOP-HOUSE/tema.css')
+notfound = solo_head("Pagina non trovata").replace('href="logo', 'href="/TOP-HOUSE/logo').replace('href="apple-touch', 'href="/TOP-HOUSE/apple-touch').replace('href="tema.css', 'href="/TOP-HOUSE/tema.css')
 write("404.html", notfound + f"""<body class="th-solo">
 {glow}
 <main class="th-solo-card">
-  <a class="th-brand" href="/TOP-HOUSE/" id="nfBrand"><img src="/TOP-HOUSE/logo.png" alt="" width="38" height="38" id="nfLogo"><span><b>TOP HOUSE</b><small>casa, energia, fiducia.</small></span></a>
+  <a href="/TOP-HOUSE/" id="nfBrand"><img class="th-logo" src="/TOP-HOUSE/logo.svg" alt="TOP HOUSE" width="221" height="44" id="nfLogo"></a>
   <h1>Pagina non trovata</h1>
   <div class="th-cable" aria-hidden="true"></div>
   <p>Questo indirizzo non esiste o la pagina è stata spostata. Dalla home trovi tutti i documenti con la ricerca.</p>
@@ -422,7 +425,7 @@ write("404.html", notfound + f"""<body class="th-solo">
   const root = m ? m[0] : '/';
   document.getElementById('nfHome').href = root;
   document.getElementById('nfBrand').href = root;
-  document.getElementById('nfLogo').src = root + 'logo.png';
+  document.getElementById('nfLogo').src = root + 'logo.svg';
 }})();
 </script>
 </body>
