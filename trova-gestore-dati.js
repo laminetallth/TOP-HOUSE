@@ -110,3 +110,21 @@ window.TOP_HOUSE_REGOLE = [
     verificato: true
   }
 ];
+
+// Modalità di firma note per i gestori senza regola completa (indicazione di Lamine, 25/10/2026):
+// tutti i gestori PromUp si firmano con OTP; Plenitude (CRM BWC) su tablet.
+// Per i gestori presenti sia su PromUp sia su GreenWorld l'OTP è sempre disponibile passando da PromUp.
+window.TOP_HOUSE_FIRME = {
+  "AXPO (PULSEE)": { firme: ["otp"], nota: "OTP (PromUp)" },
+  "ENEL DIGITAL": { firme: ["otp"], nota: "OTP (PromUp)" },
+  "MAGIS": { firme: ["otp"], nota: "OTP (PromUp)" },
+  "EDISON": { firme: ["otp"], nota: "OTP (PromUp)" },
+  "ESTRA": { firme: ["otp"], nota: "OTP (PromUp)" },
+  "FASTWEB ENERGIA": { firme: ["otp"], nota: "OTP (PromUp)" },
+  "UPENERGY": { firme: ["otp"], nota: "OTP (PromUp)" },
+  "AUDAX": { firme: ["otp"], nota: "OTP tramite PromUp", parziale: true },
+  "HERA": { firme: ["otp"], nota: "OTP tramite PromUp", parziale: true },
+  "SORGENIA": { firme: ["otp"], nota: "OTP tramite PromUp", parziale: true },
+  "ENEL CORPORATE": { firme: ["otp"], nota: "OTP tramite PromUp", parziale: true },
+  "PLENITUDE": { firme: ["tablet"], nota: "Tablet (CRM BWC)" }
+};
