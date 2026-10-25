@@ -1,0 +1,14 @@
+Buongiorno,
+
+sono disponibili due nuove CTE Enel Corporate, dedicate al settore manifatturiero, con relativo elenco dei codici ATECO di riferimento.
+
+Di seguito il dettaglio delle offerte:
+
+Enel PUNto Orario Corporate Extra
+Rivolta a clienti con potenza superiore a 200 kW e consumi annui compresi tra 1.000.000 kWh e 4.000.000 kWh.
+Il prezzo dell’energia è pari a PUN + 0,00451 €/kWh.
+Enel PUNto Orario Corporate Super
+Rivolta a clienti con potenza superiore a 200 kW e consumi annui inferiori a 4.000.000 kWh.
+Il prezzo dell’energia è pari a PUN + 0,00715 €/kWh.
+
+Approfondite queste CTE perché sono molto interessanti.
