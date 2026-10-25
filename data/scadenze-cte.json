@@ -5207,7 +5207,7 @@
      "prezzo": 0.9375,
      "testo": "Prezzo Gas 0,9375 €/Smc",
      "scontato": 0.75,
-     "testo_sconto": "determina un Prezzo Gas ulteriormente scontato pari a 0,75000 €/Smc"
+     "testo_sconto": "15% + 5% · 1 di 4 Condizioni tecnico economiche Enel Energia - Mercato libero dell'energia Casella Postale 8080 - 85100 Potenza SCONTO DUAL ENEL GAS: sconto del 15% sul Pr"
     }
    ],
    "ccv": 156.0,
@@ -5222,8 +5222,8 @@
      "f": "luce",
      "prezzo": 0.2293,
      "testo": "Prezzo Luce 0,22930 €/kWh",
-     "scontato": 0.19491,
-     "testo_sconto": "determina un Prezzo Luce ulteriormente scontato pari a 0,19491 €/kWh"
+     "scontato": 0.1949,
+     "testo_sconto": "10% + 5% · SCONTO DUAL ENEL LUCE: sconto del 10% sul Prezzo Luce (valore dello sconto pari a 0,02293 €/kWh), che determina un Prezzo Luce di 0"
     }
    ],
    "ccv": 156.0,
@@ -5633,7 +5633,7 @@
      "prezzo": 0.16779,
      "testo": "Prezzo Luce 0,16779 €/kWh",
      "scontato": 0.1594,
-     "testo_sconto": "determina un Prezzo Luce di 0.1594 €/kWh"
+     "testo_sconto": "5% · 1 di 4 72926 ML_RedKitSwaResCteCl Corrispettivi definiti dal venditore Condizioni tecnico economiche Enel Energia - Mercato libero dell'energia Casella Postale "
     }
    ],
    "ccv": 144.0,
@@ -5705,7 +5705,7 @@
      "prezzo": 0.8,
      "testo": "Prezzo Gas 0,8000 €/Smc",
      "scontato": 0.76,
-     "testo_sconto": "determina un Prezzo Gas scontato pari a 0,76000€/Smc"
+     "testo_sconto": "5% · cuiti Visa, MasterCard, Maestro o American Express, è riconosciuto uno sconto pari al 5% del Prezzo Gas pieno di listino (valore dello sconto pari a 0,04000€/Sm"
     }
    ],
    "ccv": 156.0,
@@ -5791,7 +5791,7 @@
      "prezzo": 0.8625,
      "testo": "Prezzo Gas 0,8625 €/Smc",
      "scontato": 0.69,
-     "testo_sconto": "determina un Prezzo Gas ulteriormente scontato pari a 0,6900 €/Smc"
+     "testo_sconto": "15% + 5% · 1 di 4 Condizioni tecnico economiche Enel Energia - Mercato libero dell'energia Casella Postale 8080 - 85100 Potenza Sconti e/o Bonus SCONTO DUAL ENEL GAS: scon"
     }
    ],
    "ccv": 156.0,
@@ -5807,7 +5807,7 @@
      "prezzo": 0.9375,
      "testo": "Prezzo Gas 0,9375 €/Smc",
      "scontato": 0.75,
-     "testo_sconto": "determina un Prezzo Gas ulteriormente scontato pari a 0,75000 €/Smc"
+     "testo_sconto": "15% + 5% · 1 di 4 Condizioni tecnico economiche Enel Energia - Mercato libero dell'energia Casella Postale 8080 - 85100 Potenza SCONTO DUAL ENEL GAS: sconto del 15% sul Pr"
     }
    ],
    "ccv": 156.0,
@@ -5822,8 +5822,8 @@
      "f": "luce",
      "prezzo": 0.211,
      "testo": "Prezzo Luce 0,21100 €/kWh",
-     "scontato": 0.1793,
-     "testo_sconto": "determina un Prezzo Luce ulteriormente scontato pari a 0,1793 €/kWh"
+     "scontato": 0.17935,
+     "testo_sconto": "10% + 5% · 1 di 5 72926 ML_RedKitSwaResCteSctb Corrispettivi definiti dal venditore Condizioni tecnico economiche Enel Energia - Mercato libero dell'energia Casella Postal"
     }
    ],
    "ccv": 156.0,
@@ -5838,8 +5838,8 @@
      "f": "luce",
      "prezzo": 0.2293,
      "testo": "Prezzo Luce 0,22930 €/kWh",
-     "scontato": 0.19491,
-     "testo_sconto": "determina un Prezzo Luce ulteriormente scontato pari a 0,19491 €/kWh"
+     "scontato": 0.1949,
+     "testo_sconto": "10% + 5% · SCONTO DUAL ENEL LUCE: sconto del 10% sul Prezzo Luce (valore dello sconto pari a 0,02293 €/kWh), che determina un Prezzo Luce di 0"
     }
    ],
    "ccv": 156.0,
@@ -5855,7 +5855,7 @@
      "prezzo": 0.21042,
      "testo": "Prezzo Luce 0,21042 €/kWh",
      "scontato": 0.1999,
-     "testo_sconto": "determina un Prezzo Luce scontato pari a 0,19990€/kWh"
+     "testo_sconto": "5% · cuiti Visa, MasterCard, Maestro o American Express, è riconosciuto uno sconto pari al 5% del Prezzo Luce pieno di listino (valore dello sconto pari a 0,01052€/k"
     }
    ],
    "ccv": 156.0,
@@ -6145,8 +6145,8 @@
    "prezzi": [
     {
      "f": "luce",
-     "prezzo": 0.18,
-     "testo": "Componente Energia: 0,180 €/kWh"
+     "prezzo": 0.274,
+     "testo": "F0 0,274 €/kWh"
     }
    ],
    "ccv": 240.0,
@@ -8351,14 +8351,14 @@
      "prezzo": 0.2145,
      "testo": "Corrispettivo Luce 0,2145 euro/kWh",
      "scontato": 0.20377,
-     "testo_sconto": "Sconti e/o bonus Quanto sopra riportato in termini di stima della spesa annua e condizioni economiche non include gli sconti sotto riportati in quanto condizion"
+     "testo_sconto": "5% · Sconti e/o bonus Quanto sopra riportato in termini di stima della spesa annua e condizioni economiche non include gli sconti sotto riportati in quanto condizion"
     },
     {
      "f": "gas",
      "prezzo": 0.903,
      "testo": "Corrispettivo Gas 0,903 euro/Smc",
      "scontato": 0.85785,
-     "testo_sconto": "Sconti e/o bonus Quanto sopra riportato in termini di stima della spesa annua e condizioni economiche non include gli sconti sotto riportati in quanto condizion"
+     "testo_sconto": "5% · Sconti e/o bonus Quanto sopra riportato in termini di stima della spesa annua e condizioni economiche non include gli sconti sotto riportati in quanto condizion"
     }
    ],
    "ccv": 96.0,
@@ -8374,14 +8374,14 @@
      "prezzo": 0.2079,
      "testo": "Corrispettivo Luce 0,2079 euro/kWh",
      "scontato": 0.1975,
-     "testo_sconto": "Sconti e/o bonus Quanto sopra riportato in termini di stima della spesa annua e condizioni economiche non include gli sconti sotto riportati in quanto condizion"
+     "testo_sconto": "5% · Sconti e/o bonus Quanto sopra riportato in termini di stima della spesa annua e condizioni economiche non include gli sconti sotto riportati in quanto condizion"
     },
     {
      "f": "gas",
      "prezzo": 0.87,
      "testo": "Corrispettivo Gas 0,87 euro/Smc",
      "scontato": 0.8265,
-     "testo_sconto": "Sconti e/o bonus Quanto sopra riportato in termini di stima della spesa annua e condizioni economiche non include gli sconti sotto riportati in quanto condizion"
+     "testo_sconto": "5% · Sconti e/o bonus Quanto sopra riportato in termini di stima della spesa annua e condizioni economiche non include gli sconti sotto riportati in quanto condizion"
     }
    ],
    "ccv": 144.0,
@@ -8396,15 +8396,15 @@
      "f": "luce",
      "prezzo": 0.2079,
      "testo": "Corrispettivo Luce 0,2079 euro/kWh",
-     "scontato": 0.1975,
-     "testo_sconto": "Quanto sopra riportato in termini di stima della spesa annua e condizioni economiche non include gli sconti sotto riportati in quanto condizionati: (i) Sconto D"
+     "scontato": 0.13514,
+     "testo_sconto": "30% + 5% · Sconti e/o bonus Quanto sopra riportato in termini di stima della spesa annua e condizioni economiche include: (i) Sconto Special Days pari al 30% sul Corrispet"
     },
     {
      "f": "gas",
      "prezzo": 0.87,
      "testo": "Corrispettivo Gas 0,87 euro/Smc",
-     "scontato": 0.8265,
-     "testo_sconto": "Quanto sopra riportato in termini di stima della spesa annua e condizioni economiche non include gli sconti sotto riportati in quanto condizionati: (i) Sconto D"
+     "scontato": 0.5655,
+     "testo_sconto": "30% + 5% · Sconti e/o bonus Quanto sopra riportato in termini di stima della spesa annua e condizioni economiche include: (i) Sconto Special Days pari al 30% sul Corrispet"
     }
    ],
    "ccv": 144.0,
@@ -8420,7 +8420,7 @@
      "prezzo": 0.2156,
      "testo": "Corrispettivo Luce 0,2156 euro/kWh",
      "scontato": 0.20482,
-     "testo_sconto": "Sconti e/o bonus Quanto sopra riportato in termini di stima della spesa annua e condizioni economiche non include gli sconti sotto riportati in quanto condizion"
+     "testo_sconto": "5% · Sconti e/o bonus Quanto sopra riportato in termini di stima della spesa annua e condizioni economiche non include gli sconti sotto riportati in quanto condizion"
     }
    ],
    "ccv": 144.0,

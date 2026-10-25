@@ -145,6 +145,33 @@ def sconto_rid(txt):
     return out
 
 
+def sconti_percentuali(t, forn):
+    """Sconti in % sul prezzo dell'energia (promo tipo "Special Days 30%", sconto RID/domiciliazione 5%, sconto dual…).
+    Ogni sconto si conta una volta anche se la CTE lo ripete. -> lista di (percentuale, frase)."""
+    altra = "gas" if forn == "luce" else "luce"
+    t = re.sub(r"\s+", " ", t)
+    visti, out = set(), []
+    for m in re.finditer(r"[^.]{0,200}\bscont\w*[^.]{0,200}", t, re.I):
+        f = m.group(0)
+        for pc in re.finditer(NUM + r"\s*%\s*,?\s*(?:sul|del|della|sulla)\s+(?:prezzo|corrispettivo|componente)(?:\s+(?:di\s+)?(luce|gas|energia|materia))?(?:\s+pieno)?", f, re.I):
+            v = num(pc.group(1))
+            quale = (pc.group(2) or "").lower()
+            if not v or not 0 < v <= 60 or quale == altra or (not quale and re.search(r"\b" + altra + r"\b", f, re.I) and not re.search(r"\b" + forn + r"\b", f, re.I)):
+                continue
+            # niente sconti solo su alcune ore ("Ore Happy"), percentuali di incidenza sulla spesa o sconti sulla CCV
+            if re.search(r"commercializz|ccv|quota\s+fissa|non\s+sono\s+previsti|fascia\s+oraria|dalle\s+(?:ore\s+)?\d", f, re.I) \
+                    or re.search(r"cliente\s+tipo|incidenza|stima", f[max(0, pc.start() - 60):pc.end()], re.I):
+                continue
+            rid = bool(re.search(r"\bRID\b|addebito|\bSDD\b|domicili", f, re.I))
+            nome = re.search(r"sconto\s+([A-Z][\w ]{2,30}?)\s+(?:pari|del|di)", f)
+            chiave = (round(v, 3), rid, (nome.group(1).lower() if nome else ""))
+            if any(k[0] == chiave[0] and k[1] == chiave[1] for k in visti):
+                continue
+            visti.add(chiave)
+            out.append((v, " ".join(f.split())[:160]))
+    return out
+
+
 def tipo_offerta(nome, t):
     var_nome, fix_nome = bool(VAR_NOME.search(nome)), bool(FIX_NOME.search(nome))
     var_txt = bool(re.search(r"(?:PUN|PSV)[^\n]{0,30}\+", t, re.I))  # "rispetto a un'offerta a prezzo variabile" è una frase standard: non conta
@@ -204,16 +231,21 @@ def analizza(nome, txt, txt_layout=""):
             p = primo(prezzo_fisso, testi, forn)
             if p:
                 voce["prezzo"], voce["testo"] = p
-                sc = primo(prezzo_scontato, testi, forn)
-                if sc and sc[0] < p[0]:
-                    voce["scontato"], voce["testo_sconto"] = sc
-                else:
+                pct = sconti_percentuali(t, forn)
+                if pct:
+                    # più sconti in % (promo + RID): si sommano, tutti calcolati sul prezzo di listino
+                    tot = sum(v for v, _ in pct)
+                    if tot < 70:
+                        voce["scontato"] = round(p[0] * (1 - tot / 100), 5)
+                        voce["testo_sconto"] = " + ".join(f"{v:g}%" for v, _ in pct) + " · " + pct[0][1]
+                if "scontato" not in voce:
+                    sc = primo(prezzo_scontato, testi, forn)
+                    if sc and sc[0] < p[0]:
+                        voce["scontato"], voce["testo_sconto"] = sc
+                if "scontato" not in voce:
                     for k, v, frase in sconti:
-                        # sconto % o €/unità per RID/SDD: lo applico al prezzo (se la frase non riguarda l'altra fornitura)
-                        altra = "gas" if forn == "luce" else "luce"
-                        if k in ("pct", "unit") and not re.search(r"\b" + altra + r"\b", frase, re.I):
-                            voce["scontato"] = round(p[0] * (1 - v / 100) if k == "pct" else p[0] - v, 5)
-                            voce["testo_sconto"] = frase
+                        if k == "unit":
+                            voce["scontato"], voce["testo_sconto"] = round(p[0] - v, 5), frase
                             break
         if tipo in ("variabile", "ibrida"):
             s_ = primo(spread, testi, forn)

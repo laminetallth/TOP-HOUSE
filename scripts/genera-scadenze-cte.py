@@ -51,7 +51,7 @@ def to_date(groups):
 
 def testo(path, layout=False):
     try:
-        cmd = ["pdftotext", "-l", "8" if layout else "3"] + (["-layout"] if layout else []) + [path, "-"]
+        cmd = ["pdftotext", "-l", "12" if layout else "3"] + (["-layout"] if layout else []) + [path, "-"]
         return subprocess.run(cmd, capture_output=True, text=True, timeout=30).stdout
     except (FileNotFoundError, subprocess.TimeoutExpired):
         try:
@@ -142,7 +142,7 @@ def main():
                     info = {"scade": trovato[1].isoformat(), "testo": trovato[2]}
                 # tipo di prezzo (fisso/variabile), prezzo o spread, CCV annua
                 lay = testo(os.path.join(d, f), layout=True)
-                info.update(prezzi_cte.analizza(f, txt + "\n" + testo_pagine(os.path.join(d, f), 4, 8), lay))
+                info.update(prezzi_cte.analizza(f, txt + "\n" + testo_pagine(os.path.join(d, f), 4, 40), lay))
                 if info:
                     risultati[rel] = info
                 if re.search(r"vulnerabilit|confrontabilit|scheda sintetica|allegato tecnico|attenzione per un corretto", f, re.I):
