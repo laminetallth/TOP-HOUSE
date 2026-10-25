@@ -231,5 +231,90 @@
     3896161
    ]
   ]
+ },
+ "bwc_plenitude": {
+  "controllato": "2026-10-25",
+  "file": [
+   [
+    "Business/ENI/MODULISTICA/PDA/PDA BUS GAS.pdf",
+    2584761
+   ],
+   [
+    "Business/ENI/MODULISTICA/PDA/PDA BUS LUCE.pdf",
+    2438286
+   ],
+   [
+    "Business/ENI/OFFERTE/CTE VARIABILI/TREND_BUSINESS_BASE_GAS.pdf",
+    327447
+   ],
+   [
+    "Business/ENI/OFFERTE/CTE VARIABILI/TREND_BUSINESS_BASE_LUCE.pdf",
+    363105
+   ],
+   [
+    "Business/ENI/VADEMECUM/ENI COMPILAZIONE PDA.pdf",
+    379259
+   ],
+   [
+    "Business/ENI/VADEMECUM/ENI PLENITUDE VADEMECUM 06.03 (1).pdf",
+    594528
+   ],
+   [
+    "Consumer/ENI/OFFERTE/CTE FISSE/FIXA TIME 12 BASE.pdf",
+    531142
+   ],
+   [
+    "Consumer/ENI/OFFERTE/CTE FISSE/FIXA TIME 24 BASE.pdf",
+    530359
+   ],
+   [
+    "Consumer/ENI/OFFERTE/CTE FISSE/FIXA TIME 24 SMART.pdf",
+    533205
+   ],
+   [
+    "Consumer/ENI/OFFERTE/CTE FISSE/FLEXI PERTINENZE_BASE.pdf",
+    348345
+   ],
+   [
+    "Consumer/ENI/OFFERTE/CTE VARIABILI/SERVIZIO DI TUTELA DELLA VULNERABILITA.pdf",
+    356880
+   ],
+   [
+    "Consumer/ENI/OFFERTE/CTE VARIABILI/TREND CASA BASE.pdf",
+    553411
+   ],
+   [
+    "Consumer/ENI/OFFERTE/CTE VARIABILI/TREND CASA NO PENSIERI.pdf",
+    572032
+   ],
+   [
+    "Consumer/ENI/PDA/PDA LUCE E GAS RESIDENZIALE.pdf",
+    1081298
+   ],
+   [
+    "Consumer/ENI/POLIZZE ANCILLARI/2024 11_POLIZZE ANCILLARI 1.4 (1).pdf",
+    1789616
+   ],
+   [
+    "Consumer/ENI/POLIZZE ANCILLARI/polizze totali rev IG agg 15_09_2025 (1).pdf",
+    3790204
+   ],
+   [
+    "Consumer/ENI/PROMO/Promo Disney 07_9_2026 - 15_09_2026.pdf",
+    182323
+   ],
+   [
+    "Consumer/ENI/PROMO/Regolamento Disney_0709.pdf",
+    677308
+   ],
+   [
+    "Consumer/ENI/VADEMECUM/ENI COMPILAZIONE PDA.pdf",
+    379259
+   ],
+   [
+    "Consumer/ENI/VADEMECUM/ENI PLENITUDE VADEMECUM 06.03 (1).pdf",
+    594528
+   ]
+  ]
  }
 }
