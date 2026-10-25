@@ -814,14 +814,6 @@
   ],
   "documenti/audax/cte/residenziale": [
    {
-    "name": "autocertificazione_vulnerabilita_ele.pdf",
-    "size": 193297
-   },
-   {
-    "name": "autocertificazione_vulnerabilita_gas.pdf",
-    "size": 162633
-   },
-   {
     "name": "CTE 2024 - SERVIZIO DI TUTELA DELLA VULNERABILITA GAS (2).pdf",
     "size": 458076
    },
@@ -924,10 +916,6 @@
     "size": 124360
    },
    {
-    "name": "MANUALE ENERGY DEAL 2026.pptx",
-    "size": 4805479
-   },
-   {
     "name": "MODULO AUDAX_AUTODICHIARAZIONE CAMBIO USO (1).pdf",
     "size": 151011
    },
@@ -1014,10 +1002,6 @@
    {
     "name": "Portale EnergyDeal_Agenzia_ - Pubblica amministrazione_10.23 (2).pdf",
     "size": 2195905
-   },
-   {
-    "name": "Processo Firma Digitale (FES).pdf",
-    "size": 517974
    },
    {
     "name": "RICHIESTA-DI-PREVENTIVO-DI-SPESA-DL.pdf",
@@ -2259,7 +2243,7 @@
   "documenti/duferco/procedimenti": [
    {
     "name": "COSTI DEPISITO CAUZIONALE.pdf",
-    "size": 1033410
+    "size": 161194
    },
    {
     "name": "DUFERCO - PROCEDURA OTP.docx",
@@ -3097,7 +3081,7 @@
    },
    {
     "name": "OFFERTE BUSINESS DAL 16 SETT AL 01 OTTOBRE.pptx",
-    "size": 4802655
+    "size": 2144453
    },
    {
     "name": "Panoramica Portafoglio Micro e Small Business 23.10 - 12.11.pdf",
@@ -3454,10 +3438,6 @@
     "size": 123086
    },
    {
-    "name": "MANDATO SEPA ENGIE STELLAR (SOLO SE INTESTARIO DEL CONTO CORRENTE DIVERSO DA INTESTATARIO UTENZE) (1).pdf",
-    "size": 46295
-   },
-   {
     "name": "MANDATO SEPA ENGIE STELLAR (SOLO SE INTESTARIO DEL CONTO CORRENTE DIVERSO DA INTESTATARIO UTENZE).pdf",
     "size": 46295
    },
@@ -3665,7 +3645,7 @@
    },
    {
     "name": "Aut. Proprietario v9.25.pdf",
-    "size": 1142172
+    "size": 696260
    },
    {
     "name": "Mandato ITER SEMPLIFICATO ENEL con rappresentanza.pdf",
@@ -3690,20 +3670,8 @@
     "size": 1510349
    },
    {
-    "name": "EIA 316 (1).pdf",
-    "size": 148692
-   },
-   {
     "name": "EIA 316.pdf",
     "size": 148692
-   },
-   {
-    "name": "EIC 240 proroga 3 Tan 8,45% 202604 (1).pdf",
-    "size": 118858
-   },
-   {
-    "name": "EIC 240 proroga 3 Tan 8,45% 202604 (2).pdf",
-    "size": 118858
    },
    {
     "name": "EIC 240 proroga 3 Tan 8,45% 202604.pdf",
@@ -3735,7 +3703,7 @@
   "documenti/fotovoltaico/formazione-base": [
    {
     "name": "Formazione Base + CRM - EKO Srl .pptx",
-    "size": 21126050
+    "size": 8016567
    },
    {
     "name": "video-formazione-base-eko-1784109253018.json",
@@ -3771,7 +3739,7 @@
   "documenti/fotovoltaico/presentazione-base": [
    {
     "name": "EKO Srl - Presentazione BASE.pptx",
-    "size": 18172642
+    "size": 6090083
    }
   ],
   "documenti/fotovoltaico/reonic-preventivi-tutorial": [
@@ -4282,10 +4250,6 @@
     "size": 222449
    },
    {
-    "name": "Attivazioni e Switch.pdf",
-    "size": 31479
-   },
-   {
     "name": "Dichiarazione sostitutiva per usi non domestici_UNOENERGY_dal 30.03.26.doc",
     "size": 198656
    },
@@ -4308,10 +4272,6 @@
    {
     "name": "modulo-richiesta-agevolazione-IVA-energia-rev-03.pdf",
     "size": 176241
-   },
-   {
-    "name": "PIANO CASA EDITABILE UNOENERGY (2).pdf",
-    "size": 579747
    },
    {
     "name": "PIANO CASA EDITABILE UNOENERGY.pdf",
@@ -4538,10 +4498,6 @@
     "size": 184109
    },
    {
-    "name": "Mod-466-Rev.-1-Richiesta-attivazione-fornitura-gas (2).pdf",
-    "size": 153743
-   },
-   {
     "name": "Mod-466-Rev.-1-Richiesta-attivazione-fornitura-gas.pdf",
     "size": 153743
    },
@@ -4576,10 +4532,6 @@
    {
     "name": "Modulo Adesione_2026.08_editabile.pdf",
     "size": 302394
-   },
-   {
-    "name": "MODULO DATI OTP.pdf",
-    "size": 96899
    }
   ],
   "documenti/gestori/vivienergia/privacy": [
@@ -4829,7 +4781,7 @@
    },
    {
     "name": "GESTIONE KO DOCUMENTALE DIGITAL SALESAPP.pdf",
-    "size": 1394296
+    "size": 444408
    },
    {
     "name": "HC-ALIQUOTA-IVA.pdf",
@@ -4849,7 +4801,7 @@
    },
    {
     "name": "HERA NOPLuceGas_In formula Servizio.pptx",
-    "size": 5460370
+    "size": 2177104
    },
    {
     "name": "HERACOM PRATICHE ED INFORMAZIONI.pptx",
@@ -4973,11 +4925,11 @@
    },
    {
     "name": "SOLUZIONI_SOSTENIBILI_SERVIZI_BUS.pdf",
-    "size": 1327465
+    "size": 475579
    },
    {
     "name": "SOLUZIONI_SOSTENIBILI_SERVIZI_CASA.pdf",
-    "size": 1467378
+    "size": 584399
    },
    {
     "name": "SPOSTAMENTO_CONTATORE_EE_GAS.pdf",
@@ -5108,10 +5060,6 @@
     "size": 382063
    },
    {
-    "name": "Modulo raccolta dati RESIDENZIALE rev.10B-26.pdf",
-    "size": 123521
-   },
-   {
     "name": "tabella dei limiti alla contrattualizzazione - solo per offerte fisse.pdf",
     "size": 417192
    }
@@ -5178,6 +5126,10 @@
     "size": 183283
    },
    {
+    "name": "Modulo raccolta dati RESIDENZIALE rev.10B-26.pdf",
+    "size": 123521
+   },
+   {
     "name": "Nota per Knowledge.pdf",
     "size": 254002
    },
@@ -5202,8 +5154,8 @@
     "size": 1314950
    },
    {
-    "name": "IMPORTANTE - aggiornamento usi GAS (2).docx",
-    "size": 1586335
+    "name": "IMPORTANTE - aggiornamento usi GAS.docx",
+    "size": 51391
    },
    {
     "name": "IREN - Caricamento Contratto Residenziale.pdf",
@@ -5439,7 +5391,7 @@
    },
    {
     "name": "CTE_EE_AltriUsi_Green.pdf",
-    "size": 1026949
+    "size": 460740
    },
    {
     "name": "CTE_EE_AltriUsi_Smart 2026.pdf",
@@ -5485,7 +5437,7 @@
    },
    {
     "name": "CTE_GAS_Domestico_Smart 2026.pdf",
-    "size": 1404098
+    "size": 404368
    }
   ],
   "documenti/s4/modulistica": [
@@ -5620,10 +5572,6 @@
    {
     "name": "Modulo disattivazione ee e gas v2.pdf",
     "size": 88438
-   },
-   {
-    "name": "Modulo richiesta Attivazione PER E.E. E GAS_EDITABILE (2).pdf",
-    "size": 185946
    },
    {
     "name": "Modulo richiesta Attivazione PER E.E. E GAS_EDITABILE.pdf",
@@ -5881,7 +5829,7 @@
    },
    {
     "name": "Manuale_Apparound_Business.pptx",
-    "size": 9342042
+    "size": 6791500
    },
    {
     "name": "Manuale_Apparound_Residenziale.pptx",
@@ -5987,7 +5935,7 @@
    },
    {
     "name": "S_02 CGF_2024_K_review.pdf",
-    "size": 1179752
+    "size": 492074
    },
    {
     "name": "S_10 Gas - Nuova Attivazione Gas naturale_edit.pdf",
@@ -6331,7 +6279,7 @@
    },
    {
     "name": "Listino Fastweb Mobile Enterprise_v2.1.docx",
-    "size": 2292450
+    "size": 502096
    },
    {
     "name": "Listino FW ENT_Apr'26.xlsx",
