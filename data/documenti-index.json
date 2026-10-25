@@ -5350,6 +5350,78 @@
     "size": 11729
    }
   ],
+  "documenti/plenitude/cte/business": [
+   {
+    "name": "TREND_BUSINESS_BASE_GAS.pdf",
+    "size": 327447
+   },
+   {
+    "name": "TREND_BUSINESS_BASE_LUCE.pdf",
+    "size": 363105
+   }
+  ],
+  "documenti/plenitude/cte/residenziale": [
+   {
+    "name": "FIXA TIME 12 BASE.pdf",
+    "size": 531142
+   },
+   {
+    "name": "FIXA TIME 24 BASE.pdf",
+    "size": 530359
+   },
+   {
+    "name": "FIXA TIME 24 SMART.pdf",
+    "size": 533205
+   },
+   {
+    "name": "FLEXI PERTINENZE_BASE.pdf",
+    "size": 348345
+   },
+   {
+    "name": "SERVIZIO DI TUTELA DELLA VULNERABILITA.pdf",
+    "size": 356880
+   },
+   {
+    "name": "TREND CASA BASE.pdf",
+    "size": 553411
+   },
+   {
+    "name": "TREND CASA NO PENSIERI.pdf",
+    "size": 572032
+   }
+  ],
+  "documenti/plenitude/modulistica": [
+   {
+    "name": "PDA BUS GAS.pdf",
+    "size": 1354879
+   },
+   {
+    "name": "PDA BUS LUCE.pdf",
+    "size": 1308144
+   },
+   {
+    "name": "PDA LUCE E GAS RESIDENZIALE.pdf",
+    "size": 1081298
+   }
+  ],
+  "documenti/plenitude/procedimenti": [
+   {
+    "name": "2024 11_POLIZZE ANCILLARI 1.4.pdf",
+    "size": 1789616
+   },
+   {
+    "name": "ENI COMPILAZIONE PDA.pdf",
+    "size": 379259
+   },
+   {
+    "name": "ENI PLENITUDE VADEMECUM 06.03.pdf",
+    "size": 594528
+   },
+   {
+    "name": "polizze totali rev IG agg 15_09_2025.pdf",
+    "size": 3790204
+   }
+  ],
   "documenti/pompe-di-calore/schede-tecniche": [
    {
     "name": "EFFYPDC Therm Electric.pdf",

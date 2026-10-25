@@ -9,7 +9,6 @@
  */
 
 window.TOP_HOUSE_GESTORI = [
-  { nome: "ACEA", pagina: "gestori/acea.html", procedura: "gestori/acea-procedimenti.html" },
   { nome: "AGN ENERGIA", pagina: "gestori/agn-energia.html", procedura: "gestori/agn-energia-procedimenti.html" },
   { nome: "ALPERIA", pagina: "gestori/alperia.html", procedura: "gestori/alperia-procedimenti.html" },
   { nome: "AUDAX", pagina: "gestori/audax.html", procedura: "gestori/audax-procedimenti.html" },

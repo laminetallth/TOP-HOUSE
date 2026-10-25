@@ -42,48 +42,6 @@
     "Privacy"
    ]
   },
-  "documenti/acea/cte/business": {
-   "url": "gestori/acea-cte-business.html",
-   "path": [
-    "Luce e gas",
-    "Acea",
-    "CTE",
-    "Business"
-   ]
-  },
-  "documenti/acea/cte/residenziale": {
-   "url": "gestori/acea-cte-residenziale.html",
-   "path": [
-    "Luce e gas",
-    "Acea",
-    "CTE",
-    "Residenziale"
-   ]
-  },
-  "documenti/acea/modulistica": {
-   "url": "gestori/acea-modulistica.html",
-   "path": [
-    "Luce e gas",
-    "Acea",
-    "Modulistica"
-   ]
-  },
-  "documenti/acea/procedimenti": {
-   "url": "gestori/acea-procedimenti.html",
-   "path": [
-    "Luce e gas",
-    "Acea",
-    "Procedimenti"
-   ]
-  },
-  "documenti/acea/privacy": {
-   "url": "gestori/acea-privacy.html",
-   "path": [
-    "Luce e gas",
-    "Acea",
-    "Privacy"
-   ]
-  },
   "documenti/agn-energia/cte/business": {
    "url": "gestori/agn-energia-cte-business.html",
    "path": [
@@ -1766,63 +1724,6 @@
    "path": [
     "Luce e gas",
     "A2A"
-   ]
-  },
-  {
-   "url": "gestori/acea-cte-business.html",
-   "path": [
-    "Luce e gas",
-    "Acea",
-    "CTE",
-    "Business"
-   ]
-  },
-  {
-   "url": "gestori/acea-cte-residenziale.html",
-   "path": [
-    "Luce e gas",
-    "Acea",
-    "CTE",
-    "Residenziale"
-   ]
-  },
-  {
-   "url": "gestori/acea-cte.html",
-   "path": [
-    "Luce e gas",
-    "Acea",
-    "CTE"
-   ]
-  },
-  {
-   "url": "gestori/acea-modulistica.html",
-   "path": [
-    "Luce e gas",
-    "Acea",
-    "Modulistica"
-   ]
-  },
-  {
-   "url": "gestori/acea-procedimenti.html",
-   "path": [
-    "Luce e gas",
-    "Acea",
-    "Procedimenti"
-   ]
-  },
-  {
-   "url": "gestori/acea-privacy.html",
-   "path": [
-    "Luce e gas",
-    "Acea",
-    "Privacy"
-   ]
-  },
-  {
-   "url": "gestori/acea.html",
-   "path": [
-    "Luce e gas",
-    "Acea"
    ]
   },
   {

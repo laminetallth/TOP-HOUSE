@@ -13,7 +13,7 @@ VERSION = "20261025b"  # cambia per forzare i browser a scaricare CSS/JS nuovi
 
 # ----------------------------------------------------------------------------- struttura
 GESTORI = [  # slug, nome visualizzato
-    ("a2a", "A2A"), ("acea", "Acea"), ("agn-energia", "AGN Energia"), ("alperia", "Alperia"),
+    ("a2a", "A2A"), ("agn-energia", "AGN Energia"), ("alperia", "Alperia"),
     ("audax", "Audax"), ("axpo", "Axpo (Pulsee)"), ("chiurlo", "Chiurlo"), ("cogeme", "Cogeme"), ("duferco", "Duferco"),
     ("edison", "Edison"), ("enel-corporate", "Enel Corporate"), ("enel-digital", "Enel Digital"), ("enel-tablet", "Enel Tablet"),
     ("engie", "Engie"), ("estra", "Estra"), ("fastweb-energia", "Fastweb Energia"), ("gde", "GDE"), ("hera", "Hera"),
