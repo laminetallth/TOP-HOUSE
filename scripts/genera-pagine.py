@@ -43,12 +43,9 @@ FOTOVOLTAICO = [
     ("documenti-contratto", "Documenti contratto", "fa-file-signature"),
     ("altro", "Altro", "fa-ellipsis"),
 ]
-OPERATORI = [("FASTWEB", "Fastweb"), ("SKY", "Sky"), ("WIND", "WindTre"), ("TIM", "TIM"), ("VODAFONE", "Vodafone")]
-TELEFONIA_SEZIONI = [
-    ("OFFERTE/BUSINESS", "Offerte business", "fa-building"),
-    ("OFFERTE/RESIDENZIALE", "Offerte residenziali", "fa-house"),
-    ("PROCEDURE", "Procedure", "fa-list-check"),
-    ("MODULISTICA", "Modulistica", "fa-file-signature"),
+OPERATORI = [  # cartella in telefonia/, nome visualizzato
+    ("EDISON-FIBRA", "Edison Fibra"), ("ENEL-FIBRA", "Enel Fibra"), ("EOLO", "Eolo"), ("FASTWEB", "Fastweb"),
+    ("RETELIT", "Retelit"), ("SKY", "Sky"), ("TIM", "TIM"), ("VODAFONE", "Vodafone"), ("WIND", "WindTre"),
 ]
 CATEGORIE_SEMPLICI = [  # una sola cartella, direttamente dalla home
     ("climatizzatore", "Climatizzatore", "fa-snowflake"), ("caldaia", "Caldaia", "fa-fire-burner"),
@@ -248,20 +245,49 @@ pdc_folders = simple_hub("pompe-di-calore", "Pompe di calore", [("schede-tecnich
 wb_folders = simple_hub("wall-box", "Wall box", [("schede-tecniche", "Schede tecniche", "fa-clipboard-list")])
 
 # ----------------------------------------------------------------------------- telefonia
-tel_groups, tel_folders = [], []
+# Stessa struttura di Luce e gas: elenco operatori a riquadri -> pagina operatore -> Offerte (business/residenziali),
+# Modulistica, Procedure. Gli indirizzi delle cartelle restano quelli di prima (telefonia-<op>-<sezione>.html).
+tel_tiles, tel_folders = [], []
 MAPPA["pages"].append({"url": "telefonia.html", "path": ["Telefonia"]})
 for code, name in OPERATORI:
-    rows = []
-    for sec, label, icon in TELEFONIA_SEZIONI:
+    op = code.lower()
+    o_url = f"telefonia-{op}.html"
+    t_root = [("Telefonia", "telefonia.html"), (name, o_url)]
+    off_rows, off_folders = [], []
+    for seg, label, icon in (("BUSINESS", "Business", ICONE["business"]), ("RESIDENZIALE", "Residenziale", ICONE["residenziale"])):
+        f = f"telefonia/{code}/OFFERTE/{seg}"
+        url = f"telefonia-{op}-offerte-{seg.lower()}.html"
+        folder_page(url, t_root + [("Offerte", f"telefonia-{op}-offerte.html"), (label, "")], f)
+        off_rows.append((url, label, icon, [f]))
+        off_folders.append(f)
+    hub_page(f"telefonia-{op}-offerte.html", t_root + [("Offerte", "")], off_rows)
+    rows = [(f"telefonia-{op}-offerte.html", "Offerte", "fa-tags", off_folders)]
+    all_folders = list(off_folders)
+    for sec, label, icon in (("MODULISTICA", "Modulistica", ICONE["modulistica"]), ("PROCEDURE", "Procedure", ICONE["procedimenti"])):
         f = f"telefonia/{code}/{sec}"
-        url = f"telefonia-{code.lower()}-{sec.lower().replace('/', '-')}.html"
-        folder_page(url, [("Telefonia", "telefonia.html"), (name, f"telefonia.html#{code.lower()}"), (label, "")], f)
-        rows.append(row(url, label, icon, [f]))
-        tel_folders.append(f)
-    tel_groups.append(f'<h2 class="th-group-title" id="{code.lower()}">{e(name)}</h2>\n<ul class="th-list">\n' + "\n".join(rows) + "\n</ul>")
+        url = f"telefonia-{op}-{sec.lower()}.html"
+        folder_page(url, t_root + [(label, "")], f)
+        rows.append((url, label, icon, [f]))
+        all_folders.append(f)
+    hub_page(o_url, [("Telefonia", "telefonia.html"), (name, "")], rows)
+    tel_folders += all_folders
+    tel_tiles.append((o_url, name, all_folders))
+
+folder_page("telefonia-guide-generali.html", [("Telefonia", "telefonia.html"), ("Guide generali", "")], "telefonia/GENERALE")
+tel_tile_html = "\n".join(
+    f'<a class="th-tile" href="{u}" data-name="{e(n)}"><b>{e(n)}</b><small data-count-folders="{e(" ".join(fs))}"></small></a>'
+    for u, n, fs in tel_tiles)
 write("telefonia.html", head("Telefonia", "telefonia.html") + f"""<body>
 <main class="th-page" id="main">
-{title_block("telefonia.html", [("Telefonia", "")], "Offerte, procedure e modulistica per ogni operatore.")}{chr(10).join(tel_groups)}
+{title_block("telefonia.html", [("Telefonia", "")], f"{len(OPERATORI)} operatori: offerte business e residenziali, modulistica e procedure sempre aggiornate.")}<div class="th-callout">
+  <p><strong>Prima di proporre un'offerta</strong>Distinta richiesta SIM, procedure di accettazione dei contratti, portabilità e tabella di fattibilità valide per tutti gli operatori.</p>
+  <a class="th-btn" href="telefonia-guide-generali.html"><i class="fa-solid fa-book-open" aria-hidden="true"></i> Guide generali</a>
+</div>
+<div class="th-filter"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i><input type="search" placeholder="Cerca un operatore" aria-label="Cerca un operatore" data-filter-target="operatoriGrid" data-filter-empty="operatoriVuoto"></div>
+<div class="th-tiles" id="operatoriGrid">
+{tel_tile_html}
+</div>
+<p class="th-empty" id="operatoriVuoto" hidden><b>Nessun operatore con questo nome</b>Controlla come l'hai scritto.</p>
 </main>
 {scripts("telefonia.html")}""")
 

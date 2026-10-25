@@ -1327,12 +1327,115 @@
     "Schede tecniche"
    ]
   },
+  "telefonia/EDISON-FIBRA/OFFERTE/BUSINESS": {
+   "url": "telefonia-edison-fibra-offerte-business.html",
+   "path": [
+    "Telefonia",
+    "Edison Fibra",
+    "Offerte",
+    "Business"
+   ]
+  },
+  "telefonia/EDISON-FIBRA/OFFERTE/RESIDENZIALE": {
+   "url": "telefonia-edison-fibra-offerte-residenziale.html",
+   "path": [
+    "Telefonia",
+    "Edison Fibra",
+    "Offerte",
+    "Residenziale"
+   ]
+  },
+  "telefonia/EDISON-FIBRA/MODULISTICA": {
+   "url": "telefonia-edison-fibra-modulistica.html",
+   "path": [
+    "Telefonia",
+    "Edison Fibra",
+    "Modulistica"
+   ]
+  },
+  "telefonia/EDISON-FIBRA/PROCEDURE": {
+   "url": "telefonia-edison-fibra-procedure.html",
+   "path": [
+    "Telefonia",
+    "Edison Fibra",
+    "Procedure"
+   ]
+  },
+  "telefonia/ENEL-FIBRA/OFFERTE/BUSINESS": {
+   "url": "telefonia-enel-fibra-offerte-business.html",
+   "path": [
+    "Telefonia",
+    "Enel Fibra",
+    "Offerte",
+    "Business"
+   ]
+  },
+  "telefonia/ENEL-FIBRA/OFFERTE/RESIDENZIALE": {
+   "url": "telefonia-enel-fibra-offerte-residenziale.html",
+   "path": [
+    "Telefonia",
+    "Enel Fibra",
+    "Offerte",
+    "Residenziale"
+   ]
+  },
+  "telefonia/ENEL-FIBRA/MODULISTICA": {
+   "url": "telefonia-enel-fibra-modulistica.html",
+   "path": [
+    "Telefonia",
+    "Enel Fibra",
+    "Modulistica"
+   ]
+  },
+  "telefonia/ENEL-FIBRA/PROCEDURE": {
+   "url": "telefonia-enel-fibra-procedure.html",
+   "path": [
+    "Telefonia",
+    "Enel Fibra",
+    "Procedure"
+   ]
+  },
+  "telefonia/EOLO/OFFERTE/BUSINESS": {
+   "url": "telefonia-eolo-offerte-business.html",
+   "path": [
+    "Telefonia",
+    "Eolo",
+    "Offerte",
+    "Business"
+   ]
+  },
+  "telefonia/EOLO/OFFERTE/RESIDENZIALE": {
+   "url": "telefonia-eolo-offerte-residenziale.html",
+   "path": [
+    "Telefonia",
+    "Eolo",
+    "Offerte",
+    "Residenziale"
+   ]
+  },
+  "telefonia/EOLO/MODULISTICA": {
+   "url": "telefonia-eolo-modulistica.html",
+   "path": [
+    "Telefonia",
+    "Eolo",
+    "Modulistica"
+   ]
+  },
+  "telefonia/EOLO/PROCEDURE": {
+   "url": "telefonia-eolo-procedure.html",
+   "path": [
+    "Telefonia",
+    "Eolo",
+    "Procedure"
+   ]
+  },
   "telefonia/FASTWEB/OFFERTE/BUSINESS": {
    "url": "telefonia-fastweb-offerte-business.html",
    "path": [
     "Telefonia",
     "Fastweb",
-    "Offerte business"
+    "Offerte",
+    "Business"
    ]
   },
   "telefonia/FASTWEB/OFFERTE/RESIDENZIALE": {
@@ -1340,15 +1443,8 @@
    "path": [
     "Telefonia",
     "Fastweb",
-    "Offerte residenziali"
-   ]
-  },
-  "telefonia/FASTWEB/PROCEDURE": {
-   "url": "telefonia-fastweb-procedure.html",
-   "path": [
-    "Telefonia",
-    "Fastweb",
-    "Procedure"
+    "Offerte",
+    "Residenziale"
    ]
   },
   "telefonia/FASTWEB/MODULISTICA": {
@@ -1359,12 +1455,55 @@
     "Modulistica"
    ]
   },
+  "telefonia/FASTWEB/PROCEDURE": {
+   "url": "telefonia-fastweb-procedure.html",
+   "path": [
+    "Telefonia",
+    "Fastweb",
+    "Procedure"
+   ]
+  },
+  "telefonia/RETELIT/OFFERTE/BUSINESS": {
+   "url": "telefonia-retelit-offerte-business.html",
+   "path": [
+    "Telefonia",
+    "Retelit",
+    "Offerte",
+    "Business"
+   ]
+  },
+  "telefonia/RETELIT/OFFERTE/RESIDENZIALE": {
+   "url": "telefonia-retelit-offerte-residenziale.html",
+   "path": [
+    "Telefonia",
+    "Retelit",
+    "Offerte",
+    "Residenziale"
+   ]
+  },
+  "telefonia/RETELIT/MODULISTICA": {
+   "url": "telefonia-retelit-modulistica.html",
+   "path": [
+    "Telefonia",
+    "Retelit",
+    "Modulistica"
+   ]
+  },
+  "telefonia/RETELIT/PROCEDURE": {
+   "url": "telefonia-retelit-procedure.html",
+   "path": [
+    "Telefonia",
+    "Retelit",
+    "Procedure"
+   ]
+  },
   "telefonia/SKY/OFFERTE/BUSINESS": {
    "url": "telefonia-sky-offerte-business.html",
    "path": [
     "Telefonia",
     "Sky",
-    "Offerte business"
+    "Offerte",
+    "Business"
    ]
   },
   "telefonia/SKY/OFFERTE/RESIDENZIALE": {
@@ -1372,15 +1511,8 @@
    "path": [
     "Telefonia",
     "Sky",
-    "Offerte residenziali"
-   ]
-  },
-  "telefonia/SKY/PROCEDURE": {
-   "url": "telefonia-sky-procedure.html",
-   "path": [
-    "Telefonia",
-    "Sky",
-    "Procedure"
+    "Offerte",
+    "Residenziale"
    ]
   },
   "telefonia/SKY/MODULISTICA": {
@@ -1391,36 +1523,12 @@
     "Modulistica"
    ]
   },
-  "telefonia/WIND/OFFERTE/BUSINESS": {
-   "url": "telefonia-wind-offerte-business.html",
+  "telefonia/SKY/PROCEDURE": {
+   "url": "telefonia-sky-procedure.html",
    "path": [
     "Telefonia",
-    "WindTre",
-    "Offerte business"
-   ]
-  },
-  "telefonia/WIND/OFFERTE/RESIDENZIALE": {
-   "url": "telefonia-wind-offerte-residenziale.html",
-   "path": [
-    "Telefonia",
-    "WindTre",
-    "Offerte residenziali"
-   ]
-  },
-  "telefonia/WIND/PROCEDURE": {
-   "url": "telefonia-wind-procedure.html",
-   "path": [
-    "Telefonia",
-    "WindTre",
+    "Sky",
     "Procedure"
-   ]
-  },
-  "telefonia/WIND/MODULISTICA": {
-   "url": "telefonia-wind-modulistica.html",
-   "path": [
-    "Telefonia",
-    "WindTre",
-    "Modulistica"
    ]
   },
   "telefonia/TIM/OFFERTE/BUSINESS": {
@@ -1428,7 +1536,8 @@
    "path": [
     "Telefonia",
     "TIM",
-    "Offerte business"
+    "Offerte",
+    "Business"
    ]
   },
   "telefonia/TIM/OFFERTE/RESIDENZIALE": {
@@ -1436,15 +1545,8 @@
    "path": [
     "Telefonia",
     "TIM",
-    "Offerte residenziali"
-   ]
-  },
-  "telefonia/TIM/PROCEDURE": {
-   "url": "telefonia-tim-procedure.html",
-   "path": [
-    "Telefonia",
-    "TIM",
-    "Procedure"
+    "Offerte",
+    "Residenziale"
    ]
   },
   "telefonia/TIM/MODULISTICA": {
@@ -1455,12 +1557,21 @@
     "Modulistica"
    ]
   },
+  "telefonia/TIM/PROCEDURE": {
+   "url": "telefonia-tim-procedure.html",
+   "path": [
+    "Telefonia",
+    "TIM",
+    "Procedure"
+   ]
+  },
   "telefonia/VODAFONE/OFFERTE/BUSINESS": {
    "url": "telefonia-vodafone-offerte-business.html",
    "path": [
     "Telefonia",
     "Vodafone",
-    "Offerte business"
+    "Offerte",
+    "Business"
    ]
   },
   "telefonia/VODAFONE/OFFERTE/RESIDENZIALE": {
@@ -1468,7 +1579,16 @@
    "path": [
     "Telefonia",
     "Vodafone",
-    "Offerte residenziali"
+    "Offerte",
+    "Residenziale"
+   ]
+  },
+  "telefonia/VODAFONE/MODULISTICA": {
+   "url": "telefonia-vodafone-modulistica.html",
+   "path": [
+    "Telefonia",
+    "Vodafone",
+    "Modulistica"
    ]
   },
   "telefonia/VODAFONE/PROCEDURE": {
@@ -1479,12 +1599,45 @@
     "Procedure"
    ]
   },
-  "telefonia/VODAFONE/MODULISTICA": {
-   "url": "telefonia-vodafone-modulistica.html",
+  "telefonia/WIND/OFFERTE/BUSINESS": {
+   "url": "telefonia-wind-offerte-business.html",
    "path": [
     "Telefonia",
-    "Vodafone",
+    "WindTre",
+    "Offerte",
+    "Business"
+   ]
+  },
+  "telefonia/WIND/OFFERTE/RESIDENZIALE": {
+   "url": "telefonia-wind-offerte-residenziale.html",
+   "path": [
+    "Telefonia",
+    "WindTre",
+    "Offerte",
+    "Residenziale"
+   ]
+  },
+  "telefonia/WIND/MODULISTICA": {
+   "url": "telefonia-wind-modulistica.html",
+   "path": [
+    "Telefonia",
+    "WindTre",
     "Modulistica"
+   ]
+  },
+  "telefonia/WIND/PROCEDURE": {
+   "url": "telefonia-wind-procedure.html",
+   "path": [
+    "Telefonia",
+    "WindTre",
+    "Procedure"
+   ]
+  },
+  "telefonia/GENERALE": {
+   "url": "telefonia-guide-generali.html",
+   "path": [
+    "Telefonia",
+    "Guide generali"
    ]
   },
   "documenti/climatizzatore": {
@@ -3363,11 +3516,159 @@
    ]
   },
   {
+   "url": "telefonia-edison-fibra-offerte-business.html",
+   "path": [
+    "Telefonia",
+    "Edison Fibra",
+    "Offerte",
+    "Business"
+   ]
+  },
+  {
+   "url": "telefonia-edison-fibra-offerte-residenziale.html",
+   "path": [
+    "Telefonia",
+    "Edison Fibra",
+    "Offerte",
+    "Residenziale"
+   ]
+  },
+  {
+   "url": "telefonia-edison-fibra-offerte.html",
+   "path": [
+    "Telefonia",
+    "Edison Fibra",
+    "Offerte"
+   ]
+  },
+  {
+   "url": "telefonia-edison-fibra-modulistica.html",
+   "path": [
+    "Telefonia",
+    "Edison Fibra",
+    "Modulistica"
+   ]
+  },
+  {
+   "url": "telefonia-edison-fibra-procedure.html",
+   "path": [
+    "Telefonia",
+    "Edison Fibra",
+    "Procedure"
+   ]
+  },
+  {
+   "url": "telefonia-edison-fibra.html",
+   "path": [
+    "Telefonia",
+    "Edison Fibra"
+   ]
+  },
+  {
+   "url": "telefonia-enel-fibra-offerte-business.html",
+   "path": [
+    "Telefonia",
+    "Enel Fibra",
+    "Offerte",
+    "Business"
+   ]
+  },
+  {
+   "url": "telefonia-enel-fibra-offerte-residenziale.html",
+   "path": [
+    "Telefonia",
+    "Enel Fibra",
+    "Offerte",
+    "Residenziale"
+   ]
+  },
+  {
+   "url": "telefonia-enel-fibra-offerte.html",
+   "path": [
+    "Telefonia",
+    "Enel Fibra",
+    "Offerte"
+   ]
+  },
+  {
+   "url": "telefonia-enel-fibra-modulistica.html",
+   "path": [
+    "Telefonia",
+    "Enel Fibra",
+    "Modulistica"
+   ]
+  },
+  {
+   "url": "telefonia-enel-fibra-procedure.html",
+   "path": [
+    "Telefonia",
+    "Enel Fibra",
+    "Procedure"
+   ]
+  },
+  {
+   "url": "telefonia-enel-fibra.html",
+   "path": [
+    "Telefonia",
+    "Enel Fibra"
+   ]
+  },
+  {
+   "url": "telefonia-eolo-offerte-business.html",
+   "path": [
+    "Telefonia",
+    "Eolo",
+    "Offerte",
+    "Business"
+   ]
+  },
+  {
+   "url": "telefonia-eolo-offerte-residenziale.html",
+   "path": [
+    "Telefonia",
+    "Eolo",
+    "Offerte",
+    "Residenziale"
+   ]
+  },
+  {
+   "url": "telefonia-eolo-offerte.html",
+   "path": [
+    "Telefonia",
+    "Eolo",
+    "Offerte"
+   ]
+  },
+  {
+   "url": "telefonia-eolo-modulistica.html",
+   "path": [
+    "Telefonia",
+    "Eolo",
+    "Modulistica"
+   ]
+  },
+  {
+   "url": "telefonia-eolo-procedure.html",
+   "path": [
+    "Telefonia",
+    "Eolo",
+    "Procedure"
+   ]
+  },
+  {
+   "url": "telefonia-eolo.html",
+   "path": [
+    "Telefonia",
+    "Eolo"
+   ]
+  },
+  {
    "url": "telefonia-fastweb-offerte-business.html",
    "path": [
     "Telefonia",
     "Fastweb",
-    "Offerte business"
+    "Offerte",
+    "Business"
    ]
   },
   {
@@ -3375,15 +3676,16 @@
    "path": [
     "Telefonia",
     "Fastweb",
-    "Offerte residenziali"
+    "Offerte",
+    "Residenziale"
    ]
   },
   {
-   "url": "telefonia-fastweb-procedure.html",
+   "url": "telefonia-fastweb-offerte.html",
    "path": [
     "Telefonia",
     "Fastweb",
-    "Procedure"
+    "Offerte"
    ]
   },
   {
@@ -3395,11 +3697,76 @@
    ]
   },
   {
+   "url": "telefonia-fastweb-procedure.html",
+   "path": [
+    "Telefonia",
+    "Fastweb",
+    "Procedure"
+   ]
+  },
+  {
+   "url": "telefonia-fastweb.html",
+   "path": [
+    "Telefonia",
+    "Fastweb"
+   ]
+  },
+  {
+   "url": "telefonia-retelit-offerte-business.html",
+   "path": [
+    "Telefonia",
+    "Retelit",
+    "Offerte",
+    "Business"
+   ]
+  },
+  {
+   "url": "telefonia-retelit-offerte-residenziale.html",
+   "path": [
+    "Telefonia",
+    "Retelit",
+    "Offerte",
+    "Residenziale"
+   ]
+  },
+  {
+   "url": "telefonia-retelit-offerte.html",
+   "path": [
+    "Telefonia",
+    "Retelit",
+    "Offerte"
+   ]
+  },
+  {
+   "url": "telefonia-retelit-modulistica.html",
+   "path": [
+    "Telefonia",
+    "Retelit",
+    "Modulistica"
+   ]
+  },
+  {
+   "url": "telefonia-retelit-procedure.html",
+   "path": [
+    "Telefonia",
+    "Retelit",
+    "Procedure"
+   ]
+  },
+  {
+   "url": "telefonia-retelit.html",
+   "path": [
+    "Telefonia",
+    "Retelit"
+   ]
+  },
+  {
    "url": "telefonia-sky-offerte-business.html",
    "path": [
     "Telefonia",
     "Sky",
-    "Offerte business"
+    "Offerte",
+    "Business"
    ]
   },
   {
@@ -3407,15 +3774,16 @@
    "path": [
     "Telefonia",
     "Sky",
-    "Offerte residenziali"
+    "Offerte",
+    "Residenziale"
    ]
   },
   {
-   "url": "telefonia-sky-procedure.html",
+   "url": "telefonia-sky-offerte.html",
    "path": [
     "Telefonia",
     "Sky",
-    "Procedure"
+    "Offerte"
    ]
   },
   {
@@ -3427,35 +3795,18 @@
    ]
   },
   {
-   "url": "telefonia-wind-offerte-business.html",
+   "url": "telefonia-sky-procedure.html",
    "path": [
     "Telefonia",
-    "WindTre",
-    "Offerte business"
-   ]
-  },
-  {
-   "url": "telefonia-wind-offerte-residenziale.html",
-   "path": [
-    "Telefonia",
-    "WindTre",
-    "Offerte residenziali"
-   ]
-  },
-  {
-   "url": "telefonia-wind-procedure.html",
-   "path": [
-    "Telefonia",
-    "WindTre",
+    "Sky",
     "Procedure"
    ]
   },
   {
-   "url": "telefonia-wind-modulistica.html",
+   "url": "telefonia-sky.html",
    "path": [
     "Telefonia",
-    "WindTre",
-    "Modulistica"
+    "Sky"
    ]
   },
   {
@@ -3463,7 +3814,8 @@
    "path": [
     "Telefonia",
     "TIM",
-    "Offerte business"
+    "Offerte",
+    "Business"
    ]
   },
   {
@@ -3471,15 +3823,16 @@
    "path": [
     "Telefonia",
     "TIM",
-    "Offerte residenziali"
+    "Offerte",
+    "Residenziale"
    ]
   },
   {
-   "url": "telefonia-tim-procedure.html",
+   "url": "telefonia-tim-offerte.html",
    "path": [
     "Telefonia",
     "TIM",
-    "Procedure"
+    "Offerte"
    ]
   },
   {
@@ -3491,11 +3844,27 @@
    ]
   },
   {
+   "url": "telefonia-tim-procedure.html",
+   "path": [
+    "Telefonia",
+    "TIM",
+    "Procedure"
+   ]
+  },
+  {
+   "url": "telefonia-tim.html",
+   "path": [
+    "Telefonia",
+    "TIM"
+   ]
+  },
+  {
    "url": "telefonia-vodafone-offerte-business.html",
    "path": [
     "Telefonia",
     "Vodafone",
-    "Offerte business"
+    "Offerte",
+    "Business"
    ]
   },
   {
@@ -3503,7 +3872,24 @@
    "path": [
     "Telefonia",
     "Vodafone",
-    "Offerte residenziali"
+    "Offerte",
+    "Residenziale"
+   ]
+  },
+  {
+   "url": "telefonia-vodafone-offerte.html",
+   "path": [
+    "Telefonia",
+    "Vodafone",
+    "Offerte"
+   ]
+  },
+  {
+   "url": "telefonia-vodafone-modulistica.html",
+   "path": [
+    "Telefonia",
+    "Vodafone",
+    "Modulistica"
    ]
   },
   {
@@ -3515,11 +3901,66 @@
    ]
   },
   {
-   "url": "telefonia-vodafone-modulistica.html",
+   "url": "telefonia-vodafone.html",
    "path": [
     "Telefonia",
-    "Vodafone",
+    "Vodafone"
+   ]
+  },
+  {
+   "url": "telefonia-wind-offerte-business.html",
+   "path": [
+    "Telefonia",
+    "WindTre",
+    "Offerte",
+    "Business"
+   ]
+  },
+  {
+   "url": "telefonia-wind-offerte-residenziale.html",
+   "path": [
+    "Telefonia",
+    "WindTre",
+    "Offerte",
+    "Residenziale"
+   ]
+  },
+  {
+   "url": "telefonia-wind-offerte.html",
+   "path": [
+    "Telefonia",
+    "WindTre",
+    "Offerte"
+   ]
+  },
+  {
+   "url": "telefonia-wind-modulistica.html",
+   "path": [
+    "Telefonia",
+    "WindTre",
     "Modulistica"
+   ]
+  },
+  {
+   "url": "telefonia-wind-procedure.html",
+   "path": [
+    "Telefonia",
+    "WindTre",
+    "Procedure"
+   ]
+  },
+  {
+   "url": "telefonia-wind.html",
+   "path": [
+    "Telefonia",
+    "WindTre"
+   ]
+  },
+  {
+   "url": "telefonia-guide-generali.html",
+   "path": [
+    "Telefonia",
+    "Guide generali"
    ]
   },
   {

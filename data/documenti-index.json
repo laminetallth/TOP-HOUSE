@@ -2215,7 +2215,7 @@
    },
    {
     "name": "RDF_Domestico_042026 (1).pdf",
-    "size": 1812121
+    "size": 1236605
    },
    {
     "name": "RDF_Domestico_042026.pdf",
@@ -3621,15 +3621,15 @@
    },
    {
     "name": "listino v6.26-28.6.26.pdf",
-    "size": 3896161
+    "size": 2692274
    },
    {
     "name": "Piani di Manutenzione EKO.pdf",
-    "size": 2815801
+    "size": 1605672
    },
    {
     "name": "Procedura Allegati CRM v9.25.pdf",
-    "size": 5471048
+    "size": 975160
    },
    {
     "name": "Ticket Referall_3.pdf",
@@ -3647,7 +3647,7 @@
    },
    {
     "name": "Aut. Condominio v9.25.pdf",
-    "size": 2477705
+    "size": 853514
    },
    {
     "name": "Aut. Proprietario v9.25.pdf",
@@ -3663,7 +3663,7 @@
    },
    {
     "name": "Modulo d'Ordine v9.25.pdf",
-    "size": 5222907
+    "size": 3364152
    },
    {
     "name": "Modulo Iva 10 v10.25.pdf",
@@ -3715,7 +3715,7 @@
   "documenti/fotovoltaico/documenti-sopralluogo": [
    {
     "name": "Angrafica.pdf",
-    "size": 1739478
+    "size": 724273
    }
   ],
   "documenti/fotovoltaico/formazione-base": [
@@ -3759,23 +3759,23 @@
   "documenti/fotovoltaico/riunioni": [
    {
     "name": "riunione 08.01.pdf",
-    "size": 31951533
+    "size": 8156048
    },
    {
     "name": "riunione 11_12.pdf",
-    "size": 12726038
+    "size": 2757128
    },
    {
     "name": "Riunione 12.11.25 (aziende).pdf",
-    "size": 12668704
+    "size": 3531387
    },
    {
     "name": "riunione 19.02.26.pdf",
-    "size": 14900507
+    "size": 10266855
    },
    {
     "name": "riunione 20.12.pdf",
-    "size": 12670236
+    "size": 3531452
    }
   ],
   "documenti/fotovoltaico/schede-tecniche": [
@@ -4210,10 +4210,6 @@
    {
     "name": "1 Proposta contratto dom_rev 05.2026_EDITABILE.pdf",
     "size": 4335885
-   },
-   {
-    "name": "1 Proposta contratto terziario_rev 01.2026_EDITABILE.pdf",
-    "size": 13077894
    },
    {
     "name": "1 Proposta contratto terziario_rev 05.2026_EDITABILE.pdf",
@@ -5288,6 +5284,12 @@
     "size": 70099
    }
   ],
+  "documenti/noleggio-auto": [
+   {
+    "name": "Procedura richiesta preventivi Noleggio Lungo Termine.docx",
+    "size": 14322
+   }
+  ],
   "documenti/onova/procedimenti": [
    {
     "name": "Scheda_Procedurale_Onova_v2.pdf",
@@ -5307,11 +5309,11 @@
   "documenti/s4/cte-business": [
    {
     "name": "CTE_EE_AltriUsi_Amici 2026.pdf",
-    "size": 7995093
+    "size": 803588
    },
    {
     "name": "CTE_EE_AltriUsi_Corporate 2026.pdf",
-    "size": 6884319
+    "size": 807363
    },
    {
     "name": "CTE_EE_AltriUsi_Green.pdf",
@@ -5319,7 +5321,7 @@
    },
    {
     "name": "CTE_EE_AltriUsi_Smart 2026.pdf",
-    "size": 2711543
+    "size": 331732
    },
    {
     "name": "CTE_GAS_AltriUsi_Amici 2026.pdf",
@@ -5327,7 +5329,7 @@
    },
    {
     "name": "CTE_GAS_AltriUsi_Corporate 2026.pdf",
-    "size": 2007896
+    "size": 457484
    },
    {
     "name": "CTE_GAS_AltriUsi_Green.pdf",
@@ -5341,7 +5343,7 @@
   "documenti/s4/cte-residenziale": [
    {
     "name": "CTE_EE_Domestico_Amici 2026.pdf",
-    "size": 6183078
+    "size": 856612
    },
    {
     "name": "CTE_EE_Domestico_GreenCAP.pdf",
@@ -5349,15 +5351,15 @@
    },
    {
     "name": "CTE_EE_Domestico_Smart 2026.pdf",
-    "size": 4844988
+    "size": 604182
    },
    {
     "name": "CTE_GAS_Domestico_Amici 2026.pdf",
-    "size": 1941386
+    "size": 485381
    },
    {
     "name": "CTE_GAS_Domestico_GreenCAP.pdf",
-    "size": 2489858
+    "size": 649134
    },
    {
     "name": "CTE_GAS_Domestico_Smart 2026.pdf",
@@ -5982,6 +5984,1034 @@
    {
     "name": "Starcharge Artemis_datasheet_Smart (1).pdf",
     "size": 231692
+   }
+  ],
+  "telefonia/EDISON-FIBRA/MODULISTICA": [
+   {
+    "name": "Plico_EDISON_WI-FI-ON_FTTC_20260619_editabile.pdf",
+    "size": 3470342
+   },
+   {
+    "name": "Plico_EDISON_WI-FI_FTTC_20260619_editabile.pdf",
+    "size": 3096736
+   },
+   {
+    "name": "Plico_EDISON_WI-FI_FTTH_20260619_editabile.pdf",
+    "size": 3057703
+   },
+   {
+    "name": "Plico_EDISON_WI-FI_ON_FTTH_20260619_editabile.pdf",
+    "size": 3433447
+   }
+  ],
+  "telefonia/ENEL-FIBRA/MODULISTICA": [
+   {
+    "name": "Modulo-agevolazioni.pdf",
+    "size": 203905
+   },
+   {
+    "name": "Modulo-recesso-fibra.pdf",
+    "size": 145328
+   },
+   {
+    "name": "Modulo_EsercDirRipensamentoFibra.pdf",
+    "size": 178698
+   }
+  ],
+  "telefonia/ENEL-FIBRA/OFFERTE/BUSINESS": [
+   {
+    "name": "R1 2025 M&D MALL&LARGE AGENZIA COMPARATORI.pdf",
+    "size": 652452
+   }
+  ],
+  "telefonia/ENEL-FIBRA/OFFERTE/RESIDENZIALE": [
+   {
+    "name": "1777537596-1420343410.docx",
+    "size": 99805
+   },
+   {
+    "name": "Comuni voucher_2026 final_ext_Maggio_Dicembre 2026_ (1).xlsx",
+    "size": 43701
+   },
+   {
+    "name": "doc1 fibra.pdf",
+    "size": 73282
+   }
+  ],
+  "telefonia/ENEL-FIBRA/PROCEDURE": [
+   {
+    "name": "Guida Modem Libero.pdf",
+    "size": 99677
+   },
+   {
+    "name": "Guida per il Cliente - Assistenza tecnica Fibra Enel Energia.pdf",
+    "size": 422741
+   },
+   {
+    "name": "Infografica Vademecum_versione operatore.pdf",
+    "size": 277004
+   },
+   {
+    "name": "VADEMECUM ENEL _versione operatore.pdf",
+    "size": 4271460
+   }
+  ],
+  "telefonia/EOLO/MODULISTICA": [
+   {
+    "name": "2-EOLO PDA BUSINESS.pdf",
+    "size": 696545
+   },
+   {
+    "name": "2-EOLO PDA CONSUMER.pdf",
+    "size": 671737
+   }
+  ],
+  "telefonia/EOLO/OFFERTE/BUSINESS": [
+   {
+    "name": "1- EOLO CANVASS BUSINESS.pdf",
+    "size": 1682726
+   }
+  ],
+  "telefonia/EOLO/OFFERTE/RESIDENZIALE": [
+   {
+    "name": "1- EOLO CANVASS CONSUMER.pdf",
+    "size": 874751
+   }
+  ],
+  "telefonia/EOLO/PROCEDURE": [
+   {
+    "name": "EOLO - COMUNI COPERTI FWA 1GBPS.xlsx",
+    "size": 152493
+   },
+   {
+    "name": "Link copertura EOLO.docx",
+    "size": 13542
+   },
+   {
+    "name": "VADEMECUM EOLO.pdf",
+    "size": 145784
+   }
+  ],
+  "telefonia/FASTWEB/MODULISTICA": [
+   {
+    "name": "2 - FASTWEB SMALL PDA.pdf",
+    "size": 1314498
+   },
+   {
+    "name": "5 - FASTWEB SMALL - MODULO PREVALIDAZIONE DA SIM P.IVA.pdf",
+    "size": 640161
+   },
+   {
+    "name": "6 - FASTWEB SMALL - MODULO PREVALIDAZIONE DA SIM RES AD AZIENDA.pdf",
+    "size": 464294
+   },
+   {
+    "name": "6 - MODULO SUBENTRO DA P.IVA A P.IVA.pdf",
+    "size": 575928
+   },
+   {
+    "name": "7 - FASTWEB SMALL MODULO DI MIGRAZIONE DA SHP.pdf",
+    "size": 366028
+   },
+   {
+    "name": "7 - MODULO SUBENTRO DA PRIVATO A P.IVA.pdf",
+    "size": 571753
+   },
+   {
+    "name": "8 - FASTWEB MODULO MNP.pdf",
+    "size": 322776
+   },
+   {
+    "name": "8 - FASTWEB RES - INFORMATIVA ASSICURAZIONE CANE E GATTO.pdf",
+    "size": 296833
+   },
+   {
+    "name": "8 - FASTWEB SMALL MODULO SUBENTRO.pdf",
+    "size": 182777
+   },
+   {
+    "name": "condizioni_generali_contratto_rete_fissa_res (1).pdf",
+    "size": 279008
+   },
+   {
+    "name": "EDITABILE_SCHEDA-ALL_26LUG22.pdf",
+    "size": 79030
+   },
+   {
+    "name": "FASTWEB RES- PDA VERSIONE AGGIORNATA.pdf",
+    "size": 1462925
+   },
+   {
+    "name": "FASTWEB SHP- PDA VERSIONE AGGIORNATA.pdf",
+    "size": 4958980
+   },
+   {
+    "name": "Mod Cess Numero da Privato ad Azienda_NOV23 (2).pdf",
+    "size": 1226823
+   },
+   {
+    "name": "Mod Cess Numero tra Aziende differenti_NOV23 (1).pdf",
+    "size": 1305618
+   },
+   {
+    "name": "MODULO MNP.pdf",
+    "size": 969832
+   },
+   {
+    "name": "Modulo RID.pdf",
+    "size": 1254010
+   },
+   {
+    "name": "QUIXA - SET INFORMATIVO CASA.pdf",
+    "size": 914543
+   },
+   {
+    "name": "QUIXA - SET INFORMATIVO.pdf",
+    "size": 1336394
+   },
+   {
+    "name": "SchedaCliente_APN_Dedicato.doc.docx",
+    "size": 183486
+   }
+  ],
+  "telefonia/FASTWEB/OFFERTE/BUSINESS": [
+   {
+    "name": "1 - FASTWEB SMALL 1 Ottobre 2025 SALES NEWS - BUSINESS PARTNER.pdf",
+    "size": 684503
+   },
+   {
+    "name": "12 - FASTWEB SMALL ADVANCED SERVICES.pdf",
+    "size": 1032191
+   },
+   {
+    "name": "2- FASTWEB SHP SALES NEWS.pdf",
+    "size": 1426230
+   },
+   {
+    "name": "5 - FastwebUp Plus Mobile - 11 Settembre 2023.pdf",
+    "size": 595196
+   },
+   {
+    "name": "9 - Attivazione Sim con MNP e cambio intestatario 24.09.24.pdf",
+    "size": 767204
+   },
+   {
+    "name": "9 - FASTWEB SMALL FUNZIONALITÀ NEXXT COMMUNICATION.pdf",
+    "size": 484415
+   },
+   {
+    "name": "Elenco Opzioni_Travel1Day_26_7_22.pptx",
+    "size": 203094
+   },
+   {
+    "name": "FASTWEB DETTAGLIO ASSICURAZIONE QUIXA.pdf",
+    "size": 261449
+   },
+   {
+    "name": "Listino Fastweb Mobile Enterprise_v2.1.docx",
+    "size": 2292450
+   },
+   {
+    "name": "Listino FW ENT_Apr'26.xlsx",
+    "size": 41644
+   }
+  ],
+  "telefonia/FASTWEB/OFFERTE/RESIDENZIALE": [
+   {
+    "name": "5 - FASTWEB RES - DETTAGLIO FWA.pdf",
+    "size": 379987
+   },
+   {
+    "name": "7 - FASTWEB RES - ASSICURAZIONE CANE E GATTO.pdf",
+    "size": 467632
+   }
+  ],
+  "telefonia/FASTWEB/PROCEDURE": [
+   {
+    "name": "1 - FASTWEB SHP VADEMECUM.pdf",
+    "size": 249611
+   },
+   {
+    "name": "10 - FASTWEB SMALL REGOLE DI VENDIBILITÀ CENTRALINO NEXXT.pdf",
+    "size": 50225
+   },
+   {
+    "name": "10 - MOBILE RICONOSCIMENTO CON SPID E CIE.pdf",
+    "size": 452859
+   },
+   {
+    "name": "4 - FASTWEB RES - GUIDA OTP.pdf",
+    "size": 1531798
+   },
+   {
+    "name": "4 - VADEMECUM FASTWEB SMALL (1).pdf",
+    "size": 152926
+   },
+   {
+    "name": "9 - PROCESSO DI ATTIVAZIONE RES E SHP.pdf",
+    "size": 513812
+   },
+   {
+    "name": "DOCUMENTI OBBLIGATORI PDA.pdf",
+    "size": 457170
+   },
+   {
+    "name": "Link copertura Fastweb consumer e 1 linea.docx",
+    "size": 18833
+   },
+   {
+    "name": "Link copertura FASTWEB RES.docx",
+    "size": 13567
+   },
+   {
+    "name": "Link copertura FASTWEB SHP.docx",
+    "size": 13686
+   },
+   {
+    "name": "VADEMECUM FASTWEB RESIDENZIALE.pdf",
+    "size": 128602
+   }
+  ],
+  "telefonia/GENERALE": [
+   {
+    "name": "1 - DISTINTA GESTORI - RICHIESTA SIM 12-09-2025.pdf",
+    "size": 126200
+   },
+   {
+    "name": "2 - PROCEDURE DA PARTE DEI GESTORI PER ACCETTAZIONE CONTRATTO.pdf",
+    "size": 444063
+   },
+   {
+    "name": "3 - GESTIONE SERIALI SIM IN PORTABILITA.pdf",
+    "size": 125411
+   },
+   {
+    "name": "4 TABELLA FATTIBILITA.pdf",
+    "size": 87489
+   },
+   {
+    "name": "5- VENDIBILITA",
+    "size": 388370
+   }
+  ],
+  "telefonia/RETELIT/MODULISTICA": [
+   {
+    "name": "3 - RETELIT PDA IN RETE IMPRESA.pdf",
+    "size": 267083
+   },
+   {
+    "name": "4 - RETELIT PDA IN RETE PRO.pdf",
+    "size": 497476
+   },
+   {
+    "name": "6 - RETELIT Modulo Subentro.pdf",
+    "size": 187116
+   },
+   {
+    "name": "8 - RETELIT Dichiarazione Proprieta",
+    "size": 63850
+   }
+  ],
+  "telefonia/RETELIT/OFFERTE/BUSINESS": [
+   {
+    "name": "2 - RETELIT CANVASS.pdf",
+    "size": 1616752
+   },
+   {
+    "name": "7 - RETELIT Opzioni.pdf",
+    "size": 114528
+   }
+  ],
+  "telefonia/RETELIT/PROCEDURE": [
+   {
+    "name": "1 - RETELIT VADEMECUM 15.10.pdf",
+    "size": 674741
+   },
+   {
+    "name": "5 - RETELIT Guida Otp.pdf",
+    "size": 198564
+   },
+   {
+    "name": "LINK COPERTURA RETELIT.docx",
+    "size": 13635
+   }
+  ],
+  "telefonia/SKY/MODULISTICA": [
+   {
+    "name": "2- SKY PDA.pdf",
+    "size": 656024
+   },
+   {
+    "name": "3 - SKY BAR - PDA.pdf",
+    "size": 1611556
+   },
+   {
+    "name": "4 - SKY HOTEL - PDA.pdf",
+    "size": 612794
+   },
+   {
+    "name": "5 - SKY NEGOZI UFFICI- PDA.pdf",
+    "size": 1144216
+   },
+   {
+    "name": "6 - SKY WIFI BUSINESS PDA.pdf",
+    "size": 624566
+   },
+   {
+    "name": "EDITABILE PROMO UFFICI.pdf",
+    "size": 1345463
+   }
+  ],
+  "telefonia/SKY/OFFERTE/BUSINESS": [
+   {
+    "name": "1- SKY CANVASS BUSINESS.pdf",
+    "size": 1006828
+   },
+   {
+    "name": "2 - SKY WIFI BUSINESS CANVASS.pdf",
+    "size": 2442792
+   },
+   {
+    "name": "PROMO BUSINESS AGGIORNATE.pdf",
+    "size": 3970327
+   }
+  ],
+  "telefonia/SKY/OFFERTE/RESIDENZIALE": [
+   {
+    "name": "PROMO AGGIORNATE - 28 SETTEMBRE.pdf",
+    "size": 2500211
+   }
+  ],
+  "telefonia/SKY/PROCEDURE": [
+   {
+    "name": "LINK DI COPERTURA SKY E OPEN FIBER.docx",
+    "size": 13705
+   },
+   {
+    "name": "SKY - Annullamento contratti con Carta Prepagata su CAP CRITICI.xlsx",
+    "size": 10862
+   },
+   {
+    "name": "SKY - BANCHE e Codici ABI Accettati.pdf",
+    "size": 120700
+   },
+   {
+    "name": "VADEMECUM SKY 23.01.pdf",
+    "size": 440315
+   }
+  ],
+  "telefonia/TIM/MODULISTICA": [
+   {
+    "name": "1 - TIM PDA MOBILE.pdf",
+    "size": 993208
+   },
+   {
+    "name": "2 - TIM PDA CONVERGENTE.pdf",
+    "size": 1111741
+   },
+   {
+    "name": "2 - TIM PDA FISSO.pdf",
+    "size": 1093525
+   },
+   {
+    "name": "2- PDA TIM CONSUMER.pdf",
+    "size": 1131229
+   },
+   {
+    "name": "3 - MODULO SUBENTRO FISSO.pdf",
+    "size": 1592868
+   },
+   {
+    "name": "3 - TIM MODULO MNP .pdf",
+    "size": 195154
+   },
+   {
+    "name": "Tim Mobile - Modulo Subentro.pdf",
+    "size": 450364
+   }
+  ],
+  "telefonia/TIM/OFFERTE/BUSINESS": [
+   {
+    "name": "1 - TIM OFFERTA FISSO.pdf",
+    "size": 4064751
+   },
+   {
+    "name": "1- OFFERTA CONVERGENTE.pdf",
+    "size": 1628361
+   },
+   {
+    "name": "10751_TIMCOMPANYDATI_DiscoVendita_30062026.pdf",
+    "size": 3163208
+   },
+   {
+    "name": "10769_OffertaMobileStandard_DDV_TIMCompany_30062026.pdf",
+    "size": 3780137
+   },
+   {
+    "name": "2- TIM OFFERTA MOBILE.pdf",
+    "size": 3190864
+   },
+   {
+    "name": "Business Week Canada e USA (1).pdf",
+    "size": 153108
+   },
+   {
+    "name": "Business Week Cina e Giappone (1).pdf",
+    "size": 153615
+   },
+   {
+    "name": "Business Week Thailandia e Vietnam (1).pdf",
+    "size": 153741
+   },
+   {
+    "name": "Catalogo Estero.pdf",
+    "size": 1135460
+   },
+   {
+    "name": "Crash GO 5G Power Executive+ 7,99 (4).pdf",
+    "size": 194278
+   },
+   {
+    "name": "Crash GO 5G Power Executive+10 (3).pdf",
+    "size": 170980
+   },
+   {
+    "name": "Crash GO 5G Power Unlimited One 13,99 (2).pdf",
+    "size": 180118
+   },
+   {
+    "name": "Crash GO 5G Power Unlimited One 15,99 (3).pdf",
+    "size": 184664
+   },
+   {
+    "name": "Crash GO 5GPowerExecutive+10 TSW_ProfiloCommerciale_ric_29042026.pdf",
+    "size": 180788
+   },
+   {
+    "name": "Crash GO 5GPowerExecutive+7,99 TSW TUB_ProfiloCommerciale_02032026.pdf",
+    "size": 187641
+   },
+   {
+    "name": "Crash GO 5GPowerPremium+10 TSW_ProfiloCommerciale_02032026.pdf",
+    "size": 207015
+   },
+   {
+    "name": "Dettagli operativi_Bonus TIM 24 mesi_TIBP Puglia_01092026.pdf",
+    "size": 257386
+   },
+   {
+    "name": "Disco di Vendita Rientri in Decade 1.pdf",
+    "size": 577638
+   },
+   {
+    "name": "Disco di Vendita Sales Offerta Fisso Business.pdf",
+    "size": 5406793
+   },
+   {
+    "name": "Disco di Vendita Sales Promo TIM 3 Mesi.pdf",
+    "size": 565248
+   },
+   {
+    "name": "Disco di Vendita Sales TIM ComUnica Entry.pdf",
+    "size": 1785607
+   },
+   {
+    "name": "Disco di Vendita Sales TIM Unica Business.pdf",
+    "size": 1603068
+   },
+   {
+    "name": "Disco di Vendita Sales.pdf",
+    "size": 186135
+   },
+   {
+    "name": "Europa Monthly Unlimited (1).pdf",
+    "size": 143598
+   },
+   {
+    "name": "Europa Weekly Unlimited (1).pdf",
+    "size": 144452
+   },
+   {
+    "name": "Listino Commerciale Noleggio Operativo TIM grenke  TBP CUSTOMER WEB.xlsx",
+    "size": 131341
+   },
+   {
+    "name": "Listino NMU.pdf",
+    "size": 290959
+   },
+   {
+    "name": "Promo Smartphone 24 Mesi.pdf",
+    "size": 370978
+   },
+   {
+    "name": "Promo Smartphone 36 Mesi.pdf",
+    "size": 393388
+   },
+   {
+    "name": "Promo Smartphone e Tablet.pdf",
+    "size": 1967036
+   },
+   {
+    "name": "Roaming Mondo 3.0 (1).pdf",
+    "size": 163761
+   },
+   {
+    "name": "Roaming Mondo 3.0 Promo (1).pdf",
+    "size": 164241
+   },
+   {
+    "name": "Roaming Mondo per AL MNP (1).pdf",
+    "size": 112323
+   },
+   {
+    "name": "Roaming Monthly TOP per AL MNP (1).pdf",
+    "size": 101645
+   },
+   {
+    "name": "Speedy_SempreConnessoFWA_ProfiloCommercialeNuoveAtt_08092026.pdf",
+    "size": 275489
+   },
+   {
+    "name": "TIM 10EUROGIGAVIP (2).pdf",
+    "size": 230329
+   },
+   {
+    "name": "TIM 20EUROGIGAVIP (2).pdf",
+    "size": 233875
+   },
+   {
+    "name": "TIM 50EUROGIGAVIP (2).pdf",
+    "size": 233975
+   },
+   {
+    "name": "TIM CHIAMA EUROPA 2.0 (1).pdf",
+    "size": 159976
+   },
+   {
+    "name": "TIM CHIAMA EUROPA 2.0 PROMO (1).pdf",
+    "size": 159832
+   },
+   {
+    "name": "TIM CHIAMA MONDO (1).pdf",
+    "size": 85337
+   },
+   {
+    "name": "TIM CHIAMA MONDO PLUS (1).pdf",
+    "size": 84416
+   },
+   {
+    "name": "TIM Company Dati XL 5G 12,99 (1).pdf",
+    "size": 293866
+   },
+   {
+    "name": "TIM Company Dati XL 5G No-Domiciliazione 17,99.pdf",
+    "size": 294556
+   },
+   {
+    "name": "TIM Company Pro 10,99.pdf",
+    "size": 196195
+   },
+   {
+    "name": "TIM Company Pro 18,99.pdf",
+    "size": 196527
+   },
+   {
+    "name": "TIM Company Pro Promo 13,99 (1).pdf",
+    "size": 195765
+   },
+   {
+    "name": "TIM Company Unlimited 15,99.pdf",
+    "size": 191149
+   },
+   {
+    "name": "TIM Company Unlimited 23,99 (1).pdf",
+    "size": 191487
+   },
+   {
+    "name": "TIM Company Unlimited Extra 22,99 (1).pdf",
+    "size": 191920
+   },
+   {
+    "name": "TIM Company Unlimited Extra 23,99.pdf",
+    "size": 192293
+   },
+   {
+    "name": "TIM Company Unlimited Promo 18,99.pdf",
+    "size": 191351
+   },
+   {
+    "name": "TIM MONDOMESSAGING (1).pdf",
+    "size": 90645
+   },
+   {
+    "name": "TIM OPZIONE EXECUTIVE CLASS 2.0 (1).pdf",
+    "size": 143031
+   },
+   {
+    "name": "TIM OPZIONE ROAMING MONDO INTERNET 300 (1).pdf",
+    "size": 129540
+   },
+   {
+    "name": "TIM OPZIONE ROAMING MONDO INTERNET 600 (1).pdf",
+    "size": 88570
+   },
+   {
+    "name": "TIM OPZIONE ROAMING MONDO PROMO (1).pdf",
+    "size": 113084
+   },
+   {
+    "name": "TIM OPZIONE ROAMING MONDO PROMO (30 SIM+) (1).pdf",
+    "size": 110283
+   },
+   {
+    "name": "TIM OPZIONE ROAMING MONDO YEAR (1).pdf",
+    "size": 99938
+   },
+   {
+    "name": "TIM OPZIONE ROAMING WEEKLY TOP (1).pdf",
+    "size": 92707
+   },
+   {
+    "name": "TIM ROAMING DAILY BASE EXTRA UE (1).pdf",
+    "size": 84028
+   },
+   {
+    "name": "TIM SERVIZI DI REPERIBILITÀ (1).pdf",
+    "size": 77060
+   },
+   {
+    "name": "TIM STATI UNITI (1).pdf",
+    "size": 122615
+   },
+   {
+    "name": "TIM Stati Uniti 3.0 (1).pdf",
+    "size": 159447
+   },
+   {
+    "name": "TIM STATI UNITI PROMO (1).pdf",
+    "size": 116890
+   },
+   {
+    "name": "TIM Ufficio Ovunque Sei.pdf",
+    "size": 1169843
+   },
+   {
+    "name": "TIM Unlimited Extra Promo 25,99.pdf",
+    "size": 191552
+   },
+   {
+    "name": "TIMFastWiFi_DDV_16092026.pdf",
+    "size": 711251
+   }
+  ],
+  "telefonia/TIM/OFFERTE/RESIDENZIALE": [
+   {
+    "name": "5 - TIM CONDIZIONI ECONOMICHE CONSUMER.pdf",
+    "size": 55927
+   },
+   {
+    "name": "SPECIFICHE TIM VISION.pdf",
+    "size": 186272
+   },
+   {
+    "name": "TIM CNS - CANVASS OTTOBRE.pdf",
+    "size": 5348157
+   },
+   {
+    "name": "TIM CNS - LISTINO MOBILE.pdf",
+    "size": 270396
+   }
+  ],
+  "telefonia/TIM/PROCEDURE": [
+   {
+    "name": "4 - TIM CONSUMER - GUIDA OTP.pdf",
+    "size": 575726
+   },
+   {
+    "name": "CRMA - SPID luglio 2026.pdf",
+    "size": 1836882
+   },
+   {
+    "name": "DSM - SPID luglio 2026.pdf",
+    "size": 1372490
+   },
+   {
+    "name": "Flyer Conto_Corrente_Rete_Vendita_TIM.pdf",
+    "size": 174306
+   },
+   {
+    "name": "Link copertura TIM.docx",
+    "size": 13695
+   },
+   {
+    "name": "PROCEDURA FIRMA GRENKE.pdf",
+    "size": 465094
+   },
+   {
+    "name": "Tim - Compilazione promo fisso (2).pdf",
+    "size": 729187
+   },
+   {
+    "name": "TIM Business - Linee guida domiciliazione (2).pdf",
+    "size": 230540
+   },
+   {
+    "name": "VADEMECUM TIM BUSINESS.pdf",
+    "size": 4077991
+   },
+   {
+    "name": "VADEMECUM TIM CONSUMER.pdf",
+    "size": 3994548
+   }
+  ],
+  "telefonia/VODAFONE/MODULISTICA": [
+   {
+    "name": "10 - VODAFONE MODULO SOSTITUZIONE SIM.pdf",
+    "size": 57083
+   },
+   {
+    "name": "11 - VODAFONE MODULO DICHIARAZIONE SIM MOBILI +10.docx",
+    "size": 25162
+   },
+   {
+    "name": "2- VODAFONE PDA FISSO (7).pdf",
+    "size": 1134297
+   },
+   {
+    "name": "2-VODAFONE PDA MOBILE.pdf",
+    "size": 1849306
+   },
+   {
+    "name": "3- VODAFONE PDA FISSO SME (7). pdf.pdf",
+    "size": 1532364
+   },
+   {
+    "name": "3- VODAFONE PDA IOT.pdf",
+    "size": 763468
+   },
+   {
+    "name": "3- VODAFONE PDA ONE BUSINESS.pdf",
+    "size": 1807812
+   },
+   {
+    "name": "4 - VODAFONE MODULO SUBENTRO_MNP SU SIM ATTIVA.pdf",
+    "size": 143187
+   },
+   {
+    "name": "5 - VODAFONE DICHIARAZIONE CESSIONE SIM RICARICABILI PROVENIENTI DA VODAFONE.pdf",
+    "size": 118444
+   },
+   {
+    "name": "5 - VODAFONE MODULO SUBENTRO.pdf",
+    "size": 844310
+   },
+   {
+    "name": "6 - VODAFONE - LETTERA DI ACCOLLO MOROSITÀ SUBENTRO.pdf",
+    "size": 53764
+   },
+   {
+    "name": "6 - VODAFONE CESSIONE SIM MNP DA PERSONA FISICA.pdf",
+    "size": 89314
+   },
+   {
+    "name": "7 - VODAFONE CESSIONE SIM MNP PERSONA GIURIDICA.pdf",
+    "size": 184396
+   },
+   {
+    "name": "8 - VODAFONE MODULO RATA TEL (3).pdf",
+    "size": 177864
+   },
+   {
+    "name": "Dichiarazione_di_cessione_per_sim_ricaricabili_(E53)(4).pdf",
+    "size": 199596
+   },
+   {
+    "name": "Editabile_PdA_Unica_Business v9_2026 (E110)_V2(4).pdf",
+    "size": 5742623
+   },
+   {
+    "name": "Mnp -  Autodichiarazione del cedente_Dicembre 2024(1) (1).docx",
+    "size": 30431
+   },
+   {
+    "name": "Richiesta Portabilità – MNP (E14)_1-2026_edit.pdf",
+    "size": 935316
+   }
+  ],
+  "telefonia/VODAFONE/OFFERTE/BUSINESS": [
+   {
+    "name": "1-VODAFONE PROMO DEL MESE (2).pdf",
+    "size": 1473260
+   },
+   {
+    "name": "Listino iPhone 18 VODAFONE.xlsx",
+    "size": 25215
+   },
+   {
+    "name": "Listino_Noleggio_SoHo-SME_20260420.xlsx",
+    "size": 53606
+   },
+   {
+    "name": "LISTINO_SoHo_SME_23 Settembre 2026_V2(1).xlsx",
+    "size": 7029559
+   },
+   {
+    "name": "LISTINO_SoHo_SME_iPhone 18.xlsx",
+    "size": 971898
+   },
+   {
+    "name": "Promo Ottobre 2026 SOHO SME Agenzie.pdf",
+    "size": 3196170
+   },
+   {
+    "name": "TIT in cloud - FDV.pdf",
+    "size": 271636
+   },
+   {
+    "name": "VODAFONE LISTINO TERMINALI.xlsx",
+    "size": 50262
+   }
+  ],
+  "telefonia/VODAFONE/PROCEDURE": [
+   {
+    "name": "4 - VODAFONE QR CODE PER CONVALIDA OTP.pdf",
+    "size": 86370
+   },
+   {
+    "name": "Link copertura VODAFONE.docx",
+    "size": 13541
+   },
+   {
+    "name": "Vademecum MNP - Dicembre 24.pdf",
+    "size": 1030673
+   },
+   {
+    "name": "VADEMECUM VODAFONE BUSINESS 12.02.pdf",
+    "size": 878918
+   }
+  ],
+  "telefonia/WIND/MODULISTICA": [
+   {
+    "name": "Modulo_SVO+SME+Mobile_GA_aggiornato.xlsx",
+    "size": 45510
+   },
+   {
+    "name": "WIND - ALLEGATO TECNICO UNICO.pdf",
+    "size": 1098687
+   },
+   {
+    "name": "WIND - MODULO RIMBORSO PENALI.pdf",
+    "size": 48081
+   },
+   {
+    "name": "WIND MODULO DELEGA MNP.pdf",
+    "size": 262755
+   },
+   {
+    "name": "WIND PDA FISSO.pdf",
+    "size": 411800
+   },
+   {
+    "name": "WIND PDA MOBILE.pdf",
+    "size": 308511
+   },
+   {
+    "name": "WIND PDC UNICA.pdf",
+    "size": 571858
+   }
+  ],
+  "telefonia/WIND/OFFERTE/BUSINESS": [
+   {
+    "name": "Promo Underground.pdf",
+    "size": 213136
+   },
+   {
+    "name": "PROMOTerminali_1+ottobre..xlsx",
+    "size": 549523
+   },
+   {
+    "name": "SME+Book_1+ottobre+2026.pdf",
+    "size": 23877700
+   },
+   {
+    "name": "WIND LISTINO TERMINALI.xlsx",
+    "size": 549953
+   },
+   {
+    "name": "WIND OFFERTA FISSO.pdf",
+    "size": 3533747
+   }
+  ],
+  "telefonia/WIND/OFFERTE/RESIDENZIALE": [
+   {
+    "name": "Comuni Voucher Open Fiber.xlsx",
+    "size": 71679
+   },
+   {
+    "name": "Flyer_A5_OPEN_FIBER_Super_Fibra_W3OL_Maggio2026_canali digitali.pdf",
+    "size": 2207854
+   },
+   {
+    "name": "Offerta Commerciale &Netflix CON PUBBLICITA_ GA.pptx",
+    "size": 1302989
+   },
+   {
+    "name": "Offerta Commerciale &Netflix con pubblicità Fisso-26,49x12MESI- CB-01-ottobre-2026.pptx",
+    "size": 56550
+   },
+   {
+    "name": "Offerta Commerciale &Netflix con pubblicità Fisso-31,49- CB-01-ottobre-2026.pptx",
+    "size": 56457
+   },
+   {
+    "name": "Offerta Commerciale &Netflix con pubblicità GA+SIM.pptx",
+    "size": 1280811
+   },
+   {
+    "name": "Offerta Commerciale &Netflix GA+SIM.pptx",
+    "size": 1324571
+   },
+   {
+    "name": "Offerta Commerciale &Netflix GA.pptx",
+    "size": 1307099
+   },
+   {
+    "name": "Offerta Commerciale 29,99 GA.pptx",
+    "size": 1320340
+   },
+   {
+    "name": "Offerta Commerciale Fisso-24,99-CB-01-ottobre-2026.pptx",
+    "size": 56516
+   },
+   {
+    "name": "Offerta Commerciale GA+SIM.pptx",
+    "size": 1279377
+   },
+   {
+    "name": "Offerta Commerciale SPECIAL & NETFLIX con pubblicità-26,49x12mesi_01_OTTOBRE2026.pptx",
+    "size": 71126
+   },
+   {
+    "name": "Offerta Commerciale SPECIAL -19,99x12mesi_01_OTTOBRE_2026.pptx",
+    "size": 70727
+   }
+  ],
+  "telefonia/WIND/PROCEDURE": [
+   {
+    "name": "IMPORTANTE WIND - PROCEDURA OTP (4).pdf",
+    "size": 962600
+   },
+   {
+    "name": "Procedura+Ampliamenti_2026.10.07_v2.docx",
+    "size": 180027
+   },
+   {
+    "name": "VADEMECUM WIND BUSINESS 22.12.pdf",
+    "size": 1117148
+   },
+   {
+    "name": "WIND FWA APP COPERTURA NPERF (1).pdf",
+    "size": 850813
    }
   ]
  }
