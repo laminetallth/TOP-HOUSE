@@ -200,18 +200,31 @@
   }
   // 0.185 -> "0,185"; 144 -> "144"
   const itNum = (v, min = 2) => Number(v).toLocaleString('it-IT', { minimumFractionDigits: Number.isInteger(v) ? 0 : min, maximumFractionDigits: 6 });
+  // Etichette prezzo: "Fisso luce 0,2038 €/kWh · gas 0,858 €/Smc incluso sconti", "Variabile · spread …", "Ibrida · …", "CCV 144 €/anno"
   function priceBadges(info) {
     if (!info) return '';
-    const unit = info.fornitura === 'gas' ? '€/Smc' : '€/kWh';
+    const unit = f => (f === 'gas' ? '€/Smc' : '€/kWh');
+    const voci = (info.prezzi || []).filter(v => v.prezzo != null || v.spread != null);
+    const due = voci.length > 1;
+    const etichetta = v => (due ? `${v.f} ` : '');
+    const sconto = voci.some(v => v.scontato != null || v.spread_scontato != null);
+    const fissi = voci.filter(v => v.prezzo != null).map(v => `${etichetta(v)}${itNum(v.scontato ?? v.prezzo)} ${unit(v.f)}`);
+    const spread = voci.filter(v => v.spread != null).map(v => `${etichetta(v)}${itNum(v.spread_scontato ?? v.spread)} ${unit(v.f)}`);
+    const tip = voci.map(v => [v.testo, v.testo_spread, v.testo_sconto].filter(Boolean).join(' · ')).join(' | ');
     const out = [];
+    const extra = sconto ? ' incluso sconti' : '';
     if (info.tipo === 'fisso') {
-      const p = info.prezzo_scontato ?? info.prezzo;
-      const tip = info.testo_sconto || info.testo_prezzo || '';
-      out.push(`<span class="th-tag th-tag--fix" title="${esc(tip)}"><i class="fa-solid fa-lock" aria-hidden="true"></i>Fisso${p != null ? ` ${itNum(p)} ${unit}` : ''}${info.prezzo_scontato != null ? ' incluso sconti' : ''}</span>`);
+      out.push(`<span class="th-tag th-tag--fix" title="${esc(tip)}"><i class="fa-solid fa-lock" aria-hidden="true"></i>Fisso${fissi.length ? ` ${fissi.join(' · ')}` : ''}${fissi.length ? extra : ''}</span>`);
     } else if (info.tipo === 'variabile') {
-      out.push(`<span class="th-tag th-tag--var" title="${esc(info.testo_prezzo || '')}"><i class="fa-solid fa-chart-line" aria-hidden="true"></i>Variabile${info.spread != null ? ` · spread ${itNum(info.spread)} ${unit}` : ''}</span>`);
+      out.push(`<span class="th-tag th-tag--var" title="${esc(tip)}"><i class="fa-solid fa-chart-line" aria-hidden="true"></i>Variabile${spread.length ? ` · spread ${spread.join(' · ')}` : ''}${spread.length ? extra : ''}</span>`);
+    } else if (info.tipo === 'ibrida') {
+      const parti = [fissi.length ? `fisso ${fissi.join(' · ')}` : '', spread.length ? `variabile spread ${spread.join(' · ')}` : ''].filter(Boolean);
+      out.push(`<span class="th-tag th-tag--mix" title="${esc(tip)}"><i class="fa-solid fa-code-merge" aria-hidden="true"></i>Ibrida${parti.length ? ` · ${parti.join(' + ')}` : ''}${parti.length ? extra : ''}</span>`);
     }
-    if (info.ccv != null) out.push(`<span class="th-tag" title="${esc(info.testo_ccv || '')}">CCV ${itNum(info.ccv, 0)} €/anno</span>`);
+    if (info.ccv != null) {
+      const c = info.ccv_scontata ?? info.ccv;
+      out.push(`<span class="th-tag" title="${esc([info.testo_ccv, info.testo_sconto_rid].filter(Boolean).join(' · '))}">CCV ${itNum(c, 0)} €/anno${info.ccv_scontata != null ? ' incluso sconti' : ''}</span>`);
+    }
     return out.join('');
   }
 

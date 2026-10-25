@@ -9,7 +9,7 @@ import json
 import os
 import re
 
-VERSION = "20261025e"  # cambia per forzare i browser a scaricare CSS/JS nuovi
+VERSION = "20261026a"  # cambia per forzare i browser a scaricare CSS/JS nuovi
 
 # ----------------------------------------------------------------------------- struttura
 GESTORI = [  # slug, nome visualizzato

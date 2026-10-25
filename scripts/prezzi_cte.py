@@ -26,7 +26,7 @@ def num(s):
 
 
 def pulisci(txt):
-    txt = unicodedata.normalize("NFC", txt).replace("’", "'").replace("\xa0", " ")
+    txt = unicodedata.normalize("NFC", txt).replace("’", "'").replace("\xa0", " ").replace("\u2044", "/")
     txt = re.sub(r"[ \t]+", " ", txt)
     return txt
 
@@ -113,48 +113,127 @@ def prezzo_scontato(txt, forn):
     return min(vals) if vals else None
 
 
+def sconto_rid(txt):
+    """Sconti legati al pagamento con RID/SDD/domiciliazione. -> lista di (tipo, valore, frase)
+    tipo: "anno" (€/anno da togliere alla CCV), "pct" (% sul prezzo), "pct_ccv" (% sulla CCV), "unit" (€/kWh o €/Smc)."""
+    out = []
+    t = re.sub(r"\s+", " ", txt.replace("\u2044", "/"))
+    for m in re.finditer(r"[^.]{0,220}(?:\bRID\b|addebito\s+(?:diretto|automatico)|\bSDD\b|domiciliazion\w*)[^.]{0,220}", t, re.I):
+        f = m.group(0)
+        if not re.search(r"scont|riduzion|bonus", f, re.I) or re.search(r"una\s+tantum|non\s+(?:sono\s+previsti|include)\s+(?:sconti|bonus)(?![^.]*sotto)", f, re.I):
+            continue
+        frase = " ".join(f.split())[:160]
+        k = re.search(r"scont\w*|riduzion\w*|bonus", f, re.I)
+        f = f[k.start():]  # gli importi devono venire dopo la parola "sconto"
+        e = re.search(r"(?:€|euro)\s*" + NUM + r"\s*(?:/|al|all'|a)\s*(mese|anno)|" + NUM + r"\s*(?:€|euro)\s*(?:/|al|all'|a|per)\s*(mese|anno)", f, re.I)
+        if e:
+            v = num(e.group(1) or e.group(3)); per = (e.group(2) or e.group(4)).lower()
+            if v and 0 < v < 200:
+                out.append(("anno", round(v * 12 if per == "mese" else v, 2), frase))
+                continue
+        pc = re.search(NUM + r"\s*%\s*,?\s*(?:sul|del|della|sulla)\s+(corrispettiv\w*\s+(?:di\s+)?commercializzazione|ccv|quota\s+fissa|prezzo|corrispettivo|componente)", f, re.I)
+        if pc:
+            v = num(pc.group(1))
+            if v and 0 < v <= 50:
+                out.append(("pct_ccv" if re.search(r"commercializz|ccv|quota", pc.group(2), re.I) else "pct", v, frase))
+                continue
+        u = re.search(NUM + r"\s*(?:€|euro)\s*/\s*(kwh|s?mc)", f, re.I)
+        if u and not re.search(r"scontat|determina", f, re.I):
+            v = num(u.group(1))
+            if v and v < 0.2:
+                out.append(("unit", v, frase))
+    return out
+
+
+def tipo_offerta(nome, t):
+    var_nome, fix_nome = bool(VAR_NOME.search(nome)), bool(FIX_NOME.search(nome))
+    var_txt = bool(re.search(r"(?:PUN|PSV)[^\n]{0,30}\+", t, re.I))  # "rispetto a un'offerta a prezzo variabile" è una frase standard: non conta
+    fix_txt = bool(re.search(r"prezzo\s+fisso|fisso\s+e\s+invariabil|fissi\s+e\s+invariabil|prezzo\s+bloccato|offerta\s+a\s+prezzo\s+fisso|fisso\s+per\s+\d+\s+mesi", t, re.I))
+    # offerte ibride: parte dei consumi a prezzo fisso e parte variabile (es. Hera Hybrid)
+    if re.search(r"HYBRID|IBRID", nome, re.I) or re.search(r"\bibrid[ao]\b|offerta\s+hybrid", t, re.I) \
+            or (re.search(r"prezzo\s+fisso\s*:", t, re.I) and re.search(r"prezzo\s+variabile\s*:", t, re.I)):
+        return "ibrida"
+    esplicito = re.search(r"(?:^|\n|\.\s)\s*offerta\s+a\s+prezzo\s+(fisso|variabile)\b", t, re.I)
+    if esplicito:
+        return "fisso" if esplicito.group(1).lower() == "fisso" else "variabile"
+    if var_nome != fix_nome:
+        return "variabile" if var_nome else "fisso"
+    if var_txt != fix_txt:
+        return "variabile" if var_txt else "fisso"
+    return None
+
+
+def forniture(nome, t):
+    """Forniture della CTE: dal nome se è chiaro, altrimenti dal testo (le CTE luce+gas come Plenitude le hanno entrambe)."""
+    n = nome.upper()
+    luce = bool(re.search(r"LUCE|\bEE\b|_EE_|ENERGIA[ _]ELETTRICA|POWER|\bELE\b|ELETTRIC", n))
+    gas = bool(re.search(r"GAS|\bSMC\b", n))
+    if luce != gas:
+        return ["luce"] if luce else ["gas"]
+    out = []
+    if re.search(r"\d\s*" + U_EN, t, re.I):
+        out.append("luce")
+    if re.search(r"\d\s*" + U_GAS, t, re.I):
+        out.append("gas")
+    return out
+
+
+def primo(fun, testi, forn):
+    for tt in testi:
+        r = fun(tt, forn)
+        if r:
+            return r
+    return None
+
+
 def analizza(nome, txt, txt_layout=""):
-    """-> dict con tipo, prezzo/spread, unita, ccv e le frasi da cui sono presi (per controllo).
+    """-> dict: tipo (fisso/variabile/ibrida), prezzi per fornitura (luce/gas) con sconti RID inclusi, CCV annua.
     txt_layout (pdftotext -layout) tiene le tabelle su una riga: si prova prima quello."""
     t = pulisci(txt)
     testi = [pulisci(txt_layout)] if txt_layout else []
     testi.append(re.sub(r"\s*\n\s*", " ", t))
-    forn = fornitura(nome, t)
     out = {}
-    var_nome, fix_nome = bool(VAR_NOME.search(nome)), bool(FIX_NOME.search(nome))
-    var_txt = bool(re.search(r"(?:PUN|PSV)[^\n]{0,30}\+", t, re.I))  # "rispetto a un'offerta a prezzo variabile" è una frase standard: non conta
-    fix_txt = bool(re.search(r"prezzo\s+fisso|fisso\s+e\s+invariabil|fissi\s+e\s+invariabil|prezzo\s+bloccato|offerta\s+a\s+prezzo\s+fisso", t, re.I))
-    esplicito = re.search(r"(?:^|\n|\.\s)\s*offerta\s+a\s+prezzo\s+(fisso|variabile)\s*[.:]", t, re.I)
-    if esplicito:
-        tipo = "fisso" if esplicito.group(1).lower() == "fisso" else "variabile"
-    elif var_nome and not fix_nome:
-        tipo = "variabile"
-    elif fix_nome and not var_nome:
-        tipo = "fisso"
-    elif var_txt and not fix_txt:
-        tipo = "variabile"
-    elif fix_txt and not var_txt:
-        tipo = "fisso"
-    else:
-        tipo = None
+    tipo = tipo_offerta(nome, t)
     if tipo:
         out["tipo"] = tipo
-    if forn:
-        out["fornitura"] = forn
-        for tt in testi:
-            r = spread(tt, forn) if tipo == "variabile" else prezzo_fisso(tt, forn) if tipo == "fisso" else None
-            if r:
-                out["spread" if tipo == "variabile" else "prezzo"], out["testo_prezzo"] = r
+    sconti = sconto_rid(t)
+    prezzi = []
+    for forn in forniture(nome, t):
+        voce = {"f": forn}
+        if tipo in ("fisso", "ibrida"):
+            p = primo(prezzo_fisso, testi, forn)
+            if p:
+                voce["prezzo"], voce["testo"] = p
+                sc = primo(prezzo_scontato, testi, forn)
+                if sc and sc[0] < p[0]:
+                    voce["scontato"], voce["testo_sconto"] = sc
+                else:
+                    for k, v, frase in sconti:
+                        # sconto % o €/unità per RID/SDD: lo applico al prezzo (se la frase non riguarda l'altra fornitura)
+                        altra = "gas" if forn == "luce" else "luce"
+                        if k in ("pct", "unit") and not re.search(r"\b" + altra + r"\b", frase, re.I):
+                            voce["scontato"] = round(p[0] * (1 - v / 100) if k == "pct" else p[0] - v, 5)
+                            voce["testo_sconto"] = frase
+                            break
+        if tipo in ("variabile", "ibrida"):
+            s_ = primo(spread, testi, forn)
+            if s_:
+                voce["spread"], voce["testo_spread"] = s_
+                for k, v, frase in sconti:
+                    if k == "unit" and v < s_[0]:
+                        voce["spread_scontato"], voce["testo_sconto"] = round(s_[0] - v, 5), frase
+                        break
+        prezzi.append(voce)
+    if prezzi:
+        out["prezzi"] = prezzi
+    c = primo(lambda tt, _f: ccv(tt), testi, None)
+    if c:
+        out["ccv"], out["testo_ccv"] = c
+        for k, v, frase in sconti:
+            if k == "anno" and v < c[0]:
+                out["ccv_scontata"], out["testo_sconto_rid"] = round(c[0] - v, 2), frase
                 break
-        if out.get("tipo") == "fisso" and "prezzo" in out:
-            for tt in testi:
-                sc = prezzo_scontato(tt, forn)
-                if sc and sc[0] < out["prezzo"]:
-                    out["prezzo_scontato"], out["testo_sconto"] = sc
-                    break
-    for tt in testi:
-        c = ccv(tt)
-        if c:
-            out["ccv"], out["testo_ccv"] = c
-            break
+            if k == "pct_ccv":
+                out["ccv_scontata"], out["testo_sconto_rid"] = round(c[0] * (1 - v / 100), 2), frase
+                break
     return out

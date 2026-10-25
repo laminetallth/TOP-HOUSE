@@ -51,7 +51,7 @@ def to_date(groups):
 
 def testo(path, layout=False):
     try:
-        cmd = ["pdftotext", "-l", "3"] + (["-layout"] if layout else []) + [path, "-"]
+        cmd = ["pdftotext", "-l", "8" if layout else "3"] + (["-layout"] if layout else []) + [path, "-"]
         return subprocess.run(cmd, capture_output=True, text=True, timeout=30).stdout
     except (FileNotFoundError, subprocess.TimeoutExpired):
         try:
@@ -59,6 +59,13 @@ def testo(path, layout=False):
             return "\n".join((p.extract_text() or "") for p in PdfReader(path).pages[:3])
         except Exception:
             return ""
+
+
+def testo_pagine(path, da, a):
+    try:
+        return subprocess.run(["pdftotext", "-f", str(da), "-l", str(a), path, "-"], capture_output=True, text=True, timeout=30).stdout
+    except (FileNotFoundError, subprocess.TimeoutExpired):
+        return ""
 
 
 def scadenza(txt):
@@ -134,7 +141,8 @@ def main():
                 if trovato:
                     info = {"scade": trovato[1].isoformat(), "testo": trovato[2]}
                 # tipo di prezzo (fisso/variabile), prezzo o spread, CCV annua
-                info.update(prezzi_cte.analizza(f, txt, testo(os.path.join(d, f), layout=True)))
+                lay = testo(os.path.join(d, f), layout=True)
+                info.update(prezzi_cte.analizza(f, txt + "\n" + testo_pagine(os.path.join(d, f), 4, 8), lay))
                 if info:
                     risultati[rel] = info
                 if re.search(r"vulnerabilit|confrontabilit|scheda sintetica|allegato tecnico|attenzione per un corretto", f, re.I):
