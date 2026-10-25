@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-26",
+ "aggiornato": "2026-10-25",
  "gestori": {
   "a2a": {
    "offerte": {
@@ -182,12 +182,13 @@
   },
   "fastweb-energia": {
    "offerte": {
-    "business-gas": 1,
-    "business-luce": 1,
-    "residenziale-gas": 1,
-    "residenziale-luce": 2
+    "business-gas": 3,
+    "business-luce": 3,
+    "condominio-luce": 2,
+    "residenziale-gas": 2,
+    "residenziale-luce": 5
    },
-   "prossima_scadenza": "2026-10-31",
+   "prossima_scadenza": "2026-10-25",
    "partner": [
     "PromUp"
    ]
