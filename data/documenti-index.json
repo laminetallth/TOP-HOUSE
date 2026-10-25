@@ -6,6 +6,108 @@
     "size": 86813
    }
   ],
+  "documenti/a2a/cte/business": [
+   {
+    "name": "A2A Full Gas Business.pdf",
+    "size": 199587
+   },
+   {
+    "name": "A2A Full Luce Business.pdf",
+    "size": 207570
+   },
+   {
+    "name": "Prezzo Sicuro Gas Business.pdf",
+    "size": 133298
+   },
+   {
+    "name": "Prezzo Sicuro Verde Business.pdf",
+    "size": 139687
+   },
+   {
+    "name": "Smart Business - Gas -.pdf",
+    "size": 139389
+   },
+   {
+    "name": "Smart Business - Luce.pdf",
+    "size": 140161
+   },
+   {
+    "name": "Smart Business+ Gas.pdf",
+    "size": 205680
+   },
+   {
+    "name": "Smart Business+ Luce.pdf",
+    "size": 207381
+   }
+  ],
+  "documenti/a2a/cte/residenziale": [
+   {
+    "name": "A2A Start Gas.pdf",
+    "size": 140854
+   },
+   {
+    "name": "A2A Start Luce STG.pdf",
+    "size": 199219
+   },
+   {
+    "name": "Esclusiva2a - Gas.pdf",
+    "size": 138468
+   },
+   {
+    "name": "Esclusiva2a Luce.pdf",
+    "size": 197688
+   },
+   {
+    "name": "Noi2.pdf",
+    "size": 204898
+   },
+   {
+    "name": "Premia2a - Gas.pdf",
+    "size": 133348
+   },
+   {
+    "name": "Premia2a Luce.pdf",
+    "size": 136509
+   },
+   {
+    "name": "Smart Casa Gas.pdf",
+    "size": 143253
+   },
+   {
+    "name": "Smart Casa Luce.pdf",
+    "size": 200357
+   },
+   {
+    "name": "Smart Casa+ Gas.pdf",
+    "size": 207523
+   },
+   {
+    "name": "Smart Casa+ Luce.pdf",
+    "size": 265877
+   },
+   {
+    "name": "Start casa Luce.pdf",
+    "size": 218635
+   }
+  ],
+  "documenti/a2a/modulistica": [
+   {
+    "name": "atto notorio.pdf",
+    "size": 33588
+   },
+   {
+    "name": "decreto casa.pdf",
+    "size": 33355
+   },
+   {
+    "name": "FAC SIMILE ATTO NOTORIO.pdf",
+    "size": 96598
+   },
+   {
+    "name": "FAC SIMILE DECRETO CASA 2_OK.pdf",
+    "size": 120736
+   }
+  ],
   "documenti/acea/procedimenti": [
    {
     "name": "video-formazione-caricamento-contratti-acea-1784198136766.json",
@@ -14,29 +116,267 @@
     "url": "https://drive.google.com/file/d/1nmTJqmyaDz7b8J8yRHeB-aARlwIwL7Bq/view?usp=drive_link"
    }
   ],
+  "documenti/agn-energia/cte/business": [
+   {
+    "name": "AGN_CONDOMINIO_BRONZO_001488ESVFL01XXAGNECONDOBRONZO26.pdf",
+    "size": 611924
+   },
+   {
+    "name": "AGN_CONDOMINIO_BRONZO_001488GSVML01XXAGNGCONDOBRONZO26.pdf",
+    "size": 608076
+   },
+   {
+    "name": "AGN_CONDOMINIO_DIAMANTE_001488ESVFL01XXAGNECONDODIAMANTE.pdf",
+    "size": 611876
+   },
+   {
+    "name": "AGN_CONDOMINIO_DIAMANTE_001488GSVML01XXAGNGCONDODIAMANTE.pdf",
+    "size": 608059
+   },
+   {
+    "name": "AGN_CONDOMINIO_GOLD_001488ESVFL01XXAGNECONDOGOLD2026.pdf",
+    "size": 611931
+   },
+   {
+    "name": "AGN_CONDOMINIO_GOLD_001488GSVML01XXAGNGCONDOGOLD2026.pdf",
+    "size": 608076
+   },
+   {
+    "name": "AGN_CONDOMINIO_PLATINO_001488ESVFL01XXAGNECONDOPLAT2026.pdf",
+    "size": 611931
+   },
+   {
+    "name": "AGN_CONDOMINIO_PLATINO_001488GSVML01XXAGNGCONDOPLAT2026.pdf",
+    "size": 608085
+   },
+   {
+    "name": "AGN_CONDOMINIO_SEMPLICE_001488ESVFL01XXAGNECONDOSEMPLICE.pdf",
+    "size": 611893
+   },
+   {
+    "name": "AGN_CONDOMINIO_SEMPLICE_001488GSVML01XXAGNGCONDOSEMPLICE.pdf",
+    "size": 608080
+   },
+   {
+    "name": "AGN_CONDOMINIO_SILVER_001488ESVFL01XXAGNECONDOSILVER26.pdf",
+    "size": 611951
+   },
+   {
+    "name": "AGN_CONDOMINIO_SILVER_001488GSVML01XXAGNGCONDOSILVER26.pdf",
+    "size": 608095
+   },
+   {
+    "name": "AGN_CONDOMINIO_SUPER_001488ESVFL01XXAGNECONDOSUPER026.pdf",
+    "size": 611922
+   },
+   {
+    "name": "AGN_CONDOMINIO_SUPER_001488GSVML01XXAGNGCONDOSUPER026.pdf",
+    "size": 608086
+   },
+   {
+    "name": "CODICI PRODOTTO GAS PSV OTTOBRE 2026 (1).xlsx",
+    "size": 19755
+   },
+   {
+    "name": "CODICI PRODOTTO POWER PUN OTTOBRE 2026 (1).xlsx",
+    "size": 17143
+   },
+   {
+    "name": "Power MGP Prices (average) Grid 20260930.xlsx",
+    "size": 16679
+   }
+  ],
+  "documenti/agn-energia/modulistica": [
+   {
+    "name": "AGN_Contratto_PowerGas_Condominio_1604_01stampa (1).pdf",
+    "size": 765604
+   },
+   {
+    "name": "ee_richiesta_agevolazione_iva_0.pdf",
+    "size": 483799
+   },
+   {
+    "name": "gas_agevolazione_iva_0.pdf",
+    "size": 448307
+   },
+   {
+    "name": "gas_richiesta_accise_ridotte_0.pdf",
+    "size": 574747
+   },
+   {
+    "name": "template ee massivo (2).xls",
+    "size": 51712
+   },
+   {
+    "name": "template gas massivo (2).xls",
+    "size": 53248
+   }
+  ],
   "documenti/alperia/cte/business": [
    {
+    "name": "CTE_Alperia Gas Condoindex Latemar_ITA_.pdf",
+    "size": 82537
+   },
+   {
+    "name": "CTE_Alperia Gas Condoindex Sciliar_ITA_.pdf",
+    "size": 82256
+   },
+   {
+    "name": "CTE_Alperia Gas Index Braies_ITA_.pdf",
+    "size": 83072
+   },
+   {
+    "name": "CTE_Alperia Gas Index Caldaro_ITA_.pdf",
+    "size": 82367
+   },
+   {
+    "name": "CTE_Alperia Gas Index Carezza_ITA_.pdf",
+    "size": 82819
+   },
+   {
+    "name": "CTE_Alperia Gas Index Neves_ITA_.pdf",
+    "size": 82886
+   },
+   {
+    "name": "CTE_Alperia Gas Index Vernago_ITA_.pdf",
+    "size": 82835
+   },
+   {
+    "name": "CTE_Alperia Power Condoindex Catinaccio_ITA_.pdf",
+    "size": 86334
+   },
+   {
+    "name": "CTE_Alperia Power Condoindex Latemar_ITA_.pdf",
+    "size": 86435
+   },
+   {
+    "name": "CTE_Alperia Power Condoindex Ortles_ITA_.pdf",
+    "size": 86333
+   },
+   {
+    "name": "CTE_Alperia Power Condoindex Sciliar_ITA_.pdf",
+    "size": 86330
+   },
+   {
     "name": "CTE_Alperia Power Index Braies_ITA_.pdf",
-    "size": 86832
+    "size": 86830
    },
    {
     "name": "CTE_Alperia Power Index Caldaro_ITA_.pdf",
-    "size": 86600
+    "size": 86598
    },
    {
     "name": "CTE_Alperia Power Index Carezza_ITA_.pdf",
-    "size": 86626
+    "size": 86628
    },
    {
     "name": "CTE_Alperia Power Index Neves_ITA_.pdf",
-    "size": 87218
+    "size": 87207
    },
    {
     "name": "CTE_Alperia Power Index Vernago_ITA_.pdf",
-    "size": 86736
+    "size": 86730
+   }
+  ],
+  "documenti/alperia/cte/residenziale": [
+   {
+    "name": "CTE_Alperia Gas Home Clear_ITA_.pdf",
+    "size": 80443
+   },
+   {
+    "name": "CTE_Alperia Gas Home Digital_ITA_.pdf",
+    "size": 81124
+   },
+   {
+    "name": "CTE_Alperia Gas Home Premium_ITA_.pdf",
+    "size": 80442
+   },
+   {
+    "name": "CTE_Alperia Gas Home Pro_ITA_.pdf",
+    "size": 80643
+   },
+   {
+    "name": "CTE_Alperia Gas Home Pure_ITA_.pdf",
+    "size": 80541
+   },
+   {
+    "name": "CTE_Alperia Gas Home Standard_ITA_.pdf",
+    "size": 80321
+   },
+   {
+    "name": "CTE_Alperia Gas Home Start_ITA_.pdf",
+    "size": 80544
+   },
+   {
+    "name": "CTE_Alperia Gas Smile Clear_ITA_.pdf",
+    "size": 80291
+   },
+   {
+    "name": "CTE_Alperia Home Clear_ITA_.pdf",
+    "size": 83273
+   },
+   {
+    "name": "CTE_Alperia Home Digital_ITA_.pdf",
+    "size": 83822
+   },
+   {
+    "name": "CTE_Alperia Home Plus Fix_ITA_.pdf",
+    "size": 382026
+   },
+   {
+    "name": "CTE_Alperia Home Pro_ITA_.pdf",
+    "size": 83459
+   },
+   {
+    "name": "CTE_Alperia Home Pure_ITA_.pdf",
+    "size": 83410
+   },
+   {
+    "name": "CTE_Alperia Home Standard_ITA_.pdf",
+    "size": 83670
+   },
+   {
+    "name": "CTE_Alperia Home Start_ITA_.pdf",
+    "size": 83659
+   },
+   {
+    "name": "CTE_Alperia Smile Clear_ITA_.pdf",
+    "size": 80493
+   },
+   {
+    "name": "CTE_Alperia Smile Premium_ITA_.pdf",
+    "size": 80767
+   },
+   {
+    "name": "CTE_Alperia Smile Safety_ITA_.pdf",
+    "size": 81083
+   },
+   {
+    "name": "CTE_Alperia Smile Standard_ITA_.pdf",
+    "size": 80559
+   },
+   {
+    "name": "Domestico_EE_GAS_DichiarazioneSostitutivaCertificazione_Art46_edit.pdf",
+    "size": 205245
    }
   ],
   "documenti/alperia/modulistica": [
+   {
+    "name": "Allegato H40.pdf",
+    "size": 29806
+   },
+   {
+    "name": "Allegato I40.pdf",
+    "size": 110073
+   },
+   {
+    "name": "ALPERIA - Modulo di richiesta di sospensione per 6 mesi dei termini di pagamento e della disciplina della morosità.pdf",
+    "size": 125313
+   },
+   {
+    "name": "CONDIZIONI GENERALI DI FORNITURA.pdf",
+    "size": 1806463
+   },
    {
     "name": "E_A-0009-G-0526 PDA Business ITA.pdf",
     "size": 200588
@@ -44,9 +384,309 @@
    {
     "name": "E_A-0018-G-0526 PDA Retail ITA.pdf",
     "size": 196007
+   },
+   {
+    "name": "E_P-0061-C-0825 DISDETTA CONTRATTO DI FORNITURA PER IL DECESSO DELL",
+    "size": 34839
+   },
+   {
+    "name": "E_P-0063-D-0825 MODULO DATI CATASTALI RETAIL ITA.pdf",
+    "size": 506443
+   },
+   {
+    "name": "E_P-0065-D-0825 MODULO SDD - AUTORIZZAZIONE PERMANENTE DI ADDEBITO IN CC RETAIL ITA.pdf",
+    "size": 505183
+   },
+   {
+    "name": "E_P-0067-D-1025 Verifica Tensione fornitura ITA.pdf",
+    "size": 38275
+   },
+   {
+    "name": "E_P-0069-C-0825 VERIFICA PRESSIONE FORNITURA GAS ITA.pdf",
+    "size": 30854
+   },
+   {
+    "name": "E_P-0071-D-0825 SPOSTAMENTO GRUPPO DI MISURA ELE ITA.pdf",
+    "size": 35076
+   },
+   {
+    "name": "E_P-0077-C-0825 DICH SOST CERTIFICAZIONE RESIDENZA ANAGRAFICA ITA.pdf",
+    "size": 30369
+   },
+   {
+    "name": "E_P-0081-C-0825 MODULO SDD - REVOCA AUT PERM ADDEBITO IN CC ITA.pdf",
+    "size": 38628
+   },
+   {
+    "name": "E_P-0083-C-0825 COMUNICAZIONE VARIAZIONE RAG SOC ITA.pdf",
+    "size": 30869
+   },
+   {
+    "name": "E_P-0087-F-1225-Modulo-per-la-presentazione-di-un-reclamo-Retail-ITA.pdf",
+    "size": 524147
+   },
+   {
+    "name": "E_P-0091-C-0825 DICH ACQUISIZIONE COD DESTINATARIO-PEC FATT ELETTRONICA ITA.pdf",
+    "size": 29851
+   },
+   {
+    "name": "E_P-0095-D-0825 RICHIESTA DI VERIFICA GRUPPO DI MISURA ELE ITA.pdf",
+    "size": 30913
+   },
+   {
+    "name": "E_P-0097-C-0825 RICH VAR RECAPITO BOLLETTE ITA.pdf",
+    "size": 48173
+   },
+   {
+    "name": "E_P-0099-C-0825 RICH ISCRIZ FORNITURA ELENCHI CLIENTI NON DISALIMENTABILI ELE ITA.pdf",
+    "size": 38629
+   },
+   {
+    "name": "E_P-0101-C-0825 RICHIESTA DISDETTA CNTR ELE ITA.pdf",
+    "size": 34765
+   },
+   {
+    "name": "E_P-0103-C-0825 RICHIESTA DI VERIFICA GRUPPO DI MISURA GAS ITA.pdf",
+    "size": 30885
+   },
+   {
+    "name": "E_P-0105-C-0825 RICHIESTA DISDETTA CNTR GAS ITA.pdf",
+    "size": 35551
+   },
+   {
+    "name": "E_P-0164-E-1125 MODULO MULTISITO ELE ITA (3).pdf",
+    "size": 548788
+   },
+   {
+    "name": "E_P-0165-E-1125 MODULO MULTISITO GAS ITA.pdf",
+    "size": 115348
+   },
+   {
+    "name": "E_P-0168-B-0825 MODULO DATI CATASTALI BUSINESS ITA.pdf",
+    "size": 508771
+   },
+   {
+    "name": "E_P-0172-B-0825 MODULO PER LA PRESENTAZIONE DI UN RECLAMO BUSINESS ITA.pdf",
+    "size": 508064
+   },
+   {
+    "name": "E_P-0180-D-0825 DIRITTO DI RIPENSAMENTO RETAIL ITA.pdf",
+    "size": 504401
+   },
+   {
+    "name": "E_P-0188-B-0825 DICHIARAZIONE SOSTITUTIVA SERVIZIO UTLIMA ISTANZA BUSINESS ITA.pdf",
+    "size": 959526
+   },
+   {
+    "name": "E_P-0190-C-0226 ISTANZA PER APPLICAZIONE ACCISE GAS BUSINESS ITA_ 2 (1).pdf",
+    "size": 560599
+   },
+   {
+    "name": "E_P-0192-B-0825 MODULO SDD BUSINESS ITA.pdf",
+    "size": 55011
+   },
+   {
+    "name": "E_P-0194-B-0825 DICHIARAZIONE SOSTITUTIVA AGEVOLAZIONI IVA ITA (2).pdf",
+    "size": 524410
+   },
+   {
+    "name": "E_P-0196-C-0825 SUBENTRO GAS RETAIL ITA.pdf",
+    "size": 36668
+   },
+   {
+    "name": "E_P-0197-B-0825 VOLTURA EE RETAIL ITA.pdf",
+    "size": 498218
+   },
+   {
+    "name": "E_P-0198-B-0825 NUOVA ATTIVAZIONE EE RETAIL ITA.pdf",
+    "size": 508937
+   },
+   {
+    "name": "E_P-0199-B-0825 NUOVA CONNESSIONE CON ATTIVAZIONE EE RETAIL ITA.pdf",
+    "size": 498727
+   },
+   {
+    "name": "E_P-0200-C-0825 NUOVA ATTIVAZIONE GAS RETAIL ITA.pdf",
+    "size": 480649
+   },
+   {
+    "name": "E_P-0202-B-0825 SUBENTRO EE RETAIL ITA.pdf",
+    "size": 494068
+   },
+   {
+    "name": "E_P-0203-B-0825 POSA CON ALLACCIO GAS RETAIL ITA.pdf",
+    "size": 488798
+   },
+   {
+    "name": "E_P-0204-C-0825 Nuova Attivazione GAS BUSINESS ITA.pdf",
+    "size": 498340
+   },
+   {
+    "name": "E_P-0205-B-0825 Voltura BUSINESS GAS ITA.pdf",
+    "size": 486125
+   },
+   {
+    "name": "E_P-0206-B-0825 SUBENTRO ELE BUSINESS ITA.pdf",
+    "size": 492815
+   },
+   {
+    "name": "E_P-0207-C-0825 SUBENTRO GAS BUSINESS ITA.pdf",
+    "size": 485741
+   },
+   {
+    "name": "E_P-0208-B-0825 Posa con allaccio GAS BUS ITA.pdf",
+    "size": 500514
+   },
+   {
+    "name": "E_P-0209-E-1225 VOLTURA ELE BUSINESS ITA.pdf",
+    "size": 516686
+   },
+   {
+    "name": "E_P-0210-B-0825 Nuova Attivazione ELE BUSINESS ITA.pdf",
+    "size": 493263
+   },
+   {
+    "name": "E_P-0211-B-0825 NUOVA CONNESSIONE CON ATTIVAZIONE ELE BUSINESS ITA.pdf",
+    "size": 498989
+   },
+   {
+    "name": "E_P-0239-F-0825 RICHIESTA PREVENTIVO VAR POTENZA EE RETAIL ITA.pdf",
+    "size": 38274
+   },
+   {
+    "name": "E_P-0241-E-0825 RICHIESTA PREVENTIVO per VARIAZIONE DI POTENZA BUSINESS ITA.pdf",
+    "size": 1060581
+   },
+   {
+    "name": "E_P-0250-B-0825 MODIFICA IMPIANTO GAS RETAIL ITA.pdf",
+    "size": 30679
+   },
+   {
+    "name": "E_P-0252-B-0825 MODIFICA IMPIANTO GAS BUSINESS ITA.pdf",
+    "size": 33870
+   },
+   {
+    "name": "E_P-201-B-0825 VOLTURA GAS RETAIL ITA.pdf",
+    "size": 482851
+   },
+   {
+    "name": "GAS_Allegato Mod_A_12.pdf",
+    "size": 104497
+   },
+   {
+    "name": "GAS_Allegato Mod_b_12 1.pdf",
+    "size": 95686
+   },
+   {
+    "name": "Istanza Regolarità Edilizia_Altri_Usi.doc",
+    "size": 110592
+   },
+   {
+    "name": "Istanza Regolarità Edilizia_Altri_Usi_Cantiere.doc",
+    "size": 104448
+   },
+   {
+    "name": "Istanza Regolarità Edilizia_Altri_Usi_Sicilia.doc",
+    "size": 103936
+   },
+   {
+    "name": "Istanza Regolarità Edilizia_Altri_Uso temporaneo.doc",
+    "size": 102912
+   },
+   {
+    "name": "Istanza Regolarità Edilizia_Usi_Domestici.doc",
+    "size": 110080
+   },
+   {
+    "name": "Istanza Regolarità Edilizia_Usi_Domestici_Sicilia.doc",
+    "size": 105984
+   },
+   {
+    "name": "P-0061-B-0423_Disattivazione_Per_Decesso.pdf",
+    "size": 565936
+   },
+   {
+    "name": "P-0063-C-0524_Dati_Catastali_Retail.pdf",
+    "size": 515183
+   },
+   {
+    "name": "P-0065-C-0524_SDD_Retail.pdf",
+    "size": 622194
+   },
+   {
+    "name": "P-0071-D-0825 SPOSTAMENTO GRUPPO DI MISURA ELE ITA.pdf",
+    "size": 32414
+   },
+   {
+    "name": "P-0077-B-0423_Autocertificazione_Residenza.pdf",
+    "size": 562333
+   },
+   {
+    "name": "P-0083-B-0423_Variazione_Ragione_Sociale.pdf",
+    "size": 562945
+   },
+   {
+    "name": "P-0091-B-0423_Dichiarazione_PEC_SDI.pdf",
+    "size": 545522
+   },
+   {
+    "name": "P-0093-B-0423_Dichiarazione_Split_Payment.pdf",
+    "size": 553325
+   },
+   {
+    "name": "P-0099-B-0423_NonDisalimentabilità.pdf",
+    "size": 570669
+   },
+   {
+    "name": "P-0101-B-0423_Disattivazione_EE.pdf",
+    "size": 565139
+   },
+   {
+    "name": "P-0105-B-0423_Disattivazione_GAS.pdf",
+    "size": 565518
+   },
+   {
+    "name": "P-0168-A-0524_Dati_Catastali_Business.pdf",
+    "size": 1082219
+   },
+   {
+    "name": "P-0174-C-0825 ASSICURAZIONE CLIENTI FINALI GAS RETAIL ITA.pdf",
+    "size": 38798
+   },
+   {
+    "name": "P-0176-C-0825 BONUS SOCIALE ELETTRICO RETAIL ITA.pdf",
+    "size": 27506
+   },
+   {
+    "name": "P-0178-C-0825 BONUS SOCIALE GAS RETAIL ITA.pdf",
+    "size": 24531
+   },
+   {
+    "name": "P-0182-B-0825 INDENNIZZI AUTOMATICI RETAIL ITA.pdf",
+    "size": 52078
+   },
+   {
+    "name": "P-0192-A-0524_ SDD_Business.pdf",
+    "size": 72703
+   },
+   {
+    "name": "P-0194-A-0624_Agevolazione_IVA_Business.pdf",
+    "size": 524000
+   },
+   {
+    "name": "Procura_Agente_Cliente_ASS.pdf",
+    "size": 187979
    }
   ],
   "documenti/alperia/privacy": [
+   {
+    "name": "P-0184-B-0825 INFORMATIVA PRIVACY RETAIL ITA.pdf",
+    "size": 50423
+   },
+   {
+    "name": "P-0186-B-0825 INFORMATIVA PRIVACY BUSINESS ITA.pdf",
+    "size": 47618
+   },
    {
     "name": "Privacy Greenworld - febbraio 2025.pdf",
     "size": 1018573
@@ -55,97 +695,961 @@
   "documenti/alperia/procedimenti": [
    {
     "name": "ESEMPIO PDA BUSINESS.pdf",
-    "size": 3912632
+    "size": 431037
    },
    {
     "name": "ESEMPIO PDA RESIDENZIALE.pdf",
-    "size": 4075090
+    "size": 454803
+   },
+   {
+    "name": "Manuale_InstantQualityCheck ALPERIA.pdf",
+    "size": 496091
    },
    {
     "name": "Scheda_Alperia_Greenworld_Procedura.pdf",
     "size": 19972
    }
   ],
+  "documenti/audax/cte/business": [
+   {
+    "name": "AUDAX - PUNTI DI ATTENZIONE PER UN CORRETTO UTILIZZO DELLA CTE BUSINESS.pdf",
+    "size": 483752
+   },
+   {
+    "name": "AUDAX CONSIP ABRUZZO E MOLISE - ANNO CONSIP 2026 - NEW.pdf",
+    "size": 225868
+   },
+   {
+    "name": "AUDAX CONSIP CALABRIA - ANNO CONSIP 2026 - NEW.pdf",
+    "size": 225741
+   },
+   {
+    "name": "AUDAX CONSIP CAMPANIA - ANNO CONSIP 2026 - NEW.pdf",
+    "size": 225747
+   },
+   {
+    "name": "AUDAX CONSIP EMILIA ROMAGNA - ANNO CONSIP 2026 - NEW.pdf",
+    "size": 225839
+   },
+   {
+    "name": "AUDAX CONSIP LAZIO - ANNO CONSIP 2026 - NEW.pdf",
+    "size": 225765
+   },
+   {
+    "name": "AUDAX CONSIP LOMBARDIA - ANNO CONSIP 2026 - NEW.pdf",
+    "size": 225778
+   },
+   {
+    "name": "AUDAX CONSIP PROVINCIA MILANO E LODI - ANNO CONSIP 2026 - NEW.pdf",
+    "size": 225881
+   },
+   {
+    "name": "AUDAX CONSIP PROVINCIA ROMA - ANNO CONSIP 2026 - NEW.pdf",
+    "size": 225802
+   },
+   {
+    "name": "AUDAX CONSIP PUGLIA E BASILICATA - ANNO CONSIP 2026 - NEW.pdf",
+    "size": 225869
+   },
+   {
+    "name": "AUDAX CONSIP SARDEGNA E LIGURIA - ANNO CONSIP 2026 - NEW.pdf",
+    "size": 225824
+   },
+   {
+    "name": "AUDAX CONSIP SICILIA - ANNO CONSIP 2026 - NEW.pdf",
+    "size": 225766
+   },
+   {
+    "name": "AUDAX CONSIP TOSCANA - ANNO CONSIP 2026 - NEW.pdf",
+    "size": 226163
+   },
+   {
+    "name": "AUDAX CONSIP TRENTINO E FRIULI - ANNO CONSIP 2026 - NEW.pdf",
+    "size": 225856
+   },
+   {
+    "name": "AUDAX CONSIP UMBRIA E MARCHE - ANNO CONSIP 2026 - NEW.pdf",
+    "size": 226205
+   },
+   {
+    "name": "AUDAX CONSIP VALLE D'AOSTA E PIEMONTE - ANNO CONSIP 2026 - NEW.pdf",
+    "size": 225911
+   },
+   {
+    "name": "AUDAX CONSIP VENETO - ANNO CONSIP 2026 - NEW.pdf",
+    "size": 225751
+   },
+   {
+    "name": "GAS PA - SEMPRE ECO PA - STANDARD.pdf",
+    "size": 110186
+   },
+   {
+    "name": "LISTINO A - SEMPRE ECO IMPRESA A_GBSIDAXAX26071SRX.pdf",
+    "size": 735336
+   },
+   {
+    "name": "LISTINO A - SEMPRE VERDE IMPRESA ORARIO A_EBSIDAXA.pdf",
+    "size": 355960
+   },
+   {
+    "name": "LISTINO B - SEMPRE ECO IMPRESA B_GBSIDAXBX26071SRX.pdf",
+    "size": 735598
+   },
+   {
+    "name": "LISTINO C - SEMPRE VERDE IMPRESA ORARIO C_EBSIDAXCO26101SRX_AU.pdf",
+    "size": 643520
+   },
+   {
+    "name": "LISTINO C SEMPRE ECO IMPRESA C_GBSIDAXCX26071SRX_AU.pdf",
+    "size": 735600
+   },
+   {
+    "name": "LISTINO E - SEMPRE VERDE IMPRESA ORARIO E_EBSIDAXEO26101SRX_AU.pdf",
+    "size": 633226
+   },
+   {
+    "name": "SEMPRE ECO MICRO BUSINESS A_GMSIDAXEX26071SRX_AU.pdf.pdf",
+    "size": 737872
+   },
+   {
+    "name": "SEMPRE VERDE IMPRESA ORARIO A_EBSIDAXAO26101SRX_AU.pdf",
+    "size": 641304
+   },
+   {
+    "name": "SICURA VERDE IMPRESA FASCE - A_37_EBSFDAXAF261030RX_AU.pdf",
+    "size": 635211
+   }
+  ],
+  "documenti/audax/cte/residenziale": [
+   {
+    "name": "autocertificazione_vulnerabilita_ele.pdf",
+    "size": 193297
+   },
+   {
+    "name": "autocertificazione_vulnerabilita_gas.pdf",
+    "size": 162633
+   },
+   {
+    "name": "CTE 2024 - SERVIZIO DI TUTELA DELLA VULNERABILITA GAS (2).pdf",
+    "size": 458076
+   },
+   {
+    "name": "CTE DEDICATA - ENERGIA DI CASA - GAS.pdf",
+    "size": 240671
+   },
+   {
+    "name": "CTE DEDICATA - ENERGIA DI CASA - LUCE.pdf",
+    "size": 253030
+   },
+   {
+    "name": "SEMPRE ECO CASA_GDSIDAXAX26071SRX_AU.pdf.pdf",
+    "size": 792654
+   },
+   {
+    "name": "SEMPRE VERDE CASA SPREAD FASCE_EDSIDAXAF26101SRX_AU.pdf",
+    "size": 682058
+   },
+   {
+    "name": "SEMPRE VERDE CASA SPREAD MONO A_EDSIDAXAM26101SRX_AU.pdf",
+    "size": 783880
+   },
+   {
+    "name": "SICURA VERDE CASA FASCE - 37_EDSFDAXAF261030RX_AU.pdf",
+    "size": 855477
+   }
+  ],
+  "documenti/audax/modulistica": [
+   {
+    "name": "46215_Come sapere chi è il nuovo fornitore_ARERA.pdf",
+    "size": 256831
+   },
+   {
+    "name": "ALLEGATO H40_ V2019_01_editabile.pdf",
+    "size": 278773
+   },
+   {
+    "name": "ALLEGATO MULTISITO EE - COPIA AUDAX_04.2026 New Brand.pdf",
+    "size": 607618
+   },
+   {
+    "name": "ALLEGATO MULTISITO EE - COPIA CLIENTE_04.2026 New Brand.pdf",
+    "size": 606481
+   },
+   {
+    "name": "ALLEGATO MULTISITO GAS - COPIA AUDAX_04.2026 New Brand.pdf",
+    "size": 589786
+   },
+   {
+    "name": "ALLEGATO MULTISITO GAS - COPIA CLIENTE_04.2026 New Brand.pdf",
+    "size": 588230
+   },
+   {
+    "name": "autocertificazione_vulnerabilita_ele.pdf",
+    "size": 193297
+   },
+   {
+    "name": "autocertificazione_vulnerabilita_gas.pdf",
+    "size": 162633
+   },
+   {
+    "name": "Autodichiarazione di assenza di legami di parentela_02.2025_Agente_.pdf",
+    "size": 225405
+   },
+   {
+    "name": "Contratto Pubblica Amministrazione_V012023 (2).pdf",
+    "size": 838759
+   },
+   {
+    "name": "DICHIARAZIONE-DATA-PRESUNTA-ATTIVAZIONE-MT_TA_GAS200K.pdf",
+    "size": 89515
+   },
+   {
+    "name": "Documentazione validazione contratti Audax_09.22.pdf",
+    "size": 278018
+   },
+   {
+    "name": "Documento fatturazione per comuni (2).docx",
+    "size": 15643
+   },
+   {
+    "name": "ENERGY DEAL - FILE PRECARICAMENTO FORNITURE PA CON CODIFICHE (1).xlsx",
+    "size": 39320
+   },
+   {
+    "name": "I40.pdf",
+    "size": 112123
+   },
+   {
+    "name": "ISTANZA-AGEVOLAZIONE-ACCISE-GAS.pdf",
+    "size": 294085
+   },
+   {
+    "name": "ISTANZA-DI-AGEVOLAZIONE_IVA.pdf",
+    "size": 329006
+   },
+   {
+    "name": "MANDATO-ADDEBITO-SEPA.pdf",
+    "size": 124360
+   },
+   {
+    "name": "MANUALE ENERGY DEAL 2026.pptx",
+    "size": 4805479
+   },
+   {
+    "name": "MODULO AUDAX_AUTODICHIARAZIONE CAMBIO USO (1).pdf",
+    "size": 151011
+   },
+   {
+    "name": "MODULO AUDAX_AUTODICHIARAZIONE LEGALE RAPPRESENTANTE_10.2023 (1).pdf",
+    "size": 175902
+   },
+   {
+    "name": "MODULO AUDAX_AUTORIZZAZIONE DELEGA.pdf",
+    "size": 172433
+   },
+   {
+    "name": "MODULO AUDAX_CERTIFICAZIONE RESIDENZA_10.2023.pdf",
+    "size": 124422
+   },
+   {
+    "name": "MODULO AUDAX_COMUNICAZIONE DATI CATASTALI (1).pdf",
+    "size": 139534
+   },
+   {
+    "name": "MODULO AUDAX_DISATTIVAZIONE DELLA FORNITURA.pdf",
+    "size": 137565
+   },
+   {
+    "name": "MODULO AUDAX_ESERCIZIO DIRITTO RIPENSAMENTO.pdf",
+    "size": 124839
+   },
+   {
+    "name": "MODULO AUDAX_PRESCRIZIONE FATTURE.pdf",
+    "size": 139840
+   },
+   {
+    "name": "MODULO AUDAX_PROROGA ALLACCIO TEMPORANEO (1).pdf",
+    "size": 118330
+   },
+   {
+    "name": "MODULO AUDAX_PUBB. AMM._UTENZA NON DISALIMENTABILE.pdf",
+    "size": 222129
+   },
+   {
+    "name": "MODULO AUDAX_RECLAMO FORNITURA NON RICHIESTA.pdf",
+    "size": 191395
+   },
+   {
+    "name": "MODULO AUDAX_RECLAMO-RICHIESTA DI INFORMAZIONI-LETTURE.pdf",
+    "size": 141129
+   },
+   {
+    "name": "MODULO AUDAX_REVOCA ADDEBITO DIRETTO SEPA.pdf",
+    "size": 128426
+   },
+   {
+    "name": "MODULO AUDAX_RICHIESTA DI ATTIVAZIONE NUOVA FORNITURA (1).pdf",
+    "size": 189324
+   },
+   {
+    "name": "MODULO AUDAX_UTENZA NON DISALIMENTABILE.pdf",
+    "size": 247685
+   },
+   {
+    "name": "Modulo Titolo Possesso Immobile.pdf",
+    "size": 360949
+   },
+   {
+    "name": "MODULO-AUDAX_AUTODICHIARAZIONE-LEGALE-RAPPRESENTANTE_12.2024.pdf",
+    "size": 108653
+   },
+   {
+    "name": "MODULO-AUDAX_DICHIARAZIONE-TITOLO-SU-IMMOBILE (1).pdf",
+    "size": 142666
+   },
+   {
+    "name": "MULTISITO COMUNI (1).xlsx",
+    "size": 45296
+   },
+   {
+    "name": "PDA_Branded_Editabile_Audax_V012026.pdf",
+    "size": 1550180
+   },
+   {
+    "name": "PDA_V012026 Valida dal 29.06.pdf",
+    "size": 1617168
+   },
+   {
+    "name": "Portale EnergyDeal_Agenzia_ - Pubblica amministrazione_10.23 (2).pdf",
+    "size": 2195905
+   },
+   {
+    "name": "Processo Firma Digitale (FES).pdf",
+    "size": 517974
+   },
+   {
+    "name": "RICHIESTA-DI-PREVENTIVO-DI-SPESA-DL.pdf",
+    "size": 150712
+   },
+   {
+    "name": "VARIAZIONE-VERIFICHE-TECNICHE_GAS.pdf",
+    "size": 178456
+   },
+   {
+    "name": "VARIAZIONE-VERIFICHE_TECNICHE_EE.pdf",
+    "size": 280248
+   },
+   {
+    "name": "VOLTURA (1).pdf",
+    "size": 134385
+   }
+  ],
+  "documenti/audax/privacy": [
+   {
+    "name": "INFORMATIVA MODULO PRIVACY.pdf",
+    "size": 723051
+   },
+   {
+    "name": "vademecum compilazione INFORMATIVA.pdf",
+    "size": 368341
+   }
+  ],
+  "documenti/audax/procedimenti": [
+   {
+    "name": "AUDAX Energia_manuale IQC 052026.pdf",
+    "size": 652576
+   },
+   {
+    "name": "AUDAX IQC - Vademecum V. 01.pdf",
+    "size": 520421
+   },
+   {
+    "name": "Autocertificazione sostitutiva carichi pendenti e casellario giudiziario.pdf",
+    "size": 14836
+   },
+   {
+    "name": "Linea guida - SULLA CONTRATTUALIZZAZIONE E CARICAMENTO CONTRATTO PA a sistema 02.2025_.pdf",
+    "size": 167136
+   },
+   {
+    "name": "MANUALE ENERGY DEAL 2026.pptx",
+    "size": 4809342
+   },
+   {
+    "name": "MODULO DATI PER AUDAX OTP PDF.pdf",
+    "size": 1148776
+   },
+   {
+    "name": "MODULO-AUDAX_MANDATO-ADDEBITO-SEPA_02.2024-1.pdf",
+    "size": 178336
+   },
+   {
+    "name": "Processo Firma Digitale (FES).pdf",
+    "size": 517974
+   }
+  ],
+  "documenti/axpo/cte/business": [
+   {
+    "name": "Axpo00024Business_Dinamico_Power_RT-0005748693.pdf",
+    "size": 110267
+   },
+   {
+    "name": "Axpo00025Business_Dinamico_GAS_RT-0005748677.pdf",
+    "size": 88494
+   },
+   {
+    "name": "Axpo00028Business_Sereno_Power_36_mesi_RT-0005819971.pdf",
+    "size": 112480
+   },
+   {
+    "name": "Axpo00037Scegli_Dinamico_GAS_2_RT-0005748700.pdf",
+    "size": 86944
+   },
+   {
+    "name": "Axpo00183Business_Sereno_Power_RT-0005820068.pdf",
+    "size": 112748
+   },
+   {
+    "name": "Axpo00184Business_Sereno_Gas_RT-0005820079.pdf",
+    "size": 87506
+   },
+   {
+    "name": "Axpo00196Axpo-Condominio-Power-Index_RT-0005753356(1).pdf",
+    "size": 110105
+   },
+   {
+    "name": "Axpo00197Axpo_Condominio_Gas_Index_RT-0005748759.pdf",
+    "size": 86931
+   },
+   {
+    "name": "Axpo00220Scegli_Sereno_2.0_RT-0005820121.pdf",
+    "size": 112584
+   },
+   {
+    "name": "Axpo00222Scegli_Sereno_GAS_2.0_RT-0005820138.pdf",
+    "size": 87305
+   },
+   {
+    "name": "Axpo00223Scegli_Dinamico_GAS_2.0_RT-0005748804.pdf",
+    "size": 86954
+   },
+   {
+    "name": "Axpo00224Scegli_Sereno_Long_2.0_RT-0005820134(1).pdf",
+    "size": 112024
+   },
+   {
+    "name": "Axpo00227Scegli_Dinamico_3Fasce_2.0_RT-0005748834(1).pdf",
+    "size": 127400
+   },
+   {
+    "name": "Axpo00279Scegli_Sereno_TOP_2.0_RT-0005820145(1).pdf",
+    "size": 62725
+   },
+   {
+    "name": "Axpo00280Scegli_Sereno_Gas_TOP_2.0_RT-0005820151.pdf",
+    "size": 52943
+   },
+   {
+    "name": "Axpo00320Scegli_Sereno_TOP_2.0_Cal_Year_1_RT-0005820162.pdf",
+    "size": 69773
+   },
+   {
+    "name": "Axpo00342Scegli_Dinamico_Gas_Light_RT-0005748884.pdf",
+    "size": 88315
+   },
+   {
+    "name": "Axpo00453Scegli_Sereno_2.0_Light_RT-0005820169.pdf",
+    "size": 112831
+   },
+   {
+    "name": "Axpo00454Scegli_Sereno_Gas_2.0_Light_RT-0005820180.pdf",
+    "size": 87719
+   },
+   {
+    "name": "Axpo00503Scegli_Dinamico_6_RT-0005749003.pdf",
+    "size": 127249
+   },
+   {
+    "name": "Axpo00504Scegli_Dinamico_2.0_RT-0005749011(1).pdf",
+    "size": 127056
+   },
+   {
+    "name": "Axpo00505Scegli_Dinamico_Light_RT-0005749014.pdf",
+    "size": 109928
+   },
+   {
+    "name": "Axpo00506Scegli_Dinamico_Plus_RT-0005749018.pdf",
+    "size": 126913
+   },
+   {
+    "name": "Axpo00518Scegli_Dinamico_Gas_3_RT-0005751453.pdf",
+    "size": 91211
+   },
+   {
+    "name": "Axpo00549Scegli_Sereno_TOP__2.0_Long_RT-0005820234.pdf",
+    "size": 62708
+   },
+   {
+    "name": "Axpo00572Scegli_Sereno_2.0_36_mesi_RT-0005820339(1).pdf",
+    "size": 112058
+   },
+   {
+    "name": "Axpo00574Scegli_Sereno_TOP_2.0_Long_36_mesi_RT-0005820344.pdf",
+    "size": 62805
+   },
+   {
+    "name": "Axpo00575Scegli_Sereno_TOP_2.0_Cal_Year_1_2_3_RT-0005820349(1).pdf",
+    "size": 69758
+   },
+   {
+    "name": "Axpo00577Scegli_Sereno_Gas_TOP_Long_2.0_RT-0005820360.pdf",
+    "size": 52680
+   },
+   {
+    "name": "Axpo00578Scegli_Sereno_Gas_TOP_Long_2.0_36_mesi_RT-0005820357.pdf",
+    "size": 53134
+   },
+   {
+    "name": "Axpo00580Scegli_Sereno_TOP_2.0_Cal_Year_1_2_RT-0005820364.pdf",
+    "size": 69761
+   }
+  ],
+  "documenti/axpo/cte/residenziale": [
+   {
+    "name": "Pulsee00169Value_Luce_Fix_RT-0005819985.pdf",
+    "size": 800491
+   },
+   {
+    "name": "Pulsee00170Value_Gas_Fix_RT-0005819993.pdf",
+    "size": 749861
+   },
+   {
+    "name": "Pulsee00171Easy_Luce_Fix_RT-0005820000.pdf",
+    "size": 226449
+   },
+   {
+    "name": "Pulsee00172Easy_Gas_Fix_RT-0005820004.pdf",
+    "size": 178607
+   },
+   {
+    "name": "Pulsee00173Smart_Luce_Fix_RT-0005820022.pdf",
+    "size": 226521
+   },
+   {
+    "name": "Pulsee00175Smart_Gas_Fix_RT-0005820010.pdf",
+    "size": 178472
+   },
+   {
+    "name": "Pulsee00179Partner_Luce_Fix_RT-0005820036(1).pdf",
+    "size": 219269
+   },
+   {
+    "name": "Pulsee00180Partner_Gas_Fix_RT-0005820044.pdf",
+    "size": 178489
+   },
+   {
+    "name": "Pulsee00181Partner_Luce_Fix_Plus_RT-0005820051.pdf",
+    "size": 212457
+   },
+   {
+    "name": "Pulsee00182Partner_Gas_Fix_Plus_RT-0005820057.pdf",
+    "size": 178554
+   },
+   {
+    "name": "Pulsee00551Easy_Luce_Fix_36_mesi_RT-0005820264.pdf",
+    "size": 233037
+   },
+   {
+    "name": "Pulsee00552Partner_Luce_Fix_36_mesi_RT-0005820246.pdf",
+    "size": 225986
+   },
+   {
+    "name": "Pulsee00553Partner_Luce_Fix_Plus_36_mesi_RT-0005820238(1).pdf",
+    "size": 219905
+   },
+   {
+    "name": "Pulsee00557Smart_Luce_Fix_36_mesi_RT-0005820277.pdf",
+    "size": 232925
+   },
+   {
+    "name": "Pulsee00558Value_Luce_Fix_36_mesi_RT-0005820271.pdf",
+    "size": 806931
+   },
+   {
+    "name": "Pulsee00560Easy_Gas_Fix_36_mesi_RT-0005820283(1).pdf",
+    "size": 178659
+   },
+   {
+    "name": "Pulsee00561Partner_Gas_Fix_36_mesi_RT-0005820291.pdf",
+    "size": 178556
+   },
+   {
+    "name": "Pulsee00562Partner_Gas_Fix_Plus_36_mesi_RT-0005820295.pdf",
+    "size": 178602
+   },
+   {
+    "name": "Pulsee00570Smart_Gas_Fix_36_mesi_RT-0005820323.pdf",
+    "size": 178554
+   },
+   {
+    "name": "Pulsee00571Value_Gas_Fix_36_mesi_RT-0005820333.pdf",
+    "size": 749937
+   }
+  ],
+  "documenti/chiurlo/cte/business": [
+   {
+    "name": "BEST CONDOMINI EE_CTE_BSCPUN2402P4H.pdf",
+    "size": 416125
+   },
+   {
+    "name": "BETTER CONDOMINI EE_CTE_BTCPUN2402P4H.pdf",
+    "size": 416125
+   },
+   {
+    "name": "DEDICATA BEST EE BUSINESS_CTE_PUN115QF207P4H.pdf",
+    "size": 415125
+   },
+   {
+    "name": "DEDICATA BEST GAS BUSINESS_CTE_PSV16QF172AU.pdf",
+    "size": 408574
+   },
+   {
+    "name": "DEDICATA BETTER EE BUSINESS_CTE_PUN145QF213AUP4H.pdf",
+    "size": 415156
+   },
+   {
+    "name": "DEDICATA BETTER GAS BUSINESS_CTE_PSV19QF172AU.pdf",
+    "size": 408588
+   },
+   {
+    "name": "DEDICATA GAS_CTE_567PSVCOND2405.pdf",
+    "size": 409753
+   },
+   {
+    "name": "DEDICATA GOOD PROMO EE BUSINESS_CTE_PUN18QF215AUP4H.pdf",
+    "size": 415164
+   },
+   {
+    "name": "DEDICATA GOOD PROMO GAS BUSINESS_CTE_PSV22QF164AU.pdf",
+    "size": 408598
+   },
+   {
+    "name": "EASY GOOD EE_CTE_EGDPUN2402P4H.pdf",
+    "size": 416096
+   },
+   {
+    "name": "GOOD CONDOMINI EE_CTE_GDCPUN2402P4H.pdf",
+    "size": 416083
+   },
+   {
+    "name": "SUPERGOOD CONDOMINI EE_CTE_SGDPUN2302P4H.pdf",
+    "size": 416128
+   }
+  ],
+  "documenti/chiurlo/cte/residenziale": [
+   {
+    "name": "DEDICATA BEST GAS _CTE_PSV16QF172.pdf",
+    "size": 282231
+   },
+   {
+    "name": "DEDICATA BETTER GAS_CTE_PSV19QF172.pdf",
+    "size": 282243
+   },
+   {
+    "name": "DEDICATA GOOD PROMO GAS_CTE_PSV22QF164.pdf",
+    "size": 282317
+   },
+   {
+    "name": "DEDICATA GOOD PROMO LUCE_CTE_PUN25QF210P4H.pdf",
+    "size": 397204
+   },
+   {
+    "name": "DEDICATA RIVVONO LUCE_CTE_PUN145QF144P4H.pdf",
+    "size": 397224
+   },
+   {
+    "name": "DEDICATA SUPERLIGHT LUCE_CTE_PUN06QF144P4H.pdf",
+    "size": 397213
+   }
+  ],
+  "documenti/chiurlo/modulistica": [
+   {
+    "name": "ALL_TEC_OBBL.pdf",
+    "size": 213869
+   },
+   {
+    "name": "Allegato Condomini 02-2024 G+EE.xlsx",
+    "size": 703261
+   },
+   {
+    "name": "ALLEGATO-H40.pdf",
+    "size": 22831
+   },
+   {
+    "name": "ALLEGATO-I-40.pdf",
+    "size": 110073
+   },
+   {
+    "name": "CGF+NotaInfo02-2024.pdf",
+    "size": 350985
+   },
+   {
+    "name": "ContrattoEditabile_02_2024.pdf",
+    "size": 443056
+   },
+   {
+    "name": "Dichiarazione dati catastali_2024.pdf",
+    "size": 950981
+   },
+   {
+    "name": "EE attivazione_2026 (2).pdf",
+    "size": 465022
+   },
+   {
+    "name": "EE disalimentazione_2026.pdf",
+    "size": 244673
+   },
+   {
+    "name": "EE IVA 10 condomini_2023.pdf",
+    "size": 696031
+   },
+   {
+    "name": "EE modifica_2026.pdf",
+    "size": 431659
+   },
+   {
+    "name": "EE+G Modulo variazione Amministratore Gas e Luce.pdf",
+    "size": 809756
+   },
+   {
+    "name": "EE-Multipunto 02-2024.pdf",
+    "size": 131874
+   },
+   {
+    "name": "EE-Multipunto 02-2024.xlsx",
+    "size": 399506
+   },
+   {
+    "name": "EE_Esenzione Accisa_2024.pdf",
+    "size": 1219185
+   },
+   {
+    "name": "EE_IVA 10% condomini_2024.pdf",
+    "size": 988239
+   },
+   {
+    "name": "EE_Modulo richiesta IVA 10% abitazioni collettive_2024.pdf",
+    "size": 1011737
+   },
+   {
+    "name": "EE_Modulo richiesta IVA 10% Aziende_2024.pdf",
+    "size": 1150972
+   },
+   {
+    "name": "G-Multipunto 02-2024.pdf",
+    "size": 113107
+   },
+   {
+    "name": "G-Multipunto 02-2024.xlsx",
+    "size": 400976
+   },
+   {
+    "name": "GAS attivazione_2026 (2).pdf",
+    "size": 265569
+   },
+   {
+    "name": "GAS disalimentazione_2026.pdf",
+    "size": 252587
+   },
+   {
+    "name": "GAS modifica_2026.pdf",
+    "size": 328943
+   },
+   {
+    "name": "GAS_Accisa agevolata_2024.pdf",
+    "size": 1348823
+   },
+   {
+    "name": "GAS_Agevolazione IVA 10%_AZIENDE_2024.pdf",
+    "size": 1277069
+   },
+   {
+    "name": "Istanza EE.pdf",
+    "size": 236041
+   },
+   {
+    "name": "modulo delega.pdf",
+    "size": 757114
+   },
+   {
+    "name": "RICH FORNIT CondominiEditabile2024.pdf",
+    "size": 413891
+   },
+   {
+    "name": "SDD_G+EE_Attivazione o revoca 2024.pdf",
+    "size": 850883
+   },
+   {
+    "name": "Voltura_CONTESTUALE_2026.pdf",
+    "size": 263265
+   }
+  ],
   "documenti/cogeme/cte/business": [
    {
-    "name": "Connettiamoci 19.pdf",
-    "size": 155507
+    "name": "Connettiamoci 11_da 50 Mwh a 75 Mwh.pdf",
+    "size": 154880
    },
    {
-    "name": "scheda_cte_Connettiamoci 10 gas.pdf",
-    "size": 150107
+    "name": "Connettiamoci 15 da 25 MWh a 50 MWh.pdf",
+    "size": 155493
    },
    {
-    "name": "scheda_cte_Connettiamoci 11.pdf",
-    "size": 154394
+    "name": "Connettiamoci 19_da 8.500 a 25.000 KWh.pdf",
+    "size": 155992
    },
    {
-    "name": "scheda_cte_Connettiamoci 12 gas.pdf",
-    "size": 150149
+    "name": "Connettiamoci 9 _da 75 Mwh a 100 Mwh.pdf",
+    "size": 155806
    },
    {
-    "name": "scheda_cte_Connettiamoci 15.pdf",
-    "size": 155010
+    "name": "Connettiamoci BASE 3 fasce altri usi_fino 8.500 kwh.pdf",
+    "size": 153727
    },
    {
-    "name": "scheda_cte_Connettiamoci 9 gas.pdf",
-    "size": 151039
+    "name": "Connettiamoci gas 10_da 6001 a 8000 Smc.pdf",
+    "size": 150317
    },
    {
-    "name": "scheda_cte_Connettiamoci 9.pdf",
-    "size": 155324
+    "name": "Connettiamoci gas 11_da 3001 a 6000 Smc.pdf",
+    "size": 149817
    },
    {
-    "name": "scheda_cte_Connettiamoci_base _Gas 17.pdf",
-    "size": 149911
+    "name": "Connettiamoci gas 12_da1501 a 3000 Smc.pdf",
+    "size": 150356
    },
    {
-    "name": "scheda_cte_Partnership 15 altri usi ee.pdf",
-    "size": 153651
+    "name": "Connettiamoci Gas 9_ da 8001 a 30.000 Smc.pdf",
+    "size": 151255
    },
    {
-    "name": "scheda_cte_Partnership gas usi diversi.pdf",
-    "size": 151075
+    "name": "Connettiamoci gas Base.pdf",
+    "size": 150131
    },
    {
-    "name": "scheda_cte_Zero Spread EE au 30 ccv.pdf",
-    "size": 153615
+    "name": "Connettiamoci PLus F3_da 50 Mwh a 75 Mwh.pdf",
+    "size": 154845
    },
    {
-    "name": "scheda_cte_Zero Spread gas AU.pdf",
-    "size": 149646
+    "name": "Connettiamoci Plus F4 da 75 Mwh a 100 Mwh.pdf",
+    "size": 155051
+   },
+   {
+    "name": "EE_AU1026_2_3F_FIX_A.pdf",
+    "size": 154382
+   },
+   {
+    "name": "EE_AU1026_2_M_FIX_A.pdf",
+    "size": 153533
+   },
+   {
+    "name": "GA_AU1026_2_FIX_A.pdf",
+    "size": 149179
+   },
+   {
+    "name": "Partnership Altri Usi (2).pdf",
+    "size": 154137
+   },
+   {
+    "name": "Partnership Altri Usi.pdf",
+    "size": 151288
+   },
+   {
+    "name": "Zero Spread Altri usi (2).pdf",
+    "size": 154097
+   },
+   {
+    "name": "Zero Spread Altri Usi.pdf",
+    "size": 149864
    }
   ],
   "documenti/cogeme/cte/residenziale": [
    {
-    "name": "scheda_cte_Affezioiamoci base.pdf",
-    "size": 152490
+    "name": "Affezioniamoci domestico.pdf",
+    "size": 149827
    },
    {
-    "name": "scheda_cte_Afz base.pdf",
-    "size": 146669
+    "name": "Affezioniamoci Premium domestico.pdf",
+    "size": 153992
    },
    {
-    "name": "scheda_cte_Partnership domestico ee.pdf",
-    "size": 154305
+    "name": "Affezioniamoci premium.pdf",
+    "size": 150587
    },
    {
-    "name": "scheda_cte_Partnesrhip gas domestico.pdf",
-    "size": 149396
+    "name": "Affezioniamoci_domestico.pdf",
+    "size": 152992
    },
    {
-    "name": "scheda_cte_Zero Spread EE domestico 20 ccv.pdf",
-    "size": 154363
+    "name": "EE_DM1026_2_3F_FIX_A.pdf",
+    "size": 156605
    },
    {
-    "name": "scheda_cte_Zero Spread EE domestico 30 ccv.pdf",
-    "size": 154012
+    "name": "EE_DM1026_2_M_FIX_A.pdf",
+    "size": 155794
+   },
+   {
+    "name": "GA_DM1026_2_FIX_A.pdf",
+    "size": 151030
+   },
+   {
+    "name": "Partnership Domestico (2).pdf",
+    "size": 154785
+   },
+   {
+    "name": "Partnership Domestico.pdf",
+    "size": 150169
+   },
+   {
+    "name": "Zero Spread Domestico 1.pdf",
+    "size": 150607
+   },
+   {
+    "name": "Zero Spread Domestico 2.pdf",
+    "size": 150956
+   },
+   {
+    "name": "Zero Spread Domestico.pdf",
+    "size": 154857
    }
   ],
   "documenti/cogeme/modulistica": [
    {
+    "name": "Accettazione Preventivo Cliente Domestico.pdf",
+    "size": 183985
+   },
+   {
+    "name": "Accettazione Preventivo Cliente PIVA.pdf",
+    "size": 119997
+   },
+   {
     "name": "Autocertificazione possesso ed utilizzo immobile.pdf",
     "size": 354362
+   },
+   {
+    "name": "CAMBIO IBAN -modulo addebito SEPA CORE.pdf",
+    "size": 764804
+   },
+   {
+    "name": "CGF_CogemeEnergia_072026 PER CARTACEI.pdf",
+    "size": 1623025
+   },
+   {
+    "name": "Cogeme Energia_delega over .pdf",
+    "size": 108644
+   },
+   {
+    "name": "contratto_Cogeme_SWITCH.pdf",
+    "size": 1071388
    },
    {
     "name": "contratto_editabile BUSINESS.pdf",
@@ -156,16 +1660,120 @@
     "size": 270747
    },
    {
+    "name": "contratto_editabile.pdf",
+    "size": 270747
+   },
+   {
+    "name": "Dati catastali_editabile.pdf",
+    "size": 412342
+   },
+   {
+    "name": "dichiarazione di estraneità al debito.pdf",
+    "size": 281315
+   },
+   {
+    "name": "Disalimentazione EE_GAS_editabile.pdf",
+    "size": 781169
+   },
+   {
+    "name": "Modello comunicazione mancata consegna.pdf",
+    "size": 263506
+   },
+   {
+    "name": "MODIFICA CONDIZIONI TECNICHE DI FORNITURA ENERGIA ELETTRICA.pdf",
+    "size": 356226
+   },
+   {
+    "name": "Modifica residenza anagrafica_editabile.pdf",
+    "size": 461011
+   },
+   {
+    "name": "Modulo Accise ridotte_2026.pdf",
+    "size": 210499
+   },
+   {
+    "name": "Modulo cambio prodotto domestico.pdf",
+    "size": 176326
+   },
+   {
+    "name": "MODULO CONTRATTO_DOM.pdf",
+    "size": 2117178
+   },
+   {
+    "name": "MODULO CONTRATTO_P.IVA.pdf",
+    "size": 1048723
+   },
+   {
+    "name": "Modulo esenzione accisa gas_editabile.pdf",
+    "size": 977313
+   },
+   {
+    "name": "Modulo iva ridotta EE_editabile.pdf",
+    "size": 1027340
+   },
+   {
+    "name": "Modulo iva ridotta GAS_editabile.pdf",
+    "size": 890879
+   },
+   {
+    "name": "MODULO_DI_RECLAMO.pdf",
+    "size": 939314
+   },
+   {
+    "name": "multisito - EDITABILE.pdf",
+    "size": 265687
+   },
+   {
+    "name": "Multisito 7-24.pdf",
+    "size": 506795
+   },
+   {
+    "name": "multisito.pdf",
+    "size": 251676
+   },
+   {
+    "name": "Plico contrattuale new condizioni.pdf",
+    "size": 2082882
+   },
+   {
+    "name": "Richiesta modifica impianto gas_editabile.pdf",
+    "size": 653551
+   },
+   {
     "name": "Richiesta NA e Subentro GAS_editabile.pdf",
     "size": 325310
+   },
+   {
+    "name": "Richiesta preventivo impianto GAS_editabile.pdf",
+    "size": 664870
+   },
+   {
+    "name": "Richiesta Variazione Dest_Uso.pdf",
+    "size": 325309
+   },
+   {
+    "name": "RIMBORSO NC_editabile.pdf",
+    "size": 250729
    },
    {
     "name": "Subentro e Nuova Attivazione EE.pdf",
     "size": 341770
    },
    {
+    "name": "Verifica contatore_editabile.pdf",
+    "size": 881707
+   },
+   {
+    "name": "Verifica credit check dei clienti P. IVA CREDIT SCORE COGEME.docx",
+    "size": 21309
+   },
+   {
     "name": "Voltura EE_editabile.pdf",
     "size": 413733
+   },
+   {
+    "name": "Voltura Gas_2 AGGIORNATO.pdf",
+    "size": 335986
    },
    {
     "name": "Voltura Gas_editabile.pdf",
@@ -178,32 +1786,476 @@
     "size": 1018573
    }
   ],
+  "documenti/cogeme/procedimenti": [
+   {
+    "name": "COGEME ENERGIA INFO GENERICHE.pptx",
+    "size": 81003
+   },
+   {
+    "name": "COGEME PROCEDURA per agenti .pdf",
+    "size": 101973
+   },
+   {
+    "name": "ESEMPIO PDA RESINZIALE COGEME.pdf",
+    "size": 3070032
+   },
+   {
+    "name": "PROCEDURA RICHIESTA CREDTI SCORE P. IVA CLIENTE.pdf",
+    "size": 116701
+   }
+  ],
+  "documenti/duferco/cte/business": [
+   {
+    "name": "FIX_BUSINESS_ADAGIO_24_MESI.pdf",
+    "size": 244135
+   },
+   {
+    "name": "FIX_BUSINESS_ALLEGRO_24_MESI.pdf",
+    "size": 243796
+   },
+   {
+    "name": "FIX_BUSINESS_ALLEGRO_PLUS_24_MESI.pdf",
+    "size": 244041
+   },
+   {
+    "name": "FIX_BUSINESS_ANDANTE_24_MESI.pdf",
+    "size": 244154
+   },
+   {
+    "name": "FIX_BUSINESS_ANDANTE_PLUS_24_MESI.pdf",
+    "size": 244395
+   },
+   {
+    "name": "FIX_BUSINESS_SUPER_ADAGIO_24_MESI.pdf",
+    "size": 244585
+   },
+   {
+    "name": "FIX_BUSINESS_VIVACE_24_MESI.pdf",
+    "size": 244040
+   },
+   {
+    "name": "FIX_BUSINESS_VIVACE_PLUS_24_MESI.pdf",
+    "size": 244042
+   },
+   {
+    "name": "FIX_BUSINESS_VIVACISSIMA_PLUS_24_MESI.pdf",
+    "size": 244736
+   },
+   {
+    "name": "FLEX_BUSINESS_ADAGIO.pdf",
+    "size": 188258
+   },
+   {
+    "name": "FLEX_BUSINESS_ALLEGRO.pdf",
+    "size": 188409
+   },
+   {
+    "name": "FLEX_BUSINESS_ALLEGRO_PLUS.pdf",
+    "size": 188551
+   },
+   {
+    "name": "FLEX_BUSINESS_ANDANTE (2).pdf",
+    "size": 167552
+   },
+   {
+    "name": "FLEX_BUSINESS_ANDANTE.pdf",
+    "size": 188757
+   },
+   {
+    "name": "FLEX_BUSINESS_ANDANTE_LIGHT (2).pdf",
+    "size": 167289
+   },
+   {
+    "name": "FLEX_BUSINESS_ANDANTE_LIGHT.pdf",
+    "size": 188543
+   },
+   {
+    "name": "FLEX_BUSINESS_ANDANTE_PLUS.pdf",
+    "size": 188654
+   },
+   {
+    "name": "FLEX_BUSINESS_ENTRY_ (2).pdf",
+    "size": 169553
+   },
+   {
+    "name": "FLEX_BUSINESS_ENTRY_.pdf",
+    "size": 188355
+   },
+   {
+    "name": "FLEX_BUSINESS_MILLENNIAL.pdf",
+    "size": 188554
+   },
+   {
+    "name": "FLEX_BUSINESS_NEXTGEN.pdf",
+    "size": 188612
+   },
+   {
+    "name": "FLEX_BUSINESS_NEXTGEN_LIGHT.pdf",
+    "size": 188632
+   },
+   {
+    "name": "FLEX_BUSINESS_PREMIUM_ONE.pdf",
+    "size": 188495
+   },
+   {
+    "name": "FLEX_BUSINESS_PREMIUM_ONE_LIGHT.pdf",
+    "size": 188547
+   },
+   {
+    "name": "FLEX_BUSINESS_PREMIUM_TWO.pdf",
+    "size": 188571
+   },
+   {
+    "name": "FLEX_BUSINESS_PREMIUM_TWO_LIGHT.pdf",
+    "size": 188608
+   },
+   {
+    "name": "FLEX_BUSINESS_SUPER_ADAGIO (2).pdf",
+    "size": 167326
+   },
+   {
+    "name": "FLEX_BUSINESS_SUPER_ADAGIO.pdf",
+    "size": 188290
+   },
+   {
+    "name": "FLEX_BUSINESS_VIVACE (2).pdf",
+    "size": 167309
+   },
+   {
+    "name": "FLEX_BUSINESS_VIVACE.pdf",
+    "size": 188492
+   },
+   {
+    "name": "FLEX_BUSINESS_VIVACE_LIGHT (2).pdf",
+    "size": 167294
+   },
+   {
+    "name": "FLEX_BUSINESS_VIVACE_LIGHT.pdf",
+    "size": 188540
+   },
+   {
+    "name": "FLEX_BUSINESS_VIVACE_PLUS (2).pdf",
+    "size": 167407
+   },
+   {
+    "name": "FLEX_BUSINESS_VIVACE_PLUS.pdf",
+    "size": 188897
+   },
+   {
+    "name": "FLEX_BUSINESS_VIVACISSIMA_PLUS.pdf",
+    "size": 188343
+   },
+   {
+    "name": "FLEX_BUSINESS_VIVACISSIMA_PLUS_LIGHT.pdf",
+    "size": 188694
+   },
+   {
+    "name": "FLEX_CONDOMINI_GIOVE (2).pdf",
+    "size": 166784
+   },
+   {
+    "name": "FLEX_CONDOMINI_GIOVE.pdf",
+    "size": 188394
+   },
+   {
+    "name": "FLEX_CONDOMINI_MARTE (2).pdf",
+    "size": 166676
+   },
+   {
+    "name": "FLEX_CONDOMINI_MARTE.pdf",
+    "size": 188393
+   },
+   {
+    "name": "FLEX_CONDOMINI_MERCURIO (2).pdf",
+    "size": 166608
+   },
+   {
+    "name": "FLEX_CONDOMINI_MERCURIO.pdf",
+    "size": 188428
+   },
+   {
+    "name": "FLEX_CONDOMINI_NETTUNO.pdf",
+    "size": 166680
+   },
+   {
+    "name": "FLEX_CONDOMINI_SATURNO (2).pdf",
+    "size": 166681
+   },
+   {
+    "name": "FLEX_CONDOMINI_SATURNO.pdf",
+    "size": 188426
+   },
+   {
+    "name": "FLEX_CONDOMINI_TERRA (2).pdf",
+    "size": 166603
+   },
+   {
+    "name": "FLEX_CONDOMINI_TERRA.pdf",
+    "size": 188396
+   },
+   {
+    "name": "FLEX_CONDOMINI_URANO (2).pdf",
+    "size": 167031
+   },
+   {
+    "name": "FLEX_CONDOMINI_URANO.pdf",
+    "size": 188391
+   },
+   {
+    "name": "FLEX_CONDOMINI_VENERE.pdf",
+    "size": 188392
+   },
+   {
+    "name": "FLEX_FAMILY_MICRO (2).pdf",
+    "size": 509405
+   },
+   {
+    "name": "FLEX_FAMILY_MICRO.pdf",
+    "size": 527971
+   }
+  ],
   "documenti/duferco/cte/residenziale": [
    {
-    "name": "GAS_FLEX_FAMILY_JAZZ.pdf",
-    "size": 1028255
+    "name": "EVERGREEN_FIX_24_MESI.pdf",
+    "size": 607331
    },
    {
-    "name": "GAS_FLEX_FAMILY_MICRO.pdf",
-    "size": 1028130
+    "name": "FIX_FAMILY_CUN_1_24_MESI.pdf",
+    "size": 621462
    },
    {
-    "name": "GAS_FLEX_FAMILY_NEW_AGE.pdf",
-    "size": 1028269
+    "name": "FIX_FAMILY_CUN_2_24_MESI.pdf",
+    "size": 621486
+   },
+   {
+    "name": "FIX_FAMILY_CUN_3_24_MESI.pdf",
+    "size": 621477
+   },
+   {
+    "name": "FIX_FAMILY_CUN_4_24_MESI.pdf",
+    "size": 621466
+   },
+   {
+    "name": "FIX_FAMILY_SEMPRE_ZERO_L_24_MESI.pdf",
+    "size": 621661
+   },
+   {
+    "name": "FIX_FAMILY_SEMPRE_ZERO_M_24_MESI.pdf",
+    "size": 621667
+   },
+   {
+    "name": "FIX_FAMILY_SEMPRE_ZERO_S_24_MESI.pdf",
+    "size": 621751
+   },
+   {
+    "name": "FIX_FAMILY_SEMPRE_ZERO_XS_24_MESI.pdf",
+    "size": 621678
+   },
+   {
+    "name": "FLEX_FAMILY_BLUES.pdf",
+    "size": 530205
+   },
+   {
+    "name": "FLEX_FAMILY_COUNTRY.pdf",
+    "size": 529861
+   },
+   {
+    "name": "FLEX_FAMILY_JAZZ (2).pdf",
+    "size": 509479
+   },
+   {
+    "name": "FLEX_FAMILY_JAZZ.pdf",
+    "size": 530277
+   },
+   {
+    "name": "FLEX_FAMILY_NEW_AGE.pdf",
+    "size": 529925
+   },
+   {
+    "name": "FLEX_FAMILY_POP (2).pdf",
+    "size": 509398
+   },
+   {
+    "name": "FLEX_FAMILY_POP.pdf",
+    "size": 530182
+   },
+   {
+    "name": "FLEX_FAMILY_RAP (2).pdf",
+    "size": 509397
+   },
+   {
+    "name": "FLEX_FAMILY_RAP.pdf",
+    "size": 530184
+   },
+   {
+    "name": "FLEX_FAMILY_ROCK (2).pdf",
+    "size": 509742
+   },
+   {
+    "name": "FLEX_FAMILY_ROCK.pdf",
+    "size": 530492
+   },
+   {
+    "name": "FLEX_FAMILY_SEMPRE_ZERO_L.pdf",
+    "size": 530468
+   },
+   {
+    "name": "FLEX_FAMILY_SEMPRE_ZERO_M (2).pdf",
+    "size": 510130
+   },
+   {
+    "name": "FLEX_FAMILY_SEMPRE_ZERO_M.pdf",
+    "size": 530474
+   },
+   {
+    "name": "FLEX_FAMILY_SEMPRE_ZERO_S (2).pdf",
+    "size": 510120
+   },
+   {
+    "name": "FLEX_FAMILY_SEMPRE_ZERO_S.pdf",
+    "size": 530469
+   },
+   {
+    "name": "FLEX_FAMILY_SEMPRE_ZERO_XS.pdf",
+    "size": 530832
+   },
+   {
+    "name": "FLEX_FAMILY_SOUL.pdf",
+    "size": 530102
+   },
+   {
+    "name": "LISTINO PRATICHE 2026.pdf",
+    "size": 143493
+   },
+   {
+    "name": "PIANETA_BLU_FLEX (2).pdf",
+    "size": 502101
+   },
+   {
+    "name": "PIANETA_BLU_FLEX.pdf",
+    "size": 520924
    }
   ],
   "documenti/duferco/modulistica": [
    {
+    "name": "Accise Usi Non Domestici - Uso Promiscuo.pdf",
+    "size": 140875
+   },
+   {
+    "name": "AllegatoG_DichiarazioneSostitutivaAttoNotorio.pdf",
+    "size": 103365
+   },
+   {
+    "name": "Autodichiarazione CMOR.pdf",
+    "size": 143458
+   },
+   {
+    "name": "CAMBIO PIANO BUSINESS.pdf",
+    "size": 132998
+   },
+   {
+    "name": "CAMBIO PIANO CASA.pdf",
+    "size": 127614
+   },
+   {
+    "name": "CESSAZIONE CONTATORI EE+GAS.pdf",
+    "size": 199371
+   },
+   {
+    "name": "CG_DUALFUEL_012023.pdf",
+    "size": 251699
+   },
+   {
+    "name": "ISTANZA - POSE E PRIME ATTIVAZIONI EE.pdf",
+    "size": 131854
+   },
+   {
+    "name": "Istanza accisa gas FORZE ARMATE NAZIONALI.pdf",
+    "size": 72527
+   },
+   {
+    "name": "IVA AGEVOLATA EE 10 %.pdf",
+    "size": 196545
+   },
+   {
+    "name": "Mod_A_12.pdf",
+    "size": 700210
+   },
+   {
+    "name": "Mod_B_12.pdf",
+    "size": 199709
+   },
+   {
+    "name": "MODIFICA MODALITA DI PAGAMENTO.pdf",
+    "size": 102039
+   },
+   {
+    "name": "MODULO RIPENSAMENTO.pdf",
+    "size": 391744
+   },
+   {
+    "name": "MULTISITO (2).pdf",
+    "size": 169844
+   },
+   {
+    "name": "NOSWITCH_EE_2025.pdf",
+    "size": 183659
+   },
+   {
+    "name": "NOSWITCH_GAS_2025.pdf",
+    "size": 290195
+   },
+   {
     "name": "RDF_Business_042026.pdf",
-    "size": 11930910
+    "size": 1271809
+   },
+   {
+    "name": "RDF_Condominio_042026.pdf",
+    "size": 1579651
    },
    {
     "name": "RDF_Domestico_042026 (1).pdf",
     "size": 1812121
    },
    {
+    "name": "RDF_Domestico_042026.pdf",
+    "size": 1236605
+   },
+   {
+    "name": "Richiesta esenzione accise gas NATO.pdf",
+    "size": 95193
+   },
+   {
+    "name": "RIMBORSO DOMESTICO AMM - TUTORE.pdf",
+    "size": 206064
+   },
+   {
+    "name": "RIMBORSO DOMESTICO BUSINESS.pdf",
+    "size": 218947
+   },
+   {
     "name": "SWITCH + VOLTURA EE.pdf",
     "size": 211483
+   },
+   {
+    "name": "SWITCH + VOLTURA GAS.pdf",
+    "size": 217368
+   },
+   {
+    "name": "VOLTURA INTERNA EE CON PRECEDENTE.pdf",
+    "size": 217961
+   },
+   {
+    "name": "VOLTURA INTERNA EE SENZA PRECEDENTE.pdf",
+    "size": 213921
+   },
+   {
+    "name": "VOLTURA INTERNA GAS CON PRECEDENTE.pdf",
+    "size": 198034
+   },
+   {
+    "name": "VOLTURA INTERNA GAS SENZA PRECEDENTE.pdf",
+    "size": 234238
    }
   ],
   "documenti/duferco/privacy": [
@@ -214,8 +2266,732 @@
   ],
   "documenti/duferco/procedimenti": [
    {
+    "name": "COSTI DEPISITO CAUZIONALE.pdf",
+    "size": 1033410
+   },
+   {
+    "name": "DUFERCO - PROCEDURA OTP.docx",
+    "size": 15057
+   },
+   {
+    "name": "GUIDA COMPILAZIONE ISTANZA.pdf",
+    "size": 449426
+   },
+   {
+    "name": "ISTRUZIONI CLIENTE.pdf",
+    "size": 267384
+   },
+   {
+    "name": "PROCEDURA STIPULA CONDOMINI DUFERCO.docx",
+    "size": 14280
+   },
+   {
     "name": "Scheda_Procedurale_Duferco.pdf",
     "size": 16393
+   }
+  ],
+  "documenti/edison/cte/business": [
+   {
+    "name": "02 - CE_WORLD_BUSINESS_GAS.pdf",
+    "size": 360623
+   },
+   {
+    "name": "02 - SS_WORLD_BUSINESS_GAS.pdf",
+    "size": 167630
+   },
+   {
+    "name": "03 - CE_CONDOMINIO_FLEX_GAS_PMI.pdf",
+    "size": 358797
+   },
+   {
+    "name": "03 - Scheda_CONDOMINIO_FLEX_GAS_PMI_Ambito1.pdf",
+    "size": 178885
+   },
+   {
+    "name": "03 - Scheda_CONDOMINIO_FLEX_GAS_PMI_Ambito2.pdf",
+    "size": 176615
+   },
+   {
+    "name": "03 - Scheda_CONDOMINIO_FLEX_GAS_PMI_Ambito3.pdf",
+    "size": 176613
+   },
+   {
+    "name": "03 - Scheda_CONDOMINIO_FLEX_GAS_PMI_Ambito4.pdf",
+    "size": 176639
+   },
+   {
+    "name": "03 - Scheda_CONDOMINIO_FLEX_GAS_PMI_Ambito5.pdf",
+    "size": 176630
+   },
+   {
+    "name": "03 - Scheda_CONDOMINIO_FLEX_GAS_PMI_Ambito6.pdf",
+    "size": 176617
+   },
+   {
+    "name": "11 - CE_EDISON TOP50FLEX_LUCE.pdf",
+    "size": 424294
+   },
+   {
+    "name": "11 - Scheda_EDISON TOP50FLEX_LUCE.pdf",
+    "size": 215560
+   },
+   {
+    "name": "14 - CE_TOP40_FLEX_GAS_PMI.pdf",
+    "size": 359710
+   },
+   {
+    "name": "14 - SS_TOP40_FLEX_GAS_PMI.pdf",
+    "size": 170657
+   },
+   {
+    "name": "16 - CE_EDISON Soluzione in borsa_LUCE.pdf",
+    "size": 423085
+   },
+   {
+    "name": "16 - Scheda_EDISON Soluzione in borsa_LUCE.pdf",
+    "size": 215550
+   },
+   {
+    "name": "19 - CE_SOLUZIONE_IN_BORSA_GAS_PMI.pdf",
+    "size": 358571
+   },
+   {
+    "name": "19 - SS_SOLUZIONE_IN_BORSA_GAS_PMI.pdf",
+    "size": 169627
+   },
+   {
+    "name": "2 - CE_World_BUSINESS_LUCE.pdf",
+    "size": 424595
+   },
+   {
+    "name": "2 - Scheda_World_BUSINESS_LUCE.pdf",
+    "size": 215792
+   },
+   {
+    "name": "20 - CE_EDISON FLEX_BUSINESS_LUCE.pdf",
+    "size": 420775
+   },
+   {
+    "name": "20 - Scheda_EDISON FLEX_BUSINESS_LUCE.pdf",
+    "size": 215417
+   },
+   {
+    "name": "21 - CE_EDISON DYNAMIC_BUSINESS_LUCE.pdf",
+    "size": 415235
+   },
+   {
+    "name": "21 - Scheda_EDISON DYNAMIC_BUSINESS_LUCE.pdf",
+    "size": 216155
+   },
+   {
+    "name": "22 - CE_EDISON SUPERFLEX_BUSINESS_LUCE.pdf",
+    "size": 422362
+   },
+   {
+    "name": "22 - CE_FLEX_BUSINESS_GAS_PMI.pdf",
+    "size": 359212
+   },
+   {
+    "name": "22 - Scheda_EDISON SUPERFLEX_BUSINESS_LUCE.pdf",
+    "size": 215499
+   },
+   {
+    "name": "22 - SS_FLEX_BUSINESS_GAS_PMI.pdf",
+    "size": 170714
+   },
+   {
+    "name": "23 - CE_DYNAMIC_BUSINESS_GAS_PMI.pdf",
+    "size": 357253
+   },
+   {
+    "name": "23 - CE_EDISON CONDOMINIO ENERGYPLUS_LUCE.pdf",
+    "size": 421159
+   },
+   {
+    "name": "23 - Scheda_EDISON CONDOMINIO ENERGYPLUS_LUCE.pdf",
+    "size": 216823
+   },
+   {
+    "name": "23 - SS_DYNAMIC_BUSINESS_GAS_PMI.pdf",
+    "size": 168294
+   },
+   {
+    "name": "24 - CE_SUPERFLEX_BUSINESS_GAS_PMI.pdf",
+    "size": 360032
+   },
+   {
+    "name": "24 - SS_SUPERFLEX_BUSINESS_GAS_PMI.pdf",
+    "size": 170970
+   },
+   {
+    "name": "5 - CE_CONDOMINIOFLEX_LUCE.pdf",
+    "size": 419583
+   },
+   {
+    "name": "5 - Scheda_CONDOMINIOFLEX_LUCE.pdf",
+    "size": 216528
+   },
+   {
+    "name": "addendum_aq_50.pdf",
+    "size": 318647
+   }
+  ],
+  "documenti/edison/cte/residenziale": [
+   {
+    "name": "12 - CE_DYNAMIC_Gas.pdf",
+    "size": 961713
+   },
+   {
+    "name": "12 - Scheda_DYNAMIC_Gas_Ambito1.pdf",
+    "size": 181930
+   },
+   {
+    "name": "12 - Scheda_DYNAMIC_Gas_Ambito2.pdf",
+    "size": 179640
+   },
+   {
+    "name": "12 - Scheda_DYNAMIC_Gas_Ambito3.pdf",
+    "size": 179630
+   },
+   {
+    "name": "12 - Scheda_DYNAMIC_Gas_Ambito4.pdf",
+    "size": 179668
+   },
+   {
+    "name": "12 - Scheda_DYNAMIC_Gas_Ambito5.pdf",
+    "size": 179664
+   },
+   {
+    "name": "12 - Scheda_DYNAMIC_Gas_Ambito6.pdf",
+    "size": 179658
+   },
+   {
+    "name": "14 - CE_Dynamic_LUCE.pdf",
+    "size": 1034675
+   },
+   {
+    "name": "14 - Scheda_Dynamic_LUCE.pdf",
+    "size": 209993
+   },
+   {
+    "name": "17 - CE_SuperFlex_Gas.pdf",
+    "size": 962620
+   },
+   {
+    "name": "17 - Scheda_Superflex_Gas_Ambito1.pdf",
+    "size": 181967
+   },
+   {
+    "name": "17 - Scheda_Superflex_Gas_Ambito2.pdf",
+    "size": 179647
+   },
+   {
+    "name": "17 - Scheda_Superflex_Gas_Ambito3.pdf",
+    "size": 179617
+   },
+   {
+    "name": "17 - Scheda_Superflex_Gas_Ambito4.pdf",
+    "size": 179642
+   },
+   {
+    "name": "17 - Scheda_Superflex_Gas_Ambito5.pdf",
+    "size": 179645
+   },
+   {
+    "name": "17 - Scheda_Superflex_Gas_Ambito6.pdf",
+    "size": 179634
+   },
+   {
+    "name": "18 - CE_Superflex_LUCE.pdf",
+    "size": 1035026
+   },
+   {
+    "name": "18 - Scheda_Superflex_LUCE.pdf",
+    "size": 209889
+   },
+   {
+    "name": "2 - CE_World_Gas.pdf",
+    "size": 960280
+   },
+   {
+    "name": "2 - CE_World_LUCE.pdf",
+    "size": 1032616
+   },
+   {
+    "name": "2 - Scheda_World_Gas_Ambito1.pdf",
+    "size": 181671
+   },
+   {
+    "name": "2 - Scheda_World_Gas_Ambito2.pdf",
+    "size": 179680
+   },
+   {
+    "name": "2 - Scheda_World_Gas_Ambito3.pdf",
+    "size": 179671
+   },
+   {
+    "name": "2 - Scheda_World_Gas_Ambito4.pdf",
+    "size": 179710
+   },
+   {
+    "name": "2 - Scheda_World_Gas_Ambito5.pdf",
+    "size": 179745
+   },
+   {
+    "name": "2 - Scheda_World_Gas_Ambito6.pdf",
+    "size": 179689
+   },
+   {
+    "name": "2 - Scheda_world_Luce.pdf",
+    "size": 205945
+   },
+   {
+    "name": "addendum_aq_100perc_gas.pdf",
+    "size": 322994
+   }
+  ],
+  "documenti/enel-corporate/cte/business": [
+   {
+    "name": "Copia di 20261013-RiepilogoCTE-AgCor.xlsx",
+    "size": 30592
+   },
+   {
+    "name": "ENEL_FLEX_BUSINESS_GAS-AC___CTE_(AG_BUS)_v22.pdf",
+    "size": 89817
+   },
+   {
+    "name": "ENEL_FLEX_BUSINESS_LUCE-AC___CTE_(AG_BUS)_v29.pdf",
+    "size": 96731
+   },
+   {
+    "name": "EnelFidelity24CorporateMT_26WB5_B_Vendita_ML_KitSwaBusCteSeif.pdf",
+    "size": 126225
+   },
+   {
+    "name": "EnelFidelity24Impresa_26WB5_B_Vendita_ML_KitSwaBusCteSeif.pdf",
+    "size": 129648
+   },
+   {
+    "name": "EnelFidelity24ImpresaMT_26WB5_FMT_Vendita_ML_KitSwaBusCteSeif.pdf",
+    "size": 129161
+   },
+   {
+    "name": "EnelFidelity24Pmi_26WB5_FBT_Vendita_ML_KitSwaBusCteSeif.pdf",
+    "size": 129588
+   },
+   {
+    "name": "EnelFidelity36CorporateMT_26WB5_FMT_Vendita_ML_KitSwaBusCteSeif.pdf",
+    "size": 126175
+   },
+   {
+    "name": "EnelFidelity36Impresa_26WB5_FBT_Vendita_ML_KitSwaBusCteSeif.pdf",
+    "size": 129880
+   },
+   {
+    "name": "EnelFidelity36ImpresaMT_26WB5_FMT_Vendita_ML_KitSwaBusCteSeif.pdf",
+    "size": 129373
+   },
+   {
+    "name": "EnelFidelity36Pmi_26WB5_FBT_Vendita_ML_KitSwaBusCteSeif.pdf",
+    "size": 130095
+   },
+   {
+    "name": "EnelMix_26WB5_B_Vendita_ML_KitSwaBusCteAsi.pdf",
+    "size": 122268
+   },
+   {
+    "name": "EnelMixCorporate_26WB5_B_Vendita_ML_KitSwaBusCteAsi.pdf",
+    "size": 123608
+   },
+   {
+    "name": "EnelPUNtOrarioCommunityEdition_26WB5_Vendita_ML_KitSwaBusCteEfv.pdf",
+    "size": 105842
+   },
+   {
+    "name": "EnelPUNtOrarioCommunityEditionGreen_26WB5_Vendita_ML_KitSwaBusCteEfv.pdf",
+    "size": 107009
+   },
+   {
+    "name": "EnelPUNtOrarioImpresa_26WB5_Vendita_ML_KitSwaBusCteEfv.pdf",
+    "size": 105571
+   },
+   {
+    "name": "EnelPUNtOrarioImpresaAPA_26WB5_Vendita_ML_KitSwaBusCteEfv.pdf",
+    "size": 105573
+   },
+   {
+    "name": "EnelPUNtOrarioImpresaExtra_26WB5_Vendita_ML_KitSwaBusCteEfv.pdf",
+    "size": 105859
+   },
+   {
+    "name": "EnelPUNtOrarioImpresaExtraGreen_26WB5_Vendita_ML_KitSwaBusCteEfv.pdf",
+    "size": 107591
+   },
+   {
+    "name": "EnelPUNtOrarioImpresaGreen_26WB5_Vendita_ML_KitSwaBusCteEfv.pdf",
+    "size": 106995
+   },
+   {
+    "name": "EnelPUNtOrarioImpresaSuper_26WB5_Vendita_ML_KitSwaBusCteEfv.pdf",
+    "size": 106141
+   },
+   {
+    "name": "EnelPUNtOrarioImpresaSuperAPA_26WB5_Vendita_ML_KitSwaBusCteEfv.pdf",
+    "size": 106114
+   },
+   {
+    "name": "EnelPUNtOrarioImpresaSuperGreen_26WB5_Vendita_ML_KitSwaBusCteEfv.pdf",
+    "size": 107815
+   },
+   {
+    "name": "EnelPUNtOrarioMultisito_26WB5_Vendita_ML_KitSwaBusCteEfv.pdf",
+    "size": 105710
+   },
+   {
+    "name": "EnelPUNtOrarioPmi_26WB5_Vendita_ML_KitSwaBusCteEfv.pdf",
+    "size": 104716
+   },
+   {
+    "name": "EnelPUNtOrarioPmiAPA_26WB5_Vendita_ML_KitSwaBusCteEfv.pdf",
+    "size": 104725
+   },
+   {
+    "name": "EnelPUNtOrarioPmiGreen_26WB5_Vendita_ML_KitSwaBusCteEfv.pdf",
+    "size": 106133
+   },
+   {
+    "name": "Promemoria.txt",
+    "size": 477
+   },
+   {
+    "name": "SoluzioneEnergiaImpresa3F_26WB5_B_Vendita_ML_KitSwaBusCteSeif.pdf",
+    "size": 107141
+   },
+   {
+    "name": "SoluzioneEnergiaImpresaGreen3F_26WB5_B_Vendita_ML_KitSwaBusCteSeif.pdf",
+    "size": 108392
+   },
+   {
+    "name": "SoluzioneEnergiaImpresaPmi_26WB5_B_Vendita_ML_KitSwaBusCteSeif.pdf",
+    "size": 108036
+   },
+   {
+    "name": "SoluzioneEnergiaImpresaPmiGreen_26WB5_B_Vendita_ML_KitSwaBusCteSeif.pdf",
+    "size": 109283
+   },
+   {
+    "name": "SoluzioneEnergiaImpresaSuper3F_26WB5_B_Vendita_ML_KitSwaBusCteSeif.pdf",
+    "size": 107742
+   },
+   {
+    "name": "SoluzioneEnergiaImpresaSuperGreen3F_26WB5_B_Vendita_ML_KitSwaBusCteSeif.pdf",
+    "size": 109001
+   },
+   {
+    "name": "Trend3FEnergiaImpresa_26WB5_Vendita_ML_KitSwaBusCteTseif.pdf",
+    "size": 105752
+   },
+   {
+    "name": "Trend3FEnergiaImpresaAPA_26WB5_Vendita_ML_KitSwaBusCteTseif.pdf",
+    "size": 105814
+   },
+   {
+    "name": "Trend3FEnergiaImpresaExtra_26WB5_Vendita_ML_KitSwaBusCteTseif.pdf",
+    "size": 106646
+   },
+   {
+    "name": "Trend3FEnergiaImpresaExtraGreen_26WB5_Vendita_ML_KitSwaBusCteTseif.pdf",
+    "size": 107765
+   },
+   {
+    "name": "Trend3FEnergiaImpresaSuper_26WB5_Vendita_ML_KitSwaBusCteTseif.pdf",
+    "size": 106572
+   },
+   {
+    "name": "Trend3FEnergiaImpresaSuperAPA_26WB5_Vendita_ML_KitSwaBusCteTseif.pdf",
+    "size": 106582
+   },
+   {
+    "name": "Trend3FEnergiaImpresaWinBack_26WB5_A2_Vendita_ML_KitSwaBusCteTseif.pdf",
+    "size": 101733
+   },
+   {
+    "name": "Trend3FEnergImpresaGreen_26WB5_Vendita_ML_KitSwaBusCteTseif.pdf",
+    "size": 107219
+   },
+   {
+    "name": "Trend3FEnergImpresaSuperGreen_26WB5_Vendita_ML_KitSwaBusCteTseif.pdf",
+    "size": 107990
+   },
+   {
+    "name": "TrendBusinessGasSpecial_26WB5_Vendita_ML_KitSwaBusCteTsgi.pdf",
+    "size": 95739
+   },
+   {
+    "name": "TrendEnergiaCommunityEdition_26WB5_Vendita_ML_KitSwaBusCteTseif.pdf",
+    "size": 104951
+   },
+   {
+    "name": "TrendEnergiaImpresaPmi_26WB5_Vendita_ML_KitSwaBusCteTseif.pdf",
+    "size": 105448
+   },
+   {
+    "name": "TrendEnergiaImpresaPmiAPA_26WB5_Vendita_ML_KitSwaBusCteTseif.pdf",
+    "size": 105454
+   },
+   {
+    "name": "TrendEnergiaImpresaPmiGreen_26WB5_Vendita_ML_KitSwaBusCteTseif.pdf",
+    "size": 107188
+   },
+   {
+    "name": "TrendGasMultisitoAC_26WB5_Vendita_ML_KitSwaBusCteTsgi.pdf",
+    "size": 125428
+   },
+   {
+    "name": "TrendGasMultisitoDualAC_26WB5_Vendita_ML_KitSwaBusCteTsgi.pdf",
+    "size": 126100
+   },
+   {
+    "name": "TrendSicuroGasCorporateAC_26WB5_Vendita_ML_KitSwaBusCteTsgi.pdf",
+    "size": 126588
+   },
+   {
+    "name": "TrendSicuroGasCorporateDualAC_26WB5_Vendita_ML_KitSwaBusCteTsgi.pdf",
+    "size": 127306
+   },
+   {
+    "name": "TrendSicuroGasCorporateExtra_26WB5_Vendita_ML_KitSwaBusCteTsgi.pdf",
+    "size": 126776
+   },
+   {
+    "name": "TrendSicuroGasImpresaAC_26WB5_Vendita_ML_KitSwaBusCteTsgi.pdf",
+    "size": 126359
+   },
+   {
+    "name": "TrendSicuroGasImpresaDualAC_26WB5_Vendita_ML_KitSwaBusCteTsgi.pdf",
+    "size": 123609
+   }
+  ],
+  "documenti/enel-corporate/modulistica": [
+   {
+    "name": "Accise e IVA ENERGIA ELETTRICA NATO_AMBASCIATE UNIFICATO.pdf",
+    "size": 91961
+   },
+   {
+    "name": "Accise e IVA GAS NATO_AMBASCIATE UNIFICATO.pdf",
+    "size": 91154
+   },
+   {
+    "name": "Accise usi Domestici.pdf",
+    "size": 156859
+   },
+   {
+    "name": "Accise usi Non domestiche.pdf",
+    "size": 182124
+   },
+   {
+    "name": "accise-iva-energiaele-nato-ambasciatore-unificato.pdf",
+    "size": 196021
+   },
+   {
+    "name": "Allegato A (2).pdf",
+    "size": 121784
+   },
+   {
+    "name": "Autocertificazione AgCor.pdf",
+    "size": 101589
+   },
+   {
+    "name": "Codici_ATECO_Manifatturiero__2026-02-05.xlsx",
+    "size": 39417
+   },
+   {
+    "name": "CTE settore manifatturiero.txt",
+    "size": 645
+   },
+   {
+    "name": "Dichiarazione di adesione al Gruppo Iva.pdf",
+    "size": 79299
+   },
+   {
+    "name": "Dichiarazione sostitutiva installazione o presenza apparati di cura medica alimentati con energia elettrica [ML_NDisalimentabileNO].pdf",
+    "size": 128149
+   },
+   {
+    "name": "ELE_Accise_UsiEsclusi.pdf",
+    "size": 95328
+   },
+   {
+    "name": "ELE_Accise_UsiEsenti.pdf",
+    "size": 90897
+   },
+   {
+    "name": "ELE_Iva10_Abitazioni a carattere collettivo(Condominio).pdf",
+    "size": 64834
+   },
+   {
+    "name": "ELE_Iva10_Generico artigianali_editoriali_consorzi bonifica.pdf",
+    "size": 46838
+   },
+   {
+    "name": "ELE_Iva_agevolata_10%_pertinenze_pompa_di_calore.pdf",
+    "size": 46704
+   },
+   {
+    "name": "Esigenze acquisitive.xlsx",
+    "size": 14024
+   },
+   {
+    "name": "GAS_Accise_UsiEsclusi.pdf",
+    "size": 83068
+   },
+   {
+    "name": "GAS_Accise_UsiForzeArmate.pdf",
+    "size": 47952
+   },
+   {
+    "name": "GAS_Accise_UsiIndustriali.pdf",
+    "size": 95453
+   },
+   {
+    "name": "GAS_Iva10_Generico-artig_editoriali.pdf",
+    "size": 59324
+   },
+   {
+    "name": "Modulo autorizzativo CTE indiretta business.xlsx",
+    "size": 22558
+   },
+   {
+    "name": "Modulo Categoria di Consumo Gas_2022.pdf",
+    "size": 537322
+   },
+   {
+    "name": "Modulo Condomini con Amministratore_new.pdf",
+    "size": 36754
+   },
+   {
+    "name": "Modulo Condomini senza Amministratore.pdf",
+    "size": 37088
+   },
+   {
+    "name": "Modulo per voltura con cambio fornitore_MULTI.pdf",
+    "size": 153730
+   },
+   {
+    "name": "Modulo per voltura con cambio fornitore_single.pdf",
+    "size": 141230
+   },
+   {
+    "name": "Modulo poteri firma.pdf",
+    "size": 76764
+   },
+   {
+    "name": "modulo-agevolazioneIva-gas.pdf",
+    "size": 176561
+   },
+   {
+    "name": "modulo-aliquotaIva-ele.pdf",
+    "size": 168638
+   },
+   {
+    "name": "modulo-esclusi-accisa-ele.pdf",
+    "size": 207394
+   },
+   {
+    "name": "modulo-esenti-accisaEle.pdf",
+    "size": 195112
+   },
+   {
+    "name": "modulo-forzearmatenazionali-gas.pdf",
+    "size": 159819
+   },
+   {
+    "name": "modulo-industria-gas.pdf",
+    "size": 183063
+   },
+   {
+    "name": "modulo-iva-abitazioni-carattere-collettivo.pdf",
+    "size": 154569
+   },
+   {
+    "name": "modulo-iva-pertinenze-pompa-di-calore.pdf",
+    "size": 194522
+   },
+   {
+    "name": "REGOLE MULTISITO CORPORATE.pdf",
+    "size": 147436
+   },
+   {
+    "name": "Switch+Voltura.pdf",
+    "size": 131360
+   }
+  ],
+  "documenti/enel-corporate/privacy": [
+   {
+    "name": "Informativa PRIVACY presa visione.pdf",
+    "size": 167430
+   },
+   {
+    "name": "informativa-privacy_aprile_2026_condataefirmaperaccettazione.pdf",
+    "size": 307465
+   }
+  ],
+  "documenti/enel-digital/cte/business": [
+   {
+    "name": "ENEL_BUSINESS_ORE_HAPPY___CTE_(COM_-_WEB)_v16.pdf",
+    "size": 81885
+   },
+   {
+    "name": "ENEL_BUSINESS_SUPER_LUCE___CTE_(COM_-_WEB)_v21.pdf",
+    "size": 77855
+   },
+   {
+    "name": "ENEL_FIX_BUSINESS_GAS___CTE_(COM_-_WEB)_v40.pdf",
+    "size": 75158
+   },
+   {
+    "name": "ENEL_FIX_BUSINESS_LUCE___CTE_(COM_-_WEB)_v27.pdf",
+    "size": 77221
+   },
+   {
+    "name": "ENEL_FLEX_BOX___CTE_(WEB)_v25.pdf",
+    "size": 83273
+   },
+   {
+    "name": "ENEL_FLEX_BUSINESS_GAS___CTE_(COM_-_WEB)_v24.pdf",
+    "size": 75788
+   },
+   {
+    "name": "ENEL_FLEX_CONTROL_BUSINESS_GAS___CTE_(COM_-_WEB)_v18.pdf",
+    "size": 122455
+   },
+   {
+    "name": "ENEL_FLEX_CONTROL_BUSINESS_LUCE___CTE_(COM_-_WEB)_v21.pdf",
+    "size": 81750
+   }
+  ],
+  "documenti/enel-digital/cte/residenziale": [
+   {
+    "name": "ENEL_GAS_E_GIGA___CTE_(Consultazione)_v4.pdf",
+    "size": 131927
+   },
+   {
+    "name": "ENEL_LUCE_E_GIGA___CTE_(Consultazione)_v4.pdf",
+    "size": 218481
+   }
+  ],
+  "documenti/enel-digital/procedimenti": [
+   {
+    "name": "Enel Luce e Gas Giga FAQ.docx",
+    "size": 26069
+   },
+   {
+    "name": "ENEL_MOBILE___Disco_Vendita_v1.pdf",
+    "size": 631425
+   },
+   {
+    "name": "Pagine da Configurazione sim cliente.pdf",
+    "size": 4885636
    }
   ],
   "documenti/enel-tablet/cte/business": [
@@ -224,59 +3000,135 @@
     "size": 414825
    },
    {
-    "name": "ENEL BUSINESS Ore Happy 12-15_26WR13AD_Consultazione_ML_KitSwaBusCteSeixt.pdf",
-    "size": 129832
+    "name": "ENEL BUSINESS Ore Happy 12-15_26WR14AO_Consultazione_ML_KitSwaBusCteSeixt.pdf",
+    "size": 81885
    },
    {
-    "name": "Enel Flex Business Start Gas_26WR12AN_Consultazione_ML_KitSwaBusCteTgif (1).pdf",
+    "name": "Enel Flex Business Gas_26WR14AI_Consultazione_ML_KitSwaBusCteTgif.pdf",
+    "size": 75788
+   },
+   {
+    "name": "Enel Flex Business Start Gas_26WR12AN_Consultazione_ML_KitSwaBusCteTgif.pdf",
     "size": 76309
    },
    {
-    "name": "Enel Flex Control Business Gas_26WR13AK_Consultazione_ML_KitSwaBusCteTgif.pdf",
-    "size": 77570
+    "name": "Enel Flex Business Start Gas_26WR14AI_Consultazione_ML_KitSwaBusCteTgif.pdf",
+    "size": 76363
    },
    {
-    "name": "Enel_Condominio_Gas_26WR13AL_Consultazione_ML_KitSwaBusCteGib.pdf",
-    "size": 93895
+    "name": "Enel Flex Business Start Gas_26WR14AI_Vendita_ML_KitSwaBusCteTgif.pdf",
+    "size": 90341
    },
    {
-    "name": "Enel_Condominio_Luce_26WR13AI_Consultazione_ML_KitSwaBusCteGl.pdf",
-    "size": 77355
+    "name": "Enel Flex Control Business Gas_26WR14BA_Consultazione_ML_KitSwaBusCteTgif.pdf",
+    "size": 101845
    },
    {
-    "name": "Enel_Fix_Business_Gas_26WR13AM_Consultazione_ML_KitSwaBusCteGig.pdf",
-    "size": 75176
+    "name": "Enel Flex Control Business Gas_26WR14BA_Vendita_ML_KitSwaBusCteTgif.pdf",
+    "size": 137272
+   },
+   {
+    "name": "Enel_Condominio_Gas_26WR14AT_Consultazione_ML_KitSwaBusCteGib.pdf",
+    "size": 92054
+   },
+   {
+    "name": "Enel_Condominio_Luce_26WR14AN_Consultazione_ML_KitSwaBusCteGl.pdf",
+    "size": 78197
+   },
+   {
+    "name": "Enel_Fix_Business_Gas_26WR14AS_Consultazione_ML_KitSwaBusCteGig.pdf",
+    "size": 75158
    },
    {
     "name": "Enel_Fix_Business_Luce_26WR13AD_Consultazione_ML_KitSwaBusCteSov.pdf",
     "size": 76570
    },
    {
-    "name": "Enel_Fix_Business_Start_Gas_26WR13AM_Consultazione_ML_KitSwaBusCteGig.pdf",
-    "size": 74010
+    "name": "Enel_Fix_Business_Start_Gas_26WR14AS_Consultazione_ML_KitSwaBusCteGig.pdf",
+    "size": 73986
    },
    {
-    "name": "Enel_Fix_Business_Start_Luce_26WR13AY_Consultazione_ML_KitSwaBusCteSo.pdf",
-    "size": 76991
+    "name": "Enel_Fix_Business_Start_Gas_26WR14AS_Vendita_ML_KitSwaBusCteGig.pdf",
+    "size": 87951
    },
    {
-    "name": "Enel_Flex_Control_Business_Luce_26WR13AX_Consultazione_ML_KitSwaBusCteEfif.pdf",
-    "size": 82057
+    "name": "Enel_Fix_Business_Start_Luce_26WR14AO_Consultazione_ML_KitSwaBusCteSo.pdf",
+    "size": 77652
    },
    {
-    "name": "ENEL_UFFICIO_ORE_HAPPY___CTE_Consultazione_v1.pdf",
-    "size": 79950
+    "name": "Enel_Fix_Business_Start_Luce_26WR14AO_Vendita_ML_KitSwaBusCteSo.pdf",
+    "size": 91606
    },
    {
-    "name": "EnelBusinessSuperLuce_26WR13AD_Consultazione_ML_KitSwaBusCteSov.pdf",
-    "size": 76958
+    "name": "ENEL_FLEX_BOX_26WR14AM_Vendita_ML_KitSwaBusCteEfif.pdf",
+    "size": 97248
    },
    {
-    "name": "EnelFlexBusinessLuce3F_26WR12AI_Consultazione_ML_KitSwaBusCteEfif (1).pdf",
+    "name": "Enel_Flex_Control_Business_Luce_26WR14AM_Consultazione_ML_KitSwaBusCteEfif.pdf",
+    "size": 81750
+   },
+   {
+    "name": "Enel_Flex_Control_Business_Luce_26WR14AM_Vendita_ML_KitSwaBusCteEfif.pdf",
+    "size": 95718
+   },
+   {
+    "name": "EnelBusinessLuce_26WR14AO_Vendita_ML_KitSwaBusCteSo.pdf",
+    "size": 91130
+   },
+   {
+    "name": "EnelBusinessSuperLuce_26WR14AO_Consultazione_ML_KitSwaBusCteSov.pdf",
+    "size": 77855
+   },
+   {
+    "name": "EnelBusinessSuperLuce_26WR14AO_Vendita_ML_KitSwaBusCteSov.pdf",
+    "size": 91812
+   },
+   {
+    "name": "EnelFlexBusinessLuce3F_26WR12AI_Consultazione_ML_KitSwaBusCteEfif.pdf",
     "size": 82729
+   },
+   {
+    "name": "EnelFlexBusinessLuce3F_26WR14AM_Consultazione_ML_KitSwaBusCteEfif.pdf",
+    "size": 82894
+   },
+   {
+    "name": "EnelFlexBusinessLuce3F_26WR14AM_Vendita_ML_KitSwaBusCteEfif.pdf",
+    "size": 96864
+   },
+   {
+    "name": "INFO PER OFFERTE RES E MICROBUSINESS.pdf",
+    "size": 174493
+   },
+   {
+    "name": "Offerte Business B2C wave 23ott_12nov.pdf",
+    "size": 425220
+   },
+   {
+    "name": "OFFERTE BUSINESS DAL 16 SETT AL 01 OTTOBRE.pptx",
+    "size": 4802655
+   },
+   {
+    "name": "Panoramica Portafoglio Micro e Small Business 23.10 - 12.11.pdf",
+    "size": 674035
    }
   ],
   "documenti/enel-tablet/cte/residenziale": [
+   {
+    "name": "DETTAGLI CTE ENEL ENERGIA.pdf",
+    "size": 179697
+   },
+   {
+    "name": "Enel Ufficio Ore Happy_26WR14AO_Consultazione_ML_KitSwaBusCteSeixt.pdf",
+    "size": 130317
+   },
+   {
+    "name": "Enel_Community_Edition_26WR12BI_Consultazione_ML_RedKitSwaResCteComEn.pdf",
+    "size": 190689
+   },
+   {
+    "name": "Enel_Community_Edition_26WR13T_Consultazione_ML_RedKitSwaResCteComEn.pdf",
+    "size": 191190
+   },
    {
     "name": "ENEL_FIX_WOW_GAS_26WR13Z_Consultazione_ML_RedKitSwaResCteElg.pdf",
     "size": 120346
@@ -286,30 +3138,182 @@
     "size": 197249
    },
    {
-    "name": "Enel_Flex_Control_Gas_26WR12AC_Consultazione_ML_RedKitSwaResCteIndG360 (1).pdf",
+    "name": "ENEL_FLEX_BOX_26WR14AM_Consultazione_ML_KitSwaBusCteEfif.pdf",
+    "size": 83273
+   },
+   {
+    "name": "Enel_Flex_Control_Gas_26WR12AC_Consultazione_ML_RedKitSwaResCteIndG360.pdf",
     "size": 121374
    },
    {
-    "name": "Enel_Gas_e_Giga_26WR12BB_Consultazione_ML_RedKitSwaResCteGg (1).pdf",
-    "size": 165774
+    "name": "Enel_Flex_Gas_26WR14AC_Consultazione_ML_RedKitSwaResCteElgp.pdf",
+    "size": 120453
+   },
+   {
+    "name": "ENEL_FLEX_LUCE_26WR14X_Consultazione_ML_RedKitSwaResCteIndPT.pdf",
+    "size": 196315
+   },
+   {
+    "name": "ENEL_FLEX_LUCE_26WR14X_Vendita_ML_RedKitSwaResCteIndPT.pdf",
+    "size": 203239
    },
    {
     "name": "Enel_Gas_e_Giga_26WR13Z_Consultazione_ML_RedKitSwaResCteGg.pdf",
     "size": 132243
    },
    {
-    "name": "Enel_Luce_e_Giga_26WR12BH_Consultazione_ML_RedKitSwaResCteSctb (1).pdf",
-    "size": 204734
+    "name": "Enel_Gas_e_Giga_26WR14AG_Consultazione_ML_RedKitSwaResCteGg.pdf",
+    "size": 131927
+   },
+   {
+    "name": "Enel_Luce_e_Giga_26WR13T_Consultazione_ML_RedKitSwaResCteSctb.pdf",
+    "size": 206220
+   },
+   {
+    "name": "Enel_Luce_e_Giga_26WR14V_Consultazione_ML_RedKitSwaResCteSctb.pdf",
+    "size": 218481
+   },
+   {
+    "name": "ENEL_UFFICIO_ORE_HAPPY___CTE_Consultazione_v1.pdf",
+    "size": 79950
+   },
+   {
+    "name": "ENEL_WOW_GAS_26WR14AG_Consultazione_ML_RedKitSwaResCteElg.pdf",
+    "size": 123088
+   },
+   {
+    "name": "Enel_WOW_Luce_26WR14V_Consultazione_ML_RedKitSwaResCteEmF.pdf",
+    "size": 197302
+   },
+   {
+    "name": "Offerte Consumer B2C wave 23_ott 12_nov.pdf",
+    "size": 624101
    },
    {
     "name": "Portafoglio Offerte e Prodotti - Wave 16.09 -01.10 (1)_removed.pdf",
     "size": 403966
+   },
+   {
+    "name": "Regolamento-Open-Fiber-la-scelta-che-ti-premia_v5.pdf",
+    "size": 184432
    }
   ],
   "documenti/enel-tablet/modulistica": [
    {
+    "name": "Accise e IVA ENERGIA ELETTRICA NATO_AMBASCIATE UNIFICATO.pdf",
+    "size": 91961
+   },
+   {
+    "name": "Accise e IVA GAS NATO_AMBASCIATE UNIFICATO.pdf",
+    "size": 91154
+   },
+   {
+    "name": "CGF-ml-clienti-residenziali.pdf",
+    "size": 229111
+   },
+   {
+    "name": "CONFERMA CONTRATTO ENEL AGENZIE.pdf",
+    "size": 462947
+   },
+   {
+    "name": "Delega legale.pdf",
+    "size": 52611
+   },
+   {
+    "name": "Delega light_Versione per Agenzie.pdf",
+    "size": 94223
+   },
+   {
+    "name": "Dichiarazione di adesione al Gruppo Iva.pdf",
+    "size": 72947
+   },
+   {
+    "name": "Dichiarazione sostitutiva installazione o presenza apparati di cura medica alimentati con energia elettrica [ML_NDisalimentabileNO].pdf",
+    "size": 128149
+   },
+   {
+    "name": "Dichiarazione sostitutiva per la disinstallazione degli apparati di cura medica [ML_NDisalimentabileSi].pdf",
+    "size": 140064
+   },
+   {
+    "name": "ELE_Accise_UsiEsclusi.pdf",
+    "size": 95328
+   },
+   {
+    "name": "ELE_Accise_UsiEsenti.pdf",
+    "size": 90897
+   },
+   {
+    "name": "ELE_Iva10_Abitazioni a carattere collettivo(Condominio).pdf",
+    "size": 64834
+   },
+   {
+    "name": "ELE_Iva10_Generico artigianali_editoriali_consorzi bonifica.pdf",
+    "size": 46838
+   },
+   {
+    "name": "ELE_Iva_agevolata_10%_pertinenze_pompa_di_calore.pdf",
+    "size": 46704
+   },
+   {
+    "name": "GAS_Accise_UsiEsclusi.pdf",
+    "size": 83068
+   },
+   {
+    "name": "GAS_Accise_UsiForzeArmate.pdf",
+    "size": 47952
+   },
+   {
+    "name": "GAS_Accise_UsiIndustriali.pdf",
+    "size": 95453
+   },
+   {
+    "name": "GAS_Iva10_Generico-artig_editoriali.pdf",
+    "size": 59324
+   },
+   {
+    "name": "ISTRUZIONI CONDOMINI DA TABLET.pdf",
+    "size": 1969070
+   },
+   {
     "name": "MODULI DATI PER ENEL TABLET + MODULO BUS + CONDOMINI.pdf",
     "size": 101828
+   },
+   {
+    "name": "Modulistica - Agevolazioni fiscali.pdf",
+    "size": 58323
+   },
+   {
+    "name": "Modulo Aggiuntivo.pdf",
+    "size": 101339
+   },
+   {
+    "name": "Modulo Categoria di Consumo Gas_2022.pdf",
+    "size": 537322
+   },
+   {
+    "name": "Modulo Condomini con Amministratore_new.pdf",
+    "size": 36754
+   },
+   {
+    "name": "Modulo Condomini senza Amministratore.pdf",
+    "size": 37088
+   },
+   {
+    "name": "Modulo per la richiesta di prescrizione.pdf",
+    "size": 165006
+   },
+   {
+    "name": "Panoramica Portafoglio Micro e Small Business 02.10 - 22.10 (1).pdf",
+    "size": 767312
+   },
+   {
+    "name": "Prospetto Tablet settimanale.xlsx",
+    "size": 17892
+   },
+   {
+    "name": "Richiesta Applicazione Regime di Non Disalimentabilita Apparati Di Cura [ML_NDisalimentabileNO].pdf",
+    "size": 176892
    }
   ],
   "documenti/enel-tablet/privacy": [
@@ -320,73 +3324,149 @@
   ],
   "documenti/enel-tablet/procedimenti": [
    {
+    "name": "ENEL ENERGIA - COMPILAZIONE CONTRATTO.docx",
+    "size": 25675
+   },
+   {
+    "name": "ENEL ENERGIA - COMPILAZIONE CONTRATTO.pdf",
+    "size": 92655
+   },
+   {
+    "name": "ESEMPIO BUS ENEL ENERGIA PDA.pdf",
+    "size": 623034
+   },
+   {
+    "name": "ESEMPIO BUS PDA NUOVA ENEL ENERGIA.pdf",
+    "size": 436540
+   },
+   {
+    "name": "ESEMPIO RESIDEN ENEL ENERGIA PDA.pdf",
+    "size": 672679
+   },
+   {
+    "name": "Flyer.pdf",
+    "size": 409260
+   },
+   {
+    "name": "Manuale operativo Inserimento Offerte Wow.pdf",
+    "size": 2137121
+   },
+   {
+    "name": "ProcessidiQualityCallrev_13_1_1_1_1_1_1_1_1_3_1_1.pdf",
+    "size": 874491
+   },
+   {
+    "name": "QualityCallDigital_Flyer attiva offerta_scelta (1).pdf",
+    "size": 306205
+   },
+   {
+    "name": "QualityCallDigital_Flyer attiva offerta_scelta (2).pdf",
+    "size": 315090
+   },
+   {
     "name": "Scheda_Procedurale_Enel_aggiornata.pdf",
     "size": 17565
    }
   ],
   "documenti/engie/cte/business": [
    {
-    "name": "eFIX GAS_223_FSOG",
-    "size": 127586
+    "name": "223_EVO1S#00008.pdf",
+    "size": 146821
    },
    {
-    "name": "EFIX GAS_223_FSOG#00006.pdf",
-    "size": 133553
+    "name": "223_EVO1S#00008_gas.pdf",
+    "size": 169378
    },
    {
-    "name": "eFIX LUCE_223_FSOL",
-    "size": 161961
+    "name": "223_EVO2S#00008.pdf",
+    "size": 146890
    },
    {
-    "name": "EFIX LUCE_223_FSOL#00006.pdf",
-    "size": 161899
+    "name": "223_EVO2S#00008_gas.pdf",
+    "size": 166785
    },
    {
-    "name": "eFLEX_223_FLEX",
-    "size": 297860
+    "name": "Efix Gas.pdf",
+    "size": 127315
    },
    {
-    "name": "EFLEX_223_FLEX#00006.pdf",
-    "size": 292672
+    "name": "Efix Luce.pdf",
+    "size": 154996
+   },
+   {
+    "name": "EFLEX_223_FLEX#00008.pdf",
+    "size": 286731
    }
   ],
   "documenti/engie/cte/residenziale": [
    {
-    "name": "ENERGIA VEDO CHIARO SMILE_223_SMIL",
-    "size": 278479
+    "name": "Allegato tecnico PiùBenessere_def.pdf",
+    "size": 188614
    },
    {
-    "name": "ENERGIA VEDO CHIARO SMILE_223_SMIL#00006.pdf",
-    "size": 286068
+    "name": "Allegato tecnico PiùCasa_def.pdf",
+    "size": 168351
    },
    {
-    "name": "EXTRA ENERGIA LUCE_223_TAND",
-    "size": 209677
+    "name": "Allegato tecnico PiùSalute_def.pdf",
+    "size": 161816
    },
    {
-    "name": "EXTRA ENERGIA LUCE_223_TAND#00005.pdf",
-    "size": 199343
+    "name": "EXTRA ENERGIA LUCE_223_TAND#00007.pdf",
+    "size": 200254
    },
    {
-    "name": "FISSO 12 MESI - GAS_223_DOSG",
-    "size": 140810
+    "name": "FISSO 12 MESI GAS_223_DOSG#00010.pdf",
+    "size": 134345
    },
    {
-    "name": "FISSO 12 MESI GAS_223_DOSG#00008.pdf",
-    "size": 134426
+    "name": "NON SOLO RESTI&RISPARMI LUCE_223_RRIV#00007_ SOLO TABLET.pdf",
+    "size": 173558
    },
    {
-    "name": "RESTI&RISPARMI LUCE_223_RRIS",
-    "size": 181469
+    "name": "NON SOLO VEDO CHIARO SMILE_223_SMIV#00007_ SOLO TABLET.pdf",
+    "size": 285475
    },
    {
-    "name": "RESTI&RISPARMI LUCE_223_RRIS#00007.pdf",
-    "size": 174411
+    "name": "RESTI&RISPARMI LUCE_223_RRIS#00009.pdf",
+    "size": 173910
+   },
+   {
+    "name": "VEDO CHIARO SMILE_223_SMIL#00008.pdf",
+    "size": 277148
    }
   ],
   "documenti/engie/modulistica": [
    {
+    "name": "01aRichiesta_condizioni_SME 09.2025.pdf",
+    "size": 418221
+   },
+   {
+    "name": "01bRichiesta aggiuntiva_2021 editabile.pdf",
+    "size": 63350
+   },
+   {
+    "name": "Aggiunta punti gas BXXXXXXX.docx",
+    "size": 437335
+   },
+   {
+    "name": "Comunicazione partner_Soglia minima SME e punti secondari.pdf",
+    "size": 242458
+   },
+   {
+    "name": "FAQ ENGIE RES - MICRO BUSINESS.pdf",
+    "size": 27479
+   },
+   {
+    "name": "Informativa_ENGIERetail_MAGGIO.2025.pdf",
+    "size": 123086
+   },
+   {
     "name": "MANDATO SEPA ENGIE STELLAR (SOLO SE INTESTARIO DEL CONTO CORRENTE DIVERSO DA INTESTATARIO UTENZE) (1).pdf",
+    "size": 46295
+   },
+   {
+    "name": "MANDATO SEPA ENGIE STELLAR (SOLO SE INTESTARIO DEL CONTO CORRENTE DIVERSO DA INTESTATARIO UTENZE).pdf",
     "size": 46295
    },
    {
@@ -402,16 +3482,132 @@
   ],
   "documenti/engie/procedimenti": [
    {
+    "name": "Configurazione OKTA_Agenti.pdf",
+    "size": 683989
+   },
+   {
+    "name": "FAQ_Stellar_Mobile.pdf",
+    "size": 105186
+   },
+   {
+    "name": "Manuale Stellar Backup.pdf",
+    "size": 534485
+   },
+   {
     "name": "Manuale Stellar Mobile.pdf",
     "size": 5379392
+   },
+   {
+    "name": "Nuova procedura credenziali Stellar.pdf",
+    "size": 433530
+   },
+   {
+    "name": "Okta-SSPR - MANUALE CAMBIO- RESET PASSWORD STELLAR.pdf",
+    "size": 653235
    },
    {
     "name": "PROFILO ENGIE.pdf",
     "size": 391443
    },
    {
+    "name": "Requisiti Delibera 386 Engie.pdf",
+    "size": 3635978
+   },
+   {
     "name": "Scheda_Engie_Greenword_Procedura.pdf",
     "size": 18903
+   },
+   {
+    "name": "Script Quality call ENGIE.pdf",
+    "size": 74445
+   },
+   {
+    "name": "Sequenza censimento Engie.pdf",
+    "size": 360395
+   },
+   {
+    "name": "TABELLA DATI VENDITORE PER LA RICHIESTA CENSIMENTO ENGIE.docx",
+    "size": 21816
+   }
+  ],
+  "documenti/estra/cte/business": [
+   {
+    "name": "ESTRA TREND GAS - IMPRESA (1).pdf",
+    "size": 211917
+   },
+   {
+    "name": "ESTRA TREND PIU' LUCE (1).pdf",
+    "size": 566369
+   },
+   {
+    "name": "ESTRA TREND UNICA LUCE (1).pdf",
+    "size": 566569
+   }
+  ],
+  "documenti/estra/cte/residenziale": [
+   {
+    "name": "ESTRA NATURA GAS (1).pdf",
+    "size": 225300
+   },
+   {
+    "name": "NATURA LUCE (1).pdf",
+    "size": 636961
+   }
+  ],
+  "documenti/fastweb-energia/cte/business": [
+   {
+    "name": "cte_fastweb_gas_fix biz.pdf",
+    "size": 133325
+   },
+   {
+    "name": "cte_fastweb_gas_flex biz.pdf",
+    "size": 136549
+   },
+   {
+    "name": "cte_fastweb_luce_fix biz.pdf",
+    "size": 167641
+   },
+   {
+    "name": "cte_fastweb_luce_flex biz.pdf",
+    "size": 175430
+   },
+   {
+    "name": "Sales News Fastweb Gas - P.iva FW-VF 08 Ottobre 26.pdf",
+    "size": 857472
+   },
+   {
+    "name": "Sales News Fastweb Luce - P.iva FW-VF 08 Ottobre 26.pdf",
+    "size": 734430
+   }
+  ],
+  "documenti/fastweb-energia/cte/residenziale": [
+   {
+    "name": "cte_fastweb_gas_flex.pdf",
+    "size": 146471
+   },
+   {
+    "name": "cte_fastweb_luce_fix.pdf",
+    "size": 145804
+   },
+   {
+    "name": "cte_fastweb_luce_fix_xte.pdf",
+    "size": 145103
+   },
+   {
+    "name": "cte_fastweb_luce_flat.pdf",
+    "size": 202991
+   },
+   {
+    "name": "cte_fastweb_luce_flex.pdf",
+    "size": 146301
+   },
+   {
+    "name": "Sales News Fastweb Gas Uso Domestico 8 Ottobre26.pdf",
+    "size": 1141008
+   },
+   {
+    "name": "Sales News Fastweb Luce Uso Domestico 8 Ottobre26.pdf",
+    "size": 1097131
    }
   ],
   "documenti/fotovoltaico/altro": [
@@ -611,70 +3807,246 @@
   "documenti/gde/cte/business": [
    {
     "name": "business SELF PLUS GASBUS.pdf",
-    "size": 230222
+    "size": 253348
    },
    {
     "name": "business SELF PLUS POWER.pdf",
-    "size": 234598
+    "size": 256274
    },
    {
     "name": "business SERVITO PLUS GASBUS.pdf",
-    "size": 230342
+    "size": 253406
    },
    {
     "name": "business SERVITO PLUS POWER.pdf",
-    "size": 234679
+    "size": 256270
    },
    {
     "name": "business TOP PLUS GASBUS.pdf",
-    "size": 230322
+    "size": 253341
    },
    {
     "name": "business TOP PLUS POWER.pdf",
-    "size": 234593
+    "size": 256261
+   },
+   {
+    "name": "Condo 1 PLUS.pdf",
+    "size": 256606
+   },
+   {
+    "name": "CONDO 10 GAS.pdf",
+    "size": 230332
+   },
+   {
+    "name": "Condo 10 PLUS.pdf",
+    "size": 256148
+   },
+   {
+    "name": "Condo 4 PLUS.pdf",
+    "size": 256600
+   },
+   {
+    "name": "Condo 5 PLUS.pdf",
+    "size": 256602
+   },
+   {
+    "name": "Condo 6 PLUS.pdf",
+    "size": 256603
+   },
+   {
+    "name": "Condo 7 PLUS.pdf",
+    "size": 256592
+   },
+   {
+    "name": "Condo 8 PLUS.pdf",
+    "size": 256591
+   },
+   {
+    "name": "Condo 9 PLUS.pdf",
+    "size": 256592
+   },
+   {
+    "name": "Condo gas 1 PLUS.pdf",
+    "size": 253130
+   },
+   {
+    "name": "Condo gas 2 PLUS.pdf",
+    "size": 253133
+   },
+   {
+    "name": "Condo gas 3 PLUS.pdf",
+    "size": 253246
+   },
+   {
+    "name": "Condo gas 4 PLUS.pdf",
+    "size": 253271
+   },
+   {
+    "name": "Condo Gas 5 BIS.pdf",
+    "size": 253026
+   },
+   {
+    "name": "Condo gas 5 PLUS.pdf",
+    "size": 253270
+   },
+   {
+    "name": "Condo gas 6 PLUS.pdf",
+    "size": 253274
+   },
+   {
+    "name": "Condo gas 7 PLUS.pdf",
+    "size": 253274
+   },
+   {
+    "name": "Condo gas 8 PLUS.pdf",
+    "size": 253274
+   },
+   {
+    "name": "Condo gas 9 PLUS.pdf",
+    "size": 253274
    }
   ],
   "documenti/gde/cte/residenziale": [
    {
     "name": "domestico SELF PLUS EE.pdf",
-    "size": 260461
+    "size": 176809
+   },
+   {
+    "name": "domestico SELF PLUS GAS.pdf",
+    "size": 176132
    },
    {
     "name": "domestico SERVITO PLUS EE.pdf",
-    "size": 260472
+    "size": 176855
    },
    {
     "name": "domestico SERVITO PLUS GAS.pdf",
-    "size": 253601
+    "size": 176142
    },
    {
     "name": "domestico TOP PLUS EE.pdf",
-    "size": 260451
+    "size": 176803
    },
    {
     "name": "domestico TOP PLUS GAS.pdf",
-    "size": 253571
+    "size": 176127
    },
    {
     "name": "Entra in Gruppo Gas.pdf",
-    "size": 253474
+    "size": 176098
+   },
+   {
+    "name": "Entra in Gruppo Power.pdf",
+    "size": 176740
    }
   ],
   "documenti/gde/modulistica": [
    {
+    "name": "Allegato Unico_Condomini 2205.xls",
+    "size": 195584
+   },
+   {
+    "name": "CGF_GDE_2024.pdf",
+    "size": 900163
+   },
+   {
+    "name": "E01 GDE-Mod- Iva Condomini.pdf",
+    "size": 543104
+   },
+   {
+    "name": "E02 GDE-Mod.Agevolazione iva EE.pdf",
+    "size": 417547
+   },
+   {
+    "name": "E05 Servizi al contatore - Modifica Potenzatensione e tipologia d uso_edit - Copia.pdf",
+    "size": 259862
+   },
+   {
+    "name": "E06 Servizi al contatore -D01-SP1_edit - Copia.pdf",
+    "size": 85213
+   },
+   {
     "name": "G01 - Nuova Attivazione Gas naturale_edit - Copia.pdf",
     "size": 466018
+   },
+   {
+    "name": "G02 impianto - Disattivazione - Verifica - Rimozione impianto Gas naturale_edit - Copia.pdf",
+    "size": 94439
+   },
+   {
+    "name": "G03 GDE-Mod. Agevolazione iva gas_2204.pdf",
+    "size": 441828
+   },
+   {
+    "name": "Istanza di regolarità Edilizia.pdf",
+    "size": 1477349
+   },
+   {
+    "name": "Mandato SDD_edit.pdf",
+    "size": 143102
+   },
+   {
+    "name": "Modulo A40.pdf",
+    "size": 128564
+   },
+   {
+    "name": "Modulo Dati Catastali GDE.pdf",
+    "size": 270641
+   },
+   {
+    "name": "Modulo Dich Accise Gas Rev6pdf",
+    "size": 852326
+   },
+   {
+    "name": "Modulo Estraneità e Legittimo possesso_RIADATTATO.pdf",
+    "size": 44547
+   },
+   {
+    "name": "Modulo H40.pdf",
+    "size": 102351
+   },
+   {
+    "name": "Modulo I40.pdf",
+    "size": 180084
    },
    {
     "name": "Modulo nuova connessione.pdf",
     "size": 306353
    },
    {
+    "name": "Modulo Reclami.pdf",
+    "size": 201862
+   },
+   {
+    "name": "Modulo Ripensamento_edit - Copia.pdf",
+    "size": 128563
+   },
+   {
+    "name": "Multipdr.xlsx",
+    "size": 34540
+   },
+   {
+    "name": "Multipod.xlsx",
+    "size": 33799
+   },
+   {
     "name": "Proposta di Fornitura_Editabile (1).pdf",
     "size": 932568
+   },
+   {
+    "name": "Voltura power e gas_edit - Copia.pdf",
+    "size": 165793
    }
   ],
   "documenti/gde/privacy": [
+   {
+    "name": "Allegato_4_Informativa_Clienti (2).pdf",
+    "size": 305759
+   },
+   {
+    "name": "Allegato_4_Informativa_Clienti.pdf",
+    "size": 175605
+   },
    {
     "name": "Privacy Greenworld - febbraio 2025.pdf",
     "size": 1018573
@@ -686,66 +4058,250 @@
     "size": 1768621
    },
    {
+    "name": "Comunicazione PagoPA.pdf",
+    "size": 69027
+   },
+   {
+    "name": "GDE - PROCEDURA OTP.pdf",
+    "size": 50832
+   },
+   {
     "name": "RESIDENZIALE - PROPOSTA_FORNITURA_GDE_24_25_Editabile.pdf",
     "size": 1750136
    }
   ],
   "documenti/gestori/unoenergy/cte/business": [
    {
-    "name": "BUSINESS CALORE AGILE - 08.07.pdf",
-    "size": 327224
+    "name": "BUSINESS CALORE AGILE - BLIP47CAMB - 08.01.pdf",
+    "size": 332596
    },
    {
-    "name": "CALORE AGILE BUSINESS JAB - 08.07.pdf",
-    "size": 182704
+    "name": "CALORE AGILE BUSINESS JAB - CABJAB - 08.01.pdf",
+    "size": 188357
    },
    {
-    "name": "CALORE SICURO BUSINESS JAB - CSBJAB - 08.07.pdf",
-    "size": 134934
+    "name": "CONDOMINIO FAR5 ETHICA - ECPFAR5TH - 08.01.pdf",
+    "size": 395266
    },
    {
-    "name": "ENERGIA AGILE BUSINESS - EAPUAGI - 08.07.pdf",
-    "size": 308319
+    "name": "CONDOMINIO GIN6 ETHICA - ECPGIN6TH - 08.01.pdf",
+    "size": 395259
    },
    {
-    "name": "ENERGIA AGILE BUSINESS JAB - EAPUZBJAB - 08.07.pdf",
-    "size": 163343
+    "name": "CONDOMINIO GNO2 ETHICA - ECPTHGNO2 - 08.01.pdf",
+    "size": 395126
    },
    {
-    "name": "ENERGIA SICURO BUSINESS - EAFISIBU - 08.07.pdf",
-    "size": 116181
+    "name": "CONDOMINIO MEP4 ETHICA - ECPMEP4TH - 08.01O.pdf",
+    "size": 395117
    },
    {
-    "name": "ENERGIA SICURO BUSINESS JAB - EAFIBJAB - 08.07.pdf",
-    "size": 116202
+    "name": "ENERGIA AGILE BUSINESS - EAPUAGI - 08.01.pdf",
+    "size": 316096
+   },
+   {
+    "name": "ENERGIA AGILE BUSINESS JAB - EAPUZBJAB - 08.01.pdf",
+    "size": 171126
+   },
+   {
+    "name": "TAR GAS ANA30 COND UNOENERGY OTT 2026 - 08.01.pdf",
+    "size": 410706
+   },
+   {
+    "name": "TAR GAS BDA05 COND UNOENERGY OTT 2026 - 08.01.pdf",
+    "size": 410696
+   },
+   {
+    "name": "TAR GAS CSA10 COND UNOENERGY OTT 2026 - 08.01.pdf",
+    "size": 410703
+   },
+   {
+    "name": "TAR GAS DAL92 COND UNOENERGY OTT 2026 - 08.01.pdf",
+    "size": 410700
+   },
+   {
+    "name": "TAR GAS LPA48 COND UNOENERGY OTT 2026 - 08.01.pdf",
+    "size": 410700
+   },
+   {
+    "name": "TAR GAS PIA06 COND UNOENERGY OTT 2026 - 08.01.pdf",
+    "size": 410705
+   },
+   {
+    "name": "TAR GAS SAA19 COND UNOENERGY OTT 2026 - 08.01.pdf",
+    "size": 410703
    }
   ],
   "documenti/gestori/unoenergy/cte/residenziale": [
    {
-    "name": "CALORE AGILE FAMILY JAB - 08.07.pdf",
-    "size": 184154
+    "name": "CALORE AGILE FAMILY JAB - CAFJAB - 08.01.pdf",
+    "size": 189868
    },
    {
-    "name": "CONVENZIONE AGILE - 08.07.pdf",
-    "size": 362737
+    "name": "CALORE SICURO FAMILY JAB - CSFJAB - 27.10.pdf",
+    "size": 136648
    },
    {
-    "name": "LUCE AGILE FAMILY JAB - EDPUZFJAB - 08.07.pdf",
-    "size": 171101
+    "name": "CALORE SICURO RATA COSTANTE JAB - GASJB4 - 27.10.pdf",
+    "size": 140745
    },
    {
-    "name": "QURAKARE - LUCE AGILE CONVENZIONE MED - EDPUZCMDTH - 08-07.pdf",
-    "size": 573534
+    "name": "CASA CALORE AGILE - BLIP47CAR - 08.01.pdf",
+    "size": 322489
+   },
+   {
+    "name": "CASA CALORE SICURO - CCS01 - 27.10.pdf",
+    "size": 229912
+   },
+   {
+    "name": "CONVENZIONE AGILE - BLIP47CA - 08.01.pdf",
+    "size": 369300
+   },
+   {
+    "name": "DOMESTICO SICURO GAS FISSO 24 D1CCS24 - 26.10.pdf",
+    "size": 232667
+   },
+   {
+    "name": "DOMESTICO SICURO GAS FISSO 24 JAB D1JAB24 - 26.10.pdf",
+    "size": 136641
+   },
+   {
+    "name": "DOMESTICO SICURO LUCE FISSO 24 - EDFIX24SIL - 26.10.pdf",
+    "size": 221994
+   },
+   {
+    "name": "DOMESTICO SICURO LUCE FISSO 24 JAB - EDFIX24JAB - 26.10.pdf",
+    "size": 125122
+   },
+   {
+    "name": "LUCE AGILE ETHICA - EDPUZAGTH -08.01.pdf",
+    "size": 438108
+   },
+   {
+    "name": "LUCE AGILE FAMILY JAB - EDPUZFJAB - 08.01.pdf",
+    "size": 178785
+   },
+   {
+    "name": "LUCE AGILE PERTINENZE ETHICA - EDPUZAPETH - 08.01.pdf",
+    "size": 170992
+   },
+   {
+    "name": "LUCE SICURO FAMILY JAB - EDFIZFJAB - 27.10.pdf",
+    "size": 124521
+   },
+   {
+    "name": "LUCE SICURO Rata Costante JAB - EDSIZCORJ - 27.10.pdf",
+    "size": 262756
+   },
+   {
+    "name": "QURAKARE - LUCE AGILE CONVENZIONE MED ETHICA - EDPUZCMDTH - 08.01.pdf",
+    "size": 543695
+   },
+   {
+    "name": "QURAKARE - LUCE SICURO MED ETHICA - EDFISMEDTH - 27.10.pdf",
+    "size": 347890
    }
   ],
   "documenti/gestori/unoenergy/modulistica": [
+   {
+    "name": "1 Proposta contratto condominio_rev 05.2026_EDITABILE.pdf",
+    "size": 17880279
+   },
+   {
+    "name": "1 Proposta contratto dom_rev 05.2026_EDITABILE.pdf",
+    "size": 4335885
+   },
    {
     "name": "1 Proposta contratto terziario_rev 01.2026_EDITABILE.pdf",
     "size": 13077894
    },
    {
+    "name": "1 Proposta contratto terziario_rev 05.2026_EDITABILE.pdf",
+    "size": 16204933
+   },
+   {
+    "name": "1.17.1-Modulo-per-richiesta-di-agevolazione-IVA-GAS.pdf",
+    "size": 212640
+   },
+   {
+    "name": "2.7.-Modulo-per-richiesta-di-agevolazione-dellIVA-ENERGIA.pdf",
+    "size": 218109
+   },
+   {
+    "name": "Allegato Multipod editabile test.pdf",
+    "size": 215501
+   },
+   {
+    "name": "ALLEGATO MULTIPUNTO editabile 2 DA USARE.xlsx",
+    "size": 29334
+   },
+   {
+    "name": "APPUNTI IVA AGEVOLATA.pdf",
+    "size": 222449
+   },
+   {
+    "name": "Attivazioni e Switch.pdf",
+    "size": 31479
+   },
+   {
+    "name": "Dichiarazione sostitutiva per usi non domestici_UNOENERGY_dal 30.03.26.doc",
+    "size": 198656
+   },
+   {
+    "name": "ISTANZA 326 ALTRI USI NEW.pdf",
+    "size": 357659
+   },
+   {
+    "name": "ISTANZA 326 DOMESTICO NEW.pdf",
+    "size": 343485
+   },
+   {
+    "name": "MODIstanza-per-lapplicazione-dellaliquota-IVA-10-alla-fornitura-di-energia-elettrica-per-le-pertinenze-delle-abitazioni.pdf",
+    "size": 333743
+   },
+   {
+    "name": "Modulo-addebito-diretto-SDD-CORE-2025.pdf",
+    "size": 80974
+   },
+   {
+    "name": "modulo-richiesta-agevolazione-IVA-energia-rev-03.pdf",
+    "size": 176241
+   },
+   {
+    "name": "PIANO CASA EDITABILE UNOENERGY (2).pdf",
+    "size": 579747
+   },
+   {
     "name": "PIANO CASA EDITABILE UNOENERGY.pdf",
     "size": 579747
+   },
+   {
+    "name": "Posa nuovo contatore PERMANENTE EE_01_2026_EDITABILE.pdf",
+    "size": 247644
+   },
+   {
+    "name": "Posa nuovo contatore TEMPORANEO EE_01_2026_EDITABILE.pdf",
+    "size": 316562
+   },
+   {
+    "name": "Richiesta posa nuovo contatore-EE_03_2022.pdf",
+    "size": 399807
+   },
+   {
+    "name": "Servizi al CONTATORE EE_01_2026 EDITABILE.pdf",
+    "size": 335719
+   },
+   {
+    "name": "Servizi al CONTATORE EE_01_2026 UE EDITABILE.pdf",
+    "size": 459278
+   },
+   {
+    "name": "Servizi al CONTATORE GAS_01_2026_EDITABILE (3).pdf",
+    "size": 210968
+   },
+   {
+    "name": "SOLO-MAIL.pdf",
+    "size": 171710
    }
   ],
   "documenti/gestori/unoenergy/privacy": [
@@ -756,6 +4312,26 @@
   ],
   "documenti/gestori/unoenergy/procedimenti": [
    {
+    "name": "1 Proposta di contratto DOMESTICO 2024_Rev. 12.2024 .pdf",
+    "size": 1292265
+   },
+   {
+    "name": "1 Proposta di contratto TERZARIO 2024_Rev. 12.2024 AZIENDA PH.pdf",
+    "size": 1670333
+   },
+   {
+    "name": "Attivazioni e Switch.pdf",
+    "size": 31479
+   },
+   {
+    "name": "Compilazione contratti.pdf",
+    "size": 267259
+   },
+   {
+    "name": "COMPILAZIONE MODULO GAS SUBENTRO - POTENZIALITA.pdf",
+    "size": 37562
+   },
+   {
     "name": "UNOENERGY - PROCEDURA OTP.pdf",
     "size": 52598
    }
@@ -763,29 +4339,201 @@
   "documenti/gestori/vivienergia/cte/residenziale": [
    {
     "name": "VIVIfull_gas.pdf",
-    "size": 221216
+    "size": 221744
    },
    {
     "name": "VIVIfull_luce.pdf",
-    "size": 272636
+    "size": 269922
+   },
+   {
+    "name": "VIVIleggero Market Gas.pdf",
+    "size": 221741
+   },
+   {
+    "name": "VIVIleggero market luce.pdf",
+    "size": 269989
+   },
+   {
+    "name": "VIVIprice Gas.pdf",
+    "size": 217560
+   },
+   {
+    "name": "VIVIprice Luce.pdf",
+    "size": 272492
+   },
+   {
+    "name": "VIVIup Basic Gas.pdf",
+    "size": 222644
+   },
+   {
+    "name": "VIVIup Basic Luce.pdf",
+    "size": 269450
+   },
+   {
+    "name": "VIVIup Light Gas.pdf",
+    "size": 222412
+   },
+   {
+    "name": "VIVIup Light Luce.pdf",
+    "size": 269470
+   },
+   {
+    "name": "VIVIup Super Gas.pdf",
+    "size": 222403
+   },
+   {
+    "name": "VIVIup Super Luce.pdf",
+    "size": 269458
    }
   ],
   "documenti/gestori/vivienergia/modulistica": [
    {
+    "name": "3. CGF_DOMBUS_2026.08_rev. 2def.pdf",
+    "size": 331631
+   },
+   {
+    "name": "Allegato Mod-115 Aliquota iva multisito.pdf",
+    "size": 161518
+   },
+   {
+    "name": "CONDIZIONI CONTRATTUALI VIVIPRONTO CASA.pdf",
+    "size": 8637964
+   },
+   {
     "name": "COSTO PRESTAZIONI .pdf",
     "size": 87451
+   },
+   {
+    "name": "EE_allegato_B_elencopunti.xlsx",
+    "size": 18010
+   },
+   {
+    "name": "Fac-7.06.03-Rev.-4-Dich-impianto-non-soggetto-a-40-14_word.pdf",
+    "size": 84860
+   },
+   {
+    "name": "Formazione_AXA Partners Italia per VIVIGAS_17.07.2025_DEF.pdf",
+    "size": 1153152
+   },
+   {
+    "name": "GAS_allegato_B_elencopunti.xlsx",
+    "size": 18091
+   },
+   {
+    "name": "Info-Modulo-ripensamento-VIVIGAS_rev.-12018_OK.pdf",
+    "size": 161924
+   },
+   {
+    "name": "Mod-114-Rev.-14-iva-aliquota-ridotta_pdf.pdf",
+    "size": 164462
+   },
+   {
+    "name": "Mod-115 Aliquota iva multisito.pdf",
+    "size": 262679
+   },
+   {
+    "name": "Mod-115-Allegato_A_-Iva-aliquota-ridotta-MULTISITO-Rev.-4_excel.pdf",
+    "size": 116576
+   },
+   {
+    "name": "Mod-120-Rev.-10-Dichiarazione-sostitutiva-certificato-CCIAA-e-di-atto-di-notorieta-relativa-alluso-del-gas-naturale.pdf",
+    "size": 421395
+   },
+   {
+    "name": "Mod-120-Rev.-8-Dichiarazione-sostitutiva-certificato-CCIAA-e-di-atto-di-notorietà-relativa-alluso-del-gas-naturale.pdf",
+    "size": 285080
+   },
+   {
+    "name": "Mod-122-Rev.-5-Dichiarazione-Sostitutiva-Residenza_word.pdf",
+    "size": 138043
+   },
+   {
+    "name": "Mod-162-Rev.-33-Modulo-di-reclamo.pdf",
+    "size": 308481
+   },
+   {
+    "name": "Mod-173 Rev. 17 Richiesta disdetta contratto gas EE.pdf",
+    "size": 211411
+   },
+   {
+    "name": "Mod-184 Rev. 10 Modulo dati catastali e legge 80.pdf",
+    "size": 244859
+   },
+   {
+    "name": "Mod-185 Rev. 5 Richiesta di verifica gruppo di misura.pdf",
+    "size": 194887
+   },
+   {
+    "name": "Mod-200 Rev. 10 Richiesta preventivo per modifica impianto.pdf",
+    "size": 273988
+   },
+   {
+    "name": "Mod-201 Rev. 4 Richiesta preventivo per nuovo impianto.pdf",
+    "size": 261003
+   },
+   {
+    "name": "Mod-287-Rev-3-Modulo-uso-fuori-campo-accise-on-line.pdf",
+    "size": 261746
+   },
+   {
+    "name": "Mod-343-Rev.-15-Nota-informativa-e-modulo-di-ripensamento-tipo.pdf",
+    "size": 306305
+   },
+   {
+    "name": "Mod-348-Rev.-10-Richiesta-inizio-fornitura-durante-il-periodo-di-ripensamento-1.pdf",
+    "size": 267066
+   },
+   {
+    "name": "Mod-356-Rev.-5-Dichiarazione-sostitutiva-Categoria-duso-del-punto-di-prelievo-gas.pdf",
+    "size": 563808
+   },
+   {
+    "name": "Mod-447-Rev.-1-Dichiarazione-Cliente-per-unità-locale.pdf",
+    "size": 155933
    },
    {
     "name": "Mod-465-Rev.-5-Richiesta-attivazione-fornitura-energia-elettrica.pdf",
     "size": 184109
    },
    {
+    "name": "Mod-466-Rev.-1-Richiesta-attivazione-fornitura-gas (2).pdf",
+    "size": 153743
+   },
+   {
     "name": "Mod-466-Rev.-1-Richiesta-attivazione-fornitura-gas.pdf",
     "size": 153743
    },
    {
+    "name": "Mod-473-Rev.-6-Richiesta-voltura.pdf",
+    "size": 273932
+   },
+   {
+    "name": "Mod-535-Rev.-1-Modulo-2_Autocertificazione-condizione-vulnerabili_word.pdf",
+    "size": 226784
+   },
+   {
+    "name": "Mod-97-Rev.-14-Autorizzazione-a-favore-di-terzi_word.pdf",
+    "size": 179957
+   },
+   {
+    "name": "Mod_155_A01.pdf",
+    "size": 11121
+   },
+   {
+    "name": "MODELLO SEPA.pdf",
+    "size": 110641
+   },
+   {
+    "name": "MODULO ADESIONE VIVIPRONTO CASA - EDITABILE.pdf",
+    "size": 200942
+   },
+   {
     "name": "Modulo Adesione_2026-01_editabile.pdf",
     "size": 338571
+   },
+   {
+    "name": "Modulo Adesione_2026.08_editabile.pdf",
+    "size": 302394
    },
    {
     "name": "MODULO DATI OTP.pdf",
@@ -798,52 +4546,332 @@
     "size": 1018573
    }
   ],
+  "documenti/gestori/vivienergia/procedimenti": [
+   {
+    "name": "CODICI REGIONE X GAS.docx",
+    "size": 15436
+   },
+   {
+    "name": "COSTO PRESTAZIONI .pdf",
+    "size": 87451
+   },
+   {
+    "name": "DEPOSITO CAUZIONALE.pdf",
+    "size": 81852
+   },
+   {
+    "name": "MODULO DATI OTP.pdf",
+    "size": 96899
+   }
+  ],
+  "documenti/hera/cte/business": [
+   {
+    "name": "Aggiornamento Portafoglio Offerte Ott 2026.pptx",
+    "size": 643752
+   },
+   {
+    "name": "CTE_EST_HERA_HYBRID_LAVORO_GAS__V34 Valida dal 19.10 al 10.11.pdf",
+    "size": 337544
+   },
+   {
+    "name": "CTE_EST_HERA_HYBRID_LAVORO_LUCE__V34 Valida dal 19.10 al 10.11.pdf",
+    "size": 342789
+   },
+   {
+    "name": "CTE_EST_HERA_HYBRID_SME_GAS__V34 Valida dal 19.10 al 10.11.pdf",
+    "size": 309073
+   },
+   {
+    "name": "CTE_EST_HERA_HYBRID_SME_LUCE__V34 Valida dal 19.10 al 10.11.pdf",
+    "size": 362599
+   },
+   {
+    "name": "CTE_EST_PIU_CONTROLLO_ACTIVE_LAVORO_GAS__V24.pdf",
+    "size": 298723
+   },
+   {
+    "name": "CTE_EST_PIU_CONTROLLO_ACTIVE_LAVORO_LUCE__V24.pdf",
+    "size": 307018
+   },
+   {
+    "name": "CTE_EST_PREZZO_NETTO_CONDOMINIO_LUCE__V68.pdf",
+    "size": 303819
+   },
+   {
+    "name": "CTE_EST_PREZZO_NETTO_IMPRESA_GAS__V68.pdf",
+    "size": 295010
+   },
+   {
+    "name": "CTE_EST_PREZZO_NETTO_IMPRESA_LUCE__V68.pdf",
+    "size": 309711
+   },
+   {
+    "name": "CTE_HC_HERA_HYBRID_LAVORO_GAS__V34 Valida dal 19.10 al 10.11.pdf",
+    "size": 308313
+   },
+   {
+    "name": "CTE_HC_HERA_HYBRID_LAVORO_LUCE__V34 Valida dal 19.10 al 10.11.pdf",
+    "size": 289710
+   },
+   {
+    "name": "CTE_HC_HERA_HYBRID_SME_GAS__V34 Valida dal 19.10 al 10.11.pdf",
+    "size": 282198
+   },
+   {
+    "name": "CTE_HC_HERA_HYBRID_SME_LUCE__V34 Valida dal 19.10 al 10.11.pdf",
+    "size": 308818
+   },
+   {
+    "name": "CTE_HC_PIU_CONTROLLO_ACTIVE_LAVORO_GAS__V24.pdf",
+    "size": 269576
+   },
+   {
+    "name": "CTE_HC_PIU_CONTROLLO_ACTIVE_LAVORO_LUCE__V24.pdf",
+    "size": 281777
+   },
+   {
+    "name": "CTE_HC_PREZZO_NETTO_CONDOMINIO_LUCE__V68.pdf",
+    "size": 278526
+   },
+   {
+    "name": "CTE_HC_PREZZO_NETTO_IMPRESA_GAS__V68.pdf",
+    "size": 266608
+   },
+   {
+    "name": "CTE_HC_PREZZO_NETTO_IMPRESA_LUCE__V68.pdf",
+    "size": 285138
+   },
+   {
+    "name": "Schemino Offerte_Ott 2026_3.xlsx",
+    "size": 22177
+   }
+  ],
   "documenti/hera/cte/residenziale": [
    {
-    "name": "CTE_EST_HERA_HYBRID_CASA_GAS__V25 Valida dal 25.05 al 16.06.pdf",
-    "size": 380637
+    "name": "Aggiornamento Portafoglio Offerte Ott 2026.pptx",
+    "size": 643752
    },
    {
-    "name": "CTE_EST_HERA_HYBRID_CASA_LUCE__V25 Valida dal 25.05 al 16.06.pdf",
-    "size": 357021
+    "name": "CTE_EST_HERA_HYBRID_CASA_GAS__V34 Valida dal 19.10 al 10.11.pdf",
+    "size": 337735
    },
    {
-    "name": "CTE_EST_HERA_HYBRID_LIMITED_EDITION_CASA_GAS__V25.pdf",
-    "size": 395770
+    "name": "CTE_EST_HERA_HYBRID_CASA_LUCE__V34 Valida dal 19.10 al 10.11.pdf",
+    "size": 312923
    },
    {
-    "name": "CTE_EST_HERA_HYBRID_LIMITED_EDITION_CASA_LUCE__V25.pdf",
-    "size": 372405
+    "name": "CTE_EST_PIU_CONTROLLO_ACTIVE_CASA_GAS__V24.pdf",
+    "size": 290507
    },
    {
-    "name": "CTE_EST_PIU_CONTROLLO_ACTIVE_CASA_GAS__V22.pdf",
-    "size": 315106
+    "name": "CTE_EST_PIU_CONTROLLO_ACTIVE_CASA_LUCE__V24.pdf",
+    "size": 303461
    },
    {
-    "name": "CTE_EST_PIU_CONTROLLO_ACTIVE_CASA_LUCE__V22.pdf",
-    "size": 336912
+    "name": "CTE_EST_PIU_CONTROLLO_FLAT_CASA_GAS__V50 Valida fino al 15.10 al 23.10.pdf",
+    "size": 371097
    },
    {
-    "name": "CTE_EST_PIU_CONTROLLO_FLAT_CASA_GAS__V44.pdf",
-    "size": 348018
+    "name": "CTE_EST_PIU_CONTROLLO_FLAT_CASA_GAS__V50.pdf",
+    "size": 340850
    },
    {
-    "name": "CTE_EST_PIU_CONTROLLO_FLAT_CASA_LUCE__V44.pdf",
-    "size": 357851
+    "name": "CTE_EST_PIU_CONTROLLO_FLAT_CASA_LUCE__V50.pdf",
+    "size": 326736
    },
    {
-    "name": "CTE_EST_PIU_CONTROLLO_FLAT_LIMITED_EDITION_CASA_GAS__V44.pdf",
-    "size": 348165
+    "name": "CTE_EST_PIU_CONTROLLO_FLAT_CASA_LUCE__V50_PENALE Valida fino al 15.10 al 23.10.pdf",
+    "size": 325174
    },
    {
-    "name": "CTE_EST_PIU_CONTROLLO_FLAT_LIMITED_EDITION_CASA_LUCE__V44.pdf",
-    "size": 357654
+    "name": "CTE_HC_HERA_HYBRID_CASA_GAS__V34 Valida dal 19.10 al 10.11.pdf",
+    "size": 310877
+   },
+   {
+    "name": "CTE_HC_HERA_HYBRID_CASA_LUCE__V34 Valida dal 19.10 al 10.11.pdf",
+    "size": 287339
+   },
+   {
+    "name": "CTE_HC_PIU_CONTROLLO_ACTIVE_CASA_GAS__V24.pdf",
+    "size": 261016
+   },
+   {
+    "name": "CTE_HC_PIU_CONTROLLO_ACTIVE_CASA_LUCE__V24.pdf",
+    "size": 277693
+   },
+   {
+    "name": "CTE_HC_PIU_CONTROLLO_FLAT_CASA_GAS__V50 Valida fino al 15.10 al 23.10.pdf",
+    "size": 312720
+   },
+   {
+    "name": "CTE_HC_PIU_CONTROLLO_FLAT_CASA_GAS__V50.pdf",
+    "size": 314082
+   },
+   {
+    "name": "CTE_HC_PIU_CONTROLLO_FLAT_CASA_LUCE__V50.pdf",
+    "size": 301470
+   },
+   {
+    "name": "CTE_HC_PIU_CONTROLLO_FLAT_CASA_LUCE__V50_PENALE Valida fino al 15.10 al 23.10.pdf",
+    "size": 299370
+   },
+   {
+    "name": "EST HERA_HYBRID_LIMITED_EDITION_CASA_LUCE_V33 SOLO APPAROUND Valida dal 14.10 al 23.10.pdf",
+    "size": 322395
+   },
+   {
+    "name": "HERA_HYBRID_LIMITED_EDITION_CASA_GAS V33 SOLO APPAROUND Valida dal 14.10 al 23.10.pdf",
+    "size": 402732
+   },
+   {
+    "name": "Schemino Offerte_Ott 2026_3.xlsx",
+    "size": 22177
    }
   ],
   "documenti/hera/modulistica": [
    {
+    "name": "associazioni attive.xlsx",
+    "size": 608133
+   },
+   {
+    "name": "AUTOCERTIFICAZIONE_EREDE.pdf",
+    "size": 929814
+   },
+   {
+    "name": "CESSAZIONE.pdf",
+    "size": 92303
+   },
+   {
+    "name": "Dati Catastali.pdf",
+    "size": 114137
+   },
+   {
+    "name": "DELEGA HERACOM OVER.pdf",
+    "size": 48224
+   },
+   {
+    "name": "DELEGA.pdf",
+    "size": 469237
+   },
+   {
+    "name": "DISCONOSCIMENTO DEBITO EST ENERGY.pdf",
+    "size": 160663
+   },
+   {
+    "name": "DISCONOSCIMENTO DEBITO HC.pdf",
+    "size": 336575
+   },
+   {
+    "name": "EE15 - Rinuncia franchigia.pdf",
+    "size": 204305
+   },
+   {
+    "name": "EST_HERA NOPGAS__26_07.pdf",
+    "size": 520028
+   },
+   {
+    "name": "EST_HERA NOPLUCE__26_07.pdf",
+    "size": 542062
+   },
+   {
+    "name": "ESTENERGY-ALIQUOTA-IVA.pdf",
+    "size": 68916
+   },
+   {
+    "name": "EstEnergy_Applicazione_aliquota_ridotta_accisa_usi_non domestici_Gas_rev_17032026.pdf",
+    "size": 256885
+   },
+   {
+    "name": "Formazione_Digital_Sales_App.pdf",
+    "size": 3754003
+   },
+   {
+    "name": "GESTIONE KO DOCUMENTALE DIGITAL SALESAPP.pdf",
+    "size": 1394296
+   },
+   {
+    "name": "HC-ALIQUOTA-IVA.pdf",
+    "size": 93189
+   },
+   {
+    "name": "HC_HERA NOPGAS__26_07.pdf",
+    "size": 491826
+   },
+   {
+    "name": "HC_HERA NOPLUCE__26_07.pdf",
+    "size": 507019
+   },
+   {
+    "name": "HERA NO PROBLEM GAS e LUCE informazioni servizi (2).pdf",
+    "size": 656637
+   },
+   {
+    "name": "HERA NOPLuceGas_In formula Servizio.pptx",
+    "size": 5460370
+   },
+   {
+    "name": "HERACOM PRATICHE ED INFORMAZIONI.pptx",
+    "size": 125483
+   },
+   {
+    "name": "Istanza_prima_attivazione_-_EE e GAS V1_010124.pdf",
+    "size": 264991
+   },
+   {
+    "name": "ISTANZA_PRIMA_ATTIVAZIONE_-_EE.pdf",
+    "size": 186449
+   },
+   {
+    "name": "ISTANZA_PRIMA_ATTIVAZIONE_-_EE_-_HC.pdf",
+    "size": 651925
+   },
+   {
+    "name": "IVA RIDOTTA EE CONDOMINI-modulo (1).pdf",
+    "size": 136895
+   },
+   {
+    "name": "LETTERA_DIRITTO_DI_RIPENSAMENTO_HERA_COMM.pdf",
+    "size": 927561
+   },
+   {
+    "name": "materiale formativo no problem luce&gas.pdf",
+    "size": 1846580
+   },
+   {
     "name": "MODULI DATI PER HERA TABLET + MODULO BUS.pdf",
     "size": 348653
+   },
+   {
+    "name": "MODULO ACCESSO ALLE RETI VOLTURA.pdf",
+    "size": 21325
+   },
+   {
+    "name": "MODULO ACCISA.pdf",
+    "size": 114644
+   },
+   {
+    "name": "MODULO CAMBIO USO DA BUSINESS A DOMESTICO.docx",
+    "size": 27757
+   },
+   {
+    "name": "MODULO CAMBIO USO DA DOMESTICO A BUSINESS.docx",
+    "size": 25307
+   },
+   {
+    "name": "MODULO IVA.pdf",
+    "size": 103255
+   },
+   {
+    "name": "modulo sepa.pdf",
+    "size": 635521
+   },
+   {
+    "name": "MODULO_CHIUSURA_CONTATORE_GAS_EE.pdf",
+    "size": 121056
+   },
+   {
+    "name": "NEW_RICHIESTA_CONTATORE_PREPOSATO_EE.pdf",
+    "size": 125360
    },
    {
     "name": "P0177_Plico_Light_EST_25_12_01.pdf",
@@ -856,12 +4884,84 @@
    {
     "name": "PDA ESTENERGY CONSUMER 26_06.pdf",
     "size": 732058
+   },
+   {
+    "name": "remi hera.XLS",
+    "size": 1057280
+   },
+   {
+    "name": "RICHIESTA_CAMBIO USO_EE.pdf",
+    "size": 106188
+   },
+   {
+    "name": "RICHIESTA_CONTATORE_PREPOSATO_GAS.pdf",
+    "size": 108849
+   },
+   {
+    "name": "RICHIESTA_PER_NUOVA_FORNITURA_DI_EE.pdf",
+    "size": 127435
+   },
+   {
+    "name": "RICHIESTA_PER_NUOVA_FORNITURA_PROROGA_MODIFICA_STRAORDINARIA_EE.pdf",
+    "size": 143828
+   },
+   {
+    "name": "RICHIESTA_PER_NUOVA_FORNITURA_PROROGA_MODIFICA_USO CANTIERE_EE.pdf",
+    "size": 159642
+   },
+   {
+    "name": "RICHIESTA_SUBENTRO GDM CHIUSO_EE_GAS.pdf",
+    "size": 121534
+   },
+   {
+    "name": "RICHIESTA_VARIAZIONE_DI_POTENZA_EE_PORTATA_GAS-HC.pdf",
+    "size": 148895
+   },
+   {
+    "name": "Richiesta_variazione_di_potenza_portata_-_EE_Gas-EST.pdf",
+    "size": 687059
+   },
+   {
+    "name": "RICHIESTA_VERIFICA_CONTATORE_EE_GAS.pdf",
+    "size": 108966
+   },
+   {
+    "name": "RICHIESTA_VOLTURA_EE_GAS.pdf",
+    "size": 121827
+   },
+   {
+    "name": "SOLUZIONI_SOSTENIBILI_SERVIZI_BUS.pdf",
+    "size": 1327465
+   },
+   {
+    "name": "SOLUZIONI_SOSTENIBILI_SERVIZI_CASA.pdf",
+    "size": 1467378
+   },
+   {
+    "name": "SPOSTAMENTO_CONTATORE_EE_GAS.pdf",
+    "size": 141095
+   },
+   {
+    "name": "TAB_SOCVENDITA_X_COMUNE v2.xlsx",
+    "size": 506813
+   },
+   {
+    "name": "tracciato scaffale condomini.xlsx",
+    "size": 311317
    }
   ],
   "documenti/hera/privacy": [
    {
     "name": "Privacy Greenworld - febbraio 2025.pdf",
     "size": 1018573
+   },
+   {
+    "name": "Privacy_Docusign_EST.pdf",
+    "size": 292207
+   },
+   {
+    "name": "Privacy_Docusign_HC.pdf",
+    "size": 286605
    }
   ],
   "documenti/hera/procedimenti": [
@@ -876,60 +4976,120 @@
    {
     "name": "ESEMPIO EDITABILE BUSINESS.pdf",
     "size": 165484
+   },
+   {
+    "name": "esempio fattura hera.pdf",
+    "size": 1083692
+   },
+   {
+    "name": "HERA DIGITAL - Vademecum 2026 V.01 (2).pdf",
+    "size": 604506
+   },
+   {
+    "name": "HERA PROCEDURA per agenti TABLET.pdf",
+    "size": 331082
+   },
+   {
+    "name": "Integrazione Precheck SII Digital Sales App.pdf",
+    "size": 619199
+   },
+   {
+    "name": "Manuale_Interattivo_Hera.pptx.pdf",
+    "size": 12591711
+   },
+   {
+    "name": "MODULO CENSIMENTO AGENTE.docx",
+    "size": 47088
+   },
+   {
+    "name": "TABELLA PRECHECK SII - INFOVOLTURA - CHECKPOD.pdf",
+    "size": 18125
    }
   ],
   "documenti/iren/cte/business": [
    {
     "name": "Iren Ondagas Impresa 2.0.pdf",
-    "size": 525078
+    "size": 693258
    },
    {
     "name": "Iren OndaLuce Impresa 2.0 VERDE.pdf",
-    "size": 609670
+    "size": 676230
    },
    {
-    "name": "Iren Tua Azienda Gas Fisso.pdf",
-    "size": 512770
+    "name": "Iren OndaLuce Impresa 2.0.pdf",
+    "size": 665561
    },
    {
-    "name": "Iren Tua Azienda Luce Fisso.pdf",
-    "size": 514433
+    "name": "Iren Tua Azienda Gas Variabile Top.pdf",
+    "size": 614833
+   },
+   {
+    "name": "Iren Tua Azienda Gas Variabile.pdf",
+    "size": 592579
    },
    {
     "name": "Iren Tua Azienda Luce Variabile Top VERDE.pdf",
-    "size": 617040
+    "size": 640373
+   },
+   {
+    "name": "Iren Tua Azienda Luce Variabile Top.pdf",
+    "size": 632988
+   },
+   {
+    "name": "Iren Tua Azienda Luce Variabile.pdf",
+    "size": 629985
    }
   ],
   "documenti/iren/cte/residenziale": [
    {
     "name": "IREN 10 PER TRE GAS VARIABILE PSV 2023.pdf",
-    "size": 688117
+    "size": 690377
    },
    {
     "name": "IREN 10 PER TRE LUCE VARIABILE.pdf",
-    "size": 760890
+    "size": 627799
    },
    {
     "name": "IREN GAS FACILE FLEX TOP.pdf",
-    "size": 682984
+    "size": 685088
    },
    {
     "name": "IREN LUCE FACILE FLEX TOP.pdf",
-    "size": 615284
+    "size": 622184
    },
    {
     "name": "IREN REVOLUTION SALUTE PREZZO FISSO LUCE.pdf",
-    "size": 318082
+    "size": 311634
    },
    {
     "name": "IREN REVOLUTION SPESE PROTETTE GAS PREZZO FISSO.pdf",
-    "size": 391651
+    "size": 382063
+   },
+   {
+    "name": "Modulo raccolta dati RESIDENZIALE rev.10B-26.pdf",
+    "size": 123521
+   },
+   {
+    "name": "tabella dei limiti alla contrattualizzazione - solo per offerte fisse.pdf",
+    "size": 417192
    }
   ],
   "documenti/iren/modulistica": [
    {
+    "name": "04 - pagamento SDD.pdf",
+    "size": 554725
+   },
+   {
+    "name": "05 - Modulo Rateizzazione.pdf",
+    "size": 953214
+   },
+   {
     "name": "06 - Voltura FORNITURA.pdf",
     "size": 144202
+   },
+   {
+    "name": "07 - Modifica Potenza-Tensione EE.pdf",
+    "size": 547929
    },
    {
     "name": "1. SINGOLO ELE Plico non domestico editabile (rev_dic25).pdf",
@@ -940,18 +5100,192 @@
     "size": 1490514
    },
    {
+    "name": "EE - Accise agevolate.pdf",
+    "size": 15481
+   },
+   {
+    "name": "EE - IVA AGEVOLATA.pdf",
+    "size": 244650
+   },
+   {
+    "name": "GAS - IVA RIDOTTA.pdf",
+    "size": 604338
+   },
+   {
+    "name": "GAS ACCISE NON DOMESTICI_01.01.2026.pdf",
+    "size": 2847768
+   },
+   {
+    "name": "IF - Voltura Switch GAS.pdf",
+    "size": 517910
+   },
+   {
+    "name": "MODULO Multisito 7-24.pdf",
+    "size": 661775
+   },
+   {
     "name": "Modulo raccolta dati BUSINESS rev.05-26.pdf",
     "size": 115300
    },
    {
+    "name": "Modulo raccolta dati BUSINESS rev.10B-26.pdf",
+    "size": 119123
+   },
+   {
     "name": "Modulo raccolta dati Domestico rev.05-26.pdf",
     "size": 183283
+   },
+   {
+    "name": "Nota per Knowledge.pdf",
+    "size": 254002
+   },
+   {
+    "name": "PDA MULTISITO 7-24.pdf",
+    "size": 1371742
    }
   ],
   "documenti/iren/privacy": [
    {
     "name": "Privacy Greenworld - febbraio 2025.pdf",
     "size": 1018573
+   }
+  ],
+  "documenti/iren/procedimenti": [
+   {
+    "name": "Agenzie MID - IF Avvio nuovo processo Digital quality call.pdf",
+    "size": 600923
+   },
+   {
+    "name": "Costi delle operazioni contrattuali 2026.pdf",
+    "size": 1314950
+   },
+   {
+    "name": "IMPORTANTE - aggiornamento usi GAS (2).docx",
+    "size": 1586335
+   },
+   {
+    "name": "IREN - Caricamento Contratto Residenziale.pdf",
+    "size": 1143579
+   },
+   {
+    "name": "PROCESSO Q-digital.pdf",
+    "size": 617058
+   },
+   {
+    "name": "REMI_IME_0520.xls",
+    "size": 1164800
+   },
+   {
+    "name": "SCRIPT COURTESY CALL_BASE_UNITO.pdf",
+    "size": 229131
+   }
+  ],
+  "documenti/magis/cte/business": [
+   {
+    "name": "000592ENVFL01XXBAX1026XPROXIMAXS_2026_EE_PROXIMA_EXTRASMALL_LUCE_B_BUS_3F_43_CE.pdf",
+    "size": 75043
+   },
+   {
+    "name": "000592ENVFL01XXBMX1026XPROXISMMT_2026_EE_PROXIMA_SMALL_LUCE_MT_B_BUS_3F_43_CE.pdf",
+    "size": 74937
+   },
+   {
+    "name": "000592ENVOL01XXBBX1026XPROXIMEBT_2026_EE_PROXIMA_MEDIUM_LUCE_BT_B_BUS_ORA_43_CE.pdf",
+    "size": 75554
+   },
+   {
+    "name": "000592ENVOL01XXBBX1026XPROXIMEMT_2026_EE_PROXIMA_MEDIUM_LUCE_MT_B_BUS_ORA_43_CE.pdf",
+    "size": 75536
+   },
+   {
+    "name": "000592ENVOL01XXBRX1026XPROXILABT_2026_EE_PROXIMA_LARGE_LUCE_BT_B_BUS_ORA_43_CE.pdf",
+    "size": 75656
+   },
+   {
+    "name": "000592ENVOL01XXBRX1026XPROXILAMT_2026_EE_PROXIMA_LARGE_LUCE_MT_B_BUS_ORA_43_CE.pdf",
+    "size": 75642
+   },
+   {
+    "name": "000592ESFFL03XXBAX1026XPROXIFIXP_2026_EE_PROXIMA_FIX_PLUS_LUCE_B_BUS_3F_43_CE.pdf",
+    "size": 88276
+   },
+   {
+    "name": "000592ESFFL03XXBBX1026XPRXFIXSMA_2026_EE_PROXIMA_FIX_SMART_LUCE_B_BUS_3F_43_CE.pdf",
+    "size": 88293
+   },
+   {
+    "name": "000592ESFFL03XXBMX1026XPROXIFIXB_2026_EE_PROXIMA_FIX_LUCE_B_BUS_3F_43_CE.pdf",
+    "size": 88271
+   },
+   {
+    "name": "000592ESVFL01XXBMX1026XPROXISMBT_2026_EE_PROXIMA_SMALL_LUCE_BT_B_BUS_3F_43_CE.pdf",
+    "size": 74938
+   },
+   {
+    "name": "000592GNVML01XXBAX1026XPROXIMAXS_2026_GAS_PROXIMA_EXTRASMALL_GAS_BUS_43_CE.pdf",
+    "size": 68380
+   },
+   {
+    "name": "000592GNVML01XXBBX1026XPROXIMAME_2026_GAS_PROXIMA_MEDIUM_GAS_BUS_43_CE.pdf",
+    "size": 68288
+   },
+   {
+    "name": "000592GNVML01XXBRX1026XPROXIMALA_2026_GAS_PROXIMA_LARGE_GAS_BUS_43_CE.pdf",
+    "size": 68381
+   },
+   {
+    "name": "000592GSVML01XXBMX1026XPROXIMASM_2026_GAS_PROXIMA_SMALL_GAS_BUS_43_CE.pdf",
+    "size": 68282
+   }
+  ],
+  "documenti/magis/cte/residenziale": [
+   {
+    "name": "000592ESFML03XXDAX1026XMIAFIXPLU_2026_EE_MIA_LUCE_FIX_PLUS_B_RET_MONO_43_CE.pdf",
+    "size": 95717
+   },
+   {
+    "name": "000592ESFML03XXDBX1026XMIAFIXSMA_2026_EE_MIA_LUCE_FIX_SMART_B_RET_MONO_43_CE.pdf",
+    "size": 95724
+   },
+   {
+    "name": "000592ESFML03XXDMX1026XMIAFIXPRO_2026_EE_MIA_LUCE_FIX_PRO_B_RET_MONO_43_CE.pdf",
+    "size": 95711
+   },
+   {
+    "name": "000592ESVFL01XXDAX1026XMIAVARPLU_2026_EE_MIA_LUCE_PLUS_B_RET_BIO_43_CE.pdf",
+    "size": 83962
+   },
+   {
+    "name": "000592ESVFL01XXDBX1026XOFFERTMIA_2026_EE_MIA_LUCE_B_RET_BIO_43_CE.pdf",
+    "size": 83695
+   },
+   {
+    "name": "000592ESVFL01XXDMX1026XMIAVARPRO_2026_EE_MIA_LUCE_PRO_B_RET_BIO_43_CE.pdf",
+    "size": 83701
+   },
+   {
+    "name": "000592GSFML03XXDAX1026XMIAFIXPLU_2026_GAS_MIA_GAS_FIX_PLUS_RET_43_CE.pdf",
+    "size": 93443
+   },
+   {
+    "name": "000592GSFML03XXDBX1026XMIAFIXSMA_2026_GAS_MIA_GAS_FIX_SMART_RET_43_CE.pdf",
+    "size": 91721
+   },
+   {
+    "name": "000592GSFML03XXDMX1026XMIAFIXPRO_2026_GAS_MIA_GAS_FIX_PRO_RET_43_CE.pdf",
+    "size": 93427
+   },
+   {
+    "name": "000592GSVML01XXDAX1026XMIAVARPLU_2026_GAS_MIA_GAS_PLUS_RET_43_CE.pdf",
+    "size": 70578
+   },
+   {
+    "name": "000592GSVML01XXDBX1026XOFFERTMIA_2026_GAS_MIA_GAS_RET_43_CE.pdf",
+    "size": 70095
+   },
+   {
+    "name": "000592GSVML01XXDMX1026XMIAVARPRO_2026_GAS_MIA_GAS_PRO_RET_43_CE.pdf",
+    "size": 70099
    }
   ],
   "documenti/onova/procedimenti": [
@@ -1053,43 +5387,179 @@
   "documenti/simecom/cte-business": [
    {
     "name": "FACILEPIU_P.IVA.NV2603EVXPUN3FA.pdf",
-    "size": 980714
+    "size": 983194
    },
    {
     "name": "FACILEPIU_P.IVA.NV2603GVXPSVA.pdf",
-    "size": 921613
+    "size": 920058
    }
   ],
   "documenti/simecom/cte-residenziale": [
    {
     "name": "FACILEPIU_Casa.NV2603EDXPUN3FA.pdf",
-    "size": 997038
+    "size": 997782
    },
    {
     "name": "FACILEPIU_Casa.NV2603GDXPSVA.pdf",
-    "size": 932074
+    "size": 940819
    },
    {
     "name": "SEMPLICEPIU_Casa.NV2603EDAPUN3FA.pdf",
-    "size": 997119
+    "size": 1006243
    },
    {
     "name": "SEMPLICEPIU_Casa.NV2603GDAPSVA.pdf",
-    "size": 932228
+    "size": 932620
    }
   ],
   "documenti/simecom/modulistica": [
    {
+    "name": "allegati obbligatori .pdf",
+    "size": 106815
+   },
+   {
+    "name": "allegato H40.pdf",
+    "size": 29805
+   },
+   {
+    "name": "allegato I40.pdf",
+    "size": 111941
+   },
+   {
+    "name": "CGF_Domestico.docx",
+    "size": 544304
+   },
+   {
+    "name": "CGF_NonDomestico.docx",
+    "size": 543097
+   },
+   {
     "name": "CONTRATTO DOMESTICO REV1.0 2024 v6_editabile.pdf",
     "size": 217912
+   },
+   {
+    "name": "contratto NON domestico REV1.0 2024 V6_editabile.pdf",
+    "size": 234589
+   },
+   {
+    "name": "Istanza per nuova fornitura di energia elettrica e gas per usi diversi (3).pdf",
+    "size": 99261
+   },
+   {
+    "name": "Istanza per nuova fornitura di energia elettrica e gas per usi domestici (2).pdf",
+    "size": 99547
+   },
+   {
+    "name": "Mod Z - Autocertificazione Residenza 3 0.doc",
+    "size": 55296
+   },
+   {
+    "name": "Mod. Ripensamento - Modulo Ripensamento.pdf",
+    "size": 158318
+   },
+   {
+    "name": "Mod.C - Dati Catastali.pdf",
+    "size": 66945
+   },
+   {
+    "name": "Mod.E - V3.0 - Atto notorio.doc",
+    "size": 264192
+   },
+   {
+    "name": "Mod.M - V3.0 - Autocertificazione Mortis Causa.doc",
+    "size": 260608
+   },
+   {
+    "name": "Mod.O - V3.1 - Modifica opzioni di servizio.pdf",
+    "size": 166939
+   },
+   {
+    "name": "Mod.S - V3.1 - Richiesta di spostamento contatore GAS.doc",
+    "size": 275968
+   },
+   {
+    "name": "Mod.SP1 - V3.0 - Richiesta Spostamento contatore.doc",
+    "size": 262144
+   },
+   {
+    "name": "Mod_b_12.pdf",
+    "size": 95686
+   },
+   {
+    "name": "Modulo Autorizzazione proprietario.pdf",
+    "size": 77916
+   },
+   {
+    "name": "Modulo delega.pdf",
+    "size": 77797
+   },
+   {
+    "name": "Modulo disattivazione ee e gas v2.pdf",
+    "size": 88438
+   },
+   {
+    "name": "Modulo richiesta Attivazione PER E.E. E GAS_EDITABILE (2).pdf",
+    "size": 185946
    },
    {
     "name": "Modulo richiesta Attivazione PER E.E. E GAS_EDITABILE.pdf",
     "size": 185946
    },
    {
+    "name": "Modulo richiesta PRESTAZIONI per ee e gas.pdf",
+    "size": 219041
+   },
+   {
     "name": "Modulo richiesta voltura per E.E. E GAS_editabile v2.pdf",
     "size": 199190
+   },
+   {
+    "name": "Modulo W - V3.0 - MC1 Modifica condizioni di fornitura EE.doc",
+    "size": 288768
+   },
+   {
+    "name": "MR003 - Modulo Attivazione presa predisposta Altri USI Rev 0.pdf",
+    "size": 67870
+   },
+   {
+    "name": "MR016 - Modulo Attivazione presa predisposta Uso Domestico.pdf",
+    "size": 64410
+   },
+   {
+    "name": "Multisito EE iva v2.pdf",
+    "size": 205058
+   },
+   {
+    "name": "Multisito EE v2.pdf",
+    "size": 136202
+   },
+   {
+    "name": "Multisito GAS IVA v2.pdf",
+    "size": 211359
+   },
+   {
+    "name": "Multisito GAS v2.pdf",
+    "size": 157931
+   },
+   {
+    "name": "PREVENTIVO ENERGIA ELETTRICA .pdf",
+    "size": 61543
+   },
+   {
+    "name": "PREVENTIVO ENERGIA ELETTRICA UNIFICATO.pdf",
+    "size": 105445
+   },
+   {
+    "name": "RECLAMO.pdf",
+    "size": 102071
+   },
+   {
+    "name": "Richiesta di applicazione di aliquota accisa per usi industriali sulle forniture di gas naturale.pdf",
+    "size": 115166
+   },
+   {
+    "name": "Richiesta di applicazione di aliquota accisa per usi non domestici sulle forniture di gas naturale (1) (2).pdf",
+    "size": 240682
    }
   ],
   "documenti/simecom/privacy": [
@@ -1100,78 +5570,174 @@
   ],
   "documenti/simecom/procedimenti": [
    {
+    "name": "Documenti necessari per contratti.docx",
+    "size": 16655
+   },
+   {
+    "name": "Elenco Remi-Comuni (002) (1).xlsx",
+    "size": 70681
+   },
+   {
+    "name": "Listini.docx",
+    "size": 26488
+   },
+   {
+    "name": "Procedura A40.pdf",
+    "size": 895341
+   },
+   {
+    "name": "remi ATTIVAZIONI 050523.xlsx",
+    "size": 39057
+   },
+   {
     "name": "SIMECOM - COMPILAZIONE CONTRATTI.pdf",
     "size": 50441
+   },
+   {
+    "name": "SIMECOM - PROCEDURA OTP.pdf",
+    "size": 93013
    }
   ],
   "documenti/sorgenia/cte-business": [
    {
-    "name": "ImpresaGasSmart_light(43).pdf",
-    "size": 1088461
+    "name": "BorsapiuSmart_corporate(10).pdf",
+    "size": 1133379
    },
    {
-    "name": "ImpresaGasSmart_lightplus(42).pdf",
-    "size": 1088467
+    "name": "BorsapiuSmart_corporatepremium(10).pdf",
+    "size": 1133388
    },
    {
-    "name": "ImpresaGasSmart_plus(42).pdf",
-    "size": 1088458
+    "name": "BorsapiuSmart_L21(9).pdf",
+    "size": 1150091
    },
    {
-    "name": "ImpresaGasSmart_premium(42).pdf",
-    "size": 1088465
+    "name": "BorsapiuSmart_L23(8).pdf",
+    "size": 1133141
    },
    {
-    "name": "ImpresaGasSmartFix_light(40).pdf",
-    "size": 1083768
+    "name": "BorsapiuSmart_L24(10).pdf",
+    "size": 1133141
    },
    {
-    "name": "ImpresaGasSmartFix_Plus(34).pdf",
-    "size": 1083770
+    "name": "BorsapiuSmart_L31(10).pdf",
+    "size": 1150088
    },
    {
-    "name": "L2_FISSO_PER_TE(22).pdf",
-    "size": 1162199
+    "name": "BorsapiuSmart_L35(9).pdf",
+    "size": 1133141
    },
    {
-    "name": "L4_FISSO_PER_TE(23).pdf",
-    "size": 1162199
+    "name": "BorsapiuSmart_light(10).pdf",
+    "size": 1133375
    },
    {
-    "name": "L6_FISSO_PER_TE(22).pdf",
-    "size": 1162198
+    "name": "BorsapiuSmart_lightplus(10).pdf",
+    "size": 1133377
    },
    {
-    "name": "OltreilFisso_lightplus(91).pdf",
-    "size": 1134634
+    "name": "BorsapiuSmart_plus(10).pdf",
+    "size": 1133375
+   },
+   {
+    "name": "BorsapiuSmart_premium(10).pdf",
+    "size": 1133375
+   },
+   {
+    "name": "BorsapiuSmart_superlight(10).pdf",
+    "size": 1149863
+   },
+   {
+    "name": "ImpresaGasSmart_L21(31).pdf",
+    "size": 1056666
+   },
+   {
+    "name": "ImpresaGasSmart_L21Fix(28).pdf",
+    "size": 1056464
+   },
+   {
+    "name": "ImpresaGasSmart_L22(31).pdf",
+    "size": 1056666
+   },
+   {
+    "name": "ImpresaGasSmart_light(49).pdf",
+    "size": 1072035
+   },
+   {
+    "name": "ImpresaGasSmart_lightplus(48).pdf",
+    "size": 1072043
+   },
+   {
+    "name": "ImpresaGasSmart_plus(48).pdf",
+    "size": 1072026
+   },
+   {
+    "name": "ImpresaGasSmart_premium(48).pdf",
+    "size": 1072039
+   },
+   {
+    "name": "ImpresaGasSmart_superlight(29).pdf",
+    "size": 1084959
+   },
+   {
+    "name": "ImpresaGasSmartFix_light(45).pdf",
+    "size": 1072457
+   },
+   {
+    "name": "ImpresaGasSmartFix_Plus(39).pdf",
+    "size": 1072454
+   },
+   {
+    "name": "L21_FISSO_PER_TE(25).pdf",
+    "size": 1195902
+   },
+   {
+    "name": "L24_FISSO_PER_TE(26).pdf",
+    "size": 1195268
+   },
+   {
+    "name": "L2_FISSO_PER_TE(28).pdf",
+    "size": 1176414
+   },
+   {
+    "name": "L4_FISSO_PER_TE(29).pdf",
+    "size": 1176413
+   },
+   {
+    "name": "L6_FISSO_PER_TE(28).pdf",
+    "size": 1176405
    }
   ],
   "documenti/sorgenia/cte-residenziale": [
    {
-    "name": "NEXTENERGY_GAS_SMART_L2(26).pdf",
-    "size": 1110939
+    "name": "NEXTENERGYPUNTUALELUCE_AR2(5).pdf",
+    "size": 1142099
    },
    {
-    "name": "NEXTENERGY_LUCE_SMART_L2(28).pdf",
-    "size": 1122099
+    "name": "NEXTENERGYPUNTUALELUCE_AS1(4).pdf",
+    "size": 1142090
    },
    {
-    "name": "NEXTENERGYSunlightGAS_RF(63).pdf",
-    "size": 1128527
+    "name": "NEXTENERGYSunlightGAS_AR1(34).pdf",
+    "size": 1135887
    },
    {
-    "name": "NEXTENERGYSunlightLUCE_AR1(26).pdf",
-    "size": 1132790
-   },
-   {
-    "name": "NEXTENERGYSunlightLUCE_RF(63).pdf",
-    "size": 1132768
+    "name": "NEXTENERGYSunlightGAS_RF(70).pdf",
+    "size": 1135883
    }
   ],
   "documenti/sorgenia/modulistica": [
    {
     "name": "Modulo raccolta dati BUSINESS rev.03-26.pdf",
     "size": 117125
+   },
+   {
+    "name": "Modulo raccolta dati BUSINESS rev.10B-26.pdf",
+    "size": 119123
+   },
+   {
+    "name": "Modulo raccolta dati RESIDENZIALE rev.10B-26.pdf",
+    "size": 123521
    }
   ],
   "documenti/sorgenia/privacy": [
@@ -1180,88 +5746,110 @@
     "size": 1018573
    }
   ],
+  "documenti/sorgenia/procedimenti": [
+   {
+    "name": "CCQ Digital.pdf",
+    "size": 577847
+   },
+   {
+    "name": "CCQ_DIGITAL_FORMAZIONE.pdf",
+    "size": 1513854
+   },
+   {
+    "name": "Manuale_Apparound_Business.pptx",
+    "size": 9342042
+   },
+   {
+    "name": "Manuale_Apparound_Residenziale.pptx",
+    "size": 9700625
+   },
+   {
+    "name": "Sorgenia e-Learning.pdf",
+    "size": 48717
+   }
+  ],
   "documenti/stream/cte-business": [
    {
-    "name": "EE_COMPANY_AU - 2026-01-29 OFFERTA STREAM.pdf",
-    "size": 181737
+    "name": "EE_COMMUNITY_AU.pdf",
+    "size": 171269
    },
    {
-    "name": "EE_COMUNITY_AU - 2026-01-29 OFFERTA STREAM.pdf",
-    "size": 181657
+    "name": "EE_COMPANY_AU.pdf",
+    "size": 171139
    },
    {
-    "name": "EE_FAMILY AU - 2026-01-29 OFFERTA STREAM.pdf",
-    "size": 181593
+    "name": "EE_FAMILY AU.pdf",
+    "size": 171144
    },
    {
-    "name": "EE_MEDIUM AU - 2026-01-29 OFFERTA STREAM.pdf",
-    "size": 181155
+    "name": "EE_MEDIUM AU.pdf",
+    "size": 170688
    },
    {
-    "name": "EE_SMALL AU - 2026-01-29 OFFERTA STREAM.pdf",
-    "size": 181477
+    "name": "EE_MEDIUM.pdf",
+    "size": 186061
    },
    {
-    "name": "GAS_COMMUNITY_AU - 2026_01_29_OFFERTA STREAM.pdf",
-    "size": 168627
+    "name": "EE_SMALL AU.pdf",
+    "size": 171450
    },
    {
-    "name": "GAS_COMPANY_AU - 2026_01_29_OFFERTA STREAM.pdf",
-    "size": 168278
+    "name": "EE_SMALL.pdf",
+    "size": 186987
    },
    {
-    "name": "GAS_FAMILY_AU - 2026_01_29_OFFERTA STREAM.pdf",
-    "size": 168669
+    "name": "GAS_COMMUNITY_AU.pdf",
+    "size": 150341
    },
    {
-    "name": "GAS_MEDIUM_AU - 2026_01_29_OFFERTA STREAM.pdf",
-    "size": 168177
+    "name": "GAS_COMPANY_AU.pdf",
+    "size": 149991
    },
    {
-    "name": "GAS_SMALL AU - 2026_01_29_OFFERTA STREAM.pdf",
-    "size": 168310
+    "name": "GAS_FAMILY_AU.pdf",
+    "size": 150317
+   },
+   {
+    "name": "GAS_MEDIUM.pdf",
+    "size": 172542
+   },
+   {
+    "name": "GAS_MEDIUM_AU.pdf",
+    "size": 149904
+   },
+   {
+    "name": "GAS_SMALL AU.pdf",
+    "size": 150628
+   },
+   {
+    "name": "GAS_SMALL.pdf",
+    "size": 171246
    }
   ],
   "documenti/stream/cte-residenziale": [
    {
-    "name": "EE_COMPANY - 2026-01-29 OFFERTA STREAM.pdf",
-    "size": 181693
+    "name": "EE_COMMUNITY.pdf",
+    "size": 186347
    },
    {
-    "name": "EE_COMUNITY - 2026-01-29 OFFERTA STREAM.pdf",
-    "size": 181668
+    "name": "EE_COMPANY.pdf",
+    "size": 186484
    },
    {
-    "name": "EE_FAMILY - 2026-01-29 OFFERTA STREAM.pdf",
-    "size": 181565
+    "name": "EE_FAMILY.pdf",
+    "size": 186473
    },
    {
-    "name": "EE_MEDIUM - 2026-01-29 OFFERTA STREAM.pdf",
-    "size": 181148
+    "name": "GAS_COMMUNITY.pdf",
+    "size": 172108
    },
    {
-    "name": "EE_SMALL - 2026-01-29 OFFERTA STREAM.pdf",
-    "size": 181491
+    "name": "GAS_COMPANY.pdf",
+    "size": 170789
    },
    {
-    "name": "GAS_COMMUNITY - 2026_01_29_OFFERTA STREAM.pdf",
-    "size": 168634
-   },
-   {
-    "name": "GAS_COMPANY - 2026_01_29_OFFERTA STREAM.pdf",
-    "size": 168274
-   },
-   {
-    "name": "GAS_FAMILY - 2026_01_29_OFFERTA STREAM.pdf",
-    "size": 192791
-   },
-   {
-    "name": "GAS_MEDIUM - 2026_01_29_OFFERTA STREAM.pdf",
-    "size": 168134
-   },
-   {
-    "name": "GAS_SMALL - 2026_01_29_OFFERTA STREAM.pdf",
-    "size": 168335
+    "name": "GAS_FAMILY.pdf",
+    "size": 172028
    }
   ],
   "documenti/stream/modulistica": [
@@ -1274,22 +5862,116 @@
     "size": 784065
    },
    {
+    "name": "S_02 CGF_2024_K_review.pdf",
+    "size": 1179752
+   },
+   {
     "name": "S_10 Gas - Nuova Attivazione Gas naturale_edit.pdf",
     "size": 599930
+   },
+   {
+    "name": "S_11 Gas Mod. impianto - Disattivazione - Verifica - Rimozione impianto Gas naturale_edit.pdf",
+    "size": 152176
    },
    {
     "name": "S_12 Modulo nuova connessione - Power_edit.pdf",
     "size": 546680
    },
    {
+    "name": "S_13 Servizi al contatore - Modifica Potenzatensione e tipologia dI uso_edit.pdf",
+    "size": 482223
+   },
+   {
+    "name": "S_14 Servizi al contatore -D01-SP1_edit (2).pdf",
+    "size": 179450
+   },
+   {
     "name": "S_15 Voltura power e gas_edit.pdf",
     "size": 316246
+   },
+   {
+    "name": "S_16 GDE-Mod- Iva Condomini.pdf",
+    "size": 455001
+   },
+   {
+    "name": "S_17 Dichiarazione Iva 10% per le pertinenze delle abitazioni.pdf",
+    "size": 614215
+   },
+   {
+    "name": "S_18 GDE-Mod. Agevolazione iva gas_2204.pdf",
+    "size": 212492
+   },
+   {
+    "name": "S_19 Modulo Dich Accise Gas Rev6pdf",
+    "size": 971500
+   },
+   {
+    "name": "S_20 Mandato SDD_edit.pdf",
+    "size": 224731
+   },
+   {
+    "name": "S_21 Dichiarazione Estraneità al Debito.pdf",
+    "size": 1306384
+   },
+   {
+    "name": "S_22 Dichiarazione Possesso Detenzione Immobile.pdf",
+    "size": 221936
    }
   ],
   "documenti/stream/privacy": [
    {
     "name": "Privacy Greenworld - febbraio 2025.pdf",
     "size": 1018573
+   },
+   {
+    "name": "S_32 Allegato_4_Informativa_Clienti.pdf",
+    "size": 219715
+   }
+  ],
+  "documenti/stream/procedimenti": [
+   {
+    "name": "Stream_Presentazione_Agenti 3.pdf",
+    "size": 2846155
+   }
+  ],
+  "documenti/upenergy/cte/business": [
+   {
+    "name": "BoostUp-Power.pdf",
+    "size": 594640
+   },
+   {
+    "name": "ControlUp-Power.pdf",
+    "size": 595175
+   },
+   {
+    "name": "InfinityUp-Gas.pdf",
+    "size": 611562
+   },
+   {
+    "name": "PrimeUp-Power.pdf",
+    "size": 594577
+   },
+   {
+    "name": "TopUp-Power.pdf",
+    "size": 594631
+   }
+  ],
+  "documenti/upenergy/cte/residenziale": [
+   {
+    "name": "DynamicUp Gas..pdf",
+    "size": 379169
+   },
+   {
+    "name": "DynamicUp Luce.pdf",
+    "size": 373541
+   },
+   {
+    "name": "Life Up 2.0 (Gas).pdf",
+    "size": 254169
+   },
+   {
+    "name": "Life Up 2.0 (Luce).pdf",
+    "size": 250952
    }
   ],
   "documenti/wall-box/schede-tecniche": [
