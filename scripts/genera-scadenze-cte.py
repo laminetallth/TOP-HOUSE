@@ -1,6 +1,7 @@
 """Legge le CTE (PDF nelle cartelle cte*) e ricava la data di fine validità dell'offerta.
 Scrive data/scadenze-cte.json: { "aggiornato": "AAAA-MM-GG", "file": { "<percorso>": {"scade": "AAAA-MM-GG", "testo": "..."} } }
 Il Drive mostra l'etichetta "Scade il …" / "Scaduta" accanto a ogni CTE.
+Scrive anche data/gestori-offerte.json (offerte attive per gestore, segmento e fornitura) per "Trova il gestore".
 Serve pdftotext (poppler-utils); se manca prova con pypdf.
 Uso: python3 scripts/genera-scadenze-cte.py
 """
@@ -80,30 +81,81 @@ def scadenza(txt):
     return best
 
 
+PARTNER = {  # da dove arrivano le CTE (portali dei partner)
+    "greenworld": {"agn-energia", "alperia", "audax", "chiurlo", "cogeme", "duferco", "engie", "gde", "hera", "iren",
+                   "simecom", "sorgenia", "stream", "unoenergy", "vivienergia", "enel-tablet", "enel-corporate"},
+    "promup": {"axpo", "enel-digital", "enel-corporate", "magis", "edison", "engie", "audax", "sorgenia", "hera", "estra",
+               "fastweb-energia", "upenergy"},
+    "bwc": {"plenitude"},
+}
+NOMI_PARTNER = {"greenworld": "GreenWorld", "promup": "PromUp", "bwc": "BWC"}
+
+
+def segmento_e_fornitura(rel_dir, nome, txt):
+    """Ricava segmento (business/residenziale/condominio) e fornitura (luce/gas) di una CTE."""
+    n = nome.upper()
+    head = unicodedata.normalize("NFC", txt[:3000]).lower()
+    seg = {"business" if "business" in rel_dir else "residenziale"}
+    if re.search(r"CONDOMIN|CONDO\b|CONDO[ _-]", n) or re.search(r"\bcondomin(?:i|io)\b", head[:800]):
+        seg.add("condominio")
+    luce = bool(re.search(r"LUCE|\bEE\b|_EE_|ENERGIA[ _]ELETTRICA|POWER|\bELE\b|ELETTRIC", n))
+    gas = bool(re.search(r"GAS|\bSMC\b", n))
+    if re.search(r"DUAL|LUCE[ _-]?(?:E|&|\+)[ _-]?GAS", n):
+        luce = gas = True
+    if not (luce or gas):
+        kwh, smc = len(re.findall(r"kwh", head)), len(re.findall(r"smc", head))
+        luce, gas = kwh >= smc and kwh > 0, smc >= kwh and smc > 0
+    return seg, ({"luce"} if luce else set()) | ({"gas"} if gas else set())
+
+
 def main():
-    risultati = {}
+    risultati, offerte = {}, {}
+    oggi = dt.date.today()
     for base in ("documenti",):
         for d, _, files in os.walk(os.path.join(ROOT, base)):
             rel_dir = os.path.relpath(d, ROOT).replace(os.sep, "/")
             if "/cte" not in rel_dir:
                 continue
+            parti = rel_dir.split("/")
+            slug = parti[2] if parti[1] == "gestori" else parti[1]
             for f in files:
                 if not f.lower().endswith(".pdf"):
                     continue
                 rel = f"{rel_dir}/{f}"
-                trovato = scadenza(testo(os.path.join(d, f)))
+                txt = testo(os.path.join(d, f))
+                trovato = scadenza(txt)
                 if trovato:
                     risultati[rel] = {"scade": trovato[1].isoformat(), "testo": trovato[2]}
-    os.makedirs(os.path.dirname(OUT), exist_ok=True)
+                if re.search(r"vulnerabilit|confrontabilit|scheda sintetica|allegato tecnico|attenzione per un corretto", f, re.I):
+                    continue  # non sono offerte vere e proprie
+                if trovato and trovato[1] < oggi:
+                    continue  # CTE scaduta: non conta come offerta attiva
+                seg, forn = segmento_e_fornitura(rel_dir, f, txt)
+                g = offerte.setdefault(slug, {"offerte": {}, "prossima_scadenza": None})
+                for sgm in seg:
+                    for c in forn or {"luce", "gas"}:
+                        k = f"{sgm}-{c}"
+                        g["offerte"][k] = g["offerte"].get(k, 0) + 1
+                if trovato and (g["prossima_scadenza"] is None or trovato[1].isoformat() < g["prossima_scadenza"]):
+                    g["prossima_scadenza"] = trovato[1].isoformat()
+    for slug, g in offerte.items():
+        g["partner"] = [NOMI_PARTNER[p] for p, s in PARTNER.items() if slug in s]
+        g["offerte"] = dict(sorted(g["offerte"].items()))
+    scrivi(os.path.join(ROOT, "data", "gestori-offerte.json"), dict(sorted(offerte.items())), "gestori")
+    scrivi(OUT, dict(sorted(risultati.items())), "file")
+    print(f"{len(risultati)} CTE con scadenza, {len(offerte)} gestori con offerte attive")
+
+
+def scrivi(path, dati, chiave):
+    """Riscrive il file solo se il contenuto è cambiato (così non nascono commit inutili)."""
+    os.makedirs(os.path.dirname(path), exist_ok=True)
     try:
-        if json.load(open(OUT, encoding="utf-8")).get("file") == dict(sorted(risultati.items())):
-            print(f"{len(risultati)} CTE con scadenza (nessun cambiamento)")
+        if json.load(open(path, encoding="utf-8")).get(chiave) == dati:
             return
     except (OSError, ValueError):
         pass
-    with open(OUT, "w", encoding="utf-8") as fh:
-        json.dump({"aggiornato": dt.date.today().isoformat(), "file": dict(sorted(risultati.items()))}, fh, ensure_ascii=False, indent=1)
-    print(f"{len(risultati)} CTE con scadenza")
+    with open(path, "w", encoding="utf-8") as fh:
+        json.dump({"aggiornato": dt.date.today().isoformat(), chiave: dati}, fh, ensure_ascii=False, indent=1)
 
 
 if __name__ == "__main__":

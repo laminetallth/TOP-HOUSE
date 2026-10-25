@@ -36,14 +36,14 @@ jobs:
       - name: Installa pdftotext
         run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils
 
-      - name: Leggi le scadenze
+      - name: Leggi scadenze e offerte attive
         run: python3 scripts/genera-scadenze-cte.py
 
       - name: Salva aggiornamento
         run: |
           git config user.name "TOP HOUSE Bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/scadenze-cte.json
+          git add data/scadenze-cte.json data/gestori-offerte.json
           if git diff --cached --quiet; then
             echo "Scadenze già aggiornate."
             exit 0
@@ -53,7 +53,7 @@ jobs:
             if git push; then exit 0; fi
             git pull --rebase --strategy-option=theirs
             python3 scripts/genera-scadenze-cte.py
-            git add data/scadenze-cte.json
+            git add data/scadenze-cte.json data/gestori-offerte.json
             git diff --cached --quiet || git commit --amend --no-edit
             sleep $((attempt * 5))
           done
