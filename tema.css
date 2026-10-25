@@ -523,3 +523,11 @@ a.th-gauge:hover .th-gauge-more i{transform:translateX(3px)}
 .th-exp--soon{background:#fff1dc;color:#9a5600}
 .th-exp--old{background:#fdecef;color:var(--danger)}
 .th-file:has(.th-exp--old) .th-file-name{color:var(--muted)}
+/* etichette prezzo e CCV sulle CTE */
+.th-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.th-tags .th-exp{margin-top:0}
+.th-tag{display:inline-flex;align-items:center;gap:6px;padding:3px 9px;border-radius:999px;font:700 12px/1.35 var(--text);font-variant-numeric:tabular-nums;background:#f1eef6;color:#3d3550}
+.th-tag i{font-size:10.5px}
+.th-tag--fix{background:#e9efff;color:#2848a8}
+.th-tag--var{background:#f3e9ff;color:#6a2fb0}
+.th-tags:empty{display:none}

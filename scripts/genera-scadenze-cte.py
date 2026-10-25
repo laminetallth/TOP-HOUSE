@@ -1,6 +1,7 @@
 """Legge le CTE (PDF nelle cartelle cte*) e ricava la data di fine validità dell'offerta.
 Scrive data/scadenze-cte.json: { "aggiornato": "AAAA-MM-GG", "file": { "<percorso>": {"scade": "AAAA-MM-GG", "testo": "..."} } }
 Il Drive mostra l'etichetta "Scade il …" / "Scaduta" accanto a ogni CTE.
+Aggiunge tipo di prezzo, prezzo fisso (anche scontato) o spread e CCV annua (scripts/prezzi_cte.py).
 Scrive anche data/gestori-offerte.json (offerte attive per gestore, segmento e fornitura) per "Trova il gestore".
 Serve pdftotext (poppler-utils); se manca prova con pypdf.
 Uso: python3 scripts/genera-scadenze-cte.py
@@ -10,7 +11,11 @@ import json
 import os
 import re
 import subprocess
+import sys
 import unicodedata
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import prezzi_cte  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "data", "scadenze-cte.json")
@@ -44,9 +49,10 @@ def to_date(groups):
         return None
 
 
-def testo(path):
+def testo(path, layout=False):
     try:
-        return subprocess.run(["pdftotext", "-l", "3", path, "-"], capture_output=True, text=True, timeout=30).stdout
+        cmd = ["pdftotext", "-l", "3"] + (["-layout"] if layout else []) + [path, "-"]
+        return subprocess.run(cmd, capture_output=True, text=True, timeout=30).stdout
     except (FileNotFoundError, subprocess.TimeoutExpired):
         try:
             from pypdf import PdfReader
@@ -124,8 +130,13 @@ def main():
                 rel = f"{rel_dir}/{f}"
                 txt = testo(os.path.join(d, f))
                 trovato = scadenza(txt)
+                info = {}
                 if trovato:
-                    risultati[rel] = {"scade": trovato[1].isoformat(), "testo": trovato[2]}
+                    info = {"scade": trovato[1].isoformat(), "testo": trovato[2]}
+                # tipo di prezzo (fisso/variabile), prezzo o spread, CCV annua
+                info.update(prezzi_cte.analizza(f, txt, testo(os.path.join(d, f), layout=True)))
+                if info:
+                    risultati[rel] = info
                 if re.search(r"vulnerabilit|confrontabilit|scheda sintetica|allegato tecnico|attenzione per un corretto", f, re.I):
                     continue  # non sono offerte vere e proprie
                 if trovato and trovato[1] < oggi:
@@ -143,7 +154,7 @@ def main():
         g["offerte"] = dict(sorted(g["offerte"].items()))
     scrivi(os.path.join(ROOT, "data", "gestori-offerte.json"), dict(sorted(offerte.items())), "gestori")
     scrivi(OUT, dict(sorted(risultati.items())), "file")
-    print(f"{len(risultati)} CTE con scadenza, {len(offerte)} gestori con offerte attive")
+    print(f"{len(risultati)} CTE lette, {len(offerte)} gestori con offerte attive")
 
 
 def scrivi(path, dati, chiave):

@@ -198,6 +198,22 @@
     else if (days <= 7) { cls = 'soon'; icon = 'fa-hourglass-half'; text = `Scade il ${date} · tra ${days} ${days === 1 ? 'giorno' : 'giorni'}`; }
     return `<span class="th-exp th-exp--${cls}" title="${esc(info.testo || '')}"><i class="fa-solid ${icon}" aria-hidden="true"></i>${text}</span>`;
   }
+  // 0.185 -> "0,185"; 144 -> "144"
+  const itNum = (v, min = 2) => Number(v).toLocaleString('it-IT', { minimumFractionDigits: Number.isInteger(v) ? 0 : min, maximumFractionDigits: 6 });
+  function priceBadges(info) {
+    if (!info) return '';
+    const unit = info.fornitura === 'gas' ? '€/Smc' : '€/kWh';
+    const out = [];
+    if (info.tipo === 'fisso') {
+      const p = info.prezzo_scontato ?? info.prezzo;
+      const tip = info.testo_sconto || info.testo_prezzo || '';
+      out.push(`<span class="th-tag th-tag--fix" title="${esc(tip)}"><i class="fa-solid fa-lock" aria-hidden="true"></i>Fisso${p != null ? ` ${itNum(p)} ${unit}` : ''}${info.prezzo_scontato != null ? ' incluso sconti' : ''}</span>`);
+    } else if (info.tipo === 'variabile') {
+      out.push(`<span class="th-tag th-tag--var" title="${esc(info.testo_prezzo || '')}"><i class="fa-solid fa-chart-line" aria-hidden="true"></i>Variabile${info.spread != null ? ` · spread ${itNum(info.spread)} ${unit}` : ''}</span>`);
+    }
+    if (info.ccv != null) out.push(`<span class="th-tag" title="${esc(info.testo_ccv || '')}">CCV ${itNum(info.ccv, 0)} €/anno</span>`);
+    return out.join('');
+  }
 
   let mapPromise = null;
   function loadMap() {
@@ -362,7 +378,7 @@
       li.innerHTML = `
         ${selecting && admin ? `<input type="checkbox" class="th-file-check" aria-label="Seleziona ${esc(display)}">` : ''}
         <span class="th-file-type ${t.cls}" aria-hidden="true">${t.label}</span>
-        <button type="button" class="th-file-main" title="${esc(file.name)}"><span class="th-file-name">${esc(display)}</span><span class="th-file-meta">${esc(meta)}</span>${expiryBadge(scadenze[`${folder}/${file.name}`])}</button>
+        <button type="button" class="th-file-main" title="${esc(file.name)}"><span class="th-file-name">${esc(display)}</span><span class="th-file-meta">${esc(meta)}</span><span class="th-tags">${priceBadges(scadenze[`${folder}/${file.name}`])}${expiryBadge(scadenze[`${folder}/${file.name}`])}</span></button>
         <span class="th-file-actions">
           <button type="button" class="th-icon-btn${isFav ? ' is-on' : ''}" data-a="fav" aria-pressed="${isFav ? 'true' : 'false'}" title="${isFav ? 'Togli dai preferiti' : 'Aggiungi ai preferiti'}"><i class="fa-${isFav ? 'solid' : 'regular'} fa-star"></i></button>
           <a class="th-icon-btn" href="${esc(video ? (file.url || raw) : raw)}" target="_blank" rel="noopener" title="${video ? 'Apri video' : 'Scarica'}"><i class="fa-solid ${video ? 'fa-up-right-from-square' : 'fa-download'}"></i></a>

@@ -9,6 +9,7 @@ on:
     paths:
       - 'documenti/**/cte*/**'
       - 'scripts/genera-scadenze-cte.py'
+      - 'scripts/prezzi_cte.py'
   schedule:
     - cron: '17 4 * * *'
   workflow_dispatch:
