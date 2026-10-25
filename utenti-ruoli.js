@@ -9,7 +9,9 @@ window.USER_ROLES = {
   "isabelladattoli1@gmail.com": "admin",
   "antonioattardi.th@gmail.com": "admin",
   "francesco_cecchini@hotmail.com": "admin",
-  "sarahcavedoarmy@gmail.com": "admin"
+  "sarahcavedoarmy@gmail.com": "admin",
+  "hajarsadiq2004@gmail.com": "venditore",
+  "anna_amati@libero.it": "venditore"
 };
 
 (function () {
