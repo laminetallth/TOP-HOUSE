@@ -3636,6 +3636,28 @@
     "size": 782097
    }
   ],
+  "documenti/fotovoltaico/climatizzatori": [
+   {
+    "name": "EKO CO Split modulo compilabile.pdf",
+    "size": 608783
+   },
+   {
+    "name": "EKO Listino Klima (Ischia).pdf",
+    "size": 2938433
+   },
+   {
+    "name": "EKO Listino Klima COMFORT (Palmarola).pdf",
+    "size": 4026153
+   },
+   {
+    "name": "EKO Listino Klima SMART (Ventotene).pdf",
+    "size": 2421006
+   },
+   {
+    "name": "Features Extra.pdf",
+    "size": 4140425
+   }
+  ],
   "documenti/fotovoltaico/documenti-contratto": [
    {
     "name": "Anagrafica Soggetti Coinvolti v10.25.pdf",
@@ -3730,6 +3752,30 @@
     "url": "https://drive.google.com/file/d/1gzdUz0YhOJcrq9dKPnyjEKzAOUK8u3fZ/view?usp=drive_link"
    }
   ],
+  "documenti/fotovoltaico/formazione-eko": [
+   {
+    "name": "EKO_Percorso_Rete_Vendita_Day1.pdf",
+    "size": 2117246
+   },
+   {
+    "name": "EKO_Percorso_Rete_Vendita_Settimana2.pdf",
+    "size": 5315101
+   },
+   {
+    "name": "EKO_Percorso_Rete_Vendita_Settimana3.pdf",
+    "size": 5078933
+   },
+   {
+    "name": "EKOSrl_Formazione_Venditore.pdf",
+    "size": 2206251
+   }
+  ],
+  "documenti/fotovoltaico/modulo-b2b-aziende": [
+   {
+    "name": "Modulo_Richiesta_FTV_Business_EKO_compilabile.pdf",
+    "size": 2163235
+   }
+  ],
   "documenti/fotovoltaico/presentazione-base": [
    {
     "name": "EKO Srl - Presentazione BASE.pptx",
@@ -3762,6 +3808,10 @@
     "size": 8156048
    },
    {
+    "name": "riunione 08_05_26.pdf",
+    "size": 9380859
+   },
+   {
     "name": "riunione 11_12.pdf",
     "size": 2757128
    },
@@ -3786,6 +3836,10 @@
    {
     "name": "Deye Inverter.pdf",
     "size": 277129
+   },
+   {
+    "name": "EFFYtech - KIT Balcone.pdf",
+    "size": 392077
    },
    {
     "name": "Inverter+Batt Linea EKO.pdf",
@@ -5304,6 +5358,10 @@
    {
     "name": "EFFYPDC Therm Hybrid.pdf",
     "size": 4140848
+   },
+   {
+    "name": "THERMINO V2_compressed.pdf",
+    "size": 406601
    }
   ],
   "documenti/s4/cte-business": [
