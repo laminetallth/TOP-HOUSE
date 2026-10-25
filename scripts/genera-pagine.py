@@ -9,7 +9,7 @@ import json
 import os
 import re
 
-VERSION = "20261024i"  # cambia per forzare i browser a scaricare CSS/JS nuovi
+VERSION = "20261025b"  # cambia per forzare i browser a scaricare CSS/JS nuovi
 
 # ----------------------------------------------------------------------------- struttura
 GESTORI = [  # slug, nome visualizzato
@@ -149,14 +149,14 @@ def row(href, label, icon, folders):
             f'<i class="fa-solid fa-chevron-right th-row-go" aria-hidden="true"></i></a></li>')
 
 
-def hub_page(path, trail, rows, lede=""):
-    """rows: lista di (url_relativo_alla_pagina, etichetta, icona, cartelle)."""
+def hub_page(path, trail, rows, lede="", extra=""):
+    """rows: lista di (url_relativo_alla_pagina, etichetta, icona, cartelle). extra: HTML sopra l'elenco."""
     names = [t[0] for t in trail]
     MAPPA["pages"].append({"url": path, "path": names})
     items = "\n".join(row(*r) for r in rows)
     write(path, head(" · ".join(names), path) + f"""<body>
 <main class="th-page" id="main">
-{title_block(path, trail, lede)}<ul class="th-list">
+{title_block(path, trail, lede)}{extra}<ul class="th-list">
 {items}
 </ul>
 </main>
@@ -229,18 +229,47 @@ write("luce-gas.html", head("Luce e gas", "luce-gas.html") + f"""<body>
 {scripts("luce-gas.html")}""")
 
 # ----------------------------------------------------------------------------- fotovoltaico, pompe di calore, wall box
-def simple_hub(slug, name, sections, lede=""):
+def simple_hub(slug, name, sections, lede="", extra=""):
     rows, folders = [], []
     for sec, label, icon in sections:
         f = f"documenti/{slug}/{sec}"
         folder_page(f"{slug}-{sec}.html", [(name, f"{slug}.html"), (label, "")], f)
         rows.append((f"{slug}-{sec}.html", label, icon, [f]))
         folders.append(f)
-    hub_page(f"{slug}.html", [(name, "")], rows, lede)
+    hub_page(f"{slug}.html", [(name, "")], rows, lede, extra)
     return folders
 
 
-fv_folders = simple_hub("fotovoltaico", "Fotovoltaico", FOTOVOLTAICO, "Schede, presentazioni, tutorial e documenti per ogni fase della pratica.")
+# Partner fotovoltaico: logo EKO disegnato con un'animazione (sole che sorge, tetto tracciato, scritta che si riempie).
+_EKO = open("logo-eko.svg", encoding="utf-8").read()
+_EKO_VB = re.search(r'viewBox="([^"]+)"', _EKO).group(1)
+_EKO_D = re.search(r' d="([^"]+)"', _EKO).group(1)
+EKO_HERO = f"""<section class="th-eko" aria-label="Partner fotovoltaico: EKO Srl">
+  <div class="th-eko-sky" aria-hidden="true"><span class="th-eko-sun"></span><span class="th-eko-rays"></span><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <svg class="th-eko-logo" viewBox="{_EKO_VB}" role="img" aria-label="Logo EKO Srl">
+    <path class="th-eko-fill" fill-rule="evenodd" d="{_EKO_D}"/>
+    <path class="th-eko-line" pathLength="1000" d="{_EKO_D}"/>
+  </svg>
+  <div class="th-eko-text">
+    <small>Partner fotovoltaico</small>
+    <b>EKO Srl</b>
+    <p>Impianti fotovoltaici, accumulo e efficienza energetica: qui trovi listini, schede tecniche, presentazioni e tutta la documentazione della pratica.</p>
+  </div>
+  <div class="th-eko-panel" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><em></em></div>
+</section>
+<script>
+// l'animazione parte quando l'intro TOP HOUSE è finita e il banner è visibile
+(function () {{
+  var box = document.currentScript.previousElementSibling;
+  var t = setInterval(function () {{
+    var busy = document.querySelector('.th-intro') || /th-(arriving|leaving)/.test(document.documentElement.className);
+    var r = box.getBoundingClientRect();
+    if (!busy && r.top < innerHeight && r.bottom > 0) {{ box.classList.add('is-on'); clearInterval(t); }}
+  }}, 150);
+}})();
+</script>
+"""
+fv_folders = simple_hub("fotovoltaico", "Fotovoltaico", FOTOVOLTAICO, "Schede, presentazioni, tutorial e documenti per ogni fase della pratica.", EKO_HERO)
 pdc_folders = simple_hub("pompe-di-calore", "Pompe di calore", [("schede-tecniche", "Schede tecniche", "fa-clipboard-list")])
 wb_folders = simple_hub("wall-box", "Wall box", [("schede-tecniche", "Schede tecniche", "fa-clipboard-list")])
 

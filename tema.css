@@ -483,3 +483,35 @@ a.th-gauge:hover .th-gauge-more i{transform:translateX(3px)}
 .th-legacy .page{max-width:min(var(--page),100%)!important;padding-left:var(--gutter)!important;padding-right:var(--gutter)!important}
 .th-legacy .layout>*,.th-legacy .grid>*{min-width:0}
 @media (max-width:980px){.th-legacy .layout{grid-template-columns:minmax(0,1fr)!important}}
+
+/* fotovoltaico: banner del partner EKO Srl con logo animato */
+.th-eko{--eko:#85bd40;--eko-2:#5f9a25;position:relative;overflow:hidden;display:grid;grid-template-columns:minmax(150px,230px) 1fr;gap:28px;align-items:center;margin:0 0 22px;padding:30px 32px;border-radius:var(--r-lg);background:radial-gradient(120% 140% at 0% 0%,#f4fbe9 0%,#ffffff 55%),#fff;border:1px solid #e3efd3;box-shadow:var(--shadow)}
+.th-eko-logo{position:relative;z-index:2;width:100%;height:auto;overflow:visible}
+.th-eko-line{fill:none;stroke:var(--eko);stroke-width:7;stroke-linejoin:round;stroke-dasharray:1000;stroke-dashoffset:1000;animation:ekoDraw 1.9s cubic-bezier(.65,0,.35,1) .25s forwards}
+.th-eko-fill{fill:var(--eko);opacity:0;transform-origin:50% 60%;animation:ekoFill .9s ease-out 1.75s forwards}
+@keyframes ekoDraw{to{stroke-dashoffset:0}}
+@keyframes ekoFill{0%{opacity:0;transform:scale(.97)}60%{opacity:1;transform:scale(1.02)}100%{opacity:1;transform:scale(1)}}
+.th-eko-sky{position:absolute;left:32px;top:14px;width:min(230px,40%);aspect-ratio:1;pointer-events:none;z-index:1}
+.th-eko-sun{position:absolute;right:2%;top:2%;width:26%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,#fff6c9 0%,#ffd84d 45%,#f7b52b 100%);box-shadow:0 0 30px 8px rgba(255,205,60,.45);transform:translateY(80%) scale(.6);opacity:0;animation:ekoSun 1.4s cubic-bezier(.2,.8,.2,1) 1.2s forwards,ekoPulse 3.5s ease-in-out 2.8s infinite}
+.th-eko-rays{position:absolute;right:-7%;top:-7%;width:44%;aspect-ratio:1;border-radius:50%;background:repeating-conic-gradient(rgba(255,200,40,.35) 0 8deg,transparent 8deg 30deg);-webkit-mask:radial-gradient(circle,transparent 34%,#000 36%,#000 60%,transparent 72%);mask:radial-gradient(circle,transparent 34%,#000 36%,#000 60%,transparent 72%);opacity:0;animation:ekoRaysIn .8s ease 2s forwards,ekoSpin 18s linear 2s infinite}
+@keyframes ekoSun{to{transform:none;opacity:1}}
+@keyframes ekoPulse{50%{box-shadow:0 0 42px 14px rgba(255,205,60,.55)}}
+@keyframes ekoRaysIn{to{opacity:1}}
+@keyframes ekoSpin{to{transform:rotate(360deg)}}
+.th-eko-sky i{position:absolute;width:5px;height:5px;border-radius:50%;background:#ffd84d;opacity:0;animation:ekoSpark 3s ease-in-out infinite}
+.th-eko-sky i:nth-of-type(1){left:18%;top:20%;animation-delay:2.4s}.th-eko-sky i:nth-of-type(2){left:70%;top:62%;animation-delay:2.9s}
+.th-eko-sky i:nth-of-type(3){left:40%;top:8%;animation-delay:3.3s}.th-eko-sky i:nth-of-type(4){left:88%;top:40%;animation-delay:3.8s}
+.th-eko-sky i:nth-of-type(5){left:8%;top:70%;animation-delay:4.2s}.th-eko-sky i:nth-of-type(6){left:58%;top:30%;animation-delay:4.7s}
+@keyframes ekoSpark{0%,100%{opacity:0;transform:scale(.4)}40%{opacity:.9;transform:scale(1.4)}}
+.th-eko-text{position:relative;z-index:2;opacity:0;transform:translateY(10px);animation:ekoUp .7s ease 2.1s forwards}
+.th-eko-text small{display:block;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--eko-2)}
+.th-eko-text b{display:block;font-family:var(--display);font-size:clamp(28px,4vw,40px);line-height:1.05;color:var(--ink);margin:4px 0 8px}
+.th-eko-text p{margin:0;max-width:52ch;color:var(--muted)}
+@keyframes ekoUp{to{opacity:1;transform:none}}
+.th-eko-panel{position:absolute;right:-30px;bottom:-34px;width:230px;height:120px;display:grid;grid-template-columns:repeat(4,1fr);gap:4px;padding:6px;border-radius:8px;background:#21324a;transform:perspective(500px) rotateX(48deg) rotateZ(-18deg);opacity:.16;overflow:hidden;z-index:0}
+.th-eko-panel span{background:linear-gradient(135deg,#3a5c8a,#22406b);border-radius:2px}
+.th-eko-panel em{position:absolute;inset:0;background:linear-gradient(100deg,transparent 30%,rgba(255,255,255,.75) 48%,transparent 66%);transform:translateX(-120%);animation:ekoShine 4s ease-in-out 2.6s infinite}
+@keyframes ekoShine{0%{transform:translateX(-120%)}45%,100%{transform:translateX(120%)}}
+@media (max-width:640px){.th-eko{grid-template-columns:1fr;gap:16px;padding:22px 20px;text-align:left}.th-eko-logo{max-width:170px}.th-eko-sky{left:20px;width:170px}}
+@media (prefers-reduced-motion:reduce){.th-eko-line{stroke-dashoffset:0}.th-eko-fill,.th-eko-sun,.th-eko-rays,.th-eko-text{opacity:1;transform:none}}
+.th-eko:not(.is-on),.th-eko:not(.is-on) *{animation-play-state:paused!important}

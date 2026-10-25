@@ -9,10 +9,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&family=Instrument+Sans:wght@400..700&display=swap">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<link rel="stylesheet" href="tema.css?v=20261024i">
-<script src="intro.js?v=20261024i"></script>
-<script src="utenti-ruoli.js?v=20261024i"></script>
-<script type="module" src="auth-guard.js?v=20261024i"></script>
+<link rel="stylesheet" href="tema.css?v=20261025b">
+<script src="intro.js?v=20261025b"></script>
+<script src="utenti-ruoli.js?v=20261025b"></script>
+<script type="module" src="auth-guard.js?v=20261025b"></script>
 </head>
 <body>
 <main class="th-page" id="main">
@@ -20,6 +20,30 @@
 <h1 class="th-title">Fotovoltaico</h1>
 <p class="th-lede">Schede, presentazioni, tutorial e documenti per ogni fase della pratica.</p>
 <div class="th-cable" aria-hidden="true"></div>
+<section class="th-eko" aria-label="Partner fotovoltaico: EKO Srl">
+  <div class="th-eko-sky" aria-hidden="true"><span class="th-eko-sun"></span><span class="th-eko-rays"></span><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <svg class="th-eko-logo" viewBox="0 0 993 862" role="img" aria-label="Logo EKO Srl">
+    <path class="th-eko-fill" fill-rule="evenodd" d="M386,374 L386,681 L417,681 L418,525 L587,680 L654,681 L460,503 L613,374 L579,374 L418,510 L417,374Z M104,374 L104,380 L215,526 L104,675 L104,681 L321,681 L331,613 L325,612 L323,622 L316,636 L307,645 L291,651 L280,653 L139,652 L242,513 L150,387 L283,387 L294,391 L305,401 L311,414 L314,429 L319,429 L315,374Z M786,369 L748,380 L723,393 L698,412 L674,440 L658,471 L650,501 L649,544 L652,562 L661,589 L681,623 L697,641 L727,664 L756,678 L792,687 L836,688 L860,684 L892,673 L921,656 L944,636 L966,607 L978,582 L986,553 L988,517 L985,494 L975,463 L960,437 L936,410 L918,396 L888,380 L860,371 L834,367 L802,367Z M807,381 L829,381 L846,384 L858,388 L880,401 L900,422 L914,447 L922,471 L927,500 L928,538 L924,572 L917,598 L906,622 L895,638 L876,656 L857,667 L828,674 L808,674 L784,669 L767,661 L745,643 L732,626 L720,601 L713,577 L709,551 L708,515 L710,492 L715,467 L728,434 L742,414 L761,397 L783,386Z M988,257 L521,40 L4,280 L4,856 L521,857 L521,820 L42,818 L42,304 L44,302 L520,83 L988,301Z M634,4 L634,48 L927,185 L926,140Z"/>
+    <path class="th-eko-line" pathLength="1000" d="M386,374 L386,681 L417,681 L418,525 L587,680 L654,681 L460,503 L613,374 L579,374 L418,510 L417,374Z M104,374 L104,380 L215,526 L104,675 L104,681 L321,681 L331,613 L325,612 L323,622 L316,636 L307,645 L291,651 L280,653 L139,652 L242,513 L150,387 L283,387 L294,391 L305,401 L311,414 L314,429 L319,429 L315,374Z M786,369 L748,380 L723,393 L698,412 L674,440 L658,471 L650,501 L649,544 L652,562 L661,589 L681,623 L697,641 L727,664 L756,678 L792,687 L836,688 L860,684 L892,673 L921,656 L944,636 L966,607 L978,582 L986,553 L988,517 L985,494 L975,463 L960,437 L936,410 L918,396 L888,380 L860,371 L834,367 L802,367Z M807,381 L829,381 L846,384 L858,388 L880,401 L900,422 L914,447 L922,471 L927,500 L928,538 L924,572 L917,598 L906,622 L895,638 L876,656 L857,667 L828,674 L808,674 L784,669 L767,661 L745,643 L732,626 L720,601 L713,577 L709,551 L708,515 L710,492 L715,467 L728,434 L742,414 L761,397 L783,386Z M988,257 L521,40 L4,280 L4,856 L521,857 L521,820 L42,818 L42,304 L44,302 L520,83 L988,301Z M634,4 L634,48 L927,185 L926,140Z"/>
+  </svg>
+  <div class="th-eko-text">
+    <small>Partner fotovoltaico</small>
+    <b>EKO Srl</b>
+    <p>Impianti fotovoltaici, accumulo e efficienza energetica: qui trovi listini, schede tecniche, presentazioni e tutta la documentazione della pratica.</p>
+  </div>
+  <div class="th-eko-panel" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><em></em></div>
+</section>
+<script>
+// l'animazione parte quando l'intro TOP HOUSE è finita e il banner è visibile
+(function () {
+  var box = document.currentScript.previousElementSibling;
+  var t = setInterval(function () {
+    var busy = document.querySelector('.th-intro') || /th-(arriving|leaving)/.test(document.documentElement.className);
+    var r = box.getBoundingClientRect();
+    if (!busy && r.top < innerHeight && r.bottom > 0) { box.classList.add('is-on'); clearInterval(t); }
+  }, 150);
+})();
+</script>
 <ul class="th-list">
 <li><a class="th-row" href="fotovoltaico-schede-tecniche.html"><span class="th-row-icon"><i class="fa-solid fa-clipboard-list" aria-hidden="true"></i></span><span class="th-row-label">Schede tecniche</span><span class="th-row-meta" data-count-folders="documenti/fotovoltaico/schede-tecniche"></span><i class="fa-solid fa-chevron-right th-row-go" aria-hidden="true"></i></a></li>
 <li><a class="th-row" href="fotovoltaico-riunioni.html"><span class="th-row-icon"><i class="fa-solid fa-people-group" aria-hidden="true"></i></span><span class="th-row-label">Riunioni</span><span class="th-row-meta" data-count-folders="documenti/fotovoltaico/riunioni"></span><i class="fa-solid fa-chevron-right th-row-go" aria-hidden="true"></i></a></li>
@@ -32,8 +56,8 @@
 <li><a class="th-row" href="fotovoltaico-altro.html"><span class="th-row-icon"><i class="fa-solid fa-ellipsis" aria-hidden="true"></i></span><span class="th-row-label">Altro</span><span class="th-row-meta" data-count-folders="documenti/fotovoltaico/altro"></span><i class="fa-solid fa-chevron-right th-row-go" aria-hidden="true"></i></a></li>
 </ul>
 </main>
-<script src="pdf-tools.js?v=20261024i"></script>
-<script src="layout.js?v=20261024i"></script>
-<script src="drive.js?v=20261024i"></script>
+<script src="pdf-tools.js?v=20261025b"></script>
+<script src="layout.js?v=20261025b"></script>
+<script src="drive.js?v=20261025b"></script>
 </body>
 </html>
