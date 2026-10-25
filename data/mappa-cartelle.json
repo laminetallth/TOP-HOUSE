@@ -1278,6 +1278,13 @@
     "Formazione base"
    ]
   },
+  "documenti/fotovoltaico/formazione-eko": {
+   "url": "fotovoltaico-formazione-eko.html",
+   "path": [
+    "Fotovoltaico",
+    "Formazione EKO: percorso rete vendita"
+   ]
+  },
   "documenti/fotovoltaico/presentazione-base": {
    "url": "fotovoltaico-presentazione-base.html",
    "path": [
@@ -1304,6 +1311,20 @@
    "path": [
     "Fotovoltaico",
     "Documenti contratto"
+   ]
+  },
+  "documenti/fotovoltaico/modulo-b2b-aziende": {
+   "url": "fotovoltaico-modulo-b2b-aziende.html",
+   "path": [
+    "Fotovoltaico",
+    "Modulo B2B aziende"
+   ]
+  },
+  "documenti/fotovoltaico/climatizzatori": {
+   "url": "fotovoltaico-climatizzatori.html",
+   "path": [
+    "Fotovoltaico",
+    "Climatizzatori (Klima)"
    ]
   },
   "documenti/fotovoltaico/altro": {
@@ -3443,6 +3464,13 @@
    ]
   },
   {
+   "url": "fotovoltaico-formazione-eko.html",
+   "path": [
+    "Fotovoltaico",
+    "Formazione EKO: percorso rete vendita"
+   ]
+  },
+  {
    "url": "fotovoltaico-presentazione-base.html",
    "path": [
     "Fotovoltaico",
@@ -3468,6 +3496,20 @@
    "path": [
     "Fotovoltaico",
     "Documenti contratto"
+   ]
+  },
+  {
+   "url": "fotovoltaico-modulo-b2b-aziende.html",
+   "path": [
+    "Fotovoltaico",
+    "Modulo B2B aziende"
+   ]
+  },
+  {
+   "url": "fotovoltaico-climatizzatori.html",
+   "path": [
+    "Fotovoltaico",
+    "Climatizzatori (Klima)"
    ]
   },
   {

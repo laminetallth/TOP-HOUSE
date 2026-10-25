@@ -37,10 +37,13 @@ FOTOVOLTAICO = [
     ("riunioni", "Riunioni", "fa-people-group"),
     ("reonic-preventivi-tutorial", "Reonic: tutorial preventivi", "fa-calculator"),
     ("formazione-base", "Formazione base", "fa-graduation-cap"),
+    ("formazione-eko", "Formazione EKO: percorso rete vendita", "fa-route"),
     ("presentazione-base", "Presentazione base", "fa-display"),
     ("documenti-sopralluogo", "Documenti sopralluogo", "fa-ruler-combined"),
     ("documenti-finanziamento", "Documenti finanziamento", "fa-euro-sign"),
     ("documenti-contratto", "Documenti contratto", "fa-file-signature"),
+    ("modulo-b2b-aziende", "Modulo B2B aziende", "fa-building"),
+    ("climatizzatori", "Climatizzatori (Klima)", "fa-snowflake"),
     ("altro", "Altro", "fa-ellipsis"),
 ]
 OPERATORI = [  # cartella in telefonia/, nome visualizzato
