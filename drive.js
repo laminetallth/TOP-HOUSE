@@ -178,6 +178,27 @@
     }
     return indexPromise;
   }
+  // Date di fine validità delle CTE (data/scadenze-cte.json, ricavate dai PDF).
+  let scadPromise = null;
+  function loadScadenze() {
+    if (!scadPromise) scadPromise = fetch(`${ROOT}data/scadenze-cte.json?t=${Date.now()}`, { cache: 'no-store' })
+      .then(r => (r.ok ? r.json() : {})).then(d => d.file || {}).catch(() => ({}));
+    return scadPromise;
+  }
+  function expiryBadge(info) {
+    if (!info?.scade) return '';
+    const [y, m, d] = info.scade.split('-').map(Number);
+    const end = new Date(y, m - 1, d);
+    const today = new Date(); today.setHours(0, 0, 0, 0);
+    const days = Math.round((end - today) / 86400000);
+    const date = `${String(d).padStart(2, '0')}/${String(m).padStart(2, '0')}/${y}`;
+    let cls = 'ok', icon = 'fa-calendar-check', text = `Scade il ${date}`;
+    if (days < 0) { cls = 'old'; icon = 'fa-calendar-xmark'; text = `Scaduta il ${date}`; }
+    else if (days === 0) { cls = 'soon'; icon = 'fa-hourglass-end'; text = 'Scade oggi'; }
+    else if (days <= 7) { cls = 'soon'; icon = 'fa-hourglass-half'; text = `Scade il ${date} · tra ${days} ${days === 1 ? 'giorno' : 'giorni'}`; }
+    return `<span class="th-exp th-exp--${cls}" title="${esc(info.testo || '')}"><i class="fa-solid ${icon}" aria-hidden="true"></i>${text}</span>`;
+  }
+
   let mapPromise = null;
   function loadMap() {
     if (!mapPromise) mapPromise = fetch(`${ROOT}data/mappa-cartelle.json?t=${Date.now()}`, { cache: 'no-store' }).then(r => (r.ok ? r.json() : { folders: {}, pages: [] })).catch(() => ({ folders: {}, pages: [] }));
@@ -272,6 +293,7 @@
     let highlight = new Set();
     let query = '';
     let firstPaint = true;
+    let scadenze = {};
 
     view.innerHTML = `
       <div class="th-folder-head">
@@ -340,7 +362,7 @@
       li.innerHTML = `
         ${selecting && admin ? `<input type="checkbox" class="th-file-check" aria-label="Seleziona ${esc(display)}">` : ''}
         <span class="th-file-type ${t.cls}" aria-hidden="true">${t.label}</span>
-        <button type="button" class="th-file-main" title="${esc(file.name)}"><span class="th-file-name">${esc(display)}</span><span class="th-file-meta">${esc(meta)}</span></button>
+        <button type="button" class="th-file-main" title="${esc(file.name)}"><span class="th-file-name">${esc(display)}</span><span class="th-file-meta">${esc(meta)}</span>${expiryBadge(scadenze[`${folder}/${file.name}`])}</button>
         <span class="th-file-actions">
           <button type="button" class="th-icon-btn${isFav ? ' is-on' : ''}" data-a="fav" aria-pressed="${isFav ? 'true' : 'false'}" title="${isFav ? 'Togli dai preferiti' : 'Aggiungi ai preferiti'}"><i class="fa-${isFav ? 'solid' : 'regular'} fa-star"></i></button>
           <a class="th-icon-btn" href="${esc(video ? (file.url || raw) : raw)}" target="_blank" rel="noopener" title="${video ? 'Apri video' : 'Scarica'}"><i class="fa-solid ${video ? 'fa-up-right-from-square' : 'fa-download'}"></i></a>
@@ -370,12 +392,16 @@
 
     async function load() {
       try {
+        if (/\/cte/.test(folder)) scadenze = await loadScadenze();
         const raw = (await listFolder(folder)).filter(f => isShown(f.name));
         // titoli dei link video: dall'indice, altrimenti letti dal file
         await Promise.all(raw.filter(f => isVideoLink(f.name) && !f.url).map(async f => {
           try { const d = await fetch(RAW + encodePath(f.path)).then(r => r.json()); f.title = d.title; f.url = d.url; } catch (e) { /* resta il nome */ }
         }));
-        files = raw.sort((a, b) => (a.title || a.name).localeCompare(b.title || b.name, 'it', { numeric: true, sensitivity: 'base' }));
+        // le CTE scadute vanno in fondo alla lista
+        const today = new Date().toISOString().slice(0, 10);
+        const expired = f => ((scadenze[`${folder}/${f.name}`] || {}).scade || '9999') < today ? 1 : 0;
+        files = raw.sort((a, b) => expired(a) - expired(b) || (a.title || a.name).localeCompare(b.title || b.name, 'it', { numeric: true, sensitivity: 'base' }));
         render();
       } catch (error) {
         console.error(error);

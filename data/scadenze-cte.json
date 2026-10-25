@@ -1,0 +1,2733 @@
+{
+ "aggiornato": "2026-10-25",
+ "file": {
+  "documenti/a2a/cte/business/A2A Full Gas Business.pdf": {
+   "scade": "2026-10-28",
+   "testo": "richieste effettuate dal 15/10/2026 al 28/10/2026"
+  },
+  "documenti/a2a/cte/business/A2A Full Luce Business.pdf": {
+   "scade": "2026-10-28",
+   "testo": "richieste effettuate dal 15/10/2026 al 28/10/2026"
+  },
+  "documenti/a2a/cte/business/Prezzo Sicuro Gas Business.pdf": {
+   "scade": "2026-10-28",
+   "testo": "richieste effettuate dal 15/10/2026 al 28/10/2026"
+  },
+  "documenti/a2a/cte/business/Prezzo Sicuro Verde Business.pdf": {
+   "scade": "2026-10-28",
+   "testo": "richieste effettuate dal 15/10/2026 al 28/10/2026"
+  },
+  "documenti/a2a/cte/business/Smart Business - Gas -.pdf": {
+   "scade": "2026-10-28",
+   "testo": "richieste effettuate dal 01/10/2026 al 28/10/2026"
+  },
+  "documenti/a2a/cte/business/Smart Business - Luce.pdf": {
+   "scade": "2026-10-28",
+   "testo": "richieste effettuate dal 01/10/2026 al 28/10/2026"
+  },
+  "documenti/a2a/cte/business/Smart Business+ Gas.pdf": {
+   "scade": "2026-10-28",
+   "testo": "richieste effettuate dal 01/10/2026 al 28/10/2026"
+  },
+  "documenti/a2a/cte/business/Smart Business+ Luce.pdf": {
+   "scade": "2026-10-28",
+   "testo": "richieste effettuate dal 01/10/2026 al 28/10/2026"
+  },
+  "documenti/a2a/cte/residenziale/A2A Start Gas.pdf": {
+   "scade": "2026-10-28",
+   "testo": "richieste effettuate dal 15/10/2026 al 28/10/2026"
+  },
+  "documenti/a2a/cte/residenziale/A2A Start Luce STG.pdf": {
+   "scade": "2026-10-28",
+   "testo": "richieste effettuate dal 15/10/2026 al 28/10/2026"
+  },
+  "documenti/a2a/cte/residenziale/Esclusiva2a - Gas.pdf": {
+   "scade": "2026-10-28",
+   "testo": "richieste effettuate dal 15/10/2026 al 28/10/2026"
+  },
+  "documenti/a2a/cte/residenziale/Esclusiva2a Luce.pdf": {
+   "scade": "2026-10-28",
+   "testo": "richieste effettuate dal 15/10/2026 al 28/10/2026"
+  },
+  "documenti/a2a/cte/residenziale/Noi2.pdf": {
+   "scade": "2026-10-28",
+   "testo": "richieste effettuate dal 01/10/2026 al 28/10/2026"
+  },
+  "documenti/a2a/cte/residenziale/Premia2a - Gas.pdf": {
+   "scade": "2026-10-28",
+   "testo": "richieste effettuate dal 15/10/2026 al 28/10/2026"
+  },
+  "documenti/a2a/cte/residenziale/Premia2a Luce.pdf": {
+   "scade": "2026-10-28",
+   "testo": "richieste effettuate dal 15/10/2026 al 28/10/2026"
+  },
+  "documenti/a2a/cte/residenziale/Smart Casa Gas.pdf": {
+   "scade": "2026-10-28",
+   "testo": "richieste effettuate dal 01/10/2026 al 28/10/2026"
+  },
+  "documenti/a2a/cte/residenziale/Smart Casa Luce.pdf": {
+   "scade": "2026-10-28",
+   "testo": "richieste effettuate dal 01/10/2026 al 28/10/2026"
+  },
+  "documenti/a2a/cte/residenziale/Smart Casa+ Gas.pdf": {
+   "scade": "2026-10-28",
+   "testo": "richieste effettuate dal 01/10/2026 al 28/10/2026"
+  },
+  "documenti/a2a/cte/residenziale/Smart Casa+ Luce.pdf": {
+   "scade": "2026-10-28",
+   "testo": "richieste effettuate dal 01/10/2026 al 28/10/2026"
+  },
+  "documenti/a2a/cte/residenziale/Start casa Luce.pdf": {
+   "scade": "2026-10-28",
+   "testo": "richieste effettuate dal 15/10/2026 al 28/10/2026"
+  },
+  "documenti/agn-energia/cte/business/AGN_CONDOMINIO_BRONZO_001488ESVFL01XXAGNECONDOBRONZO26.pdf": {
+   "scade": "2026-10-31",
+   "testo": "richieste effettuate entro il 31/10/2026"
+  },
+  "documenti/agn-energia/cte/business/AGN_CONDOMINIO_BRONZO_001488GSVML01XXAGNGCONDOBRONZO26.pdf": {
+   "scade": "2026-10-31",
+   "testo": "richieste effettuate entro il 31/10/2026"
+  },
+  "documenti/agn-energia/cte/business/AGN_CONDOMINIO_DIAMANTE_001488ESVFL01XXAGNECONDODIAMANTE.pdf": {
+   "scade": "2026-10-31",
+   "testo": "richieste effettuate entro il 31/10/2026"
+  },
+  "documenti/agn-energia/cte/business/AGN_CONDOMINIO_DIAMANTE_001488GSVML01XXAGNGCONDODIAMANTE.pdf": {
+   "scade": "2026-10-31",
+   "testo": "richieste effettuate entro il 31/10/2026"
+  },
+  "documenti/agn-energia/cte/business/AGN_CONDOMINIO_GOLD_001488ESVFL01XXAGNECONDOGOLD2026.pdf": {
+   "scade": "2026-10-31",
+   "testo": "richieste effettuate entro il 31/10/2026"
+  },
+  "documenti/agn-energia/cte/business/AGN_CONDOMINIO_GOLD_001488GSVML01XXAGNGCONDOGOLD2026.pdf": {
+   "scade": "2026-10-31",
+   "testo": "richieste effettuate entro il 31/10/2026"
+  },
+  "documenti/agn-energia/cte/business/AGN_CONDOMINIO_PLATINO_001488ESVFL01XXAGNECONDOPLAT2026.pdf": {
+   "scade": "2026-10-31",
+   "testo": "richieste effettuate entro il 31/10/2026"
+  },
+  "documenti/agn-energia/cte/business/AGN_CONDOMINIO_PLATINO_001488GSVML01XXAGNGCONDOPLAT2026.pdf": {
+   "scade": "2026-10-31",
+   "testo": "richieste effettuate entro il 31/10/2026"
+  },
+  "documenti/agn-energia/cte/business/AGN_CONDOMINIO_SEMPLICE_001488ESVFL01XXAGNECONDOSEMPLICE.pdf": {
+   "scade": "2026-10-31",
+   "testo": "richieste effettuate entro il 31/10/2026"
+  },
+  "documenti/agn-energia/cte/business/AGN_CONDOMINIO_SEMPLICE_001488GSVML01XXAGNGCONDOSEMPLICE.pdf": {
+   "scade": "2026-10-31",
+   "testo": "richieste effettuate entro il 31/10/2026"
+  },
+  "documenti/agn-energia/cte/business/AGN_CONDOMINIO_SILVER_001488ESVFL01XXAGNECONDOSILVER26.pdf": {
+   "scade": "2026-10-31",
+   "testo": "richieste effettuate entro il 31/10/2026"
+  },
+  "documenti/agn-energia/cte/business/AGN_CONDOMINIO_SILVER_001488GSVML01XXAGNGCONDOSILVER26.pdf": {
+   "scade": "2026-10-31",
+   "testo": "richieste effettuate entro il 31/10/2026"
+  },
+  "documenti/agn-energia/cte/business/AGN_CONDOMINIO_SUPER_001488ESVFL01XXAGNECONDOSUPER026.pdf": {
+   "scade": "2026-10-31",
+   "testo": "richieste effettuate entro il 31/10/2026"
+  },
+  "documenti/agn-energia/cte/business/AGN_CONDOMINIO_SUPER_001488GSVML01XXAGNGCONDOSUPER026.pdf": {
+   "scade": "2026-10-31",
+   "testo": "richieste effettuate entro il 31/10/2026"
+  },
+  "documenti/alperia/cte/business/CTE_Alperia Gas Condoindex Latemar_ITA_.pdf": {
+   "scade": "2026-11-10",
+   "testo": "valida dal 01-04-2026 al 10-11-2026"
+  },
+  "documenti/alperia/cte/business/CTE_Alperia Gas Condoindex Sciliar_ITA_.pdf": {
+   "scade": "2026-11-10",
+   "testo": "valida dal 01-04-2026 al 10-11-2026"
+  },
+  "documenti/alperia/cte/business/CTE_Alperia Gas Index Braies_ITA_.pdf": {
+   "scade": "2026-11-10",
+   "testo": "valida dal 01-04-2026 al 10-11-2026"
+  },
+  "documenti/alperia/cte/business/CTE_Alperia Gas Index Caldaro_ITA_.pdf": {
+   "scade": "2026-11-10",
+   "testo": "valida dal 11-08-2026 al 10-11-2026"
+  },
+  "documenti/alperia/cte/business/CTE_Alperia Gas Index Carezza_ITA_.pdf": {
+   "scade": "2026-11-10",
+   "testo": "valida dal 01-04-2026 al 10-11-2026"
+  },
+  "documenti/alperia/cte/business/CTE_Alperia Gas Index Neves_ITA_.pdf": {
+   "scade": "2026-11-10",
+   "testo": "valida dal 01-04-2026 al 10-11-2026"
+  },
+  "documenti/alperia/cte/business/CTE_Alperia Gas Index Vernago_ITA_.pdf": {
+   "scade": "2026-11-10",
+   "testo": "valida dal 01-04-2026 al 10-11-2026"
+  },
+  "documenti/alperia/cte/business/CTE_Alperia Power Condoindex Catinaccio_ITA_.pdf": {
+   "scade": "2026-11-10",
+   "testo": "valida dal 01-04-2026 al 10-11-2026"
+  },
+  "documenti/alperia/cte/business/CTE_Alperia Power Condoindex Latemar_ITA_.pdf": {
+   "scade": "2026-11-10",
+   "testo": "valida dal 01-04-2026 al 10-11-2026"
+  },
+  "documenti/alperia/cte/business/CTE_Alperia Power Condoindex Ortles_ITA_.pdf": {
+   "scade": "2026-11-10",
+   "testo": "valida dal 01-04-2026 al 10-11-2026"
+  },
+  "documenti/alperia/cte/business/CTE_Alperia Power Condoindex Sciliar_ITA_.pdf": {
+   "scade": "2026-11-10",
+   "testo": "valida dal 01-04-2026 al 10-11-2026"
+  },
+  "documenti/alperia/cte/business/CTE_Alperia Power Index Braies_ITA_.pdf": {
+   "scade": "2026-11-10",
+   "testo": "valida dal 01-04-2026 al 10-11-2026"
+  },
+  "documenti/alperia/cte/business/CTE_Alperia Power Index Caldaro_ITA_.pdf": {
+   "scade": "2026-11-10",
+   "testo": "valida dal 11-08-2026 al 10-11-2026"
+  },
+  "documenti/alperia/cte/business/CTE_Alperia Power Index Carezza_ITA_.pdf": {
+   "scade": "2026-11-10",
+   "testo": "valida dal 01-04-2026 al 10-11-2026"
+  },
+  "documenti/alperia/cte/business/CTE_Alperia Power Index Neves_ITA_.pdf": {
+   "scade": "2026-11-10",
+   "testo": "valida dal 01-04-2026 al 10-11-2026"
+  },
+  "documenti/alperia/cte/business/CTE_Alperia Power Index Vernago_ITA_.pdf": {
+   "scade": "2026-11-10",
+   "testo": "valida dal 01-04-2026 al 10-11-2026"
+  },
+  "documenti/alperia/cte/residenziale/CTE_Alperia Gas Home Clear_ITA_.pdf": {
+   "scade": "2026-11-10",
+   "testo": "valida dal 01-04-2026 al 10-11-2026"
+  },
+  "documenti/alperia/cte/residenziale/CTE_Alperia Gas Home Digital_ITA_.pdf": {
+   "scade": "2026-11-10",
+   "testo": "valida dal 01-04-2026 al 10-11-2026"
+  },
+  "documenti/alperia/cte/residenziale/CTE_Alperia Gas Home Premium_ITA_.pdf": {
+   "scade": "2026-11-10",
+   "testo": "valida dal 01-04-2026 al 10-11-2026"
+  },
+  "documenti/alperia/cte/residenziale/CTE_Alperia Gas Home Pro_ITA_.pdf": {
+   "scade": "2026-11-10",
+   "testo": "valida dal 01-04-2026 al 10-11-2026"
+  },
+  "documenti/alperia/cte/residenziale/CTE_Alperia Gas Home Pure_ITA_.pdf": {
+   "scade": "2026-11-10",
+   "testo": "valida dal 01-04-2026 al 10-11-2026"
+  },
+  "documenti/alperia/cte/residenziale/CTE_Alperia Gas Home Standard_ITA_.pdf": {
+   "scade": "2026-11-10",
+   "testo": "valida dal 01-04-2026 al 10-11-2026"
+  },
+  "documenti/alperia/cte/residenziale/CTE_Alperia Gas Home Start_ITA_.pdf": {
+   "scade": "2026-11-10",
+   "testo": "valida dal 01-04-2026 al 10-11-2026"
+  },
+  "documenti/alperia/cte/residenziale/CTE_Alperia Gas Smile Clear_ITA_.pdf": {
+   "scade": "2026-10-26",
+   "testo": "valida dal 22-09-2026 al 26-10-2026"
+  },
+  "documenti/alperia/cte/residenziale/CTE_Alperia Home Clear_ITA_.pdf": {
+   "scade": "2026-11-10",
+   "testo": "valida dal 11-07-2026 al 10-11-2026"
+  },
+  "documenti/alperia/cte/residenziale/CTE_Alperia Home Digital_ITA_.pdf": {
+   "scade": "2026-11-10",
+   "testo": "valida dal 11-07-2026 al 10-11-2026"
+  },
+  "documenti/alperia/cte/residenziale/CTE_Alperia Home Plus Fix_ITA_.pdf": {
+   "scade": "2026-10-26",
+   "testo": "valida dal 11-10-2026 al 26-10-2026"
+  },
+  "documenti/alperia/cte/residenziale/CTE_Alperia Home Pro_ITA_.pdf": {
+   "scade": "2026-11-10",
+   "testo": "valida dal 11-07-2026 al 10-11-2026"
+  },
+  "documenti/alperia/cte/residenziale/CTE_Alperia Home Pure_ITA_.pdf": {
+   "scade": "2026-11-10",
+   "testo": "valida dal 11-07-2026 al 10-11-2026"
+  },
+  "documenti/alperia/cte/residenziale/CTE_Alperia Home Standard_ITA_.pdf": {
+   "scade": "2026-11-10",
+   "testo": "valida dal 11-07-2026 al 10-11-2026"
+  },
+  "documenti/alperia/cte/residenziale/CTE_Alperia Home Start_ITA_.pdf": {
+   "scade": "2026-11-10",
+   "testo": "valida dal 11-07-2026 al 10-11-2026"
+  },
+  "documenti/alperia/cte/residenziale/CTE_Alperia Smile Clear_ITA_.pdf": {
+   "scade": "2026-10-26",
+   "testo": "valida dal 11-10-2026 al 26-10-2026"
+  },
+  "documenti/alperia/cte/residenziale/CTE_Alperia Smile Premium_ITA_.pdf": {
+   "scade": "2026-10-26",
+   "testo": "valida dal 11-10-2026 al 26-10-2026"
+  },
+  "documenti/alperia/cte/residenziale/CTE_Alperia Smile Safety_ITA_.pdf": {
+   "scade": "2026-10-26",
+   "testo": "valida dal 11-10-2026 al 26-10-2026"
+  },
+  "documenti/alperia/cte/residenziale/CTE_Alperia Smile Standard_ITA_.pdf": {
+   "scade": "2026-10-26",
+   "testo": "valida dal 11-10-2026 al 26-10-2026"
+  },
+  "documenti/audax/cte/business/AUDAX CONSIP ABRUZZO E MOLISE - ANNO CONSIP 2026 - NEW.pdf": {
+   "scade": "2027-03-15",
+   "testo": "VALIDA DAL 01/03/2026 AL 15/03/2027"
+  },
+  "documenti/audax/cte/business/AUDAX CONSIP CALABRIA - ANNO CONSIP 2026 - NEW.pdf": {
+   "scade": "2027-03-15",
+   "testo": "VALIDA DAL 01/03/2026 AL 15/03/2027"
+  },
+  "documenti/audax/cte/business/AUDAX CONSIP CAMPANIA - ANNO CONSIP 2026 - NEW.pdf": {
+   "scade": "2027-03-15",
+   "testo": "VALIDA DAL 01/03/2026 AL 15/03/2027"
+  },
+  "documenti/audax/cte/business/AUDAX CONSIP EMILIA ROMAGNA - ANNO CONSIP 2026 - NEW.pdf": {
+   "scade": "2027-03-15",
+   "testo": "VALIDA DAL 01/03/2026 AL 15/03/2027"
+  },
+  "documenti/audax/cte/business/AUDAX CONSIP LAZIO - ANNO CONSIP 2026 - NEW.pdf": {
+   "scade": "2027-03-15",
+   "testo": "VALIDA DAL 01/03/2026 AL 15/03/2027"
+  },
+  "documenti/audax/cte/business/AUDAX CONSIP LOMBARDIA - ANNO CONSIP 2026 - NEW.pdf": {
+   "scade": "2027-03-15",
+   "testo": "VALIDA DAL 01/03/2026 AL 15/03/2027"
+  },
+  "documenti/audax/cte/business/AUDAX CONSIP PROVINCIA MILANO E LODI - ANNO CONSIP 2026 - NEW.pdf": {
+   "scade": "2027-03-15",
+   "testo": "VALIDA DAL 01/03/2026 AL 15/03/2027"
+  },
+  "documenti/audax/cte/business/AUDAX CONSIP PROVINCIA ROMA - ANNO CONSIP 2026 - NEW.pdf": {
+   "scade": "2027-03-15",
+   "testo": "VALIDA DAL 01/03/2026 AL 15/03/2027"
+  },
+  "documenti/audax/cte/business/AUDAX CONSIP PUGLIA E BASILICATA - ANNO CONSIP 2026 - NEW.pdf": {
+   "scade": "2027-03-15",
+   "testo": "VALIDA DAL 01/03/2026 AL 15/03/2027"
+  },
+  "documenti/audax/cte/business/AUDAX CONSIP SARDEGNA E LIGURIA - ANNO CONSIP 2026 - NEW.pdf": {
+   "scade": "2027-03-15",
+   "testo": "VALIDA DAL 01/03/2026 AL 15/03/2027"
+  },
+  "documenti/audax/cte/business/AUDAX CONSIP SICILIA - ANNO CONSIP 2026 - NEW.pdf": {
+   "scade": "2027-03-15",
+   "testo": "VALIDA DAL 01/03/2026 AL 15/03/2027"
+  },
+  "documenti/audax/cte/business/AUDAX CONSIP TOSCANA - ANNO CONSIP 2026 - NEW.pdf": {
+   "scade": "2027-03-15",
+   "testo": "VALIDA DAL 01/03/2026 AL 15/03/2027"
+  },
+  "documenti/audax/cte/business/AUDAX CONSIP TRENTINO E FRIULI - ANNO CONSIP 2026 - NEW.pdf": {
+   "scade": "2027-03-15",
+   "testo": "VALIDA DAL 01/03/2026 AL 15/03/2027"
+  },
+  "documenti/audax/cte/business/AUDAX CONSIP UMBRIA E MARCHE - ANNO CONSIP 2026 - NEW.pdf": {
+   "scade": "2027-03-15",
+   "testo": "VALIDA DAL 01/03/2026 AL 15/03/2027"
+  },
+  "documenti/audax/cte/business/AUDAX CONSIP VALLE D'AOSTA E PIEMONTE - ANNO CONSIP 2026 - NEW.pdf": {
+   "scade": "2027-03-15",
+   "testo": "VALIDA DAL 01/03/2026 AL 15/03/2027"
+  },
+  "documenti/audax/cte/business/AUDAX CONSIP VENETO - ANNO CONSIP 2026 - NEW.pdf": {
+   "scade": "2027-03-15",
+   "testo": "VALIDA DAL 01/03/2026 AL 15/03/2027"
+  },
+  "documenti/audax/cte/business/GAS PA - SEMPRE ECO PA - STANDARD.pdf": {
+   "scade": "2027-03-15",
+   "testo": "Valida per adesione fino al 15/03/2027"
+  },
+  "documenti/audax/cte/business/LISTINO A - SEMPRE ECO IMPRESA A_GBSIDAXAX26071SRX.pdf": {
+   "scade": "2027-01-31",
+   "testo": "adesione: 01/04/2026 al:31/01/2027"
+  },
+  "documenti/audax/cte/business/LISTINO A - SEMPRE VERDE IMPRESA ORARIO A_EBSIDAXA.pdf": {
+   "scade": "2027-01-31",
+   "testo": "adesione: 01/10/2026 al:31/01/2027"
+  },
+  "documenti/audax/cte/business/LISTINO B - SEMPRE ECO IMPRESA B_GBSIDAXBX26071SRX.pdf": {
+   "scade": "2027-01-31",
+   "testo": "adesione: 01/04/2026 al:31/01/2027"
+  },
+  "documenti/audax/cte/business/LISTINO C - SEMPRE VERDE IMPRESA ORARIO C_EBSIDAXCO26101SRX_AU.pdf": {
+   "scade": "2027-01-31",
+   "testo": "adesione: 01/10/2026 al:31/01/2027"
+  },
+  "documenti/audax/cte/business/LISTINO C SEMPRE ECO IMPRESA C_GBSIDAXCX26071SRX_AU.pdf": {
+   "scade": "2027-01-31",
+   "testo": "adesione: 01/04/2026 al:31/01/2027"
+  },
+  "documenti/audax/cte/business/LISTINO E - SEMPRE VERDE IMPRESA ORARIO E_EBSIDAXEO26101SRX_AU.pdf": {
+   "scade": "2027-01-31",
+   "testo": "adesione: 01/10/2026 al:31/01/2027"
+  },
+  "documenti/audax/cte/business/SEMPRE ECO MICRO BUSINESS A_GMSIDAXEX26071SRX_AU.pdf.pdf": {
+   "scade": "2027-01-31",
+   "testo": "adesione: 01/04/2026 al 31/01/2027"
+  },
+  "documenti/audax/cte/business/SEMPRE VERDE IMPRESA ORARIO A_EBSIDAXAO26101SRX_AU.pdf": {
+   "scade": "2027-01-31",
+   "testo": "adesione: 01/10/2026 al:31/01/2027"
+  },
+  "documenti/audax/cte/business/SICURA VERDE IMPRESA FASCE - A_37_EBSFDAXAF261030RX_AU.pdf": {
+   "scade": "2026-10-28",
+   "testo": "adesione: 22/10/2026 al:28/10/2026"
+  },
+  "documenti/audax/cte/residenziale/SEMPRE ECO CASA_GDSIDAXAX26071SRX_AU.pdf.pdf": {
+   "scade": "2027-01-31",
+   "testo": "adesione: 01/04/2026 al:31/01/2027"
+  },
+  "documenti/audax/cte/residenziale/SEMPRE VERDE CASA SPREAD FASCE_EDSIDAXAF26101SRX_AU.pdf": {
+   "scade": "2027-01-31",
+   "testo": "adesione: 01/10/2026 al:31/01/2027"
+  },
+  "documenti/audax/cte/residenziale/SEMPRE VERDE CASA SPREAD MONO A_EDSIDAXAM26101SRX_AU.pdf": {
+   "scade": "2027-01-31",
+   "testo": "adesione: 01/10/2026 al:31/01/2027"
+  },
+  "documenti/audax/cte/residenziale/SICURA VERDE CASA FASCE - 37_EDSFDAXAF261030RX_AU.pdf": {
+   "scade": "2026-10-28",
+   "testo": "adesione: 22/10/2026 al:28/10/2026"
+  },
+  "documenti/axpo/cte/business/Axpo00025Business_Dinamico_GAS_RT-0005748677.pdf": {
+   "scade": "2026-11-04",
+   "testo": "Valida Al 04/11/2026"
+  },
+  "documenti/axpo/cte/business/Axpo00037Scegli_Dinamico_GAS_2_RT-0005748700.pdf": {
+   "scade": "2026-11-04",
+   "testo": "Valida Al 04/11/2026"
+  },
+  "documenti/axpo/cte/business/Axpo00197Axpo_Condominio_Gas_Index_RT-0005748759.pdf": {
+   "scade": "2026-11-04",
+   "testo": "Valida Al 04/11/2026"
+  },
+  "documenti/axpo/cte/business/Axpo00223Scegli_Dinamico_GAS_2.0_RT-0005748804.pdf": {
+   "scade": "2026-11-04",
+   "testo": "Valida Al 04/11/2026"
+  },
+  "documenti/axpo/cte/business/Axpo00342Scegli_Dinamico_Gas_Light_RT-0005748884.pdf": {
+   "scade": "2026-11-04",
+   "testo": "Valida Al 04/11/2026"
+  },
+  "documenti/axpo/cte/business/Axpo00518Scegli_Dinamico_Gas_3_RT-0005751453.pdf": {
+   "scade": "2026-11-04",
+   "testo": "Valida Al 04/11/2026"
+  },
+  "documenti/axpo/cte/residenziale/Pulsee00169Value_Luce_Fix_RT-0005819985.pdf": {
+   "scade": "2026-10-28",
+   "testo": "Validità Offerta: dal 22/10/2026 al 28/10/2026"
+  },
+  "documenti/axpo/cte/residenziale/Pulsee00170Value_Gas_Fix_RT-0005819993.pdf": {
+   "scade": "2026-10-28",
+   "testo": "Validità Offerta: dal 22/10/2026 al 28/10/2026"
+  },
+  "documenti/axpo/cte/residenziale/Pulsee00171Easy_Luce_Fix_RT-0005820000.pdf": {
+   "scade": "2026-10-28",
+   "testo": "Validità Offerta: dal 22/10/2026 al 28/10/2026"
+  },
+  "documenti/axpo/cte/residenziale/Pulsee00172Easy_Gas_Fix_RT-0005820004.pdf": {
+   "scade": "2026-10-28",
+   "testo": "Validità Offerta: dal 22/10/2026 al 28/10/2026"
+  },
+  "documenti/axpo/cte/residenziale/Pulsee00173Smart_Luce_Fix_RT-0005820022.pdf": {
+   "scade": "2026-10-28",
+   "testo": "Validità Offerta: dal 22/10/2026 al 28/10/2026"
+  },
+  "documenti/axpo/cte/residenziale/Pulsee00175Smart_Gas_Fix_RT-0005820010.pdf": {
+   "scade": "2026-10-28",
+   "testo": "Validità Offerta: dal 22/10/2026 al 28/10/2026"
+  },
+  "documenti/axpo/cte/residenziale/Pulsee00179Partner_Luce_Fix_RT-0005820036(1).pdf": {
+   "scade": "2026-10-28",
+   "testo": "Validità Offerta: dal 22/10/2026 al 28/10/2026"
+  },
+  "documenti/axpo/cte/residenziale/Pulsee00180Partner_Gas_Fix_RT-0005820044.pdf": {
+   "scade": "2026-10-28",
+   "testo": "Validità Offerta: dal 22/10/2026 al 28/10/2026"
+  },
+  "documenti/axpo/cte/residenziale/Pulsee00181Partner_Luce_Fix_Plus_RT-0005820051.pdf": {
+   "scade": "2026-10-28",
+   "testo": "Validità Offerta: dal 22/10/2026 al 28/10/2026"
+  },
+  "documenti/axpo/cte/residenziale/Pulsee00182Partner_Gas_Fix_Plus_RT-0005820057.pdf": {
+   "scade": "2026-10-28",
+   "testo": "Validità Offerta: dal 22/10/2026 al 28/10/2026"
+  },
+  "documenti/axpo/cte/residenziale/Pulsee00551Easy_Luce_Fix_36_mesi_RT-0005820264.pdf": {
+   "scade": "2026-10-28",
+   "testo": "Validità Offerta: dal 22/10/2026 al 28/10/2026"
+  },
+  "documenti/axpo/cte/residenziale/Pulsee00552Partner_Luce_Fix_36_mesi_RT-0005820246.pdf": {
+   "scade": "2026-10-28",
+   "testo": "Validità Offerta: dal 22/10/2026 al 28/10/2026"
+  },
+  "documenti/axpo/cte/residenziale/Pulsee00553Partner_Luce_Fix_Plus_36_mesi_RT-0005820238(1).pdf": {
+   "scade": "2026-10-28",
+   "testo": "Validità Offerta: dal 22/10/2026 al 28/10/2026"
+  },
+  "documenti/axpo/cte/residenziale/Pulsee00557Smart_Luce_Fix_36_mesi_RT-0005820277.pdf": {
+   "scade": "2026-10-28",
+   "testo": "Validità Offerta: dal 22/10/2026 al 28/10/2026"
+  },
+  "documenti/axpo/cte/residenziale/Pulsee00558Value_Luce_Fix_36_mesi_RT-0005820271.pdf": {
+   "scade": "2026-10-28",
+   "testo": "Validità Offerta: dal 22/10/2026 al 28/10/2026"
+  },
+  "documenti/axpo/cte/residenziale/Pulsee00560Easy_Gas_Fix_36_mesi_RT-0005820283(1).pdf": {
+   "scade": "2026-10-28",
+   "testo": "Validità Offerta: dal 22/10/2026 al 28/10/2026"
+  },
+  "documenti/axpo/cte/residenziale/Pulsee00561Partner_Gas_Fix_36_mesi_RT-0005820291.pdf": {
+   "scade": "2026-10-28",
+   "testo": "Validità Offerta: dal 22/10/2026 al 28/10/2026"
+  },
+  "documenti/axpo/cte/residenziale/Pulsee00562Partner_Gas_Fix_Plus_36_mesi_RT-0005820295.pdf": {
+   "scade": "2026-10-28",
+   "testo": "Validità Offerta: dal 22/10/2026 al 28/10/2026"
+  },
+  "documenti/axpo/cte/residenziale/Pulsee00570Smart_Gas_Fix_36_mesi_RT-0005820323.pdf": {
+   "scade": "2026-10-28",
+   "testo": "Validità Offerta: dal 22/10/2026 al 28/10/2026"
+  },
+  "documenti/axpo/cte/residenziale/Pulsee00571Value_Gas_Fix_36_mesi_RT-0005820333.pdf": {
+   "scade": "2026-10-28",
+   "testo": "Validità Offerta: dal 22/10/2026 al 28/10/2026"
+  },
+  "documenti/chiurlo/cte/business/BEST CONDOMINI EE_CTE_BSCPUN2402P4H.pdf": {
+   "scade": "2027-01-10",
+   "testo": "valida per utenze di tipo Altri Usi dal 11/10/2026 al 10/01/2027"
+  },
+  "documenti/chiurlo/cte/business/BETTER CONDOMINI EE_CTE_BTCPUN2402P4H.pdf": {
+   "scade": "2027-01-10",
+   "testo": "valida per utenze di tipo Altri Usi dal 11/10/2026 al 10/01/2027"
+  },
+  "documenti/chiurlo/cte/business/DEDICATA BEST EE BUSINESS_CTE_PUN115QF207P4H.pdf": {
+   "scade": "2027-01-10",
+   "testo": "valida per utenze di tipo Altri Usi dal 11/10/2026 al 10/01/2027"
+  },
+  "documenti/chiurlo/cte/business/DEDICATA BEST GAS BUSINESS_CTE_PSV16QF172AU.pdf": {
+   "scade": "2027-01-10",
+   "testo": "valida per utenze di tipo Altri Usi dal 11/10/2026 al 10/01/2027"
+  },
+  "documenti/chiurlo/cte/business/DEDICATA BETTER EE BUSINESS_CTE_PUN145QF213AUP4H.pdf": {
+   "scade": "2027-01-10",
+   "testo": "valida per utenze di tipo Altri Usi dal 11/10/2026 al 10/01/2027"
+  },
+  "documenti/chiurlo/cte/business/DEDICATA BETTER GAS BUSINESS_CTE_PSV19QF172AU.pdf": {
+   "scade": "2027-01-10",
+   "testo": "valida per utenze di tipo Altri Usi dal 11/10/2026 al 10/01/2027"
+  },
+  "documenti/chiurlo/cte/business/DEDICATA GAS_CTE_567PSVCOND2405.pdf": {
+   "scade": "2027-01-10",
+   "testo": "valida per utenze di tipo Altri Usi dal 11/10/2026 al 10/01/2027"
+  },
+  "documenti/chiurlo/cte/business/DEDICATA GOOD PROMO EE BUSINESS_CTE_PUN18QF215AUP4H.pdf": {
+   "scade": "2027-01-10",
+   "testo": "valida per utenze di tipo Altri Usi dal 11/10/2026 al 10/01/2027"
+  },
+  "documenti/chiurlo/cte/business/DEDICATA GOOD PROMO GAS BUSINESS_CTE_PSV22QF164AU.pdf": {
+   "scade": "2027-01-10",
+   "testo": "valida per utenze di tipo Altri Usi dal 11/10/2026 al 10/01/2027"
+  },
+  "documenti/chiurlo/cte/business/EASY GOOD EE_CTE_EGDPUN2402P4H.pdf": {
+   "scade": "2027-01-10",
+   "testo": "valida per utenze di tipo Altri Usi dal 11/10/2026 al 10/01/2027"
+  },
+  "documenti/chiurlo/cte/business/GOOD CONDOMINI EE_CTE_GDCPUN2402P4H.pdf": {
+   "scade": "2027-01-10",
+   "testo": "valida per utenze di tipo Altri Usi dal 11/10/2026 al 10/01/2027"
+  },
+  "documenti/chiurlo/cte/business/SUPERGOOD CONDOMINI EE_CTE_SGDPUN2302P4H.pdf": {
+   "scade": "2027-01-10",
+   "testo": "valida per utenze di tipo Altri Usi dal 11/10/2026 al 10/01/2027"
+  },
+  "documenti/cogeme/cte/business/Connettiamoci 11_da 50 Mwh a 75 Mwh.pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità dell'offerta: 01/10/2026 al 31/12/2026"
+  },
+  "documenti/cogeme/cte/business/Connettiamoci 15 da 25 MWh a 50 MWh.pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità dell'offerta: 01/10/2026 al 31/12/2026"
+  },
+  "documenti/cogeme/cte/business/Connettiamoci 19_da 8.500 a 25.000 KWh.pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità dell'offerta: 01/10/2026 al 31/12/2026"
+  },
+  "documenti/cogeme/cte/business/Connettiamoci 9 _da 75 Mwh a 100 Mwh.pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità dell'offerta: 01/10/2026 al 31/12/2026"
+  },
+  "documenti/cogeme/cte/business/Connettiamoci BASE 3 fasce altri usi_fino 8.500 kwh.pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità dell'offerta: 01/10/2026 al 31/12/2026"
+  },
+  "documenti/cogeme/cte/business/Connettiamoci Gas 9_ da 8001 a 30.000 Smc.pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità dell'offerta: 01/10/2026 al 31/12/2026"
+  },
+  "documenti/cogeme/cte/business/Connettiamoci PLus F3_da 50 Mwh a 75 Mwh.pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità dell'offerta: 01/10/2026 al 31/12/2026"
+  },
+  "documenti/cogeme/cte/business/Connettiamoci Plus F4 da 75 Mwh a 100 Mwh.pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità dell'offerta: 01/10/2026 al 31/12/2026"
+  },
+  "documenti/cogeme/cte/business/Connettiamoci gas 10_da 6001 a 8000 Smc.pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità dell'offerta: 01/10/2026 al 31/12/2026"
+  },
+  "documenti/cogeme/cte/business/Connettiamoci gas 11_da 3001 a 6000 Smc.pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità dell'offerta: 01/10/2026 al 31/12/2026"
+  },
+  "documenti/cogeme/cte/business/Connettiamoci gas 12_da1501 a 3000 Smc.pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità dell'offerta: 01/10/2026 al 31/12/2026"
+  },
+  "documenti/cogeme/cte/business/Connettiamoci gas Base.pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità dell'offerta: 01/10/2026 al 31/12/2026"
+  },
+  "documenti/cogeme/cte/business/EE_AU1026_2_3F_FIX_A.pdf": {
+   "scade": "2026-10-31",
+   "testo": "validità dell'offerta: 16/10/2026 al 31/10/2026"
+  },
+  "documenti/cogeme/cte/business/EE_AU1026_2_M_FIX_A.pdf": {
+   "scade": "2026-10-31",
+   "testo": "validità dell'offerta: 16/10/2026 al 31/10/2026"
+  },
+  "documenti/cogeme/cte/business/GA_AU1026_2_FIX_A.pdf": {
+   "scade": "2026-10-31",
+   "testo": "validità dell'offerta: 16/10/2026 al 31/10/2026"
+  },
+  "documenti/cogeme/cte/business/Partnership Altri Usi (2).pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità dell'offerta: 01/10/2026 al 31/12/2026"
+  },
+  "documenti/cogeme/cte/business/Partnership Altri Usi.pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità dell'offerta: 01/10/2026 al 31/12/2026"
+  },
+  "documenti/cogeme/cte/business/Zero Spread Altri Usi.pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità dell'offerta: 01/10/2026 al 31/12/2026"
+  },
+  "documenti/cogeme/cte/business/Zero Spread Altri usi (2).pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità dell'offerta: 01/10/2026 al 31/12/2026"
+  },
+  "documenti/cogeme/cte/residenziale/Affezioniamoci Premium domestico.pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità dell'offerta: 01/10/2026 al 31/12/2026"
+  },
+  "documenti/cogeme/cte/residenziale/Affezioniamoci domestico.pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità dell'offerta: 01/10/2026 al 31/12/2026"
+  },
+  "documenti/cogeme/cte/residenziale/Affezioniamoci premium.pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità dell'offerta: 01/10/2026 al 31/12/2026"
+  },
+  "documenti/cogeme/cte/residenziale/Affezioniamoci_domestico.pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità dell'offerta: 01/10/2026 al 31/12/2026"
+  },
+  "documenti/cogeme/cte/residenziale/EE_DM1026_2_3F_FIX_A.pdf": {
+   "scade": "2026-10-31",
+   "testo": "validità dell'offerta: 16/10/2026 al 31/10/2026"
+  },
+  "documenti/cogeme/cte/residenziale/EE_DM1026_2_M_FIX_A.pdf": {
+   "scade": "2026-10-31",
+   "testo": "validità dell'offerta: 16/10/2026 al 31/10/2026"
+  },
+  "documenti/cogeme/cte/residenziale/GA_DM1026_2_FIX_A.pdf": {
+   "scade": "2026-10-31",
+   "testo": "validità dell'offerta: 16/10/2026 al 31/10/2026"
+  },
+  "documenti/cogeme/cte/residenziale/Partnership Domestico (2).pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità dell'offerta: 01/10/2026 al 31/12/2026"
+  },
+  "documenti/cogeme/cte/residenziale/Partnership Domestico.pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità dell'offerta: 01/10/2026 al 31/12/2026"
+  },
+  "documenti/cogeme/cte/residenziale/Zero Spread Domestico 1.pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità dell'offerta: 01/10/2026 al 31/12/2026"
+  },
+  "documenti/cogeme/cte/residenziale/Zero Spread Domestico 2.pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità dell'offerta: 01/10/2026 al 31/12/2026"
+  },
+  "documenti/cogeme/cte/residenziale/Zero Spread Domestico.pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità dell'offerta: 01/10/2026 al 31/12/2026"
+  },
+  "documenti/duferco/cte/business/FIX_BUSINESS_ADAGIO_24_MESI.pdf": {
+   "scade": "2026-10-31",
+   "testo": "validità della CTE: OTTOBRE 2026"
+  },
+  "documenti/duferco/cte/business/FIX_BUSINESS_ALLEGRO_24_MESI.pdf": {
+   "scade": "2026-10-31",
+   "testo": "validità della CTE: OTTOBRE 2026"
+  },
+  "documenti/duferco/cte/business/FIX_BUSINESS_ALLEGRO_PLUS_24_MESI.pdf": {
+   "scade": "2026-10-31",
+   "testo": "validità della CTE: OTTOBRE 2026"
+  },
+  "documenti/duferco/cte/business/FIX_BUSINESS_ANDANTE_24_MESI.pdf": {
+   "scade": "2026-10-31",
+   "testo": "validità della CTE: OTTOBRE 2026"
+  },
+  "documenti/duferco/cte/business/FIX_BUSINESS_ANDANTE_PLUS_24_MESI.pdf": {
+   "scade": "2026-10-31",
+   "testo": "validità della CTE: OTTOBRE 2026"
+  },
+  "documenti/duferco/cte/business/FIX_BUSINESS_SUPER_ADAGIO_24_MESI.pdf": {
+   "scade": "2026-10-31",
+   "testo": "validità della CTE: OTTOBRE 2026"
+  },
+  "documenti/duferco/cte/business/FIX_BUSINESS_VIVACE_24_MESI.pdf": {
+   "scade": "2026-10-31",
+   "testo": "validità della CTE: OTTOBRE 2026"
+  },
+  "documenti/duferco/cte/business/FIX_BUSINESS_VIVACE_PLUS_24_MESI.pdf": {
+   "scade": "2026-10-31",
+   "testo": "validità della CTE: OTTOBRE 2026"
+  },
+  "documenti/duferco/cte/business/FIX_BUSINESS_VIVACISSIMA_PLUS_24_MESI.pdf": {
+   "scade": "2026-10-31",
+   "testo": "validità della CTE: OTTOBRE 2026"
+  },
+  "documenti/duferco/cte/business/FLEX_BUSINESS_ADAGIO.pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità della CTE: dal 01/10/2026 al 31/12/2026"
+  },
+  "documenti/duferco/cte/business/FLEX_BUSINESS_ALLEGRO.pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità della CTE: dal 01/10/2026 al 31/12/2026"
+  },
+  "documenti/duferco/cte/business/FLEX_BUSINESS_ALLEGRO_PLUS.pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità della CTE: dal 01/10/2026 al 31/12/2026"
+  },
+  "documenti/duferco/cte/business/FLEX_BUSINESS_ANDANTE (2).pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità della CTE: dal 01/10/2026 al 31/12/2026"
+  },
+  "documenti/duferco/cte/business/FLEX_BUSINESS_ANDANTE.pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità della CTE: dal 01/10/2026 al 31/12/2026"
+  },
+  "documenti/duferco/cte/business/FLEX_BUSINESS_ANDANTE_LIGHT (2).pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità della CTE: dal 01/10/2026 al 31/12/2026"
+  },
+  "documenti/duferco/cte/business/FLEX_BUSINESS_ANDANTE_LIGHT.pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità della CTE: dal 01/10/2026 al 31/12/2026"
+  },
+  "documenti/duferco/cte/business/FLEX_BUSINESS_ANDANTE_PLUS.pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità della CTE: dal 01/10/2026 al 31/12/2026"
+  },
+  "documenti/duferco/cte/business/FLEX_BUSINESS_ENTRY_ (2).pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità della CTE: dal 01/10/2026 al 31/12/2026"
+  },
+  "documenti/duferco/cte/business/FLEX_BUSINESS_ENTRY_.pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità della CTE: dal 01/10/2026 al 31/12/2026"
+  },
+  "documenti/duferco/cte/business/FLEX_BUSINESS_MILLENNIAL.pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità della CTE: dal 01/10/2026 al 31/12/2026"
+  },
+  "documenti/duferco/cte/business/FLEX_BUSINESS_NEXTGEN.pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità della CTE: dal 01/10/2026 al 31/12/2026"
+  },
+  "documenti/duferco/cte/business/FLEX_BUSINESS_NEXTGEN_LIGHT.pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità della CTE: dal 01/10/2026 al 31/12/2026"
+  },
+  "documenti/duferco/cte/business/FLEX_BUSINESS_PREMIUM_ONE.pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità della CTE: dal 01/10/2026 al 31/12/2026"
+  },
+  "documenti/duferco/cte/business/FLEX_BUSINESS_PREMIUM_ONE_LIGHT.pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità della CTE: dal 01/10/2026 al 31/12/2026"
+  },
+  "documenti/duferco/cte/business/FLEX_BUSINESS_PREMIUM_TWO.pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità della CTE: dal 01/10/2026 al 31/12/2026"
+  },
+  "documenti/duferco/cte/business/FLEX_BUSINESS_PREMIUM_TWO_LIGHT.pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità della CTE: dal 01/10/2026 al 31/12/2026"
+  },
+  "documenti/duferco/cte/business/FLEX_BUSINESS_SUPER_ADAGIO (2).pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità della CTE: dal 01/10/2026 al 31/12/2026"
+  },
+  "documenti/duferco/cte/business/FLEX_BUSINESS_SUPER_ADAGIO.pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità della CTE: dal 01/10/2026 al 31/12/2026"
+  },
+  "documenti/duferco/cte/business/FLEX_BUSINESS_VIVACE (2).pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità della CTE: dal 01/10/2026 al 31/12/2026"
+  },
+  "documenti/duferco/cte/business/FLEX_BUSINESS_VIVACE.pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità della CTE: dal 01/10/2026 al 31/12/2026"
+  },
+  "documenti/duferco/cte/business/FLEX_BUSINESS_VIVACE_LIGHT (2).pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità della CTE: dal 01/10/2026 al 31/12/2026"
+  },
+  "documenti/duferco/cte/business/FLEX_BUSINESS_VIVACE_LIGHT.pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità della CTE: dal 01/10/2026 al 31/12/2026"
+  },
+  "documenti/duferco/cte/business/FLEX_BUSINESS_VIVACE_PLUS (2).pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità della CTE: dal 01/10/2026 al 31/12/2026"
+  },
+  "documenti/duferco/cte/business/FLEX_BUSINESS_VIVACE_PLUS.pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità della CTE: dal 01/10/2026 al 31/12/2026"
+  },
+  "documenti/duferco/cte/business/FLEX_BUSINESS_VIVACISSIMA_PLUS.pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità della CTE: dal 01/10/2026 al 31/12/2026"
+  },
+  "documenti/duferco/cte/business/FLEX_BUSINESS_VIVACISSIMA_PLUS_LIGHT.pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità della CTE: dal 01/10/2026 al 31/12/2026"
+  },
+  "documenti/duferco/cte/business/FLEX_CONDOMINI_GIOVE (2).pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità della CTE: dal 01/10/2026 al 31/12/2026"
+  },
+  "documenti/duferco/cte/business/FLEX_CONDOMINI_GIOVE.pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità della CTE: dal 01/10/2026 al 31/12/2026"
+  },
+  "documenti/duferco/cte/business/FLEX_CONDOMINI_MARTE (2).pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità della CTE: dal 01/10/2026 al 31/12/2026"
+  },
+  "documenti/duferco/cte/business/FLEX_CONDOMINI_MARTE.pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità della CTE: dal 01/10/2026 al 31/12/2026"
+  },
+  "documenti/duferco/cte/business/FLEX_CONDOMINI_MERCURIO (2).pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità della CTE: dal 01/10/2026 al 31/12/2026"
+  },
+  "documenti/duferco/cte/business/FLEX_CONDOMINI_MERCURIO.pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità della CTE: dal 01/10/2026 al 31/12/2026"
+  },
+  "documenti/duferco/cte/business/FLEX_CONDOMINI_NETTUNO.pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità della CTE: dal 01/10/2026 al 31/12/2026"
+  },
+  "documenti/duferco/cte/business/FLEX_CONDOMINI_SATURNO (2).pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità della CTE: dal 01/10/2026 al 31/12/2026"
+  },
+  "documenti/duferco/cte/business/FLEX_CONDOMINI_SATURNO.pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità della CTE: dal 01/10/2026 al 31/12/2026"
+  },
+  "documenti/duferco/cte/business/FLEX_CONDOMINI_TERRA (2).pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità della CTE: dal 01/10/2026 al 31/12/2026"
+  },
+  "documenti/duferco/cte/business/FLEX_CONDOMINI_TERRA.pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità della CTE: dal 01/10/2026 al 31/12/2026"
+  },
+  "documenti/duferco/cte/business/FLEX_CONDOMINI_URANO (2).pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità della CTE: dal 01/10/2026 al 31/12/2026"
+  },
+  "documenti/duferco/cte/business/FLEX_CONDOMINI_URANO.pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità della CTE: dal 01/10/2026 al 31/12/2026"
+  },
+  "documenti/duferco/cte/business/FLEX_CONDOMINI_VENERE.pdf": {
+   "scade": "2026-12-31",
+   "testo": "validità della CTE: dal 01/10/2026 al 31/12/2026"
+  },
+  "documenti/duferco/cte/business/FLEX_FAMILY_MICRO (2).pdf": {
+   "scade": "2026-10-31",
+   "testo": "validità della CTE: OTTOBRE 2026"
+  },
+  "documenti/duferco/cte/business/FLEX_FAMILY_MICRO.pdf": {
+   "scade": "2026-10-31",
+   "testo": "validità della CTE: OTTOBRE 2026"
+  },
+  "documenti/duferco/cte/residenziale/EVERGREEN_FIX_24_MESI.pdf": {
+   "scade": "2026-10-31",
+   "testo": "validità della CTE: OTTOBRE 2026"
+  },
+  "documenti/duferco/cte/residenziale/FIX_FAMILY_CUN_1_24_MESI.pdf": {
+   "scade": "2026-10-31",
+   "testo": "validità della CTE: OTTOBRE 2026"
+  },
+  "documenti/duferco/cte/residenziale/FIX_FAMILY_CUN_2_24_MESI.pdf": {
+   "scade": "2026-10-31",
+   "testo": "validità della CTE: OTTOBRE 2026"
+  },
+  "documenti/duferco/cte/residenziale/FIX_FAMILY_CUN_3_24_MESI.pdf": {
+   "scade": "2026-10-31",
+   "testo": "validità della CTE: OTTOBRE 2026"
+  },
+  "documenti/duferco/cte/residenziale/FIX_FAMILY_CUN_4_24_MESI.pdf": {
+   "scade": "2026-10-31",
+   "testo": "validità della CTE: OTTOBRE 2026"
+  },
+  "documenti/duferco/cte/residenziale/FIX_FAMILY_SEMPRE_ZERO_L_24_MESI.pdf": {
+   "scade": "2026-10-31",
+   "testo": "validità della CTE: OTTOBRE 2026"
+  },
+  "documenti/duferco/cte/residenziale/FIX_FAMILY_SEMPRE_ZERO_M_24_MESI.pdf": {
+   "scade": "2026-10-31",
+   "testo": "validità della CTE: OTTOBRE 2026"
+  },
+  "documenti/duferco/cte/residenziale/FIX_FAMILY_SEMPRE_ZERO_S_24_MESI.pdf": {
+   "scade": "2026-10-31",
+   "testo": "validità della CTE: OTTOBRE 2026"
+  },
+  "documenti/duferco/cte/residenziale/FIX_FAMILY_SEMPRE_ZERO_XS_24_MESI.pdf": {
+   "scade": "2026-10-31",
+   "testo": "validità della CTE: OTTOBRE 2026"
+  },
+  "documenti/duferco/cte/residenziale/FLEX_FAMILY_BLUES.pdf": {
+   "scade": "2026-10-31",
+   "testo": "validità della CTE: OTTOBRE 2026"
+  },
+  "documenti/duferco/cte/residenziale/FLEX_FAMILY_COUNTRY.pdf": {
+   "scade": "2026-10-31",
+   "testo": "validità della CTE: OTTOBRE 2026"
+  },
+  "documenti/duferco/cte/residenziale/FLEX_FAMILY_JAZZ (2).pdf": {
+   "scade": "2026-10-31",
+   "testo": "validità della CTE: OTTOBRE 2026"
+  },
+  "documenti/duferco/cte/residenziale/FLEX_FAMILY_JAZZ.pdf": {
+   "scade": "2026-10-31",
+   "testo": "validità della CTE: OTTOBRE 2026"
+  },
+  "documenti/duferco/cte/residenziale/FLEX_FAMILY_NEW_AGE.pdf": {
+   "scade": "2026-10-31",
+   "testo": "validità della CTE: OTTOBRE 2026"
+  },
+  "documenti/duferco/cte/residenziale/FLEX_FAMILY_POP (2).pdf": {
+   "scade": "2026-10-31",
+   "testo": "validità della CTE: OTTOBRE 2026"
+  },
+  "documenti/duferco/cte/residenziale/FLEX_FAMILY_POP.pdf": {
+   "scade": "2026-10-31",
+   "testo": "validità della CTE: OTTOBRE 2026"
+  },
+  "documenti/duferco/cte/residenziale/FLEX_FAMILY_RAP (2).pdf": {
+   "scade": "2026-10-31",
+   "testo": "validità della CTE: OTTOBRE 2026"
+  },
+  "documenti/duferco/cte/residenziale/FLEX_FAMILY_RAP.pdf": {
+   "scade": "2026-10-31",
+   "testo": "validità della CTE: OTTOBRE 2026"
+  },
+  "documenti/duferco/cte/residenziale/FLEX_FAMILY_ROCK (2).pdf": {
+   "scade": "2026-10-31",
+   "testo": "validità della CTE: OTTOBRE 2026"
+  },
+  "documenti/duferco/cte/residenziale/FLEX_FAMILY_ROCK.pdf": {
+   "scade": "2026-10-31",
+   "testo": "validità della CTE: OTTOBRE 2026"
+  },
+  "documenti/duferco/cte/residenziale/FLEX_FAMILY_SEMPRE_ZERO_L.pdf": {
+   "scade": "2026-10-31",
+   "testo": "validità della CTE: OTTOBRE 2026"
+  },
+  "documenti/duferco/cte/residenziale/FLEX_FAMILY_SEMPRE_ZERO_M (2).pdf": {
+   "scade": "2026-10-31",
+   "testo": "validità della CTE: OTTOBRE 2026"
+  },
+  "documenti/duferco/cte/residenziale/FLEX_FAMILY_SEMPRE_ZERO_M.pdf": {
+   "scade": "2026-10-31",
+   "testo": "validità della CTE: OTTOBRE 2026"
+  },
+  "documenti/duferco/cte/residenziale/FLEX_FAMILY_SEMPRE_ZERO_S (2).pdf": {
+   "scade": "2026-10-31",
+   "testo": "validità della CTE: OTTOBRE 2026"
+  },
+  "documenti/duferco/cte/residenziale/FLEX_FAMILY_SEMPRE_ZERO_S.pdf": {
+   "scade": "2026-10-31",
+   "testo": "validità della CTE: OTTOBRE 2026"
+  },
+  "documenti/duferco/cte/residenziale/FLEX_FAMILY_SEMPRE_ZERO_XS.pdf": {
+   "scade": "2026-10-31",
+   "testo": "validità della CTE: OTTOBRE 2026"
+  },
+  "documenti/duferco/cte/residenziale/FLEX_FAMILY_SOUL.pdf": {
+   "scade": "2026-10-31",
+   "testo": "validità della CTE: OTTOBRE 2026"
+  },
+  "documenti/duferco/cte/residenziale/PIANETA_BLU_FLEX (2).pdf": {
+   "scade": "2026-10-31",
+   "testo": "validità della CTE: OTTOBRE 2026"
+  },
+  "documenti/duferco/cte/residenziale/PIANETA_BLU_FLEX.pdf": {
+   "scade": "2026-10-31",
+   "testo": "validità della CTE: OTTOBRE 2026"
+  },
+  "documenti/edison/cte/business/02 - CE_WORLD_BUSINESS_GAS.pdf": {
+   "scade": "2026-10-28",
+   "testo": "Validità dal 22/10/26 al 28/10/26"
+  },
+  "documenti/edison/cte/business/02 - SS_WORLD_BUSINESS_GAS.pdf": {
+   "scade": "2026-10-28",
+   "testo": "VALIDA DAL 22/10/26 AL 28/10/26"
+  },
+  "documenti/edison/cte/business/03 - CE_CONDOMINIO_FLEX_GAS_PMI.pdf": {
+   "scade": "2026-10-28",
+   "testo": "Validità dal 22/10/26 al 28/10/26"
+  },
+  "documenti/edison/cte/business/03 - Scheda_CONDOMINIO_FLEX_GAS_PMI_Ambito1.pdf": {
+   "scade": "2026-10-28",
+   "testo": "VALIDA DAL 22/10/26 AL 28/10/26"
+  },
+  "documenti/edison/cte/business/03 - Scheda_CONDOMINIO_FLEX_GAS_PMI_Ambito2.pdf": {
+   "scade": "2026-10-28",
+   "testo": "VALIDA DAL 22/10/26 AL 28/10/26"
+  },
+  "documenti/edison/cte/business/03 - Scheda_CONDOMINIO_FLEX_GAS_PMI_Ambito3.pdf": {
+   "scade": "2026-10-28",
+   "testo": "VALIDA DAL 22/10/26 AL 28/10/26"
+  },
+  "documenti/edison/cte/business/03 - Scheda_CONDOMINIO_FLEX_GAS_PMI_Ambito4.pdf": {
+   "scade": "2026-10-28",
+   "testo": "VALIDA DAL 22/10/26 AL 28/10/26"
+  },
+  "documenti/edison/cte/business/03 - Scheda_CONDOMINIO_FLEX_GAS_PMI_Ambito5.pdf": {
+   "scade": "2026-10-28",
+   "testo": "VALIDA DAL 22/10/26 AL 28/10/26"
+  },
+  "documenti/edison/cte/business/03 - Scheda_CONDOMINIO_FLEX_GAS_PMI_Ambito6.pdf": {
+   "scade": "2026-10-28",
+   "testo": "VALIDA DAL 22/10/26 AL 28/10/26"
+  },
+  "documenti/edison/cte/business/11 - CE_EDISON TOP50FLEX_LUCE.pdf": {
+   "scade": "2026-10-28",
+   "testo": "Validità dal 22/10/26 al 28/10/26"
+  },
+  "documenti/edison/cte/business/11 - Scheda_EDISON TOP50FLEX_LUCE.pdf": {
+   "scade": "2026-10-28",
+   "testo": "VALIDA DAL 22/10/26 AL 28/10/26"
+  },
+  "documenti/edison/cte/business/14 - CE_TOP40_FLEX_GAS_PMI.pdf": {
+   "scade": "2026-10-28",
+   "testo": "Validità dal 22/10/26 al 28/10/26"
+  },
+  "documenti/edison/cte/business/14 - SS_TOP40_FLEX_GAS_PMI.pdf": {
+   "scade": "2026-10-28",
+   "testo": "VALIDA DAL 22/10/26 AL 28/10/26"
+  },
+  "documenti/edison/cte/business/16 - CE_EDISON Soluzione in borsa_LUCE.pdf": {
+   "scade": "2026-10-28",
+   "testo": "Validità dal 22/10/26 al 28/10/26"
+  },
+  "documenti/edison/cte/business/16 - Scheda_EDISON Soluzione in borsa_LUCE.pdf": {
+   "scade": "2026-10-28",
+   "testo": "VALIDA DAL 22/10/26 AL 28/10/26"
+  },
+  "documenti/edison/cte/business/19 - CE_SOLUZIONE_IN_BORSA_GAS_PMI.pdf": {
+   "scade": "2026-10-28",
+   "testo": "Validità dal 22/10/26 al 28/10/26"
+  },
+  "documenti/edison/cte/business/19 - SS_SOLUZIONE_IN_BORSA_GAS_PMI.pdf": {
+   "scade": "2026-10-28",
+   "testo": "VALIDA DAL 22/10/26 AL 28/10/26"
+  },
+  "documenti/edison/cte/business/2 - CE_World_BUSINESS_LUCE.pdf": {
+   "scade": "2026-10-28",
+   "testo": "Validità dal 22/10/26 al 28/10/26"
+  },
+  "documenti/edison/cte/business/2 - Scheda_World_BUSINESS_LUCE.pdf": {
+   "scade": "2026-10-28",
+   "testo": "VALIDA DAL 22/10/26 AL 28/10/26"
+  },
+  "documenti/edison/cte/business/20 - CE_EDISON FLEX_BUSINESS_LUCE.pdf": {
+   "scade": "2026-10-28",
+   "testo": "Validità dal 22/10/26 al 28/10/26"
+  },
+  "documenti/edison/cte/business/20 - Scheda_EDISON FLEX_BUSINESS_LUCE.pdf": {
+   "scade": "2026-10-28",
+   "testo": "VALIDA DAL 22/10/26 AL 28/10/26"
+  },
+  "documenti/edison/cte/business/21 - CE_EDISON DYNAMIC_BUSINESS_LUCE.pdf": {
+   "scade": "2026-10-28",
+   "testo": "Validità dal 22/10/26 al 28/10/26"
+  },
+  "documenti/edison/cte/business/21 - Scheda_EDISON DYNAMIC_BUSINESS_LUCE.pdf": {
+   "scade": "2026-10-28",
+   "testo": "VALIDA DAL 22/10/26 AL 28/10/26"
+  },
+  "documenti/edison/cte/business/22 - CE_EDISON SUPERFLEX_BUSINESS_LUCE.pdf": {
+   "scade": "2026-10-28",
+   "testo": "Validità dal 22/10/26 al 28/10/26"
+  },
+  "documenti/edison/cte/business/22 - CE_FLEX_BUSINESS_GAS_PMI.pdf": {
+   "scade": "2026-10-28",
+   "testo": "Validità dal 22/10/26 al 28/10/26"
+  },
+  "documenti/edison/cte/business/22 - SS_FLEX_BUSINESS_GAS_PMI.pdf": {
+   "scade": "2026-10-28",
+   "testo": "VALIDA DAL 22/10/26 AL 28/10/26"
+  },
+  "documenti/edison/cte/business/22 - Scheda_EDISON SUPERFLEX_BUSINESS_LUCE.pdf": {
+   "scade": "2026-10-28",
+   "testo": "VALIDA DAL 22/10/26 AL 28/10/26"
+  },
+  "documenti/edison/cte/business/23 - CE_DYNAMIC_BUSINESS_GAS_PMI.pdf": {
+   "scade": "2026-10-28",
+   "testo": "Validità dal 22/10/26 al 28/10/26"
+  },
+  "documenti/edison/cte/business/23 - CE_EDISON CONDOMINIO ENERGYPLUS_LUCE.pdf": {
+   "scade": "2026-10-28",
+   "testo": "Validità dal 22/10/26 al 28/10/26"
+  },
+  "documenti/edison/cte/business/23 - SS_DYNAMIC_BUSINESS_GAS_PMI.pdf": {
+   "scade": "2026-10-28",
+   "testo": "VALIDA DAL 22/10/26 AL 28/10/26"
+  },
+  "documenti/edison/cte/business/23 - Scheda_EDISON CONDOMINIO ENERGYPLUS_LUCE.pdf": {
+   "scade": "2026-10-28",
+   "testo": "VALIDA DAL 22/10/26 AL 28/10/26"
+  },
+  "documenti/edison/cte/business/24 - CE_SUPERFLEX_BUSINESS_GAS_PMI.pdf": {
+   "scade": "2026-10-28",
+   "testo": "Validità dal 22/10/26 al 28/10/26"
+  },
+  "documenti/edison/cte/business/24 - SS_SUPERFLEX_BUSINESS_GAS_PMI.pdf": {
+   "scade": "2026-10-28",
+   "testo": "VALIDA DAL 22/10/26 AL 28/10/26"
+  },
+  "documenti/edison/cte/business/5 - CE_CONDOMINIOFLEX_LUCE.pdf": {
+   "scade": "2026-10-28",
+   "testo": "Validità dal 22/10/26 al 28/10/26"
+  },
+  "documenti/edison/cte/business/5 - Scheda_CONDOMINIOFLEX_LUCE.pdf": {
+   "scade": "2026-10-28",
+   "testo": "VALIDA DAL 22/10/26 AL 28/10/26"
+  },
+  "documenti/edison/cte/residenziale/12 - CE_DYNAMIC_Gas.pdf": {
+   "scade": "2026-10-28",
+   "testo": "Validità dal 22/10/26 al 28/10/26"
+  },
+  "documenti/edison/cte/residenziale/12 - Scheda_DYNAMIC_Gas_Ambito1.pdf": {
+   "scade": "2026-10-28",
+   "testo": "VALIDA DAL 22/10/26 AL 28/10/26"
+  },
+  "documenti/edison/cte/residenziale/12 - Scheda_DYNAMIC_Gas_Ambito2.pdf": {
+   "scade": "2026-10-28",
+   "testo": "VALIDA DAL 22/10/26 AL 28/10/26"
+  },
+  "documenti/edison/cte/residenziale/12 - Scheda_DYNAMIC_Gas_Ambito3.pdf": {
+   "scade": "2026-10-28",
+   "testo": "VALIDA DAL 22/10/26 AL 28/10/26"
+  },
+  "documenti/edison/cte/residenziale/12 - Scheda_DYNAMIC_Gas_Ambito4.pdf": {
+   "scade": "2026-10-28",
+   "testo": "VALIDA DAL 22/10/26 AL 28/10/26"
+  },
+  "documenti/edison/cte/residenziale/12 - Scheda_DYNAMIC_Gas_Ambito5.pdf": {
+   "scade": "2026-10-28",
+   "testo": "VALIDA DAL 22/10/26 AL 28/10/26"
+  },
+  "documenti/edison/cte/residenziale/12 - Scheda_DYNAMIC_Gas_Ambito6.pdf": {
+   "scade": "2026-10-28",
+   "testo": "VALIDA DAL 22/10/26 AL 28/10/26"
+  },
+  "documenti/edison/cte/residenziale/14 - CE_Dynamic_LUCE.pdf": {
+   "scade": "2026-10-28",
+   "testo": "Validità dal 22/10/26 al 28/10/26"
+  },
+  "documenti/edison/cte/residenziale/14 - Scheda_Dynamic_LUCE.pdf": {
+   "scade": "2026-10-28",
+   "testo": "VALIDA DAL 22/10/26 AL 28/10/26"
+  },
+  "documenti/edison/cte/residenziale/17 - CE_SuperFlex_Gas.pdf": {
+   "scade": "2026-10-28",
+   "testo": "Validità dal 22/10/26 al 28/10/26"
+  },
+  "documenti/edison/cte/residenziale/17 - Scheda_Superflex_Gas_Ambito1.pdf": {
+   "scade": "2026-10-28",
+   "testo": "VALIDA DAL 22/10/26 AL 28/10/26"
+  },
+  "documenti/edison/cte/residenziale/17 - Scheda_Superflex_Gas_Ambito2.pdf": {
+   "scade": "2026-10-28",
+   "testo": "VALIDA DAL 22/10/26 AL 28/10/26"
+  },
+  "documenti/edison/cte/residenziale/17 - Scheda_Superflex_Gas_Ambito3.pdf": {
+   "scade": "2026-10-28",
+   "testo": "VALIDA DAL 22/10/26 AL 28/10/26"
+  },
+  "documenti/edison/cte/residenziale/17 - Scheda_Superflex_Gas_Ambito4.pdf": {
+   "scade": "2026-10-28",
+   "testo": "VALIDA DAL 22/10/26 AL 28/10/26"
+  },
+  "documenti/edison/cte/residenziale/17 - Scheda_Superflex_Gas_Ambito5.pdf": {
+   "scade": "2026-10-28",
+   "testo": "VALIDA DAL 22/10/26 AL 28/10/26"
+  },
+  "documenti/edison/cte/residenziale/17 - Scheda_Superflex_Gas_Ambito6.pdf": {
+   "scade": "2026-10-28",
+   "testo": "VALIDA DAL 22/10/26 AL 28/10/26"
+  },
+  "documenti/edison/cte/residenziale/18 - CE_Superflex_LUCE.pdf": {
+   "scade": "2026-10-28",
+   "testo": "Validità dal 22/10/26 al 28/10/26"
+  },
+  "documenti/edison/cte/residenziale/18 - Scheda_Superflex_LUCE.pdf": {
+   "scade": "2026-10-28",
+   "testo": "VALIDA DAL 22/10/26 AL 28/10/26"
+  },
+  "documenti/edison/cte/residenziale/2 - CE_World_Gas.pdf": {
+   "scade": "2026-10-28",
+   "testo": "Validità dal 22/10/26 al 28/10/26"
+  },
+  "documenti/edison/cte/residenziale/2 - CE_World_LUCE.pdf": {
+   "scade": "2026-10-28",
+   "testo": "Validità dal 22/10/26 al 28/10/26"
+  },
+  "documenti/edison/cte/residenziale/2 - Scheda_World_Gas_Ambito1.pdf": {
+   "scade": "2026-10-28",
+   "testo": "VALIDA DAL 22/10/26 AL 28/10/26"
+  },
+  "documenti/edison/cte/residenziale/2 - Scheda_World_Gas_Ambito2.pdf": {
+   "scade": "2026-10-28",
+   "testo": "VALIDA DAL 22/10/26 AL 28/10/26"
+  },
+  "documenti/edison/cte/residenziale/2 - Scheda_World_Gas_Ambito3.pdf": {
+   "scade": "2026-10-28",
+   "testo": "VALIDA DAL 22/10/26 AL 28/10/26"
+  },
+  "documenti/edison/cte/residenziale/2 - Scheda_World_Gas_Ambito4.pdf": {
+   "scade": "2026-10-28",
+   "testo": "VALIDA DAL 22/10/26 AL 28/10/26"
+  },
+  "documenti/edison/cte/residenziale/2 - Scheda_World_Gas_Ambito5.pdf": {
+   "scade": "2026-10-28",
+   "testo": "VALIDA DAL 22/10/26 AL 28/10/26"
+  },
+  "documenti/edison/cte/residenziale/2 - Scheda_World_Gas_Ambito6.pdf": {
+   "scade": "2026-10-28",
+   "testo": "VALIDA DAL 22/10/26 AL 28/10/26"
+  },
+  "documenti/edison/cte/residenziale/2 - Scheda_world_Luce.pdf": {
+   "scade": "2026-10-28",
+   "testo": "VALIDA DAL 22/10/26 AL 28/10/26"
+  },
+  "documenti/enel-corporate/cte/business/ENEL_FLEX_BUSINESS_GAS-AC___CTE_(AG_BUS)_v22.pdf": {
+   "scade": "2026-10-22",
+   "testo": "Valida per adesioni entro il 22/10/2026"
+  },
+  "documenti/enel-corporate/cte/business/ENEL_FLEX_BUSINESS_LUCE-AC___CTE_(AG_BUS)_v29.pdf": {
+   "scade": "2026-10-22",
+   "testo": "Valida per adesioni entro il 22/10/2026"
+  },
+  "documenti/enel-corporate/cte/business/EnelFidelity24CorporateMT_26WB5_B_Vendita_ML_KitSwaBusCteSeif.pdf": {
+   "scade": "2026-10-26",
+   "testo": "Valida per adesioni dal 13/10/2026 al 26/10/2026"
+  },
+  "documenti/enel-corporate/cte/business/EnelFidelity24ImpresaMT_26WB5_FMT_Vendita_ML_KitSwaBusCteSeif.pdf": {
+   "scade": "2026-10-26",
+   "testo": "Valida per adesioni dal 13/10/2026 al 26/10/2026"
+  },
+  "documenti/enel-corporate/cte/business/EnelFidelity24Impresa_26WB5_B_Vendita_ML_KitSwaBusCteSeif.pdf": {
+   "scade": "2026-10-26",
+   "testo": "Valida per adesioni dal 13/10/2026 al 26/10/2026"
+  },
+  "documenti/enel-corporate/cte/business/EnelFidelity24Pmi_26WB5_FBT_Vendita_ML_KitSwaBusCteSeif.pdf": {
+   "scade": "2026-10-26",
+   "testo": "Valida per adesioni dal 13/10/2026 al 26/10/2026"
+  },
+  "documenti/enel-corporate/cte/business/EnelFidelity36CorporateMT_26WB5_FMT_Vendita_ML_KitSwaBusCteSeif.pdf": {
+   "scade": "2026-10-26",
+   "testo": "Valida per adesioni dal 13/10/2026 al 26/10/2026"
+  },
+  "documenti/enel-corporate/cte/business/EnelFidelity36ImpresaMT_26WB5_FMT_Vendita_ML_KitSwaBusCteSeif.pdf": {
+   "scade": "2026-10-26",
+   "testo": "Valida per adesioni dal 13/10/2026 al 26/10/2026"
+  },
+  "documenti/enel-corporate/cte/business/EnelFidelity36Impresa_26WB5_FBT_Vendita_ML_KitSwaBusCteSeif.pdf": {
+   "scade": "2026-10-26",
+   "testo": "Valida per adesioni dal 13/10/2026 al 26/10/2026"
+  },
+  "documenti/enel-corporate/cte/business/EnelFidelity36Pmi_26WB5_FBT_Vendita_ML_KitSwaBusCteSeif.pdf": {
+   "scade": "2026-10-26",
+   "testo": "Valida per adesioni dal 13/10/2026 al 26/10/2026"
+  },
+  "documenti/enel-corporate/cte/business/EnelMixCorporate_26WB5_B_Vendita_ML_KitSwaBusCteAsi.pdf": {
+   "scade": "2026-10-26",
+   "testo": "Valida per adesioni dal 13/10/2026 al 26/10/2026"
+  },
+  "documenti/enel-corporate/cte/business/EnelMix_26WB5_B_Vendita_ML_KitSwaBusCteAsi.pdf": {
+   "scade": "2026-10-26",
+   "testo": "Valida per adesioni dal 13/10/2026 al 26/10/2026"
+  },
+  "documenti/enel-corporate/cte/business/EnelPUNtOrarioCommunityEditionGreen_26WB5_Vendita_ML_KitSwaBusCteEfv.pdf": {
+   "scade": "2026-11-23",
+   "testo": "Valida per adesioni dal 29/09/2026 al 23/11/2026"
+  },
+  "documenti/enel-corporate/cte/business/EnelPUNtOrarioCommunityEdition_26WB5_Vendita_ML_KitSwaBusCteEfv.pdf": {
+   "scade": "2026-11-23",
+   "testo": "Valida per adesioni dal 29/09/2026 al 23/11/2026"
+  },
+  "documenti/enel-corporate/cte/business/EnelPUNtOrarioImpresaAPA_26WB5_Vendita_ML_KitSwaBusCteEfv.pdf": {
+   "scade": "2026-11-23",
+   "testo": "Valida per adesioni dal 29/09/2026 al 23/11/2026"
+  },
+  "documenti/enel-corporate/cte/business/EnelPUNtOrarioImpresaExtraGreen_26WB5_Vendita_ML_KitSwaBusCteEfv.pdf": {
+   "scade": "2026-11-23",
+   "testo": "Valida per adesioni dal 29/09/2026 al 23/11/2026"
+  },
+  "documenti/enel-corporate/cte/business/EnelPUNtOrarioImpresaExtra_26WB5_Vendita_ML_KitSwaBusCteEfv.pdf": {
+   "scade": "2026-11-23",
+   "testo": "Valida per adesioni dal 29/09/2026 al 23/11/2026"
+  },
+  "documenti/enel-corporate/cte/business/EnelPUNtOrarioImpresaGreen_26WB5_Vendita_ML_KitSwaBusCteEfv.pdf": {
+   "scade": "2026-11-23",
+   "testo": "Valida per adesioni dal 29/09/2026 al 23/11/2026"
+  },
+  "documenti/enel-corporate/cte/business/EnelPUNtOrarioImpresaSuperAPA_26WB5_Vendita_ML_KitSwaBusCteEfv.pdf": {
+   "scade": "2026-11-23",
+   "testo": "Valida per adesioni dal 29/09/2026 al 23/11/2026"
+  },
+  "documenti/enel-corporate/cte/business/EnelPUNtOrarioImpresaSuperGreen_26WB5_Vendita_ML_KitSwaBusCteEfv.pdf": {
+   "scade": "2026-11-23",
+   "testo": "Valida per adesioni dal 29/09/2026 al 23/11/2026"
+  },
+  "documenti/enel-corporate/cte/business/EnelPUNtOrarioImpresaSuper_26WB5_Vendita_ML_KitSwaBusCteEfv.pdf": {
+   "scade": "2026-11-23",
+   "testo": "Valida per adesioni dal 29/09/2026 al 23/11/2026"
+  },
+  "documenti/enel-corporate/cte/business/EnelPUNtOrarioImpresa_26WB5_Vendita_ML_KitSwaBusCteEfv.pdf": {
+   "scade": "2026-11-23",
+   "testo": "Valida per adesioni dal 29/09/2026 al 23/11/2026"
+  },
+  "documenti/enel-corporate/cte/business/EnelPUNtOrarioMultisito_26WB5_Vendita_ML_KitSwaBusCteEfv.pdf": {
+   "scade": "2026-11-23",
+   "testo": "Valida per adesioni dal 29/09/2026 al 23/11/2026"
+  },
+  "documenti/enel-corporate/cte/business/EnelPUNtOrarioPmiAPA_26WB5_Vendita_ML_KitSwaBusCteEfv.pdf": {
+   "scade": "2026-11-23",
+   "testo": "Valida per adesioni dal 29/09/2026 al 23/11/2026"
+  },
+  "documenti/enel-corporate/cte/business/EnelPUNtOrarioPmiGreen_26WB5_Vendita_ML_KitSwaBusCteEfv.pdf": {
+   "scade": "2026-11-23",
+   "testo": "Valida per adesioni dal 29/09/2026 al 23/11/2026"
+  },
+  "documenti/enel-corporate/cte/business/EnelPUNtOrarioPmi_26WB5_Vendita_ML_KitSwaBusCteEfv.pdf": {
+   "scade": "2026-11-23",
+   "testo": "Valida per adesioni dal 29/09/2026 al 23/11/2026"
+  },
+  "documenti/enel-corporate/cte/business/SoluzioneEnergiaImpresa3F_26WB5_B_Vendita_ML_KitSwaBusCteSeif.pdf": {
+   "scade": "2026-10-26",
+   "testo": "Valida per adesioni dal 13/10/2026 al 26/10/2026"
+  },
+  "documenti/enel-corporate/cte/business/SoluzioneEnergiaImpresaGreen3F_26WB5_B_Vendita_ML_KitSwaBusCteSeif.pdf": {
+   "scade": "2026-10-26",
+   "testo": "Valida per adesioni dal 13/10/2026 al 26/10/2026"
+  },
+  "documenti/enel-corporate/cte/business/SoluzioneEnergiaImpresaPmiGreen_26WB5_B_Vendita_ML_KitSwaBusCteSeif.pdf": {
+   "scade": "2026-10-26",
+   "testo": "Valida per adesioni dal 13/10/2026 al 26/10/2026"
+  },
+  "documenti/enel-corporate/cte/business/SoluzioneEnergiaImpresaPmi_26WB5_B_Vendita_ML_KitSwaBusCteSeif.pdf": {
+   "scade": "2026-10-26",
+   "testo": "Valida per adesioni dal 13/10/2026 al 26/10/2026"
+  },
+  "documenti/enel-corporate/cte/business/SoluzioneEnergiaImpresaSuper3F_26WB5_B_Vendita_ML_KitSwaBusCteSeif.pdf": {
+   "scade": "2026-10-26",
+   "testo": "Valida per adesioni dal 13/10/2026 al 26/10/2026"
+  },
+  "documenti/enel-corporate/cte/business/SoluzioneEnergiaImpresaSuperGreen3F_26WB5_B_Vendita_ML_KitSwaBusCteSeif.pdf": {
+   "scade": "2026-10-26",
+   "testo": "Valida per adesioni dal 13/10/2026 al 26/10/2026"
+  },
+  "documenti/enel-corporate/cte/business/Trend3FEnergImpresaGreen_26WB5_Vendita_ML_KitSwaBusCteTseif.pdf": {
+   "scade": "2026-11-23",
+   "testo": "Valida per adesioni dal 29/09/2026 al 23/11/2026"
+  },
+  "documenti/enel-corporate/cte/business/Trend3FEnergImpresaSuperGreen_26WB5_Vendita_ML_KitSwaBusCteTseif.pdf": {
+   "scade": "2026-11-23",
+   "testo": "Valida per adesioni dal 29/09/2026 al 23/11/2026"
+  },
+  "documenti/enel-corporate/cte/business/Trend3FEnergiaImpresaAPA_26WB5_Vendita_ML_KitSwaBusCteTseif.pdf": {
+   "scade": "2026-11-23",
+   "testo": "Valida per adesioni dal 29/09/2026 al 23/11/2026"
+  },
+  "documenti/enel-corporate/cte/business/Trend3FEnergiaImpresaExtraGreen_26WB5_Vendita_ML_KitSwaBusCteTseif.pdf": {
+   "scade": "2026-11-23",
+   "testo": "Valida per adesioni dal 29/09/2026 al 23/11/2026"
+  },
+  "documenti/enel-corporate/cte/business/Trend3FEnergiaImpresaExtra_26WB5_Vendita_ML_KitSwaBusCteTseif.pdf": {
+   "scade": "2026-11-23",
+   "testo": "Valida per adesioni dal 29/09/2026 al 23/11/2026"
+  },
+  "documenti/enel-corporate/cte/business/Trend3FEnergiaImpresaSuperAPA_26WB5_Vendita_ML_KitSwaBusCteTseif.pdf": {
+   "scade": "2026-11-23",
+   "testo": "Valida per adesioni dal 29/09/2026 al 23/11/2026"
+  },
+  "documenti/enel-corporate/cte/business/Trend3FEnergiaImpresaSuper_26WB5_Vendita_ML_KitSwaBusCteTseif.pdf": {
+   "scade": "2026-11-23",
+   "testo": "Valida per adesioni dal 29/09/2026 al 23/11/2026"
+  },
+  "documenti/enel-corporate/cte/business/Trend3FEnergiaImpresaWinBack_26WB5_A2_Vendita_ML_KitSwaBusCteTseif.pdf": {
+   "scade": "2026-11-23",
+   "testo": "Valida per adesioni dal 29/09/2026 al 23/11/2026"
+  },
+  "documenti/enel-corporate/cte/business/Trend3FEnergiaImpresa_26WB5_Vendita_ML_KitSwaBusCteTseif.pdf": {
+   "scade": "2026-11-23",
+   "testo": "Valida per adesioni dal 29/09/2026 al 23/11/2026"
+  },
+  "documenti/enel-corporate/cte/business/TrendBusinessGasSpecial_26WB5_Vendita_ML_KitSwaBusCteTsgi.pdf": {
+   "scade": "2026-11-23",
+   "testo": "Valida per adesioni dal 29/09/2026 al 23/11/2026"
+  },
+  "documenti/enel-corporate/cte/business/TrendEnergiaCommunityEdition_26WB5_Vendita_ML_KitSwaBusCteTseif.pdf": {
+   "scade": "2026-11-23",
+   "testo": "Valida per adesioni dal 29/09/2026 al 23/11/2026"
+  },
+  "documenti/enel-corporate/cte/business/TrendEnergiaImpresaPmiAPA_26WB5_Vendita_ML_KitSwaBusCteTseif.pdf": {
+   "scade": "2026-11-23",
+   "testo": "Valida per adesioni dal 29/09/2026 al 23/11/2026"
+  },
+  "documenti/enel-corporate/cte/business/TrendEnergiaImpresaPmiGreen_26WB5_Vendita_ML_KitSwaBusCteTseif.pdf": {
+   "scade": "2026-11-23",
+   "testo": "Valida per adesioni dal 29/09/2026 al 23/11/2026"
+  },
+  "documenti/enel-corporate/cte/business/TrendEnergiaImpresaPmi_26WB5_Vendita_ML_KitSwaBusCteTseif.pdf": {
+   "scade": "2026-11-23",
+   "testo": "Valida per adesioni dal 29/09/2026 al 23/11/2026"
+  },
+  "documenti/enel-corporate/cte/business/TrendGasMultisitoAC_26WB5_Vendita_ML_KitSwaBusCteTsgi.pdf": {
+   "scade": "2026-11-23",
+   "testo": "Valida per adesioni dal 29/09/2026 al 23/11/2026"
+  },
+  "documenti/enel-corporate/cte/business/TrendGasMultisitoDualAC_26WB5_Vendita_ML_KitSwaBusCteTsgi.pdf": {
+   "scade": "2026-11-23",
+   "testo": "Valida per adesioni dal 29/09/2026 al 23/11/2026"
+  },
+  "documenti/enel-corporate/cte/business/TrendSicuroGasCorporateAC_26WB5_Vendita_ML_KitSwaBusCteTsgi.pdf": {
+   "scade": "2026-11-23",
+   "testo": "Valida per adesioni dal 29/09/2026 al 23/11/2026"
+  },
+  "documenti/enel-corporate/cte/business/TrendSicuroGasCorporateDualAC_26WB5_Vendita_ML_KitSwaBusCteTsgi.pdf": {
+   "scade": "2026-11-23",
+   "testo": "Valida per adesioni dal 29/09/2026 al 23/11/2026"
+  },
+  "documenti/enel-corporate/cte/business/TrendSicuroGasCorporateExtra_26WB5_Vendita_ML_KitSwaBusCteTsgi.pdf": {
+   "scade": "2026-11-23",
+   "testo": "Valida per adesioni dal 29/09/2026 al 23/11/2026"
+  },
+  "documenti/enel-corporate/cte/business/TrendSicuroGasImpresaAC_26WB5_Vendita_ML_KitSwaBusCteTsgi.pdf": {
+   "scade": "2026-11-23",
+   "testo": "Valida per adesioni dal 29/09/2026 al 23/11/2026"
+  },
+  "documenti/enel-corporate/cte/business/TrendSicuroGasImpresaDualAC_26WB5_Vendita_ML_KitSwaBusCteTsgi.pdf": {
+   "scade": "2026-11-23",
+   "testo": "Valida per adesioni dal 29/09/2026 al 23/11/2026"
+  },
+  "documenti/enel-digital/cte/business/ENEL_BUSINESS_ORE_HAPPY___CTE_(COM_-_WEB)_v16.pdf": {
+   "scade": "2026-11-12",
+   "testo": "Valida per adesioni entro il 12/11/2026"
+  },
+  "documenti/enel-digital/cte/business/ENEL_BUSINESS_SUPER_LUCE___CTE_(COM_-_WEB)_v21.pdf": {
+   "scade": "2026-11-12",
+   "testo": "Valida per adesioni entro il 12/11/2026"
+  },
+  "documenti/enel-digital/cte/business/ENEL_FIX_BUSINESS_GAS___CTE_(COM_-_WEB)_v40.pdf": {
+   "scade": "2026-11-12",
+   "testo": "Valida per adesioni entro il 12/11/2026"
+  },
+  "documenti/enel-digital/cte/business/ENEL_FIX_BUSINESS_LUCE___CTE_(COM_-_WEB)_v27.pdf": {
+   "scade": "2026-11-12",
+   "testo": "Valida per adesioni entro il 12/11/2026"
+  },
+  "documenti/enel-digital/cte/business/ENEL_FLEX_BOX___CTE_(WEB)_v25.pdf": {
+   "scade": "2026-12-03",
+   "testo": "Valida per adesioni entro il 03/12/2026"
+  },
+  "documenti/enel-digital/cte/business/ENEL_FLEX_BUSINESS_GAS___CTE_(COM_-_WEB)_v24.pdf": {
+   "scade": "2026-12-03",
+   "testo": "Valida per adesioni entro il 03/12/2026"
+  },
+  "documenti/enel-digital/cte/business/ENEL_FLEX_CONTROL_BUSINESS_GAS___CTE_(COM_-_WEB)_v18.pdf": {
+   "scade": "2026-11-12",
+   "testo": "Valida per adesioni entro il 12/11/2026"
+  },
+  "documenti/enel-digital/cte/business/ENEL_FLEX_CONTROL_BUSINESS_LUCE___CTE_(COM_-_WEB)_v21.pdf": {
+   "scade": "2026-11-12",
+   "testo": "Valida per adesioni entro il 12/11/2026"
+  },
+  "documenti/enel-digital/cte/residenziale/ENEL_GAS_E_GIGA___CTE_(Consultazione)_v4.pdf": {
+   "scade": "2026-11-12",
+   "testo": "Validità per adesioni entro il 12/11/2026"
+  },
+  "documenti/enel-digital/cte/residenziale/ENEL_LUCE_E_GIGA___CTE_(Consultazione)_v4.pdf": {
+   "scade": "2026-11-12",
+   "testo": "Validità per adesioni entro il 12/11/2026"
+  },
+  "documenti/enel-tablet/cte/business/ENEL BUSINESS Ore Happy 12-15_26WR14AO_Consultazione_ML_KitSwaBusCteSeixt.pdf": {
+   "scade": "2026-11-12",
+   "testo": "Valida per adesioni entro il 12/11/2026"
+  },
+  "documenti/enel-tablet/cte/business/ENEL_FLEX_BOX_26WR14AM_Vendita_ML_KitSwaBusCteEfif.pdf": {
+   "scade": "2026-12-03",
+   "testo": "Valida per adesioni entro il 03/12/2026"
+  },
+  "documenti/enel-tablet/cte/business/Enel Flex Business Gas_26WR14AI_Consultazione_ML_KitSwaBusCteTgif.pdf": {
+   "scade": "2026-12-03",
+   "testo": "Valida per adesioni entro il 03/12/2026"
+  },
+  "documenti/enel-tablet/cte/business/Enel Flex Business Start Gas_26WR12AN_Consultazione_ML_KitSwaBusCteTgif.pdf": {
+   "scade": "2026-10-22",
+   "testo": "Valida per adesioni entro il 22/10/2026"
+  },
+  "documenti/enel-tablet/cte/business/Enel Flex Business Start Gas_26WR14AI_Consultazione_ML_KitSwaBusCteTgif.pdf": {
+   "scade": "2026-12-03",
+   "testo": "Valida per adesioni entro il 03/12/2026"
+  },
+  "documenti/enel-tablet/cte/business/Enel Flex Business Start Gas_26WR14AI_Vendita_ML_KitSwaBusCteTgif.pdf": {
+   "scade": "2026-12-03",
+   "testo": "Valida per adesioni entro il 03/12/2026"
+  },
+  "documenti/enel-tablet/cte/business/Enel Flex Control Business Gas_26WR14BA_Consultazione_ML_KitSwaBusCteTgif.pdf": {
+   "scade": "2026-11-12",
+   "testo": "Valida per adesioni entro il 12/11/2026"
+  },
+  "documenti/enel-tablet/cte/business/Enel Flex Control Business Gas_26WR14BA_Vendita_ML_KitSwaBusCteTgif.pdf": {
+   "scade": "2026-11-12",
+   "testo": "Valida per adesioni entro il 12/11/2026"
+  },
+  "documenti/enel-tablet/cte/business/EnelBusinessLuce_26WR14AO_Vendita_ML_KitSwaBusCteSo.pdf": {
+   "scade": "2026-11-12",
+   "testo": "Valida per adesioni entro il 12/11/2026"
+  },
+  "documenti/enel-tablet/cte/business/EnelBusinessSuperLuce_26WR14AO_Consultazione_ML_KitSwaBusCteSov.pdf": {
+   "scade": "2026-11-12",
+   "testo": "Valida per adesioni entro il 12/11/2026"
+  },
+  "documenti/enel-tablet/cte/business/EnelBusinessSuperLuce_26WR14AO_Vendita_ML_KitSwaBusCteSov.pdf": {
+   "scade": "2026-11-12",
+   "testo": "Valida per adesioni entro il 12/11/2026"
+  },
+  "documenti/enel-tablet/cte/business/EnelFlexBusinessLuce3F_26WR12AI_Consultazione_ML_KitSwaBusCteEfif.pdf": {
+   "scade": "2026-10-22",
+   "testo": "Valida per adesioni entro il 22/10/2026"
+  },
+  "documenti/enel-tablet/cte/business/EnelFlexBusinessLuce3F_26WR14AM_Consultazione_ML_KitSwaBusCteEfif.pdf": {
+   "scade": "2026-12-03",
+   "testo": "Valida per adesioni entro il 03/12/2026"
+  },
+  "documenti/enel-tablet/cte/business/EnelFlexBusinessLuce3F_26WR14AM_Vendita_ML_KitSwaBusCteEfif.pdf": {
+   "scade": "2026-12-03",
+   "testo": "Valida per adesioni entro il 03/12/2026"
+  },
+  "documenti/enel-tablet/cte/business/Enel_Condominio_Gas_26WR14AT_Consultazione_ML_KitSwaBusCteGib.pdf": {
+   "scade": "2026-11-12",
+   "testo": "Valida per adesioni entro il 12/11/2026"
+  },
+  "documenti/enel-tablet/cte/business/Enel_Condominio_Luce_26WR14AN_Consultazione_ML_KitSwaBusCteGl.pdf": {
+   "scade": "2026-11-12",
+   "testo": "Valida per adesioni entro il 12/11/2026"
+  },
+  "documenti/enel-tablet/cte/business/Enel_Fix_Business_Gas_26WR14AS_Consultazione_ML_KitSwaBusCteGig.pdf": {
+   "scade": "2026-11-12",
+   "testo": "Valida per adesioni entro il 12/11/2026"
+  },
+  "documenti/enel-tablet/cte/business/Enel_Fix_Business_Luce_26WR13AD_Consultazione_ML_KitSwaBusCteSov.pdf": {
+   "scade": "2026-10-22",
+   "testo": "Valida per adesioni entro il 22/10/2026"
+  },
+  "documenti/enel-tablet/cte/business/Enel_Fix_Business_Start_Gas_26WR14AS_Consultazione_ML_KitSwaBusCteGig.pdf": {
+   "scade": "2026-11-12",
+   "testo": "Valida per adesioni entro il 12/11/2026"
+  },
+  "documenti/enel-tablet/cte/business/Enel_Fix_Business_Start_Gas_26WR14AS_Vendita_ML_KitSwaBusCteGig.pdf": {
+   "scade": "2026-11-12",
+   "testo": "Valida per adesioni entro il 12/11/2026"
+  },
+  "documenti/enel-tablet/cte/business/Enel_Fix_Business_Start_Luce_26WR14AO_Consultazione_ML_KitSwaBusCteSo.pdf": {
+   "scade": "2026-11-12",
+   "testo": "Valida per adesioni entro il 12/11/2026"
+  },
+  "documenti/enel-tablet/cte/business/Enel_Fix_Business_Start_Luce_26WR14AO_Vendita_ML_KitSwaBusCteSo.pdf": {
+   "scade": "2026-11-12",
+   "testo": "Valida per adesioni entro il 12/11/2026"
+  },
+  "documenti/enel-tablet/cte/business/Enel_Flex_Control_Business_Luce_26WR14AM_Consultazione_ML_KitSwaBusCteEfif.pdf": {
+   "scade": "2026-11-12",
+   "testo": "Valida per adesioni entro il 12/11/2026"
+  },
+  "documenti/enel-tablet/cte/business/Enel_Flex_Control_Business_Luce_26WR14AM_Vendita_ML_KitSwaBusCteEfif.pdf": {
+   "scade": "2026-11-12",
+   "testo": "Valida per adesioni entro il 12/11/2026"
+  },
+  "documenti/enel-tablet/cte/residenziale/DETTAGLI CTE ENEL ENERGIA.pdf": {
+   "scade": "2024-05-27",
+   "testo": "Validità Dal 05/04/2024 al 27/05/2024"
+  },
+  "documenti/enel-tablet/cte/residenziale/ENEL_FIX_WOW_GAS_26WR13Z_Consultazione_ML_RedKitSwaResCteElg.pdf": {
+   "scade": "2026-10-22",
+   "testo": "Validità per adesioni entro il 22/10/2026"
+  },
+  "documenti/enel-tablet/cte/residenziale/ENEL_FLASH_SUPER_LUCE_26WR13B_Consultazione_ML_RedKitSwaResCteCl.pdf": {
+   "scade": "2026-10-22",
+   "testo": "Validità per adesioni entro il 22/10/2026"
+  },
+  "documenti/enel-tablet/cte/residenziale/ENEL_FLEX_BOX_26WR14AM_Consultazione_ML_KitSwaBusCteEfif.pdf": {
+   "scade": "2026-12-03",
+   "testo": "Valida per adesioni entro il 03/12/2026"
+  },
+  "documenti/enel-tablet/cte/residenziale/ENEL_FLEX_LUCE_26WR14X_Consultazione_ML_RedKitSwaResCteIndPT.pdf": {
+   "scade": "2026-12-03",
+   "testo": "Validità per adesioni entro il 03/12/2026"
+  },
+  "documenti/enel-tablet/cte/residenziale/ENEL_FLEX_LUCE_26WR14X_Vendita_ML_RedKitSwaResCteIndPT.pdf": {
+   "scade": "2026-12-03",
+   "testo": "Validità per adesioni entro il 03/12/2026"
+  },
+  "documenti/enel-tablet/cte/residenziale/ENEL_UFFICIO_ORE_HAPPY___CTE_Consultazione_v1.pdf": {
+   "scade": "2026-10-01",
+   "testo": "Valida per adesioni entro il 01/10/2026"
+  },
+  "documenti/enel-tablet/cte/residenziale/ENEL_WOW_GAS_26WR14AG_Consultazione_ML_RedKitSwaResCteElg.pdf": {
+   "scade": "2026-11-12",
+   "testo": "Validità per adesioni entro il 12/11/2026"
+  },
+  "documenti/enel-tablet/cte/residenziale/Enel Ufficio Ore Happy_26WR14AO_Consultazione_ML_KitSwaBusCteSeixt.pdf": {
+   "scade": "2026-11-12",
+   "testo": "Valida per adesioni entro il 12/11/2026"
+  },
+  "documenti/enel-tablet/cte/residenziale/Enel_Community_Edition_26WR12BI_Consultazione_ML_RedKitSwaResCteComEn.pdf": {
+   "scade": "2026-10-01",
+   "testo": "Validità per adesioni entro il 01/10/2026"
+  },
+  "documenti/enel-tablet/cte/residenziale/Enel_Community_Edition_26WR13T_Consultazione_ML_RedKitSwaResCteComEn.pdf": {
+   "scade": "2026-10-22",
+   "testo": "Validità per adesioni entro il 22/10/2026"
+  },
+  "documenti/enel-tablet/cte/residenziale/Enel_Flex_Control_Gas_26WR12AC_Consultazione_ML_RedKitSwaResCteIndG360.pdf": {
+   "scade": "2026-10-01",
+   "testo": "Validità per adesioni entro il 01/10/2026"
+  },
+  "documenti/enel-tablet/cte/residenziale/Enel_Flex_Gas_26WR14AC_Consultazione_ML_RedKitSwaResCteElgp.pdf": {
+   "scade": "2026-12-03",
+   "testo": "Validità per adesioni entro il 03/12/2026"
+  },
+  "documenti/enel-tablet/cte/residenziale/Enel_Gas_e_Giga_26WR13Z_Consultazione_ML_RedKitSwaResCteGg.pdf": {
+   "scade": "2026-10-22",
+   "testo": "Validità per adesioni entro il 22/10/2026"
+  },
+  "documenti/enel-tablet/cte/residenziale/Enel_Gas_e_Giga_26WR14AG_Consultazione_ML_RedKitSwaResCteGg.pdf": {
+   "scade": "2026-11-12",
+   "testo": "Validità per adesioni entro il 12/11/2026"
+  },
+  "documenti/enel-tablet/cte/residenziale/Enel_Luce_e_Giga_26WR13T_Consultazione_ML_RedKitSwaResCteSctb.pdf": {
+   "scade": "2026-10-22",
+   "testo": "Validità per adesioni entro il 22/10/2026"
+  },
+  "documenti/enel-tablet/cte/residenziale/Enel_Luce_e_Giga_26WR14V_Consultazione_ML_RedKitSwaResCteSctb.pdf": {
+   "scade": "2026-11-12",
+   "testo": "Validità per adesioni entro il 12/11/2026"
+  },
+  "documenti/enel-tablet/cte/residenziale/Enel_WOW_Luce_26WR14V_Consultazione_ML_RedKitSwaResCteEmF.pdf": {
+   "scade": "2026-11-12",
+   "testo": "Validità per adesioni entro il 12/11/2026"
+  },
+  "documenti/enel-tablet/cte/residenziale/Regolamento-Open-Fiber-la-scelta-che-ti-premia_v5.pdf": {
+   "scade": "2025-06-30",
+   "testo": "validità dal 23/04/2024 al 30/06/2025"
+  },
+  "documenti/engie/cte/business/223_EVO1S#00008.pdf": {
+   "scade": "2026-11-04",
+   "testo": "valida dal 22/10/2026 al 04/11/2026"
+  },
+  "documenti/engie/cte/business/223_EVO1S#00008_gas.pdf": {
+   "scade": "2026-11-04",
+   "testo": "valida dal 22/10/2026 al 04/11/2026"
+  },
+  "documenti/engie/cte/business/223_EVO2S#00008.pdf": {
+   "scade": "2026-11-04",
+   "testo": "valida dal 22/10/2026 al 04/11/2026"
+  },
+  "documenti/engie/cte/business/223_EVO2S#00008_gas.pdf": {
+   "scade": "2026-11-04",
+   "testo": "valida dal 22/10/2026 al 04/11/2026"
+  },
+  "documenti/engie/cte/business/EFLEX_223_FLEX#00008.pdf": {
+   "scade": "2026-11-04",
+   "testo": "valida dal 22/10/2026 al 04/11/2026"
+  },
+  "documenti/engie/cte/business/Efix Gas.pdf": {
+   "scade": "2026-11-04",
+   "testo": "valida dal 22/10/2026 al 04/11/2026"
+  },
+  "documenti/engie/cte/business/Efix Luce.pdf": {
+   "scade": "2026-11-04",
+   "testo": "valida dal 22/10/2026 al 04/11/2026"
+  },
+  "documenti/engie/cte/residenziale/EXTRA ENERGIA LUCE_223_TAND#00007.pdf": {
+   "scade": "2026-11-04",
+   "testo": "valida dal 22/10/2026 al 04/11/2026"
+  },
+  "documenti/engie/cte/residenziale/FISSO 12 MESI GAS_223_DOSG#00010.pdf": {
+   "scade": "2026-11-04",
+   "testo": "valida dal 22/10/2026 al 04/11/2026"
+  },
+  "documenti/engie/cte/residenziale/NON SOLO RESTI&RISPARMI LUCE_223_RRIV#00007_ SOLO TABLET.pdf": {
+   "scade": "2026-11-04",
+   "testo": "valida dal 22/10/2026 al 04/11/2026"
+  },
+  "documenti/engie/cte/residenziale/NON SOLO VEDO CHIARO SMILE_223_SMIV#00007_ SOLO TABLET.pdf": {
+   "scade": "2026-11-04",
+   "testo": "valida dal 22/10/2026 al 04/11/2026"
+  },
+  "documenti/engie/cte/residenziale/RESTI&RISPARMI LUCE_223_RRIS#00009.pdf": {
+   "scade": "2026-11-04",
+   "testo": "valida dal 22/10/2026 al 04/11/2026"
+  },
+  "documenti/engie/cte/residenziale/VEDO CHIARO SMILE_223_SMIL#00008.pdf": {
+   "scade": "2026-11-04",
+   "testo": "valida dal 22/10/2026 al 04/11/2026"
+  },
+  "documenti/estra/cte/business/ESTRA TREND GAS - IMPRESA (1).pdf": {
+   "scade": "2026-11-11",
+   "testo": "Valida dal 15/10/2026 al 11/11/2026"
+  },
+  "documenti/estra/cte/business/ESTRA TREND PIU' LUCE (1).pdf": {
+   "scade": "2026-11-11",
+   "testo": "Valida dal 15/10/2026 al 11/11/2026"
+  },
+  "documenti/estra/cte/business/ESTRA TREND UNICA LUCE (1).pdf": {
+   "scade": "2026-11-11",
+   "testo": "Valida dal 15/10/2026 al 11/11/2026"
+  },
+  "documenti/estra/cte/residenziale/ESTRA NATURA GAS (1).pdf": {
+   "scade": "2026-11-11",
+   "testo": "Valida dal 15/10/2026 al 11/11/2026"
+  },
+  "documenti/estra/cte/residenziale/NATURA LUCE (1).pdf": {
+   "scade": "2026-11-11",
+   "testo": "valida fino alla data del 11/11/2026"
+  },
+  "documenti/fastweb-energia/cte/business/cte_fastweb_gas_fix biz.pdf": {
+   "scade": "2026-10-25",
+   "testo": "valida dal 08/10/2026 al 25/10/2026"
+  },
+  "documenti/fastweb-energia/cte/business/cte_fastweb_gas_flex biz.pdf": {
+   "scade": "2026-10-25",
+   "testo": "valida dal 08/10/2026 al 25/10/2026"
+  },
+  "documenti/fastweb-energia/cte/business/cte_fastweb_luce_fix biz.pdf": {
+   "scade": "2026-10-25",
+   "testo": "valida dal 08/10/2026 al 25/10/2026"
+  },
+  "documenti/fastweb-energia/cte/business/cte_fastweb_luce_flex biz.pdf": {
+   "scade": "2026-10-25",
+   "testo": "valida dal 08/10/2026 al 25/10/2026"
+  },
+  "documenti/fastweb-energia/cte/residenziale/cte_fastweb_gas_flex.pdf": {
+   "scade": "2026-10-25",
+   "testo": "valida dal 08/10/2026 al 25/10/2026"
+  },
+  "documenti/fastweb-energia/cte/residenziale/cte_fastweb_luce_fix.pdf": {
+   "scade": "2026-10-25",
+   "testo": "valida dal 08/10/2026 al 25/10/2026"
+  },
+  "documenti/fastweb-energia/cte/residenziale/cte_fastweb_luce_fix_xte.pdf": {
+   "scade": "2026-10-31",
+   "testo": "valida dal 10/10/2026 al 31/10/2026"
+  },
+  "documenti/fastweb-energia/cte/residenziale/cte_fastweb_luce_flat.pdf": {
+   "scade": "2026-10-25",
+   "testo": "valida 08/10/2026 al 25/10/2026"
+  },
+  "documenti/fastweb-energia/cte/residenziale/cte_fastweb_luce_flex.pdf": {
+   "scade": "2026-10-25",
+   "testo": "valida dal 08/10/2026 al 25/10/2026"
+  },
+  "documenti/gde/cte/business/CONDO 10 GAS.pdf": {
+   "scade": "2026-12-31",
+   "testo": "richieste effettuate entro il 31/12/2026"
+  },
+  "documenti/gde/cte/business/Condo 1 PLUS.pdf": {
+   "scade": "2027-03-31",
+   "testo": "richieste effettuate entro il 31/03/2027"
+  },
+  "documenti/gde/cte/business/Condo 10 PLUS.pdf": {
+   "scade": "2027-03-31",
+   "testo": "richieste effettuate entro il 31/03/2027"
+  },
+  "documenti/gde/cte/business/Condo 4 PLUS.pdf": {
+   "scade": "2027-03-31",
+   "testo": "richieste effettuate entro il 31/03/2027"
+  },
+  "documenti/gde/cte/business/Condo 5 PLUS.pdf": {
+   "scade": "2027-03-31",
+   "testo": "richieste effettuate entro il 31/03/2027"
+  },
+  "documenti/gde/cte/business/Condo 6 PLUS.pdf": {
+   "scade": "2027-03-31",
+   "testo": "richieste effettuate entro il 31/03/2027"
+  },
+  "documenti/gde/cte/business/Condo 7 PLUS.pdf": {
+   "scade": "2027-03-31",
+   "testo": "richieste effettuate entro il 31/03/2027"
+  },
+  "documenti/gde/cte/business/Condo 8 PLUS.pdf": {
+   "scade": "2027-03-31",
+   "testo": "richieste effettuate entro il 31/03/2027"
+  },
+  "documenti/gde/cte/business/Condo 9 PLUS.pdf": {
+   "scade": "2027-03-31",
+   "testo": "richieste effettuate entro il 31/03/2027"
+  },
+  "documenti/gde/cte/business/Condo Gas 5 BIS.pdf": {
+   "scade": "2027-03-31",
+   "testo": "richieste effettuate entro il 31/03/2027"
+  },
+  "documenti/gde/cte/business/Condo gas 1 PLUS.pdf": {
+   "scade": "2027-03-31",
+   "testo": "richieste effettuate entro il 31/03/2027"
+  },
+  "documenti/gde/cte/business/Condo gas 2 PLUS.pdf": {
+   "scade": "2027-03-31",
+   "testo": "richieste effettuate entro il 31/03/2027"
+  },
+  "documenti/gde/cte/business/Condo gas 3 PLUS.pdf": {
+   "scade": "2027-03-31",
+   "testo": "richieste effettuate entro il 31/03/2027"
+  },
+  "documenti/gde/cte/business/Condo gas 4 PLUS.pdf": {
+   "scade": "2027-03-31",
+   "testo": "richieste effettuate entro il 31/03/2027"
+  },
+  "documenti/gde/cte/business/Condo gas 5 PLUS.pdf": {
+   "scade": "2027-03-31",
+   "testo": "richieste effettuate entro il 31/03/2027"
+  },
+  "documenti/gde/cte/business/Condo gas 6 PLUS.pdf": {
+   "scade": "2027-03-31",
+   "testo": "richieste effettuate entro il 31/03/2027"
+  },
+  "documenti/gde/cte/business/Condo gas 7 PLUS.pdf": {
+   "scade": "2027-03-31",
+   "testo": "richieste effettuate entro il 31/03/2027"
+  },
+  "documenti/gde/cte/business/Condo gas 8 PLUS.pdf": {
+   "scade": "2027-03-31",
+   "testo": "richieste effettuate entro il 31/03/2027"
+  },
+  "documenti/gde/cte/business/Condo gas 9 PLUS.pdf": {
+   "scade": "2027-03-31",
+   "testo": "richieste effettuate entro il 31/03/2027"
+  },
+  "documenti/gde/cte/business/business SELF PLUS GASBUS.pdf": {
+   "scade": "2027-03-31",
+   "testo": "richieste effettuate entro il 31/03/2027"
+  },
+  "documenti/gde/cte/business/business SELF PLUS POWER.pdf": {
+   "scade": "2027-03-31",
+   "testo": "richieste effettuate entro il 31/03/2027"
+  },
+  "documenti/gde/cte/business/business SERVITO PLUS GASBUS.pdf": {
+   "scade": "2027-03-31",
+   "testo": "richieste effettuate entro il 31/03/2027"
+  },
+  "documenti/gde/cte/business/business SERVITO PLUS POWER.pdf": {
+   "scade": "2027-03-31",
+   "testo": "richieste effettuate entro il 31/03/2027"
+  },
+  "documenti/gde/cte/business/business TOP PLUS GASBUS.pdf": {
+   "scade": "2027-03-31",
+   "testo": "richieste effettuate entro il 31/03/2027"
+  },
+  "documenti/gde/cte/business/business TOP PLUS POWER.pdf": {
+   "scade": "2027-03-31",
+   "testo": "richieste effettuate entro il 31/03/2027"
+  },
+  "documenti/gde/cte/residenziale/Entra in Gruppo Gas.pdf": {
+   "scade": "2027-09-30",
+   "testo": "Condizioni Tecnico Economiche avranno validità fino al 30/09/2027"
+  },
+  "documenti/gde/cte/residenziale/domestico SELF PLUS GAS.pdf": {
+   "scade": "2027-09-30",
+   "testo": "Condizioni Tecnico Economiche avranno validità fino al 30/09/2027"
+  },
+  "documenti/gde/cte/residenziale/domestico SERVITO PLUS GAS.pdf": {
+   "scade": "2027-09-30",
+   "testo": "Condizioni Tecnico Economiche avranno validità fino al 30/09/2027"
+  },
+  "documenti/gde/cte/residenziale/domestico TOP PLUS GAS.pdf": {
+   "scade": "2027-09-30",
+   "testo": "Condizioni Tecnico Economiche avranno validità fino al 30/09/2027"
+  },
+  "documenti/gestori/unoenergy/cte/business/BUSINESS CALORE AGILE - BLIP47CAMB - 08.01.pdf": {
+   "scade": "2027-01-08",
+   "testo": "VALIDITA' 09/10/2026 - 08/01/2027"
+  },
+  "documenti/gestori/unoenergy/cte/business/CALORE AGILE BUSINESS JAB - CABJAB - 08.01.pdf": {
+   "scade": "2027-01-08",
+   "testo": "VALIDITA' 09/10/2026 - 08/01/2027"
+  },
+  "documenti/gestori/unoenergy/cte/business/CONDOMINIO FAR5 ETHICA - ECPFAR5TH - 08.01.pdf": {
+   "scade": "2027-01-08",
+   "testo": "VALIDITA' 09-10-2026 - 08-01-2027"
+  },
+  "documenti/gestori/unoenergy/cte/business/CONDOMINIO GIN6 ETHICA - ECPGIN6TH - 08.01.pdf": {
+   "scade": "2027-01-08",
+   "testo": "VALIDITA' 09-10-2026 - 08-01-2027"
+  },
+  "documenti/gestori/unoenergy/cte/business/CONDOMINIO GNO2 ETHICA - ECPTHGNO2 - 08.01.pdf": {
+   "scade": "2027-01-08",
+   "testo": "VALIDITA' 09-10-2026 - 08-01-2027"
+  },
+  "documenti/gestori/unoenergy/cte/business/CONDOMINIO MEP4 ETHICA - ECPMEP4TH - 08.01O.pdf": {
+   "scade": "2027-01-08",
+   "testo": "VALIDITA' 09-10-2026 - 08-01-2027"
+  },
+  "documenti/gestori/unoenergy/cte/business/ENERGIA AGILE BUSINESS - EAPUAGI - 08.01.pdf": {
+   "scade": "2027-01-08",
+   "testo": "valida fino al 08-01-2027"
+  },
+  "documenti/gestori/unoenergy/cte/business/ENERGIA AGILE BUSINESS JAB - EAPUZBJAB - 08.01.pdf": {
+   "scade": "2027-01-08",
+   "testo": "VALIDITA' 09-10-2026 - 08-01-2027"
+  },
+  "documenti/gestori/unoenergy/cte/business/TAR GAS ANA30 COND UNOENERGY OTT 2026 - 08.01.pdf": {
+   "scade": "2027-01-08",
+   "testo": "VALIDITA' 09/10/2026 - 08/01/2027"
+  },
+  "documenti/gestori/unoenergy/cte/business/TAR GAS BDA05 COND UNOENERGY OTT 2026 - 08.01.pdf": {
+   "scade": "2027-01-08",
+   "testo": "VALIDITA' 09/10/2026 - 08/01/2027"
+  },
+  "documenti/gestori/unoenergy/cte/business/TAR GAS CSA10 COND UNOENERGY OTT 2026 - 08.01.pdf": {
+   "scade": "2027-01-08",
+   "testo": "VALIDITA' 09/10/2026 - 08/01/2027"
+  },
+  "documenti/gestori/unoenergy/cte/business/TAR GAS DAL92 COND UNOENERGY OTT 2026 - 08.01.pdf": {
+   "scade": "2027-01-08",
+   "testo": "VALIDITA' 09/10/2026 - 08/01/2027"
+  },
+  "documenti/gestori/unoenergy/cte/business/TAR GAS LPA48 COND UNOENERGY OTT 2026 - 08.01.pdf": {
+   "scade": "2027-01-08",
+   "testo": "VALIDITA' 09/10/2026 - 08/01/2027"
+  },
+  "documenti/gestori/unoenergy/cte/business/TAR GAS PIA06 COND UNOENERGY OTT 2026 - 08.01.pdf": {
+   "scade": "2027-01-08",
+   "testo": "VALIDITA' 09/10/2026 - 08/01/2027"
+  },
+  "documenti/gestori/unoenergy/cte/business/TAR GAS SAA19 COND UNOENERGY OTT 2026 - 08.01.pdf": {
+   "scade": "2027-01-08",
+   "testo": "VALIDITA' 09/10/2026 - 08/01/2027"
+  },
+  "documenti/gestori/unoenergy/cte/residenziale/CALORE AGILE FAMILY JAB - CAFJAB - 08.01.pdf": {
+   "scade": "2027-01-08",
+   "testo": "VALIDITA' 09/10/2026 - 08/01/2027"
+  },
+  "documenti/gestori/unoenergy/cte/residenziale/CALORE SICURO FAMILY JAB - CSFJAB - 27.10.pdf": {
+   "scade": "2026-10-27",
+   "testo": "VALIDITA' 09/10/2026 - 27/10/2026"
+  },
+  "documenti/gestori/unoenergy/cte/residenziale/CALORE SICURO RATA COSTANTE JAB - GASJB4 - 27.10.pdf": {
+   "scade": "2026-10-27",
+   "testo": "VALIDITA' 09/10/2026 - 27/10/2026"
+  },
+  "documenti/gestori/unoenergy/cte/residenziale/CASA CALORE AGILE - BLIP47CAR - 08.01.pdf": {
+   "scade": "2027-01-08",
+   "testo": "VALIDITA' 09/10/2026 - 08/01/2027"
+  },
+  "documenti/gestori/unoenergy/cte/residenziale/CASA CALORE SICURO - CCS01 - 27.10.pdf": {
+   "scade": "2026-10-27",
+   "testo": "VALIDITA' 09/10/2026 - 27/10/2026"
+  },
+  "documenti/gestori/unoenergy/cte/residenziale/CONVENZIONE AGILE - BLIP47CA - 08.01.pdf": {
+   "scade": "2027-01-08",
+   "testo": "VALIDITA' 09/10/2026 - 08/01/2027"
+  },
+  "documenti/gestori/unoenergy/cte/residenziale/DOMESTICO SICURO GAS FISSO 24 D1CCS24 - 26.10.pdf": {
+   "scade": "2026-10-26",
+   "testo": "VALIDITA' 20/10/2026 - 26/10/2026"
+  },
+  "documenti/gestori/unoenergy/cte/residenziale/DOMESTICO SICURO GAS FISSO 24 JAB D1JAB24 - 26.10.pdf": {
+   "scade": "2026-10-26",
+   "testo": "VALIDITA' 20/10/2026 - 26/10/2026"
+  },
+  "documenti/gestori/unoenergy/cte/residenziale/DOMESTICO SICURO LUCE FISSO 24 - EDFIX24SIL - 26.10.pdf": {
+   "scade": "2027-02-01",
+   "testo": "valido per utenze con inizio fornitura previsto dal 20-10-2026 al 01-02-2027"
+  },
+  "documenti/gestori/unoenergy/cte/residenziale/DOMESTICO SICURO LUCE FISSO 24 JAB - EDFIX24JAB - 26.10.pdf": {
+   "scade": "2027-02-01",
+   "testo": "valido per utenze con inizio fornitura previsto dal 20-10-2026 al 01-02-2027"
+  },
+  "documenti/gestori/unoenergy/cte/residenziale/LUCE AGILE ETHICA - EDPUZAGTH -08.01.pdf": {
+   "scade": "2027-01-08",
+   "testo": "valida fino al 08-01-2027"
+  },
+  "documenti/gestori/unoenergy/cte/residenziale/LUCE AGILE FAMILY JAB - EDPUZFJAB - 08.01.pdf": {
+   "scade": "2027-01-08",
+   "testo": "VALIDITA' 09-10-2026 - 08-01-2027"
+  },
+  "documenti/gestori/unoenergy/cte/residenziale/LUCE AGILE PERTINENZE ETHICA - EDPUZAPETH - 08.01.pdf": {
+   "scade": "2027-01-08",
+   "testo": "VALIDITA' 09-10-2026 - 08-01-2027"
+  },
+  "documenti/gestori/unoenergy/cte/residenziale/LUCE SICURO FAMILY JAB - EDFIZFJAB - 27.10.pdf": {
+   "scade": "2027-01-01",
+   "testo": "valido per utenze con inizio fornitura previsto dal 09-10-2026 al 01-01-2027"
+  },
+  "documenti/gestori/unoenergy/cte/residenziale/LUCE SICURO Rata Costante JAB - EDSIZCORJ - 27.10.pdf": {
+   "scade": "2026-10-27",
+   "testo": "valida fino al 27-10-2026"
+  },
+  "documenti/gestori/unoenergy/cte/residenziale/QURAKARE - LUCE AGILE CONVENZIONE MED ETHICA - EDPUZCMDTH - 08.01.pdf": {
+   "scade": "2027-01-08",
+   "testo": "valida fino al 08-01-2027"
+  },
+  "documenti/gestori/unoenergy/cte/residenziale/QURAKARE - LUCE SICURO MED ETHICA - EDFISMEDTH - 27.10.pdf": {
+   "scade": "2027-01-01",
+   "testo": "valido per utenze con inizio fornitura previsto dal 09-10-2026 al 01-01-2027"
+  },
+  "documenti/gestori/vivienergia/cte/residenziale/VIVIfull_gas.pdf": {
+   "scade": "2026-11-05",
+   "testo": "Validità Offerta: dal 08/10/26 al 05/11/26"
+  },
+  "documenti/gestori/vivienergia/cte/residenziale/VIVIfull_luce.pdf": {
+   "scade": "2026-11-05",
+   "testo": "Validità Offerta: dal 08/10/26 al 05/11/26"
+  },
+  "documenti/gestori/vivienergia/cte/residenziale/VIVIleggero Market Gas.pdf": {
+   "scade": "2026-11-05",
+   "testo": "Validità Offerta: dal 08/10/26 al 05/11/26"
+  },
+  "documenti/gestori/vivienergia/cte/residenziale/VIVIleggero market luce.pdf": {
+   "scade": "2026-11-05",
+   "testo": "Validità Offerta: dal 08/10/26 al 05/11/26"
+  },
+  "documenti/gestori/vivienergia/cte/residenziale/VIVIprice Gas.pdf": {
+   "scade": "2026-10-29",
+   "testo": "Validità Offerta: dal 23/10/26 al 29/10/26"
+  },
+  "documenti/gestori/vivienergia/cte/residenziale/VIVIprice Luce.pdf": {
+   "scade": "2026-10-29",
+   "testo": "Validità Offerta: dal 23/10/26 al 29/10/26"
+  },
+  "documenti/gestori/vivienergia/cte/residenziale/VIVIup Basic Gas.pdf": {
+   "scade": "2026-11-05",
+   "testo": "Validità Offerta: dal 08/10/26 al 05/11/26"
+  },
+  "documenti/gestori/vivienergia/cte/residenziale/VIVIup Basic Luce.pdf": {
+   "scade": "2026-11-05",
+   "testo": "Validità Offerta: dal 08/10/26 al 05/11/26"
+  },
+  "documenti/gestori/vivienergia/cte/residenziale/VIVIup Light Gas.pdf": {
+   "scade": "2026-11-05",
+   "testo": "Validità Offerta: dal 08/10/26 al 05/11/26"
+  },
+  "documenti/gestori/vivienergia/cte/residenziale/VIVIup Light Luce.pdf": {
+   "scade": "2026-11-05",
+   "testo": "Validità Offerta: dal 08/10/26 al 05/11/26"
+  },
+  "documenti/gestori/vivienergia/cte/residenziale/VIVIup Super Gas.pdf": {
+   "scade": "2026-11-05",
+   "testo": "Validità Offerta: dal 08/10/26 al 05/11/26"
+  },
+  "documenti/gestori/vivienergia/cte/residenziale/VIVIup Super Luce.pdf": {
+   "scade": "2026-11-05",
+   "testo": "Validità Offerta: dal 08/10/26 al 05/11/26"
+  },
+  "documenti/hera/cte/business/CTE_EST_HERA_HYBRID_LAVORO_GAS__V34 Valida dal 19.10 al 10.11.pdf": {
+   "scade": "2026-11-10",
+   "testo": "valida per le richieste sottoscritte entro il 10/11/2026"
+  },
+  "documenti/hera/cte/business/CTE_EST_HERA_HYBRID_LAVORO_LUCE__V34 Valida dal 19.10 al 10.11.pdf": {
+   "scade": "2026-11-10",
+   "testo": "valida per le richieste sottoscritte entro il 10/11/2026"
+  },
+  "documenti/hera/cte/business/CTE_EST_HERA_HYBRID_SME_GAS__V34 Valida dal 19.10 al 10.11.pdf": {
+   "scade": "2026-11-10",
+   "testo": "valida per le richieste sottoscritte entro il 10/11/2026"
+  },
+  "documenti/hera/cte/business/CTE_EST_HERA_HYBRID_SME_LUCE__V34 Valida dal 19.10 al 10.11.pdf": {
+   "scade": "2026-11-10",
+   "testo": "valida per le richieste sottoscritte entro il 10/11/2026"
+  },
+  "documenti/hera/cte/business/CTE_EST_PIU_CONTROLLO_ACTIVE_LAVORO_GAS__V24.pdf": {
+   "scade": "2026-11-04",
+   "testo": "valida per le richieste sottoscritte entro il 04/11/2026"
+  },
+  "documenti/hera/cte/business/CTE_EST_PIU_CONTROLLO_ACTIVE_LAVORO_LUCE__V24.pdf": {
+   "scade": "2026-11-04",
+   "testo": "valida per le richieste sottoscritte entro il 04/11/2026"
+  },
+  "documenti/hera/cte/business/CTE_EST_PREZZO_NETTO_CONDOMINIO_LUCE__V68.pdf": {
+   "scade": "2026-11-04",
+   "testo": "valida per le richieste sottoscritte entro il 04/11/2026"
+  },
+  "documenti/hera/cte/business/CTE_EST_PREZZO_NETTO_IMPRESA_GAS__V68.pdf": {
+   "scade": "2026-11-04",
+   "testo": "valida per le richieste sottoscritte entro il 04/11/2026"
+  },
+  "documenti/hera/cte/business/CTE_EST_PREZZO_NETTO_IMPRESA_LUCE__V68.pdf": {
+   "scade": "2026-11-04",
+   "testo": "valida per le richieste sottoscritte entro il 04/11/2026"
+  },
+  "documenti/hera/cte/business/CTE_HC_HERA_HYBRID_LAVORO_GAS__V34 Valida dal 19.10 al 10.11.pdf": {
+   "scade": "2026-11-10",
+   "testo": "valida per le richieste sottoscritte entro il 10/11/2026"
+  },
+  "documenti/hera/cte/business/CTE_HC_HERA_HYBRID_LAVORO_LUCE__V34 Valida dal 19.10 al 10.11.pdf": {
+   "scade": "2026-11-10",
+   "testo": "valida per le richieste sottoscritte entro il 10/11/2026"
+  },
+  "documenti/hera/cte/business/CTE_HC_HERA_HYBRID_SME_GAS__V34 Valida dal 19.10 al 10.11.pdf": {
+   "scade": "2026-11-10",
+   "testo": "valida per le richieste sottoscritte entro il 10/11/2026"
+  },
+  "documenti/hera/cte/business/CTE_HC_HERA_HYBRID_SME_LUCE__V34 Valida dal 19.10 al 10.11.pdf": {
+   "scade": "2026-11-10",
+   "testo": "valida per le richieste sottoscritte entro il 10/11/2026"
+  },
+  "documenti/hera/cte/business/CTE_HC_PIU_CONTROLLO_ACTIVE_LAVORO_GAS__V24.pdf": {
+   "scade": "2026-11-04",
+   "testo": "valida per le richieste sottoscritte entro il 04/11/2026"
+  },
+  "documenti/hera/cte/business/CTE_HC_PIU_CONTROLLO_ACTIVE_LAVORO_LUCE__V24.pdf": {
+   "scade": "2026-11-04",
+   "testo": "valida per le richieste sottoscritte entro il 04/11/2026"
+  },
+  "documenti/hera/cte/business/CTE_HC_PREZZO_NETTO_CONDOMINIO_LUCE__V68.pdf": {
+   "scade": "2026-11-04",
+   "testo": "valida per le richieste sottoscritte entro il 04/11/2026"
+  },
+  "documenti/hera/cte/business/CTE_HC_PREZZO_NETTO_IMPRESA_GAS__V68.pdf": {
+   "scade": "2026-11-04",
+   "testo": "valida per le richieste sottoscritte entro il 04/11/2026"
+  },
+  "documenti/hera/cte/business/CTE_HC_PREZZO_NETTO_IMPRESA_LUCE__V68.pdf": {
+   "scade": "2026-11-04",
+   "testo": "valida per le richieste sottoscritte entro il 04/11/2026"
+  },
+  "documenti/hera/cte/residenziale/CTE_EST_HERA_HYBRID_CASA_GAS__V34 Valida dal 19.10 al 10.11.pdf": {
+   "scade": "2026-11-10",
+   "testo": "valida per le richieste sottoscritte entro il 10/11/2026"
+  },
+  "documenti/hera/cte/residenziale/CTE_EST_HERA_HYBRID_CASA_LUCE__V34 Valida dal 19.10 al 10.11.pdf": {
+   "scade": "2026-11-10",
+   "testo": "valida per le richieste sottoscritte entro il 10/11/2026"
+  },
+  "documenti/hera/cte/residenziale/CTE_EST_PIU_CONTROLLO_ACTIVE_CASA_GAS__V24.pdf": {
+   "scade": "2026-11-04",
+   "testo": "valida per le richieste sottoscritte entro il 04/11/2026"
+  },
+  "documenti/hera/cte/residenziale/CTE_EST_PIU_CONTROLLO_ACTIVE_CASA_LUCE__V24.pdf": {
+   "scade": "2026-11-04",
+   "testo": "valida per le richieste sottoscritte entro il 04/11/2026"
+  },
+  "documenti/hera/cte/residenziale/CTE_EST_PIU_CONTROLLO_FLAT_CASA_GAS__V50 Valida fino al 15.10 al 23.10.pdf": {
+   "scade": "2026-10-23",
+   "testo": "valida per le richieste sottoscritte entro il 23/10/2026"
+  },
+  "documenti/hera/cte/residenziale/CTE_EST_PIU_CONTROLLO_FLAT_CASA_GAS__V50.pdf": {
+   "scade": "2026-11-10",
+   "testo": "valida per le richieste sottoscritte entro il 10/11/2026"
+  },
+  "documenti/hera/cte/residenziale/CTE_EST_PIU_CONTROLLO_FLAT_CASA_LUCE__V50.pdf": {
+   "scade": "2026-11-10",
+   "testo": "valida per le richieste sottoscritte entro il 10/11/2026"
+  },
+  "documenti/hera/cte/residenziale/CTE_EST_PIU_CONTROLLO_FLAT_CASA_LUCE__V50_PENALE Valida fino al 15.10 al 23.10.pdf": {
+   "scade": "2026-10-23",
+   "testo": "valida per le richieste sottoscritte entro il 23/10/2026"
+  },
+  "documenti/hera/cte/residenziale/CTE_HC_HERA_HYBRID_CASA_GAS__V34 Valida dal 19.10 al 10.11.pdf": {
+   "scade": "2026-11-10",
+   "testo": "valida per le richieste sottoscritte entro il 10/11/2026"
+  },
+  "documenti/hera/cte/residenziale/CTE_HC_HERA_HYBRID_CASA_LUCE__V34 Valida dal 19.10 al 10.11.pdf": {
+   "scade": "2026-11-10",
+   "testo": "valida per le richieste sottoscritte entro il 10/11/2026"
+  },
+  "documenti/hera/cte/residenziale/CTE_HC_PIU_CONTROLLO_ACTIVE_CASA_GAS__V24.pdf": {
+   "scade": "2026-11-04",
+   "testo": "valida per le richieste sottoscritte entro il 04/11/2026"
+  },
+  "documenti/hera/cte/residenziale/CTE_HC_PIU_CONTROLLO_ACTIVE_CASA_LUCE__V24.pdf": {
+   "scade": "2026-11-04",
+   "testo": "valida per le richieste sottoscritte entro il 04/11/2026"
+  },
+  "documenti/hera/cte/residenziale/CTE_HC_PIU_CONTROLLO_FLAT_CASA_GAS__V50 Valida fino al 15.10 al 23.10.pdf": {
+   "scade": "2026-10-23",
+   "testo": "valida per le richieste sottoscritte entro il 23/10/2026"
+  },
+  "documenti/hera/cte/residenziale/CTE_HC_PIU_CONTROLLO_FLAT_CASA_GAS__V50.pdf": {
+   "scade": "2026-11-10",
+   "testo": "valida per le richieste sottoscritte entro il 10/11/2026"
+  },
+  "documenti/hera/cte/residenziale/CTE_HC_PIU_CONTROLLO_FLAT_CASA_LUCE__V50.pdf": {
+   "scade": "2026-11-10",
+   "testo": "valida per le richieste sottoscritte entro il 10/11/2026"
+  },
+  "documenti/hera/cte/residenziale/CTE_HC_PIU_CONTROLLO_FLAT_CASA_LUCE__V50_PENALE Valida fino al 15.10 al 23.10.pdf": {
+   "scade": "2026-10-23",
+   "testo": "valida per le richieste sottoscritte entro il 23/10/2026"
+  },
+  "documenti/hera/cte/residenziale/EST HERA_HYBRID_LIMITED_EDITION_CASA_LUCE_V33 SOLO APPAROUND Valida dal 14.10 al 23.10.pdf": {
+   "scade": "2026-10-23",
+   "testo": "valida per le richieste sottoscritte entro il 23/10/2026"
+  },
+  "documenti/hera/cte/residenziale/HERA_HYBRID_LIMITED_EDITION_CASA_GAS V33 SOLO APPAROUND Valida dal 14.10 al 23.10.pdf": {
+   "scade": "2026-10-23",
+   "testo": "valida per le richieste sottoscritte entro il 23/10/2026"
+  },
+  "documenti/iren/cte/business/Iren OndaLuce Impresa 2.0 VERDE.pdf": {
+   "scade": "2026-10-31",
+   "testo": "Adesioni valide dal 14/09/2026 al 31/10/2026"
+  },
+  "documenti/iren/cte/business/Iren OndaLuce Impresa 2.0.pdf": {
+   "scade": "2026-10-31",
+   "testo": "Adesioni valide dal 14/09/2026 al 31/10/2026"
+  },
+  "documenti/iren/cte/business/Iren Ondagas Impresa 2.0.pdf": {
+   "scade": "2026-10-31",
+   "testo": "Adesioni valide dal 14/09/2026 al 31/10/2026"
+  },
+  "documenti/iren/cte/business/Iren Tua Azienda Gas Variabile Top.pdf": {
+   "scade": "2026-12-14",
+   "testo": "Adesioni valide dal 14/09/2026 al 14/12/2026"
+  },
+  "documenti/iren/cte/business/Iren Tua Azienda Gas Variabile.pdf": {
+   "scade": "2026-12-14",
+   "testo": "Adesioni valide dal 14/09/2026 al 14/12/2026"
+  },
+  "documenti/iren/cte/business/Iren Tua Azienda Luce Variabile Top VERDE.pdf": {
+   "scade": "2026-12-14",
+   "testo": "Adesioni valide dal 14/09/2026 al 14/12/2026"
+  },
+  "documenti/iren/cte/business/Iren Tua Azienda Luce Variabile Top.pdf": {
+   "scade": "2026-12-14",
+   "testo": "Adesioni valide dal 14/09/2026 al 14/12/2026"
+  },
+  "documenti/iren/cte/business/Iren Tua Azienda Luce Variabile.pdf": {
+   "scade": "2026-12-14",
+   "testo": "Adesioni valide dal 14/09/2026 al 14/12/2026"
+  },
+  "documenti/iren/cte/residenziale/IREN 10 PER TRE GAS VARIABILE PSV 2023.pdf": {
+   "scade": "2026-12-14",
+   "testo": "Adesioni valide dal 14/09/2026 al 14/12/2026"
+  },
+  "documenti/iren/cte/residenziale/IREN 10 PER TRE LUCE VARIABILE.pdf": {
+   "scade": "2026-12-14",
+   "testo": "Adesioni valide dal 14/09/2026 al 14/12/2026"
+  },
+  "documenti/iren/cte/residenziale/IREN GAS FACILE FLEX TOP.pdf": {
+   "scade": "2026-12-14",
+   "testo": "Adesioni valide dal 14/09/2026 al 14/12/2026"
+  },
+  "documenti/iren/cte/residenziale/IREN LUCE FACILE FLEX TOP.pdf": {
+   "scade": "2026-12-14",
+   "testo": "Adesioni valide dal 14/09/2026 al 14/12/2026"
+  },
+  "documenti/iren/cte/residenziale/IREN REVOLUTION SALUTE PREZZO FISSO LUCE.pdf": {
+   "scade": "2026-10-27",
+   "testo": "Adesioni valide dal 15/10/2026 al 27/10/2026"
+  },
+  "documenti/iren/cte/residenziale/IREN REVOLUTION SPESE PROTETTE GAS PREZZO FISSO.pdf": {
+   "scade": "2026-10-27",
+   "testo": "Adesioni valide dal 15/10/2026 al 27/10/2026"
+  },
+  "documenti/magis/cte/business/000592ENVFL01XXBAX1026XPROXIMAXS_2026_EE_PROXIMA_EXTRASMALL_LUCE_B_BUS_3F_43_CE.pdf": {
+   "scade": "2027-01-20",
+   "testo": "Valida per adesioni entro il: 20/01/2027"
+  },
+  "documenti/magis/cte/business/000592ENVFL01XXBMX1026XPROXISMMT_2026_EE_PROXIMA_SMALL_LUCE_MT_B_BUS_3F_43_CE.pdf": {
+   "scade": "2027-01-20",
+   "testo": "Valida per adesioni entro il: 20/01/2027"
+  },
+  "documenti/magis/cte/business/000592ENVOL01XXBBX1026XPROXIMEBT_2026_EE_PROXIMA_MEDIUM_LUCE_BT_B_BUS_ORA_43_CE.pdf": {
+   "scade": "2027-01-20",
+   "testo": "Valida per adesioni entro il: 20/01/2027"
+  },
+  "documenti/magis/cte/business/000592ENVOL01XXBBX1026XPROXIMEMT_2026_EE_PROXIMA_MEDIUM_LUCE_MT_B_BUS_ORA_43_CE.pdf": {
+   "scade": "2027-01-20",
+   "testo": "Valida per adesioni entro il: 20/01/2027"
+  },
+  "documenti/magis/cte/business/000592ENVOL01XXBRX1026XPROXILABT_2026_EE_PROXIMA_LARGE_LUCE_BT_B_BUS_ORA_43_CE.pdf": {
+   "scade": "2027-01-20",
+   "testo": "Valida per adesioni entro il: 20/01/2027"
+  },
+  "documenti/magis/cte/business/000592ENVOL01XXBRX1026XPROXILAMT_2026_EE_PROXIMA_LARGE_LUCE_MT_B_BUS_ORA_43_CE.pdf": {
+   "scade": "2027-01-20",
+   "testo": "Valida per adesioni entro il: 20/01/2027"
+  },
+  "documenti/magis/cte/business/000592ESFFL03XXBAX1026XPROXIFIXP_2026_EE_PROXIMA_FIX_PLUS_LUCE_B_BUS_3F_43_CE.pdf": {
+   "scade": "2026-10-29",
+   "testo": "Valida per adesioni entro il: 29/10/2026"
+  },
+  "documenti/magis/cte/business/000592ESFFL03XXBBX1026XPRXFIXSMA_2026_EE_PROXIMA_FIX_SMART_LUCE_B_BUS_3F_43_CE.pdf": {
+   "scade": "2026-10-29",
+   "testo": "Valida per adesioni entro il: 29/10/2026"
+  },
+  "documenti/magis/cte/business/000592ESFFL03XXBMX1026XPROXIFIXB_2026_EE_PROXIMA_FIX_LUCE_B_BUS_3F_43_CE.pdf": {
+   "scade": "2026-10-29",
+   "testo": "Valida per adesioni entro il: 29/10/2026"
+  },
+  "documenti/magis/cte/business/000592ESVFL01XXBMX1026XPROXISMBT_2026_EE_PROXIMA_SMALL_LUCE_BT_B_BUS_3F_43_CE.pdf": {
+   "scade": "2027-01-20",
+   "testo": "Valida per adesioni entro il: 20/01/2027"
+  },
+  "documenti/magis/cte/business/000592GNVML01XXBAX1026XPROXIMAXS_2026_GAS_PROXIMA_EXTRASMALL_GAS_BUS_43_CE.pdf": {
+   "scade": "2027-01-20",
+   "testo": "Valida per adesioni entro il: 20/01/2027"
+  },
+  "documenti/magis/cte/business/000592GNVML01XXBBX1026XPROXIMAME_2026_GAS_PROXIMA_MEDIUM_GAS_BUS_43_CE.pdf": {
+   "scade": "2027-01-20",
+   "testo": "Valida per adesioni entro il: 20/01/2027"
+  },
+  "documenti/magis/cte/business/000592GNVML01XXBRX1026XPROXIMALA_2026_GAS_PROXIMA_LARGE_GAS_BUS_43_CE.pdf": {
+   "scade": "2027-01-20",
+   "testo": "Valida per adesioni entro il: 20/01/2027"
+  },
+  "documenti/magis/cte/business/000592GSVML01XXBMX1026XPROXIMASM_2026_GAS_PROXIMA_SMALL_GAS_BUS_43_CE.pdf": {
+   "scade": "2027-01-20",
+   "testo": "Valida per adesioni entro il: 20/01/2027"
+  },
+  "documenti/magis/cte/residenziale/000592ESFML03XXDAX1026XMIAFIXPLU_2026_EE_MIA_LUCE_FIX_PLUS_B_RET_MONO_43_CE.pdf": {
+   "scade": "2026-10-29",
+   "testo": "Valida per adesioni entro il: 29/10/2026"
+  },
+  "documenti/magis/cte/residenziale/000592ESFML03XXDBX1026XMIAFIXSMA_2026_EE_MIA_LUCE_FIX_SMART_B_RET_MONO_43_CE.pdf": {
+   "scade": "2026-10-29",
+   "testo": "Valida per adesioni entro il: 29/10/2026"
+  },
+  "documenti/magis/cte/residenziale/000592ESFML03XXDMX1026XMIAFIXPRO_2026_EE_MIA_LUCE_FIX_PRO_B_RET_MONO_43_CE.pdf": {
+   "scade": "2026-10-29",
+   "testo": "Valida per adesioni entro il: 29/10/2026"
+  },
+  "documenti/magis/cte/residenziale/000592ESVFL01XXDAX1026XMIAVARPLU_2026_EE_MIA_LUCE_PLUS_B_RET_BIO_43_CE.pdf": {
+   "scade": "2027-01-20",
+   "testo": "Valida per adesioni entro il: 20/01/2027"
+  },
+  "documenti/magis/cte/residenziale/000592ESVFL01XXDBX1026XOFFERTMIA_2026_EE_MIA_LUCE_B_RET_BIO_43_CE.pdf": {
+   "scade": "2027-01-20",
+   "testo": "Valida per adesioni entro il: 20/01/2027"
+  },
+  "documenti/magis/cte/residenziale/000592ESVFL01XXDMX1026XMIAVARPRO_2026_EE_MIA_LUCE_PRO_B_RET_BIO_43_CE.pdf": {
+   "scade": "2027-01-20",
+   "testo": "Valida per adesioni entro il: 20/01/2027"
+  },
+  "documenti/magis/cte/residenziale/000592GSFML03XXDAX1026XMIAFIXPLU_2026_GAS_MIA_GAS_FIX_PLUS_RET_43_CE.pdf": {
+   "scade": "2026-10-29",
+   "testo": "Valida per adesioni entro il: 29/10/2026"
+  },
+  "documenti/magis/cte/residenziale/000592GSFML03XXDBX1026XMIAFIXSMA_2026_GAS_MIA_GAS_FIX_SMART_RET_43_CE.pdf": {
+   "scade": "2026-10-29",
+   "testo": "Valida per adesioni entro il: 29/10/2026"
+  },
+  "documenti/magis/cte/residenziale/000592GSFML03XXDMX1026XMIAFIXPRO_2026_GAS_MIA_GAS_FIX_PRO_RET_43_CE.pdf": {
+   "scade": "2026-10-29",
+   "testo": "Valida per adesioni entro il: 29/10/2026"
+  },
+  "documenti/magis/cte/residenziale/000592GSVML01XXDAX1026XMIAVARPLU_2026_GAS_MIA_GAS_PLUS_RET_43_CE.pdf": {
+   "scade": "2027-01-20",
+   "testo": "Valida per adesioni entro il: 20/01/2027"
+  },
+  "documenti/magis/cte/residenziale/000592GSVML01XXDBX1026XOFFERTMIA_2026_GAS_MIA_GAS_RET_43_CE.pdf": {
+   "scade": "2027-01-20",
+   "testo": "Valida per adesioni entro il: 20/01/2027"
+  },
+  "documenti/magis/cte/residenziale/000592GSVML01XXDMX1026XMIAVARPRO_2026_GAS_MIA_GAS_PRO_RET_43_CE.pdf": {
+   "scade": "2027-01-20",
+   "testo": "Valida per adesioni entro il: 20/01/2027"
+  },
+  "documenti/plenitude/cte/business/TREND_BUSINESS_BASE_GAS.pdf": {
+   "scade": "2026-11-23",
+   "testo": "valida dal 15/10/26 al 23/11/26"
+  },
+  "documenti/plenitude/cte/business/TREND_BUSINESS_BASE_LUCE.pdf": {
+   "scade": "2026-11-23",
+   "testo": "valida dal 15/10/26 al 23/11/26"
+  },
+  "documenti/plenitude/cte/residenziale/FIXA TIME 12 BASE.pdf": {
+   "scade": "2026-11-04",
+   "testo": "valida dal 15/10/26 al 04/11/26"
+  },
+  "documenti/plenitude/cte/residenziale/FIXA TIME 24 BASE.pdf": {
+   "scade": "2026-11-04",
+   "testo": "valida dal 15/10/26 al 04/11/26"
+  },
+  "documenti/plenitude/cte/residenziale/FIXA TIME 24 SMART.pdf": {
+   "scade": "2026-11-04",
+   "testo": "valida dal 15/10/26 al 04/11/26"
+  },
+  "documenti/plenitude/cte/residenziale/FLEXI PERTINENZE_BASE.pdf": {
+   "scade": "2026-11-23",
+   "testo": "valida dal 15/10/26 al 23/11/26"
+  },
+  "documenti/plenitude/cte/residenziale/SERVIZIO DI TUTELA DELLA VULNERABILITA.pdf": {
+   "scade": "2026-11-23",
+   "testo": "valida dal 15/10/26 al 23/11/26"
+  },
+  "documenti/plenitude/cte/residenziale/TREND CASA BASE.pdf": {
+   "scade": "2026-11-23",
+   "testo": "valida dal 15/10/26 al 23/11/26"
+  },
+  "documenti/plenitude/cte/residenziale/TREND CASA NO PENSIERI.pdf": {
+   "scade": "2026-11-23",
+   "testo": "valida dal 15/10/26 al 23/11/26"
+  },
+  "documenti/s4/cte-business/CTE_EE_AltriUsi_Amici 2026.pdf": {
+   "scade": "2026-12-31",
+   "testo": "Condizioni valide fino al 31/12/2026"
+  },
+  "documenti/s4/cte-business/CTE_EE_AltriUsi_Corporate 2026.pdf": {
+   "scade": "2026-12-31",
+   "testo": "Condizioni valide fino al 31/12/2026"
+  },
+  "documenti/s4/cte-business/CTE_EE_AltriUsi_Green.pdf": {
+   "scade": "2026-12-31",
+   "testo": "Condizioni valide fino al 31/12/2026"
+  },
+  "documenti/s4/cte-business/CTE_EE_AltriUsi_Smart 2026.pdf": {
+   "scade": "2026-12-31",
+   "testo": "Condizioni valide fino al 31/12/2026"
+  },
+  "documenti/s4/cte-business/CTE_GAS_AltriUsi_Amici 2026.pdf": {
+   "scade": "2026-12-31",
+   "testo": "Condizioni valide fino al 31/12/2026"
+  },
+  "documenti/s4/cte-business/CTE_GAS_AltriUsi_Corporate 2026.pdf": {
+   "scade": "2026-12-31",
+   "testo": "Condizioni valide fino al 31/12/2026"
+  },
+  "documenti/s4/cte-business/CTE_GAS_AltriUsi_Green.pdf": {
+   "scade": "2026-12-31",
+   "testo": "Condizioni valide fino al 31/12/2026"
+  },
+  "documenti/s4/cte-business/CTE_GAS_AltriUsi_Smart 2026.pdf": {
+   "scade": "2026-12-31",
+   "testo": "Condizioni valide fino al 31/12/2026"
+  },
+  "documenti/s4/cte-residenziale/CTE_EE_Domestico_Amici 2026.pdf": {
+   "scade": "2026-12-31",
+   "testo": "Condizioni valide fino al 31/12/2026"
+  },
+  "documenti/s4/cte-residenziale/CTE_EE_Domestico_GreenCAP.pdf": {
+   "scade": "2026-12-31",
+   "testo": "Condizioni valide fino al 31/12/2026"
+  },
+  "documenti/s4/cte-residenziale/CTE_EE_Domestico_Smart 2026.pdf": {
+   "scade": "2026-12-31",
+   "testo": "Condizioni valide fino al 31/12/2026"
+  },
+  "documenti/s4/cte-residenziale/CTE_GAS_Domestico_Amici 2026.pdf": {
+   "scade": "2026-12-31",
+   "testo": "Condizioni valide fino al 31/12/2026"
+  },
+  "documenti/s4/cte-residenziale/CTE_GAS_Domestico_GreenCAP.pdf": {
+   "scade": "2026-12-31",
+   "testo": "Condizioni valide fino al 31/12/2026"
+  },
+  "documenti/s4/cte-residenziale/CTE_GAS_Domestico_Smart 2026.pdf": {
+   "scade": "2026-12-31",
+   "testo": "Condizioni valide fino al 31/12/2026"
+  },
+  "documenti/simecom/cte-business/FACILEPIU_P.IVA.NV2603EVXPUN3FA.pdf": {
+   "scade": "2027-01-06",
+   "testo": "VALIDA DAL 01/10/2026 AL 06/01/2027"
+  },
+  "documenti/simecom/cte-business/FACILEPIU_P.IVA.NV2603GVXPSVA.pdf": {
+   "scade": "2027-01-06",
+   "testo": "VALIDA DAL 01/10/2026 AL 06/01/2027"
+  },
+  "documenti/simecom/cte-residenziale/FACILEPIU_Casa.NV2603EDXPUN3FA.pdf": {
+   "scade": "2027-01-06",
+   "testo": "validità fino alla data del 06/01/2027"
+  },
+  "documenti/simecom/cte-residenziale/FACILEPIU_Casa.NV2603GDXPSVA.pdf": {
+   "scade": "2027-01-06",
+   "testo": "VALIDA DAL 01/10/2026 AL 06/01/2027"
+  },
+  "documenti/simecom/cte-residenziale/SEMPLICEPIU_Casa.NV2603EDAPUN3FA.pdf": {
+   "scade": "2027-01-06",
+   "testo": "validità fino alla data del 06/01/2027"
+  },
+  "documenti/simecom/cte-residenziale/SEMPLICEPIU_Casa.NV2603GDAPSVA.pdf": {
+   "scade": "2027-01-06",
+   "testo": "VALIDA DAL 01/10/2026 AL 06/01/2027"
+  },
+  "documenti/sorgenia/cte-business/BorsapiuSmart_L21(9).pdf": {
+   "scade": "2026-10-31",
+   "testo": "VALIDITÀ DELL'OFFERTA LE PRESENTI CONDIZIONI ECONOMICHE SONO VALIDE FINO AL 31/10/2026"
+  },
+  "documenti/sorgenia/cte-business/BorsapiuSmart_L23(8).pdf": {
+   "scade": "2026-10-31",
+   "testo": "VALIDITÀ DELL'OFFERTA LE PRESENTI CONDIZIONI ECONOMICHE SONO VALIDE FINO AL 31/10/2026"
+  },
+  "documenti/sorgenia/cte-business/BorsapiuSmart_L24(10).pdf": {
+   "scade": "2026-10-31",
+   "testo": "VALIDITÀ DELL'OFFERTA LE PRESENTI CONDIZIONI ECONOMICHE SONO VALIDE FINO AL 31/10/2026"
+  },
+  "documenti/sorgenia/cte-business/BorsapiuSmart_L31(10).pdf": {
+   "scade": "2026-10-31",
+   "testo": "VALIDITÀ DELL'OFFERTA LE PRESENTI CONDIZIONI ECONOMICHE SONO VALIDE FINO AL 31/10/2026"
+  },
+  "documenti/sorgenia/cte-business/BorsapiuSmart_L35(9).pdf": {
+   "scade": "2026-10-31",
+   "testo": "VALIDITÀ DELL'OFFERTA LE PRESENTI CONDIZIONI ECONOMICHE SONO VALIDE FINO AL 31/10/2026"
+  },
+  "documenti/sorgenia/cte-business/BorsapiuSmart_corporate(10).pdf": {
+   "scade": "2026-10-31",
+   "testo": "VALIDITÀ DELL'OFFERTA LE PRESENTI CONDIZIONI ECONOMICHE SONO VALIDE FINO AL 31/10/2026"
+  },
+  "documenti/sorgenia/cte-business/BorsapiuSmart_corporatepremium(10).pdf": {
+   "scade": "2026-10-31",
+   "testo": "VALIDITÀ DELL'OFFERTA LE PRESENTI CONDIZIONI ECONOMICHE SONO VALIDE FINO AL 31/10/2026"
+  },
+  "documenti/sorgenia/cte-business/BorsapiuSmart_light(10).pdf": {
+   "scade": "2026-10-31",
+   "testo": "VALIDITÀ DELL'OFFERTA LE PRESENTI CONDIZIONI ECONOMICHE SONO VALIDE FINO AL 31/10/2026"
+  },
+  "documenti/sorgenia/cte-business/BorsapiuSmart_lightplus(10).pdf": {
+   "scade": "2026-10-31",
+   "testo": "VALIDITÀ DELL'OFFERTA LE PRESENTI CONDIZIONI ECONOMICHE SONO VALIDE FINO AL 31/10/2026"
+  },
+  "documenti/sorgenia/cte-business/BorsapiuSmart_plus(10).pdf": {
+   "scade": "2026-10-31",
+   "testo": "VALIDITÀ DELL'OFFERTA LE PRESENTI CONDIZIONI ECONOMICHE SONO VALIDE FINO AL 31/10/2026"
+  },
+  "documenti/sorgenia/cte-business/BorsapiuSmart_premium(10).pdf": {
+   "scade": "2026-10-31",
+   "testo": "VALIDITÀ DELL'OFFERTA LE PRESENTI CONDIZIONI ECONOMICHE SONO VALIDE FINO AL 31/10/2026"
+  },
+  "documenti/sorgenia/cte-business/BorsapiuSmart_superlight(10).pdf": {
+   "scade": "2026-10-31",
+   "testo": "VALIDITÀ DELL'OFFERTA LE PRESENTI CONDIZIONI ECONOMICHE SONO VALIDE FINO AL 31/10/2026"
+  },
+  "documenti/sorgenia/cte-business/ImpresaGasSmartFix_Plus(39).pdf": {
+   "scade": "2026-10-31",
+   "testo": "VALIDA FINO AL 31/10/2026"
+  },
+  "documenti/sorgenia/cte-business/ImpresaGasSmartFix_light(45).pdf": {
+   "scade": "2026-10-31",
+   "testo": "VALIDA FINO AL 31/10/2026"
+  },
+  "documenti/sorgenia/cte-business/ImpresaGasSmart_L21(31).pdf": {
+   "scade": "2026-10-31",
+   "testo": "VALIDA FINO AL 31/10/2026"
+  },
+  "documenti/sorgenia/cte-business/ImpresaGasSmart_L21Fix(28).pdf": {
+   "scade": "2026-10-31",
+   "testo": "VALIDA FINO AL 31/10/2026"
+  },
+  "documenti/sorgenia/cte-business/ImpresaGasSmart_L22(31).pdf": {
+   "scade": "2026-10-31",
+   "testo": "VALIDA FINO AL 31/10/2026"
+  },
+  "documenti/sorgenia/cte-business/ImpresaGasSmart_light(49).pdf": {
+   "scade": "2026-10-31",
+   "testo": "VALIDA DAL 01/10/2026 AL 31/10/2026"
+  },
+  "documenti/sorgenia/cte-business/ImpresaGasSmart_lightplus(48).pdf": {
+   "scade": "2026-10-31",
+   "testo": "VALIDA DAL 01/10/2026 AL 31/10/2026"
+  },
+  "documenti/sorgenia/cte-business/ImpresaGasSmart_plus(48).pdf": {
+   "scade": "2026-10-31",
+   "testo": "VALIDA DAL 01/10/2026 AL 31/10/2026"
+  },
+  "documenti/sorgenia/cte-business/ImpresaGasSmart_premium(48).pdf": {
+   "scade": "2026-10-31",
+   "testo": "VALIDA DAL 01/10/2026 AL 31/10/2026"
+  },
+  "documenti/sorgenia/cte-business/ImpresaGasSmart_superlight(29).pdf": {
+   "scade": "2026-10-31",
+   "testo": "VALIDA DAL 01/10/2026 AL 31/10/2026"
+  },
+  "documenti/sorgenia/cte-business/L21_FISSO_PER_TE(25).pdf": {
+   "scade": "2026-10-31",
+   "testo": "VALIDITÀ DELL'OFFERTA LE PRESENTI CONDIZIONI ECONOMICHE SONO VALIDE FINO AL 31/10/2026"
+  },
+  "documenti/sorgenia/cte-business/L24_FISSO_PER_TE(26).pdf": {
+   "scade": "2026-10-31",
+   "testo": "VALIDITÀ DELL'OFFERTA LE PRESENTI CONDIZIONI ECONOMICHE SONO VALIDE FINO AL 31/10/2026"
+  },
+  "documenti/sorgenia/cte-business/L2_FISSO_PER_TE(28).pdf": {
+   "scade": "2026-10-31",
+   "testo": "VALIDITÀ DELL'OFFERTA LE PRESENTI CONDIZIONI ECONOMICHE SONO VALIDE FINO AL 31/10/2026"
+  },
+  "documenti/sorgenia/cte-business/L4_FISSO_PER_TE(29).pdf": {
+   "scade": "2026-10-31",
+   "testo": "VALIDITÀ DELL'OFFERTA LE PRESENTI CONDIZIONI ECONOMICHE SONO VALIDE FINO AL 31/10/2026"
+  },
+  "documenti/sorgenia/cte-business/L6_FISSO_PER_TE(28).pdf": {
+   "scade": "2026-10-31",
+   "testo": "VALIDITÀ DELL'OFFERTA LE PRESENTI CONDIZIONI ECONOMICHE SONO VALIDE FINO AL 31/10/2026"
+  },
+  "documenti/sorgenia/cte-residenziale/NEXTENERGYPUNTUALELUCE_AR2(5).pdf": {
+   "scade": "2026-10-31",
+   "testo": "VALIDA FINO AL 31/10/2026"
+  },
+  "documenti/sorgenia/cte-residenziale/NEXTENERGYPUNTUALELUCE_AS1(4).pdf": {
+   "scade": "2026-10-31",
+   "testo": "VALIDA FINO AL 31/10/2026"
+  },
+  "documenti/sorgenia/cte-residenziale/NEXTENERGYSunlightGAS_AR1(34).pdf": {
+   "scade": "2026-10-31",
+   "testo": "VALIDA FINO AL 31/10/2026"
+  },
+  "documenti/sorgenia/cte-residenziale/NEXTENERGYSunlightGAS_RF(70).pdf": {
+   "scade": "2026-10-31",
+   "testo": "VALIDA FINO AL 31/10/2026"
+  },
+  "documenti/stream/cte-business/EE_COMMUNITY_AU.pdf": {
+   "scade": "2026-10-31",
+   "testo": "richieste effettuate entro il 31/10/2026"
+  },
+  "documenti/stream/cte-business/EE_COMPANY_AU.pdf": {
+   "scade": "2026-10-31",
+   "testo": "richieste effettuate entro il 31/10/2026"
+  },
+  "documenti/stream/cte-business/EE_FAMILY AU.pdf": {
+   "scade": "2026-10-31",
+   "testo": "richieste effettuate entro il 31/10/2026"
+  },
+  "documenti/stream/cte-business/EE_MEDIUM AU.pdf": {
+   "scade": "2026-10-31",
+   "testo": "richieste effettuate entro il 31/10/2026"
+  },
+  "documenti/stream/cte-business/EE_MEDIUM.pdf": {
+   "scade": "2026-10-31",
+   "testo": "richieste effettuate entro il 31/10/2026"
+  },
+  "documenti/stream/cte-business/EE_SMALL AU.pdf": {
+   "scade": "2026-10-31",
+   "testo": "richieste effettuate entro il 31/10/2026"
+  },
+  "documenti/stream/cte-business/EE_SMALL.pdf": {
+   "scade": "2026-10-31",
+   "testo": "richieste effettuate entro il 31/10/2026"
+  },
+  "documenti/stream/cte-business/GAS_COMMUNITY_AU.pdf": {
+   "scade": "2026-12-31",
+   "testo": "richieste effettuate entro il 31/12/2026"
+  },
+  "documenti/stream/cte-business/GAS_COMPANY_AU.pdf": {
+   "scade": "2026-12-31",
+   "testo": "richieste effettuate entro il 31/12/2026"
+  },
+  "documenti/stream/cte-business/GAS_FAMILY_AU.pdf": {
+   "scade": "2026-12-31",
+   "testo": "richieste effettuate entro il 31/12/2026"
+  },
+  "documenti/stream/cte-business/GAS_MEDIUM.pdf": {
+   "scade": "2026-12-31",
+   "testo": "richieste effettuate entro il 31/12/2026"
+  },
+  "documenti/stream/cte-business/GAS_MEDIUM_AU.pdf": {
+   "scade": "2026-12-31",
+   "testo": "richieste effettuate entro il 31/12/2026"
+  },
+  "documenti/stream/cte-business/GAS_SMALL AU.pdf": {
+   "scade": "2026-12-31",
+   "testo": "richieste effettuate entro il 31/12/2026"
+  },
+  "documenti/stream/cte-business/GAS_SMALL.pdf": {
+   "scade": "2026-12-31",
+   "testo": "richieste effettuate entro il 31/12/2026"
+  },
+  "documenti/stream/cte-residenziale/EE_COMMUNITY.pdf": {
+   "scade": "2026-10-31",
+   "testo": "richieste effettuate entro il 31/10/2026"
+  },
+  "documenti/stream/cte-residenziale/EE_COMPANY.pdf": {
+   "scade": "2026-10-31",
+   "testo": "richieste effettuate entro il 31/10/2026"
+  },
+  "documenti/stream/cte-residenziale/EE_FAMILY.pdf": {
+   "scade": "2026-10-31",
+   "testo": "richieste effettuate entro il 31/10/2026"
+  },
+  "documenti/stream/cte-residenziale/GAS_COMMUNITY.pdf": {
+   "scade": "2026-12-31",
+   "testo": "richieste effettuate entro il 31/12/2026"
+  },
+  "documenti/stream/cte-residenziale/GAS_COMPANY.pdf": {
+   "scade": "2026-12-31",
+   "testo": "richieste effettuate entro il 31/12/2026"
+  },
+  "documenti/stream/cte-residenziale/GAS_FAMILY.pdf": {
+   "scade": "2026-12-31",
+   "testo": "richieste effettuate entro il 31/12/2026"
+  },
+  "documenti/upenergy/cte/business/BoostUp-Power.pdf": {
+   "scade": "2026-12-31",
+   "testo": "richieste effettuate entro il 31/12/2026"
+  },
+  "documenti/upenergy/cte/business/ControlUp-Power.pdf": {
+   "scade": "2026-12-31",
+   "testo": "richieste effettuate entro il 31/12/2026"
+  },
+  "documenti/upenergy/cte/business/InfinityUp-Gas.pdf": {
+   "scade": "2026-12-31",
+   "testo": "richieste effettuate entro il 31/12/2026"
+  },
+  "documenti/upenergy/cte/business/PrimeUp-Power.pdf": {
+   "scade": "2026-12-31",
+   "testo": "richieste effettuate entro il 31/12/2026"
+  },
+  "documenti/upenergy/cte/business/TopUp-Power.pdf": {
+   "scade": "2026-12-31",
+   "testo": "richieste effettuate entro il 31/12/2026"
+  },
+  "documenti/upenergy/cte/residenziale/DynamicUp Gas..pdf": {
+   "scade": "2026-12-31",
+   "testo": "Validità dal 01/09/2026 al 31/12/2026"
+  },
+  "documenti/upenergy/cte/residenziale/DynamicUp Luce.pdf": {
+   "scade": "2026-12-31",
+   "testo": "Validità dal 01/09/2026 al 31/12/2026"
+  },
+  "documenti/upenergy/cte/residenziale/Life Up 2.0 (Gas).pdf": {
+   "scade": "2026-12-31",
+   "testo": "Validità dal 01/09/2026 al 31/12/2026"
+  },
+  "documenti/upenergy/cte/residenziale/Life Up 2.0 (Luce).pdf": {
+   "scade": "2026-12-31",
+   "testo": "Validità dal 01/09/2026 al 31/12/2026"
+  }
+ }
+}

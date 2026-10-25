@@ -515,3 +515,11 @@ a.th-gauge:hover .th-gauge-more i{transform:translateX(3px)}
 @media (max-width:640px){.th-eko{grid-template-columns:1fr;gap:16px;padding:22px 20px;text-align:left}.th-eko-logo{max-width:170px}.th-eko-sky{left:20px;width:170px}}
 @media (prefers-reduced-motion:reduce){.th-eko-line{stroke-dashoffset:0}.th-eko-fill,.th-eko-sun,.th-eko-rays,.th-eko-text{opacity:1;transform:none}}
 .th-eko:not(.is-on),.th-eko:not(.is-on) *{animation-play-state:paused!important}
+
+/* etichetta scadenza CTE */
+.th-exp{display:inline-flex;align-items:center;gap:6px;margin-top:6px;padding:3px 9px;border-radius:999px;font:700 12px/1.35 var(--text);font-variant-numeric:tabular-nums;letter-spacing:.01em}
+.th-exp i{font-size:11px}
+.th-exp--ok{background:#e7f6ef;color:#0b7a50}
+.th-exp--soon{background:#fff1dc;color:#9a5600}
+.th-exp--old{background:#fdecef;color:var(--danger)}
+.th-file:has(.th-exp--old) .th-file-name{color:var(--muted)}
