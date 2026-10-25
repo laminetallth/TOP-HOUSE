@@ -10,16 +10,24 @@
 
 window.TOP_HOUSE_GESTORI = [
   { nome: "ACEA", pagina: "gestori/acea.html", procedura: "gestori/acea-procedimenti.html" },
+  { nome: "AGN ENERGIA", pagina: "gestori/agn-energia.html", procedura: "gestori/agn-energia-procedimenti.html" },
   { nome: "ALPERIA", pagina: "gestori/alperia.html", procedura: "gestori/alperia-procedimenti.html" },
   { nome: "AUDAX", pagina: "gestori/audax.html", procedura: "gestori/audax-procedimenti.html" },
+  { nome: "AXPO (PULSEE)", pagina: "gestori/axpo.html", procedura: "gestori/axpo-procedimenti.html" },
+  { nome: "CHIURLO", pagina: "gestori/chiurlo.html", procedura: "gestori/chiurlo-procedimenti.html" },
   { nome: "COGEME", pagina: "gestori/cogeme.html", procedura: "gestori/cogeme-procedimenti.html" },
   { nome: "DUFERCO", pagina: "gestori/duferco.html", procedura: "gestori/duferco-procedimenti.html" },
-  { nome: "ENEL", pagina: "gestori/enel.html", procedura: "gestori/enel-procedimenti.html" },
+  { nome: "EDISON", pagina: "gestori/edison.html", procedura: "gestori/edison-procedimenti.html" },
+  { nome: "ENEL CORPORATE", pagina: "gestori/enel-corporate.html", procedura: "gestori/enel-corporate-procedimenti.html" },
+  { nome: "ENEL DIGITAL", pagina: "gestori/enel-digital.html", procedura: "gestori/enel-digital-procedimenti.html" },
+  { nome: "ENEL TABLET", pagina: "gestori/enel-tablet.html", procedura: "gestori/enel-tablet-procedimenti.html" },
   { nome: "ENGIE", pagina: "gestori/engie.html", procedura: "gestori/engie-procedimenti.html" },
+  { nome: "ESTRA", pagina: "gestori/estra.html", procedura: "gestori/estra-procedimenti.html" },
+  { nome: "FASTWEB ENERGIA", pagina: "gestori/fastweb-energia.html", procedura: "gestori/fastweb-energia-procedimenti.html" },
   { nome: "GDE", pagina: "gestori/gde.html", procedura: "gestori/gde-procedimenti.html" },
   { nome: "HERA", pagina: "gestori/hera.html", procedura: "gestori/hera-procedimenti.html" },
   { nome: "IREN", pagina: "gestori/iren.html", procedura: "gestori/iren-procedimenti.html" },
-  { nome: "MAGIX", pagina: "gestori/magix.html", procedura: "gestori/magix-procedimenti.html" },
+  { nome: "MAGIS", pagina: "gestori/magis.html", procedura: "gestori/magis-procedimenti.html" },
   { nome: "ONOVA", pagina: "gestori/onova.html", procedura: "gestori/onova-procedimenti.html" },
   { nome: "PLENITUDE", pagina: "gestori/plenitude.html", procedura: "gestori/plenitude-procedimenti.html" },
   { nome: "S4", pagina: "gestori/s4.html", procedura: "gestori/s4-procedimenti.html" },
@@ -28,6 +36,7 @@ window.TOP_HOUSE_GESTORI = [
   { nome: "STREAM", pagina: "gestori/stream.html", procedura: "gestori/stream-procedimenti.html" },
   { nome: "UNION", pagina: "gestori/union.html", procedura: "gestori/union-procedimenti.html" },
   { nome: "UNOENERGY", pagina: "gestori/unoenergy.html", procedura: "gestori/unoenergy-procedimenti.html" },
+  { nome: "UPENERGY", pagina: "gestori/upenergy.html", procedura: "gestori/upenergy-procedimenti.html" },
   { nome: "VIVIENERGIA", pagina: "gestori/vivienergia.html", procedura: "gestori/vivienergia-procedimenti.html" }
 ];
 
@@ -54,7 +63,7 @@ window.TOP_HOUSE_REGOLE = [
     verificato: true
   },
   {
-    gestore: "ENEL",
+    gestore: "ENEL TABLET",
     segmenti: ["residenziale", "business", "condominio"],
     commodity: ["luce", "gas", "dual"],
     operazioni: ["switch"],

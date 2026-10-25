@@ -13,11 +13,13 @@ VERSION = "20261024i"  # cambia per forzare i browser a scaricare CSS/JS nuovi
 
 # ----------------------------------------------------------------------------- struttura
 GESTORI = [  # slug, nome visualizzato
-    ("a2a", "A2A"), ("acea", "Acea"), ("alperia", "Alperia"), ("audax", "Audax"), ("cogeme", "Cogeme"),
-    ("duferco", "Duferco"), ("enel", "Enel"), ("engie", "Engie"), ("gde", "GDE"), ("hera", "Hera"),
-    ("iren", "Iren"), ("magix", "Magix"), ("onova", "Onova"), ("plenitude", "Plenitude"), ("s4", "S4"),
-    ("simecom", "Simecom"), ("sorgenia", "Sorgenia"), ("stream", "Stream"), ("union", "Union"),
-    ("unoenergy", "UnoEnergy"), ("vivienergia", "ViviEnergia"),
+    ("a2a", "A2A"), ("acea", "Acea"), ("agn-energia", "AGN Energia"), ("alperia", "Alperia"),
+    ("audax", "Audax"), ("axpo", "Axpo (Pulsee)"), ("chiurlo", "Chiurlo"), ("cogeme", "Cogeme"), ("duferco", "Duferco"),
+    ("edison", "Edison"), ("enel-corporate", "Enel Corporate"), ("enel-digital", "Enel Digital"), ("enel-tablet", "Enel Tablet"),
+    ("engie", "Engie"), ("estra", "Estra"), ("fastweb-energia", "Fastweb Energia"), ("gde", "GDE"), ("hera", "Hera"),
+    ("iren", "Iren"), ("magis", "Magis"), ("onova", "Onova"), ("plenitude", "Plenitude"),
+    ("s4", "S4"), ("simecom", "Simecom"), ("sorgenia", "Sorgenia"), ("stream", "Stream"), ("union", "Union"),
+    ("unoenergy", "UnoEnergy"), ("upenergy", "UpEnergy"), ("vivienergia", "ViviEnergia"),
 ]
 SOTTO_GESTORI = {"unoenergy", "vivienergia"}              # cartelle in documenti/gestori/<slug>
 CTE_CON_TRATTINO = {"onova", "s4", "simecom", "sorgenia", "stream", "union"}  # cte-business invece di cte/business
@@ -51,7 +53,8 @@ TELEFONIA_SEZIONI = [
 CATEGORIE_SEMPLICI = [  # una sola cartella, direttamente dalla home
     ("climatizzatore", "Climatizzatore", "fa-snowflake"), ("caldaia", "Caldaia", "fa-fire-burner"),
     ("depuratore", "Depuratore", "fa-droplet"), ("infissi", "Infissi", "fa-window-maximize"),
-    ("allarmi", "Allarmi", "fa-shield-halved"), ("moduli", "Moduli", "fa-file-lines"),
+    ("allarmi", "Allarmi", "fa-shield-halved"), ("assicurazioni", "Assicurazioni", "fa-umbrella"),
+    ("noleggio-auto", "Noleggio auto", "fa-car"), ("moduli", "Moduli", "fa-file-lines"),
 ]
 
 # ----------------------------------------------------------------------------- mattoni
