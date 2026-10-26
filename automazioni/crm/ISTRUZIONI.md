@@ -14,6 +14,7 @@ PromUp, CRM GreenWorld o CRM BWC va importato in automatico su Regia Control com
   Nessun venditore (contratto caricato dall'agenzia, es. tutti quelli GreenWorld) → fonte "PromUp (agenzia)" / "GreenWorld (agenzia)" / "BWC (agenzia)",
   opportunità in Vinto e in più un'opportunità aperta in **START** della pipeline **02 - Gestione Clienti** ("Cliente – Gestore (da assegnare)"):
   il venditore lo sceglie Lamine.
+  Su PromUp i contratti caricati come "Gabriele Straniero (Agenzia)" sono di Gabriele Straniero: assegnati a lui, fonte "passaparola".
 - Si importano solo i contratti inseriti dal **2026-10-26** in poi.
 - Niente doppioni: il nome dell'opportunità finisce con "(PromUp 258790)" / "(GreenWorld 278173)" / "(BWC …)".
   Se il cliente ha già un'opportunità creata a mano negli ultimi giorni nella stessa pipeline, non se ne crea un'altra.

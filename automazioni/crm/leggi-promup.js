@@ -26,7 +26,8 @@ async function leggiPromup(DAL, GIA = {}) {
       const ko = /\bKO\b|annullat|scartat|rifiutat|respint|non accettat/i.test(stato);
       if (id in GIA && (!ko || GIA[id] === 'lost')) continue; // già importato e niente da cambiare
       const autore = c(col('Autore'));
-      const venditore = /\(Agenzia\)/i.test(autore) ? null : autore.replace(/\s*\(.*$/, '').trim() || null;
+      // anche "Gabriele Straniero (Agenzia)" è un venditore: i contratti caricati da lui sono suoi (indicazione di Lamine)
+      const venditore = autore.replace(/\s*\(.*$/, '').trim() || null;
       const a = dom(await (await fetch(`/web/res-anagrafica-contratto-${v.id}-${id}.php`)).text());
       const val = n => { const e = a.querySelector(`[name="${n}"]`); if (!e) return ''; if (e.tagName === 'SELECT') return (e.options[e.selectedIndex] || {}).text || ''; return (e.value || '').trim(); };
       const tipoCol = c(col('Tipo'));
