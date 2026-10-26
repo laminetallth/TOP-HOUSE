@@ -1,6 +1,6 @@
 {
  "eko_sales": {
-  "controllato": "2026-10-25",
+  "controllato": "2026-10-26",
   "file": [
    [
     "/Banner Email.jpg",
@@ -315,6 +315,21 @@
     "Consumer/ENI/VADEMECUM/ENI PLENITUDE VADEMECUM 06.03 (1).pdf",
     594528
    ]
-  ]
+  ],
+  "nota": "26/10: CRM BWC chiedeva il login, non controllato."
+ },
+ "greenworld": {
+  "controllato": "2026-10-26",
+  "ultima_data_aggiunto_vista": "2026-10-26",
+  "file_totali_02_gas_e_luce": 1360,
+  "da_importare": [
+   "ENEL CORPORATE/OFFERTE/LUCE/ACMICRO/ENEL_BUSINESS_SUPER_LUCE-AC___CTE_(AG_BUS)_v20.pdf",
+   "ENEL CORPORATE/OFFERTE/LUCE/ACMICRO/ENEL_FLEX_BUSINESS_LUCE-AC___CTE_(AG_BUS)_v30.pdf"
+  ],
+  "nota": "File con 'Aggiunto il' >= ultima data: confrontare l'hash con il repo (il 26/10 GreenWorld ha ricaricato 36 CTE Enel Corporate/Engie identiche a quelle gia' presenti)."
+ },
+ "promup": {
+  "ultimo_post_visto": null,
+  "nota": "26/10: PromUp chiedeva il login, non controllato. Ultimo import CTE PromUp nel repo: 2026-10-25."
  }
 }
