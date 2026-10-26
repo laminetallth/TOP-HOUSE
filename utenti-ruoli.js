@@ -1,15 +1,16 @@
 // Ruoli autorizzati TOP HOUSE.
 // Non inserire password in questo file: le password sono gestite solo da Firebase Authentication.
 // Per aggiungere un venditore: "email@esempio.it": "venditore",
+// Admin solo Lamine Tall e Gabriele Straniero; tutti gli altri sono venditori (possono vedere e scaricare, non modificare).
 window.USER_ROLES = {
   "laminetall.th@gmail.com": "admin",
   "laminetall.th+admin@gmail.com": "admin",
   "gabrielestraniero.th+admin@gmail.com": "admin",
-  "info@solarity-energysolutions.com": "admin",
-  "isabelladattoli1@gmail.com": "admin",
-  "antonioattardi.th@gmail.com": "admin",
-  "francesco_cecchini@hotmail.com": "admin",
-  "sarahcavedoarmy@gmail.com": "admin",
+  "info@solarity-energysolutions.com": "venditore",
+  "isabelladattoli1@gmail.com": "venditore",
+  "antonioattardi.th@gmail.com": "venditore",
+  "francesco_cecchini@hotmail.com": "venditore",
+  "sarahcavedoarmy@gmail.com": "venditore",
   "hajarsadiq2004@gmail.com": "venditore",
   "anna_amati@libero.it": "venditore"
 };
