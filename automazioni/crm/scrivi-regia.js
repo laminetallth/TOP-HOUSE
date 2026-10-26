@@ -108,6 +108,11 @@ async function sincronizzaRegia(contratti, prova = false) {
     return utenti.find(u => { const n = norm(u.nome); return n.length >= 2 && n.every(t => v.some(x => x === t || (t.length > 4 && lev(x, t) <= 1))); }) || null;
   };
   const titolo = s => String(s || '').toLowerCase().replace(/\b\p{L}/gu, c => c.toUpperCase()).trim();
+  // nomi dei gestori come li scriviamo noi (le viste di PromUp li hanno attaccati: "FastwebEnergia", "A2Agent"…)
+  const NOMI_GESTORI = { fastwebenergia: 'Fastweb Energia', enelfibra: 'Enel Fibra', edisonfibra: 'Edison Fibra', upenergy: 'Up Energy',
+    a2agent: 'A2A', a2avascomplessi: 'A2A Vas Complessi', agsm: 'AGSM', windtre: 'WindTre', tim: 'TIM', axpo: 'Axpo',
+    vodafonebusiness: 'Vodafone Business', a2a: 'A2A', eni: 'Eni Plenitude', plenitude: 'Plenitude' };
+  const nomeGestore = g => NOMI_GESTORI[String(g || '').toLowerCase().replace(/[^a-z0-9]/g, '')] || titolo(g);
   const tel = s => { const d = String(s || '').replace(/[^\d+]/g, ''); if (!d) return ''; return d.startsWith('+') ? d : d.startsWith('00') ? '+' + d.slice(2) : '+39' + d.replace(/^39(?=3\d{8,9}$)/, ''); };
   const dataIso = s => { const m = String(s || '').match(/(\d{2})\/(\d{2})\/(\d{4})/); const iso = m ? `${m[3]}-${m[2]}-${m[1]}` : String(s || ''); return /^\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])$/.test(iso) ? iso : ''; };
   const opzioneFornitore = g => { const opts = fornitore.picklistOptions || []; const n = norm(g).join(' '); return opts.find(o => { const on = norm(o).join(' '); return on && (n.includes(on) || on.includes(n.split(' ')[0])); }) || ''; };
@@ -119,7 +124,7 @@ async function sincronizzaRegia(contratti, prova = false) {
     const cl = c.cliente || {};
     let nome = cl.ragsoc ? titolo(cl.ragsoc) : [titolo(cl.nome), titolo(cl.cognome)].filter(Boolean).join(' ');
     if (!nome) nome = titolo(cl.nomeCompleto);
-    const nomeOpp = `${nome} – ${titolo(c.gestore)} ${marca}`;
+    const nomeOpp = `${nome} – ${nomeGestore(c.gestore)} ${marca}`;
     try {
       const esistenti = (await call('GET', `/opportunities/search?location_id=${L}&q=${encodeURIComponent(`${partner} ${c.id}`)}&limit=20`)).opportunities || [];
       const opp = esistenti.find(o => (o.name || '').includes(marca) && o.pipelineId === pipe.id);
@@ -161,7 +166,7 @@ async function sincronizzaRegia(contratti, prova = false) {
         firstName: first || undefined, lastName: last || undefined, name: nome || undefined,
         email: cl.email || undefined, phone: tel(cl.tel) || undefined,
         address1: titolo(cl.indirizzo) || undefined, city: titolo(cl.citta) || undefined, state: (cl.prov || '').toUpperCase() || undefined,
-        postalCode: cl.cap || undefined, country: 'IT', companyName: `${REGIA.azienda[c.fonte] || partner} ${titolo(c.gestore)}`,
+        postalCode: cl.cap || undefined, country: 'IT', companyName: `${REGIA.azienda[c.fonte] || partner} ${nomeGestore(c.gestore)}`,
         dateOfBirth: dataIso(cl.nascita) || undefined, source: fonte, customFields,
       };
       if (prova) { report.push({ azione: (contatto ? 'userei il contatto esistente' : 'creerei il contatto') + (c.ko ? '' : ` + Gestione Clienti in "${(!utente && !c.venditore) ? REGIA.faseStart : (REGIA.fasiDurata[durataMesi(`${c.offerta || ''} ${c.tipo || ''}`)] || REGIA.faseStart + ' (durata non trovata)')}"`), opportunita: nomeOpp, fonte, venditore: utente ? utente.nome : null, ko: c.ko }); continue; }
@@ -187,10 +192,16 @@ async function sincronizzaRegia(contratti, prova = false) {
         const idFase = (pipeGest.stages.find(s => s.name.toLowerCase() === nomeFase.toLowerCase()) || {}).id || start;
         faseGest = nomeFase + (nomeFase === REGIA.faseStart && (utente || c.venditore) ? ' (durata non trovata)' : '');
         gestione = (await call('POST', '/opportunities/', {
-          locationId: L, pipelineId: pipeGest.id, name: `${nome} – ${titolo(c.gestore)} ${marca}${!utente && !c.venditore ? ' da assegnare' : ''}`,
+          locationId: L, pipelineId: pipeGest.id, name: `${nome} – ${nomeGestore(c.gestore)} ${marca}${!utente && !c.venditore ? ' da assegnare' : ''}`,
           contactId: contatto.id, monetaryValue: 0, source: fonte, pipelineStageId: idFase, status: 'open',
           ...(utente ? { assignedTo: utente.id } : {}),
         })).opportunity;
+        // un'automazione di Regia rinomina le nuove opportunità di "02 - Gestione Clienti" col solo nome del cliente:
+        // si rimette il nome completo dopo qualche secondo
+        if (gestione && gestione.id) {
+          await new Promise(r => setTimeout(r, 6000));
+          await call('PUT', `/opportunities/${gestione.id}`, { name: `${nome} – ${nomeGestore(c.gestore)} ${marca}${!utente && !c.venditore ? ' da assegnare' : ''}` });
+        }
       }
       report.push({ azione: (c.ko ? 'creata in Perso (già KO)' : 'creata in Vinto') + (gestione ? ` + Gestione Clienti in "${faseGest}"` : ''), opportunita: nomeOpp, fonte, venditore: utente ? utente.nome : null, id: nuova && nuova.id });
     } catch (e) {
