@@ -23,7 +23,23 @@ const REGIA = {
   // "02 - Gestione Clienti", dove Lamine sceglie poi a chi assegnarla
   pipelineGestione: '02 - Gestione Clienti',
   faseStart: 'START',
+  // in "02 - Gestione Clienti" il contratto va nella fase della sua durata (dalla CTE/offerta scelta dal venditore)
+  fasiDurata: { 6: 'CTR 6 mesi S4 cap', 12: 'CTR 12 mesi', 24: 'CTR 24 mesi', 36: 'CTR 3 anni', 60: 'CTR 5 anni' },
 };
+
+// Durata in mesi letta dal nome dell'offerta: "FIX 24 MESI", "Fixa Time 12", "36 mesi", "3 anni", "Cal Year 1_2_3"…
+function durataMesi(testo) {
+  const t = String(testo || '').toUpperCase().replace(/_/g, ' ');
+  let m = t.match(/(\d{1,2})\s*(?:MESI|MONTHS|M\b)/);
+  if (m) return +m[1];
+  m = t.match(/(\d)\s*ANN[IO]/);
+  if (m) return +m[1] * 12;
+  m = t.match(/CAL\s*YEAR\s*([\d ]+)/);
+  if (m) return m[1].trim().split(/\s+/).length * 12;
+  m = t.match(/\b(?:FIX|FIXA|FISSO|TIME|SICURO|SERENO|BLOCCATO)\D{0,12}(6|12|18|24|36|48|60)\b/);
+  if (m) return +m[1];
+  return null;
+}
 
 function installaHook() {
   window.__hdr = window.__hdr || {};
@@ -44,6 +60,8 @@ function tokenPronto() {
 // Elenco dei contratti già importati, letto dai nomi delle opportunità: {promup: {id: stato}, greenworld: {...}, bwc: {...}}
 async function elencoImportati() {
   if (!tokenPronto()) return JSON.stringify({ errore: 'TOKEN_REGIA' });
+  const pp = (await (await fetch(`https://backend.leadconnectorhq.com/opportunities/pipelines?locationId=${REGIA.location}`, { headers: window.__H })).json()).pipelines || [];
+  window.__pipe01 = (pp.find(p => p.name === REGIA.pipeline) || {}).id;
   const out = { promup: {}, greenworld: {}, bwc: {} };
   const inverso = Object.fromEntries(Object.entries(REGIA.partner).map(([k, v]) => [v, k]));
   for (let pagina = 1; pagina <= 50; pagina++) {
@@ -51,6 +69,7 @@ async function elencoImportati() {
     if (r.status === 401) return JSON.stringify({ errore: 'TOKEN_REGIA' });
     const j = await r.json();
     for (const o of j.opportunities || []) {
+      if (window.__pipe01 && o.pipelineId !== window.__pipe01) continue;
       const m = (o.name || '').match(/\((PromUp|GreenWorld|BWC) (\w+)\)\s*$/);
       if (m) out[inverso[m[1]]][m[2]] = o.status;
     }
@@ -103,10 +122,13 @@ async function sincronizzaRegia(contratti, prova = false) {
     const nomeOpp = `${nome} – ${titolo(c.gestore)} ${marca}`;
     try {
       const esistenti = (await call('GET', `/opportunities/search?location_id=${L}&q=${encodeURIComponent(`${partner} ${c.id}`)}&limit=20`)).opportunities || [];
-      const opp = esistenti.find(o => (o.name || '').includes(marca));
+      const opp = esistenti.find(o => (o.name || '').includes(marca) && o.pipelineId === pipe.id);
       if (opp) {
         if (c.ko && opp.status !== 'lost') {
-          if (!prova) await call('PUT', `/opportunities/${opp.id}`, { pipelineStageId: perso, status: 'lost' });
+          if (!prova) {
+            await call('PUT', `/opportunities/${opp.id}`, { pipelineStageId: perso, status: 'lost' });
+            for (const g of esistenti.filter(o => o.id !== opp.id && (o.name || '').includes(marca) && o.status !== 'lost')) await call('PUT', `/opportunities/${g.id}`, { status: 'lost' });
+          }
           report.push({ azione: 'spostata in Perso (KO)', opportunita: nomeOpp, stato: c.stato });
         }
         continue;
@@ -142,7 +164,7 @@ async function sincronizzaRegia(contratti, prova = false) {
         postalCode: cl.cap || undefined, country: 'IT', companyName: `${REGIA.azienda[c.fonte] || partner} ${titolo(c.gestore)}`,
         dateOfBirth: dataIso(cl.nascita) || undefined, source: fonte, customFields,
       };
-      if (prova) { report.push({ azione: (contatto ? 'userei il contatto esistente' : 'creerei il contatto') + (!utente && !c.venditore && !c.ko ? ' + START in Gestione Clienti' : ''), opportunita: nomeOpp, fonte, venditore: utente ? utente.nome : null, ko: c.ko }); continue; }
+      if (prova) { report.push({ azione: (contatto ? 'userei il contatto esistente' : 'creerei il contatto') + (c.ko ? '' : ` + Gestione Clienti in "${(!utente && !c.venditore) ? REGIA.faseStart : (REGIA.fasiDurata[durataMesi(`${c.offerta || ''} ${c.tipo || ''}`)] || REGIA.faseStart + ' (durata non trovata)')}"`), opportunita: nomeOpp, fonte, venditore: utente ? utente.nome : null, ko: c.ko }); continue; }
       if (contatto) {
         // non sovrascrivo i dati già presenti: completo solo quelli mancanti
         const agg = {};
@@ -157,14 +179,20 @@ async function sincronizzaRegia(contratti, prova = false) {
         locationId: L, pipelineId: pipe.id, name: nomeOpp, contactId: contatto.id, monetaryValue: 0, source: fonte,
         pipelineStageId: c.ko ? perso : vinto, status: c.ko ? 'lost' : 'won', ...(utente ? { assignedTo: utente.id } : {}),
       })).opportunity;
-      let gestione = null;
-      if (!utente && !c.venditore && !c.ko && pipeGest && start) {
+      // "02 - Gestione Clienti": venditore sconosciuto → START (lo assegna Lamine); venditore noto → fase della durata del contratto
+      let gestione = null, faseGest = null;
+      if (!c.ko && pipeGest) {
+        const mesi = durataMesi(`${c.offerta || ''} ${c.tipo || ''}`);
+        const nomeFase = (!utente && !c.venditore) ? REGIA.faseStart : (REGIA.fasiDurata[mesi] || REGIA.faseStart);
+        const idFase = (pipeGest.stages.find(s => s.name.toLowerCase() === nomeFase.toLowerCase()) || {}).id || start;
+        faseGest = nomeFase + (nomeFase === REGIA.faseStart && (utente || c.venditore) ? ' (durata non trovata)' : '');
         gestione = (await call('POST', '/opportunities/', {
-          locationId: L, pipelineId: pipeGest.id, name: `${nome} – ${titolo(c.gestore)} (da assegnare)`, contactId: contatto.id,
-          monetaryValue: 0, source: fonte, pipelineStageId: start, status: 'open',
+          locationId: L, pipelineId: pipeGest.id, name: `${nome} – ${titolo(c.gestore)} ${marca}${!utente && !c.venditore ? ' da assegnare' : ''}`,
+          contactId: contatto.id, monetaryValue: 0, source: fonte, pipelineStageId: idFase, status: 'open',
+          ...(utente ? { assignedTo: utente.id } : {}),
         })).opportunity;
       }
-      report.push({ azione: (c.ko ? 'creata in Perso (già KO)' : 'creata in Vinto') + (gestione ? ' + START in Gestione Clienti (venditore da scegliere)' : ''), opportunita: nomeOpp, fonte, venditore: utente ? utente.nome : null, id: nuova && nuova.id });
+      report.push({ azione: (c.ko ? 'creata in Perso (già KO)' : 'creata in Vinto') + (gestione ? ` + Gestione Clienti in "${faseGest}"` : ''), opportunita: nomeOpp, fonte, venditore: utente ? utente.nome : null, id: nuova && nuova.id });
     } catch (e) {
       if (String(e.message).includes('TOKEN_REGIA')) return JSON.stringify({ errore: 'TOKEN_REGIA', fatto: report });
       report.push({ azione: 'ERRORE', opportunita: nomeOpp, errore: e.message });

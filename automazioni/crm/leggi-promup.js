@@ -31,8 +31,11 @@ async function leggiPromup(DAL, GIA = {}) {
       const a = dom(await (await fetch(`/web/res-anagrafica-contratto-${v.id}-${id}.php`)).text());
       const val = n => { const e = a.querySelector(`[name="${n}"]`); if (!e) return ''; if (e.tagName === 'SELECT') return (e.options[e.selectedIndex] || {}).text || ''; return (e.value || '').trim(); };
       const tipoCol = c(col('Tipo'));
+      // nome dell'offerta scelta (serve anche a capire la durata: 12/24 mesi, 3 anni…)
+      const offerta = [...a.querySelectorAll('select')].filter(e => /pacchett|offert|listino|prodott/i.test(e.name || ''))
+        .map(e => ((e.options[e.selectedIndex] || {}).text || '').trim()).filter(t => t && !/^(-+|seleziona.*|nessun.*)$/i.test(t)).join(' + ');
       out.push({
-        fonte: 'promup', id, gestore: v.nome, vista: v.id, data, stato, ko,
+        fonte: 'promup', id, gestore: v.nome, vista: v.id, data, stato, ko, offerta,
         tipo: [c(col('Cntr')), tipoCol].filter(Boolean).join(' '), pod: val('pod'), pdr: val('pdr'),
         luce: !!val('pod') || /energia|luce/i.test(c(col('Cntr'))), gas: !!val('pdr') || /gas/i.test(c(col('Cntr'))),
         // select "payment": 1 = Carta di credito, 2 = RID, 3 = Bollettino postale
