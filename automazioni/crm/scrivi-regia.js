@@ -28,6 +28,13 @@ const REGIA = {
 };
 
 // Durata in mesi letta dal nome dell'offerta: "FIX 24 MESI", "Fixa Time 12", "36 mesi", "3 anni", "Cal Year 1_2_3"…
+// "CTR 6 mesi S4 cap" vale solo per le offerte S4 Energia (indicazione di Lamine): per gli altri gestori 6 mesi → START
+function faseDurata(c) {
+  const mesi = durataMesi(`${c.offerta || ''} ${c.tipo || ''}`);
+  if (mesi === 6 && !/\bS4\b/i.test(`${c.gestore || ''} ${c.offerta || ''}`)) return null;
+  return REGIA.fasiDurata[mesi] || null;
+}
+
 function durataMesi(testo) {
   const t = String(testo || '').toUpperCase().replace(/_/g, ' ');
   let m = t.match(/(\d{1,2})\s*(?:MESI|MONTHS|M\b)/);
@@ -169,7 +176,7 @@ async function sincronizzaRegia(contratti, prova = false) {
         postalCode: cl.cap || undefined, country: 'IT', companyName: `${REGIA.azienda[c.fonte] || partner} ${nomeGestore(c.gestore)}`,
         dateOfBirth: dataIso(cl.nascita) || undefined, source: fonte, customFields,
       };
-      if (prova) { report.push({ azione: (contatto ? 'userei il contatto esistente' : 'creerei il contatto') + (c.ko ? '' : ` + Gestione Clienti in "${(!utente && !c.venditore) ? REGIA.faseStart : (REGIA.fasiDurata[durataMesi(`${c.offerta || ''} ${c.tipo || ''}`)] || REGIA.faseStart + ' (durata non trovata)')}"`), opportunita: nomeOpp, fonte, venditore: utente ? utente.nome : null, ko: c.ko }); continue; }
+      if (prova) { report.push({ azione: (contatto ? 'userei il contatto esistente' : 'creerei il contatto') + (c.ko ? '' : ` + Gestione Clienti in "${(!utente && !c.venditore) ? REGIA.faseStart : (faseDurata(c) || REGIA.faseStart + ' (durata non trovata)')}"`), opportunita: nomeOpp, fonte, venditore: utente ? utente.nome : null, ko: c.ko }); continue; }
       if (contatto) {
         // non sovrascrivo i dati già presenti: completo solo quelli mancanti
         const agg = {};
@@ -187,8 +194,7 @@ async function sincronizzaRegia(contratti, prova = false) {
       // "02 - Gestione Clienti": venditore sconosciuto → START (lo assegna Lamine); venditore noto → fase della durata del contratto
       let gestione = null, faseGest = null;
       if (!c.ko && pipeGest) {
-        const mesi = durataMesi(`${c.offerta || ''} ${c.tipo || ''}`);
-        const nomeFase = (!utente && !c.venditore) ? REGIA.faseStart : (REGIA.fasiDurata[mesi] || REGIA.faseStart);
+        const nomeFase = (!utente && !c.venditore) ? REGIA.faseStart : (faseDurata(c) || REGIA.faseStart);
         const idFase = (pipeGest.stages.find(s => s.name.toLowerCase() === nomeFase.toLowerCase()) || {}).id || start;
         faseGest = nomeFase + (nomeFase === REGIA.faseStart && (utente || c.venditore) ? ' (durata non trovata)' : '');
         gestione = (await call('POST', '/opportunities/', {

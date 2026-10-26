@@ -12,7 +12,8 @@ window.USER_ROLES = {
   "francesco_cecchini@hotmail.com": "venditore",
   "sarahcavedoarmy@gmail.com": "venditore",
   "hajarsadiq2004@gmail.com": "venditore",
-  "anna_amati@libero.it": "venditore"
+  "anna_amati@libero.it": "venditore",
+  "massironi.massimiliano@gmail.com": "venditore"
 };
 
 (function () {
