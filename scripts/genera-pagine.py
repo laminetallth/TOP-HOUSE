@@ -86,7 +86,7 @@ def head(title, path, extra=""):
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#e8302a">
 <title>{e(title)} | TOP HOUSE</title>
-<link rel="icon" href="{b}logo-marchio.svg" type="image/svg+xml"><link rel="icon" href="{b}logo.png" type="image/png"><link rel="apple-touch-icon" href="{b}apple-touch-icon.png">
+<link rel="icon" href="{b}logo-marchio.svg" type="image/svg+xml"><link rel="icon" href="{b}logo.png" type="image/png"><link rel="apple-touch-icon" href="{b}apple-touch-icon.png"><link rel="manifest" href="{b}manifest.webmanifest"><meta name="application-name" content="TOP HOUSE"><meta name="apple-mobile-web-app-title" content="TOP HOUSE"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&family=Instrument+Sans:wght@400..700&display=swap">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
