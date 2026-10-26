@@ -3,8 +3,12 @@
 // contratto nuovo, oppure andato in KO mentre su Regia non è ancora persa.
 // Uso: (async (DAL, IDS) => { ...questo codice... })('2026-10-26', ['123'])
 async function leggiGreenworld(DAL, GIA = {}) {
-  const tok = sessionStorage.getItem('gw_crm_token');
-  if (!tok) return JSON.stringify({ errore: 'LOGIN_GREENWORLD' });
+  // l'accesso del CRM GreenWorld vale solo nella scheda del login (sessionStorage) e dura 8 ore:
+  // lo copio in localStorage così anche le schede aperte dai controlli automatici lo possono usare finché è valido
+  let tok = sessionStorage.getItem('gw_crm_token');
+  if (tok) localStorage.setItem('th_gw_crm_token', tok); else tok = localStorage.getItem('th_gw_crm_token');
+  const scade = (() => { try { return JSON.parse(atob(tok.split('.')[1].replace(/-/g, '+').replace(/_/g, '/'))).exp * 1000; } catch (e) { return 0; } })();
+  if (!tok || scade < Date.now() + 60000) return JSON.stringify({ errore: 'LOGIN_GREENWORLD' });
   const anno = new Date().getFullYear();
   const out = [];
   for (const y of [anno, anno - 1]) {

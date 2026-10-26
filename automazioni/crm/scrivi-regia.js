@@ -109,6 +109,13 @@ async function sincronizzaRegia(contratti, prova = false) {
         const d = await call('GET', `/contacts/search/duplicate?locationId=${L}&${q}`);
         if (d.contact) { contatto = d.contact; break; }
       }
+      // se qualcuno l'ha già inserita a mano (stesso cliente, stessa pipeline, creata da pochi giorni) non la duplico
+      if (contatto && !c.ko) {
+        const sue = (await call('GET', `/opportunities/search?location_id=${L}&contact_id=${contatto.id}&pipeline_id=${pipe.id}&limit=50`)).opportunities || [];
+        const limite = new Date(new Date(c.data).getTime() - 3 * 86400000).toISOString();
+        const doppia = sue.find(o => (o.createdAt || '') >= limite && !/\((PromUp|GreenWorld|BWC) \w+\)\s*$/.test(o.name || ''));
+        if (doppia) { report.push({ azione: 'già presente (inserita a mano), non duplicata', opportunita: doppia.name }); continue; }
+      }
       const utente = trovaUtente(c.venditore);
       const fonte = utente ? 'passaparola' : (c.venditore ? titolo(c.venditore) : REGIA.fonteSenzaVenditore[c.fonte] || partner);
       const tags = [c.luce ? 'bolletta luce' : '', c.gas ? 'bolletta gas' : '', c.rid ? 'rid' : '', c.business ? 'business' : ''].filter(Boolean);
