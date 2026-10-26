@@ -18,6 +18,7 @@ PromUp, CRM GreenWorld o CRM BWC va importato in automatico su Regia Control com
 - Ogni contratto (non KO) va anche nella pipeline **02 - Gestione Clienti**: venditore sconosciuto → **START**;
   venditore noto → fase della **durata** dell'offerta scelta (CTR 6 mesi S4 cap / 12 mesi / 24 mesi / 3 anni / 5 anni),
   letta dal nome dell'offerta; se la durata non si capisce → START. "CTR 6 mesi S4 cap" solo per le offerte S4.
+  I contratti di **telefonia** (fibra, mobile, TV) vanno sempre in START, con etichetta "telefonia": la fase la sceglie Lamine.
 - Valore (€) dell'opportunità: sempre 0. Se il contratto va in KO anche questa diventa persa.
 - Si importano solo i contratti inseriti dal **2026-10-26** in poi.
 - Niente doppioni: il nome dell'opportunità finisce con "(PromUp 258790)" / "(GreenWorld 278173)" / "(BWC …)".

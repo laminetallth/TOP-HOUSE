@@ -29,7 +29,14 @@ const REGIA = {
 
 // Durata in mesi letta dal nome dell'offerta: "FIX 24 MESI", "Fixa Time 12", "36 mesi", "3 anni", "Cal Year 1_2_3"…
 // "CTR 6 mesi S4 cap" vale solo per le offerte S4 Energia (indicazione di Lamine): per gli altri gestori 6 mesi → START
+// contratti di telefonia (fibra, mobile, TV): in "02 - Gestione Clienti" vanno sempre in START (indicazione di Lamine)
+function eTelefonia(c) {
+  if (c.luce || c.gas) return false;
+  return /fibra|fastweb(?!\s*energia)|vodafone|\btim\b|windtre|wind\s*tre|infostrada|\bsky\b|iliad|telefon|mobile/i.test(`${c.gestore || ''} ${c.tipo || ''}`) || (!c.pod && !c.pdr);
+}
+
 function faseDurata(c) {
+  if (eTelefonia(c)) return null;
   const mesi = durataMesi(`${c.offerta || ''} ${c.tipo || ''}`);
   if (mesi === 6 && !/\bS4\b/i.test(`${c.gestore || ''} ${c.offerta || ''}`)) return null;
   return REGIA.fasiDurata[mesi] || null;
@@ -160,10 +167,10 @@ async function sincronizzaRegia(contratti, prova = false) {
       }
       const utente = trovaUtente(c.venditore);
       const fonte = utente ? 'passaparola' : (c.venditore ? titolo(c.venditore) : REGIA.fonteSenzaVenditore[c.fonte] || partner);
-      const tags = [c.luce ? 'bolletta luce' : '', c.gas ? 'bolletta gas' : '', c.rid ? 'rid' : '', c.business ? 'business' : ''].filter(Boolean);
+      const tags = [c.luce ? 'bolletta luce' : '', c.gas ? 'bolletta gas' : '', eTelefonia(c) ? 'telefonia' : '', c.rid ? 'rid' : '', c.business ? 'business' : ''].filter(Boolean);
       const customFields = [
         cf.id && cl.cf ? { id: cf.id, field_value: String(cl.cf).toUpperCase() } : null,
-        fornitore.id && opzioneFornitore(c.gestore) ? { id: fornitore.id, field_value: opzioneFornitore(c.gestore) } : null,
+        fornitore.id && !eTelefonia(c) && opzioneFornitore(c.gestore) ? { id: fornitore.id, field_value: opzioneFornitore(c.gestore) } : null,
         dataFirma.id && c.data ? { id: dataFirma.id, field_value: c.data } : null,
         nomeOfferta.id && c.offerta ? { id: nomeOfferta.id, field_value: c.offerta } : null,
       ].filter(Boolean);
