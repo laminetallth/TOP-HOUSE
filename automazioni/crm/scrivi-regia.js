@@ -6,6 +6,8 @@
 // - se il contratto va in KO l'opportunità passa in Perso (persa)
 // - dati del cliente compilati per bene nel contatto
 // - venditore trovato tra gli utenti di Regia: assegnato e fonte "passaparola"; altrimenti fonte = nome del venditore
+// - venditore sconosciuto (contratto caricato dall'agenzia): Vinto in "01 - Rete Vendita" e in più un'opportunità aperta
+//   in START di "02 - Gestione Clienti" (nome "Cliente – Gestore (da assegnare)"): l'assegnazione la fa Lamine
 // - l'opportunità si chiama "Cliente – Gestore (Partner ID)": la parte tra parentesi serve a non creare doppioni
 
 const REGIA = {
@@ -17,6 +19,10 @@ const REGIA = {
   partner: { promup: 'PromUp', greenworld: 'GreenWorld', bwc: 'BWC' },
   azienda: { promup: 'Prom-up', greenworld: 'Greenworld', bwc: 'BWC' },
   fonteSenzaVenditore: { promup: 'PromUp (agenzia)', greenworld: 'GreenWorld (agenzia)', bwc: 'BWC (agenzia)' },
+  // venditore sconosciuto: oltre a Vinto in "01 - Rete Vendita" si crea un'opportunità aperta in START di
+  // "02 - Gestione Clienti", dove Lamine sceglie poi a chi assegnarla
+  pipelineGestione: '02 - Gestione Clienti',
+  faseStart: 'START',
 };
 
 function installaHook() {
@@ -69,6 +75,8 @@ async function sincronizzaRegia(contratti, prova = false) {
   if (!pipe) return JSON.stringify({ errore: 'PIPELINE_NON_TROVATA' });
   const fase = n => (pipe.stages.find(s => s.name.toLowerCase() === n.toLowerCase()) || {}).id;
   const vinto = fase(REGIA.faseVinto), perso = fase(REGIA.fasePerso);
+  const pipeGest = pipes.find(p => p.name === REGIA.pipelineGestione);
+  const start = pipeGest && (pipeGest.stages.find(s => s.name.toLowerCase() === REGIA.faseStart.toLowerCase()) || {}).id;
   const utenti = ((await call('GET', `/users/?locationId=${L}`)).users || []).map(u => ({ id: u.id, nome: `${u.firstName || ''} ${u.lastName || ''}`.trim() }));
   const campi = ((await (await fetch(`https://backend.leadconnectorhq.com/locations/${L}/customFields/search?parentId=&skip=0&limit=10000&documentType=field&model=all&query=&includeStandards=true`, { headers: H })).json()).customFields || []);
   const campo = key => campi.find(c => c.fieldKey === key) || {};
@@ -134,7 +142,7 @@ async function sincronizzaRegia(contratti, prova = false) {
         postalCode: cl.cap || undefined, country: 'IT', companyName: `${REGIA.azienda[c.fonte] || partner} ${titolo(c.gestore)}`,
         dateOfBirth: dataIso(cl.nascita) || undefined, source: fonte, customFields,
       };
-      if (prova) { report.push({ azione: contatto ? 'userei il contatto esistente' : 'creerei il contatto', opportunita: nomeOpp, fonte, venditore: utente ? utente.nome : null, ko: c.ko }); continue; }
+      if (prova) { report.push({ azione: (contatto ? 'userei il contatto esistente' : 'creerei il contatto') + (!utente && !c.venditore && !c.ko ? ' + START in Gestione Clienti' : ''), opportunita: nomeOpp, fonte, venditore: utente ? utente.nome : null, ko: c.ko }); continue; }
       if (contatto) {
         // non sovrascrivo i dati già presenti: completo solo quelli mancanti
         const agg = {};
@@ -149,7 +157,14 @@ async function sincronizzaRegia(contratti, prova = false) {
         locationId: L, pipelineId: pipe.id, name: nomeOpp, contactId: contatto.id, monetaryValue: 0, source: fonte,
         pipelineStageId: c.ko ? perso : vinto, status: c.ko ? 'lost' : 'won', ...(utente ? { assignedTo: utente.id } : {}),
       })).opportunity;
-      report.push({ azione: c.ko ? 'creata in Perso (già KO)' : 'creata in Vinto', opportunita: nomeOpp, fonte, venditore: utente ? utente.nome : null, id: nuova && nuova.id });
+      let gestione = null;
+      if (!utente && !c.venditore && !c.ko && pipeGest && start) {
+        gestione = (await call('POST', '/opportunities/', {
+          locationId: L, pipelineId: pipeGest.id, name: `${nome} – ${titolo(c.gestore)} (da assegnare)`, contactId: contatto.id,
+          monetaryValue: 0, source: fonte, pipelineStageId: start, status: 'open',
+        })).opportunity;
+      }
+      report.push({ azione: (c.ko ? 'creata in Perso (già KO)' : 'creata in Vinto') + (gestione ? ' + START in Gestione Clienti (venditore da scegliere)' : ''), opportunita: nomeOpp, fonte, venditore: utente ? utente.nome : null, id: nuova && nuova.id });
     } catch (e) {
       if (String(e.message).includes('TOKEN_REGIA')) return JSON.stringify({ errore: 'TOKEN_REGIA', fatto: report });
       report.push({ azione: 'ERRORE', opportunita: nomeOpp, errore: e.message });
