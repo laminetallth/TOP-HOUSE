@@ -1,7 +1,7 @@
 # Contratti dei partner → Regia Control (CRM Top House)
 
 Richiesta di Lamine Tall (amministrazione Top House), 26/10/2026: ogni contratto caricato da oggi in poi su
-PromUp, CRM GreenWorld o CRM BWC va importato in automatico su Regia Control come opportunità.
+PromUp, CRM GreenWorld, CRM BWC o Union Gas e Luce (Partner.Next) va importato in automatico su Regia Control come opportunità.
 
 ## Regole
 - Pipeline **01 - Rete Vendita**, fase **Vinto**, stato vinta.
@@ -11,7 +11,7 @@ PromUp, CRM GreenWorld o CRM BWC va importato in automatico su Regia Control com
   etichette "bolletta luce", "bolletta gas", "rid", "business"; azienda = "<Partner> <Gestore>" (es. "Prom-up Enel").
 - Venditore trovato tra gli utenti di Regia → assegnato all'opportunità e **fonte "passaparola"**.
   Venditore non presente su Regia → **fonte = nome del venditore** (es. "Dardan Gashi").
-  Nessun venditore (contratto caricato dall'agenzia, es. tutti quelli GreenWorld) → fonte "PromUp (agenzia)" / "GreenWorld (agenzia)" / "BWC (agenzia)",
+  Nessun venditore (contratto caricato dall'agenzia, es. tutti quelli GreenWorld) → fonte "PromUp (agenzia)" / "GreenWorld (agenzia)" / "BWC (agenzia)" / "Union (agenzia)",
   opportunità in Vinto e in più un'opportunità aperta in **START** della pipeline **02 - Gestione Clienti** ("Cliente – Gestore (da assegnare)"):
   il venditore lo sceglie Lamine.
   Su PromUp i contratti caricati come "Gabriele Straniero (Agenzia)" sono di Gabriele Straniero: assegnati a lui, fonte "passaparola".
@@ -21,7 +21,7 @@ PromUp, CRM GreenWorld o CRM BWC va importato in automatico su Regia Control com
   I contratti di **telefonia** (fibra, mobile, TV) vanno sempre in START, con etichetta "telefonia": la fase la sceglie Lamine.
 - Valore (€) dell'opportunità: sempre 0. Se il contratto va in KO anche questa diventa persa.
 - Si importano solo i contratti inseriti dal **2026-10-26** in poi.
-- Niente doppioni: il nome dell'opportunità finisce con "(PromUp 258790)" / "(GreenWorld 278173)" / "(BWC …)".
+- Niente doppioni: il nome dell'opportunità finisce con "(PromUp 258790)" / "(GreenWorld 278173)" / "(BWC …)" / "(Union 1417242)".
   Se il cliente ha già un'opportunità creata a mano negli ultimi giorni nella stessa pipeline, non se ne crea un'altra.
 - Contatti già esistenti (stessa email o stesso telefono): si completano solo i dati mancanti e si aggiungono le etichette.
 
@@ -29,6 +29,8 @@ PromUp, CRM GreenWorld o CRM BWC va importato in automatico su Regia Control com
 - `leggi-promup.js` → `leggiPromup(DAL, GIA)` nella scheda https://promup.sharework.it/web/agenzia.php
 - `leggi-greenworld.js` → `leggiGreenworld(DAL, GIA)` in una scheda https://crmgreenworld.com/contratti
 - `leggi-bwc.js` → `leggiBwc(DAL, GIA)` nella scheda https://bwccrm.it/tracking.php
+- `leggi-union.js` → `leggiUnion(DAL, GIA)` nella scheda https://wall.uniongaseluce.it/xpcfe/#/xpcfe/apctr/contract-processed/894d74a7-66f1-b6e1-e279-9135d68ad62d/browse
+  (Union Gas e Luce, "Contratti → Lavorati"; aspetta che la pagina carichi, così l'accesso si rinnova; `LOGIN_UNION` = rifare il login)
 - `scrivi-regia.js` → `installaHook()`, `elencoImportati()`, `sincronizzaRegia(contratti)` nella scheda
   https://app.regia-control.it/v2/location/XzcvYtDjrqAP8tyvw3rp/opportunities
 
@@ -41,7 +43,7 @@ Per caricarli in una scheda (le pagine permettono eval):
 ## Procedura di ogni controllo
 1. **Regia**: apri la pipeline, carica `scrivi-regia.js`, esegui `installaHook()`, poi scrivi una lettera nel box
    "Cerca lead" (e cancellala): così la pagina manda una richiesta e il token di sessione viene catturato.
-   `await elencoImportati()` → `{promup: {id: stato}, greenworld: {...}, bwc: {...}}` (contratti già importati).
+   `await elencoImportati()` → `{promup: {id: stato}, greenworld: {...}, bwc: {...}, union: {...}}` (contratti già importati).
 2. **Partner**: in ogni scheda carica il lettore ed esegui `await leggiX('2026-10-26', GIA_di_quel_partner)`.
    Restituisce solo i contratti da lavorare (nuovi, oppure andati in KO e non ancora persi). Se il JSON è lungo,
    leggilo a pezzi (`.slice(0, 3000)`, `.slice(3000, 6000)`, …) e ricomponilo.
@@ -50,7 +52,7 @@ Per caricarli in una scheda (le pagine permettono eval):
    Se non c'è niente da fare: nessuna notifica.
 
 ## Accessi
-- PromUp, BWC, Regia: restano loggati nel Chrome del PC.
+- PromUp, BWC, Union, Regia: restano loggati nel Chrome del PC.
 - CRM GreenWorld: l'accesso vale solo nella scheda del login e dura 8 ore. `leggiGreenworld` lo copia in
   localStorage (chiave `th_gw_crm_token`) così le schede dei controlli automatici lo possono usare finché è valido.
   Se risponde `LOGIN_GREENWORLD`, Lamine deve rifare il login sul CRM GreenWorld e poi usare il segnalibro
