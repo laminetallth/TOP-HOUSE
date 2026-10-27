@@ -273,8 +273,14 @@ async function sincronizzaRegia(contratti, prova = false) {
         // un'automazione di Regia rinomina le nuove opportunità di "02 - Gestione Clienti" col solo nome del cliente:
         // si rimette il nome completo dopo qualche secondo
         if (gestione && gestione.id && !gestAccodata) {
-          await new Promise(r => setTimeout(r, 6000));
-          await call('PUT', `/opportunities/${gestione.id}`, { name: `${nome} – ${nomeGestore(c.gestore)} ${marca}${!utente && !c.venditore ? ' da assegnare' : ''}` });
+          // l'automazione a volte arriva dopo 6-10 secondi: rinomino, ricontrollo e se serve rinomino ancora
+          const giusto = `${nome} – ${nomeGestore(c.gestore)} ${marca}${!utente && !c.venditore ? ' da assegnare' : ''}`;
+          for (const attesa of [6000, 12000, 20000]) {
+            await new Promise(r => setTimeout(r, attesa));
+            const ora = ((await call('GET', `/opportunities/${gestione.id}`)).opportunity || {}).name;
+            if (ora === giusto && attesa > 6000) break;
+            if (ora !== giusto) await call('PUT', `/opportunities/${gestione.id}`, { name: giusto });
+          }
         }
       }
       report.push({ azione: (accodata ? 'aggiunta all\'opportunità già esistente del cliente' : c.ko ? 'creata in Perso (già KO)' : 'creata in Vinto') + (gestione ? ` + Gestione Clienti in "${faseGest}"` : ''), opportunita: nomeOpp, fonte, venditore: utente ? utente.nome : null, id: nuova && nuova.id });
