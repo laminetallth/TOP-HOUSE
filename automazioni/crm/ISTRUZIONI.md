@@ -24,6 +24,8 @@ PromUp, CRM GreenWorld, CRM BWC o Union Gas e Luce (Partner.Next) va importato i
 - Niente doppioni: il nome dell'opportunità finisce con "(PromUp 258790)" / "(GreenWorld 278173)" / "(BWC …)" / "(Union 1417242)".
   Se il cliente ha già un'opportunità creata a mano negli ultimi giorni nella stessa pipeline, non se ne crea un'altra.
 - Contatti già esistenti (stessa email o stesso telefono): si completano solo i dati mancanti e si aggiungono le etichette.
+- Regia non permette due opportunità dello stesso contatto nella stessa pipeline: se il cliente ne ha già una, il contratto
+  si accoda nel nome ("(GreenWorld 272434+272433)"). Se va in KO solo uno dei contratti accodati, l'opportunità resta vinta e si segnala.
 
 ## File
 - `leggi-promup.js` → `leggiPromup(DAL, GIA)` nella scheda https://promup.sharework.it/web/agenzia.php

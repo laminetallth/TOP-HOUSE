@@ -84,8 +84,8 @@ async function elencoImportati() {
     const j = await r.json();
     for (const o of j.opportunities || []) {
       if (window.__pipe01 && o.pipelineId !== window.__pipe01) continue;
-      const m = (o.name || '').match(/\((PromUp|GreenWorld|BWC|Union) (\w+)\)\s*$/);
-      if (m) out[inverso[m[1]]][m[2]] = o.status;
+      for (const m of (o.name || '').matchAll(/\((PromUp|GreenWorld|BWC|Union) ([\w+]+)\)/g))
+        for (const id of m[2].split('+')) out[inverso[m[1]]][id] = o.status;
     }
     if (!(j.opportunities || []).length || (j.meta && !j.meta.nextPage)) break;
   }
@@ -131,6 +131,24 @@ async function sincronizzaRegia(contratti, prova = false) {
   const dataIso = s => { const m = String(s || '').match(/(\d{2})\/(\d{2})\/(\d{4})/); const iso = m ? `${m[3]}-${m[2]}-${m[1]}` : String(s || ''); return /^\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])$/.test(iso) ? iso : ''; };
   const opzioneFornitore = g => { const opts = fornitore.picklistOptions || []; const n = norm(g).join(' '); return opts.find(o => { const on = norm(o).join(' '); return on && (n.includes(on) || on.includes(n.split(' ')[0])); }) || ''; };
 
+  // Regia non permette due opportunità dello stesso contatto nella stessa pipeline: un cliente con più contratti
+  // (luce + gas, più POD…) ha UNA opportunità, e gli id dei contratti si accodano nel nome: "(GreenWorld 272434+272433)"
+  const idsDi = (nomeO, partner) => [...String(nomeO || '').matchAll(/\((PromUp|GreenWorld|BWC|Union) ([\w+]+)\)/g)]
+    .filter(m => m[1] === partner).flatMap(m => m[2].split('+'));
+  const conMarca = (nomeO, partner, id) => {
+    const re = new RegExp(`\\(${partner} ([\\w+]+)\\)`);
+    if (re.test(nomeO)) return idsDi(nomeO, partner).includes(id) ? nomeO : nomeO.replace(re, (t, ids) => `(${partner} ${ids}+${id})`);
+    return `${nomeO} (${partner} ${id})`;
+  };
+  const accoda = async (pipelineId, contattoId, partner, id, stato) => {
+    const sue = (await call('GET', `/opportunities/search?location_id=${L}&contact_id=${contattoId}&pipeline_id=${pipelineId}&limit=50`)).opportunities || [];
+    const o = sue.find(x => x.status !== 'lost') || sue[0];
+    if (!o) return null;
+    await call('PUT', `/opportunities/${o.id}`, { name: conMarca(o.name || '', partner, id), ...(o.status === 'lost' || o.status === 'abandoned' ? stato : {}) });
+    return o;
+  };
+  const duplicata = e => /duplicat/i.test(String(e && e.message));
+
   const report = [];
   for (const c of contratti) {
     const partner = REGIA.partner[c.fonte] || c.fonte;
@@ -140,15 +158,21 @@ async function sincronizzaRegia(contratti, prova = false) {
     if (!nome) nome = titolo(cl.nomeCompleto);
     const nomeOpp = `${nome} – ${nomeGestore(c.gestore)} ${marca}`;
     try {
-      const esistenti = (await call('GET', `/opportunities/search?location_id=${L}&q=${encodeURIComponent(`${partner} ${c.id}`)}&limit=20`)).opportunities || [];
-      const opp = esistenti.find(o => (o.name || '').includes(marca) && o.pipelineId === pipe.id);
+      const esistenti = ((await call('GET', `/opportunities/search?location_id=${L}&q=${encodeURIComponent(c.id)}&limit=50`)).opportunities || [])
+        .filter(o => idsDi(o.name, partner).includes(String(c.id)));
+      const opp = esistenti.find(o => o.pipelineId === pipe.id);
       if (opp) {
         if (c.ko && opp.status !== 'lost') {
-          if (!prova) {
-            await call('PUT', `/opportunities/${opp.id}`, { pipelineStageId: perso, status: 'lost' });
-            for (const g of esistenti.filter(o => o.id !== opp.id && (o.name || '').includes(marca) && o.status !== 'lost')) await call('PUT', `/opportunities/${g.id}`, { status: 'lost' });
+          if (idsDi(opp.name, partner).length > 1) {
+            // opportunità con più contratti: ne è andato in KO solo uno, la lascio vinta e lo segnalo
+            report.push({ azione: 'KO di un solo contratto su più: opportunità lasciata vinta, controlla', opportunita: opp.name, contratto: c.id, stato: c.stato });
+          } else {
+            if (!prova) {
+              await call('PUT', `/opportunities/${opp.id}`, { pipelineStageId: perso, status: 'lost' });
+              for (const g of esistenti.filter(o => o.id !== opp.id && o.status !== 'lost')) await call('PUT', `/opportunities/${g.id}`, { status: 'lost' });
+            }
+            report.push({ azione: 'spostata in Perso (KO)', opportunita: opp.name, stato: c.stato });
           }
-          report.push({ azione: 'spostata in Perso (KO)', opportunita: nomeOpp, stato: c.stato });
         }
         continue;
       }
@@ -162,7 +186,7 @@ async function sincronizzaRegia(contratti, prova = false) {
       if (contatto && !c.ko) {
         const sue = (await call('GET', `/opportunities/search?location_id=${L}&contact_id=${contatto.id}&pipeline_id=${pipe.id}&limit=50`)).opportunities || [];
         const limite = new Date(new Date(c.data).getTime() - 3 * 86400000).toISOString();
-        const doppia = sue.find(o => (o.createdAt || '') >= limite && !/\((PromUp|GreenWorld|BWC) \w+\)\s*$/.test(o.name || ''));
+        const doppia = sue.find(o => (o.createdAt || '') >= limite && !/\((PromUp|GreenWorld|BWC|Union) [\w+]+\)/.test(o.name || ''));
         if (doppia) { report.push({ azione: 'già presente (inserita a mano), non duplicata', opportunita: doppia.name }); continue; }
       }
       const utente = trovaUtente(c.venditore);
@@ -194,29 +218,46 @@ async function sincronizzaRegia(contratti, prova = false) {
       } else {
         contatto = (await call('POST', '/contacts/', { locationId: L, ...dati, tags })).contact;
       }
-      const nuova = (await call('POST', '/opportunities/', {
-        locationId: L, pipelineId: pipe.id, name: nomeOpp, contactId: contatto.id, monetaryValue: 0, source: fonte,
-        pipelineStageId: c.ko ? perso : vinto, status: c.ko ? 'lost' : 'won', ...(utente ? { assignedTo: utente.id } : {}),
-      })).opportunity;
+      let nuova = null, accodata = false;
+      try {
+        nuova = (await call('POST', '/opportunities/', {
+          locationId: L, pipelineId: pipe.id, name: nomeOpp, contactId: contatto.id, monetaryValue: 0, source: fonte,
+          pipelineStageId: c.ko ? perso : vinto, status: c.ko ? 'lost' : 'won', ...(utente ? { assignedTo: utente.id } : {}),
+        })).opportunity;
+      } catch (e) {
+        if (!duplicata(e)) throw e;
+        nuova = await accoda(pipe.id, contatto.id, partner, String(c.id), c.ko ? {} : { pipelineStageId: vinto, status: 'won' });
+        if (!nuova) throw e;
+        accodata = true;
+      }
       // "02 - Gestione Clienti": venditore sconosciuto → START (lo assegna Lamine); venditore noto → fase della durata del contratto
       let gestione = null, faseGest = null;
       if (!c.ko && pipeGest) {
         const nomeFase = (!utente && !c.venditore) ? REGIA.faseStart : (faseDurata(c) || REGIA.faseStart);
         const idFase = (pipeGest.stages.find(s => s.name.toLowerCase() === nomeFase.toLowerCase()) || {}).id || start;
         faseGest = nomeFase + (nomeFase === REGIA.faseStart && (utente || c.venditore) ? ' (durata non trovata)' : '');
-        gestione = (await call('POST', '/opportunities/', {
-          locationId: L, pipelineId: pipeGest.id, name: `${nome} – ${nomeGestore(c.gestore)} ${marca}${!utente && !c.venditore ? ' da assegnare' : ''}`,
-          contactId: contatto.id, monetaryValue: 0, source: fonte, pipelineStageId: idFase, status: 'open',
-          ...(utente ? { assignedTo: utente.id } : {}),
-        })).opportunity;
+        let gestAccodata = false;
+        try {
+          gestione = (await call('POST', '/opportunities/', {
+            locationId: L, pipelineId: pipeGest.id, name: `${nome} – ${nomeGestore(c.gestore)} ${marca}${!utente && !c.venditore ? ' da assegnare' : ''}`,
+            contactId: contatto.id, monetaryValue: 0, source: fonte, pipelineStageId: idFase, status: 'open',
+            ...(utente ? { assignedTo: utente.id } : {}),
+          })).opportunity;
+        } catch (e) {
+          if (!duplicata(e)) throw e;
+          // il cliente è già in Gestione Clienti: accodo il contratto e lascio la fase com'è (se era persa la riapro in START)
+          gestione = await accoda(pipeGest.id, contatto.id, partner, String(c.id), { pipelineStageId: start, status: 'open' });
+          gestAccodata = true;
+          faseGest = 'già presente, contratto aggiunto';
+        }
         // un'automazione di Regia rinomina le nuove opportunità di "02 - Gestione Clienti" col solo nome del cliente:
         // si rimette il nome completo dopo qualche secondo
-        if (gestione && gestione.id) {
+        if (gestione && gestione.id && !gestAccodata) {
           await new Promise(r => setTimeout(r, 6000));
           await call('PUT', `/opportunities/${gestione.id}`, { name: `${nome} – ${nomeGestore(c.gestore)} ${marca}${!utente && !c.venditore ? ' da assegnare' : ''}` });
         }
       }
-      report.push({ azione: (c.ko ? 'creata in Perso (già KO)' : 'creata in Vinto') + (gestione ? ` + Gestione Clienti in "${faseGest}"` : ''), opportunita: nomeOpp, fonte, venditore: utente ? utente.nome : null, id: nuova && nuova.id });
+      report.push({ azione: (accodata ? 'aggiunta all\'opportunità già esistente del cliente' : c.ko ? 'creata in Perso (già KO)' : 'creata in Vinto') + (gestione ? ` + Gestione Clienti in "${faseGest}"` : ''), opportunita: nomeOpp, fonte, venditore: utente ? utente.nome : null, id: nuova && nuova.id });
     } catch (e) {
       if (String(e.message).includes('TOKEN_REGIA')) return JSON.stringify({ errore: 'TOKEN_REGIA', fatto: report });
       report.push({ azione: 'ERRORE', opportunita: nomeOpp, errore: e.message });
