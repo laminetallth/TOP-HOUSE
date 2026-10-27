@@ -35,8 +35,13 @@ function eTelefonia(c) {
   return /fibra|fastweb(?!\s*energia)|vodafone|\btim\b|windtre|wind\s*tre|infostrada|\bsky\b|iliad|telefon|mobile/i.test(`${c.gestore || ''} ${c.tipo || ''}`) || (!c.pod && !c.pdr);
 }
 
+// offerte di cui conosciamo la durata anche se il nome non la dice (indicazione di Lamine)
+const DURATE_NOTE = [[/fix luce per te/i, 24]];
+
 function faseDurata(c) {
   if (eTelefonia(c)) return null;
+  const nota = DURATE_NOTE.find(([re]) => re.test(c.offerta || ''));
+  if (nota) return REGIA.fasiDurata[nota[1]] || null;
   const mesi = durataMesi(`${c.offerta || ''} ${c.tipo || ''}`);
   if (mesi === 6 && !/\bS4\b/i.test(`${c.gestore || ''} ${c.offerta || ''}`)) return null;
   return REGIA.fasiDurata[mesi] || null;
@@ -220,7 +225,7 @@ async function sincronizzaRegia(contratti, prova = false) {
         postalCode: cl.cap || undefined, country: 'IT', companyName: c.fonte === 'union' ? 'Union Gas e Luce' : `${REGIA.azienda[c.fonte] || partner} ${nomeGestore(c.gestore)}`,
         dateOfBirth: dataIso(cl.nascita) || undefined, source: fonte, customFields,
       };
-      if (prova) { report.push({ azione: (contatto ? 'userei il contatto esistente' : 'creerei il contatto') + (c.ko ? '' : ` + Gestione Clienti in "${(!utente && !c.venditore) ? REGIA.faseStart : (faseDurata(c) || REGIA.faseStart + ' (durata non trovata)')}"`), opportunita: nomeOpp, fonte, venditore: utente ? utente.nome : null, ko: c.ko }); continue; }
+      if (prova) { report.push({ azione: (contatto ? 'userei il contatto esistente' : 'creerei il contatto') + (c.ko ? '' : ` + Gestione Clienti in "${REGIA.faseStart}${faseDurata(c) ? ` (durata letta: ${faseDurata(c)})` : ''}"`), opportunita: nomeOpp, fonte, venditore: utente ? utente.nome : null, ko: c.ko }); continue; }
       if (contatto) {
         // non sovrascrivo i dati già presenti: completo solo quelli mancanti
         const agg = {};
@@ -246,9 +251,11 @@ async function sincronizzaRegia(contratti, prova = false) {
       // "02 - Gestione Clienti": venditore sconosciuto → START (lo assegna Lamine); venditore noto → fase della durata del contratto
       let gestione = null, faseGest = null;
       if (!c.ko && pipeGest) {
-        const nomeFase = (!utente && !c.venditore) ? REGIA.faseStart : (faseDurata(c) || REGIA.faseStart);
-        const idFase = (pipeGest.stages.find(s => s.name.toLowerCase() === nomeFase.toLowerCase()) || {}).id || start;
-        faseGest = nomeFase + (nomeFase === REGIA.faseStart && (utente || c.venditore) ? ' (durata non trovata)' : '');
+        // indicazione di Lamine (27/10): in Gestione Clienti i contratti nuovi vanno SEMPRE in START, così li controlla,
+        // assegna il venditore e li sposta lui nella fase della durata. La durata letta si scrive solo nel riepilogo.
+        const durata = (!utente && !c.venditore) ? null : faseDurata(c);
+        const idFase = start;
+        faseGest = REGIA.faseStart + (durata ? ` (durata letta: ${durata})` : '');
         let gestAccodata = false;
         try {
           gestione = (await call('POST', '/opportunities/', {
