@@ -177,10 +177,17 @@ async function sincronizzaRegia(contratti, prova = false) {
         continue;
       }
       // contatto: cerco un doppione per email, poi per telefono
-      let contatto = null;
-      for (const q of [cl.email ? `email=${encodeURIComponent(cl.email)}` : '', tel(cl.tel) ? `number=${encodeURIComponent(tel(cl.tel))}` : ''].filter(Boolean)) {
+      // il contatto trovato deve avere almeno una parola del nome in comune col cliente: a volte sul portale c'è
+      // l'email o il telefono del venditore o di un parente (es. Alberto Sangregorio con i recapiti di Gabriele)
+      let contatto = null, emailAltrui = false, telAltrui = false;
+      const paroleCliente = norm([cl.nome, cl.cognome, cl.ragsoc, cl.nomeCompleto].join(' ')).filter(t => t.length > 2);
+      for (const [k, q] of [['email', cl.email ? `email=${encodeURIComponent(cl.email)}` : ''], ['tel', tel(cl.tel) ? `number=${encodeURIComponent(tel(cl.tel))}` : '']]) {
+        if (!q) continue;
         const d = await call('GET', `/contacts/search/duplicate?locationId=${L}&${q}`);
-        if (d.contact) { contatto = d.contact; break; }
+        if (!d.contact) continue;
+        const parole = norm([d.contact.firstName, d.contact.lastName, d.contact.contactName, d.contact.companyName].join(' '));
+        if (paroleCliente.some(t => parole.includes(t))) { contatto = d.contact; break; }
+        if (k === 'email') emailAltrui = true; else telAltrui = true;
       }
       // se qualcuno l'ha già inserita a mano (stesso cliente, stessa pipeline, creata da pochi giorni) non la duplico
       if (contatto && !c.ko) {
@@ -202,7 +209,7 @@ async function sincronizzaRegia(contratti, prova = false) {
       if (!first && !last && cl.nomeCompleto && !cl.ragsoc) { const p = titolo(cl.nomeCompleto).split(' '); last = p.shift() || ''; first = p.join(' '); }
       const dati = {
         firstName: first || undefined, lastName: last || undefined, name: nome || undefined,
-        email: cl.email || undefined, phone: tel(cl.tel) || undefined,
+        email: (!emailAltrui && cl.email) || undefined, phone: (!telAltrui && tel(cl.tel)) || undefined,
         address1: titolo(cl.indirizzo) || undefined, city: titolo(cl.citta) || undefined, state: (cl.prov || '').toUpperCase() || undefined,
         postalCode: cl.cap || undefined, country: 'IT', companyName: c.fonte === 'union' ? 'Union Gas e Luce' : `${REGIA.azienda[c.fonte] || partner} ${nomeGestore(c.gestore)}`,
         dateOfBirth: dataIso(cl.nascita) || undefined, source: fonte, customFields,
