@@ -16,9 +16,9 @@ const REGIA = {
   pipeline: '01 - Rete Vendita',
   faseVinto: 'Vinto',
   fasePerso: 'Perso',
-  partner: { promup: 'PromUp', greenworld: 'GreenWorld', bwc: 'BWC' },
-  azienda: { promup: 'Prom-up', greenworld: 'Greenworld', bwc: 'BWC' },
-  fonteSenzaVenditore: { promup: 'PromUp (agenzia)', greenworld: 'GreenWorld (agenzia)', bwc: 'BWC (agenzia)' },
+  partner: { promup: 'PromUp', greenworld: 'GreenWorld', bwc: 'BWC', union: 'Union' },
+  azienda: { promup: 'Prom-up', greenworld: 'Greenworld', bwc: 'BWC', union: 'Union' },
+  fonteSenzaVenditore: { promup: 'PromUp (agenzia)', greenworld: 'GreenWorld (agenzia)', bwc: 'BWC (agenzia)', union: 'Union (agenzia)' },
   // venditore sconosciuto: oltre a Vinto in "01 - Rete Vendita" si crea un'opportunità aperta in START di
   // "02 - Gestione Clienti", dove Lamine sceglie poi a chi assegnarla
   pipelineGestione: '02 - Gestione Clienti',
@@ -76,7 +76,7 @@ async function elencoImportati() {
   if (!tokenPronto()) return JSON.stringify({ errore: 'TOKEN_REGIA' });
   const pp = (await (await fetch(`https://backend.leadconnectorhq.com/opportunities/pipelines?locationId=${REGIA.location}`, { headers: window.__H })).json()).pipelines || [];
   window.__pipe01 = (pp.find(p => p.name === REGIA.pipeline) || {}).id;
-  const out = { promup: {}, greenworld: {}, bwc: {} };
+  const out = { promup: {}, greenworld: {}, bwc: {}, union: {} };
   const inverso = Object.fromEntries(Object.entries(REGIA.partner).map(([k, v]) => [v, k]));
   for (let pagina = 1; pagina <= 50; pagina++) {
     const r = await fetch(`${REGIA.api}/opportunities/search?location_id=${REGIA.location}&limit=100&page=${pagina}`, { headers: window.__H });
@@ -84,7 +84,7 @@ async function elencoImportati() {
     const j = await r.json();
     for (const o of j.opportunities || []) {
       if (window.__pipe01 && o.pipelineId !== window.__pipe01) continue;
-      const m = (o.name || '').match(/\((PromUp|GreenWorld|BWC) (\w+)\)\s*$/);
+      const m = (o.name || '').match(/\((PromUp|GreenWorld|BWC|Union) (\w+)\)\s*$/);
       if (m) out[inverso[m[1]]][m[2]] = o.status;
     }
     if (!(j.opportunities || []).length || (j.meta && !j.meta.nextPage)) break;
@@ -125,7 +125,7 @@ async function sincronizzaRegia(contratti, prova = false) {
   // nomi dei gestori come li scriviamo noi (le viste di PromUp li hanno attaccati: "FastwebEnergia", "A2Agent"…)
   const NOMI_GESTORI = { fastwebenergia: 'Fastweb Energia', enelfibra: 'Enel Fibra', edisonfibra: 'Edison Fibra', upenergy: 'Up Energy',
     a2agent: 'A2A', a2avascomplessi: 'A2A Vas Complessi', agsm: 'AGSM', windtre: 'WindTre', tim: 'TIM', axpo: 'Axpo',
-    vodafonebusiness: 'Vodafone Business', a2a: 'A2A', eni: 'Eni Plenitude', plenitude: 'Plenitude' };
+    vodafonebusiness: 'Vodafone Business', uniongaseluce: 'Union Gas e Luce', a2a: 'A2A', eni: 'Eni Plenitude', plenitude: 'Plenitude' };
   const nomeGestore = g => NOMI_GESTORI[String(g || '').toLowerCase().replace(/[^a-z0-9]/g, '')] || titolo(g);
   const tel = s => { const d = String(s || '').replace(/[^\d+]/g, ''); if (!d) return ''; return d.startsWith('+') ? d : d.startsWith('00') ? '+' + d.slice(2) : '+39' + d.replace(/^39(?=3\d{8,9}$)/, ''); };
   const dataIso = s => { const m = String(s || '').match(/(\d{2})\/(\d{2})\/(\d{4})/); const iso = m ? `${m[3]}-${m[2]}-${m[1]}` : String(s || ''); return /^\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])$/.test(iso) ? iso : ''; };
@@ -180,7 +180,7 @@ async function sincronizzaRegia(contratti, prova = false) {
         firstName: first || undefined, lastName: last || undefined, name: nome || undefined,
         email: cl.email || undefined, phone: tel(cl.tel) || undefined,
         address1: titolo(cl.indirizzo) || undefined, city: titolo(cl.citta) || undefined, state: (cl.prov || '').toUpperCase() || undefined,
-        postalCode: cl.cap || undefined, country: 'IT', companyName: `${REGIA.azienda[c.fonte] || partner} ${nomeGestore(c.gestore)}`,
+        postalCode: cl.cap || undefined, country: 'IT', companyName: c.fonte === 'union' ? 'Union Gas e Luce' : `${REGIA.azienda[c.fonte] || partner} ${nomeGestore(c.gestore)}`,
         dateOfBirth: dataIso(cl.nascita) || undefined, source: fonte, customFields,
       };
       if (prova) { report.push({ azione: (contatto ? 'userei il contatto esistente' : 'creerei il contatto') + (c.ko ? '' : ` + Gestione Clienti in "${(!utente && !c.venditore) ? REGIA.faseStart : (faseDurata(c) || REGIA.faseStart + ' (durata non trovata)')}"`), opportunita: nomeOpp, fonte, venditore: utente ? utente.nome : null, ko: c.ko }); continue; }
