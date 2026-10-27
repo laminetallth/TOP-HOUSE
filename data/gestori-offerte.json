@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-26",
+ "aggiornato": "2026-10-27",
  "gestori": {
   "a2a": {
    "offerte": {
@@ -29,10 +29,10 @@
     "business-luce": 9,
     "condominio-gas": 2,
     "condominio-luce": 4,
-    "residenziale-gas": 9,
-    "residenziale-luce": 12
+    "residenziale-gas": 8,
+    "residenziale-luce": 7
    },
-   "prossima_scadenza": "2026-10-26",
+   "prossima_scadenza": "2026-11-10",
    "partner": [
     "GreenWorld"
    ]
@@ -120,9 +120,9 @@
   "enel-corporate": {
    "offerte": {
     "business-gas": 8,
-    "business-luce": 46
+    "business-luce": 30
    },
-   "prossima_scadenza": "2026-10-26",
+   "prossima_scadenza": "2026-11-23",
    "partner": [
     "GreenWorld",
     "PromUp"
@@ -310,10 +310,10 @@
     "business-gas": 9,
     "business-luce": 6,
     "condominio-luce": 4,
-    "residenziale-gas": 8,
+    "residenziale-gas": 6,
     "residenziale-luce": 9
    },
-   "prossima_scadenza": "2026-10-26",
+   "prossima_scadenza": "2026-10-27",
    "partner": [
     "GreenWorld"
    ]
