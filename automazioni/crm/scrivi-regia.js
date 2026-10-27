@@ -189,6 +189,12 @@ async function sincronizzaRegia(contratti, prova = false) {
         if (paroleCliente.some(t => parole.includes(t))) { contatto = d.contact; break; }
         if (k === 'email') emailAltrui = true; else telAltrui = true;
       }
+      // senza email/telefono utilizzabili: cerco per nome esatto (stesso cliente con più contratti nello stesso giro)
+      if (!contatto && nome && (emailAltrui || !cl.email) && (telAltrui || !tel(cl.tel))) {
+        const r = (await call('GET', `/contacts/?locationId=${L}&query=${encodeURIComponent(nome)}&limit=20`)).contacts || [];
+        const chiave = norm(nome).sort().join(' ');
+        contatto = r.find(x => norm([x.firstName, x.lastName].join(' ')).sort().join(' ') === chiave || norm(x.companyName || '').sort().join(' ') === chiave) || null;
+      }
       // se qualcuno l'ha già inserita a mano (stesso cliente, stessa pipeline, creata da pochi giorni) non la duplico
       if (contatto && !c.ko) {
         const sue = (await call('GET', `/opportunities/search?location_id=${L}&contact_id=${contatto.id}&pipeline_id=${pipe.id}&limit=50`)).opportunities || [];
