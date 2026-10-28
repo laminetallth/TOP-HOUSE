@@ -42,6 +42,7 @@ function allowedFor(profile, rel) {
   if (!/\.html$/i.test(rel) && !rel.endsWith('/')) return true; // file (pdf, immagini…)
   if (rel.endsWith('/')) rel += 'index.html';
   if (LIMITED_COMMON.includes(rel) || publicPages.includes(rel)) return true;
+  if (!rel.includes('/') && (profile.sezioni || []).some(s => rel === s + '.html' || rel.startsWith(s + '-'))) return true;
   const g = rel.match(/^gestori\/(.+)\.html$/i);
   if (g) return (profile.luceGas || []).some(s => g[1] === s || g[1].startsWith(s + '-'));
   const t = rel.match(/^telefonia-(.+)\.html$/i);
