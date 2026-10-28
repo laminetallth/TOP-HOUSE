@@ -1,344 +1,344 @@
 {
- "eko_sales": {
-  "controllato": "2026-10-27",
-  "file": [
-   [
-    "/Banner Email.jpg",
-    22588
-   ],
-   [
-    "/Documenti Contratto/Anagrafica Soggetti Coinvolti v10.25.pdf",
-    67175
-   ],
-   [
-    "/Documenti Contratto/Aut. Comproprietario v9.25.pdf",
-    41416
-   ],
-   [
-    "/Documenti Contratto/Aut. Condominio v9.25.pdf",
-    2477705
-   ],
-   [
-    "/Documenti Contratto/Aut. Proprietario v9.25.pdf",
-    1142172
-   ],
-   [
-    "/Documenti Contratto/Documenti Contratto in Prima Battuta/Modulo d'Ordine v9.25.pdf",
-    5222907
-   ],
-   [
-    "/Documenti Contratto/Mandato ITER SEMPLIFICATO ENEL con rappresentanza.pdf",
-    219655
-   ],
-   [
-    "/Documenti Contratto/Modulo Iva 10 v10.25.pdf",
-    47331
-   ],
-   [
-    "/Documenti Finanziamento/Aziende - Albaleasing/Albaleasing - Modulo + Informativa.pdf",
-    1510349
-   ],
-   [
-    "/Documenti Finanziamento/Privati - Findomestic/EKO - racc. dati findomesticV9.25.pdf",
-    265650
-   ],
-   [
-    "/Documenti Finanziamento/Privati - Findomestic/T.Agevolato/EIC 240 proroga 3 Tan 8,45% 202604.pdf",
-    118858
-   ],
-   [
-    "/Documenti Finanziamento/Privati - Findomestic/T.Agevolato/Vecchie/EIA 316.pdf",
-    148692
-   ],
-   [
-    "/Documenti Finanziamento/Privati - Findomestic/T.Zero/FINDO GRATUITO NEW.pdf",
-    82405
-   ],
-   [
-    "/Documenti Finanziamento/Privati - Findomestic/T.Zero/Lettura veloce tabella finanziamento Findomestic.pdf",
-    41390
-   ],
-   [
-    "/Documenti Finanziamento/Privati - Findomestic/T.Zero/Vecchio/EKO - Find. Tasso QUASI Zero.pdf",
-    1205165
-   ],
-   [
-    "/Formazione EKO/EKOSrl_Formazione_Venditore.pdf",
-    3964753
-   ],
-   [
-    "/Formazione EKO/EKO_Percorso_Rete_Vendita_Day1.pdf",
-    5571915
-   ],
-   [
-    "/Formazione EKO/EKO_Percorso_Rete_Vendita_Settimana2.pdf",
-    8677673
-   ],
-   [
-    "/Formazione EKO/EKO_Percorso_Rete_Vendita_Settimana3.pdf",
-    7996611
-   ],
-   [
-    "/Formazione EKO/Formazione Base/Formazione Base + CRM - EKO Srl ",
-    21865261
-   ],
-   [
-    "/Formazione EKO/Formazione Base/formazione base EKO.mp4",
-    578496814
-   ],
-   [
-    "/Listino EKO 5.26 Collaboratori e Agenti - comp.pdf",
-    1350110
-   ],
-   [
-    "/Modulo B2B Aziende/Modulo_Richiesta_FTV_Business_EKO_compilabile.pdf",
-    2163235
-   ],
-   [
-    "/Piani di Manutenzione EKO.pdf",
-    2815801
-   ],
-   [
-    "/Presentazione BASE/EKO Srl - Presentazione BASE",
-    18408584
-   ],
-   [
-    "/Procedura Allegati CRM v9.25.pdf",
-    5471048
-   ],
-   [
-    "/REONIC - Preventivi (Tutorial)/Tutorial Industriale.mp4",
-    275593903
-   ],
-   [
-    "/REONIC - Preventivi (Tutorial)/Tutorial Preventivo prezzo personalizzato.mov",
-    73452699
-   ],
-   [
-    "/REONIC - Preventivi (Tutorial)/Tutorial Residenziale.mp4",
-    374583768
-   ],
-   [
-    "/Riunioni/Riunione 12.11.25 (aziende).pdf",
-    12668704
-   ],
-   [
-    "/Riunioni/riunione 08.01.pdf",
-    31951533
-   ],
-   [
-    "/Riunioni/riunione 08:05:26.pdf",
-    46086950
-   ],
-   [
-    "/Riunioni/riunione 11:12.pdf",
-    12726038
-   ],
-   [
-    "/Riunioni/riunione 19.02.26.pdf",
-    14900507
-   ],
-   [
-    "/Riunioni/riunione 20.12.pdf",
-    12670236
-   ],
-   [
-    "/Schede Tecniche/EFFYtech - KLIMA/COMFORT/EKO Listino Klima COMFORT (Palmarola)",
-    460195
-   ],
-   [
-    "/Schede Tecniche/EFFYtech - KLIMA/COMFORT/EKO Listino Klima COMFORT (Palmarola).pdf",
-    4026153
-   ],
-   [
-    "/Schede Tecniche/EFFYtech - KLIMA/EKO CO Split modulo compilabile",
-    6104
-   ],
-   [
-    "/Schede Tecniche/EFFYtech - KLIMA/EKO CO Split modulo compilabile",
-    6104
-   ],
-   [
-    "/Schede Tecniche/EFFYtech - KLIMA/EKO CO Split modulo compilabile.pdf",
-    608783
-   ],
-   [
-    "/Schede Tecniche/EFFYtech - KLIMA/Features Extra.pdf",
-    4140425
-   ],
-   [
-    "/Schede Tecniche/EFFYtech - KLIMA/PREMIUM/EKO Listino Klima (Ischia).pdf",
-    2938433
-   ],
-   [
-    "/Schede Tecniche/EFFYtech - KLIMA/SMART/EKO Listino Klima SMART (Ventotene).pdf",
-    2421006
-   ],
-   [
-    "/Schede Tecniche/EFFYtech - PDC/EFFYPDC Therm Electric.pdf",
-    4393470
-   ],
-   [
-    "/Schede Tecniche/EFFYtech - PDC/EFFYPDC Therm Hybrid.pdf",
-    4140848
-   ],
-   [
-    "/Schede Tecniche/EFFYtech - Thermino/THERMINO V2_compressed.pdf",
-    406601
-   ],
-   [
-    "/Schede Tecniche/EFFYtech Balcone/EFFYtech - KIT Balcone.pdf",
-    392077
-   ],
-   [
-    "/Schede Tecniche/FOTOVOLTAICO/EFFYpro/Inverter+Batt Linea EKO.pdf",
-    1504498
-   ],
-   [
-    "/Schede Tecniche/FOTOVOLTAICO/EFFYpro/Pannelli EKO.pdf",
-    1372885
-   ],
-   [
-    "/Schede Tecniche/FOTOVOLTAICO/EFFYsmart/Archivio Prodotti/Deye Inverter.pdf",
-    277129
-   ],
-   [
-    "/Schede Tecniche/FOTOVOLTAICO/EFFYsmart/Archivio Prodotti/Midea.pdf",
-    8333555
-   ],
-   [
-    "/Schede Tecniche/FOTOVOLTAICO/EFFYsmart/combi 2.0 Italian.pdf",
-    639528
-   ],
-   [
-    "/Schede Tecniche/FOTOVOLTAICO/EFFYsmart/ja solar.pdf",
-    331331
-   ],
-   [
-    "/Schede Tecniche/Wallbox/Starcharge Artemis_datasheet_Basic.pdf",
-    229445
-   ],
-   [
-    "/Schede Tecniche/Wallbox/Starcharge Artemis_datasheet_Smart (1).pdf",
-    231692
-   ],
-   [
-    "/Ticket Referall_3.pdf",
-    782097
-   ],
-   [
-    "/listino v6.26-28.6.26.pdf",
-    3896161
-   ]
-  ]
- },
- "bwc_plenitude": {
-  "controllato": "2026-10-25",
-  "file": [
-   [
-    "Business/ENI/MODULISTICA/PDA/PDA BUS GAS.pdf",
-    2584761
-   ],
-   [
-    "Business/ENI/MODULISTICA/PDA/PDA BUS LUCE.pdf",
-    2438286
-   ],
-   [
-    "Business/ENI/OFFERTE/CTE VARIABILI/TREND_BUSINESS_BASE_GAS.pdf",
-    327447
-   ],
-   [
-    "Business/ENI/OFFERTE/CTE VARIABILI/TREND_BUSINESS_BASE_LUCE.pdf",
-    363105
-   ],
-   [
-    "Business/ENI/VADEMECUM/ENI COMPILAZIONE PDA.pdf",
-    379259
-   ],
-   [
-    "Business/ENI/VADEMECUM/ENI PLENITUDE VADEMECUM 06.03 (1).pdf",
-    594528
-   ],
-   [
-    "Consumer/ENI/OFFERTE/CTE FISSE/FIXA TIME 12 BASE.pdf",
-    531142
-   ],
-   [
-    "Consumer/ENI/OFFERTE/CTE FISSE/FIXA TIME 24 BASE.pdf",
-    530359
-   ],
-   [
-    "Consumer/ENI/OFFERTE/CTE FISSE/FIXA TIME 24 SMART.pdf",
-    533205
-   ],
-   [
-    "Consumer/ENI/OFFERTE/CTE FISSE/FLEXI PERTINENZE_BASE.pdf",
-    348345
-   ],
-   [
-    "Consumer/ENI/OFFERTE/CTE VARIABILI/SERVIZIO DI TUTELA DELLA VULNERABILITA.pdf",
-    356880
-   ],
-   [
-    "Consumer/ENI/OFFERTE/CTE VARIABILI/TREND CASA BASE.pdf",
-    553411
-   ],
-   [
-    "Consumer/ENI/OFFERTE/CTE VARIABILI/TREND CASA NO PENSIERI.pdf",
-    572032
-   ],
-   [
-    "Consumer/ENI/PDA/PDA LUCE E GAS RESIDENZIALE.pdf",
-    1081298
-   ],
-   [
-    "Consumer/ENI/POLIZZE ANCILLARI/2024 11_POLIZZE ANCILLARI 1.4 (1).pdf",
-    1789616
-   ],
-   [
-    "Consumer/ENI/POLIZZE ANCILLARI/polizze totali rev IG agg 15_09_2025 (1).pdf",
-    3790204
-   ],
-   [
-    "Consumer/ENI/PROMO/Promo Disney 07_9_2026 - 15_09_2026.pdf",
-    182323
-   ],
-   [
-    "Consumer/ENI/PROMO/Regolamento Disney_0709.pdf",
-    677308
-   ],
-   [
-    "Consumer/ENI/VADEMECUM/ENI COMPILAZIONE PDA.pdf",
-    379259
-   ],
-   [
-    "Consumer/ENI/VADEMECUM/ENI PLENITUDE VADEMECUM 06.03 (1).pdf",
-    594528
-   ]
-  ],
-  "nota": "26-27/10: CRM BWC chiedeva il login, non controllato."
- },
- "greenworld": {
-  "controllato": "2026-10-26",
-  "ultima_data_aggiunto_vista": "2026-10-26",
-  "file_totali_02_gas_e_luce": 1360,
-  "da_importare": [
-   "ENEL CORPORATE/OFFERTE/LUCE/ACMICRO/ENEL_BUSINESS_SUPER_LUCE-AC___CTE_(AG_BUS)_v20.pdf",
-   "ENEL CORPORATE/OFFERTE/LUCE/ACMICRO/ENEL_FLEX_BUSINESS_LUCE-AC___CTE_(AG_BUS)_v30.pdf"
-  ],
-  "nota": "File con 'Aggiunto il' >= ultima data: confrontare l'hash con il repo (il 26/10 GreenWorld ha ricaricato 36 CTE Enel Corporate/Engie identiche a quelle gia' presenti). 27/10: GreenWorld chiedeva il login, non controllato."
- },
- "promup": {
-  "ultimo_post_visto": null,
-  "ultimo_post_importato": "2026-10-23",
-  "da_importare": [
-   "2026-10-27 ENEL CORPORATE: Cte FIX in vigore fino al 09/11/2026 (58 pdf)",
-   "2026-10-27 HERACOMM: CARTELLA CTE FISSE LUCE E GAS (16 pdf)",
-   "2026-10-27 FASTWEB ENERGIA BIZ: News Fastweb Energia 26 Ottobre 2026 (6 pdf)",
-   "2026-10-27 FASTWEB ENERGIA RES: News Fastweb Energia 26 Ottobre 2026 (6 pdf)",
-   "2026-10-26 HERACOMM: PDA CASA/LAVORO EDITABILI 26_10 (4 pdf)",
-   "2026-10-26 ENEL DIGITAL: CAMBIO WAVE DEL 23/10/2026 (14 pdf)"
-  ],
-  "nota": "27/10: loggato. Scaricato TH_auto_2026-10-27.zip nella cartella Download del PC, ma l'accesso alla cartella Download non e' stato concesso: non importato."
- }
+  "eko_sales": {
+    "controllato": "2026-10-28",
+    "file": [
+      [
+        "/Banner Email.jpg",
+        22588
+      ],
+      [
+        "/Documenti Contratto/Anagrafica Soggetti Coinvolti v10.25.pdf",
+        67175
+      ],
+      [
+        "/Documenti Contratto/Aut. Comproprietario v9.25.pdf",
+        41416
+      ],
+      [
+        "/Documenti Contratto/Aut. Condominio v9.25.pdf",
+        2477705
+      ],
+      [
+        "/Documenti Contratto/Aut. Proprietario v9.25.pdf",
+        1142172
+      ],
+      [
+        "/Documenti Contratto/Documenti Contratto in Prima Battuta/Modulo d'Ordine v9.25.pdf",
+        5222907
+      ],
+      [
+        "/Documenti Contratto/Mandato ITER SEMPLIFICATO ENEL con rappresentanza.pdf",
+        219655
+      ],
+      [
+        "/Documenti Contratto/Modulo Iva 10 v10.25.pdf",
+        47331
+      ],
+      [
+        "/Documenti Finanziamento/Aziende - Albaleasing/Albaleasing - Modulo + Informativa.pdf",
+        1510349
+      ],
+      [
+        "/Documenti Finanziamento/Privati - Findomestic/EKO - racc. dati findomesticV9.25.pdf",
+        265650
+      ],
+      [
+        "/Documenti Finanziamento/Privati - Findomestic/T.Agevolato/EIC 240 proroga 3 Tan 8,45% 202604.pdf",
+        118858
+      ],
+      [
+        "/Documenti Finanziamento/Privati - Findomestic/T.Agevolato/Vecchie/EIA 316.pdf",
+        148692
+      ],
+      [
+        "/Documenti Finanziamento/Privati - Findomestic/T.Zero/FINDO GRATUITO NEW.pdf",
+        82405
+      ],
+      [
+        "/Documenti Finanziamento/Privati - Findomestic/T.Zero/Lettura veloce tabella finanziamento Findomestic.pdf",
+        41390
+      ],
+      [
+        "/Documenti Finanziamento/Privati - Findomestic/T.Zero/Vecchio/EKO - Find. Tasso QUASI Zero.pdf",
+        1205165
+      ],
+      [
+        "/Formazione EKO/EKOSrl_Formazione_Venditore.pdf",
+        3964753
+      ],
+      [
+        "/Formazione EKO/EKO_Percorso_Rete_Vendita_Day1.pdf",
+        5571915
+      ],
+      [
+        "/Formazione EKO/EKO_Percorso_Rete_Vendita_Settimana2.pdf",
+        8677673
+      ],
+      [
+        "/Formazione EKO/EKO_Percorso_Rete_Vendita_Settimana3.pdf",
+        7996611
+      ],
+      [
+        "/Formazione EKO/Formazione Base/Formazione Base + CRM - EKO Srl ",
+        21865261
+      ],
+      [
+        "/Formazione EKO/Formazione Base/formazione base EKO.mp4",
+        578496814
+      ],
+      [
+        "/Listino EKO 5.26 Collaboratori e Agenti - comp.pdf",
+        1350110
+      ],
+      [
+        "/Modulo B2B Aziende/Modulo_Richiesta_FTV_Business_EKO_compilabile.pdf",
+        2163235
+      ],
+      [
+        "/Piani di Manutenzione EKO.pdf",
+        2815801
+      ],
+      [
+        "/Presentazione BASE/EKO Srl - Presentazione BASE",
+        18408584
+      ],
+      [
+        "/Procedura Allegati CRM v9.25.pdf",
+        5471048
+      ],
+      [
+        "/REONIC - Preventivi (Tutorial)/Tutorial Industriale.mp4",
+        275593903
+      ],
+      [
+        "/REONIC - Preventivi (Tutorial)/Tutorial Preventivo prezzo personalizzato.mov",
+        73452699
+      ],
+      [
+        "/REONIC - Preventivi (Tutorial)/Tutorial Residenziale.mp4",
+        374583768
+      ],
+      [
+        "/Riunioni/Riunione 12.11.25 (aziende).pdf",
+        12668704
+      ],
+      [
+        "/Riunioni/riunione 08.01.pdf",
+        31951533
+      ],
+      [
+        "/Riunioni/riunione 08:05:26.pdf",
+        46086950
+      ],
+      [
+        "/Riunioni/riunione 11:12.pdf",
+        12726038
+      ],
+      [
+        "/Riunioni/riunione 19.02.26.pdf",
+        14900507
+      ],
+      [
+        "/Riunioni/riunione 20.12.pdf",
+        12670236
+      ],
+      [
+        "/Schede Tecniche/EFFYtech - KLIMA/COMFORT/EKO Listino Klima COMFORT (Palmarola)",
+        460195
+      ],
+      [
+        "/Schede Tecniche/EFFYtech - KLIMA/COMFORT/EKO Listino Klima COMFORT (Palmarola).pdf",
+        4026153
+      ],
+      [
+        "/Schede Tecniche/EFFYtech - KLIMA/EKO CO Split modulo compilabile",
+        6104
+      ],
+      [
+        "/Schede Tecniche/EFFYtech - KLIMA/EKO CO Split modulo compilabile",
+        6104
+      ],
+      [
+        "/Schede Tecniche/EFFYtech - KLIMA/EKO CO Split modulo compilabile.pdf",
+        608783
+      ],
+      [
+        "/Schede Tecniche/EFFYtech - KLIMA/Features Extra.pdf",
+        4140425
+      ],
+      [
+        "/Schede Tecniche/EFFYtech - KLIMA/PREMIUM/EKO Listino Klima (Ischia).pdf",
+        2938433
+      ],
+      [
+        "/Schede Tecniche/EFFYtech - KLIMA/SMART/EKO Listino Klima SMART (Ventotene).pdf",
+        2421006
+      ],
+      [
+        "/Schede Tecniche/EFFYtech - PDC/EFFYPDC Therm Electric.pdf",
+        4393470
+      ],
+      [
+        "/Schede Tecniche/EFFYtech - PDC/EFFYPDC Therm Hybrid.pdf",
+        4140848
+      ],
+      [
+        "/Schede Tecniche/EFFYtech - Thermino/THERMINO V2_compressed.pdf",
+        406601
+      ],
+      [
+        "/Schede Tecniche/EFFYtech Balcone/EFFYtech - KIT Balcone.pdf",
+        392077
+      ],
+      [
+        "/Schede Tecniche/FOTOVOLTAICO/EFFYpro/Inverter+Batt Linea EKO.pdf",
+        1504498
+      ],
+      [
+        "/Schede Tecniche/FOTOVOLTAICO/EFFYpro/Pannelli EKO.pdf",
+        1372885
+      ],
+      [
+        "/Schede Tecniche/FOTOVOLTAICO/EFFYsmart/Archivio Prodotti/Deye Inverter.pdf",
+        277129
+      ],
+      [
+        "/Schede Tecniche/FOTOVOLTAICO/EFFYsmart/Archivio Prodotti/Midea.pdf",
+        8333555
+      ],
+      [
+        "/Schede Tecniche/FOTOVOLTAICO/EFFYsmart/combi 2.0 Italian.pdf",
+        639528
+      ],
+      [
+        "/Schede Tecniche/FOTOVOLTAICO/EFFYsmart/ja solar.pdf",
+        331331
+      ],
+      [
+        "/Schede Tecniche/Wallbox/Starcharge Artemis_datasheet_Basic.pdf",
+        229445
+      ],
+      [
+        "/Schede Tecniche/Wallbox/Starcharge Artemis_datasheet_Smart (1).pdf",
+        231692
+      ],
+      [
+        "/Ticket Referall_3.pdf",
+        782097
+      ],
+      [
+        "/listino v6.26-28.6.26.pdf",
+        3896161
+      ]
+    ]
+  },
+  "bwc_plenitude": {
+    "controllato": "2026-10-28",
+    "file": [
+      [
+        "Business/ENI/MODULISTICA/PDA/PDA BUS GAS.pdf",
+        2584761
+      ],
+      [
+        "Business/ENI/MODULISTICA/PDA/PDA BUS LUCE.pdf",
+        2438286
+      ],
+      [
+        "Business/ENI/OFFERTE/CTE VARIABILI/TREND_BUSINESS_BASE_GAS.pdf",
+        327447
+      ],
+      [
+        "Business/ENI/OFFERTE/CTE VARIABILI/TREND_BUSINESS_BASE_LUCE.pdf",
+        363105
+      ],
+      [
+        "Business/ENI/VADEMECUM/ENI COMPILAZIONE PDA.pdf",
+        379259
+      ],
+      [
+        "Business/ENI/VADEMECUM/ENI PLENITUDE VADEMECUM 06.03 (1).pdf",
+        594528
+      ],
+      [
+        "Consumer/ENI/OFFERTE/CTE FISSE/FIXA TIME 12 BASE.pdf",
+        531142
+      ],
+      [
+        "Consumer/ENI/OFFERTE/CTE FISSE/FIXA TIME 24 BASE.pdf",
+        530359
+      ],
+      [
+        "Consumer/ENI/OFFERTE/CTE FISSE/FIXA TIME 24 SMART.pdf",
+        533205
+      ],
+      [
+        "Consumer/ENI/OFFERTE/CTE FISSE/FLEXI PERTINENZE_BASE.pdf",
+        348345
+      ],
+      [
+        "Consumer/ENI/OFFERTE/CTE VARIABILI/SERVIZIO DI TUTELA DELLA VULNERABILITA.pdf",
+        356880
+      ],
+      [
+        "Consumer/ENI/OFFERTE/CTE VARIABILI/TREND CASA BASE.pdf",
+        553411
+      ],
+      [
+        "Consumer/ENI/OFFERTE/CTE VARIABILI/TREND CASA NO PENSIERI.pdf",
+        572032
+      ],
+      [
+        "Consumer/ENI/PDA/PDA LUCE E GAS RESIDENZIALE.pdf",
+        1081298
+      ],
+      [
+        "Consumer/ENI/POLIZZE ANCILLARI/2024 11_POLIZZE ANCILLARI 1.4 (1).pdf",
+        1789616
+      ],
+      [
+        "Consumer/ENI/POLIZZE ANCILLARI/polizze totali rev IG agg 15_09_2025 (1).pdf",
+        3790204
+      ],
+      [
+        "Consumer/ENI/PROMO/Promo Disney 07_9_2026 - 15_09_2026.pdf",
+        182323
+      ],
+      [
+        "Consumer/ENI/PROMO/Regolamento Disney_0709.pdf",
+        677308
+      ],
+      [
+        "Consumer/ENI/VADEMECUM/ENI COMPILAZIONE PDA.pdf",
+        379259
+      ],
+      [
+        "Consumer/ENI/VADEMECUM/ENI PLENITUDE VADEMECUM 06.03 (1).pdf",
+        594528
+      ]
+    ],
+    "nota": "28/10: controllato, 20 file invariati."
+  },
+  "greenworld": {
+    "controllato": "2026-10-26",
+    "ultima_data_aggiunto_vista": "2026-10-26",
+    "file_totali_02_gas_e_luce": 1360,
+    "da_importare": [
+      "ENEL CORPORATE/OFFERTE/LUCE/ACMICRO/ENEL_BUSINESS_SUPER_LUCE-AC___CTE_(AG_BUS)_v20.pdf",
+      "ENEL CORPORATE/OFFERTE/LUCE/ACMICRO/ENEL_FLEX_BUSINESS_LUCE-AC___CTE_(AG_BUS)_v30.pdf"
+    ],
+    "nota": "File con 'Aggiunto il' >= ultima data: confrontare l'hash con il repo (il 26/10 GreenWorld ha ricaricato 36 CTE Enel Corporate/Engie identiche a quelle gia' presenti). 27/10: GreenWorld chiedeva il login, non controllato. 28/10: GreenWorld chiedeva il login, non controllato."
+  },
+  "promup": {
+    "ultimo_post_visto": null,
+    "ultimo_post_importato": "2026-10-23",
+    "da_importare": [
+      "2026-10-27 ENEL CORPORATE: Cte FIX in vigore fino al 09/11/2026 (58 pdf)",
+      "2026-10-27 HERACOMM: CARTELLA CTE FISSE LUCE E GAS (16 pdf)",
+      "2026-10-27 FASTWEB ENERGIA BIZ: News Fastweb Energia 26 Ottobre 2026 (6 pdf)",
+      "2026-10-27 FASTWEB ENERGIA RES: News Fastweb Energia 26 Ottobre 2026 (6 pdf)",
+      "2026-10-26 HERACOMM: PDA CASA/LAVORO EDITABILI 26_10 (4 pdf)",
+      "2026-10-26 ENEL DIGITAL: CAMBIO WAVE DEL 23/10/2026 (14 pdf)"
+    ],
+    "nota": "27/10: loggato. Scaricato TH_auto_2026-10-27.zip nella cartella Download del PC, ma l'accesso alla cartella Download non e' stato concesso: non importato. 28/10: PromUp chiedeva il login, non controllato; cartella Download ancora non autorizzata."
+  }
 }
