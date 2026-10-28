@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-27",
+ "aggiornato": "2026-10-28",
  "gestori": {
   "a2a": {
    "offerte": {
@@ -224,10 +224,10 @@
    "offerte": {
     "business-gas": 3,
     "business-luce": 5,
-    "residenziale-gas": 4,
-    "residenziale-luce": 4
+    "residenziale-gas": 3,
+    "residenziale-luce": 3
    },
-   "prossima_scadenza": "2026-10-27",
+   "prossima_scadenza": "2026-10-31",
    "partner": [
     "GreenWorld"
    ]
@@ -310,10 +310,10 @@
     "business-gas": 9,
     "business-luce": 6,
     "condominio-luce": 4,
-    "residenziale-gas": 6,
-    "residenziale-luce": 9
+    "residenziale-gas": 3,
+    "residenziale-luce": 8
    },
-   "prossima_scadenza": "2026-10-27",
+   "prossima_scadenza": "2027-01-01",
    "partner": [
     "GreenWorld"
    ]
