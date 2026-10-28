@@ -23,6 +23,43 @@ const currentPage = window.location.pathname.split('/').pop() || 'index.html';
 
 function normalizeEmail(email) { return String(email || '').trim().toLowerCase(); }
 function roleFor(user) { return roles[normalizeEmail(user?.email)] || ''; }
+// Profilo di accesso limitato (es. "promup"): null = nessun limite.
+function profileFor(user) {
+  const name = (window.USER_ACCESS || {})[normalizeEmail(user?.email)];
+  return name ? ((window.ACCESS_PROFILES || {})[name] || { luceGas: [], telefonia: [] }) : null;
+}
+// Percorso relativo alla radice del sito, es. "gestori/hera-cte.html".
+function relPath(url) {
+  try {
+    const u = new URL(url, window.location.href);
+    if (u.origin !== siteRoot.origin || !u.pathname.startsWith(siteRoot.pathname)) return null;
+    return decodeURIComponent(u.pathname.slice(siteRoot.pathname.length)) || 'index.html';
+  } catch (error) { return null; }
+}
+const LIMITED_COMMON = ['index.html', 'luce-gas.html', 'telefonia.html', 'telefonia-guide-generali.html'];
+function allowedFor(profile, rel) {
+  if (rel === null) return true; // link esterni
+  if (!/\.html$/i.test(rel) && !rel.endsWith('/')) return true; // file (pdf, immagini…)
+  if (rel.endsWith('/')) rel += 'index.html';
+  if (LIMITED_COMMON.includes(rel) || publicPages.includes(rel)) return true;
+  const g = rel.match(/^gestori\/(.+)\.html$/i);
+  if (g) return (profile.luceGas || []).some(s => g[1] === s || g[1].startsWith(s + '-'));
+  const t = rel.match(/^telefonia-(.+)\.html$/i);
+  if (t) return (profile.telefonia || []).some(s => t[1] === s || t[1].startsWith(s + '-'));
+  return false;
+}
+// Nasconde i collegamenti (card, pulsanti) verso pagine non consentite.
+function applyLimits(profile) {
+  document.documentElement.dataset.accessLimited = 'true';
+  const hide = root => (root.querySelectorAll ? root.querySelectorAll('a[href]') : []).forEach(a => {
+    const rel = relPath(a.getAttribute('href'));
+    if (!allowedFor(profile, rel)) { a.hidden = true; a.style.setProperty('display', 'none', 'important'); a.setAttribute('aria-hidden', 'true'); }
+  });
+  const run = () => hide(document);
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', run); else run();
+  new MutationObserver(list => list.forEach(m => m.addedNodes.forEach(n => { if (n.nodeType === 1) { if (n.matches?.('a[href]')) hide(n.parentNode || n); else hide(n); } })))
+    .observe(document.documentElement, { childList: true, subtree: true });
+}
 function setMessage(element, text, isError = false) { if (element) { element.textContent = text; element.classList.toggle('error', isError); } }
 // Dopo il login si torna solo a pagine di questo sito (niente redirect verso siti esterni).
 function nextParam(defaultPage = 'index.html') {
@@ -92,6 +129,11 @@ function requireLogin(options = {}) {
     sessionStorage.setItem('topHouseUserRole', userRole);
     sessionStorage.setItem('topHouseUserEmail', normalizeEmail(user.email));
     if ((options.adminOnly || isAdminOnlyPage()) && userRole !== 'admin') { redirectDenied(); return; }
+    const profile = userRole === 'admin' ? null : profileFor(user);
+    if (profile) {
+      if (!allowedFor(profile, relPath(window.location.href))) { redirectDenied(); return; }
+      applyLimits(profile);
+    }
     markRole(userRole);
     ensureLogoutButton();
   });

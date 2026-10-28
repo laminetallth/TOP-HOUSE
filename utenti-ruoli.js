@@ -16,6 +16,19 @@ window.USER_ROLES = {
   "massironi.massimiliano@gmail.com": "venditore"
 };
 
+// Accessi limitati: un venditore con un profilo qui sotto vede SOLO i gestori del profilo
+// (home, Luce e gas e Telefonia mostrano solo quelli; le altre sezioni del Drive sono bloccate).
+// Per limitare un utente: "email@esempio.it": "promup" (deve essere anche in USER_ROLES come venditore).
+window.ACCESS_PROFILES = {
+  // Gestori che Top House lavora tramite PromUp
+  promup: {
+    luceGas: ["a2a", "audax", "axpo", "edison", "enel-corporate", "enel-digital", "engie", "estra", "fastweb-energia", "hera", "magis", "sorgenia", "upenergy"],
+    telefonia: ["edison-fibra", "enel-fibra", "fastweb", "sky", "tim", "vodafone", "wind"]
+  }
+};
+window.USER_ACCESS = {
+};
+
 (function () {
   // Radice del sito ricavata dalla posizione di questo file (funziona anche in gestori/).
   const ROOT = (() => {
