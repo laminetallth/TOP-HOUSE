@@ -26,7 +26,7 @@ window.ACCESS_PROFILES = {
     luceGas: ["a2a", "audax", "axpo", "edison", "enel-corporate", "enel-digital", "engie", "estra", "fastweb-energia", "hera", "magis", "sorgenia", "upenergy"],
     telefonia: ["edison-fibra", "enel-fibra", "fastweb", "sky", "tim", "vodafone", "wind"],
     // Altri servizi Top House (pagina e sottopagine, es. fotovoltaico-documenti-contratto)
-    sezioni: ["fotovoltaico", "noleggio-auto", "assicurazioni", "allarmi", "caldaia", "climatizzatore", "depuratore", "infissi", "pompe-di-calore", "wall-box"]
+    sezioni: ["fotovoltaico", "noleggio-auto", "assicurazioni", "allarmi", "caldaia", "climatizzatore", "depuratore", "infissi", "pompe-di-calore", "wall-box", "indici"]
   }
 };
 window.USER_ACCESS = {
