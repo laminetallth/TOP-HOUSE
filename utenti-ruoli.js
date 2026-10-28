@@ -13,7 +13,8 @@ window.USER_ROLES = {
   "sarahcavedoarmy@gmail.com": "venditore",
   "hajarsadiq2004@gmail.com": "venditore",
   "anna_amati@libero.it": "venditore",
-  "massironi.massimiliano@gmail.com": "venditore"
+  "massironi.massimiliano@gmail.com": "venditore",
+  "ascolta.misci@gmail.com": "venditore"
 };
 
 // Accessi limitati: un venditore con un profilo qui sotto vede SOLO i gestori del profilo
@@ -27,6 +28,7 @@ window.ACCESS_PROFILES = {
   }
 };
 window.USER_ACCESS = {
+  "ascolta.misci@gmail.com": "promup" // Michele Orlando
 };
 
 (function () {
