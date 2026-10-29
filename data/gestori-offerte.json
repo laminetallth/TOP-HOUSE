@@ -1,16 +1,6 @@
 {
- "aggiornato": "2026-10-28",
+ "aggiornato": "2026-10-29",
  "gestori": {
-  "a2a": {
-   "offerte": {
-    "business-gas": 4,
-    "business-luce": 4,
-    "residenziale-gas": 5,
-    "residenziale-luce": 7
-   },
-   "prossima_scadenza": "2026-10-28",
-   "partner": []
-  },
   "agn-energia": {
    "offerte": {
     "business-gas": 7,
@@ -40,11 +30,11 @@
   "audax": {
    "offerte": {
     "business-gas": 5,
-    "business-luce": 21,
-    "residenziale-gas": 4,
-    "residenziale-luce": 4
+    "business-luce": 20,
+    "residenziale-gas": 3,
+    "residenziale-luce": 3
    },
-   "prossima_scadenza": "2026-10-28",
+   "prossima_scadenza": "2027-01-31",
    "partner": [
     "GreenWorld",
     "PromUp"
@@ -55,11 +45,9 @@
     "business-gas": 12,
     "business-luce": 19,
     "condominio-gas": 1,
-    "condominio-luce": 1,
-    "residenziale-gas": 10,
-    "residenziale-luce": 10
+    "condominio-luce": 1
    },
-   "prossima_scadenza": "2026-10-28",
+   "prossima_scadenza": "2026-11-04",
    "partner": [
     "PromUp"
    ]
@@ -105,14 +93,11 @@
   },
   "edison": {
    "offerte": {
-    "business-gas": 20,
-    "business-luce": 17,
-    "condominio-gas": 19,
-    "condominio-luce": 14,
-    "residenziale-gas": 22,
-    "residenziale-luce": 6
+    "business-gas": 1,
+    "business-luce": 1,
+    "residenziale-gas": 1
    },
-   "prossima_scadenza": "2026-10-28",
+   "prossima_scadenza": null,
    "partner": [
     "PromUp"
    ]
