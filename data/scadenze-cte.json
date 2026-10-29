@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-26",
+ "aggiornato": "2026-10-29",
  "file": {
   "documenti/a2a/cte/business/A2A Full Gas Business.pdf": {
    "scade": "2026-10-28",
@@ -136,28 +136,28 @@
    "testo_ccv": "Corrispettivo annuo 114,00 €/POD/anno"
   },
   "documenti/a2a/cte/residenziale/Esclusiva2a - Gas.pdf": {
-   "scade": "2026-10-28",
-   "testo": "richieste effettuate dal 15/10/2026 al 28/10/2026",
+   "scade": "2026-11-11",
+   "testo": "richieste effettuate dal 29/10/2026 al 11/11/2026",
    "tipo": "fisso",
    "prezzi": [
     {
      "f": "gas",
-     "prezzo": 0.78,
-     "testo": "Prezzo gas naturale 0,7800 €/Smc"
+     "prezzo": 0.85,
+     "testo": "Prezzo gas naturale 0,8500 €/Smc"
     }
    ],
    "ccv": 114.0,
    "testo_ccv": "Corrispettivo annuo 114,00 €/PDR/anno"
   },
   "documenti/a2a/cte/residenziale/Esclusiva2a Luce.pdf": {
-   "scade": "2026-10-28",
-   "testo": "richieste effettuate dal 15/10/2026 al 28/10/2026",
+   "scade": "2026-11-11",
+   "testo": "richieste effettuate dal 29/10/2026 al 11/11/2026",
    "tipo": "fisso",
    "prezzi": [
     {
      "f": "luce",
-     "prezzo": 0.195,
-     "testo": "F0: 0,19500 €/kWh"
+     "prezzo": 0.209,
+     "testo": "F0: 0,20900 €/kWh"
     }
    ],
    "ccv": 114.0,
@@ -199,8 +199,8 @@
    "testo_ccv": "Corrispettivo annuo commercializzazione di vendita al 180,00 €/POD/anno"
   },
   "documenti/a2a/cte/residenziale/Smart Casa Gas.pdf": {
-   "scade": "2026-10-28",
-   "testo": "richieste effettuate dal 01/10/2026 al 28/10/2026",
+   "scade": "2026-11-25",
+   "testo": "richieste effettuate dal 29/10/2026 al 25/11/2026",
    "tipo": "variabile",
    "prezzi": [
     {
@@ -213,8 +213,8 @@
    "testo_ccv": "Corrispettivo annuo 114,00 €/PDR/anno"
   },
   "documenti/a2a/cte/residenziale/Smart Casa Luce.pdf": {
-   "scade": "2026-10-28",
-   "testo": "richieste effettuate dal 01/10/2026 al 28/10/2026",
+   "scade": "2026-11-25",
+   "testo": "richieste effettuate dal 29/10/2026 al 25/11/2026",
    "tipo": "variabile",
    "prezzi": [
     {
@@ -227,8 +227,8 @@
    "testo_ccv": "Corrispettivo annuo 114,00 €/POD/anno"
   },
   "documenti/a2a/cte/residenziale/Smart Casa+ Gas.pdf": {
-   "scade": "2026-10-28",
-   "testo": "richieste effettuate dal 01/10/2026 al 28/10/2026",
+   "scade": "2026-11-25",
+   "testo": "richieste effettuate dal 29/10/2026 al 25/11/2026",
    "tipo": "variabile",
    "prezzi": [
     {
@@ -241,8 +241,8 @@
    "testo_ccv": "Corrispettivo annuo 135,00 €/PDR/anno"
   },
   "documenti/a2a/cte/residenziale/Smart Casa+ Luce.pdf": {
-   "scade": "2026-10-28",
-   "testo": "richieste effettuate dal 01/10/2026 al 28/10/2026",
+   "scade": "2026-11-25",
+   "testo": "richieste effettuate dal 29/10/2026 al 25/11/2026",
    "tipo": "variabile",
    "prezzi": [
     {
@@ -1207,15 +1207,15 @@
    "ccv": 210.0,
    "testo_ccv": "Corrispettivo fisso annuo 210,00 €/POD/anno"
   },
-  "documenti/audax/cte/business/SICURA VERDE IMPRESA FASCE - A_37_EBSFDAXAF261030RX_AU.pdf": {
-   "scade": "2026-10-28",
-   "testo": "adesione: 22/10/2026 al:28/10/2026",
+  "documenti/audax/cte/business/SICURA VERDE IMPRESA FASCE - A_25_EBSFDAXAF264425RX_AU.pdf": {
+   "scade": "2026-11-04",
+   "testo": "adesione: 29/10/2026 al:04/11/2026",
    "tipo": "fisso",
    "prezzi": [
     {
      "f": "luce",
-     "prezzo": 0.158818,
-     "testo": "Corrispettivo per il consumo F1 0,158818 €/kWh"
+     "prezzo": 0.1844,
+     "testo": "Corrispettivo per il consumo F1 0,1844 €/kWh"
     }
    ],
    "ccv": 210.0,
@@ -1288,15 +1288,15 @@
    "ccv": 154.0,
    "testo_ccv": "Corrispettivo fisso annuo 154,00 €/POD/anno"
   },
-  "documenti/audax/cte/residenziale/SICURA VERDE CASA FASCE - 37_EDSFDAXAF261030RX_AU.pdf": {
-   "scade": "2026-10-28",
-   "testo": "adesione: 22/10/2026 al:28/10/2026",
+  "documenti/audax/cte/residenziale/SICURA VERDE CASA FASCE - A_25_EDSFDAXAF264425RX_AU.pdf": {
+   "scade": "2026-11-04",
+   "testo": "adesione: 29/10/2026 al:04/11/2026",
    "tipo": "fisso",
    "prezzi": [
     {
      "f": "luce",
-     "prezzo": 0.171818,
-     "testo": "Corrispettivo per il consumo F1 0,171818 €/kWh"
+     "prezzo": 0.1974,
+     "testo": "Corrispettivo per il consumo F1 0,1974 €/kWh"
     }
    ],
    "ccv": 180.0,
@@ -4455,109 +4455,29 @@
    "ccv": 156.0,
    "testo_ccv": "Corrispettivo annuo CCV luce 156€/POD/anno"
   },
-  "documenti/enel-corporate/cte/business/EnelFidelity24CorporateMT_26WB5_B_Vendita_ML_KitSwaBusCteSeif.pdf": {
-   "scade": "2026-10-26",
-   "testo": "Valida per adesioni dal 13/10/2026 al 26/10/2026",
+  "documenti/enel-corporate/cte/business/EnelFidelity24Pmi_26WB5_C_Vendita_ML_KitSwaBusCteSeif.pdf": {
+   "scade": "2026-11-09",
+   "testo": "Valida per adesioni dal 27/10/2026 al 09/11/2026",
    "tipo": "fisso",
    "prezzi": [
     {
      "f": "luce",
-     "prezzo": 0.176,
-     "testo": "monorari PFi = 0,17600 Euro/kWh"
-    }
-   ]
-  },
-  "documenti/enel-corporate/cte/business/EnelFidelity24ImpresaMT_26WB5_FMT_Vendita_ML_KitSwaBusCteSeif.pdf": {
-   "scade": "2026-10-26",
-   "testo": "Valida per adesioni dal 13/10/2026 al 26/10/2026",
-   "tipo": "fisso",
-   "prezzi": [
-    {
-     "f": "luce",
-     "prezzo": 0.187,
-     "testo": "monorari PFi = 0,18700 Euro/kWh"
+     "prezzo": 0.2101,
+     "testo": "monorari PFi = 0,21010 Euro/kWh"
     }
    ],
    "ccv": 144.0,
    "testo_ccv": "Corrispettivo annuo CCV Luce 144 Euro/POD/anno"
   },
-  "documenti/enel-corporate/cte/business/EnelFidelity24Impresa_26WB5_B_Vendita_ML_KitSwaBusCteSeif.pdf": {
-   "scade": "2026-10-26",
-   "testo": "Valida per adesioni dal 13/10/2026 al 26/10/2026",
+  "documenti/enel-corporate/cte/business/EnelFidelity36Pmi_26WB5_C_Vendita_ML_KitSwaBusCteSeif.pdf": {
+   "scade": "2026-11-09",
+   "testo": "Valida per adesioni dal 27/10/2026 al 09/11/2026",
    "tipo": "fisso",
    "prezzi": [
     {
      "f": "luce",
-     "prezzo": 0.187,
-     "testo": "monorari PFi = 0,18700 Euro/kWh"
-    }
-   ],
-   "ccv": 144.0,
-   "testo_ccv": "Corrispettivo annuo CCV Luce 144 Euro/POD/anno"
-  },
-  "documenti/enel-corporate/cte/business/EnelFidelity24Pmi_26WB5_FBT_Vendita_ML_KitSwaBusCteSeif.pdf": {
-   "scade": "2026-10-26",
-   "testo": "Valida per adesioni dal 13/10/2026 al 26/10/2026",
-   "tipo": "fisso",
-   "prezzi": [
-    {
-     "f": "luce",
-     "prezzo": 0.1969,
-     "testo": "monorari PFi = 0,19690 Euro/kWh"
-    }
-   ],
-   "ccv": 144.0,
-   "testo_ccv": "Corrispettivo annuo CCV Luce 144 Euro/POD/anno"
-  },
-  "documenti/enel-corporate/cte/business/EnelFidelity36CorporateMT_26WB5_FMT_Vendita_ML_KitSwaBusCteSeif.pdf": {
-   "scade": "2026-10-26",
-   "testo": "Valida per adesioni dal 13/10/2026 al 26/10/2026",
-   "tipo": "fisso",
-   "prezzi": [
-    {
-     "f": "luce",
-     "prezzo": 0.1617,
-     "testo": "monorari PFi = 0,16170 Euro/kWh"
-    }
-   ]
-  },
-  "documenti/enel-corporate/cte/business/EnelFidelity36ImpresaMT_26WB5_FMT_Vendita_ML_KitSwaBusCteSeif.pdf": {
-   "scade": "2026-10-26",
-   "testo": "Valida per adesioni dal 13/10/2026 al 26/10/2026",
-   "tipo": "fisso",
-   "prezzi": [
-    {
-     "f": "luce",
-     "prezzo": 0.1727,
-     "testo": "monorari PFi = 0,17270 Euro/kWh"
-    }
-   ],
-   "ccv": 144.0,
-   "testo_ccv": "Corrispettivo annuo CCV Luce 144 Euro/POD/anno"
-  },
-  "documenti/enel-corporate/cte/business/EnelFidelity36Impresa_26WB5_FBT_Vendita_ML_KitSwaBusCteSeif.pdf": {
-   "scade": "2026-10-26",
-   "testo": "Valida per adesioni dal 13/10/2026 al 26/10/2026",
-   "tipo": "fisso",
-   "prezzi": [
-    {
-     "f": "luce",
-     "prezzo": 0.1727,
-     "testo": "monorari PFi = 0,17270 Euro/kWh"
-    }
-   ],
-   "ccv": 144.0,
-   "testo_ccv": "Corrispettivo annuo CCV Luce 144 Euro/POD/anno"
-  },
-  "documenti/enel-corporate/cte/business/EnelFidelity36Pmi_26WB5_FBT_Vendita_ML_KitSwaBusCteSeif.pdf": {
-   "scade": "2026-10-26",
-   "testo": "Valida per adesioni dal 13/10/2026 al 26/10/2026",
-   "tipo": "fisso",
-   "prezzi": [
-    {
-     "f": "luce",
-     "prezzo": 0.1848,
-     "testo": "monorari PFi = 0,18480 Euro/kWh"
+     "prezzo": 0.198,
+     "testo": "monorari PFi = 0,19800 Euro/kWh"
     }
    ],
    "ccv": 144.0,
@@ -4723,85 +4643,47 @@
    "ccv": 192.0,
    "testo_ccv": "Corrispettivo annuo CCV Luce 192 Euro/POD/anno"
   },
-  "documenti/enel-corporate/cte/business/SoluzioneEnergiaImpresa3F_26WB5_B_Vendita_ML_KitSwaBusCteSeif.pdf": {
-   "scade": "2026-10-26",
-   "testo": "Valida per adesioni dal 13/10/2026 al 26/10/2026",
+  "documenti/enel-corporate/cte/business/SoluzioneEnergiaImpresaPmiGreen_26WB5_C_Vendita_ML_KitSwaBusCteSeif.pdf": {
+   "scade": "2026-11-09",
+   "testo": "Valida per adesioni dal 27/10/2026 al 09/11/2026",
    "tipo": "fisso",
    "prezzi": [
     {
      "f": "luce",
-     "prezzo": 0.2068,
-     "testo": "monorari PFi = 0,20680 Euro/kWh"
+     "prezzo": 0.2277,
+     "testo": "monorari PFi = 0,22770 Euro/kWh"
     }
    ],
    "ccv": 144.0,
    "testo_ccv": "Corrispettivo annuo CCV Luce 144 Euro/POD/anno"
   },
-  "documenti/enel-corporate/cte/business/SoluzioneEnergiaImpresaGreen3F_26WB5_B_Vendita_ML_KitSwaBusCteSeif.pdf": {
-   "scade": "2026-10-26",
-   "testo": "Valida per adesioni dal 13/10/2026 al 26/10/2026",
+  "documenti/enel-corporate/cte/business/SoluzioneEnergiaImpresaPmi_26WB5_C_Vendita_ML_KitSwaBusCteSeif.pdf": {
+   "scade": "2026-11-09",
+   "testo": "Valida per adesioni dal 27/10/2026 al 09/11/2026",
    "tipo": "fisso",
    "prezzi": [
     {
      "f": "luce",
-     "prezzo": 0.209,
-     "testo": "monorari PFi = 0,20900 Euro/kWh"
+     "prezzo": 0.2255,
+     "testo": "monorari PFi = 0,22550 Euro/kWh"
     }
    ],
    "ccv": 144.0,
    "testo_ccv": "Corrispettivo annuo CCV Luce 144 Euro/POD/anno"
   },
-  "documenti/enel-corporate/cte/business/SoluzioneEnergiaImpresaPmiGreen_26WB5_B_Vendita_ML_KitSwaBusCteSeif.pdf": {
-   "scade": "2026-10-26",
-   "testo": "Valida per adesioni dal 13/10/2026 al 26/10/2026",
+  "documenti/enel-corporate/cte/business/SoluzioneGasImpresaAC_26WB5_C_Vendita_ML_KitSwaBusCteSgid.pdf": {
+   "scade": "2026-11-09",
+   "testo": "Valida per adesioni dal 27/10/2026 al 09/11/2026",
    "tipo": "fisso",
    "prezzi": [
     {
-     "f": "luce",
-     "prezzo": 0.2123,
-     "testo": "monorari PFi = 0,21230 Euro/kWh"
+     "f": "gas",
+     "prezzo": 0.95,
+     "testo": "Componente materia prima gas 0,9500 Euro/Smc"
     }
    ],
-   "ccv": 144.0,
-   "testo_ccv": "Corrispettivo annuo CCV Luce 144 Euro/POD/anno"
-  },
-  "documenti/enel-corporate/cte/business/SoluzioneEnergiaImpresaPmi_26WB5_B_Vendita_ML_KitSwaBusCteSeif.pdf": {
-   "scade": "2026-10-26",
-   "testo": "Valida per adesioni dal 13/10/2026 al 26/10/2026",
-   "tipo": "fisso",
-   "prezzi": [
-    {
-     "f": "luce",
-     "prezzo": 0.2101,
-     "testo": "monorari PFi = 0,21010 Euro/kWh"
-    }
-   ],
-   "ccv": 144.0,
-   "testo_ccv": "Corrispettivo annuo CCV Luce 144 Euro/POD/anno"
-  },
-  "documenti/enel-corporate/cte/business/SoluzioneEnergiaImpresaSuper3F_26WB5_B_Vendita_ML_KitSwaBusCteSeif.pdf": {
-   "scade": "2026-10-26",
-   "testo": "Valida per adesioni dal 13/10/2026 al 26/10/2026",
-   "tipo": "fisso",
-   "prezzi": [
-    {
-     "f": "luce",
-     "prezzo": 0.2002,
-     "testo": "monorari PFi = 0,20020 Euro/kWh"
-    }
-   ]
-  },
-  "documenti/enel-corporate/cte/business/SoluzioneEnergiaImpresaSuperGreen3F_26WB5_B_Vendita_ML_KitSwaBusCteSeif.pdf": {
-   "scade": "2026-10-26",
-   "testo": "Valida per adesioni dal 13/10/2026 al 26/10/2026",
-   "tipo": "fisso",
-   "prezzi": [
-    {
-     "f": "luce",
-     "prezzo": 0.2024,
-     "testo": "monorari PFi = 0,20240 Euro/kWh"
-    }
-   ]
+   "ccv": 180.0,
+   "testo_ccv": "Corrispettivo annuo CCV Gas 180 Euro/anno"
   },
   "documenti/enel-corporate/cte/business/Trend3FEnergImpresaGreen_26WB5_Vendita_ML_KitSwaBusCteTseif.pdf": {
    "scade": "2026-11-23",
@@ -5196,6 +5078,38 @@
    ],
    "ccv": 468.0,
    "testo_ccv": "Corrispettivo annuo CCV luce 468€/POD/anno"
+  },
+  "documenti/enel-digital/cte/residenziale/ENEL_FIX_WEB_GAS___CTE_(COM_-_WEB)_v52.pdf": {
+   "scade": "2026-11-12",
+   "testo": "Validità per adesioni entro il 12/11/2026",
+   "tipo": "fisso",
+   "prezzi": [
+    {
+     "f": "gas",
+     "prezzo": 0.925,
+     "testo": "Prezzo Gas 0,9250 €/Smc",
+     "scontato": 0.74,
+     "testo_sconto": "20% · SCONTO ENEL FIX WEB GAS: sconto del 20% sul Prezzo Gas (valore dello sconto pari a 0,18500 €/Smc), per un Prezzo Gas di 0"
+    }
+   ],
+   "ccv": 144.0,
+   "testo_ccv": "Quota fissa 144 €/PDR/anno"
+  },
+  "documenti/enel-digital/cte/residenziale/ENEL_FIX_WEB_LUCE___CTE_(COM_-_WEB)_v53.pdf": {
+   "scade": "2026-11-12",
+   "testo": "Validità per adesioni entro il 12/11/2026",
+   "tipo": "fisso",
+   "prezzi": [
+    {
+     "f": "luce",
+     "prezzo": 0.19344,
+     "testo": "Prezzo Luce 0,19344 €/kWh",
+     "scontato": 0.1799,
+     "testo_sconto": "7% · SCONTO ENEL FIX WEB LUCE: sconto del 7% sul Prezzo Luce (valore dello sconto pari a 0,01354€/kWh), per un Prezzo Luce di 0"
+    }
+   ],
+   "ccv": 144.0,
+   "testo_ccv": "Quota fissa 144 €/POD/anno"
   },
   "documenti/enel-digital/cte/residenziale/ENEL_GAS_E_GIGA___CTE_(Consultazione)_v4.pdf": {
    "scade": "2026-11-12",
@@ -6131,16 +6045,19 @@
    "ccv_scontata": 120.0,
    "testo_sconto_rid": "SCONTI E/O BONUS SCONTO SDD: l'offerta prevede l'applicazione per i primi 12 mesi di fornitura di uno sconto di 2,00 €/mese a favore del Cliente che attiva la d"
   },
-  "documenti/fastweb-energia/cte/business/Sales News Fastweb Gas - P.iva FW-VF 08 Ottobre 26.pdf": {
+  "documenti/fastweb-energia/cte/business/Sales News Fastweb Gas - P.iva FW-VF 26 Ottobre 26.pdf": {
+   "tipo": "fisso",
    "prezzi": [
     {
-     "f": "gas"
+     "f": "gas",
+     "prezzo": 0.8,
+     "testo": "Componente GAS 0,80 €/smc"
     }
    ],
    "ccv": 240.0,
    "testo_ccv": "commercializzazione per l'offerta Fastweb GAS Business FLEX è pari a 240€/anno"
   },
-  "documenti/fastweb-energia/cte/business/Sales News Fastweb Luce - P.iva FW-VF 08 Ottobre 26.pdf": {
+  "documenti/fastweb-energia/cte/business/Sales News Fastweb Luce - P.iva FW-VF 26 Ottobre 26.pdf": {
    "tipo": "fisso",
    "prezzi": [
     {
@@ -6153,8 +6070,8 @@
    "testo_ccv": "commercializzazione per l'offerta Fastweb Luce Business FLEX è pari a 20€/mese"
   },
   "documenti/fastweb-energia/cte/business/cte_fastweb_gas_fix biz.pdf": {
-   "scade": "2026-10-25",
-   "testo": "valida dal 08/10/2026 al 25/10/2026",
+   "scade": "2026-11-15",
+   "testo": "valida dal 26/10/2026 al 15/11/2026",
    "tipo": "fisso",
    "prezzi": [
     {
@@ -6165,8 +6082,8 @@
    ]
   },
   "documenti/fastweb-energia/cte/business/cte_fastweb_gas_flex biz.pdf": {
-   "scade": "2026-10-25",
-   "testo": "valida dal 08/10/2026 al 25/10/2026",
+   "scade": "2026-11-15",
+   "testo": "valida dal 26/10/2026 al 15/11/2026",
    "tipo": "variabile",
    "prezzi": [
     {
@@ -6177,8 +6094,8 @@
    ]
   },
   "documenti/fastweb-energia/cte/business/cte_fastweb_luce_fix biz.pdf": {
-   "scade": "2026-10-25",
-   "testo": "valida dal 08/10/2026 al 25/10/2026",
+   "scade": "2026-11-15",
+   "testo": "valida dal 26/10/2026 al 15/11/2026",
    "tipo": "fisso",
    "prezzi": [
     {
@@ -6191,8 +6108,8 @@
    "testo_ccv": "Commercializzazione 240 €/POD/Anno"
   },
   "documenti/fastweb-energia/cte/business/cte_fastweb_luce_flex biz.pdf": {
-   "scade": "2026-10-25",
-   "testo": "valida dal 08/10/2026 al 25/10/2026",
+   "scade": "2026-11-15",
+   "testo": "valida dal 26/10/2026 al 15/11/2026",
    "tipo": "variabile",
    "prezzi": [
     {
@@ -6223,8 +6140,8 @@
    "testo_ccv": "commercializzazione: 12€/mese"
   },
   "documenti/fastweb-energia/cte/residenziale/cte_fastweb_gas_flex.pdf": {
-   "scade": "2026-10-25",
-   "testo": "valida dal 08/10/2026 al 25/10/2026",
+   "scade": "2026-11-15",
+   "testo": "valida dal 26/10/2026 al 15/11/2026",
    "tipo": "variabile",
    "prezzi": [
     {
@@ -6237,8 +6154,8 @@
    "testo_ccv": "commercializzazione 180,00 €/PDR/Anno"
   },
   "documenti/fastweb-energia/cte/residenziale/cte_fastweb_luce_fix.pdf": {
-   "scade": "2026-10-25",
-   "testo": "valida dal 08/10/2026 al 25/10/2026",
+   "scade": "2026-11-15",
+   "testo": "valida dal 26/10/2026 al 15/11/2026",
    "tipo": "fisso",
    "prezzi": [
     {
@@ -6261,8 +6178,8 @@
    "testo_ccv": "commercializzazione 144,00 €/POD/Anno"
   },
   "documenti/fastweb-energia/cte/residenziale/cte_fastweb_luce_flat.pdf": {
-   "scade": "2026-10-25",
-   "testo": "valida 08/10/2026 al 25/10/2026",
+   "scade": "2026-11-15",
+   "testo": "valida 26/10/2026 al 15/11/2026",
    "tipo": "fisso",
    "prezzi": [
     {
@@ -6271,8 +6188,8 @@
    ]
   },
   "documenti/fastweb-energia/cte/residenziale/cte_fastweb_luce_flex.pdf": {
-   "scade": "2026-10-25",
-   "testo": "valida dal 08/10/2026 al 25/10/2026",
+   "scade": "2026-11-15",
+   "testo": "valida dal 26/10/2026 al 15/11/2026",
    "tipo": "variabile",
    "prezzi": [
     {
@@ -7540,61 +7457,31 @@
    "ccv": 169.23,
    "testo_ccv": "Corrispettivo annuo Corrispettivo di commercializzazione: • 169,23 €/POD/anno"
   },
-  "documenti/hera/cte/residenziale/CTE_EST_PIU_CONTROLLO_FLAT_CASA_GAS__V50 Valida fino al 15.10 al 23.10.pdf": {
-   "scade": "2026-10-23",
-   "testo": "valida per le richieste sottoscritte entro il 23/10/2026",
-   "tipo": "ibrida",
-   "prezzi": [
-    {
-     "f": "gas",
-     "prezzo": 0.699,
-     "testo": "Prezzo Fisso: 0,699 €/Smc",
-     "spread": 0.139,
-     "testo_spread": "PSV_DA mensile + 0,1390 €/Smc"
-    }
-   ],
-   "ccv": 156.0,
-   "testo_ccv": "Corrispettivo annuo Valore Corrispettivo di commercializzazione: 156,00 €/PDR/anno"
-  },
-  "documenti/hera/cte/residenziale/CTE_EST_PIU_CONTROLLO_FLAT_CASA_GAS__V50.pdf": {
+  "documenti/hera/cte/residenziale/CTE_EST_PIU_CONTROLLO_FLAT_CASA_GAS__V54.pdf": {
    "scade": "2026-11-10",
    "testo": "valida per le richieste sottoscritte entro il 10/11/2026",
    "tipo": "ibrida",
    "prezzi": [
     {
      "f": "gas",
-     "prezzo": 0.699,
-     "testo": "Prezzo Fisso: 0,699 €/Smc",
-     "spread": 0.139,
-     "testo_spread": "PSV_DA mensile + 0,1390 €/Smc"
+     "prezzo": 0.769,
+     "testo": "Prezzo Fisso: 0,769 €/Smc",
+     "spread": 0.119,
+     "testo_spread": "PSV_DA mensile + 0,1190 €/Smc"
     }
    ],
    "ccv": 156.0,
    "testo_ccv": "Corrispettivo annuo Valore Corrispettivo di commercializzazione: 156,00 €/PDR/anno"
   },
-  "documenti/hera/cte/residenziale/CTE_EST_PIU_CONTROLLO_FLAT_CASA_LUCE__V50.pdf": {
+  "documenti/hera/cte/residenziale/CTE_EST_PIU_CONTROLLO_FLAT_CASA_LUCE__V54.pdf": {
    "scade": "2026-11-10",
    "testo": "valida per le richieste sottoscritte entro il 10/11/2026",
    "tipo": "ibrida",
    "prezzi": [
     {
      "f": "luce",
-     "prezzo": 0.198,
-     "testo": "prezzo fisso, rispetto a un'offerta a prezzo variabile, mese di agosto e pari a 0,1980 €/kWh"
-    }
-   ],
-   "ccv": 156.0,
-   "testo_ccv": "commercializzazione: 156,00 €/POD/anno"
-  },
-  "documenti/hera/cte/residenziale/CTE_EST_PIU_CONTROLLO_FLAT_CASA_LUCE__V50_PENALE Valida fino al 15.10 al 23.10.pdf": {
-   "scade": "2026-10-23",
-   "testo": "valida per le richieste sottoscritte entro il 23/10/2026",
-   "tipo": "ibrida",
-   "prezzi": [
-    {
-     "f": "luce",
-     "prezzo": 0.198,
-     "testo": "prezzo fisso, rispetto a un'offerta a prezzo variabile, mese di agosto e pari a 0,1980 €/kWh"
+     "prezzo": 0.246,
+     "testo": "prezzo fisso, rispetto a un'offerta a prezzo variabile, mese di ottobre e pari a 0,2460 €/kWh"
     }
    ],
    "ccv": 156.0,
@@ -7658,95 +7545,35 @@
    "ccv": 169.23,
    "testo_ccv": "Corrispettivo annuo Corrispettivo di commercializzazione: • 169,23 €/POD/anno"
   },
-  "documenti/hera/cte/residenziale/CTE_HC_PIU_CONTROLLO_FLAT_CASA_GAS__V50 Valida fino al 15.10 al 23.10.pdf": {
-   "scade": "2026-10-23",
-   "testo": "valida per le richieste sottoscritte entro il 23/10/2026",
-   "tipo": "ibrida",
-   "prezzi": [
-    {
-     "f": "gas",
-     "prezzo": 0.699,
-     "testo": "Prezzo Fisso: 0,699 €/Smc",
-     "spread": 0.139,
-     "testo_spread": "PSV_DA mensile + 0,1390 €/Smc"
-    }
-   ],
-   "ccv": 156.0,
-   "testo_ccv": "Corrispettivo annuo Valore Corrispettivo di commercializzazione: 156,00 €/PDR/anno"
-  },
-  "documenti/hera/cte/residenziale/CTE_HC_PIU_CONTROLLO_FLAT_CASA_GAS__V50.pdf": {
+  "documenti/hera/cte/residenziale/CTE_HC_PIU_CONTROLLO_FLAT_CASA_GAS__V54.pdf": {
    "scade": "2026-11-10",
    "testo": "valida per le richieste sottoscritte entro il 10/11/2026",
    "tipo": "ibrida",
    "prezzi": [
     {
      "f": "gas",
-     "prezzo": 0.699,
-     "testo": "Prezzo Fisso: 0,699 €/Smc",
-     "spread": 0.139,
-     "testo_spread": "PSV_DA mensile + 0,1390 €/Smc"
+     "prezzo": 0.769,
+     "testo": "Prezzo Fisso: 0,769 €/Smc",
+     "spread": 0.119,
+     "testo_spread": "PSV_DA mensile + 0,1190 €/Smc"
     }
    ],
    "ccv": 156.0,
    "testo_ccv": "Corrispettivo annuo Valore Corrispettivo di commercializzazione: 156,00 €/PDR/anno"
   },
-  "documenti/hera/cte/residenziale/CTE_HC_PIU_CONTROLLO_FLAT_CASA_LUCE__V50.pdf": {
+  "documenti/hera/cte/residenziale/CTE_HC_PIU_CONTROLLO_FLAT_CASA_LUCE__V54.pdf": {
    "scade": "2026-11-10",
    "testo": "valida per le richieste sottoscritte entro il 10/11/2026",
    "tipo": "ibrida",
    "prezzi": [
     {
      "f": "luce",
-     "prezzo": 0.198,
-     "testo": "prezzo fisso, rispetto a un'offerta a prezzo variabile, mese di agosto e pari a 0,1980 €/kWh"
+     "prezzo": 0.246,
+     "testo": "prezzo fisso, rispetto a un'offerta a prezzo variabile, mese di ottobre e pari a 0,2460 €/kWh"
     }
    ],
    "ccv": 156.0,
    "testo_ccv": "commercializzazione: 156,00 €/POD/anno"
-  },
-  "documenti/hera/cte/residenziale/CTE_HC_PIU_CONTROLLO_FLAT_CASA_LUCE__V50_PENALE Valida fino al 15.10 al 23.10.pdf": {
-   "scade": "2026-10-23",
-   "testo": "valida per le richieste sottoscritte entro il 23/10/2026",
-   "tipo": "ibrida",
-   "prezzi": [
-    {
-     "f": "luce",
-     "prezzo": 0.198,
-     "testo": "prezzo fisso, rispetto a un'offerta a prezzo variabile, mese di agosto e pari a 0,1980 €/kWh"
-    }
-   ],
-   "ccv": 156.0,
-   "testo_ccv": "commercializzazione: 156,00 €/POD/anno"
-  },
-  "documenti/hera/cte/residenziale/EST HERA_HYBRID_LIMITED_EDITION_CASA_LUCE_V33 SOLO APPAROUND Valida dal 14.10 al 23.10.pdf": {
-   "scade": "2026-10-23",
-   "testo": "valida per le richieste sottoscritte entro il 23/10/2026",
-   "tipo": "ibrida",
-   "prezzi": [
-    {
-     "f": "luce",
-     "spread": 0.0399,
-     "testo_spread": "PUN Index GME + 0,0399 €/kWh"
-    }
-   ],
-   "ccv": 156.0,
-   "testo_ccv": "commercializzazione: 156,00 €/POD/anno"
-  },
-  "documenti/hera/cte/residenziale/HERA_HYBRID_LIMITED_EDITION_CASA_GAS V33 SOLO APPAROUND Valida dal 14.10 al 23.10.pdf": {
-   "scade": "2026-10-23",
-   "testo": "valida per le richieste sottoscritte entro il 23/10/2026",
-   "tipo": "ibrida",
-   "prezzi": [
-    {
-     "f": "gas",
-     "prezzo": 0.579,
-     "testo": "Prezzo Fisso: 0,5790 €/Smc",
-     "spread": 0.249,
-     "testo_spread": "PSV_DA mensile + 0,2490 €/Smc"
-    }
-   ],
-   "ccv": 156.0,
-   "testo_ccv": "commercializzazione: 156,00 €/PDR/anno"
   },
   "documenti/iren/cte/business/Iren OndaLuce Impresa 2.0 VERDE.pdf": {
    "scade": "2026-10-31",
