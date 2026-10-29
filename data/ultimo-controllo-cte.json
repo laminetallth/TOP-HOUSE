@@ -1,6 +1,6 @@
 {
   "eko_sales": {
-    "controllato": "2026-10-28",
+    "controllato": "2026-10-29",
     "file": [
       [
         "/Banner Email.jpg",
@@ -233,7 +233,7 @@
     ]
   },
   "bwc_plenitude": {
-    "controllato": "2026-10-28",
+    "controllato": "2026-10-29",
     "file": [
       [
         "Business/ENI/MODULISTICA/PDA/PDA BUS GAS.pdf",
@@ -316,7 +316,7 @@
         594528
       ]
     ],
-    "nota": "28/10: controllato, 20 file invariati."
+    "nota": "29/10: controllato, 20 file invariati."
   },
   "greenworld": {
     "controllato": "2026-10-26",
@@ -326,7 +326,7 @@
       "ENEL CORPORATE/OFFERTE/LUCE/ACMICRO/ENEL_BUSINESS_SUPER_LUCE-AC___CTE_(AG_BUS)_v20.pdf",
       "ENEL CORPORATE/OFFERTE/LUCE/ACMICRO/ENEL_FLEX_BUSINESS_LUCE-AC___CTE_(AG_BUS)_v30.pdf"
     ],
-    "nota": "File con 'Aggiunto il' >= ultima data: confrontare l'hash con il repo (il 26/10 GreenWorld ha ricaricato 36 CTE Enel Corporate/Engie identiche a quelle gia' presenti). 27/10: GreenWorld chiedeva il login, non controllato. 28/10: GreenWorld chiedeva il login, non controllato."
+    "nota": "File con 'Aggiunto il' >= ultima data: confrontare l'hash con il repo (il 26/10 GreenWorld ha ricaricato 36 CTE Enel Corporate/Engie identiche a quelle gia' presenti). 27/10: GreenWorld chiedeva il login, non controllato. 28/10: GreenWorld chiedeva il login, non controllato. 29/10: GreenWorld chiedeva il login, non controllato."
   },
   "promup": {
     "ultimo_post_visto": null,
@@ -339,6 +339,6 @@
       "2026-10-26 HERACOMM: PDA CASA/LAVORO EDITABILI 26_10 (4 pdf)",
       "2026-10-26 ENEL DIGITAL: CAMBIO WAVE DEL 23/10/2026 (14 pdf)"
     ],
-    "nota": "27/10: loggato. Scaricato TH_auto_2026-10-27.zip nella cartella Download del PC, ma l'accesso alla cartella Download non e' stato concesso: non importato. 28/10: PromUp chiedeva il login, non controllato; cartella Download ancora non autorizzata."
+    "nota": "27/10: loggato. Scaricato TH_auto_2026-10-27.zip nella cartella Download del PC, ma l'accesso alla cartella Download non e' stato concesso: non importato. 28/10: PromUp chiedeva il login, non controllato; cartella Download ancora non autorizzata. 29/10: PromUp chiedeva il login, non controllato; cartella Download non autorizzabile (app desktop Claude non aperta)."
   }
 }
