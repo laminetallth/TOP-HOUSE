@@ -14,7 +14,8 @@ window.USER_ROLES = {
   "hajarsadiq2004@gmail.com": "venditore",
   "anna_amati@libero.it": "venditore",
   "massironi.massimiliano@gmail.com": "venditore",
-  "ascolta.misci@gmail.com": "venditore"
+  "ascolta.misci@gmail.com": "venditore",
+  "giovanni.cucinella@gmail.com": "venditore"
 };
 
 // Accessi limitati: un venditore con un profilo qui sotto vede SOLO i gestori del profilo
@@ -29,8 +30,11 @@ window.ACCESS_PROFILES = {
     sezioni: ["fotovoltaico", "noleggio-auto", "assicurazioni", "allarmi", "caldaia", "climatizzatore", "depuratore", "infissi", "pompe-di-calore", "wall-box", "indici"]
   }
 };
+// Profilo "promup-completo": vede tutto il Drive tranne i gestori luce/gas e telefonia che NON sono su PromUp.
+window.ACCESS_PROFILES["promup-completo"] = Object.assign({}, window.ACCESS_PROFILES.promup, { tuttoIlResto: true });
 window.USER_ACCESS = {
-  "ascolta.misci@gmail.com": "promup" // Michele Orlando
+  "ascolta.misci@gmail.com": "promup", // Michele Orlando
+  "giovanni.cucinella@gmail.com": "promup-completo" // Giovanni Cucinella
 };
 
 (function () {

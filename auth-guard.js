@@ -47,7 +47,8 @@ function allowedFor(profile, rel) {
   if (g) return (profile.luceGas || []).some(s => g[1] === s || g[1].startsWith(s + '-'));
   const t = rel.match(/^telefonia-(.+)\.html$/i);
   if (t) return (profile.telefonia || []).some(s => t[1] === s || t[1].startsWith(s + '-'));
-  return false;
+  return !!profile.tuttoIlResto; // profilo "promup-completo": tutto il resto del Drive è visibile
+
 }
 // Nasconde i collegamenti (card, pulsanti) verso pagine non consentite.
 function applyLimits(profile) {
