@@ -329,16 +329,11 @@
     "nota": "File con 'Aggiunto il' >= ultima data: confrontare l'hash con il repo (il 26/10 GreenWorld ha ricaricato 36 CTE Enel Corporate/Engie identiche a quelle gia' presenti). 27/10: GreenWorld chiedeva il login, non controllato. 28/10: GreenWorld chiedeva il login, non controllato. 29/10: GreenWorld chiedeva il login, non controllato."
   },
   "promup": {
-    "ultimo_post_visto": null,
-    "ultimo_post_importato": "2026-10-23",
+    "ultimo_post_visto": "2026-10-29",
+    "ultimo_post_importato": "2026-10-29",
     "da_importare": [
-      "2026-10-27 ENEL CORPORATE: Cte FIX in vigore fino al 09/11/2026 (58 pdf)",
-      "2026-10-27 HERACOMM: CARTELLA CTE FISSE LUCE E GAS (16 pdf)",
-      "2026-10-27 FASTWEB ENERGIA BIZ: News Fastweb Energia 26 Ottobre 2026 (6 pdf)",
-      "2026-10-27 FASTWEB ENERGIA RES: News Fastweb Energia 26 Ottobre 2026 (6 pdf)",
-      "2026-10-26 HERACOMM: PDA CASA/LAVORO EDITABILI 26_10 (4 pdf)",
-      "2026-10-26 ENEL DIGITAL: CAMBIO WAVE DEL 23/10/2026 (14 pdf)"
+      "2026-10-29 A2AGENT: Aggiornamento CPF Small BSN (allegato 404 su PromUp, da riprovare)"
     ],
-    "nota": "27/10: loggato. Scaricato TH_auto_2026-10-27.zip nella cartella Download del PC, ma l'accesso alla cartella Download non e' stato concesso: non importato. 28/10: PromUp chiedeva il login, non controllato; cartella Download ancora non autorizzata. 29/10: PromUp chiedeva il login, non controllato; cartella Download non autorizzabile (app desktop Claude non aperta)."
+    "nota": "29/10: importati A2A Negozio domestiche, Enel Corporate CTE FIX fino al 09/11, Audax Fix Luce 264425, Fastweb Energia RES/BIZ 26/10, Enel Digital wave 23/10, Heracomm CTE fisse e PDA 26_10 (zip allegato da Lamine in chat). TIM ignorati (non luce/gas)."
   }
 }
