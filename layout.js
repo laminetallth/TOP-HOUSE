@@ -39,7 +39,7 @@
 
   const footer = document.createElement('footer');
   footer.className = 'th-footer';
-  footer.innerHTML = `<div><span style="display:flex;align-items:center;gap:10px"><img src="${ROOT}logo-marchio.svg" alt="" width="28" height="22">© ${new Date().getFullYear()} <b>TOP HOUSE</b></span><span>casa. energia. fiducia.</span></div>`;
+  footer.innerHTML = `<div><span style="display:flex;align-items:center;gap:10px"><img src="${ROOT}logo-marchio.svg" alt="" width="28" height="22">© ${new Date().getFullYear()} <b>TOP HOUSE</b></span><span>casa. energia. fiducia. · <a href="${ROOT}informativa-privacy.html" style="color:inherit">Privacy</a></span></div>`;
   document.body.appendChild(footer);
 
   // Assistente AI su tutte le pagine riservate (l'Academy ha già la sua chat).

@@ -18,7 +18,7 @@ const roles = window.USER_ROLES || {};
 const siteRoot = new URL('./', import.meta.url);
 const loginPage = new URL('login.html', siteRoot).href;
 const deniedPage = new URL('accesso-negato.html', siteRoot).href;
-const publicPages = ['login.html', 'login-venditori.html', 'accesso-negato.html'];
+const publicPages = ['login.html', 'login-venditori.html', 'accesso-negato.html', 'informativa-privacy.html'];
 const currentPage = window.location.pathname.split('/').pop() || 'index.html';
 
 function normalizeEmail(email) { return String(email || '').trim().toLowerCase(); }
