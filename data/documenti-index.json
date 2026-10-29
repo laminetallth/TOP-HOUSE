@@ -51,11 +51,11 @@
    },
    {
     "name": "Esclusiva2a - Gas.pdf",
-    "size": 138468
+    "size": 138477
    },
    {
     "name": "Esclusiva2a Luce.pdf",
-    "size": 197688
+    "size": 197713
    },
    {
     "name": "Noi2.pdf",
@@ -71,19 +71,19 @@
    },
    {
     "name": "Smart Casa Gas.pdf",
-    "size": 143253
+    "size": 143294
    },
    {
     "name": "Smart Casa Luce.pdf",
-    "size": 200357
+    "size": 200408
    },
    {
     "name": "Smart Casa+ Gas.pdf",
-    "size": 207523
+    "size": 207549
    },
    {
     "name": "Smart Casa+ Luce.pdf",
-    "size": 265877
+    "size": 265927
    },
    {
     "name": "Start casa Luce.pdf",
@@ -808,8 +808,8 @@
     "size": 641304
    },
    {
-    "name": "SICURA VERDE IMPRESA FASCE - A_37_EBSFDAXAF261030RX_AU.pdf",
-    "size": 635211
+    "name": "SICURA VERDE IMPRESA FASCE - A_25_EBSFDAXAF264425RX_AU.pdf",
+    "size": 636307
    }
   ],
   "documenti/audax/cte/residenziale": [
@@ -838,8 +838,8 @@
     "size": 783880
    },
    {
-    "name": "SICURA VERDE CASA FASCE - 37_EDSFDAXAF261030RX_AU.pdf",
-    "size": 855477
+    "name": "SICURA VERDE CASA FASCE - A_25_EDSFDAXAF264425RX_AU.pdf",
+    "size": 856955
    }
   ],
   "documenti/audax/modulistica": [
@@ -2528,8 +2528,8 @@
   ],
   "documenti/enel-corporate/cte/business": [
    {
-    "name": "Copia di 20261013-RiepilogoCTE-AgCor.xlsx",
-    "size": 30592
+    "name": "20261027-RiepilogoCTE-AgCor.xlsx",
+    "size": 28604
    },
    {
     "name": "ENEL_FLEX_BUSINESS_GAS-AC___CTE_(AG_BUS)_v22.pdf",
@@ -2540,36 +2540,12 @@
     "size": 96731
    },
    {
-    "name": "EnelFidelity24CorporateMT_26WB5_B_Vendita_ML_KitSwaBusCteSeif.pdf",
-    "size": 126225
+    "name": "EnelFidelity24Pmi_26WB5_C_Vendita_ML_KitSwaBusCteSeif.pdf",
+    "size": 129862
    },
    {
-    "name": "EnelFidelity24Impresa_26WB5_B_Vendita_ML_KitSwaBusCteSeif.pdf",
-    "size": 129648
-   },
-   {
-    "name": "EnelFidelity24ImpresaMT_26WB5_FMT_Vendita_ML_KitSwaBusCteSeif.pdf",
-    "size": 129161
-   },
-   {
-    "name": "EnelFidelity24Pmi_26WB5_FBT_Vendita_ML_KitSwaBusCteSeif.pdf",
-    "size": 129588
-   },
-   {
-    "name": "EnelFidelity36CorporateMT_26WB5_FMT_Vendita_ML_KitSwaBusCteSeif.pdf",
-    "size": 126175
-   },
-   {
-    "name": "EnelFidelity36Impresa_26WB5_FBT_Vendita_ML_KitSwaBusCteSeif.pdf",
-    "size": 129880
-   },
-   {
-    "name": "EnelFidelity36ImpresaMT_26WB5_FMT_Vendita_ML_KitSwaBusCteSeif.pdf",
-    "size": 129373
-   },
-   {
-    "name": "EnelFidelity36Pmi_26WB5_FBT_Vendita_ML_KitSwaBusCteSeif.pdf",
-    "size": 130095
+    "name": "EnelFidelity36Pmi_26WB5_C_Vendita_ML_KitSwaBusCteSeif.pdf",
+    "size": 130105
    },
    {
     "name": "EnelMix_26WB5_B_Vendita_ML_KitSwaBusCteAsi.pdf",
@@ -2640,28 +2616,16 @@
     "size": 477
    },
    {
-    "name": "SoluzioneEnergiaImpresa3F_26WB5_B_Vendita_ML_KitSwaBusCteSeif.pdf",
-    "size": 107141
+    "name": "SoluzioneEnergiaImpresaPmi_26WB5_C_Vendita_ML_KitSwaBusCteSeif.pdf",
+    "size": 108120
    },
    {
-    "name": "SoluzioneEnergiaImpresaGreen3F_26WB5_B_Vendita_ML_KitSwaBusCteSeif.pdf",
-    "size": 108392
+    "name": "SoluzioneEnergiaImpresaPmiGreen_26WB5_C_Vendita_ML_KitSwaBusCteSeif.pdf",
+    "size": 109363
    },
    {
-    "name": "SoluzioneEnergiaImpresaPmi_26WB5_B_Vendita_ML_KitSwaBusCteSeif.pdf",
-    "size": 108036
-   },
-   {
-    "name": "SoluzioneEnergiaImpresaPmiGreen_26WB5_B_Vendita_ML_KitSwaBusCteSeif.pdf",
-    "size": 109283
-   },
-   {
-    "name": "SoluzioneEnergiaImpresaSuper3F_26WB5_B_Vendita_ML_KitSwaBusCteSeif.pdf",
-    "size": 107742
-   },
-   {
-    "name": "SoluzioneEnergiaImpresaSuperGreen3F_26WB5_B_Vendita_ML_KitSwaBusCteSeif.pdf",
-    "size": 109001
+    "name": "SoluzioneGasImpresaAC_26WB5_C_Vendita_ML_KitSwaBusCteSgid.pdf",
+    "size": 87642
    },
    {
     "name": "Trend3FEnergiaImpresa_26WB5_Vendita_ML_KitSwaBusCteTseif.pdf",
@@ -2948,6 +2912,14 @@
   ],
   "documenti/enel-digital/cte/residenziale": [
    {
+    "name": "ENEL_FIX_WEB_GAS___CTE_(COM_-_WEB)_v52.pdf",
+    "size": 126558
+   },
+   {
+    "name": "ENEL_FIX_WEB_LUCE___CTE_(COM_-_WEB)_v53.pdf",
+    "size": 200444
+   },
+   {
     "name": "ENEL_GAS_E_GIGA___CTE_(Consultazione)_v4.pdf",
     "size": 131927
    },
@@ -2967,7 +2939,7 @@
    },
    {
     "name": "Pagine da Configurazione sim cliente.pdf",
-    "size": 4885636
+    "size": 4836278
    }
   ],
   "documenti/enel-tablet/cte/business": [
@@ -3529,37 +3501,37 @@
   "documenti/fastweb-energia/cte/business": [
    {
     "name": "cte_fastweb_gas_fix biz.pdf",
-    "size": 133325
+    "size": 133222
    },
    {
     "name": "cte_fastweb_gas_flex biz.pdf",
-    "size": 136549
+    "size": 135963
    },
    {
     "name": "cte_fastweb_luce_fix biz.pdf",
-    "size": 167641
+    "size": 167046
    },
    {
     "name": "cte_fastweb_luce_flex biz.pdf",
-    "size": 175430
+    "size": 174809
    },
    {
-    "name": "Sales News Fastweb Gas - P.iva FW-VF 08 Ottobre 26.pdf",
-    "size": 857472
+    "name": "Sales News Fastweb Gas - P.iva FW-VF 26 Ottobre 26.pdf",
+    "size": 854546
    },
    {
-    "name": "Sales News Fastweb Luce - P.iva FW-VF 08 Ottobre 26.pdf",
-    "size": 734430
+    "name": "Sales News Fastweb Luce - P.iva FW-VF 26 Ottobre 26.pdf",
+    "size": 731513
    }
   ],
   "documenti/fastweb-energia/cte/residenziale": [
    {
     "name": "cte_fastweb_gas_flex.pdf",
-    "size": 146471
+    "size": 146608
    },
    {
     "name": "cte_fastweb_luce_fix.pdf",
-    "size": 145804
+    "size": 145815
    },
    {
     "name": "cte_fastweb_luce_fix_xte.pdf",
@@ -3567,11 +3539,11 @@
    },
    {
     "name": "cte_fastweb_luce_flat.pdf",
-    "size": 202991
+    "size": 202425
    },
    {
     "name": "cte_fastweb_luce_flex.pdf",
-    "size": 146301
+    "size": 155369
    },
    {
     "name": "Sales News Fastweb Gas Uso Domestico 8 Ottobre26.pdf",
@@ -4662,20 +4634,12 @@
     "size": 303461
    },
    {
-    "name": "CTE_EST_PIU_CONTROLLO_FLAT_CASA_GAS__V50 Valida fino al 15.10 al 23.10.pdf",
-    "size": 371097
+    "name": "CTE_EST_PIU_CONTROLLO_FLAT_CASA_GAS__V54.pdf",
+    "size": 341040
    },
    {
-    "name": "CTE_EST_PIU_CONTROLLO_FLAT_CASA_GAS__V50.pdf",
-    "size": 340850
-   },
-   {
-    "name": "CTE_EST_PIU_CONTROLLO_FLAT_CASA_LUCE__V50.pdf",
-    "size": 326736
-   },
-   {
-    "name": "CTE_EST_PIU_CONTROLLO_FLAT_CASA_LUCE__V50_PENALE Valida fino al 15.10 al 23.10.pdf",
-    "size": 325174
+    "name": "CTE_EST_PIU_CONTROLLO_FLAT_CASA_LUCE__V54.pdf",
+    "size": 326955
    },
    {
     "name": "CTE_HC_HERA_HYBRID_CASA_GAS__V34 Valida dal 19.10 al 10.11.pdf",
@@ -4694,28 +4658,12 @@
     "size": 277693
    },
    {
-    "name": "CTE_HC_PIU_CONTROLLO_FLAT_CASA_GAS__V50 Valida fino al 15.10 al 23.10.pdf",
-    "size": 312720
+    "name": "CTE_HC_PIU_CONTROLLO_FLAT_CASA_GAS__V54.pdf",
+    "size": 314193
    },
    {
-    "name": "CTE_HC_PIU_CONTROLLO_FLAT_CASA_GAS__V50.pdf",
-    "size": 314082
-   },
-   {
-    "name": "CTE_HC_PIU_CONTROLLO_FLAT_CASA_LUCE__V50.pdf",
-    "size": 301470
-   },
-   {
-    "name": "CTE_HC_PIU_CONTROLLO_FLAT_CASA_LUCE__V50_PENALE Valida fino al 15.10 al 23.10.pdf",
-    "size": 299370
-   },
-   {
-    "name": "EST HERA_HYBRID_LIMITED_EDITION_CASA_LUCE_V33 SOLO APPAROUND Valida dal 14.10 al 23.10.pdf",
-    "size": 322395
-   },
-   {
-    "name": "HERA_HYBRID_LIMITED_EDITION_CASA_GAS V33 SOLO APPAROUND Valida dal 14.10 al 23.10.pdf",
-    "size": 402732
+    "name": "CTE_HC_PIU_CONTROLLO_FLAT_CASA_LUCE__V54.pdf",
+    "size": 301607
    },
    {
     "name": "Schemino Offerte_Ott 2026_3.xlsx",
@@ -4878,6 +4826,22 @@
    {
     "name": "PDA ESTENERGY CONSUMER 26_06.pdf",
     "size": 732058
+   },
+   {
+    "name": "Plico Aziende EstEnergy 26_10.pdf",
+    "size": 1102602
+   },
+   {
+    "name": "Plico Aziende HC 26_10.pdf",
+    "size": 1105188
+   },
+   {
+    "name": "Plico Famiglie EstEnergy 26_10.pdf",
+    "size": 944491
+   },
+   {
+    "name": "Plico Famiglie HC 26_10.pdf",
+    "size": 928464
    },
    {
     "name": "remi hera.XLS",
