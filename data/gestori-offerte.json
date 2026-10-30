@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-29",
+ "aggiornato": "2026-10-30",
  "gestori": {
   "a2a": {
    "offerte": {
@@ -229,11 +229,11 @@
   "magis": {
    "offerte": {
     "business-gas": 4,
-    "business-luce": 10,
-    "residenziale-gas": 6,
-    "residenziale-luce": 6
+    "business-luce": 7,
+    "residenziale-gas": 3,
+    "residenziale-luce": 3
    },
-   "prossima_scadenza": "2026-10-29",
+   "prossima_scadenza": "2027-01-20",
    "partner": [
     "PromUp"
    ]
@@ -326,10 +326,10 @@
   },
   "vivienergia": {
    "offerte": {
-    "residenziale-gas": 6,
-    "residenziale-luce": 6
+    "residenziale-gas": 5,
+    "residenziale-luce": 5
    },
-   "prossima_scadenza": "2026-10-29",
+   "prossima_scadenza": "2026-11-05",
    "partner": [
     "GreenWorld"
    ]
