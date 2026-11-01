@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-30",
+ "aggiornato": "2026-11-01",
  "gestori": {
   "a2a": {
    "offerte": {
@@ -8,18 +8,6 @@
    },
    "prossima_scadenza": "2026-11-11",
    "partner": []
-  },
-  "agn-energia": {
-   "offerte": {
-    "business-gas": 7,
-    "business-luce": 7,
-    "condominio-gas": 7,
-    "condominio-luce": 7
-   },
-   "prossima_scadenza": "2026-10-31",
-   "partner": [
-    "GreenWorld"
-   ]
   },
   "alperia": {
    "offerte": {
@@ -75,26 +63,26 @@
   },
   "cogeme": {
    "offerte": {
-    "business-gas": 8,
-    "business-luce": 11,
-    "residenziale-gas": 6,
-    "residenziale-luce": 6
+    "business-gas": 7,
+    "business-luce": 9,
+    "residenziale-gas": 5,
+    "residenziale-luce": 4
    },
-   "prossima_scadenza": "2026-10-31",
+   "prossima_scadenza": "2026-12-31",
    "partner": [
     "GreenWorld"
    ]
   },
   "duferco": {
    "offerte": {
-    "business-gas": 15,
-    "business-luce": 37,
+    "business-gas": 14,
+    "business-luce": 27,
     "condominio-gas": 7,
     "condominio-luce": 7,
-    "residenziale-gas": 17,
-    "residenziale-luce": 14
+    "residenziale-gas": 1,
+    "residenziale-luce": 1
    },
-   "prossima_scadenza": "2026-10-31",
+   "prossima_scadenza": "2026-12-31",
    "partner": [
     "GreenWorld"
    ]
@@ -179,9 +167,9 @@
     "business-luce": 3,
     "condominio-luce": 2,
     "residenziale-gas": 2,
-    "residenziale-luce": 5
+    "residenziale-luce": 4
    },
-   "prossima_scadenza": "2026-10-31",
+   "prossima_scadenza": "2026-11-15",
    "partner": [
     "PromUp"
    ]
@@ -216,12 +204,12 @@
   },
   "iren": {
    "offerte": {
-    "business-gas": 3,
-    "business-luce": 5,
+    "business-gas": 2,
+    "business-luce": 3,
     "residenziale-gas": 3,
     "residenziale-luce": 3
    },
-   "prossima_scadenza": "2026-10-31",
+   "prossima_scadenza": "2026-12-14",
    "partner": [
     "GreenWorld"
    ]
@@ -274,27 +262,12 @@
     "GreenWorld"
    ]
   },
-  "sorgenia": {
-   "offerte": {
-    "business-gas": 10,
-    "business-luce": 17,
-    "residenziale-gas": 2,
-    "residenziale-luce": 2
-   },
-   "prossima_scadenza": "2026-10-31",
-   "partner": [
-    "GreenWorld",
-    "PromUp"
-   ]
-  },
   "stream": {
    "offerte": {
     "business-gas": 7,
-    "business-luce": 7,
-    "residenziale-gas": 3,
-    "residenziale-luce": 3
+    "residenziale-gas": 3
    },
-   "prossima_scadenza": "2026-10-31",
+   "prossima_scadenza": "2026-12-31",
    "partner": [
     "GreenWorld"
    ]
