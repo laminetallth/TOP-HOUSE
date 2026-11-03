@@ -14,6 +14,10 @@ on:
         description: 'Solo lettura (non scrive su Regia)'
         type: boolean
         default: true
+      dal:
+        description: 'Contratti inseriti dal (AAAA-MM-GG)'
+        type: string
+        default: '2026-10-26'
 
 concurrency:
   group: sincronizza-crm
@@ -63,6 +67,7 @@ jobs:
           GREENWORLD_PASSWORD: ${{ secrets.GREENWORLD_PASSWORD }}
           BWC_USER: ${{ secrets.BWC_USER }}
           BWC_PASSWORD: ${{ secrets.BWC_PASSWORD }}
+          DAL: ${{ inputs.dal || '2026-10-26' }}
         run: node leggi-tutti.mjs
 
       - name: Foto in caso di errore
