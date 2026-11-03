@@ -35,9 +35,13 @@ export async function login(page, { url, utente, password, attesa }) {
         'input[type="email"]:visible',
         'input[name*="user" i]:visible', 'input[name*="mail" i]:visible', 'input[name*="login" i]:visible',
         'input[id*="user" i]:visible', 'input[id*="mail" i]:visible',
-        'input[type="text"]:visible'
+        'input[type="text"]:visible', 'input:not([type]):visible', 'input[type="tel"]:visible'
     ].join(", ")).first();
-    await campoUtente.fill(utente);
+    if (!(await campoUtente.count())) {
+        await fotoErrore(page, "login-campi");
+        throw new Error("Campo utente non trovato nella pagina di accesso");
+    }
+    await campoUtente.fill(utente, { timeout: 15000 });
     await pwd.fill(password);
     const invia = page.locator('button[type="submit"]:visible, input[type="submit"]:visible, button:has-text("Accedi"):visible, button:has-text("Login"):visible, button:has-text("Entra"):visible').first();
     await Promise.all([
