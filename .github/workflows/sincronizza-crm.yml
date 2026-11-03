@@ -53,13 +53,17 @@ jobs:
           npm install --no-audit --no-fund
           npx playwright install --with-deps chromium
 
-      - name: PromUp (lettura)
+      - name: Partner (lettura)
         if: steps.orario.outputs.vai == '1'
         working-directory: automazioni/server
         env:
           PROMUP_USER: ${{ secrets.PROMUP_USER }}
           PROMUP_PASSWORD: ${{ secrets.PROMUP_PASSWORD }}
-        run: node promup.mjs
+          GREENWORLD_USER: ${{ secrets.GREENWORLD_USER }}
+          GREENWORLD_PASSWORD: ${{ secrets.GREENWORLD_PASSWORD }}
+          BWC_USER: ${{ secrets.BWC_USER }}
+          BWC_PASSWORD: ${{ secrets.BWC_PASSWORD }}
+        run: node leggi-tutti.mjs
 
       - name: Foto in caso di errore
         if: failure()
