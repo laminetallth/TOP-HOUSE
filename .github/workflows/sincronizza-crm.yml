@@ -68,6 +68,7 @@ jobs:
           BWC_USER: ${{ secrets.BWC_USER }}
           BWC_PASSWORD: ${{ secrets.BWC_PASSWORD }}
           DAL: ${{ inputs.dal || '2026-10-26' }}
+          DIAGNOSI: ${{ github.event_name == 'workflow_dispatch' && '1' || '' }}
         run: node leggi-tutti.mjs
 
       - name: Foto in caso di errore

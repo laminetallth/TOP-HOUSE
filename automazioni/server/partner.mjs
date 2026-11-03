@@ -49,7 +49,17 @@ export const PARTNER = {
             const ok = await page.locator('button:has-text("Ricerca pda")').count();
             if (!ok) { await fotoErrore(page, "bwc-login"); throw new Error("LOGIN_BWC: accesso non riuscito"); }
             await caricaLettore(page, "leggi-bwc.js", "leggiBwc");
-            return esito(await page.evaluate(([d, g]) => window.leggiBwc(d, g), [DAL, gia]));
+            const out = esito(await page.evaluate(([d, g]) => window.leggiBwc(d, g), [DAL, gia]));
+            if (process.env.DIAGNOSI) {
+                const info = await page.evaluate(() => {
+                    const t = [...document.querySelectorAll("table")].find((x) => /INTESTATARIO/.test(x.innerText));
+                    const dt = window.jQuery && t && jQuery.fn.dataTable && jQuery.fn.dataTable.isDataTable(t) ? jQuery(t).DataTable() : null;
+                    const date = [...document.querySelectorAll("input")].filter((i) => /date|data/i.test(i.type + i.name + i.id)).map((i) => `${i.name || i.id}=${i.value}`);
+                    return { url: location.pathname, tabelle: document.querySelectorAll("table").length, righeDom: t ? t.querySelectorAll("tbody tr").length : -1, righeDt: dt ? dt.rows().count() : -1, info: dt ? dt.page.info() : null, campiData: date, testoVuoto: t ? (t.querySelector(".dataTables_empty") || {}).innerText || "" : "" };
+                });
+                console.log("DIAGNOSI BWC", JSON.stringify(info));
+            }
+            return out;
         })
     }
 };
