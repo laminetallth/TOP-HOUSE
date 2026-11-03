@@ -1,0 +1,70 @@
+name: Sincronizza CRM (partner → Regia)
+
+# Gira sui server di GitHub: non serve il PC acceso né il login di Lamine.
+# Orari (ora italiana): 9:00, 11:00, 13:00, 15:00, 17:30, dal lunedì al venerdì.
+# GitHub usa l'ora UTC: ci sono gli orari sia per l'ora solare sia per l'ora legale,
+# il primo passo controlla l'ora italiana e salta i giri fuori orario.
+on:
+  schedule:
+    - cron: '0 7,8,9,10,11,12,13,14 * * 1-5'
+    - cron: '30 15,16 * * 1-5'
+  workflow_dispatch:
+    inputs:
+      prova:
+        description: 'Solo lettura (non scrive su Regia)'
+        type: boolean
+        default: true
+
+concurrency:
+  group: sincronizza-crm
+  cancel-in-progress: false
+
+jobs:
+  sincronizza:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Controlla orario (ora italiana)
+        id: orario
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then echo "vai=1" >> "$GITHUB_OUTPUT"; exit 0; fi
+          ORA=$(TZ=Europe/Rome date +%H%M); ORA=$((10#$ORA))
+          VAI=0
+          for SLOT in 900 1100 1300 1500 1730; do
+            if [ $ORA -ge $SLOT ] && [ $ORA -lt $((SLOT + 45)) ]; then VAI=1; fi
+          done
+          echo "Ora italiana: $(TZ=Europe/Rome date +%H:%M) → vai=$VAI"
+          echo "vai=$VAI" >> "$GITHUB_OUTPUT"
+
+      - uses: actions/checkout@v4
+        if: steps.orario.outputs.vai == '1'
+        with:
+          sparse-checkout: automazioni
+
+      - uses: actions/setup-node@v4
+        if: steps.orario.outputs.vai == '1'
+        with:
+          node-version: 20
+
+      - name: Installa browser
+        if: steps.orario.outputs.vai == '1'
+        working-directory: automazioni/server
+        run: |
+          npm install --no-audit --no-fund
+          npx playwright install --with-deps chromium
+
+      - name: PromUp (lettura)
+        if: steps.orario.outputs.vai == '1'
+        working-directory: automazioni/server
+        env:
+          PROMUP_USER: ${{ secrets.PROMUP_USER }}
+          PROMUP_PASSWORD: ${{ secrets.PROMUP_PASSWORD }}
+        run: node promup.mjs
+
+      - name: Foto in caso di errore
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: esiti-automazione
+          path: esiti-automazione/
+          retention-days: 3
