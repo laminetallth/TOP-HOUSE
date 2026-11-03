@@ -231,10 +231,10 @@
         3896161
       ]
     ],
-    "nota": "02/11: in Sales i vecchi documenti sono stati spostati in 'Vecchi docs' (incluse le Schede Tecniche). Da importare (scaricati da Drive nella cartella Download, non importati per accesso cartella non approvato): Formazione EKO/EKO_Percorso_Rete_Vendita_Settimana4.pdf, Formazione EKO/EKO_Formazione_Venditore.pdf (sostituisce EKOSrl_Formazione_Venditore), Documenti Finanziamento/Privati - Findomestic/Racc_Dati_Findomestic_v10.26.pdf, Documenti Contratto/{Modulo_Raccolta_Dati_v10.26, Modulo_Iva_10_v10.26, Modulo_dOrdine_v10.27_compilabile, Informativa_Precontrattuale_v10.26, Aut_Condominio_v10.26, Aut_Comproprietario_v10.26, Anagrafica_v10.26}.pdf, radice: Procedura documenti e allegati EKO v10.26.pdf, Listino EKO 2026 v10.26.pdf. Elenco 'file' NON aggiornato apposta, cosi' il prossimo controllo li rileva ancora."
+    "nota": "02/11: in Sales i vecchi documenti sono stati spostati in 'Vecchi docs' (incluse le Schede Tecniche). Da importare (scaricati da Drive nella cartella Download, non importati per accesso cartella non approvato): Formazione EKO/EKO_Percorso_Rete_Vendita_Settimana4.pdf, Formazione EKO/EKO_Formazione_Venditore.pdf (sostituisce EKOSrl_Formazione_Venditore), Documenti Finanziamento/Privati - Findomestic/Racc_Dati_Findomestic_v10.26.pdf, Documenti Contratto/{Modulo_Raccolta_Dati_v10.26, Modulo_Iva_10_v10.26, Modulo_dOrdine_v10.27_compilabile, Informativa_Precontrattuale_v10.26, Aut_Condominio_v10.26, Aut_Comproprietario_v10.26, Anagrafica_v10.26}.pdf, radice: Procedura documenti e allegati EKO v10.26.pdf, Listino EKO 2026 v10.26.pdf. Elenco 'file' NON aggiornato apposta, cosi' il prossimo controllo li rileva ancora. 03/11: nuovo anche Documenti Contratto/EKO_Modulo-ordine-wallbox_v2026.4.pdf (3,0 MB, -> wall-box), scaricato in Download. Accesso alla cartella Download chiesto di nuovo, in attesa di approvazione sul PC: niente importato."
   },
   "bwc_plenitude": {
-    "controllato": "2026-11-02",
+    "controllato": "2026-11-03",
     "file": [
       [
         "Business/ENI/MODULISTICA/PDA/PDA BUS GAS.pdf",
@@ -317,7 +317,7 @@
         594528
       ]
     ],
-    "nota": "02/11: controllato, 20 file invariati."
+    "nota": "02/11: controllato, 20 file invariati. 03/11: controllato, 20 file invariati."
   },
   "greenworld": {
     "controllato": "2026-10-26",
@@ -327,7 +327,7 @@
       "ENEL CORPORATE/OFFERTE/LUCE/ACMICRO/ENEL_BUSINESS_SUPER_LUCE-AC___CTE_(AG_BUS)_v20.pdf",
       "ENEL CORPORATE/OFFERTE/LUCE/ACMICRO/ENEL_FLEX_BUSINESS_LUCE-AC___CTE_(AG_BUS)_v30.pdf"
     ],
-    "nota": "File con 'Aggiunto il' >= ultima data: confrontare l'hash con il repo (il 26/10 GreenWorld ha ricaricato 36 CTE Enel Corporate/Engie identiche a quelle gia' presenti). 27/10: GreenWorld chiedeva il login, non controllato. 28/10: GreenWorld chiedeva il login, non controllato. 29/10: GreenWorld chiedeva il login, non controllato. 02/11: GreenWorld chiedeva il login, non controllato."
+    "nota": "File con 'Aggiunto il' >= ultima data: confrontare l'hash con il repo (il 26/10 GreenWorld ha ricaricato 36 CTE Enel Corporate/Engie identiche a quelle gia' presenti). 27/10: GreenWorld chiedeva il login, non controllato. 28/10: GreenWorld chiedeva il login, non controllato. 29/10: GreenWorld chiedeva il login, non controllato. 02/11: GreenWorld chiedeva il login, non controllato. 03/11: GreenWorld chiedeva il login, non controllato."
   },
   "promup": {
     "ultimo_post_visto": "2026-11-02",
@@ -340,6 +340,6 @@
       "2026-10-29 AXPO - PULSEE: prodotti 29.10-04.11",
       "2026-10-29 A2AGENT: CPF Small BSN fissi 29/10-11/11"
     ],
-    "nota": "29/10: importati A2A Negozio domestiche, Enel Corporate CTE FIX fino al 09/11, Audax Fix Luce 264425, Fastweb Energia RES/BIZ 26/10, Enel Digital wave 23/10, Heracomm CTE fisse e PDA 26_10 (zip allegato da Lamine in chat). TIM ignorati (non luce/gas). 02/11: 6 post da importare scaricati in Download come TH_auto_2026-11-02_promup.zip, ma l'accesso alla cartella Download del PC non era ancora approvato: non importati."
+    "nota": "29/10: importati A2A Negozio domestiche, Enel Corporate CTE FIX fino al 09/11, Audax Fix Luce 264425, Fastweb Energia RES/BIZ 26/10, Enel Digital wave 23/10, Heracomm CTE fisse e PDA 26_10 (zip allegato da Lamine in chat). TIM ignorati (non luce/gas). 02/11: 6 post da importare scaricati in Download come TH_auto_2026-11-02_promup.zip, ma l'accesso alla cartella Download del PC non era ancora approvato: non importati. 03/11: PromUp chiedeva il login, non controllato; i 6 post restano da importare."
   }
 }
