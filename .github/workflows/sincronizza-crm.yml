@@ -57,7 +57,7 @@ jobs:
           npm install --no-audit --no-fund
           npx playwright install --with-deps chromium
 
-      - name: Partner (lettura)
+      - name: Partner → Regia
         if: steps.orario.outputs.vai == '1'
         working-directory: automazioni/server
         env:
@@ -67,9 +67,10 @@ jobs:
           GREENWORLD_PASSWORD: ${{ secrets.GREENWORLD_PASSWORD }}
           BWC_USER: ${{ secrets.BWC_USER }}
           BWC_PASSWORD: ${{ secrets.BWC_PASSWORD }}
+          REGIA_API_TOKEN: ${{ secrets.REGIA_API_TOKEN }}
+          PROVA: ${{ inputs.prova }}
           DAL: ${{ inputs.dal || '2026-10-26' }}
-          DIAGNOSI: ${{ github.event_name == 'workflow_dispatch' && '1' || '' }}
-        run: node leggi-tutti.mjs
+        run: node sincronizza.mjs
 
       - name: Foto in caso di errore
         if: failure()
