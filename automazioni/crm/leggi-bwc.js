@@ -8,9 +8,21 @@ async function leggiBwc(DAL, GIA = {}) {
   if (/login|index\.php/.test(location.pathname) || !document.querySelector('button')) return JSON.stringify({ errore: 'LOGIN_BWC' });
   const btn = [...document.querySelectorAll('button')].find(b => b.innerText.trim() === 'Ricerca pda');
   if (!btn) return JSON.stringify({ errore: 'LOGIN_BWC' });
+  // senza date la ricerca può non restituire nulla: imposto "data firma dal" = DAL se il campo è vuoto
+  const campo = document.querySelector('[name="dadatafirma"], #dadatafirma') || document.querySelector('[name="dadatainserimento"], #dadatainserimento');
+  if (campo && !campo.value) {
+    const [y, m, d] = DAL.split('-');
+    campo.value = campo.type === 'date' ? DAL : `${d}/${m}/${y}`;
+    campo.dispatchEvent(new Event('input', { bubbles: true })); campo.dispatchEvent(new Event('change', { bubbles: true }));
+  }
   btn.click();
-  await new Promise(r => setTimeout(r, 5000));
-  const tab = [...document.querySelectorAll('table')].find(t => /INTESTATARIO/.test(t.innerText));
+  const trovaTab = () => [...document.querySelectorAll('table')].find(t => /INTESTATARIO/.test(t.innerText));
+  for (let i = 0; i < 40; i++) { // aspetta fino a 20 s che arrivino i risultati
+    await new Promise(r => setTimeout(r, 500));
+    const t = trovaTab();
+    if (t && t.querySelectorAll('tbody tr').length && !t.querySelector('.dataTables_empty')) break;
+  }
+  const tab = trovaTab();
   let righe = [];
   if (window.jQuery && jQuery.fn.dataTable && tab && jQuery.fn.dataTable.isDataTable(tab)) {
     const dt = jQuery(tab).DataTable();

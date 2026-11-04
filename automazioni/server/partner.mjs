@@ -54,7 +54,7 @@ export const PARTNER = {
                 const info = await page.evaluate(() => {
                     const t = [...document.querySelectorAll("table")].find((x) => /INTESTATARIO/.test(x.innerText));
                     const dt = window.jQuery && t && jQuery.fn.dataTable && jQuery.fn.dataTable.isDataTable(t) ? jQuery(t).DataTable() : null;
-                    const date = [...document.querySelectorAll("input")].filter((i) => /date|data/i.test(i.type + i.name + i.id)).map((i) => `${i.name || i.id}=${i.value}`);
+                    const date = [...document.querySelectorAll("input")].filter((i) => /date|data/i.test(i.type + i.name + i.id)).map((i) => `${i.name || i.id}(${i.type})=${i.value}`);
                     return { url: location.pathname, tabelle: document.querySelectorAll("table").length, righeDom: t ? t.querySelectorAll("tbody tr").length : -1, righeDt: dt ? dt.rows().count() : -1, info: dt ? dt.page.info() : null, campiData: date, testoVuoto: t ? (t.querySelector(".dataTables_empty") || {}).innerText || "" : "" };
                 });
                 console.log("DIAGNOSI BWC", JSON.stringify(info));
