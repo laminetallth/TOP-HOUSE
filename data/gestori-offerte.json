@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-01",
+ "aggiornato": "2026-11-05",
  "gestori": {
   "a2a": {
    "offerte": {
@@ -26,11 +26,11 @@
   "audax": {
    "offerte": {
     "business-gas": 5,
-    "business-luce": 21,
-    "residenziale-gas": 4,
-    "residenziale-luce": 4
+    "business-luce": 20,
+    "residenziale-gas": 3,
+    "residenziale-luce": 3
    },
-   "prossima_scadenza": "2026-11-04",
+   "prossima_scadenza": "2027-01-31",
    "partner": [
     "GreenWorld",
     "PromUp"
@@ -38,12 +38,11 @@
   },
   "axpo": {
    "offerte": {
-    "business-gas": 12,
+    "business-gas": 6,
     "business-luce": 19,
-    "condominio-gas": 1,
     "condominio-luce": 1
    },
-   "prossima_scadenza": "2026-11-04",
+   "prossima_scadenza": null,
    "partner": [
     "PromUp"
    ]
@@ -136,19 +135,6 @@
     "GreenWorld"
    ]
   },
-  "engie": {
-   "offerte": {
-    "business-gas": 3,
-    "business-luce": 4,
-    "residenziale-gas": 1,
-    "residenziale-luce": 5
-   },
-   "prossima_scadenza": "2026-11-04",
-   "partner": [
-    "GreenWorld",
-    "PromUp"
-   ]
-  },
   "estra": {
    "offerte": {
     "business-gas": 1,
@@ -190,13 +176,12 @@
   },
   "hera": {
    "offerte": {
-    "business-gas": 8,
-    "business-luce": 10,
-    "condominio-luce": 2,
-    "residenziale-gas": 6,
-    "residenziale-luce": 6
+    "business-gas": 4,
+    "business-luce": 4,
+    "residenziale-gas": 4,
+    "residenziale-luce": 4
    },
-   "prossima_scadenza": "2026-11-04",
+   "prossima_scadenza": "2026-11-10",
    "partner": [
     "GreenWorld",
     "PromUp"
@@ -230,10 +215,10 @@
    "offerte": {
     "business-gas": 1,
     "business-luce": 1,
-    "residenziale-gas": 6,
-    "residenziale-luce": 6
+    "residenziale-gas": 3,
+    "residenziale-luce": 3
    },
-   "prossima_scadenza": "2026-11-04",
+   "prossima_scadenza": "2026-11-23",
    "partner": [
     "BWC"
    ]
