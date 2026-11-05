@@ -51,6 +51,7 @@ async function leggiBwc(DAL, GIA = {}) {
     const pod = (r['POD / PDR'] || '').trim();
     const id = pod || (r['INTESTATARIO'] + data);
     const ko = /RIFIUTAT|\bKO\b|annullat|scartat/i.test(`${r['STATO']} ${r['ESITO PARTNER']}`);
+    if (/^\s*(TST|TEST)\b/i.test(r['INTESTATARIO'] || '')) continue; // pratiche di prova sul CRM BWC
     if (!data || (data < DAL && !(id in GIA))) continue;
     if (id in GIA && (!ko || GIA[id] === 'lost')) continue;
     out.push({
