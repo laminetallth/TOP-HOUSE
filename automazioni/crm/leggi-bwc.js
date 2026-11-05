@@ -58,7 +58,8 @@ async function leggiBwc(DAL, GIA = {}) {
       fonte: 'bwc', id, gestore: 'Plenitude', data, stato: `${r['STATO']} ${r['ESITO PARTNER']}`.trim(), ko,
       offerta: r['PRODOTTOSERVIZIO'] || r['PRODOTTO'] || '', luce: /^IT\d{3}E/i.test(pod), gas: /^\d{14}$/.test(pod),
       rid: /SDD|RID|addebito|domicil/i.test(r['TIPO PAGAMENTO'] || ''), business: /business|p\.?\s?iva|micro|pmi/i.test(`${r['BRAND'] || ''} ${r['SEGMENTO'] || ''}`) || !!(r._cliente && r._cliente.piva),
-      venditore: /NON PRESENTE|TOP HOUSE/i.test(r['AGENTE'] || '') ? null : (r['AGENTE'] || null),
+      // indicazione di Lamine (05/11): l'account BWC di Gabriele Straniero lo usano più persone → nessuna assegnazione, la fa Lamine
+      venditore: /NON PRESENTE|TOP HOUSE|STRANIERO/i.test(r['AGENTE'] || '') ? null : (r['AGENTE'] || null),
       cliente: r._cliente ? { nomeCompleto: r['INTESTATARIO'], ...r._cliente } : { nomeCompleto: r['INTESTATARIO'] },
     });
   }

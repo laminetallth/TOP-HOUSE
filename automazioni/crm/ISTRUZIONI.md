@@ -15,6 +15,8 @@ PromUp, CRM GreenWorld, CRM BWC o Union Gas e Luce (Partner.Next) va importato i
   opportunità in Vinto e in più un'opportunità aperta in **START** della pipeline **02 - Gestione Clienti** ("Cliente – Gestore (da assegnare)"):
   il venditore lo sceglie Lamine.
   Su PromUp i contratti caricati come "Gabriele Straniero (Agenzia)" sono di Gabriele Straniero: assegnati a lui, fonte "passaparola".
+- (05/11) Su **BWC** i contratti caricati con l'account di Gabriele Straniero NON si assegnano (l'account lo usano più persone):
+  fonte "BWC (agenzia)", in START di Gestione Clienti "da assegnare"; il venditore lo sceglie Lamine.
 - (27/10) In **02 - Gestione Clienti** i contratti nuovi vanno SEMPRE in **START**: Lamine li controlla, assegna il venditore e li sposta nella fase della durata (nel riepilogo si indica la durata letta, es. "Fix Luce Per Te" = 24 mesi).
 - (regola precedente, ora solo informativa) Ogni contratto (non KO) va anche nella pipeline **02 - Gestione Clienti**: venditore sconosciuto → **START**;
   venditore noto → fase della **durata** dell'offerta scelta (CTR 6 mesi S4 cap / 12 mesi / 24 mesi / 3 anni / 5 anni),
