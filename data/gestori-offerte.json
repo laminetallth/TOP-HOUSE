@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-05",
+ "aggiornato": "2026-11-06",
  "gestori": {
   "a2a": {
    "offerte": {
@@ -280,16 +280,6 @@
    "prossima_scadenza": "2026-12-31",
    "partner": [
     "PromUp"
-   ]
-  },
-  "vivienergia": {
-   "offerte": {
-    "residenziale-gas": 5,
-    "residenziale-luce": 5
-   },
-   "prossima_scadenza": "2026-11-05",
-   "partner": [
-    "GreenWorld"
    ]
   }
  }
