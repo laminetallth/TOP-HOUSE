@@ -1,0 +1,317 @@
+import { Store } from '../data/store.js';
+import { ActionError } from '../data/actions.js';
+import { cx, h } from './dom.js';
+import { icon } from './icons.js';
+import { button } from './components.js';
+import { haptic, installRipples, reduced } from './fx.js';
+
+export interface SheetOpts {
+  live?: boolean;
+  wide?: boolean;
+  onClose?: () => void;
+}
+
+export interface Ctx {
+  store: Store;
+  today: string;
+  /** true quando la pagina è appena stata aperta (animazioni d'ingresso). */
+  entering: boolean;
+  go(path: string): void;
+  toast(msg: string, opts?: { undo?: boolean; error?: boolean }): void;
+  run(fn: () => Promise<unknown>, okMsg?: string, undoable?: boolean): Promise<boolean>;
+  sheet(title: string, build: (close: () => void) => Node, opts?: SheetOpts): () => void;
+  confirm(title: string, text: string, confirmLabel: string, danger?: boolean): Promise<boolean>;
+}
+
+export interface ViewResult {
+  node: Node;
+  title: string;
+}
+
+export type View = (ctx: Ctx, params: Record<string, string>) => ViewResult;
+
+export type AreaId = 'oggi' | 'calendario' | 'attivita' | 'report' | 'obiettivi' | 'nutrizione' | 'soldi' | 'consigli' | 'impostazioni';
+
+export interface Route {
+  pattern: RegExp;
+  keys: string[];
+  area: AreaId;
+  view: View;
+}
+
+export const NAV: { id: AreaId; label: string; icon: string; path: string; primary: boolean }[] = [
+  { id: 'oggi', label: 'Oggi', icon: 'today', path: '/oggi', primary: true },
+  { id: 'calendario', label: 'Calendario', icon: 'calendar', path: '/calendario', primary: true },
+  { id: 'attivita', label: 'Attività', icon: 'grid', path: '/attivita', primary: true },
+  { id: 'report', label: 'Report', icon: 'report', path: '/report', primary: true },
+  { id: 'obiettivi', label: 'Obiettivi', icon: 'target', path: '/obiettivi', primary: false },
+  { id: 'nutrizione', label: 'Nutrizione', icon: 'leaf', path: '/nutrizione', primary: false },
+  { id: 'soldi', label: 'Soldi', icon: 'wallet', path: '/soldi', primary: false },
+  { id: 'consigli', label: 'Consigli', icon: 'bulb', path: '/consigli', primary: false },
+  { id: 'impostazioni', label: 'Impostazioni', icon: 'settings', path: '/impostazioni', primary: false },
+];
+
+export function route(path: string, area: AreaId, view: View): Route {
+  const keys: string[] = [];
+  const src = path.replace(/:([a-zA-Z]+)/g, (_, k: string) => {
+    keys.push(k);
+    return '([^/]+)';
+  });
+  return { pattern: new RegExp(`^${src}$`), keys, area, view };
+}
+
+type DocWithVT = Document & { startViewTransition?: (cb: () => void) => unknown };
+
+export class App implements Ctx {
+  today: string;
+  entering = true;
+  private main!: HTMLElement;
+  private layer!: HTMLElement;
+  private toastEl!: HTMLElement;
+  private toastTimer = 0;
+  private navEls: HTMLElement[] = [];
+  private indicator!: HTMLElement;
+  private renderQueued = false;
+  private currentPath = '';
+  private dayListeners = new Set<() => void>();
+
+  constructor(readonly store: Store, private routes: Route[], private root: HTMLElement) {
+    this.today = store.today();
+  }
+
+  onDayChange(fn: () => void): void {
+    this.dayListeners.add(fn);
+  }
+
+  start(): void {
+    this.buildShell();
+    installRipples();
+    this.store.subscribe(() => this.queueRender());
+    window.addEventListener('hashchange', () => this.navigate());
+    const tick = (): void => {
+      if (this.store.today() !== this.today) {
+        this.today = this.store.today();
+        for (const f of this.dayListeners) f();
+        this.queueRender();
+      }
+    };
+    setInterval(tick, 30_000);
+    document.addEventListener('visibilitychange', () => {
+      if (document.visibilityState === 'visible') tick();
+    });
+    if (!location.hash) history.replaceState(null, '', '#/oggi');
+    this.render(true);
+  }
+
+  go(path: string): void {
+    if (location.hash === `#${path}`) this.render(false);
+    else location.hash = path;
+  }
+
+  private navigate(): void {
+    const doc = document as DocWithVT;
+    if (doc.startViewTransition && !reduced()) doc.startViewTransition(() => this.render(true));
+    else this.render(true);
+  }
+
+  // ─── Struttura ─────────────────────────────────────────────────────────────
+
+  private buildShell(): void {
+    const sideItem = (a: (typeof NAV)[number]): HTMLElement => {
+      const el = h('a', { href: `#${a.path}`, class: 'nav-side', dataset: { area: a.id } }, icon(a.icon, 19), h('span', null, a.label));
+      this.navEls.push(el);
+      return el;
+    };
+    const side = h('nav', { class: 'sidebar', attrs: { 'aria-label': 'Sezioni' } },
+      h('a', { href: '#/oggi', class: 'brand' }, h('span', { class: 'brand-mark' }, icon('crown', 18)), h('span', { class: 'brand-name' }, 'My Empire')),
+      h('div', { class: 'side-group' }, ...NAV.filter((a) => a.primary).map(sideItem)),
+      h('div', { class: 'side-group' }, ...NAV.filter((a) => !a.primary).map(sideItem)),
+      h('div', { class: 'side-foot' }, icon('lock', 13), h('span', null, 'Dati salvati su questo dispositivo')),
+    );
+    const bottomItem = (a: (typeof NAV)[number]): HTMLElement => {
+      const el = h('a', { href: `#${a.path}`, class: 'nav-bottom', dataset: { area: a.id } }, icon(a.icon, 22), h('span', null, a.label));
+      this.navEls.push(el);
+      return el;
+    };
+    const more = h('button', { type: 'button', class: 'nav-bottom', dataset: { area: 'altro' }, on: { click: () => this.openMore() } }, icon('more', 22), h('span', null, 'Altro'));
+    this.navEls.push(more);
+    this.indicator = h('span', { class: 'nav-indicator', attrs: { 'aria-hidden': 'true' } });
+    const bottom = h('nav', { class: 'bottombar', attrs: { 'aria-label': 'Sezioni principali' } }, this.indicator, ...NAV.filter((a) => a.primary).map(bottomItem), more);
+    this.main = h('main', { class: 'main', id: 'main', attrs: { tabindex: -1 } });
+    this.layer = h('div', { class: 'layer' });
+    this.toastEl = h('div', { class: 'toast', attrs: { role: 'status', 'aria-live': 'polite' } });
+    const aurora = h('div', { class: 'aurora', attrs: { 'aria-hidden': 'true' } }, h('i', { class: 'a1' }), h('i', { class: 'a2' }), h('i', { class: 'a3' }), h('i', { class: 'grain' }));
+    this.root.replaceChildren(aurora, h('div', { class: 'shell' }, side, h('div', { class: 'content' }, this.main)), bottom, this.layer, this.toastEl);
+  }
+
+  private openMore(): void {
+    haptic();
+    this.sheet('Altro', (close) =>
+      h('div', { class: 'more-grid' }, ...NAV.filter((a) => !a.primary).map((a, i) =>
+        h('a', { href: `#${a.path}`, class: 'more-item tap', style: `--i:${i}`, on: { click: () => close() } }, h('span', { class: 'more-icon' }, icon(a.icon, 22)), h('span', null, a.label)),
+      )),
+    );
+  }
+
+  // ─── Rendering ─────────────────────────────────────────────────────────────
+
+  private queueRender(): void {
+    if (this.renderQueued) return;
+    this.renderQueued = true;
+    requestAnimationFrame(() => {
+      this.renderQueued = false;
+      this.render(false);
+    });
+  }
+
+  private render(navigated: boolean): void {
+    const path = location.hash.replace(/^#/, '') || '/oggi';
+    let match: { r: Route; params: Record<string, string> } | null = null;
+    for (const r of this.routes) {
+      const m = r.pattern.exec(path);
+      if (m) {
+        match = { r, params: Object.fromEntries(r.keys.map((k, i) => [k, decodeURIComponent(m[i + 1])])) };
+        break;
+      }
+    }
+    if (!match) {
+      location.hash = '/oggi';
+      return;
+    }
+    const pathChanged = path !== this.currentPath;
+    this.entering = navigated && pathChanged;
+    const active = document.activeElement as HTMLInputElement | null;
+    const focusId = !pathChanged && active?.id && this.main.contains(active) ? active.id : null;
+    const scroll = window.scrollY;
+    let result: ViewResult;
+    try {
+      result = match.r.view(this, match.params);
+    } catch (e) {
+      console.error(e);
+      result = { title: 'Errore', node: h('div', { class: 'empty' }, h('p', { class: 'empty-title' }, 'Questa schermata non si è caricata.'), h('p', { class: 'muted' }, String((e as Error).message ?? e))) };
+    }
+    const wrap = h('div', { class: cx('view', this.entering && 'enter') }, result.node);
+    this.main.replaceChildren(wrap);
+    document.title = `${result.title} · My Empire`;
+    const nav = NAV.find((a) => a.id === match!.r.area);
+    for (const el of this.navEls) {
+      const id = el.dataset.area;
+      const on = id === match.r.area || (id === 'altro' && !nav?.primary);
+      el.classList.toggle('active', on);
+      if (el.tagName === 'A') {
+        if (id === match.r.area) el.setAttribute('aria-current', 'page');
+        else el.removeAttribute('aria-current');
+      }
+    }
+    this.moveIndicator();
+    if (this.entering) {
+      window.scrollTo(0, 0);
+      this.main.focus({ preventScroll: true });
+    } else window.scrollTo(0, scroll);
+    this.currentPath = path;
+    if (focusId) document.getElementById(focusId)?.focus({ preventScroll: true });
+    this.entering = false;
+  }
+
+  private moveIndicator(): void {
+    const on = this.navEls.find((e) => e.classList.contains('nav-bottom') && e.classList.contains('active'));
+    if (!on || !this.indicator) return;
+    requestAnimationFrame(() => {
+      const bar = this.indicator.parentElement!.getBoundingClientRect();
+      const r = on.getBoundingClientRect();
+      this.indicator.style.transform = `translateX(${r.left - bar.left + r.width / 2 - 20}px)`;
+      this.indicator.classList.add('on');
+    });
+  }
+
+  // ─── Messaggi ──────────────────────────────────────────────────────────────
+
+  toast(msg: string, opts: { undo?: boolean; error?: boolean } = {}): void {
+    clearTimeout(this.toastTimer);
+    const undo = opts.undo && this.store.canUndo()
+      ? h('button', { type: 'button', class: 'toast-undo', on: { click: async () => {
+          this.toastEl.classList.remove('show');
+          const label = await this.store.undo().catch(() => null);
+          this.toast(label ? `Annullato: ${label.toLowerCase()}` : 'Niente da annullare');
+        } } }, icon('undo', 16), 'Annulla')
+      : null;
+    this.toastEl.replaceChildren(h('span', { class: cx('toast-msg', opts.error && 'err') }, msg), undo ?? '');
+    this.toastEl.classList.remove('show');
+    void this.toastEl.offsetWidth;
+    this.toastEl.classList.add('show');
+    if (opts.error) haptic([30, 40, 30]);
+    this.toastTimer = window.setTimeout(() => this.toastEl.classList.remove('show'), opts.error ? 6000 : undo ? 5000 : 2600);
+  }
+
+  async run(fn: () => Promise<unknown>, okMsg?: string, undoable = false): Promise<boolean> {
+    try {
+      await fn();
+      if (okMsg) this.toast(okMsg, { undo: undoable });
+      return true;
+    } catch (e) {
+      const msg = e instanceof Error ? e.message : 'Operazione non riuscita.';
+      this.toast(e instanceof ActionError ? msg : `Non salvato: ${msg}`, { error: true });
+      if (!(e instanceof ActionError)) console.error(e);
+      return false;
+    }
+  }
+
+  sheet(title: string, build: (close: () => void) => Node, opts: SheetOpts = {}): () => void {
+    const prevFocus = document.activeElement as HTMLElement | null;
+    const body = h('div', { class: 'sheet-body' });
+    let unsub: (() => void) | null = null;
+    let closed = false;
+    const onKey = (e: KeyboardEvent): void => {
+      if (e.key === 'Escape') close();
+    };
+    const close = (): void => {
+      if (closed) return;
+      closed = true;
+      unsub?.();
+      opts.onClose?.();
+      wrap.classList.remove('open');
+      document.removeEventListener('keydown', onKey);
+      setTimeout(() => {
+        wrap.remove();
+        if (!this.layer.querySelector('.sheet-wrap')) document.body.classList.remove('locked');
+      }, 260);
+      if (prevFocus && document.body.contains(prevFocus)) prevFocus.focus({ preventScroll: true });
+    };
+    const fill = (): void => {
+      if (closed) return;
+      const active = document.activeElement as HTMLElement | null;
+      const fid = active && body.contains(active) ? active.id : '';
+      body.replaceChildren(build(close));
+      if (fid) document.getElementById(fid)?.focus({ preventScroll: true });
+    };
+    const titleId = `st-${Math.random().toString(36).slice(2, 7)}`;
+    const panel = h('div', { class: cx('sheet', opts.wide && 'sheet-wide'), attrs: { role: 'dialog', 'aria-modal': 'true', 'aria-labelledby': titleId, tabindex: -1 } },
+      h('div', { class: 'sheet-grip', attrs: { 'aria-hidden': 'true' } }),
+      h('div', { class: 'sheet-head' }, h('h2', { id: titleId, class: 'sheet-title' }, title), button('', close, { variant: 'quiet', icon: 'x', title: 'Chiudi', small: true })),
+      body,
+    );
+    const wrap = h('div', { class: 'sheet-wrap' }, h('div', { class: 'scrim', on: { click: close } }), panel);
+    fill();
+    if (opts.live) unsub = this.store.subscribe(() => requestAnimationFrame(fill));
+    this.layer.appendChild(wrap);
+    document.body.classList.add('locked');
+    document.addEventListener('keydown', onKey);
+    requestAnimationFrame(() => {
+      wrap.classList.add('open');
+      const first = panel.querySelector<HTMLElement>('[autofocus]');
+      (first ?? panel).focus({ preventScroll: true });
+    });
+    return close;
+  }
+
+  confirm(title: string, text: string, confirmLabel: string, danger = false): Promise<boolean> {
+    return new Promise((resolve) => {
+      let answer = false;
+      this.sheet(title, (close) =>
+        h('div', { class: 'stack' },
+          h('p', { class: 'muted' }, text),
+          h('div', { class: 'row-end' }, button('Indietro', close), button(confirmLabel, () => { answer = true; close(); }, { variant: danger ? 'danger' : 'primary' })),
+        ), { onClose: () => resolve(answer) });
+    });
+  }
+}

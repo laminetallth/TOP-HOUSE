@@ -1,0 +1,12 @@
+{
+  "name": "My Empire",
+  "short_name": "My Empire",
+  "start_url": "./#/oggi",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#070814",
+  "theme_color": "#070814",
+  "lang": "it",
+  "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+}
