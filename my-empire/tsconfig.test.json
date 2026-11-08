@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es2022",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "strict": true,
+    "noUnusedLocals": true,
+    "skipLibCheck": true,
+    "types": [],
+    "lib": ["es2022", "dom"],
+    "outDir": ".test-build",
+    "rootDir": "."
+  },
+  "include": ["src/domain/**/*.ts", "src/data/**/*.ts", "tests/**/*.ts"]
+}
