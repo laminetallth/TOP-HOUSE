@@ -37,6 +37,8 @@ async function leggiPromup(DAL, GIA = {}) {
         .map(e => ((e.options[e.selectedIndex] || {}).text || '').trim()).filter(t => t && !/^(-+|seleziona.*|nessun.*)$/i.test(t)).join(' + ');
       out.push({
         fonte: 'promup', id, gestore: v.nome, vista: v.id, data, stato, ko, offerta,
+        // colore della riga su PromUp (verde chiaro / verde scuro = andati a buon fine)
+        colore: [r.getAttribute('class') || '', r.getAttribute('style') || '', r.getAttribute('bgcolor') || '', ...[...r.cells].slice(0, 3).map(x => [x.getAttribute('class') || '', x.getAttribute('style') || '', x.getAttribute('bgcolor') || ''].join('~'))].join(' | '),
         tipo: [c(col('Cntr')), tipoCol].filter(Boolean).join(' '), pod: val('pod').toUpperCase(), pdr: val('pdr'),
         luce: !!val('pod') || /energia|luce/i.test(c(col('Cntr'))), gas: !!val('pdr') || /gas/i.test(c(col('Cntr'))),
         // select "payment": 1 = Carta di credito, 2 = RID, 3 = Bollettino postale
