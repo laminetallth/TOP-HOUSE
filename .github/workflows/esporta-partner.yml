@@ -5,6 +5,7 @@ on:
       partner: { description: 'promup / greenworld / bwc', type: string, default: 'promup' }
       dal: { description: 'Dal (AAAA-MM-GG)', type: string, default: '2026-10-01' }
       al: { description: 'Al (AAAA-MM-GG)', type: string, default: '2026-10-31' }
+      chiave: { description: 'Chiave per la copia cifrata nel log', type: string, default: '' }
 jobs:
   esporta:
     runs-on: ubuntu-latest
@@ -29,6 +30,7 @@ jobs:
           PARTNER: ${{ inputs.partner }}
           DAL: ${{ inputs.dal }}
           AL: ${{ inputs.al }}
+          CHIAVE: ${{ inputs.chiave }}
         run: node esporta.mjs
       - uses: actions/upload-artifact@v4
         with: { name: esportazione, path: esiti-automazione/, retention-days: 1 }
