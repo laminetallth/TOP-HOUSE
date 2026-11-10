@@ -1,7 +1,7 @@
 // Lettori dei portali dei partner, versione server (GitHub): entrano da soli con i Secrets.
 import { apriBrowser, login, caricaLettore, fotoErrore, segreto } from "./comune.mjs";
 
-const DAL = process.env.DAL || "2026-10-26";
+const DAL = process.env.DAL || new Date(Date.now() - 40 * 864e5).toISOString().slice(0, 10); // ultimi 40 giorni
 
 async function conPagina(nome, fn) {
     const { browser, context } = await apriBrowser();

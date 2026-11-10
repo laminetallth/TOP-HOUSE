@@ -4,7 +4,7 @@ import path from "node:path";
 import { apriBrowser, login, caricaLettore, fotoErrore, segreto, riepilogo, conta, CARTELLA_ESITI } from "./comune.mjs";
 
 const BASE = "https://promup.sharework.it";
-const DAL = process.env.DAL || "2026-10-26";
+const DAL = process.env.DAL || new Date(Date.now() - 40 * 864e5).toISOString().slice(0, 10); // ultimi 40 giorni
 
 export async function leggiPromupServer(gia = {}) {
     const { browser, context } = await apriBrowser();

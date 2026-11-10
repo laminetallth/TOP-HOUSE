@@ -2,7 +2,7 @@
 import { PARTNER, partnerConfigurati } from "./partner.mjs";
 import { riepilogo, conta } from "./comune.mjs";
 
-const DAL = process.env.DAL || "2026-10-26";
+const DAL = process.env.DAL || new Date(Date.now() - 40 * 864e5).toISOString().slice(0, 10); // ultimi 40 giorni
 const attivi = partnerConfigurati();
 const mancanti = Object.keys(PARTNER).filter((k) => !attivi.includes(k));
 riepilogo(`## Lettura partner (dal ${DAL})\n`);

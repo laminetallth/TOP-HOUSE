@@ -1,13 +1,13 @@
 name: Sincronizza CRM (partner → Regia)
 
 # Gira sui server di GitHub: non serve il PC acceso né il login di Lamine.
-# Orari (ora italiana): 9:00, 11:00, 13:00, 15:00, 17:30, dal lunedì al venerdì.
-# GitHub usa l'ora UTC: ci sono gli orari sia per l'ora solare sia per l'ora legale,
-# il primo passo controlla l'ora italiana e salta i giri fuori orario.
+# Orari desiderati (ora italiana): 9:00, 11:00, 13:00, 15:00, 17:30, lunedì-venerdì.
+# GitHub fa partire gli orari programmati spesso in ritardo (anche di ore) o li salta:
+# per questo il lancio è ogni 30 minuti e il controllo lascia girare un giro per ogni fascia
+# (8:45-10:59, 11-12:59, 13-14:59, 15-17:14, 17:15-19:30), così almeno un giro per fascia parte.
 on:
   schedule:
-    - cron: '0 7,8,9,10,11,12,13,14 * * 1-5'
-    - cron: '30 15,16 * * 1-5'
+    - cron: '*/30 6-18 * * 1-5'
   workflow_dispatch:
     inputs:
       prova:
@@ -15,9 +15,13 @@ on:
         type: boolean
         default: true
       dal:
-        description: 'Contratti inseriti dal (AAAA-MM-GG)'
+        description: 'Contratti inseriti dal (AAAA-MM-GG, vuoto = ultimi 40 giorni)'
         type: string
-        default: '2026-10-26'
+        default: ''
+
+permissions:
+  contents: read
+  actions: read
 
 concurrency:
   group: sincronizza-crm
@@ -30,15 +34,52 @@ jobs:
     steps:
       - name: Controlla orario (ora italiana)
         id: orario
+        env:
+          GH_TOKEN: ${{ github.token }}
+          EVENTO: ${{ github.event_name }}
+          REPO: ${{ github.repository }}
+          RUN_ID: ${{ github.run_id }}
         run: |
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then echo "vai=1" >> "$GITHUB_OUTPUT"; exit 0; fi
-          ORA=$(TZ=Europe/Rome date +%H%M); ORA=$((10#$ORA))
-          VAI=0
-          for SLOT in 900 1100 1300 1500 1730; do
-            if [ $ORA -ge $SLOT ] && [ $ORA -lt $((SLOT + 45)) ]; then VAI=1; fi
-          done
-          echo "Ora italiana: $(TZ=Europe/Rome date +%H:%M) → vai=$VAI"
-          echo "vai=$VAI" >> "$GITHUB_OUTPUT"
+          if [ "$EVENTO" = "workflow_dispatch" ]; then echo "vai=1" >> "$GITHUB_OUTPUT"; exit 0; fi
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import json, os, urllib.request
+          from datetime import datetime, timezone
+          from zoneinfo import ZoneInfo
+          roma = ZoneInfo("Europe/Rome")
+          FASCE = [(845, 1100), (1100, 1300), (1300, 1500), (1500, 1715), (1715, 1931)]
+          def fascia(dt):
+              if dt.isoweekday() > 5: return None
+              hm = dt.hour * 100 + dt.minute
+              for i, (a, b) in enumerate(FASCE):
+                  if a <= hm < b: return i
+              return None
+          ora = datetime.now(roma)
+          f = fascia(ora)
+          vai = 0
+          if f is not None:
+              vai = 1
+              req = urllib.request.Request(
+                  f"https://api.github.com/repos/{os.environ['REPO']}/actions/workflows/sincronizza-crm.yml/runs?per_page=40",
+                  headers={"Authorization": "Bearer " + os.environ["GH_TOKEN"], "Accept": "application/vnd.github+json"})
+              try:
+                  runs = json.load(urllib.request.urlopen(req)).get("workflow_runs", [])
+              except Exception:
+                  runs = []
+              for r in runs:
+                  if str(r["id"]) == os.environ["RUN_ID"] or r.get("conclusion") != "success":
+                      continue
+                  ini = datetime.fromisoformat(r["run_started_at"].replace("Z", "+00:00"))
+                  fine = datetime.fromisoformat(r["updated_at"].replace("Z", "+00:00"))
+                  if (fine - ini).total_seconds() < 60:  # giro saltato, non conta
+                      continue
+                  ir = ini.astimezone(roma)
+                  if ir.date() == ora.date() and fascia(ir) == f:
+                      vai = 0
+                      break
+          import sys
+          print(f"Ora italiana {ora:%a %H:%M}, fascia {f}, vai={vai}", file=sys.stderr)
+          print(f"vai={vai}")
+          PY
 
       - uses: actions/checkout@v4
         if: steps.orario.outputs.vai == '1'
@@ -69,7 +110,7 @@ jobs:
           BWC_PASSWORD: ${{ secrets.BWC_PASSWORD }}
           REGIA_API_TOKEN: ${{ secrets.REGIA_API_TOKEN }}
           PROVA: ${{ inputs.prova }}
-          DAL: ${{ inputs.dal || '2026-10-26' }}
+          DAL: ${{ inputs.dal }}
         run: node sincronizza.mjs
 
       - name: Foto in caso di errore
