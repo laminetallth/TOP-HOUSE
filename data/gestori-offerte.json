@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-06",
+ "aggiornato": "2026-11-10",
  "gestori": {
   "a2a": {
    "offerte": {
@@ -99,10 +99,10 @@
   },
   "enel-corporate": {
    "offerte": {
-    "business-gas": 9,
-    "business-luce": 34
+    "business-gas": 8,
+    "business-luce": 30
    },
-   "prossima_scadenza": "2026-11-09",
+   "prossima_scadenza": "2026-11-23",
    "partner": [
     "GreenWorld",
     "PromUp"
