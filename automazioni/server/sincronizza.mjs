@@ -46,6 +46,20 @@ for (const k of partnerConfigurati()) {
 }
 riepilogo("");
 
+// Lo stesso contratto può comparire più volte nel portale (es. reinserito dopo un KO):
+// ne tengo uno solo per fonte + id, e se uno è valido vince sul KO.
+{
+    const unici = new Map();
+    for (const c of daLavorare) {
+        const k = `${c.fonte}|${c.id}`;
+        const prima = unici.get(k);
+        if (!prima || (prima.ko && !c.ko)) unici.set(k, c);
+    }
+    const tolti = daLavorare.length - unici.size;
+    daLavorare.splice(0, daLavorare.length, ...unici.values());
+    if (tolti) riepilogo(`Righe doppie nei portali ignorate: ${tolti}\n`);
+}
+
 if (regia && daLavorare.length) {
     try {
         const report = await regia.sincronizza(daLavorare, prova);
