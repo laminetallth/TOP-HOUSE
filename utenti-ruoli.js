@@ -16,7 +16,8 @@ window.USER_ROLES = {
   "massironi.massimiliano@gmail.com": "venditore",
   "ascolta.misci@gmail.com": "venditore",
   "giovanni.cucinella@gmail.com": "venditore",
-  "giacomo@cian.studio": "venditore"
+  "giacomo@cian.studio": "venditore",
+  "massialtamarea@gmail.com": "venditore"
 };
 
 // Accessi limitati: un venditore con un profilo qui sotto vede SOLO i gestori del profilo
