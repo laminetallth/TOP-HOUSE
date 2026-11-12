@@ -1,12 +1,12 @@
 {
- "aggiornato": "2026-11-11",
+ "aggiornato": "2026-11-12",
  "gestori": {
   "a2a": {
    "offerte": {
-    "residenziale-gas": 3,
-    "residenziale-luce": 3
+    "residenziale-gas": 2,
+    "residenziale-luce": 2
    },
-   "prossima_scadenza": "2026-11-11",
+   "prossima_scadenza": "2026-11-25",
    "partner": []
   },
   "alperia": {
@@ -129,18 +129,6 @@
    "prossima_scadenza": "2026-11-12",
    "partner": [
     "GreenWorld"
-   ]
-  },
-  "estra": {
-   "offerte": {
-    "business-gas": 1,
-    "business-luce": 2,
-    "residenziale-gas": 1,
-    "residenziale-luce": 1
-   },
-   "prossima_scadenza": "2026-11-11",
-   "partner": [
-    "PromUp"
    ]
   },
   "fastweb-energia": {
