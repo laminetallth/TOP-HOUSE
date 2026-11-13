@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-12",
+ "aggiornato": "2026-11-13",
  "gestori": {
   "a2a": {
    "offerte": {
@@ -106,27 +106,23 @@
   },
   "enel-digital": {
    "offerte": {
-    "business-gas": 3,
-    "business-luce": 5,
-    "condominio-luce": 1,
-    "residenziale-gas": 2,
-    "residenziale-luce": 2
+    "business-gas": 1,
+    "business-luce": 1
    },
-   "prossima_scadenza": "2026-11-12",
+   "prossima_scadenza": "2026-12-03",
    "partner": [
     "PromUp"
    ]
   },
   "enel-tablet": {
    "offerte": {
-    "business-gas": 12,
-    "business-luce": 14,
-    "condominio-gas": 3,
-    "condominio-luce": 3,
-    "residenziale-gas": 5,
-    "residenziale-luce": 7
+    "business-gas": 6,
+    "business-luce": 5,
+    "condominio-gas": 2,
+    "residenziale-gas": 3,
+    "residenziale-luce": 4
    },
-   "prossima_scadenza": "2026-11-12",
+   "prossima_scadenza": "2026-12-03",
    "partner": [
     "GreenWorld"
    ]
@@ -227,6 +223,16 @@
    "partner": [
     "GreenWorld"
    ]
+  },
+  "union": {
+   "offerte": {
+    "business-gas": 1,
+    "business-luce": 1,
+    "residenziale-gas": 1,
+    "residenziale-luce": 1
+   },
+   "prossima_scadenza": "2026-11-23",
+   "partner": []
   },
   "unoenergy": {
    "offerte": {

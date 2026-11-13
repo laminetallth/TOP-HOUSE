@@ -10,6 +10,7 @@ on:
       - 'documenti/**/cte*/**'
       - 'scripts/genera-scadenze-cte.py'
       - 'scripts/prezzi_cte.py'
+      - 'data/proroghe-cte.json'
   schedule:
     - cron: '17 4 * * *'
   workflow_dispatch:

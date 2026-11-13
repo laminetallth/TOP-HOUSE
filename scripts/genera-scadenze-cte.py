@@ -121,9 +121,19 @@ def segmento_e_fornitura(rel_dir, nome, txt):
     return seg, ({"luce"} if luce else set()) | ({"gas"} if gas else set())
 
 
+def carica_proroghe():
+    """data/proroghe-cte.json: proroghe comunicate dal gestore che il PDF non riporta."""
+    try:
+        dati = json.load(open(os.path.join(ROOT, "data", "proroghe-cte.json"), encoding="utf-8"))
+    except (OSError, ValueError):
+        return {}
+    return {k: v for k, v in dati.items() if not k.startswith("_")}
+
+
 def main():
     risultati, offerte = {}, {}
     oggi = dt.date.today()
+    proroghe = carica_proroghe()
     for base in ("documenti",):
         for d, _, files in os.walk(os.path.join(ROOT, base)):
             rel_dir = os.path.relpath(d, ROOT).replace(os.sep, "/")
@@ -137,6 +147,11 @@ def main():
                 rel = f"{rel_dir}/{f}"
                 txt = testo(os.path.join(d, f))
                 trovato = scadenza(txt)
+                for chiave, pr in proroghe.items():
+                    if rel.startswith(chiave):
+                        fine = dt.date.fromisoformat(pr["scade"])
+                        if not trovato or fine > trovato[1]:
+                            trovato = (0, fine, pr.get("nota", "Prorogata"))
                 info = {}
                 if trovato:
                     info = {"scade": trovato[1].isoformat(), "testo": trovato[2]}

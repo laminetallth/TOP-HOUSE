@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-29",
+ "aggiornato": "2026-11-13",
  "file": {
   "documenti/a2a/cte/business/A2A Full Gas Business.pdf": {
    "scade": "2026-10-28",
@@ -9225,6 +9225,54 @@
      "f": "gas",
      "prezzo": 0.6,
      "testo": "Corrispettivo Gas 0,600 Euro/Smc"
+    }
+   ]
+  },
+  "documenti/union/cte-business-gas/Union Fix and Go 24 Impresa Gas.pdf": {
+   "scade": "2026-11-23",
+   "testo": "Union: Fix&Go 24 prorogate fino al 23/11/2026",
+   "tipo": "fisso",
+   "prezzi": [
+    {
+     "f": "gas",
+     "prezzo": 0.84,
+     "testo": "Prezzo fisso per 24 mesi 0,84 Eur/Smc"
+    }
+   ]
+  },
+  "documenti/union/cte-business-luce/Union Fix and Go 24 Impresa Luce.pdf": {
+   "scade": "2026-11-23",
+   "testo": "Union: Fix&Go 24 prorogate fino al 23/11/2026",
+   "tipo": "fisso",
+   "prezzi": [
+    {
+     "f": "luce",
+     "prezzo": 0.1958,
+     "testo": "Prezzo fisso per 24 mesi 0,1958 Eur/kWh"
+    }
+   ]
+  },
+  "documenti/union/cte-residenziale-gas/Union Fix and Go 24 Gas.pdf": {
+   "scade": "2026-11-23",
+   "testo": "Union: Fix&Go 24 prorogate fino al 23/11/2026",
+   "tipo": "fisso",
+   "prezzi": [
+    {
+     "f": "gas",
+     "prezzo": 0.84,
+     "testo": "Prezzo fisso per 24 mesi 0,84 Eur/Smc"
+    }
+   ]
+  },
+  "documenti/union/cte-residenziale-luce/Union Fix and Go 24 Luce.pdf": {
+   "scade": "2026-11-23",
+   "testo": "Union: Fix&Go 24 prorogate fino al 23/11/2026",
+   "tipo": "fisso",
+   "prezzi": [
+    {
+     "f": "luce",
+     "prezzo": 0.1958,
+     "testo": "Prezzo fisso per 24 mesi 0,1958 Eur/kWh"
     }
    ]
   },
