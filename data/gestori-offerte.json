@@ -3,8 +3,10 @@
  "gestori": {
   "a2a": {
    "offerte": {
-    "residenziale-gas": 2,
-    "residenziale-luce": 2
+    "business-gas": 3,
+    "business-luce": 3,
+    "residenziale-gas": 4,
+    "residenziale-luce": 5
    },
    "prossima_scadenza": "2026-11-25",
    "partner": []
@@ -106,10 +108,13 @@
   },
   "enel-digital": {
    "offerte": {
-    "business-gas": 1,
-    "business-luce": 1
+    "business-gas": 2,
+    "business-luce": 4,
+    "condominio-luce": 1,
+    "residenziale-gas": 2,
+    "residenziale-luce": 3
    },
-   "prossima_scadenza": "2026-12-03",
+   "prossima_scadenza": "2026-11-30",
    "partner": [
     "PromUp"
    ]
@@ -125,6 +130,19 @@
    "prossima_scadenza": "2026-12-03",
    "partner": [
     "GreenWorld"
+   ]
+  },
+  "engie": {
+   "offerte": {
+    "business-gas": 3,
+    "business-luce": 3,
+    "residenziale-gas": 2,
+    "residenziale-luce": 5
+   },
+   "prossima_scadenza": "2026-11-18",
+   "partner": [
+    "GreenWorld",
+    "PromUp"
    ]
   },
   "fastweb-energia": {
@@ -154,6 +172,20 @@
     "GreenWorld"
    ]
   },
+  "hera": {
+   "offerte": {
+    "business-gas": 8,
+    "business-luce": 10,
+    "condominio-luce": 2,
+    "residenziale-gas": 10,
+    "residenziale-luce": 12
+   },
+   "prossima_scadenza": "2026-11-25",
+   "partner": [
+    "GreenWorld",
+    "PromUp"
+   ]
+  },
   "iren": {
    "offerte": {
     "business-gas": 2,
@@ -169,11 +201,11 @@
   "magis": {
    "offerte": {
     "business-gas": 4,
-    "business-luce": 7,
-    "residenziale-gas": 3,
-    "residenziale-luce": 3
+    "business-luce": 10,
+    "residenziale-gas": 6,
+    "residenziale-luce": 6
    },
-   "prossima_scadenza": "2027-01-20",
+   "prossima_scadenza": "2026-11-19",
    "partner": [
     "PromUp"
    ]
