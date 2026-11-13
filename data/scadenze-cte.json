@@ -8218,7 +8218,7 @@
    "ccv": 120.0,
    "testo_ccv": "commercializzazione 120,00 €/PDR/anno"
   },
-  "documenti/plenitude/cte/business/TREND_BUSINESS_BASE_GAS.pdf": {
+  "documenti/plenitude/cte/business/TREND BUSINESS GAS.pdf": {
    "scade": "2026-11-23",
    "testo": "valida dal 15/10/26 al 23/11/26",
    "tipo": "variabile",
@@ -8232,7 +8232,7 @@
    "ccv": 192.0,
    "testo_ccv": "Costo fisso annuo 192€/anno"
   },
-  "documenti/plenitude/cte/business/TREND_BUSINESS_BASE_LUCE.pdf": {
+  "documenti/plenitude/cte/business/TREND BUSINESS LUCE.pdf": {
    "scade": "2026-11-23",
    "testo": "valida dal 15/10/26 al 23/11/26",
    "tipo": "variabile",
@@ -8247,22 +8247,22 @@
    "testo_ccv": "Costo fisso annuo 192 €/anno"
   },
   "documenti/plenitude/cte/residenziale/FIXA TIME 12 BASE.pdf": {
-   "scade": "2026-11-04",
-   "testo": "valida dal 15/10/26 al 04/11/26",
+   "scade": "2026-11-23",
+   "testo": "valida dal 05/11/26 al 23/11/26",
    "tipo": "fisso",
    "prezzi": [
     {
      "f": "luce",
-     "prezzo": 0.2145,
-     "testo": "Corrispettivo Luce 0,2145 euro/kWh",
-     "scontato": 0.20377,
+     "prezzo": 0.2365,
+     "testo": "Corrispettivo Luce 0,2365 euro/kWh",
+     "scontato": 0.22467,
      "testo_sconto": "5% · Sconti e/o bonus Quanto sopra riportato in termini di stima della spesa annua e condizioni economiche non include gli sconti sotto riportati in quanto condizion"
     },
     {
      "f": "gas",
-     "prezzo": 0.903,
-     "testo": "Corrispettivo Gas 0,903 euro/Smc",
-     "scontato": 0.85785,
+     "prezzo": 1.0,
+     "testo": "Corrispettivo Gas 1 euro/Smc",
+     "scontato": 0.95,
      "testo_sconto": "5% · Sconti e/o bonus Quanto sopra riportato in termini di stima della spesa annua e condizioni economiche non include gli sconti sotto riportati in quanto condizion"
     }
    ],
@@ -8270,52 +8270,29 @@
    "testo_ccv": "Corrispettivo annuo: Commercializzazione e Vendita 96 euro/anno"
   },
   "documenti/plenitude/cte/residenziale/FIXA TIME 24 BASE.pdf": {
-   "scade": "2026-11-04",
-   "testo": "valida dal 15/10/26 al 04/11/26",
+   "scade": "2026-11-23",
+   "testo": "valida dal 05/11/26 al 23/11/26",
    "tipo": "fisso",
    "prezzi": [
     {
      "f": "luce",
-     "prezzo": 0.2079,
-     "testo": "Corrispettivo Luce 0,2079 euro/kWh",
-     "scontato": 0.1975,
+     "prezzo": 0.1639,
+     "testo": "Corrispettivo Luce 0,1639 euro/kWh",
+     "scontato": 0.1557,
      "testo_sconto": "5% · Sconti e/o bonus Quanto sopra riportato in termini di stima della spesa annua e condizioni economiche non include gli sconti sotto riportati in quanto condizion"
     },
     {
      "f": "gas",
-     "prezzo": 0.87,
-     "testo": "Corrispettivo Gas 0,87 euro/Smc",
-     "scontato": 0.8265,
+     "prezzo": 0.79,
+     "testo": "Corrispettivo Gas 0,79 euro/Smc",
+     "scontato": 0.7505,
      "testo_sconto": "5% · Sconti e/o bonus Quanto sopra riportato in termini di stima della spesa annua e condizioni economiche non include gli sconti sotto riportati in quanto condizion"
     }
    ],
    "ccv": 144.0,
    "testo_ccv": "Corrispettivo annuo: Commercializzazione e Vendita 144 euro/anno"
   },
-  "documenti/plenitude/cte/residenziale/FIXA TIME 24 SMART.pdf": {
-   "scade": "2026-11-04",
-   "testo": "valida dal 15/10/26 al 04/11/26",
-   "tipo": "fisso",
-   "prezzi": [
-    {
-     "f": "luce",
-     "prezzo": 0.2079,
-     "testo": "Corrispettivo Luce 0,2079 euro/kWh",
-     "scontato": 0.13514,
-     "testo_sconto": "30% + 5% · Sconti e/o bonus Quanto sopra riportato in termini di stima della spesa annua e condizioni economiche include: (i) Sconto Special Days pari al 30% sul Corrispet"
-    },
-    {
-     "f": "gas",
-     "prezzo": 0.87,
-     "testo": "Corrispettivo Gas 0,87 euro/Smc",
-     "scontato": 0.5655,
-     "testo_sconto": "30% + 5% · Sconti e/o bonus Quanto sopra riportato in termini di stima della spesa annua e condizioni economiche include: (i) Sconto Special Days pari al 30% sul Corrispet"
-    }
-   ],
-   "ccv": 144.0,
-   "testo_ccv": "Corrispettivo annuo: Commercializzazione e Vendita 144 euro/anno"
-  },
-  "documenti/plenitude/cte/residenziale/FLEXI PERTINENZE_BASE.pdf": {
+  "documenti/plenitude/cte/residenziale/FLEXI PERTINENZE BASE.pdf": {
    "scade": "2026-11-23",
    "testo": "valida dal 15/10/26 al 23/11/26",
    "tipo": "fisso",
