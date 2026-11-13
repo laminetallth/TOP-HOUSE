@@ -8,66 +8,50 @@
   ],
   "documenti/a2a/cte/business": [
    {
-    "name": "A2A Full Gas Business.pdf",
-    "size": 199587
+    "name": "A2A Start Pro Gas.pdf",
+    "size": 138617
    },
    {
-    "name": "A2A Full Luce Business.pdf",
-    "size": 207570
+    "name": "A2A Start Pro Luce.pdf",
+    "size": 199494
    },
    {
-    "name": "Prezzo Sicuro Gas Business.pdf",
-    "size": 133298
-   },
-   {
-    "name": "Prezzo Sicuro Verde Business.pdf",
-    "size": 139687
-   },
-   {
-    "name": "Smart Business - Gas -.pdf",
-    "size": 139389
+    "name": "Smart Business - Gas.pdf",
+    "size": 139399
    },
    {
     "name": "Smart Business - Luce.pdf",
-    "size": 140161
+    "size": 140192
    },
    {
     "name": "Smart Business+ Gas.pdf",
-    "size": 205680
+    "size": 205676
    },
    {
     "name": "Smart Business+ Luce.pdf",
-    "size": 207381
+    "size": 207360
    }
   ],
   "documenti/a2a/cte/residenziale": [
    {
     "name": "A2A Start Gas.pdf",
-    "size": 140854
+    "size": 74875
    },
    {
-    "name": "A2A Start Luce STG.pdf",
-    "size": 199219
+    "name": "A2A Start Luce.pdf",
+    "size": 83018
    },
    {
     "name": "Esclusiva2a - Gas.pdf",
-    "size": 138477
+    "size": 138609
    },
    {
     "name": "Esclusiva2a Luce.pdf",
-    "size": 197713
+    "size": 186755
    },
    {
     "name": "Noi2.pdf",
-    "size": 204898
-   },
-   {
-    "name": "Premia2a - Gas.pdf",
-    "size": 133348
-   },
-   {
-    "name": "Premia2a Luce.pdf",
-    "size": 136509
+    "size": 205099
    },
    {
     "name": "Smart Casa Gas.pdf",
@@ -84,10 +68,6 @@
    {
     "name": "Smart Casa+ Luce.pdf",
     "size": 265927
-   },
-   {
-    "name": "Start casa Luce.pdf",
-    "size": 218635
    }
   ],
   "documenti/a2a/modulistica": [
@@ -2878,20 +2858,20 @@
   ],
   "documenti/enel-digital/cte/business": [
    {
-    "name": "ENEL_BUSINESS_ORE_HAPPY___CTE_(COM_-_WEB)_v16.pdf",
-    "size": 81885
+    "name": "ENEL_BUSINESS_SUPER_LUCE___CTE_(COM_-_WEB)_v22.pdf",
+    "size": 77603
    },
    {
-    "name": "ENEL_BUSINESS_SUPER_LUCE___CTE_(COM_-_WEB)_v21.pdf",
-    "size": 77855
+    "name": "ENEL_FIX_BUSINESS_GAS___CTE_(COM_-_WEB)_v41.pdf",
+    "size": 75150
    },
    {
-    "name": "ENEL_FIX_BUSINESS_GAS___CTE_(COM_-_WEB)_v40.pdf",
-    "size": 75158
+    "name": "ENEL_FIX_BUSINESS_LUCE___CTE_(COM_-_WEB)_v28.pdf",
+    "size": 77474
    },
    {
-    "name": "ENEL_FIX_BUSINESS_LUCE___CTE_(COM_-_WEB)_v27.pdf",
-    "size": 77221
+    "name": "ENEL_FIX_BUSINESS_START_LUCE___CTE_(COM_-_WEB)_v40.pdf",
+    "size": 77659
    },
    {
     "name": "ENEL_FLEX_BOX___CTE_(WEB)_v25.pdf",
@@ -2900,32 +2880,28 @@
    {
     "name": "ENEL_FLEX_BUSINESS_GAS___CTE_(COM_-_WEB)_v24.pdf",
     "size": 75788
-   },
-   {
-    "name": "ENEL_FLEX_CONTROL_BUSINESS_GAS___CTE_(COM_-_WEB)_v18.pdf",
-    "size": 122455
-   },
-   {
-    "name": "ENEL_FLEX_CONTROL_BUSINESS_LUCE___CTE_(COM_-_WEB)_v21.pdf",
-    "size": 81750
    }
   ],
   "documenti/enel-digital/cte/residenziale": [
    {
-    "name": "ENEL_FIX_WEB_GAS___CTE_(COM_-_WEB)_v52.pdf",
-    "size": 126558
+    "name": "ENEL_FIX_WEB_GAS___CTE_(COM_-_WEB)_v53.pdf",
+    "size": 126533
    },
    {
-    "name": "ENEL_FIX_WEB_LUCE___CTE_(COM_-_WEB)_v53.pdf",
-    "size": 200444
+    "name": "ENEL_FIX_WEB_LUCE___CTE_(COM_-_WEB)_v54.pdf",
+    "size": 200346
    },
    {
-    "name": "ENEL_GAS_E_GIGA___CTE_(Consultazione)_v4.pdf",
-    "size": 131927
+    "name": "ENEL_FLEX_LUCE___CTE_(COM_-_WEB)_v25.pdf",
+    "size": 196315
    },
    {
-    "name": "ENEL_LUCE_E_GIGA___CTE_(Consultazione)_v4.pdf",
-    "size": 218481
+    "name": "ENEL_GAS_E_GIGA___CTE_(Consultazione)_v5.pdf",
+    "size": 129878
+   },
+   {
+    "name": "ENEL_LUCE_E_GIGA___CTE_(Consultazione)_v5.pdf",
+    "size": 216762
    }
   ],
   "documenti/enel-digital/procedimenti": [
@@ -3318,32 +3294,28 @@
   ],
   "documenti/engie/cte/business": [
    {
-    "name": "223_EVO1S#00008.pdf",
-    "size": 146821
+    "name": "eFix Luce.pdf",
+    "size": 156133
    },
    {
-    "name": "223_EVO1S#00008_gas.pdf",
-    "size": 169378
+    "name": "eFlex P2 gas.pdf",
+    "size": 456973
    },
    {
-    "name": "223_EVO2S#00008.pdf",
-    "size": 146890
+    "name": "eflex P3 gas.pdf",
+    "size": 478597
    },
    {
-    "name": "223_EVO2S#00008_gas.pdf",
-    "size": 166785
+    "name": "eFlex P3.pdf",
+    "size": 192028
    },
    {
-    "name": "Efix Gas.pdf",
-    "size": 127315
+    "name": "eFlex P4 gas.pdf",
+    "size": 451609
    },
    {
-    "name": "Efix Luce.pdf",
-    "size": 154996
-   },
-   {
-    "name": "EFLEX_223_FLEX#00008.pdf",
-    "size": 286731
+    "name": "eFlex P4.pdf",
+    "size": 191915
    }
   ],
   "documenti/engie/cte/residenziale": [
@@ -3360,28 +3332,32 @@
     "size": 161816
    },
    {
-    "name": "EXTRA ENERGIA LUCE_223_TAND#00007.pdf",
-    "size": 200254
+    "name": "Extra Energia.pdf",
+    "size": 204009
    },
    {
-    "name": "FISSO 12 MESI GAS_223_DOSG#00010.pdf",
-    "size": 134345
+    "name": "NonSolo Resti&Risparmia.pdf",
+    "size": 173897
    },
    {
-    "name": "NON SOLO RESTI&RISPARMI LUCE_223_RRIV#00007_ SOLO TABLET.pdf",
-    "size": 173558
+    "name": "NonSolo VedoChiaro Smile gas.pdf",
+    "size": 174455
    },
    {
-    "name": "NON SOLO VEDO CHIARO SMILE_223_SMIV#00007_ SOLO TABLET.pdf",
-    "size": 285475
+    "name": "NonSolo VedoChiaro Smile.pdf",
+    "size": 205210
    },
    {
-    "name": "RESTI&RISPARMI LUCE_223_RRIS#00009.pdf",
-    "size": 173910
+    "name": "Rest&Risparmia Luce.pdf",
+    "size": 174259
    },
    {
-    "name": "VEDO CHIARO SMILE_223_SMIL#00008.pdf",
-    "size": 277148
+    "name": "VedoChiaro Smile.pdf",
+    "size": 199236
+   },
+   {
+    "name": "VedoChiaroSmile GAS.pdf",
+    "size": 172268
    }
   ],
   "documenti/engie/modulistica": [
@@ -4536,76 +4512,76 @@
     "size": 643752
    },
    {
-    "name": "CTE_EST_HERA_HYBRID_LAVORO_GAS__V34 Valida dal 19.10 al 10.11.pdf",
-    "size": 337544
+    "name": "CTE_EST_HERA_HYBRID_LAVORO_GAS__V35.pdf",
+    "size": 340034
    },
    {
-    "name": "CTE_EST_HERA_HYBRID_LAVORO_LUCE__V34 Valida dal 19.10 al 10.11.pdf",
-    "size": 342789
+    "name": "CTE_EST_HERA_HYBRID_LAVORO_LUCE__V35.pdf",
+    "size": 317944
    },
    {
-    "name": "CTE_EST_HERA_HYBRID_SME_GAS__V34 Valida dal 19.10 al 10.11.pdf",
-    "size": 309073
+    "name": "CTE_EST_HERA_HYBRID_SME_GAS__V35.pdf",
+    "size": 309081
    },
    {
-    "name": "CTE_EST_HERA_HYBRID_SME_LUCE__V34 Valida dal 19.10 al 10.11.pdf",
-    "size": 362599
+    "name": "CTE_EST_HERA_HYBRID_SME_LUCE__V35.pdf",
+    "size": 334991
    },
    {
-    "name": "CTE_EST_PIU_CONTROLLO_ACTIVE_LAVORO_GAS__V24.pdf",
-    "size": 298723
+    "name": "CTE_EST_PIU_CONTROLLO_ACTIVE_LAVORO_GAS__V25.pdf",
+    "size": 295548
    },
    {
-    "name": "CTE_EST_PIU_CONTROLLO_ACTIVE_LAVORO_LUCE__V24.pdf",
-    "size": 307018
+    "name": "CTE_EST_PIU_CONTROLLO_ACTIVE_LAVORO_LUCE__V25.pdf",
+    "size": 304057
    },
    {
-    "name": "CTE_EST_PREZZO_NETTO_CONDOMINIO_LUCE__V68.pdf",
-    "size": 303819
+    "name": "CTE_EST_PREZZO_NETTO_CONDOMINIO_LUCE__V69.pdf",
+    "size": 328408
    },
    {
-    "name": "CTE_EST_PREZZO_NETTO_IMPRESA_GAS__V68.pdf",
-    "size": 295010
+    "name": "CTE_EST_PREZZO_NETTO_IMPRESA_GAS__V69.pdf",
+    "size": 391744
    },
    {
-    "name": "CTE_EST_PREZZO_NETTO_IMPRESA_LUCE__V68.pdf",
-    "size": 309711
+    "name": "CTE_EST_PREZZO_NETTO_IMPRESA_LUCE__V69.pdf",
+    "size": 333771
    },
    {
-    "name": "CTE_HC_HERA_HYBRID_LAVORO_GAS__V34 Valida dal 19.10 al 10.11.pdf",
-    "size": 308313
+    "name": "CTE_HC_HERA_HYBRID_LAVORO_GAS__V35.pdf",
+    "size": 311212
    },
    {
-    "name": "CTE_HC_HERA_HYBRID_LAVORO_LUCE__V34 Valida dal 19.10 al 10.11.pdf",
-    "size": 289710
+    "name": "CTE_HC_HERA_HYBRID_LAVORO_LUCE__V35.pdf",
+    "size": 292895
    },
    {
-    "name": "CTE_HC_HERA_HYBRID_SME_GAS__V34 Valida dal 19.10 al 10.11.pdf",
-    "size": 282198
+    "name": "CTE_HC_HERA_HYBRID_SME_GAS__V35.pdf",
+    "size": 279831
    },
    {
-    "name": "CTE_HC_HERA_HYBRID_SME_LUCE__V34 Valida dal 19.10 al 10.11.pdf",
-    "size": 308818
+    "name": "CTE_HC_HERA_HYBRID_SME_LUCE__V35.pdf",
+    "size": 308748
    },
    {
-    "name": "CTE_HC_PIU_CONTROLLO_ACTIVE_LAVORO_GAS__V24.pdf",
-    "size": 269576
+    "name": "CTE_HC_PIU_CONTROLLO_ACTIVE_LAVORO_GAS__V25.pdf",
+    "size": 265983
    },
    {
-    "name": "CTE_HC_PIU_CONTROLLO_ACTIVE_LAVORO_LUCE__V24.pdf",
-    "size": 281777
+    "name": "CTE_HC_PIU_CONTROLLO_ACTIVE_LAVORO_LUCE__V25.pdf",
+    "size": 278277
    },
    {
-    "name": "CTE_HC_PREZZO_NETTO_CONDOMINIO_LUCE__V68.pdf",
-    "size": 278526
+    "name": "CTE_HC_PREZZO_NETTO_CONDOMINIO_LUCE__V69.pdf",
+    "size": 275169
    },
    {
-    "name": "CTE_HC_PREZZO_NETTO_IMPRESA_GAS__V68.pdf",
-    "size": 266608
+    "name": "CTE_HC_PREZZO_NETTO_IMPRESA_GAS__V69.pdf",
+    "size": 362908
    },
    {
-    "name": "CTE_HC_PREZZO_NETTO_IMPRESA_LUCE__V68.pdf",
-    "size": 285138
+    "name": "CTE_HC_PREZZO_NETTO_IMPRESA_LUCE__V69.pdf",
+    "size": 281234
    },
    {
     "name": "Schemino Offerte_Ott 2026_3.xlsx",
@@ -4618,52 +4594,92 @@
     "size": 643752
    },
    {
-    "name": "CTE_EST_HERA_HYBRID_CASA_GAS__V34 Valida dal 19.10 al 10.11.pdf",
-    "size": 337735
+    "name": "CTE_EST_HERA_HYBRID_CASA_GAS__V35.pdf",
+    "size": 340497
    },
    {
-    "name": "CTE_EST_HERA_HYBRID_CASA_LUCE__V34 Valida dal 19.10 al 10.11.pdf",
-    "size": 312923
+    "name": "CTE_EST_HERA_HYBRID_CASA_LUCE__V35.pdf",
+    "size": 315702
    },
    {
-    "name": "CTE_EST_PIU_CONTROLLO_ACTIVE_CASA_GAS__V24.pdf",
-    "size": 290507
+    "name": "CTE_EST_HERA_HYBRID_CLIMA_CASA_LUCE__V35.pdf",
+    "size": 304256
    },
    {
-    "name": "CTE_EST_PIU_CONTROLLO_ACTIVE_CASA_LUCE__V24.pdf",
-    "size": 303461
+    "name": "CTE_EST_HERA_PROTEZIONE_5_CASA_GAS__V2.pdf",
+    "size": 407736
    },
    {
-    "name": "CTE_EST_PIU_CONTROLLO_FLAT_CASA_GAS__V54.pdf",
-    "size": 341040
+    "name": "CTE_EST_HERA_PROTEZIONE_5_CASA_LUCE__V2.pdf",
+    "size": 366068
    },
    {
-    "name": "CTE_EST_PIU_CONTROLLO_FLAT_CASA_LUCE__V54.pdf",
-    "size": 326955
+    "name": "CTE_EST_HERA_TI_TUTELA_CASA_GAS__V41.pdf",
+    "size": 396372
    },
    {
-    "name": "CTE_HC_HERA_HYBRID_CASA_GAS__V34 Valida dal 19.10 al 10.11.pdf",
-    "size": 310877
+    "name": "CTE_EST_HERA_TI_TUTELA_CASA_LUCE__V41.pdf",
+    "size": 381335
    },
    {
-    "name": "CTE_HC_HERA_HYBRID_CASA_LUCE__V34 Valida dal 19.10 al 10.11.pdf",
-    "size": 287339
+    "name": "CTE_EST_PIU_CONTROLLO_ACTIVE_CASA_GAS__V25.pdf",
+    "size": 288909
    },
    {
-    "name": "CTE_HC_PIU_CONTROLLO_ACTIVE_CASA_GAS__V24.pdf",
-    "size": 261016
+    "name": "CTE_EST_PIU_CONTROLLO_ACTIVE_CASA_LUCE__V25.pdf",
+    "size": 302838
    },
    {
-    "name": "CTE_HC_PIU_CONTROLLO_ACTIVE_CASA_LUCE__V24.pdf",
-    "size": 277693
+    "name": "CTE_EST_PIU_CONTROLLO_FLAT_CASA_GAS__V55.pdf",
+    "size": 341585
    },
    {
-    "name": "CTE_HC_PIU_CONTROLLO_FLAT_CASA_GAS__V54.pdf",
-    "size": 314193
+    "name": "CTE_EST_PIU_CONTROLLO_FLAT_CASA_LUCE__V55.pdf",
+    "size": 327496
    },
    {
-    "name": "CTE_HC_PIU_CONTROLLO_FLAT_CASA_LUCE__V54.pdf",
-    "size": 301607
+    "name": "CTE_HC_HERA_HYBRID_CASA_GAS__V35.pdf",
+    "size": 311722
+   },
+   {
+    "name": "CTE_HC_HERA_HYBRID_CASA_LUCE__V35.pdf",
+    "size": 290616
+   },
+   {
+    "name": "CTE_HC_HERA_HYBRID_CLIMA_CASA_LUCE__V35.pdf",
+    "size": 279181
+   },
+   {
+    "name": "CTE_HC_HERA_PROTEZIONE_5_CASA_GAS__V2.pdf",
+    "size": 396570
+   },
+   {
+    "name": "CTE_HC_HERA_PROTEZIONE_5_CASA_LUCE__V2.pdf",
+    "size": 367688
+   },
+   {
+    "name": "CTE_HC_HERA_TI_TUTELA_CASA_GAS__V41.pdf",
+    "size": 367321
+   },
+   {
+    "name": "CTE_HC_HERA_TI_TUTELA_CASA_LUCE__V41.pdf",
+    "size": 356125
+   },
+   {
+    "name": "CTE_HC_PIU_CONTROLLO_ACTIVE_CASA_GAS__V25.pdf",
+    "size": 259381
+   },
+   {
+    "name": "CTE_HC_PIU_CONTROLLO_ACTIVE_CASA_LUCE__V25.pdf",
+    "size": 277031
+   },
+   {
+    "name": "CTE_HC_PIU_CONTROLLO_FLAT_CASA_GAS__V55.pdf",
+    "size": 314783
+   },
+   {
+    "name": "CTE_HC_PIU_CONTROLLO_FLAT_CASA_LUCE__V55.pdf",
+    "size": 302200
    },
    {
     "name": "Schemino Offerte_Ott 2026_3.xlsx",
@@ -5164,16 +5180,16 @@
     "size": 75642
    },
    {
-    "name": "000592ESFFL03XXBAX1026XPROXIFIXP_2026_EE_PROXIMA_FIX_PLUS_LUCE_B_BUS_3F_43_CE.pdf",
-    "size": 88276
+    "name": "000592ESFFL02XXBAX1126XPROXIFIXP_2026_EE_PROXIMA_FIX_PLUS_LUCE_B_BUS_3F_46_CE.pdf",
+    "size": 88248
    },
    {
-    "name": "000592ESFFL03XXBBX1026XPRXFIXSMA_2026_EE_PROXIMA_FIX_SMART_LUCE_B_BUS_3F_43_CE.pdf",
-    "size": 88293
+    "name": "000592ESFFL02XXBBX1126XPRXFIXSMA_2026_EE_PROXIMA_FIX_SMART_LUCE_B_BUS_3F_46_CE.pdf",
+    "size": 88260
    },
    {
-    "name": "000592ESFFL03XXBMX1026XPROXIFIXB_2026_EE_PROXIMA_FIX_LUCE_B_BUS_3F_43_CE.pdf",
-    "size": 88271
+    "name": "000592ESFFL02XXBMX1126XPROXIFIXB_2026_EE_PROXIMA_FIX_LUCE_B_BUS_3F_46_CE.pdf",
+    "size": 88240
    },
    {
     "name": "000592ESVFL01XXBMX1026XPROXISMBT_2026_EE_PROXIMA_SMALL_LUCE_BT_B_BUS_3F_43_CE.pdf",
@@ -5198,16 +5214,16 @@
   ],
   "documenti/magis/cte/residenziale": [
    {
-    "name": "000592ESFML03XXDAX1026XMIAFIXPLU_2026_EE_MIA_LUCE_FIX_PLUS_B_RET_MONO_43_CE.pdf",
-    "size": 95717
+    "name": "000592ESFML02XXDAX1126XFIX36MPLU_2026_EE_MIA_LUCE_FIX_36_PLUS_B_RET_MONO_46_CE.pdf",
+    "size": 96466
    },
    {
-    "name": "000592ESFML03XXDBX1026XMIAFIXSMA_2026_EE_MIA_LUCE_FIX_SMART_B_RET_MONO_43_CE.pdf",
-    "size": 95724
+    "name": "000592ESFML02XXDBX1126XFIX36MSMA_2026_EE_MIA_LUCE_FIX_36_SMART_B_RET_MONO_46_CE.pdf",
+    "size": 96464
    },
    {
-    "name": "000592ESFML03XXDMX1026XMIAFIXPRO_2026_EE_MIA_LUCE_FIX_PRO_B_RET_MONO_43_CE.pdf",
-    "size": 95711
+    "name": "000592ESFML02XXDMX1126XFIX36MPRO_2026_EE_MIA_LUCE_FIX_36_PRO_B_RET_MONO_46_CE.pdf",
+    "size": 96464
    },
    {
     "name": "000592ESVFL01XXDAX1026XMIAVARPLU_2026_EE_MIA_LUCE_PLUS_B_RET_BIO_43_CE.pdf",
@@ -5222,16 +5238,16 @@
     "size": 83701
    },
    {
-    "name": "000592GSFML03XXDAX1026XMIAFIXPLU_2026_GAS_MIA_GAS_FIX_PLUS_RET_43_CE.pdf",
-    "size": 93443
+    "name": "000592GSFML02XXDAX1126XFIX36MPLU_2026_GAS_MIA_GAS_FIX_36_PLUS_RET_46_CE.pdf",
+    "size": 91879
    },
    {
-    "name": "000592GSFML03XXDBX1026XMIAFIXSMA_2026_GAS_MIA_GAS_FIX_SMART_RET_43_CE.pdf",
-    "size": 91721
+    "name": "000592GSFML02XXDBX1126XFIX36MSMA_2026_GAS_MIA_GAS_FIX_36_SMART_RET_46_CE.pdf",
+    "size": 91880
    },
    {
-    "name": "000592GSFML03XXDMX1026XMIAFIXPRO_2026_GAS_MIA_GAS_FIX_PRO_RET_43_CE.pdf",
-    "size": 93427
+    "name": "000592GSFML02XXDMX1126XFIX36MPRO_2026_GAS_MIA_GAS_FIX_36_PRO_RET_46_CE.pdf",
+    "size": 91864
    },
    {
     "name": "000592GSVML01XXDAX1026XMIAVARPLU_2026_GAS_MIA_GAS_PLUS_RET_43_CE.pdf",
