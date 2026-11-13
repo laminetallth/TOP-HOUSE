@@ -8,6 +8,7 @@ TypeScript senza dipendenze a runtime. I dati restano sul dispositivo (IndexedDB
 | Sezione | Cosa fa |
 |---|---|
 | **Oggi** | Giornata in ordine di orario: attività, promemoria ed eventi. Anello di avanzamento, banner delle dichiarazioni finché non le leggi, voto 1–10 su alimentazione e soldi, pulsante + per aggiungere |
+| **Sonno (in Oggi)** | Orari di sonno e risveglio per data del risveglio, durata sugli orari locali (anche oltre mezzanotte), media degli ultimi 7 giorni registrati, storico modificabile ed eliminabile. Incluso nei backup. |
 | **Calendario** | Sostituisce il calendario del telefono. Mese con eventi, partite e barra fatto/mancato per giorno; agenda del giorno; eventi ripetuti (giornalieri, settimanali, ogni N giorni, mensili, annuali); promemoria da spuntare |
 | **Attività** | 11 attività iniziali, tutte modificabili, più quelle che aggiungi tu. Ognuna ha un calendario: i giorni fatti si accendono (aurora), i mancati sono in negativo (rosso barrato), i saltati in grigio e i previsti tratteggiati. Mostra anche serie, percentuali e andamento su 12 settimane |
 | **Basket** | Lunedì, mercoledì e venerdì. Presenze, partite in programma segnate nel calendario e statistiche delle partite (tiri, rimbalzi, assist), oltre al focus tecnico della settimana |
@@ -32,7 +33,7 @@ TypeScript senza dipendenze a runtime. I dati restano sul dispositivo (IndexedDB
 ## Sviluppo
 ```bash
 npm run typecheck    # TypeScript strict
-npm test             # 56 test sul dominio e sui dati
+npm test             # 58 test sul dominio e sui dati
 npm run build        # dist/ (da pubblicare) + dist-single/my-empire.html (file unico)
 npx http-server dist -p 8080 & npm run e2e   # 27 controlli in Chromium
 ```

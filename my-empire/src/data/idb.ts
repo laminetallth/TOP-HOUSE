@@ -3,7 +3,7 @@ import { TABLES, type Database, type Op, type Row, type TableName } from './db.j
 /** Nuovo archivio della versione 2: indipendente da quello della prima versione. */
 const DB_NAME = 'my-empire-v2';
 /** Versione dello schema IndexedDB. Ogni nuova tabella → versione +1 e passo in `upgrade`. */
-const DB_VERSION = 1; // 2: obiettivi · 3: KPI · 4: basket e palestra
+const DB_VERSION = 2; // Aggiunge sleepLogs preservando le tabelle esistenti.
 
 function req<T>(r: IDBRequest<T>): Promise<T> {
   return new Promise((resolve, reject) => {

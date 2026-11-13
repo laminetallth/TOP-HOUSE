@@ -4,7 +4,7 @@
  * Oggi: IndexedDB sul dispositivo (idb.ts). Domani: backend con autenticazione
  * (es. Supabase/PostgreSQL) implementando la stessa interfaccia.
  */
-export const TABLES = ['settings', 'events', 'habits', 'habitLogs', 'ratings', 'calEvents', 'goals', 'goalEntries', 'basketGames', 'basketWeeks', 'gymPlans', 'gymSessions', 'weekNotes'];
+export const TABLES = ['settings', 'events', 'habits', 'habitLogs', 'ratings', 'calEvents', 'goals', 'goalEntries', 'basketGames', 'basketWeeks', 'gymPlans', 'gymSessions', 'weekNotes', 'sleepLogs'];
 /** Implementazione in memoria: usata nei test e come ripiego se IndexedDB non è disponibile. */
 export class MemoryDatabase {
     label = 'Memoria temporanea (i dati si perdono alla chiusura)';

@@ -1,7 +1,7 @@
 import { TABLES, type Database, type Op, type Row, type TableName } from './db.js';
 import { defaultHabits, defaultSettings, SCHEMA_VERSION } from '../domain/defaults.js';
 import { todayKey } from '../domain/dates.js';
-import type { BasketGame, BasketWeek, CalEvent, DailyRating, EntityKind, Goal, GoalEntry, GymPlan, GymSession, Habit, HabitLog, HistoryEvent, Settings, WeekNote } from '../domain/types.js';
+import type { BasketGame, BasketWeek, CalEvent, DailyRating, EntityKind, Goal, GoalEntry, GymPlan, GymSession, Habit, HabitLog, HistoryEvent, Settings, SleepLog, WeekNote } from '../domain/types.js';
 
 export interface TableTypes {
   settings: Settings;
@@ -17,6 +17,7 @@ export interface TableTypes {
   gymPlans: GymPlan;
   gymSessions: GymSession;
   weekNotes: WeekNote;
+  sleepLogs: SleepLog;
 }
 
 export type Change<T extends TableName = TableName> =
@@ -219,7 +220,7 @@ export class Store {
 function tableEntity(t: TableName): EntityKind {
   const map: Record<TableName, EntityKind> = {
     settings: 'settings', events: 'settings', habits: 'habit', habitLogs: 'habitLog', ratings: 'rating', calEvents: 'event',
-    goals: 'goal', goalEntries: 'goalEntry', basketGames: 'basketGame', basketWeeks: 'basketWeek', gymPlans: 'gymPlan', gymSessions: 'gymSession', weekNotes: 'weekNote',
+    goals: 'goal', goalEntries: 'goalEntry', basketGames: 'basketGame', basketWeeks: 'basketWeek', gymPlans: 'gymPlan', gymSessions: 'gymSession', weekNotes: 'weekNote', sleepLogs: 'sleep',
   };
   return map[t];
 }

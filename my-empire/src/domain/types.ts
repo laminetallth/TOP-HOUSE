@@ -6,7 +6,7 @@ export type ISO = string;
 
 // ─── Storico ─────────────────────────────────────────────────────────────────
 
-export type EntityKind = 'settings' | 'habit' | 'habitLog' | 'rating' | 'event' | 'goal' | 'goalEntry' | 'basketGame' | 'basketWeek' | 'gymPlan' | 'gymSession' | 'weekNote';
+export type EntityKind = 'settings' | 'habit' | 'habitLog' | 'rating' | 'event' | 'goal' | 'goalEntry' | 'basketGame' | 'basketWeek' | 'gymPlan' | 'gymSession' | 'weekNote' | 'sleep';
 
 export interface HistoryEvent {
   id: ID;
@@ -283,4 +283,13 @@ export interface Settings {
   adviceDone: string[];
   schemaVersion: number;
   createdAt: ISO;
+}
+
+/** Una registrazione per data del risveglio; orari locali HH:MM. */
+export interface SleepLog {
+  id: string;
+  date: string;
+  bedtime: string;
+  wakeTime: string;
+  updatedAt: string;
 }
