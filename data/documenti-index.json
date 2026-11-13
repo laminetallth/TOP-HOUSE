@@ -5970,6 +5970,30 @@
     "size": 1818563
    }
   ],
+  "documenti/union/cte-business-gas": [
+   {
+    "name": "Union Fix and Go 24 Impresa Gas.pdf",
+    "size": 192632
+   }
+  ],
+  "documenti/union/cte-business-luce": [
+   {
+    "name": "Union Fix and Go 24 Impresa Luce.pdf",
+    "size": 195408
+   }
+  ],
+  "documenti/union/cte-residenziale-gas": [
+   {
+    "name": "Union Fix and Go 24 Gas.pdf",
+    "size": 198433
+   }
+  ],
+  "documenti/union/cte-residenziale-luce": [
+   {
+    "name": "Union Fix and Go 24 Luce.pdf",
+    "size": 304399
+   }
+  ],
   "documenti/upenergy/cte/business": [
    {
     "name": "BoostUp-Power.pdf",
