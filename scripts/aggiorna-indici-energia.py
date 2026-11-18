@@ -1,5 +1,6 @@
 import json
 import re
+import sys
 from datetime import date
 from urllib.request import Request, urlopen
 
@@ -35,32 +36,56 @@ def parse_date(value):
     return f"{m.group(3)}-{month:02d}-{int(m.group(1)):02d}"
 
 
-req = Request(URL, headers={"User-Agent": "TOP-HOUSE energy updater/2.0"})
-html = urlopen(req, timeout=30).read().decode("utf-8", "replace")
-text = re.sub(r"<[^>]+>", " ", html)
-text = re.sub(r"\s+", " ", text)
+MESI = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio",
+        "agosto", "settembre", "ottobre", "novembre", "dicembre"]
 
-# Esempi della pagina:
-# "PUN ... oggi, 15 settembre 2026, è 0,22368 €/kWh"
-# "PSV ... oggi, 15 settembre 2026, è 0,90572 €/Smc"
-pun_match = re.search(
-    r"PUN.*?oggi,\s*(\d{1,2}\s+[A-Za-zà]+\s+\d{4}),\s*è\s*([0-9]+(?:[.,][0-9]+)?)\s*€/kWh",
-    text,
-    re.I,
-)
-psv_match = re.search(
-    r"PSV.*?oggi,\s*(\d{1,2}\s+[A-Za-zà]+\s+\d{4}),\s*è\s*([0-9]+(?:[.,][0-9]+)?)\s*€/Smc",
-    text,
-    re.I,
-)
 
-if not pun_match or not psv_match:
-    raise RuntimeError("Impossibile leggere PUN/PSV dalla fonte A4Energie")
+def fetch_text(url):
+    req = Request(url, headers={"User-Agent": "Mozilla/5.0 (compatible; TOP-HOUSE energy updater/2.1)"})
+    html = urlopen(req, timeout=30).read().decode("utf-8", "replace")
+    return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", html))
 
-pun_date = parse_date(pun_match.group(1))
-psv_date = parse_date(psv_match.group(1))
-pun_value = to_float(pun_match.group(2))
-psv_value = to_float(psv_match.group(2))
+
+def from_a4energie():
+    text = fetch_text(URL)
+    # "PUN ... oggi, 15 settembre 2026, è 0,22368 €/kWh" / "PSV ... è 0,90572 €/Smc"
+    pm = re.search(r"PUN.*?oggi,\s*(\d{1,2}\s+[A-Za-zà]+\s+\d{4}),\s*è\s*([0-9]+(?:[.,][0-9]+)?)\s*€/kWh", text, re.I)
+    sm = re.search(r"PSV.*?oggi,\s*(\d{1,2}\s+[A-Za-zà]+\s+\d{4}),\s*è\s*([0-9]+(?:[.,][0-9]+)?)\s*€/Smc", text, re.I)
+    if not pm or not sm:
+        return None
+    return parse_date(pm.group(1)), to_float(pm.group(2)), parse_date(sm.group(1)), to_float(sm.group(2))
+
+
+def from_abbassalebollette():
+    # Fonte di riserva (valori GME): "PUN a 0,20866 €/kWh (-11,15%) e PSV a 0,8987 €/Smc (-1,51%) il 18 novembre 2026"
+    d = date.today()
+    url = ("https://www.abbassalebollette.it/mercati-prezzi/pun-e-psv-oggi-prezzi-luce-e-gas-aggiornati-al-"
+           f"{d.day}-{MESI[d.month - 1]}-{d.year}/")
+    text = fetch_text(url)
+    m = re.search(r"PUN a\s*([0-9]+[.,][0-9]+)\s*€/kWh.*?PSV a\s*([0-9]+[.,][0-9]+)\s*€/Smc\D+?(\d{1,2}\s+[A-Za-zà]+\s+\d{4})", text, re.I)
+    if not m:
+        return None
+    day = parse_date(m.group(3))
+    return day, to_float(m.group(1)), day, to_float(m.group(2))
+
+
+if len(sys.argv) == 4:
+    # Uso manuale: aggiorna-indici-energia.py AAAA-MM-GG PUN PSV
+    pun_date = psv_date = sys.argv[1]
+    pun_value, psv_value = to_float(sys.argv[2]), to_float(sys.argv[3])
+else:
+    result = None
+    for source in (from_a4energie, from_abbassalebollette):
+        try:
+            result = source()
+        except Exception as exc:  # fonte irraggiungibile: prova la successiva
+            print(f"Fonte {source.__name__} non disponibile: {exc}", file=sys.stderr)
+            result = None
+        if result:
+            break
+    if not result:
+        raise RuntimeError("Impossibile leggere PUN/PSV dalle fonti")
+    pun_date, pun_value, psv_date, psv_value = result
 
 if not pun_date or not psv_date or pun_value is None or psv_value is None:
     raise RuntimeError("Dati PUN/PSV non validi")
