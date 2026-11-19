@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-16",
+ "aggiornato": "2026-11-19",
  "gestori": {
   "a2a": {
    "offerte": {
@@ -130,19 +130,6 @@
    "prossima_scadenza": "2026-12-03",
    "partner": [
     "GreenWorld"
-   ]
-  },
-  "engie": {
-   "offerte": {
-    "business-gas": 3,
-    "business-luce": 3,
-    "residenziale-gas": 2,
-    "residenziale-luce": 5
-   },
-   "prossima_scadenza": "2026-11-18",
-   "partner": [
-    "GreenWorld",
-    "PromUp"
    ]
   },
   "fastweb-energia": {
