@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-19",
+ "aggiornato": "2026-11-20",
  "gestori": {
   "a2a": {
    "offerte": {
@@ -188,10 +188,10 @@
    "offerte": {
     "business-gas": 4,
     "business-luce": 10,
-    "residenziale-gas": 6,
-    "residenziale-luce": 6
+    "residenziale-gas": 3,
+    "residenziale-luce": 3
    },
-   "prossima_scadenza": "2026-11-19",
+   "prossima_scadenza": "2026-11-30",
    "partner": [
     "PromUp"
    ]
