@@ -12,6 +12,7 @@ import { ruleFor } from '../../domain/habits.js';
 import { H } from '../../domain/defaults.js';
 import type { RatingKind } from '../../domain/types.js';
 import { openEventForm } from './calendar.js';
+import { sleepCard } from './sleep.js';
 import { openQuickAdd } from './quickadd.js';
 
 function greeting(d: Date): string {
@@ -174,6 +175,7 @@ export function todayView(ctx: Ctx): ViewResult {
           : h('div', { class: 'all-done' }, icon('check', 22), h('span', null, items.length ? 'Tutto fatto. Goditi la serata.' : 'Giornata libera.')),
         closed.length ? h('details', { class: 'closed-group', open: closed.length <= 3 }, h('summary', null, `Fatto (${closed.length})`), h('ol', { class: 'timeline' }, ...closed.map(render))) : null,
       ),
+      sleepCard(ctx),
       votes,
       fab,
     ),

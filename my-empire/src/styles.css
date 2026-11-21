@@ -1016,3 +1016,17 @@ details > summary { cursor: pointer; }
   *, *::before, *::after { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; animation-delay: 0s !important; transition-duration: 0.001ms !important; }
   .aurora i { animation: none !important; }
 }
+
+/* Registro giornaliero del sonno */
+.sleep-card { padding: 20px; border: 1px solid var(--line, #35303f); border-radius: 20px; }
+.sleep-fields { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 16px; }
+.sleep-fields .input { width: 100%; min-width: 0; }
+.sleep-duration { font-size: 1.8rem; font-weight: 700; margin: 12px 0 4px; }
+.sleep-card form > .btn { margin-top: 12px; }
+.sleep-average { margin: 20px 0; }
+.sleep-history { margin-top: 20px; }
+.sleep-history summary { cursor: pointer; padding: 8px 0; }
+.sleep-list { list-style: none; padding: 0; max-height: 360px; overflow: auto; }
+.sleep-list li { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px; padding: 12px 0; }
+.sleep-actions { display: flex; gap: 6px; }
+@media (max-width: 600px) { .sleep-fields { grid-template-columns: 1fr; } .sleep-card { padding: 16px; } }

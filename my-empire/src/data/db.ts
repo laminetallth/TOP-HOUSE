@@ -4,7 +4,7 @@
  * Oggi: IndexedDB sul dispositivo (idb.ts). Domani: backend con autenticazione
  * (es. Supabase/PostgreSQL) implementando la stessa interfaccia.
  */
-export const TABLES = ['settings', 'events', 'habits', 'habitLogs', 'ratings', 'calEvents', 'goals', 'goalEntries', 'basketGames', 'basketWeeks', 'gymPlans', 'gymSessions', 'weekNotes'] as const;
+export const TABLES = ['settings', 'events', 'habits', 'habitLogs', 'ratings', 'calEvents', 'goals', 'goalEntries', 'basketGames', 'basketWeeks', 'gymPlans', 'gymSessions', 'weekNotes', 'sleepLogs'] as const;
 export type TableName = (typeof TABLES)[number];
 
 export interface Row {
