@@ -52,9 +52,9 @@ def from_a4energie():
     pm = re.search(r"PUN.*?oggi,\s*(\d{1,2}\s+[A-Za-zà]+\s+\d{4}),\s*è\s*([0-9]+(?:[.,][0-9]+)?)\s*€/kWh", text, re.I)
     sm = re.search(r"PSV.*?oggi,\s*(\d{1,2}\s+[A-Za-zà]+\s+\d{4}),\s*è\s*([0-9]+(?:[.,][0-9]+)?)\s*€/Smc", text, re.I)
     if not pm or not sm:
-        for unit in ("€/kWh", "€/Smc"):
+        for unit in ("kWh", "Smc", "0,2"):
             j = text.find(unit)
-            print(f"A4Energie: formato non riconosciuto, contesto di {unit}: " + (text[max(j - 250, 0):j + 120] if j >= 0 else "assente"), file=sys.stderr)
+            print(f"A4Energie: formato non riconosciuto, contesto di {unit} (len pagina {len(text)}): " + (text[max(j - 250, 0):j + 150] if j >= 0 else "assente"), file=sys.stderr)
         return None
     return parse_date(pm.group(1)), to_float(pm.group(2)), parse_date(sm.group(1)), to_float(sm.group(2))
 
