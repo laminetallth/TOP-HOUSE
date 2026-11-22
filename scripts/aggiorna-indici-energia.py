@@ -1,3 +1,4 @@
+import html as htmllib
 import json
 import re
 import sys
@@ -43,7 +44,8 @@ MESI = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio",
 def fetch_text(url):
     req = Request(url, headers={"User-Agent": "Mozilla/5.0 (compatible; TOP-HOUSE energy updater/2.1)"})
     html = urlopen(req, timeout=30).read().decode("utf-8", "replace")
-    return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", html))
+    # Il sito scrive "è" e "€" come entità HTML (&egrave; &euro;): vanno decodificate prima di cercare i valori.
+    return re.sub(r"\s+", " ", htmllib.unescape(re.sub(r"<[^>]+>", " ", html)))
 
 
 def from_a4energie():
