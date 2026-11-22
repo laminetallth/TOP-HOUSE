@@ -52,21 +52,30 @@ def from_a4energie():
     pm = re.search(r"PUN.*?oggi,\s*(\d{1,2}\s+[A-Za-zà]+\s+\d{4}),\s*è\s*([0-9]+(?:[.,][0-9]+)?)\s*€/kWh", text, re.I)
     sm = re.search(r"PSV.*?oggi,\s*(\d{1,2}\s+[A-Za-zà]+\s+\d{4}),\s*è\s*([0-9]+(?:[.,][0-9]+)?)\s*€/Smc", text, re.I)
     if not pm or not sm:
+        i = text.find("PUN")
+        print("A4Energie: formato pagina non riconosciuto. Estratto: " + text[max(i, 0):max(i, 0) + 400], file=sys.stderr)
         return None
     return parse_date(pm.group(1)), to_float(pm.group(2)), parse_date(sm.group(1)), to_float(sm.group(2))
 
 
 def from_abbassalebollette():
     # Fonte di riserva (valori GME): "PUN a 0,20866 €/kWh (-11,15%) e PSV a 0,8987 €/Smc (-1,51%) il 18 novembre 2026"
-    d = date.today()
-    url = ("https://www.abbassalebollette.it/mercati-prezzi/pun-e-psv-oggi-prezzi-luce-e-gas-aggiornati-al-"
-           f"{d.day}-{MESI[d.month - 1]}-{d.year}/")
-    text = fetch_text(url)
-    m = re.search(r"PUN a\s*([0-9]+[.,][0-9]+)\s*€/kWh.*?PSV a\s*([0-9]+[.,][0-9]+)\s*€/Smc\D+?(\d{1,2}\s+[A-Za-zà]+\s+\d{4})", text, re.I)
-    if not m:
-        return None
-    day = parse_date(m.group(3))
-    return day, to_float(m.group(1)), day, to_float(m.group(2))
+    # La pagina del giorno esce a giornata inoltrata: se non c'è ancora, prova i giorni precedenti.
+    from datetime import timedelta
+    for back in range(0, 4):
+        d = date.today() - timedelta(days=back)
+        url = ("https://www.abbassalebollette.it/mercati-prezzi/pun-e-psv-oggi-prezzi-luce-e-gas-aggiornati-al-"
+               f"{d.day}-{MESI[d.month - 1]}-{d.year}/")
+        try:
+            text = fetch_text(url)
+        except Exception as exc:
+            print(f"abbassalebollette {d.isoformat()}: {exc}", file=sys.stderr)
+            continue
+        m = re.search(r"PUN a\s*([0-9]+[.,][0-9]+)\s*€/kWh.*?PSV a\s*([0-9]+[.,][0-9]+)\s*€/Smc\D+?(\d{1,2}\s+[A-Za-zà]+\s+\d{4})", text, re.I)
+        if m:
+            day = parse_date(m.group(3))
+            return day, to_float(m.group(1)), day, to_float(m.group(2))
+    return None
 
 
 if len(sys.argv) == 4:
