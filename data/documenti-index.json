@@ -3294,28 +3294,32 @@
   ],
   "documenti/engie/cte/business": [
    {
-    "name": "eFix Luce.pdf",
-    "size": 156133
+    "name": "eFix Gas P4.pdf",
+    "size": 128456
    },
    {
-    "name": "eFlex P2 gas.pdf",
-    "size": 456973
+    "name": "eFix Luce P4.pdf",
+    "size": 148041
    },
    {
-    "name": "eflex P3 gas.pdf",
-    "size": 478597
+    "name": "eFlex Gas P2.pdf",
+    "size": 170488
    },
    {
-    "name": "eFlex P3.pdf",
-    "size": 192028
+    "name": "eFlex Gas P3.pdf",
+    "size": 170939
    },
    {
-    "name": "eFlex P4 gas.pdf",
-    "size": 451609
+    "name": "eFlex Gas P4.pdf",
+    "size": 170822
    },
    {
-    "name": "eFlex P4.pdf",
-    "size": 191915
+    "name": "eFlex Luce P3.pdf",
+    "size": 185531
+   },
+   {
+    "name": "eFlex Luce P4.pdf",
+    "size": 185418
    }
   ],
   "documenti/engie/cte/residenziale": [
@@ -3332,32 +3336,36 @@
     "size": 161816
    },
    {
-    "name": "Extra Energia.pdf",
-    "size": 204009
+    "name": "Extra Luce.pdf",
+    "size": 197679
    },
    {
-    "name": "NonSolo Resti&Risparmia.pdf",
-    "size": 173897
+    "name": "Non Solo VedoChiaroSmile GAS Solo Stellar.pdf",
+    "size": 175352
    },
    {
-    "name": "NonSolo VedoChiaro Smile gas.pdf",
-    "size": 174455
+    "name": "NonSolo Resti&Risparmia Solo Stellar.pdf",
+    "size": 166595
    },
    {
-    "name": "NonSolo VedoChiaro Smile.pdf",
-    "size": 205210
+    "name": "NonSolo VedoChiaroSmile LUCE Solo Stellar.pdf",
+    "size": 198875
    },
    {
-    "name": "Rest&Risparmia Luce.pdf",
-    "size": 174259
+    "name": "Resti&Risparmia Gas.pdf",
+    "size": 145347
    },
    {
-    "name": "VedoChiaro Smile.pdf",
-    "size": 199236
+    "name": "Resti&Risparmia Luce.pdf",
+    "size": 166580
    },
    {
-    "name": "VedoChiaroSmile GAS.pdf",
-    "size": 172268
+    "name": "VedoChiaroSmile Gas.pdf",
+    "size": 173699
+   },
+   {
+    "name": "VedoChiaroSmile Luce.pdf",
+    "size": 195830
    }
   ],
   "documenti/engie/modulistica": [
@@ -5214,16 +5222,16 @@
   ],
   "documenti/magis/cte/residenziale": [
    {
-    "name": "000592ESFML02XXDAX1126XFIX36MPLU_2026_EE_MIA_LUCE_FIX_36_PLUS_B_RET_MONO_46_CE.pdf",
-    "size": 96466
+    "name": "000592ESFML03XXDAX1126XFIX36MPLU_2026_EE_MIA_LUCE_FIX_36_PLUS_B_RET_MONO_47_CE.pdf",
+    "size": 96473
    },
    {
-    "name": "000592ESFML02XXDBX1126XFIX36MSMA_2026_EE_MIA_LUCE_FIX_36_SMART_B_RET_MONO_46_CE.pdf",
-    "size": 96464
+    "name": "000592ESFML03XXDBX1126XFIX36MSMA_2026_EE_MIA_LUCE_FIX_36_SMART_B_RET_MONO_47_CE.pdf",
+    "size": 96472
    },
    {
-    "name": "000592ESFML02XXDMX1126XFIX36MPRO_2026_EE_MIA_LUCE_FIX_36_PRO_B_RET_MONO_46_CE.pdf",
-    "size": 96464
+    "name": "000592ESFML03XXDMX1126XFIX36MPRO_2026_EE_MIA_LUCE_FIX_36_PRO_B_RET_MONO_47_CE.pdf",
+    "size": 96475
    },
    {
     "name": "000592ESVFL01XXDAX1026XMIAVARPLU_2026_EE_MIA_LUCE_PLUS_B_RET_BIO_43_CE.pdf",
@@ -5238,16 +5246,16 @@
     "size": 83701
    },
    {
-    "name": "000592GSFML02XXDAX1126XFIX36MPLU_2026_GAS_MIA_GAS_FIX_36_PLUS_RET_46_CE.pdf",
-    "size": 91879
-   },
-   {
-    "name": "000592GSFML02XXDBX1126XFIX36MSMA_2026_GAS_MIA_GAS_FIX_36_SMART_RET_46_CE.pdf",
+    "name": "000592GSFML03XXDAX1126XFIX36MPLU_2026_GAS_MIA_GAS_FIX_36_PLUS_RET_47_CE.pdf",
     "size": 91880
    },
    {
-    "name": "000592GSFML02XXDMX1126XFIX36MPRO_2026_GAS_MIA_GAS_FIX_36_PRO_RET_46_CE.pdf",
-    "size": 91864
+    "name": "000592GSFML03XXDBX1126XFIX36MSMA_2026_GAS_MIA_GAS_FIX_36_SMART_RET_47_CE.pdf",
+    "size": 91880
+   },
+   {
+    "name": "000592GSFML03XXDMX1126XFIX36MPRO_2026_GAS_MIA_GAS_FIX_36_PRO_RET_47_CE.pdf",
+    "size": 91866
    },
    {
     "name": "000592GSVML01XXDAX1026XMIAVARPLU_2026_GAS_MIA_GAS_PLUS_RET_43_CE.pdf",
