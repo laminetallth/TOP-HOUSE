@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-13",
+ "aggiornato": "2026-11-23",
  "file": {
   "documenti/a2a/cte/business/A2A Start Pro Gas.pdf": {
    "scade": "2026-11-25",
@@ -5725,9 +5725,23 @@
    "scade": "2025-06-30",
    "testo": "validità dal 23/04/2024 al 30/06/2025"
   },
-  "documenti/engie/cte/business/eFix Luce.pdf": {
-   "scade": "2026-11-18",
-   "testo": "valida dal 05/11/2026 al 18/11/2026",
+  "documenti/engie/cte/business/eFix Gas P4.pdf": {
+   "scade": "2026-12-02",
+   "testo": "valida dal 19/11/2026 al 02/12/2026",
+   "tipo": "fisso",
+   "prezzi": [
+    {
+     "f": "gas",
+     "prezzo": 0.82,
+     "testo": "Corrispettivo per il consumo 0,82000 €/Smc"
+    }
+   ],
+   "ccv": 180.0,
+   "testo_ccv": "Corrispettivo Annuo 180,00 €/anno"
+  },
+  "documenti/engie/cte/business/eFix Luce P4.pdf": {
+   "scade": "2026-12-02",
+   "testo": "valida dal 19/11/2026 al 02/12/2026",
    "tipo": "fisso",
    "prezzi": [
     {
@@ -5737,9 +5751,9 @@
    "ccv": 180.0,
    "testo_ccv": "Corrispettivo Annuo (Pfix) 180,00 €/anno"
   },
-  "documenti/engie/cte/business/eFlex P2 gas.pdf": {
-   "scade": "2026-11-18",
-   "testo": "valida dal 05/11/2026 al 18/11/2026",
+  "documenti/engie/cte/business/eFlex Gas P2.pdf": {
+   "scade": "2026-12-02",
+   "testo": "valida dal 19/11/2026 al 02/12/2026",
    "tipo": "variabile",
    "prezzi": [
     {
@@ -5751,51 +5765,9 @@
    "ccv": 180.0,
    "testo_ccv": "Corrispettivo Annuo 180,00 €/anno"
   },
-  "documenti/engie/cte/business/eFlex P3.pdf": {
-   "scade": "2026-11-18",
-   "testo": "valida dal 05/11/2026 al 18/11/2026",
-   "tipo": "variabile",
-   "prezzi": [
-    {
-     "f": "luce",
-     "spread": 0.0121,
-     "testo_spread": "PUN Index GME + 0,0121"
-    }
-   ],
-   "ccv": 180.0,
-   "testo_ccv": "Corrispettivo Annuo 180,00 €/anno"
-  },
-  "documenti/engie/cte/business/eFlex P4 gas.pdf": {
-   "scade": "2026-11-18",
-   "testo": "valida dal 05/11/2026 al 18/11/2026",
-   "tipo": "variabile",
-   "prezzi": [
-    {
-     "f": "gas",
-     "spread": 0.12,
-     "testo_spread": "PSVDA + 0,12000 €/Smc"
-    }
-   ],
-   "ccv": 180.0,
-   "testo_ccv": "Corrispettivo Annuo 180,00 €/anno"
-  },
-  "documenti/engie/cte/business/eFlex P4.pdf": {
-   "scade": "2026-11-18",
-   "testo": "valida dal 05/11/2026 al 18/11/2026",
-   "tipo": "variabile",
-   "prezzi": [
-    {
-     "f": "luce",
-     "spread": 0.0148,
-     "testo_spread": "PUN Index GME + 0,0148"
-    }
-   ],
-   "ccv": 180.0,
-   "testo_ccv": "Corrispettivo Annuo 180,00 €/anno"
-  },
-  "documenti/engie/cte/business/eflex P3 gas.pdf": {
-   "scade": "2026-11-18",
-   "testo": "valida dal 05/11/2026 al 18/11/2026",
+  "documenti/engie/cte/business/eFlex Gas P3.pdf": {
+   "scade": "2026-12-02",
+   "testo": "valida dal 19/11/2026 al 02/12/2026",
    "tipo": "variabile",
    "prezzi": [
     {
@@ -5807,23 +5779,73 @@
    "ccv": 180.0,
    "testo_ccv": "Corrispettivo Annuo 180,00 €/anno"
   },
-  "documenti/engie/cte/residenziale/Extra Energia.pdf": {
-   "scade": "2026-11-18",
-   "testo": "valida dal 05/11/2026 al 18/11/2026",
+  "documenti/engie/cte/business/eFlex Gas P4.pdf": {
+   "scade": "2026-12-02",
+   "testo": "valida dal 19/11/2026 al 02/12/2026",
+   "tipo": "variabile",
+   "prezzi": [
+    {
+     "f": "gas",
+     "spread": 0.12,
+     "testo_spread": "PSVDA + 0,12000 €/Smc"
+    }
+   ],
+   "ccv": 180.0,
+   "testo_ccv": "Corrispettivo Annuo 180,00 €/anno"
+  },
+  "documenti/engie/cte/business/eFlex Luce P3.pdf": {
+   "scade": "2026-12-02",
+   "testo": "valida dal 19/11/2026 al 02/12/2026",
+   "tipo": "variabile",
+   "prezzi": [
+    {
+     "f": "luce",
+     "spread": 0.0118,
+     "testo_spread": "PUN Index GME + 0,0118"
+    }
+   ],
+   "ccv": 180.0,
+   "testo_ccv": "Corrispettivo Annuo 180,00 €/anno"
+  },
+  "documenti/engie/cte/business/eFlex Luce P4.pdf": {
+   "scade": "2026-12-02",
+   "testo": "valida dal 19/11/2026 al 02/12/2026",
+   "tipo": "variabile",
+   "prezzi": [
+    {
+     "f": "luce",
+     "spread": 0.0146,
+     "testo_spread": "PUN Index GME + 0,0146"
+    }
+   ],
+   "ccv": 180.0,
+   "testo_ccv": "Corrispettivo Annuo 180,00 €/anno"
+  },
+  "documenti/engie/cte/residenziale/Extra Luce.pdf": {
+   "scade": "2026-12-02",
+   "testo": "valida dal 19/11/2026 al 02/12/2026",
    "prezzi": [
     {
      "f": "luce"
-    },
-    {
-     "f": "gas"
     }
    ],
    "ccv": 260.0,
    "testo_ccv": "Corrispettivo Annuo 260,00 €/anno"
   },
-  "documenti/engie/cte/residenziale/NonSolo Resti&Risparmia.pdf": {
-   "scade": "2026-11-18",
-   "testo": "valida dal 05/11/2026 al 18/11/2026",
+  "documenti/engie/cte/residenziale/Non Solo VedoChiaroSmile GAS Solo Stellar.pdf": {
+   "scade": "2026-12-02",
+   "testo": "valida dal 19/11/2026 al 02/12/2026",
+   "prezzi": [
+    {
+     "f": "gas"
+    }
+   ],
+   "ccv": 144.0,
+   "testo_ccv": "Corrispettivo Annuo 144,00 €/anno"
+  },
+  "documenti/engie/cte/residenziale/NonSolo Resti&Risparmia Solo Stellar.pdf": {
+   "scade": "2026-12-02",
+   "testo": "valida dal 19/11/2026 al 02/12/2026",
    "prezzi": [
     {
      "f": "luce"
@@ -5832,69 +5854,63 @@
      "f": "gas"
     }
    ],
-   "ccv": 149.0,
-   "testo_ccv": "Corrispettivo Annuo 149,00 €/anno"
+   "ccv": 156.0,
+   "testo_ccv": "Corrispettivo Annuo 156,00 €/anno"
   },
-  "documenti/engie/cte/residenziale/NonSolo VedoChiaro Smile gas.pdf": {
-   "scade": "2026-11-18",
-   "testo": "valida dal 05/11/2026 al 18/11/2026",
-   "prezzi": [
-    {
-     "f": "gas"
-    }
-   ],
-   "ccv": 138.0,
-   "testo_ccv": "Corrispettivo Annuo 138,00 €/anno"
-  },
-  "documenti/engie/cte/residenziale/NonSolo VedoChiaro Smile.pdf": {
-   "scade": "2026-11-18",
-   "testo": "valida dal 05/11/2026 al 18/11/2026",
-   "prezzi": [
-    {
-     "f": "luce"
-    },
-    {
-     "f": "gas"
-    }
-   ],
-   "ccv": 138.0,
-   "testo_ccv": "Corrispettivo Annuo 138,00 €/anno"
-  },
-  "documenti/engie/cte/residenziale/Rest&Risparmia Luce.pdf": {
-   "scade": "2026-11-18",
-   "testo": "valida dal 05/11/2026 al 18/11/2026",
+  "documenti/engie/cte/residenziale/NonSolo VedoChiaroSmile LUCE Solo Stellar.pdf": {
+   "scade": "2026-12-02",
+   "testo": "valida dal 19/11/2026 al 02/12/2026",
    "prezzi": [
     {
      "f": "luce"
     }
    ],
-   "ccv": 149.0,
-   "testo_ccv": "Corrispettivo Annuo 149,00 €/anno"
+   "ccv": 144.0,
+   "testo_ccv": "Corrispettivo Annuo 144,00 €/anno"
   },
-  "documenti/engie/cte/residenziale/VedoChiaro Smile.pdf": {
-   "scade": "2026-11-18",
-   "testo": "valida dal 05/11/2026 al 18/11/2026",
+  "documenti/engie/cte/residenziale/Resti&Risparmia Gas.pdf": {
+   "scade": "2026-12-02",
+   "testo": "valida dal 19/11/2026 al 02/12/2026",
+   "prezzi": [
+    {
+     "f": "gas"
+    }
+   ],
+   "ccv": 156.0,
+   "testo_ccv": "Corrispettivo Annuo 156,00 €/anno"
+  },
+  "documenti/engie/cte/residenziale/Resti&Risparmia Luce.pdf": {
+   "scade": "2026-12-02",
+   "testo": "valida dal 19/11/2026 al 02/12/2026",
    "prezzi": [
     {
      "f": "luce"
-    },
-    {
-     "f": "gas"
     }
    ],
-   "ccv": 138.0,
-   "testo_ccv": "Corrispettivo Annuo 138,00 €/anno"
+   "ccv": 156.0,
+   "testo_ccv": "Corrispettivo Annuo 156,00 €/anno"
   },
-  "documenti/engie/cte/residenziale/VedoChiaroSmile GAS.pdf": {
-   "scade": "2026-11-18",
-   "testo": "valida dal 05/11/2026 al 18/11/2026",
+  "documenti/engie/cte/residenziale/VedoChiaroSmile Gas.pdf": {
+   "scade": "2026-12-02",
+   "testo": "valida dal 19/11/2026 al 02/12/2026",
    "prezzi": [
     {
      "f": "gas"
     }
    ],
-   "ccv": 138.0,
-   "testo_ccv": "Corrispettivo Annuo 138,00 €/anno"
+   "ccv": 144.0,
+   "testo_ccv": "Corrispettivo Annuo 144,00 €/anno"
+  },
+  "documenti/engie/cte/residenziale/VedoChiaroSmile Luce.pdf": {
+   "scade": "2026-12-02",
+   "testo": "valida dal 19/11/2026 al 02/12/2026",
+   "prezzi": [
+    {
+     "f": "luce"
+    }
+   ],
+   "ccv": 144.0,
+   "testo_ccv": "Corrispettivo Annuo 144,00 €/anno"
   },
   "documenti/estra/cte/business/ESTRA TREND GAS - IMPRESA (1).pdf": {
    "scade": "2026-11-11",
@@ -8046,43 +8062,43 @@
    "ccv": 160.0,
    "testo_ccv": "commercializzazione 160,00 €/PDR/anno"
   },
-  "documenti/magis/cte/residenziale/000592ESFML02XXDAX1126XFIX36MPLU_2026_EE_MIA_LUCE_FIX_36_PLUS_B_RET_MONO_46_CE.pdf": {
-   "scade": "2026-11-19",
-   "testo": "Valida per adesioni entro il: 19/11/2026",
+  "documenti/magis/cte/residenziale/000592ESFML03XXDAX1126XFIX36MPLU_2026_EE_MIA_LUCE_FIX_36_PLUS_B_RET_MONO_47_CE.pdf": {
+   "scade": "2026-11-30",
+   "testo": "Valida per adesioni entro il: 30/11/2026",
    "tipo": "fisso",
    "prezzi": [
     {
      "f": "luce",
-     "prezzo": 0.1796,
-     "testo": "F0*: 0,17960 €/kWh"
+     "prezzo": 0.1922,
+     "testo": "F0*: 0,19220 €/kWh"
     }
    ],
    "ccv": 156.0,
    "testo_ccv": "commercializzazione 156,00 €/POD/anno"
   },
-  "documenti/magis/cte/residenziale/000592ESFML02XXDBX1126XFIX36MSMA_2026_EE_MIA_LUCE_FIX_36_SMART_B_RET_MONO_46_CE.pdf": {
-   "scade": "2026-11-19",
-   "testo": "Valida per adesioni entro il: 19/11/2026",
+  "documenti/magis/cte/residenziale/000592ESFML03XXDBX1126XFIX36MSMA_2026_EE_MIA_LUCE_FIX_36_SMART_B_RET_MONO_47_CE.pdf": {
+   "scade": "2026-11-30",
+   "testo": "Valida per adesioni entro il: 30/11/2026",
    "tipo": "fisso",
    "prezzi": [
     {
      "f": "luce",
-     "prezzo": 0.1631,
-     "testo": "F0*: 0,16310 €/kWh"
+     "prezzo": 0.1757,
+     "testo": "F0*: 0,17570 €/kWh"
     }
    ],
    "ccv": 120.0,
    "testo_ccv": "commercializzazione 120,00 €/POD/anno"
   },
-  "documenti/magis/cte/residenziale/000592ESFML02XXDMX1126XFIX36MPRO_2026_EE_MIA_LUCE_FIX_36_PRO_B_RET_MONO_46_CE.pdf": {
-   "scade": "2026-11-19",
-   "testo": "Valida per adesioni entro il: 19/11/2026",
+  "documenti/magis/cte/residenziale/000592ESFML03XXDMX1126XFIX36MPRO_2026_EE_MIA_LUCE_FIX_36_PRO_B_RET_MONO_47_CE.pdf": {
+   "scade": "2026-11-30",
+   "testo": "Valida per adesioni entro il: 30/11/2026",
    "tipo": "fisso",
    "prezzi": [
     {
      "f": "luce",
-     "prezzo": 0.1763,
-     "testo": "F0*: 0,17630 €/kWh"
+     "prezzo": 0.1889,
+     "testo": "F0*: 0,18890 €/kWh"
     }
    ],
    "ccv": 132.0,
@@ -8132,43 +8148,43 @@
    "ccv": 120.0,
    "testo_ccv": "commercializzazione 120,00 €/POD/anno"
   },
-  "documenti/magis/cte/residenziale/000592GSFML02XXDAX1126XFIX36MPLU_2026_GAS_MIA_GAS_FIX_36_PLUS_RET_46_CE.pdf": {
-   "scade": "2026-11-19",
-   "testo": "Valida per adesioni entro il: 19/11/2026",
+  "documenti/magis/cte/residenziale/000592GSFML03XXDAX1126XFIX36MPLU_2026_GAS_MIA_GAS_FIX_36_PLUS_RET_47_CE.pdf": {
+   "scade": "2026-11-30",
+   "testo": "Valida per adesioni entro il: 30/11/2026",
    "tipo": "fisso",
    "prezzi": [
     {
      "f": "gas",
-     "prezzo": 0.701,
-     "testo": "Componente gas 0,7010 €/Smc"
+     "prezzo": 0.719,
+     "testo": "Componente gas 0,7190 €/Smc"
     }
    ],
    "ccv": 156.0,
    "testo_ccv": "commercializzazione 156,00 €/PDR/anno"
   },
-  "documenti/magis/cte/residenziale/000592GSFML02XXDBX1126XFIX36MSMA_2026_GAS_MIA_GAS_FIX_36_SMART_RET_46_CE.pdf": {
-   "scade": "2026-11-19",
-   "testo": "Valida per adesioni entro il: 19/11/2026",
+  "documenti/magis/cte/residenziale/000592GSFML03XXDBX1126XFIX36MSMA_2026_GAS_MIA_GAS_FIX_36_SMART_RET_47_CE.pdf": {
+   "scade": "2026-11-30",
+   "testo": "Valida per adesioni entro il: 30/11/2026",
    "tipo": "fisso",
    "prezzi": [
     {
      "f": "gas",
-     "prezzo": 0.656,
-     "testo": "Componente gas 0,6560 €/Smc"
+     "prezzo": 0.674,
+     "testo": "Componente gas 0,6740 €/Smc"
     }
    ],
    "ccv": 120.0,
    "testo_ccv": "commercializzazione 120,00 €/PDR/anno"
   },
-  "documenti/magis/cte/residenziale/000592GSFML02XXDMX1126XFIX36MPRO_2026_GAS_MIA_GAS_FIX_36_PRO_RET_46_CE.pdf": {
-   "scade": "2026-11-19",
-   "testo": "Valida per adesioni entro il: 19/11/2026",
+  "documenti/magis/cte/residenziale/000592GSFML03XXDMX1126XFIX36MPRO_2026_GAS_MIA_GAS_FIX_36_PRO_RET_47_CE.pdf": {
+   "scade": "2026-11-30",
+   "testo": "Valida per adesioni entro il: 30/11/2026",
    "tipo": "fisso",
    "prezzi": [
     {
      "f": "gas",
-     "prezzo": 0.701,
-     "testo": "Componente gas 0,7010 €/Smc"
+     "prezzo": 0.719,
+     "testo": "Componente gas 0,7190 €/Smc"
     }
    ],
    "ccv": 132.0,
