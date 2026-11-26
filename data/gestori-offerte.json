@@ -1,16 +1,6 @@
 {
- "aggiornato": "2026-11-24",
+ "aggiornato": "2026-11-26",
  "gestori": {
-  "a2a": {
-   "offerte": {
-    "business-gas": 3,
-    "business-luce": 3,
-    "residenziale-gas": 4,
-    "residenziale-luce": 5
-   },
-   "prossima_scadenza": "2026-11-25",
-   "partner": []
-  },
   "alperia": {
    "offerte": {
     "residenziale-gas": 1,
@@ -162,13 +152,13 @@
   },
   "hera": {
    "offerte": {
-    "business-gas": 8,
-    "business-luce": 10,
+    "business-gas": 4,
+    "business-luce": 6,
     "condominio-luce": 2,
-    "residenziale-gas": 10,
-    "residenziale-luce": 12
+    "residenziale-gas": 2,
+    "residenziale-luce": 2
    },
-   "prossima_scadenza": "2026-11-25",
+   "prossima_scadenza": "2026-12-16",
    "partner": [
     "GreenWorld",
     "PromUp"
