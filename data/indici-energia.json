@@ -1,19 +1,24 @@
 {
-  "updatedAt": "2026-11-25",
+  "updatedAt": "2026-11-26",
   "source": "GME / ARERA tramite A4Energie",
   "pun": {
-    "value": 0.25816,
+    "value": 0.27741,
     "unit": "€/kWh",
-    "date": "2026-11-25",
-    "change": 3.38
+    "date": "2026-11-26",
+    "change": 7.46
   },
   "psv": {
-    "value": 1.016,
+    "value": 0.97112,
     "unit": "€/Smc",
-    "date": "2026-11-25",
-    "change": 2.67
+    "date": "2026-11-26",
+    "change": -4.42
   },
   "history": [
+    {
+      "date": "2026-11-26",
+      "pun": 0.27741,
+      "psv": 0.97112
+    },
     {
       "date": "2026-11-25",
       "pun": 0.25816,
