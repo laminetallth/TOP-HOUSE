@@ -3724,20 +3724,16 @@
     "size": 22588
    },
    {
-    "name": "Listino EKO 5.26 Collaboratori e Agenti - comp.pdf",
-    "size": 1350110
-   },
-   {
-    "name": "listino v6.26-28.6.26.pdf",
-    "size": 2285111
+    "name": "Listino EKO 2026 v10.26.pdf",
+    "size": 1107970
    },
    {
     "name": "Piani di Manutenzione EKO.pdf",
     "size": 1302583
    },
    {
-    "name": "Procedura Allegati CRM v9.25.pdf",
-    "size": 975160
+    "name": "Procedura documenti e allegati EKO v10.26.pdf",
+    "size": 5111001
    },
    {
     "name": "Ticket Referall_3.pdf",
@@ -3768,36 +3764,40 @@
   ],
   "documenti/fotovoltaico/documenti-contratto": [
    {
-    "name": "Anagrafica Soggetti Coinvolti v10.25.pdf",
-    "size": 67175
-   },
-   {
-    "name": "Aut. Comproprietario v9.25.pdf",
-    "size": 41416
-   },
-   {
-    "name": "Aut. Condominio v9.25.pdf",
-    "size": 853514
+    "name": "Anagrafica_v10.26.pdf",
+    "size": 73265
    },
    {
     "name": "Aut. Proprietario v9.25.pdf",
     "size": 696260
    },
    {
+    "name": "Aut_Comproprietario_v10.26.pdf",
+    "size": 50462
+   },
+   {
+    "name": "Aut_Condominio_v10.26.pdf",
+    "size": 50676
+   },
+   {
+    "name": "Informativa_Precontrattuale_v10.26.pdf",
+    "size": 703932
+   },
+   {
     "name": "Mandato ITER SEMPLIFICATO ENEL con rappresentanza.pdf",
     "size": 219655
    },
    {
-    "name": "Modulo d'Ordine v9.25 (4).docx",
-    "size": 695665
+    "name": "Modulo_dOrdine_v10.27_compilabile.pdf",
+    "size": 986193
    },
    {
-    "name": "Modulo d'Ordine v9.25.pdf",
-    "size": 711260
+    "name": "Modulo_Iva_10_v10.26.pdf",
+    "size": 57960
    },
    {
-    "name": "Modulo Iva 10 v10.25.pdf",
-    "size": 47331
+    "name": "Modulo_Raccolta_Dati_v10.26.pdf",
+    "size": 56923
    }
   ],
   "documenti/fotovoltaico/documenti-finanziamento": [
@@ -3818,16 +3818,16 @@
     "size": 1205165
    },
    {
-    "name": "EKO - racc. dati findomesticV9.25.pdf",
-    "size": 265650
-   },
-   {
     "name": "FINDO GRATUITO NEW.pdf",
     "size": 82405
    },
    {
     "name": "Lettura veloce tabella finanziamento Findomestic.pdf",
     "size": 41390
+   },
+   {
+    "name": "Racc_Dati_Findomestic_v10.26.pdf",
+    "size": 146128
    }
   ],
   "documenti/fotovoltaico/documenti-sopralluogo": [
@@ -3850,6 +3850,10 @@
   ],
   "documenti/fotovoltaico/formazione-eko": [
    {
+    "name": "EKO_Formazione_Venditore.pdf",
+    "size": 8030412
+   },
+   {
     "name": "EKO_Percorso_Rete_Vendita_Day1.pdf",
     "size": 1505218
    },
@@ -3862,8 +3866,8 @@
     "size": 3629185
    },
    {
-    "name": "EKOSrl_Formazione_Venditore.pdf",
-    "size": 1759285
+    "name": "EKO_Percorso_Rete_Vendita_Settimana4.pdf",
+    "size": 13340960
    }
   ],
   "documenti/fotovoltaico/modulo-b2b-aziende": [
@@ -6206,6 +6210,12 @@
    {
     "name": "Life Up 2.0 (Luce).pdf",
     "size": 250952
+   }
+  ],
+  "documenti/wall-box/modulistica": [
+   {
+    "name": "EKO_Modulo-ordine-wallbox_v2026.4.pdf",
+    "size": 3043357
    }
   ],
   "documenti/wall-box/schede-tecniche": [
