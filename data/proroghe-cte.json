@@ -1,4 +1,7 @@
 {
  "_nota": "Proroghe comunicate dal gestore ma non scritte nel PDF della CTE. Chiave = cartella (o percorso del file) sotto documenti/, valore = nuova data di fine validità AAAA-MM-GG. Togliere la riga quando arriva la CTE nuova.",
- "documenti/union/": {"scade": "2026-11-23", "nota": "Union: Fix&Go 24 prorogate fino al 23/11/2026"}
+ "documenti/union/": {
+  "scade": "2026-12-07",
+  "nota": "Union: Fix&Go 24 prorogate fino al 07/12/2026"
+ }
 }
