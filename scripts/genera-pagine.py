@@ -274,7 +274,7 @@ EKO_HERO = f"""<section class="th-eko" aria-label="Partner fotovoltaico: EKO Srl
 """
 fv_folders = simple_hub("fotovoltaico", "Fotovoltaico", FOTOVOLTAICO, "Schede, presentazioni, tutorial e documenti per ogni fase della pratica.", EKO_HERO)
 pdc_folders = simple_hub("pompe-di-calore", "Pompe di calore", [("schede-tecniche", "Schede tecniche", "fa-clipboard-list")])
-wb_folders = simple_hub("wall-box", "Wall box", [("schede-tecniche", "Schede tecniche", "fa-clipboard-list")])
+wb_folders = simple_hub("wall-box", "Wall box", [("modulistica", "Modulistica", "fa-file-signature"), ("schede-tecniche", "Schede tecniche", "fa-clipboard-list")])
 
 # ----------------------------------------------------------------------------- telefonia
 # Stessa struttura di Luce e gas: elenco operatori a riquadri -> pagina operatore -> Offerte (business/residenziali),

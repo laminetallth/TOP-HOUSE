@@ -1341,6 +1341,13 @@
     "Schede tecniche"
    ]
   },
+  "documenti/wall-box/modulistica": {
+   "url": "wall-box-modulistica.html",
+   "path": [
+    "Wall box",
+    "Modulistica"
+   ]
+  },
   "documenti/wall-box/schede-tecniche": {
    "url": "wall-box-schede-tecniche.html",
    "path": [
@@ -3536,6 +3543,13 @@
    "url": "pompe-di-calore.html",
    "path": [
     "Pompe di calore"
+   ]
+  },
+  {
+   "url": "wall-box-modulistica.html",
+   "path": [
+    "Wall box",
+    "Modulistica"
    ]
   },
   {
