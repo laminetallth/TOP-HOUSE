@@ -8916,6 +8916,118 @@
     }
    ]
   },
+  "documenti/segno-verde/cte/residenziale/SEGNO VERDE - AGILE FLEX GAS (PSV) - CTE 01-11 09-12-2026.pdf": {
+   "scade": "2026-12-09",
+   "testo": "valida dal 01/11/2026 al 09/12/2026",
+   "tipo": "variabile",
+   "prezzi": [
+    {
+     "f": "gas",
+     "spread": 0.095,
+     "testo_spread": "PSV + 0,095 €/Smc"
+    }
+   ],
+   "ccv": 138.0,
+   "testo_ccv": "Corrispettivo Annuo 138,0 €/PDR/Anno"
+  },
+  "documenti/segno-verde/cte/residenziale/SEGNO VERDE - AGILE FLEX LUCE (PUN) - CTE 01-11 09-12-2026.pdf": {
+   "scade": "2026-12-09",
+   "testo": "valida dal 01/11/2026 al 09/12/2026",
+   "tipo": "variabile",
+   "prezzi": [
+    {
+     "f": "luce",
+     "spread": 0.0242,
+     "testo_spread": "PUN + 0,0242 €/kWh"
+    }
+   ],
+   "ccv": 138.0,
+   "testo_ccv": "Corrispettivo Annuo 138,0 €/POD/Anno"
+  },
+  "documenti/segno-verde/cte/residenziale/SEGNO VERDE - AGILE PREMIUM GAS (PSV) - CTE 01-11 09-12-2026.pdf": {
+   "scade": "2026-12-09",
+   "testo": "valida dal 01/11/2026 al 09/12/2026",
+   "tipo": "variabile",
+   "prezzi": [
+    {
+     "f": "gas",
+     "spread": 0.145,
+     "testo_spread": "PSV + 0,145 €/Smc"
+    }
+   ],
+   "ccv": 222.0,
+   "testo_ccv": "Corrispettivo Annuo 222,0 €/PDR/Anno"
+  },
+  "documenti/segno-verde/cte/residenziale/SEGNO VERDE - AGILE PREMIUM LUCE (PUN) - CTE 01-11 09-12-2026.pdf": {
+   "scade": "2026-12-09",
+   "testo": "valida dal 01/11/2026 al 09/12/2026",
+   "tipo": "variabile",
+   "prezzi": [
+    {
+     "f": "luce",
+     "spread": 0.0286,
+     "testo_spread": "PUN + 0,0286 €/kWh"
+    }
+   ],
+   "ccv": 213.96,
+   "testo_ccv": "Corrispettivo Annuo 213,96 €/POD/Anno"
+  },
+  "documenti/segno-verde/cte/residenziale/SEGNO VERDE - SECONDA CASA GAS (PSV) - CTE 01-11 09-12-2026.pdf": {
+   "scade": "2026-12-09",
+   "testo": "valida dal 01/11/2026 al 09/12/2026",
+   "tipo": "variabile",
+   "prezzi": [
+    {
+     "f": "gas",
+     "spread": 0.11,
+     "testo_spread": "PSV + 0,11 €/Smc"
+    }
+   ],
+   "ccv": 120.0,
+   "testo_ccv": "Corrispettivo Annuo 120,0 €/PDR/Anno"
+  },
+  "documenti/segno-verde/cte/residenziale/SEGNO VERDE - SECONDA CASA LUCE (PUN) - CTE 01-11 09-12-2026.pdf": {
+   "scade": "2026-12-09",
+   "testo": "valida dal 01/11/2026 al 09/12/2026",
+   "tipo": "variabile",
+   "prezzi": [
+    {
+     "f": "luce",
+     "spread": 0.0242,
+     "testo_spread": "PUN + 0,0242 €/kWh"
+    }
+   ],
+   "ccv": 120.0,
+   "testo_ccv": "Corrispettivo Annuo 120,0 €/POD/Anno"
+  },
+  "documenti/segno-verde/cte/residenziale/SEGNO VERDE - SICURA GAS (PREZZO FISSO) - CTE 25-11 09-12-2026.pdf": {
+   "scade": "2026-12-09",
+   "testo": "valida dal 25/11/2026 al 09/12/2026",
+   "tipo": "fisso",
+   "prezzi": [
+    {
+     "f": "gas",
+     "prezzo": 0.779,
+     "testo": "Corrispettivo per il consumo 0,779 €/Smc",
+     "scontato": 0.679,
+     "testo_sconto": "Verrà erogato uno sconto di 0,1 €/Smc sul Corrispettivo per il consumo per la durata dell'offerta a prezzo fisso previo il corretto allineamento del mandato di "
+    }
+   ],
+   "ccv": 162.0,
+   "testo_ccv": "Corrispettivo Annuo 162,0 €/PDR/Anno"
+  },
+  "documenti/segno-verde/cte/residenziale/SEGNO VERDE - SICURA LUCE (PREZZO FISSO) - CTE 25-11 09-12-2026.pdf": {
+   "scade": "2026-12-09",
+   "testo": "valida dal 25/11/2026 al 09/12/2026",
+   "tipo": "fisso",
+   "prezzi": [
+    {
+     "f": "luce"
+    }
+   ],
+   "ccv": 162.0,
+   "testo_ccv": "Corrispettivo Annuo 162,0 €/POD/Anno"
+  },
   "documenti/simecom/cte-business/FACILEPIU_P.IVA.NV2603EVXPUN3FA.pdf": {
    "scade": "2027-01-06",
    "testo": "VALIDA DAL 01/10/2026 AL 06/01/2027",

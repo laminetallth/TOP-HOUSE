@@ -226,6 +226,14 @@
    "prossima_scadenza": "2026-12-31",
    "partner": []
   },
+  "segno-verde": {
+   "offerte": {
+    "residenziale-gas": 4,
+    "residenziale-luce": 4
+   },
+   "prossima_scadenza": "2026-12-09",
+   "partner": []
+  },
   "simecom": {
    "offerte": {
     "business-gas": 1,
