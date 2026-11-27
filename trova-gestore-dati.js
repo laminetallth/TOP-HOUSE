@@ -30,6 +30,7 @@ window.TOP_HOUSE_GESTORI = [
   { nome: "ONOVA", pagina: "gestori/onova.html", procedura: "gestori/onova-procedimenti.html" },
   { nome: "PLENITUDE", pagina: "gestori/plenitude.html", procedura: "gestori/plenitude-procedimenti.html" },
   { nome: "S4", pagina: "gestori/s4.html", procedura: "gestori/s4-procedimenti.html" },
+  { nome: "SEGNO VERDE", pagina: "gestori/segno-verde.html", procedura: "gestori/segno-verde-procedimenti.html" },
   { nome: "SIMECOM", pagina: "gestori/simecom.html", procedura: "gestori/simecom-procedimenti.html" },
   { nome: "SORGENIA", pagina: "gestori/sorgenia.html", procedura: "gestori/sorgenia-procedimenti.html" },
   { nome: "STREAM", pagina: "gestori/stream.html", procedura: "gestori/stream-procedimenti.html" },

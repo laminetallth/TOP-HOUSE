@@ -9,7 +9,7 @@ import json
 import os
 import re
 
-VERSION = "20261026a"  # cambia per forzare i browser a scaricare CSS/JS nuovi
+VERSION = "20261127a"  # cambia per forzare i browser a scaricare CSS/JS nuovi
 
 # ----------------------------------------------------------------------------- struttura
 GESTORI = [  # slug, nome visualizzato
@@ -18,7 +18,7 @@ GESTORI = [  # slug, nome visualizzato
     ("edison", "Edison"), ("enel-corporate", "Enel Corporate"), ("enel-digital", "Enel Digital"), ("enel-tablet", "Enel Tablet"),
     ("engie", "Engie"), ("estra", "Estra"), ("fastweb-energia", "Fastweb Energia"), ("gde", "GDE"), ("hera", "Hera"),
     ("iren", "Iren"), ("magis", "Magis"), ("onova", "Onova"), ("plenitude", "Plenitude"),
-    ("s4", "S4"), ("simecom", "Simecom"), ("sorgenia", "Sorgenia"), ("stream", "Stream"), ("union", "Union"),
+    ("s4", "S4"), ("segno-verde", "Segno Verde"), ("simecom", "Simecom"), ("sorgenia", "Sorgenia"), ("stream", "Stream"), ("union", "Union"),
     ("unoenergy", "UnoEnergy"), ("upenergy", "UpEnergy"), ("vivienergia", "ViviEnergia"),
 ]
 SOTTO_GESTORI = {"unoenergy", "vivienergia"}              # cartelle in documenti/gestori/<slug>
@@ -487,6 +487,7 @@ write("login.html", solo_head("Accedi").replace("</head>", auth_scripts + "\n</h
     <a class="th-link" id="forgotPasswordLink" href="#">Password dimenticata?</a>
     <div id="loginMessage" class="th-msg" aria-live="polite"></div>
   </form>
+  <p style="margin:14px 0 0;font-size:.82rem;opacity:.75;text-align:center">Accedendo dichiari di aver letto l'<a href="informativa-privacy.html" style="color:inherit;text-decoration:underline">informativa privacy</a>.</p>
 </main>
 <script type="module">window.TOPHOUSE_AUTH.initLoginForm();</script>
 </body>

@@ -900,6 +900,48 @@
     "Procedimenti"
    ]
   },
+  "documenti/segno-verde/cte/business": {
+   "url": "gestori/segno-verde-cte-business.html",
+   "path": [
+    "Luce e gas",
+    "Segno Verde",
+    "CTE",
+    "Business"
+   ]
+  },
+  "documenti/segno-verde/cte/residenziale": {
+   "url": "gestori/segno-verde-cte-residenziale.html",
+   "path": [
+    "Luce e gas",
+    "Segno Verde",
+    "CTE",
+    "Residenziale"
+   ]
+  },
+  "documenti/segno-verde/modulistica": {
+   "url": "gestori/segno-verde-modulistica.html",
+   "path": [
+    "Luce e gas",
+    "Segno Verde",
+    "Modulistica"
+   ]
+  },
+  "documenti/segno-verde/procedimenti": {
+   "url": "gestori/segno-verde-procedimenti.html",
+   "path": [
+    "Luce e gas",
+    "Segno Verde",
+    "Procedimenti"
+   ]
+  },
+  "documenti/segno-verde/privacy": {
+   "url": "gestori/segno-verde-privacy.html",
+   "path": [
+    "Luce e gas",
+    "Segno Verde",
+    "Privacy"
+   ]
+  },
   "documenti/simecom/cte-business": {
    "url": "gestori/simecom-cte-business.html",
    "path": [
@@ -2897,6 +2939,63 @@
    "path": [
     "Luce e gas",
     "S4"
+   ]
+  },
+  {
+   "url": "gestori/segno-verde-cte-business.html",
+   "path": [
+    "Luce e gas",
+    "Segno Verde",
+    "CTE",
+    "Business"
+   ]
+  },
+  {
+   "url": "gestori/segno-verde-cte-residenziale.html",
+   "path": [
+    "Luce e gas",
+    "Segno Verde",
+    "CTE",
+    "Residenziale"
+   ]
+  },
+  {
+   "url": "gestori/segno-verde-cte.html",
+   "path": [
+    "Luce e gas",
+    "Segno Verde",
+    "CTE"
+   ]
+  },
+  {
+   "url": "gestori/segno-verde-modulistica.html",
+   "path": [
+    "Luce e gas",
+    "Segno Verde",
+    "Modulistica"
+   ]
+  },
+  {
+   "url": "gestori/segno-verde-procedimenti.html",
+   "path": [
+    "Luce e gas",
+    "Segno Verde",
+    "Procedimenti"
+   ]
+  },
+  {
+   "url": "gestori/segno-verde-privacy.html",
+   "path": [
+    "Luce e gas",
+    "Segno Verde",
+    "Privacy"
+   ]
+  },
+  {
+   "url": "gestori/segno-verde.html",
+   "path": [
+    "Luce e gas",
+    "Segno Verde"
    ]
   },
   {
