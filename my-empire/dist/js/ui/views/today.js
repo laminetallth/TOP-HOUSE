@@ -10,6 +10,7 @@ import { occurrencesOn } from '../../domain/calendar.js';
 import { ruleFor } from '../../domain/habits.js';
 import { H } from '../../domain/defaults.js';
 import { openEventForm } from './calendar.js';
+import { sleepCard } from './sleep.js';
 import { openQuickAdd } from './quickadd.js';
 function greeting(d) {
     const hr = d.getHours();
@@ -115,7 +116,7 @@ export function todayView(ctx) {
         title: 'Oggi',
         node: h('div', { class: 'page today' }, hero, decl, h('section', { class: 'section' }, h('div', { class: 'section-head' }, h('h2', { class: 'section-title' }, 'La tua giornata'), h('a', { href: `#/calendario/${today}`, class: 'link' }, 'Calendario')), open.length
             ? h('ol', { class: 'timeline' }, ...open.map(render))
-            : h('div', { class: 'all-done' }, icon('check', 22), h('span', null, items.length ? 'Tutto fatto. Goditi la serata.' : 'Giornata libera.')), closed.length ? h('details', { class: 'closed-group', open: closed.length <= 3 }, h('summary', null, `Fatto (${closed.length})`), h('ol', { class: 'timeline' }, ...closed.map(render))) : null), votes, fab),
+            : h('div', { class: 'all-done' }, icon('check', 22), h('span', null, items.length ? 'Tutto fatto. Goditi la serata.' : 'Giornata libera.')), closed.length ? h('details', { class: 'closed-group', open: closed.length <= 3 }, h('summary', null, `Fatto (${closed.length})`), h('ol', { class: 'timeline' }, ...closed.map(render))) : null), sleepCard(ctx), votes, fab),
     };
 }
 //# sourceMappingURL=today.js.map

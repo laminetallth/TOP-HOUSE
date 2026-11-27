@@ -184,7 +184,7 @@ export class Store {
 function tableEntity(t) {
     const map = {
         settings: 'settings', events: 'settings', habits: 'habit', habitLogs: 'habitLog', ratings: 'rating', calEvents: 'event',
-        goals: 'goal', goalEntries: 'goalEntry', basketGames: 'basketGame', basketWeeks: 'basketWeek', gymPlans: 'gymPlan', gymSessions: 'gymSession', weekNotes: 'weekNote',
+        goals: 'goal', goalEntries: 'goalEntry', basketGames: 'basketGame', basketWeeks: 'basketWeek', gymPlans: 'gymPlan', gymSessions: 'gymSession', weekNotes: 'weekNote', sleepLogs: 'sleep',
     };
     return map[t];
 }
