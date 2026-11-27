@@ -9,7 +9,7 @@
   "documenti/a2a/cte/business": [
    {
     "name": "A2A Start Pro Gas.pdf",
-    "size": 138617
+    "size": 140835
    },
    {
     "name": "A2A Start Pro Luce.pdf",
@@ -17,57 +17,57 @@
    },
    {
     "name": "Smart Business - Gas.pdf",
-    "size": 139399
+    "size": 139548
    },
    {
     "name": "Smart Business - Luce.pdf",
-    "size": 140192
+    "size": 140291
    },
    {
     "name": "Smart Business+ Gas.pdf",
-    "size": 205676
+    "size": 205841
    },
    {
     "name": "Smart Business+ Luce.pdf",
-    "size": 207360
+    "size": 207503
    }
   ],
   "documenti/a2a/cte/residenziale": [
    {
     "name": "A2A Start Gas.pdf",
-    "size": 74875
+    "size": 138585
    },
    {
     "name": "A2A Start Luce.pdf",
-    "size": 83018
+    "size": 197765
    },
    {
     "name": "Esclusiva2a - Gas.pdf",
-    "size": 138609
+    "size": 138603
    },
    {
     "name": "Esclusiva2a Luce.pdf",
-    "size": 186755
+    "size": 197802
    },
    {
     "name": "Noi2.pdf",
-    "size": 205099
+    "size": 205077
    },
    {
     "name": "Smart Casa Gas.pdf",
-    "size": 143294
+    "size": 143407
    },
    {
     "name": "Smart Casa Luce.pdf",
-    "size": 200408
+    "size": 200492
    },
    {
     "name": "Smart Casa+ Gas.pdf",
-    "size": 207549
+    "size": 207672
    },
    {
     "name": "Smart Casa+ Luce.pdf",
-    "size": 265927
+    "size": 266018
    }
   ],
   "documenti/a2a/modulistica": [
@@ -780,6 +780,22 @@
     "size": 633226
    },
    {
+    "name": "SEMPRE ECO IMPRESA A_GBSIDAXAX26071SRX_au.pdf .pdf",
+    "size": 735336
+   },
+   {
+    "name": "SEMPRE ECO IMPRESA B_GBSIDAXBX26071SRX_AU.pdf",
+    "size": 735598
+   },
+   {
+    "name": "SEMPRE ECO IMPRESA C_GBSIDAXCX26071SRX_AU.pdf",
+    "size": 735600
+   },
+   {
+    "name": "SEMPRE ECO MICRO BUSINESS A_GMSIDAXEX26071SRX_AU.pdf",
+    "size": 737872
+   },
+   {
     "name": "SEMPRE ECO MICRO BUSINESS A_GMSIDAXEX26071SRX_AU.pdf.pdf",
     "size": 737872
    },
@@ -788,8 +804,16 @@
     "size": 641304
    },
    {
-    "name": "SICURA VERDE IMPRESA FASCE - A_25_EBSFDAXAF264425RX_AU.pdf",
-    "size": 636307
+    "name": "SEMPRE VERDE IMPRESA ORARIO C_EBSIDAXCO26101SRX_AU.pdf",
+    "size": 643520
+   },
+   {
+    "name": "SEMPRE VERDE IMPRESA ORARIO E_EBSIDAXEO26101SRX_AU.pdf",
+    "size": 633226
+   },
+   {
+    "name": "SICURA IMPRESA FASCE - A_24_EBSFDAXAF264824RX_AU.pdf",
+    "size": 632626
    }
   ],
   "documenti/audax/cte/residenziale": [
@@ -806,8 +830,16 @@
     "size": 253030
    },
    {
+    "name": "SEMPRE ECO CASA A_GDSIDAXAX26071SRX_AU.pdf",
+    "size": 792654
+   },
+   {
     "name": "SEMPRE ECO CASA_GDSIDAXAX26071SRX_AU.pdf.pdf",
     "size": 792654
+   },
+   {
+    "name": "SEMPRE VERDE CASA SPREAD FASCE A_EDSIDAXAF26101SRX_AU.pdf",
+    "size": 682058
    },
    {
     "name": "SEMPRE VERDE CASA SPREAD FASCE_EDSIDAXAF26101SRX_AU.pdf",
@@ -818,8 +850,8 @@
     "size": 783880
    },
    {
-    "name": "SICURA VERDE CASA FASCE - A_25_EDSFDAXAF264425RX_AU.pdf",
-    "size": 856955
+    "name": "SICURA CASA FASCE - A_24_EDSFDAXAF264824RX_AU.pdf",
+    "size": 852692
    }
   ],
   "documenti/audax/modulistica": [
@@ -1050,96 +1082,172 @@
     "size": 110267
    },
    {
-    "name": "Axpo00025Business_Dinamico_GAS_RT-0005748677.pdf",
-    "size": 88494
+    "name": "Axpo00024Business_Dinamico_Power_RT-0005899742.pdf",
+    "size": 110093
+   },
+   {
+    "name": "Axpo00025Business_Dinamico_GAS_RT-0005899734.pdf",
+    "size": 88373
    },
    {
     "name": "Axpo00028Business_Sereno_Power_36_mesi_RT-0005819971.pdf",
     "size": 112480
    },
    {
-    "name": "Axpo00037Scegli_Dinamico_GAS_2_RT-0005748700.pdf",
-    "size": 86944
+    "name": "Axpo00028Business_Sereno_Power_36_mesi_RT0006012041.pdf",
+    "size": 116033
+   },
+   {
+    "name": "Axpo00037Scegli_Dinamico_GAS_2_RT-0005899752.pdf",
+    "size": 86817
    },
    {
     "name": "Axpo00183Business_Sereno_Power_RT-0005820068.pdf",
     "size": 112748
    },
    {
+    "name": "Axpo00183Business_Sereno_Power_RT0006012108.pdf",
+    "size": 115864
+   },
+   {
     "name": "Axpo00184Business_Sereno_Gas_RT-0005820079.pdf",
     "size": 87506
+   },
+   {
+    "name": "Axpo00184Business_Sereno_Gas_RT0006012111.pdf",
+    "size": 87392
    },
    {
     "name": "Axpo00196Axpo-Condominio-Power-Index_RT-0005753356(1).pdf",
     "size": 110105
    },
    {
-    "name": "Axpo00197Axpo_Condominio_Gas_Index_RT-0005748759.pdf",
-    "size": 86931
+    "name": "Axpo00196Axpo_Condominio_Power_Index_RT-0005899784.pdf",
+    "size": 109958
+   },
+   {
+    "name": "Axpo00197Axpo_Condominio_Gas_Index_RT-0005899790.pdf",
+    "size": 86805
    },
    {
     "name": "Axpo00220Scegli_Sereno_2.0_RT-0005820121.pdf",
     "size": 112584
    },
    {
+    "name": "Axpo00220Scegli_Sereno_2.0_RT0006012140.pdf",
+    "size": 115447
+   },
+   {
     "name": "Axpo00222Scegli_Sereno_GAS_2.0_RT-0005820138.pdf",
     "size": 87305
    },
    {
-    "name": "Axpo00223Scegli_Dinamico_GAS_2.0_RT-0005748804.pdf",
-    "size": 86954
+    "name": "Axpo00222Scegli_Sereno_GAS_2.0_RT0006012151.pdf",
+    "size": 87071
+   },
+   {
+    "name": "Axpo00223Scegli_Dinamico_GAS_2.0_RT-0005899804.pdf",
+    "size": 86829
    },
    {
     "name": "Axpo00224Scegli_Sereno_Long_2.0_RT-0005820134(1).pdf",
     "size": 112024
    },
    {
+    "name": "Axpo00224Scegli_Sereno_Long_2.0_RT0006012143.pdf",
+    "size": 115343
+   },
+   {
     "name": "Axpo00227Scegli_Dinamico_3Fasce_2.0_RT-0005748834(1).pdf",
     "size": 127400
+   },
+   {
+    "name": "Axpo00227Scegli_Dinamico_3Fasce_2.0_RT-0005899818.pdf",
+    "size": 127371
    },
    {
     "name": "Axpo00279Scegli_Sereno_TOP_2.0_RT-0005820145(1).pdf",
     "size": 62725
    },
    {
+    "name": "Axpo00279Scegli_Sereno_TOP_2.0_RT0006012163.pdf",
+    "size": 62720
+   },
+   {
     "name": "Axpo00280Scegli_Sereno_Gas_TOP_2.0_RT-0005820151.pdf",
     "size": 52943
+   },
+   {
+    "name": "Axpo00280Scegli_Sereno_Gas_TOP_2.0_RT0006012168.pdf",
+    "size": 52941
    },
    {
     "name": "Axpo00320Scegli_Sereno_TOP_2.0_Cal_Year_1_RT-0005820162.pdf",
     "size": 69773
    },
    {
-    "name": "Axpo00342Scegli_Dinamico_Gas_Light_RT-0005748884.pdf",
-    "size": 88315
+    "name": "Axpo00320Scegli_Sereno_TOP_2.0_Cal_Year_1_RT0006012173.pdf",
+    "size": 69787
+   },
+   {
+    "name": "Axpo00342Scegli_Dinamico_Gas_Light_RT-0005899847.pdf",
+    "size": 88192
    },
    {
     "name": "Axpo00453Scegli_Sereno_2.0_Light_RT-0005820169.pdf",
     "size": 112831
    },
    {
+    "name": "Axpo00453Scegli_Sereno_2.0_Light_RT0006012184.pdf",
+    "size": 115903
+   },
+   {
     "name": "Axpo00454Scegli_Sereno_Gas_2.0_Light_RT-0005820180.pdf",
     "size": 87719
+   },
+   {
+    "name": "Axpo00454Scegli_Sereno_Gas_2.0_Light_RT0006012187.pdf",
+    "size": 87387
    },
    {
     "name": "Axpo00503Scegli_Dinamico_6_RT-0005749003.pdf",
     "size": 127249
    },
    {
+    "name": "Axpo00503Scegli_Dinamico_6_RT-0005899921.pdf",
+    "size": 127163
+   },
+   {
     "name": "Axpo00504Scegli_Dinamico_2.0_RT-0005749011(1).pdf",
     "size": 127056
+   },
+   {
+    "name": "Axpo00504Scegli_Dinamico_2.0_RT-0005899929.pdf",
+    "size": 126975
    },
    {
     "name": "Axpo00505Scegli_Dinamico_Light_RT-0005749014.pdf",
     "size": 109928
    },
    {
+    "name": "Axpo00505Scegli_Dinamico_Light_RT-0005899939.pdf",
+    "size": 109997
+   },
+   {
     "name": "Axpo00506Scegli_Dinamico_Plus_RT-0005749018.pdf",
     "size": 126913
    },
    {
-    "name": "Axpo00518Scegli_Dinamico_Gas_3_RT-0005751453.pdf",
-    "size": 91211
+    "name": "Axpo00506Scegli_Dinamico_Plus_RT-0005899947.pdf",
+    "size": 126981
+   },
+   {
+    "name": "Axpo00518Scegli_Dinamico_Gas_3_RT-0005899967.pdf",
+    "size": 91073
+   },
+   {
+    "name": "Axpo00549Scegli_Sereno_TOP_2.0_Long_RT0006012216.pdf",
+    "size": 62707
    },
    {
     "name": "Axpo00549Scegli_Sereno_TOP__2.0_Long_RT-0005820234.pdf",
@@ -1150,15 +1258,31 @@
     "size": 112058
    },
    {
+    "name": "Axpo00572Scegli_Sereno_2.0_36_mesi_RT0006012299.pdf",
+    "size": 115295
+   },
+   {
     "name": "Axpo00574Scegli_Sereno_TOP_2.0_Long_36_mesi_RT-0005820344.pdf",
     "size": 62805
+   },
+   {
+    "name": "Axpo00574Scegli_Sereno_TOP_2.0_Long_36_mesi_RT0006012304.pdf",
+    "size": 62800
    },
    {
     "name": "Axpo00575Scegli_Sereno_TOP_2.0_Cal_Year_1_2_3_RT-0005820349(1).pdf",
     "size": 69758
    },
    {
+    "name": "Axpo00575Scegli_Sereno_TOP_2.0_Cal_Year_1_2_3_RT0006012313.pdf",
+    "size": 69769
+   },
+   {
     "name": "Axpo00577Scegli_Sereno_Gas_TOP_Long_2.0_RT-0005820360.pdf",
+    "size": 52680
+   },
+   {
+    "name": "Axpo00577Scegli_Sereno_Gas_TOP_Long_2.0_RT0006012323.pdf",
     "size": 52680
    },
    {
@@ -1166,90 +1290,138 @@
     "size": 53134
    },
    {
+    "name": "Axpo00578Scegli_Sereno_Gas_TOP_Long_2.0_36_mesi_RT0006012319.pdf",
+    "size": 53132
+   },
+   {
     "name": "Axpo00580Scegli_Sereno_TOP_2.0_Cal_Year_1_2_RT-0005820364.pdf",
     "size": 69761
+   },
+   {
+    "name": "Axpo00580Scegli_Sereno_TOP_2.0_Cal_Year_1_2_RT0006012329.pdf",
+    "size": 69777
    }
   ],
   "documenti/axpo/cte/residenziale": [
    {
-    "name": "Pulsee00169Value_Luce_Fix_RT-0005819985.pdf",
-    "size": 800491
+    "name": "Pulsee00169Value_Luce_Fix_RT0006017131.pdf",
+    "size": 802340
    },
    {
-    "name": "Pulsee00170Value_Gas_Fix_RT-0005819993.pdf",
-    "size": 749861
+    "name": "Pulsee00170Value_Gas_Fix_RT0006012054.pdf",
+    "size": 749980
    },
    {
-    "name": "Pulsee00171Easy_Luce_Fix_RT-0005820000.pdf",
-    "size": 226449
+    "name": "Pulsee00171Easy_Luce_Fix_RT0006017136.pdf",
+    "size": 228446
    },
    {
-    "name": "Pulsee00172Easy_Gas_Fix_RT-0005820004.pdf",
-    "size": 178607
+    "name": "Pulsee00172Easy_Gas_Fix_RT0006012064.pdf",
+    "size": 178720
    },
    {
-    "name": "Pulsee00173Smart_Luce_Fix_RT-0005820022.pdf",
-    "size": 226521
+    "name": "Pulsee00173Smart_Luce_Fix_RT0006017143.pdf",
+    "size": 228391
    },
    {
-    "name": "Pulsee00175Smart_Gas_Fix_RT-0005820010.pdf",
-    "size": 178472
+    "name": "Pulsee00174Smart_Luce_Index_RT-0005900427.pdf",
+    "size": 217138
    },
    {
-    "name": "Pulsee00179Partner_Luce_Fix_RT-0005820036(1).pdf",
-    "size": 219269
+    "name": "Pulsee00175Smart_Gas_Fix_RT0006012077.pdf",
+    "size": 178599
    },
    {
-    "name": "Pulsee00180Partner_Gas_Fix_RT-0005820044.pdf",
-    "size": 178489
+    "name": "Pulsee00179Partner_Luce_Fix_RT0006017150.pdf",
+    "size": 222212
    },
    {
-    "name": "Pulsee00181Partner_Luce_Fix_Plus_RT-0005820051.pdf",
-    "size": 212457
+    "name": "Pulsee00180Partner_Gas_Fix_RT0006012088.pdf",
+    "size": 178612
    },
    {
-    "name": "Pulsee00182Partner_Gas_Fix_Plus_RT-0005820057.pdf",
-    "size": 178554
+    "name": "Pulsee00181Partner_Luce_Fix_Plus_RT0006017156.pdf",
+    "size": 214882
    },
    {
-    "name": "Pulsee00551Easy_Luce_Fix_36_mesi_RT-0005820264.pdf",
-    "size": 233037
+    "name": "Pulsee00182Partner_Gas_Fix_Plus_RT0006012099.pdf",
+    "size": 178664
    },
    {
-    "name": "Pulsee00552Partner_Luce_Fix_36_mesi_RT-0005820246.pdf",
-    "size": 225986
+    "name": "Pulsee00208Partner_Luce_Index_Plus_RT-0005900489.pdf",
+    "size": 217231
    },
    {
-    "name": "Pulsee00553Partner_Luce_Fix_Plus_36_mesi_RT-0005820238(1).pdf",
-    "size": 219905
+    "name": "Pulsee00209Partner_Luce_Index_RT-0005900501.pdf",
+    "size": 217155
    },
    {
-    "name": "Pulsee00557Smart_Luce_Fix_36_mesi_RT-0005820277.pdf",
-    "size": 232925
+    "name": "Pulsee00210Easy_Luce_Index_RT-0005900513.pdf",
+    "size": 217044
    },
    {
-    "name": "Pulsee00558Value_Luce_Fix_36_mesi_RT-0005820271.pdf",
-    "size": 806931
+    "name": "Pulsee00211Partner_Gas_Index_RT-0005900452.pdf",
+    "size": 178519
    },
    {
-    "name": "Pulsee00560Easy_Gas_Fix_36_mesi_RT-0005820283(1).pdf",
-    "size": 178659
+    "name": "Pulsee00213Smart_Gas_Index_RT-0005900472.pdf",
+    "size": 178506
    },
    {
-    "name": "Pulsee00561Partner_Gas_Fix_36_mesi_RT-0005820291.pdf",
-    "size": 178556
+    "name": "Pulsee00214Partner_Gas_Index_Plus_RT-0005900438.pdf",
+    "size": 178567
    },
    {
-    "name": "Pulsee00562Partner_Gas_Fix_Plus_36_mesi_RT-0005820295.pdf",
-    "size": 178602
+    "name": "Pulsee00215Value_Gas_Index_RT-0005900457.pdf",
+    "size": 749928
    },
    {
-    "name": "Pulsee00570Smart_Gas_Fix_36_mesi_RT-0005820323.pdf",
-    "size": 178554
+    "name": "Pulsee00217Value_Luce_Index_RT-0005900481.pdf",
+    "size": 790849
    },
    {
-    "name": "Pulsee00571Value_Gas_Fix_36_mesi_RT-0005820333.pdf",
-    "size": 749937
+    "name": "Pulsee00218Easy_Gas_Index_RT-0005900525.pdf",
+    "size": 178645
+   },
+   {
+    "name": "Pulsee00551Easy_Luce_Fix_36_mesi_RT0006017240.pdf",
+    "size": 235529
+   },
+   {
+    "name": "Pulsee00552Partner_Luce_Fix_36_mesi_RT0006017213.pdf",
+    "size": 229122
+   },
+   {
+    "name": "Pulsee00553Partner_Luce_Fix_Plus_36_mesi_RT0006017205.pdf",
+    "size": 221335
+   },
+   {
+    "name": "Pulsee00557Smart_Luce_Fix_36_mesi_RT0006017268.pdf",
+    "size": 235405
+   },
+   {
+    "name": "Pulsee00558Value_Luce_Fix_36_mesi_RT0006017250.pdf",
+    "size": 809466
+   },
+   {
+    "name": "Pulsee00560Easy_Gas_Fix_36_mesi_RT0006012252.pdf",
+    "size": 178774
+   },
+   {
+    "name": "Pulsee00561Partner_Gas_Fix_36_mesi_RT0006012253.pdf",
+    "size": 178676
+   },
+   {
+    "name": "Pulsee00562Partner_Gas_Fix_Plus_36_mesi_RT0006012256.pdf",
+    "size": 178712
+   },
+   {
+    "name": "Pulsee00570Smart_Gas_Fix_36_mesi_RT0006012290.pdf",
+    "size": 178660
+   },
+   {
+    "name": "Pulsee00571Value_Gas_Fix_36_mesi_RT0006012293.pdf",
+    "size": 750050
    }
   ],
   "documenti/chiurlo/cte/business": [
@@ -2249,143 +2421,143 @@
   "documenti/edison/cte/business": [
    {
     "name": "02 - CE_WORLD_BUSINESS_GAS.pdf",
-    "size": 360623
+    "size": 360599
    },
    {
     "name": "02 - SS_WORLD_BUSINESS_GAS.pdf",
-    "size": 167630
+    "size": 167634
    },
    {
     "name": "03 - CE_CONDOMINIO_FLEX_GAS_PMI.pdf",
-    "size": 358797
+    "size": 358883
    },
    {
     "name": "03 - Scheda_CONDOMINIO_FLEX_GAS_PMI_Ambito1.pdf",
-    "size": 178885
+    "size": 178896
    },
    {
     "name": "03 - Scheda_CONDOMINIO_FLEX_GAS_PMI_Ambito2.pdf",
-    "size": 176615
+    "size": 176654
    },
    {
     "name": "03 - Scheda_CONDOMINIO_FLEX_GAS_PMI_Ambito3.pdf",
-    "size": 176613
+    "size": 176658
    },
    {
     "name": "03 - Scheda_CONDOMINIO_FLEX_GAS_PMI_Ambito4.pdf",
-    "size": 176639
+    "size": 176642
    },
    {
     "name": "03 - Scheda_CONDOMINIO_FLEX_GAS_PMI_Ambito5.pdf",
-    "size": 176630
+    "size": 176668
    },
    {
     "name": "03 - Scheda_CONDOMINIO_FLEX_GAS_PMI_Ambito6.pdf",
-    "size": 176617
+    "size": 176656
    },
    {
     "name": "11 - CE_EDISON TOP50FLEX_LUCE.pdf",
-    "size": 424294
+    "size": 424305
    },
    {
     "name": "11 - Scheda_EDISON TOP50FLEX_LUCE.pdf",
-    "size": 215560
+    "size": 215559
    },
    {
     "name": "14 - CE_TOP40_FLEX_GAS_PMI.pdf",
-    "size": 359710
+    "size": 359653
    },
    {
     "name": "14 - SS_TOP40_FLEX_GAS_PMI.pdf",
-    "size": 170657
+    "size": 170658
    },
    {
     "name": "16 - CE_EDISON Soluzione in borsa_LUCE.pdf",
-    "size": 423085
+    "size": 423205
    },
    {
     "name": "16 - Scheda_EDISON Soluzione in borsa_LUCE.pdf",
-    "size": 215550
+    "size": 215564
    },
    {
     "name": "19 - CE_SOLUZIONE_IN_BORSA_GAS_PMI.pdf",
-    "size": 358571
+    "size": 358194
    },
    {
     "name": "19 - SS_SOLUZIONE_IN_BORSA_GAS_PMI.pdf",
-    "size": 169627
+    "size": 169587
    },
    {
     "name": "2 - CE_World_BUSINESS_LUCE.pdf",
-    "size": 424595
+    "size": 424627
    },
    {
     "name": "2 - Scheda_World_BUSINESS_LUCE.pdf",
-    "size": 215792
+    "size": 215754
    },
    {
     "name": "20 - CE_EDISON FLEX_BUSINESS_LUCE.pdf",
-    "size": 420775
+    "size": 420652
    },
    {
     "name": "20 - Scheda_EDISON FLEX_BUSINESS_LUCE.pdf",
-    "size": 215417
+    "size": 215415
    },
    {
     "name": "21 - CE_EDISON DYNAMIC_BUSINESS_LUCE.pdf",
-    "size": 415235
+    "size": 415611
    },
    {
     "name": "21 - Scheda_EDISON DYNAMIC_BUSINESS_LUCE.pdf",
-    "size": 216155
+    "size": 216171
    },
    {
     "name": "22 - CE_EDISON SUPERFLEX_BUSINESS_LUCE.pdf",
-    "size": 422362
+    "size": 422273
    },
    {
     "name": "22 - CE_FLEX_BUSINESS_GAS_PMI.pdf",
-    "size": 359212
+    "size": 358890
    },
    {
     "name": "22 - Scheda_EDISON SUPERFLEX_BUSINESS_LUCE.pdf",
-    "size": 215499
+    "size": 215503
    },
    {
     "name": "22 - SS_FLEX_BUSINESS_GAS_PMI.pdf",
-    "size": 170714
+    "size": 170709
    },
    {
     "name": "23 - CE_DYNAMIC_BUSINESS_GAS_PMI.pdf",
-    "size": 357253
+    "size": 357622
    },
    {
     "name": "23 - CE_EDISON CONDOMINIO ENERGYPLUS_LUCE.pdf",
-    "size": 421159
+    "size": 421134
    },
    {
     "name": "23 - Scheda_EDISON CONDOMINIO ENERGYPLUS_LUCE.pdf",
-    "size": 216823
+    "size": 216827
    },
    {
     "name": "23 - SS_DYNAMIC_BUSINESS_GAS_PMI.pdf",
-    "size": 168294
+    "size": 168299
    },
    {
     "name": "24 - CE_SUPERFLEX_BUSINESS_GAS_PMI.pdf",
-    "size": 360032
+    "size": 359750
    },
    {
     "name": "24 - SS_SUPERFLEX_BUSINESS_GAS_PMI.pdf",
-    "size": 170970
+    "size": 170976
    },
    {
     "name": "5 - CE_CONDOMINIOFLEX_LUCE.pdf",
-    "size": 419583
+    "size": 419599
    },
    {
     "name": "5 - Scheda_CONDOMINIOFLEX_LUCE.pdf",
-    "size": 216528
+    "size": 216365
    },
    {
     "name": "addendum_aq_50.pdf",
@@ -2395,111 +2567,111 @@
   "documenti/edison/cte/residenziale": [
    {
     "name": "12 - CE_DYNAMIC_Gas.pdf",
-    "size": 961713
+    "size": 962022
    },
    {
     "name": "12 - Scheda_DYNAMIC_Gas_Ambito1.pdf",
-    "size": 181930
+    "size": 181918
    },
    {
     "name": "12 - Scheda_DYNAMIC_Gas_Ambito2.pdf",
-    "size": 179640
+    "size": 179651
    },
    {
     "name": "12 - Scheda_DYNAMIC_Gas_Ambito3.pdf",
-    "size": 179630
+    "size": 179632
    },
    {
     "name": "12 - Scheda_DYNAMIC_Gas_Ambito4.pdf",
-    "size": 179668
+    "size": 179682
    },
    {
     "name": "12 - Scheda_DYNAMIC_Gas_Ambito5.pdf",
-    "size": 179664
+    "size": 179660
    },
    {
     "name": "12 - Scheda_DYNAMIC_Gas_Ambito6.pdf",
-    "size": 179658
+    "size": 179640
    },
    {
     "name": "14 - CE_Dynamic_LUCE.pdf",
-    "size": 1034675
+    "size": 1034695
    },
    {
     "name": "14 - Scheda_Dynamic_LUCE.pdf",
-    "size": 209993
+    "size": 210003
    },
    {
     "name": "17 - CE_SuperFlex_Gas.pdf",
-    "size": 962620
+    "size": 962450
    },
    {
     "name": "17 - Scheda_Superflex_Gas_Ambito1.pdf",
-    "size": 181967
+    "size": 181943
    },
    {
     "name": "17 - Scheda_Superflex_Gas_Ambito2.pdf",
-    "size": 179647
+    "size": 179638
    },
    {
     "name": "17 - Scheda_Superflex_Gas_Ambito3.pdf",
-    "size": 179617
+    "size": 179607
    },
    {
     "name": "17 - Scheda_Superflex_Gas_Ambito4.pdf",
-    "size": 179642
+    "size": 179659
    },
    {
     "name": "17 - Scheda_Superflex_Gas_Ambito5.pdf",
-    "size": 179645
+    "size": 179643
    },
    {
     "name": "17 - Scheda_Superflex_Gas_Ambito6.pdf",
-    "size": 179634
+    "size": 179646
    },
    {
     "name": "18 - CE_Superflex_LUCE.pdf",
-    "size": 1035026
+    "size": 1035569
    },
    {
     "name": "18 - Scheda_Superflex_LUCE.pdf",
-    "size": 209889
+    "size": 209873
    },
    {
     "name": "2 - CE_World_Gas.pdf",
-    "size": 960280
+    "size": 960086
    },
    {
     "name": "2 - CE_World_LUCE.pdf",
-    "size": 1032616
+    "size": 1032518
    },
    {
     "name": "2 - Scheda_World_Gas_Ambito1.pdf",
-    "size": 181671
+    "size": 181699
    },
    {
     "name": "2 - Scheda_World_Gas_Ambito2.pdf",
-    "size": 179680
+    "size": 179729
    },
    {
     "name": "2 - Scheda_World_Gas_Ambito3.pdf",
-    "size": 179671
+    "size": 179718
    },
    {
     "name": "2 - Scheda_World_Gas_Ambito4.pdf",
-    "size": 179710
+    "size": 179733
    },
    {
     "name": "2 - Scheda_World_Gas_Ambito5.pdf",
-    "size": 179745
+    "size": 179748
    },
    {
     "name": "2 - Scheda_World_Gas_Ambito6.pdf",
-    "size": 179689
+    "size": 179718
    },
    {
     "name": "2 - Scheda_world_Luce.pdf",
-    "size": 205945
+    "size": 205920
    },
    {
     "name": "addendum_aq_100perc_gas.pdf",
@@ -3460,44 +3632,52 @@
   ],
   "documenti/estra/cte/business": [
    {
-    "name": "ESTRA TREND GAS - IMPRESA (1).pdf",
-    "size": 211917
-   },
-   {
-    "name": "ESTRA TREND PIU' LUCE (1).pdf",
-    "size": 566369
-   },
-   {
-    "name": "ESTRA TREND UNICA LUCE (1).pdf",
-    "size": 566569
+    "name": "ESTRA TREND GAS - IMPRESA novembre.pdf",
+    "size": 212074
    }
   ],
   "documenti/estra/cte/residenziale": [
    {
-    "name": "ESTRA NATURA GAS (1).pdf",
-    "size": 225300
+    "name": "ESTRA NATURA GAS novembre.pdf",
+    "size": 226209
    },
    {
-    "name": "NATURA LUCE (1).pdf",
-    "size": 636961
+    "name": "ESTRA PROMO GAS novembre.pdf",
+    "size": 222736
+   },
+   {
+    "name": "ESTRA TREND PIU' LUCE novembre.pdf",
+    "size": 566462
+   },
+   {
+    "name": "ESTRA TREND UNICA LUCE novembre.pdf",
+    "size": 566663
+   },
+   {
+    "name": "NATURA LUCE novembre.pdf",
+    "size": 640519
+   },
+   {
+    "name": "PROMO LUCE novembre.pdf",
+    "size": 622161
    }
   ],
   "documenti/fastweb-energia/cte/business": [
    {
     "name": "cte_fastweb_gas_fix biz.pdf",
-    "size": 133222
+    "size": 134331
    },
    {
     "name": "cte_fastweb_gas_flex biz.pdf",
-    "size": 135963
+    "size": 137988
    },
    {
     "name": "cte_fastweb_luce_fix biz.pdf",
-    "size": 167046
+    "size": 170160
    },
    {
     "name": "cte_fastweb_luce_flex biz.pdf",
-    "size": 174809
+    "size": 168355
    },
    {
     "name": "Sales News Fastweb Gas - P.iva FW-VF 26 Ottobre 26.pdf",
@@ -3510,24 +3690,24 @@
   ],
   "documenti/fastweb-energia/cte/residenziale": [
    {
+    "name": "cte_fastweb_gas_flat.pdf",
+    "size": 205090
+   },
+   {
     "name": "cte_fastweb_gas_flex.pdf",
-    "size": 146608
+    "size": 148795
    },
    {
     "name": "cte_fastweb_luce_fix.pdf",
-    "size": 145815
-   },
-   {
-    "name": "cte_fastweb_luce_fix_xte.pdf",
-    "size": 145103
+    "size": 156881
    },
    {
     "name": "cte_fastweb_luce_flat.pdf",
-    "size": 202425
+    "size": 221114
    },
    {
     "name": "cte_fastweb_luce_flex.pdf",
-    "size": 155369
+    "size": 220618
    },
    {
     "name": "Sales News Fastweb Gas Uso Domestico 8 Ottobre26.pdf",
@@ -4521,11 +4701,11 @@
    },
    {
     "name": "CTE_EST_HERA_HYBRID_LAVORO_GAS__V35.pdf",
-    "size": 340034
+    "size": 337540
    },
    {
     "name": "CTE_EST_HERA_HYBRID_LAVORO_LUCE__V35.pdf",
-    "size": 317944
+    "size": 315310
    },
    {
     "name": "CTE_EST_HERA_HYBRID_SME_GAS__V35.pdf",
@@ -4533,7 +4713,7 @@
    },
    {
     "name": "CTE_EST_HERA_HYBRID_SME_LUCE__V35.pdf",
-    "size": 334991
+    "size": 334990
    },
    {
     "name": "CTE_EST_PIU_CONTROLLO_ACTIVE_LAVORO_GAS__V25.pdf",
@@ -4557,11 +4737,11 @@
    },
    {
     "name": "CTE_HC_HERA_HYBRID_LAVORO_GAS__V35.pdf",
-    "size": 311212
+    "size": 308296
    },
    {
     "name": "CTE_HC_HERA_HYBRID_LAVORO_LUCE__V35.pdf",
-    "size": 292895
+    "size": 289725
    },
    {
     "name": "CTE_HC_HERA_HYBRID_SME_GAS__V35.pdf",
@@ -4569,7 +4749,7 @@
    },
    {
     "name": "CTE_HC_HERA_HYBRID_SME_LUCE__V35.pdf",
-    "size": 308748
+    "size": 308749
    },
    {
     "name": "CTE_HC_PIU_CONTROLLO_ACTIVE_LAVORO_GAS__V25.pdf",
@@ -4603,31 +4783,19 @@
    },
    {
     "name": "CTE_EST_HERA_HYBRID_CASA_GAS__V35.pdf",
-    "size": 340497
+    "size": 337756
    },
    {
     "name": "CTE_EST_HERA_HYBRID_CASA_LUCE__V35.pdf",
-    "size": 315702
-   },
-   {
-    "name": "CTE_EST_HERA_HYBRID_CLIMA_CASA_LUCE__V35.pdf",
-    "size": 304256
+    "size": 312955
    },
    {
     "name": "CTE_EST_HERA_PROTEZIONE_5_CASA_GAS__V2.pdf",
-    "size": 407736
+    "size": 422651
    },
    {
     "name": "CTE_EST_HERA_PROTEZIONE_5_CASA_LUCE__V2.pdf",
-    "size": 366068
-   },
-   {
-    "name": "CTE_EST_HERA_TI_TUTELA_CASA_GAS__V41.pdf",
-    "size": 396372
-   },
-   {
-    "name": "CTE_EST_HERA_TI_TUTELA_CASA_LUCE__V41.pdf",
-    "size": 381335
+    "size": 387897
    },
    {
     "name": "CTE_EST_PIU_CONTROLLO_ACTIVE_CASA_GAS__V25.pdf",
@@ -4638,40 +4806,20 @@
     "size": 302838
    },
    {
-    "name": "CTE_EST_PIU_CONTROLLO_FLAT_CASA_GAS__V55.pdf",
-    "size": 341585
-   },
-   {
-    "name": "CTE_EST_PIU_CONTROLLO_FLAT_CASA_LUCE__V55.pdf",
-    "size": 327496
-   },
-   {
     "name": "CTE_HC_HERA_HYBRID_CASA_GAS__V35.pdf",
-    "size": 311722
+    "size": 308538
    },
    {
     "name": "CTE_HC_HERA_HYBRID_CASA_LUCE__V35.pdf",
-    "size": 290616
-   },
-   {
-    "name": "CTE_HC_HERA_HYBRID_CLIMA_CASA_LUCE__V35.pdf",
-    "size": 279181
+    "size": 287371
    },
    {
     "name": "CTE_HC_HERA_PROTEZIONE_5_CASA_GAS__V2.pdf",
-    "size": 396570
+    "size": 393232
    },
    {
     "name": "CTE_HC_HERA_PROTEZIONE_5_CASA_LUCE__V2.pdf",
-    "size": 367688
-   },
-   {
-    "name": "CTE_HC_HERA_TI_TUTELA_CASA_GAS__V41.pdf",
-    "size": 367321
-   },
-   {
-    "name": "CTE_HC_HERA_TI_TUTELA_CASA_LUCE__V41.pdf",
-    "size": 356125
+    "size": 362076
    },
    {
     "name": "CTE_HC_PIU_CONTROLLO_ACTIVE_CASA_GAS__V25.pdf",
@@ -4680,14 +4828,6 @@
    {
     "name": "CTE_HC_PIU_CONTROLLO_ACTIVE_CASA_LUCE__V25.pdf",
     "size": 277031
-   },
-   {
-    "name": "CTE_HC_PIU_CONTROLLO_FLAT_CASA_GAS__V55.pdf",
-    "size": 314783
-   },
-   {
-    "name": "CTE_HC_PIU_CONTROLLO_FLAT_CASA_LUCE__V55.pdf",
-    "size": 302200
    },
    {
     "name": "Schemino Offerte_Ott 2026_3.xlsx",
@@ -5656,130 +5796,110 @@
   ],
   "documenti/sorgenia/cte-business": [
    {
-    "name": "BorsapiuSmart_corporate(10).pdf",
-    "size": 1133379
+    "name": "BorsapiuSmart_light.pdf",
+    "size": 1149857
    },
    {
-    "name": "BorsapiuSmart_corporatepremium(10).pdf",
-    "size": 1133388
-   },
-   {
-    "name": "BorsapiuSmart_L21(9).pdf",
-    "size": 1150091
-   },
-   {
-    "name": "BorsapiuSmart_L23(8).pdf",
-    "size": 1133141
-   },
-   {
-    "name": "BorsapiuSmart_L24(10).pdf",
-    "size": 1133141
-   },
-   {
-    "name": "BorsapiuSmart_L31(10).pdf",
-    "size": 1150088
-   },
-   {
-    "name": "BorsapiuSmart_L35(9).pdf",
-    "size": 1133141
-   },
-   {
-    "name": "BorsapiuSmart_light(10).pdf",
-    "size": 1133375
-   },
-   {
-    "name": "BorsapiuSmart_lightplus(10).pdf",
-    "size": 1133377
-   },
-   {
-    "name": "BorsapiuSmart_plus(10).pdf",
-    "size": 1133375
-   },
-   {
-    "name": "BorsapiuSmart_premium(10).pdf",
-    "size": 1133375
-   },
-   {
-    "name": "BorsapiuSmart_superlight(10).pdf",
+    "name": "BorsapiuSmart_lightplus.pdf",
     "size": 1149863
    },
    {
-    "name": "ImpresaGasSmart_L21(31).pdf",
-    "size": 1056666
+    "name": "BorsapiuSmart_plus.pdf",
+    "size": 1149856
    },
    {
-    "name": "ImpresaGasSmart_L21Fix(28).pdf",
-    "size": 1056464
+    "name": "BorsapiuSmart_superlight.pdf",
+    "size": 1149868
    },
    {
-    "name": "ImpresaGasSmart_L22(31).pdf",
-    "size": 1056666
+    "name": "ImpresaGasSmart_L21.pdf",
+    "size": 1065410
    },
    {
-    "name": "ImpresaGasSmart_light(49).pdf",
-    "size": 1072035
+    "name": "ImpresaGasSmart_L21Fix.pdf",
+    "size": 1063688
    },
    {
-    "name": "ImpresaGasSmart_lightplus(48).pdf",
-    "size": 1072043
+    "name": "ImpresaGasSmart_L22.pdf",
+    "size": 1065410
    },
    {
-    "name": "ImpresaGasSmart_plus(48).pdf",
-    "size": 1072026
+    "name": "ImpresaGasSmart_light.pdf",
+    "size": 1084946
    },
    {
-    "name": "ImpresaGasSmart_premium(48).pdf",
-    "size": 1072039
+    "name": "ImpresaGasSmart_lightplus.pdf",
+    "size": 1084950
    },
    {
-    "name": "ImpresaGasSmart_superlight(29).pdf",
-    "size": 1084959
+    "name": "ImpresaGasSmart_plus.pdf",
+    "size": 1084945
    },
    {
-    "name": "ImpresaGasSmartFix_light(45).pdf",
-    "size": 1072457
+    "name": "ImpresaGasSmart_superlight.pdf",
+    "size": 1084960
    },
    {
-    "name": "ImpresaGasSmartFix_Plus(39).pdf",
-    "size": 1072454
+    "name": "ImpresaGasSmartFix_light_.pdf",
+    "size": 1084562
    },
    {
-    "name": "L21_FISSO_PER_TE(25).pdf",
-    "size": 1195902
+    "name": "ImpresaGasSmartFix_Plus_.pdf",
+    "size": 1084564
    },
    {
-    "name": "L24_FISSO_PER_TE(26).pdf",
-    "size": 1195268
+    "name": "L1_FISSO_PER_TE.pdf",
+    "size": 1197097
    },
    {
-    "name": "L2_FISSO_PER_TE(28).pdf",
-    "size": 1176414
+    "name": "L2_FISSO_PER_TE.pdf",
+    "size": 1195288
    },
    {
-    "name": "L4_FISSO_PER_TE(29).pdf",
-    "size": 1176413
+    "name": "NextEBusiness_24_GAS_L1.pdf",
+    "size": 1111293
    },
    {
-    "name": "L6_FISSO_PER_TE(28).pdf",
-    "size": 1176405
+    "name": "NextEBusiness_24_GAS_L21.pdf",
+    "size": 1111299
+   },
+   {
+    "name": "NextEBusiness_24_GAS_L3.pdf",
+    "size": 1111293
    }
   ],
   "documenti/sorgenia/cte-residenziale": [
    {
-    "name": "NEXTENERGYPUNTUALELUCE_AR2(5).pdf",
-    "size": 1142099
+    "name": "BorsapiuSmart_L21.pdf",
+    "size": 1150094
    },
    {
-    "name": "NEXTENERGYPUNTUALELUCE_AS1(4).pdf",
-    "size": 1142090
+    "name": "BorsapiuSmart_L23.pdf",
+    "size": 1150095
    },
    {
-    "name": "NEXTENERGYSunlightGAS_AR1(34).pdf",
-    "size": 1135887
+    "name": "BorsapiuSmart_L31.pdf",
+    "size": 1150092
    },
    {
-    "name": "NEXTENERGYSunlightGAS_RF(70).pdf",
-    "size": 1135883
+    "name": "L21_FISSO_PER_TE.pdf",
+    "size": 1197119
+   },
+   {
+    "name": "NEXTENERGY_GAS_24_Novembre3.pdf",
+    "size": 1117682
+   },
+   {
+    "name": "NEXTENERGY_LUCE_24_Novembre 3.pdf",
+    "size": 1155690
+   },
+   {
+    "name": "NEXTENERGYPUNTUALELUCE_AS1.pdf",
+    "size": 1153047
+   },
+   {
+    "name": "NEXTENERGYSunlightGAS_RF.pdf",
+    "size": 1130744
    }
   ],
   "documenti/sorgenia/modulistica": [
