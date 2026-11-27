@@ -26,7 +26,7 @@ window.USER_ROLES = {
 // (home, Luce e gas e Telefonia mostrano solo quelli; le altre sezioni del Drive sono bloccate).
 // Per limitare un utente: "email@esempio.it": "promup" (deve essere anche in USER_ROLES come venditore).
 window.ACCESS_PROFILES = {
-  // Gestori che Top House lavora tramite PromUp
+  // Gestori che Top House lavora tramite PromUp (Segno Verde, via Vai Network, NON è PromUp: non aggiungerlo qui)
   promup: {
     luceGas: ["a2a", "audax", "axpo", "edison", "enel-corporate", "enel-digital", "engie", "estra", "fastweb-energia", "hera", "magis", "sorgenia", "upenergy"],
     telefonia: ["edison-fibra", "enel-fibra", "fastweb", "sky", "tim", "vodafone", "wind"],
